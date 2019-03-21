@@ -1,0 +1,806 @@
+# STOCKHOLM 1.0
+
+#=GS       IS1031A.1|IS5|IS1031|Transposase|Acetobacter DE    xylinum
+#=GS       IS1031C.1|IS5|IS1031|Transposase|Acetobacter DE    xylinum
+#=GS       IS1031D.1|IS5|IS1031|Transposase|Acetobacter DE    xylinum
+#=GS        IS1032.1|IS5|IS1031|Transposase|Acetobacter DE    xylinum
+#=GS     IS12528.1|IS5|IS1031|Transposase|Gluconobacter DE    suboxydans
+#=GS   IS1355.3|IS5|IS1031|Transposase|Methylobacterium DE    dichloromethanicum
+#=GS       IS1480a.1|IS5|IS1031|Transposase|Xanthomonas DE    campestris
+#=GS       IS1480b.1|IS5|IS1031|Transposase|Xanthomonas DE    campestris
+#=GS       IS468A.1|IS5|IS1031|Transposase|Streptomyces DE    coelicolor
+#=GS       IS4811.3|IS5|IS1031|Transposase|Streptomyces DE    lividans
+#=GS       IS5Sa.1|IS5|IS1031|Transposase|Synechocystis DE    sp.
+#=GS      IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis DE    sp.
+#=GS       IS5Sb.1|IS5|IS1031|Transposase|Synechocystis DE    sp.
+#=GS     ISAba15.3|IS5|IS1031|Transposase|Acinetobacter DE    baumannii
+#=GS     ISAba37.3|IS5|IS1031|Transposase|Acinetobacter DE    baumannii
+#=GS    ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris DE    marina
+#=GS    ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris DE    marina
+#=GS     ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris DE    marina
+#=GS     ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris DE    marina
+#=GS       ISAli1.1|IS5|IS1031|Transposase|Azospirillum DE    lipoferum
+#=GS           ISAva7.3|IS5|IS1031|Transposase|Anabaena DE    variabilis
+#=GS           ISAva8.3|IS5|IS1031|Transposase|Anabaena DE    variabilis
+#=GS          ISAzo23.1|IS5|IS1031|Transposase|Azoarcus DE    sp.
+#=GS          ISAzo36.1|IS5|IS1031|Transposase|Azoarcus DE    sp.
+#=GS          ISAzo37.1|IS5|IS1031|Transposase|Azoarcus DE    sp.
+#=GS      ISAzs16.1|IS5|IS1031|Transposase|Azospirillum DE    sp.
+#=GS      ISAzs28.1|IS5|IS1031|Transposase|Azospirillum DE    sp.
+#=GS         ISBf6.1|IS5|IS1031|Transposase|Bacteroides DE    fragilis
+#=GS         ISCaa8.3|IS5|IS1031|Transposase|Candidatus DE    Amoebophilus
+#=GS         ISCaa9.3|IS5|IS1031|Transposase|Candidatus DE    Amoebophilus
+#=GS      ISCARN14.1|IS5|IS1031|Transposase|Metagenomic DE    data
+#=GS      ISCARN82.3|IS5|IS1031|Transposase|Metagenomic DE    data
+#=GS        ISDge7.1|IS5|IS1031|Transposase|Deinococcus DE    geothermalis
+#=GS        ISDra5.1|IS5|IS1031|Transposase|Deinococcus DE    radiodurans
+#=GS        ISEc61.1|IS5|IS1031|Transposase|Escherichia DE    coli
+#=GS           ISFal3A.1|IS5|IS1031|Transposase|Frankia DE    alni
+#=GS           ISFal3B.1|IS5|IS1031|Transposase|Frankia DE    alni
+#=GS  ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter DE    diazotrophicus
+#=GS  ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter DE    diazotrophicus
+#=GS  ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter DE    diazotrophicus
+#=GS    ISMac15.1|IS5|IS1031|Transposase|Methanosarcina DE    acetivorans
+#=GS  ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium DE    dichloromethanicum
+#=GS  ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium DE    dichloromethanicum
+#=GS  ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium DE    dichloromethanicum
+#=GS  ISMex40.1|IS5|IS1031|Transposase|Methylobacterium DE    extorquens
+#=GS  ISMno12.1|IS5|IS1031|Transposase|Methylobacterium DE    nodulans
+#=GS   ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium DE    populi
+#=GS ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium DE    sp.
+#=GS ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium DE    sp.
+#=GS      ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas DE    eutropha
+#=GS       ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas DE    syringae
+#=GS         ISRel20.1|IS5|IS1031|Transposase|Rhizobium DE    etli
+#=GS    ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum DE    rubrum
+#=GS           ISRl2.1|IS5|IS1031|Transposase|Rhizobium DE    leguminosarum
+#=GS      ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium DE    meliloti
+#=GS         ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium DE    meliloti
+#=GS     ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium DE    meliloti
+#=GS           ISRm4.1|IS5|IS1031|Transposase|Rhizobium DE    meliloti
+#=GS          ISRtr3.1|IS5|IS1031|Transposase|Rhizobium DE    tropici
+#=GS          ISRtr4.1|IS5|IS1031|Transposase|Rhizobium DE    tropici
+#=GS       ISScl1.1|IS5|IS1031|Transposase|Streptomyces DE    clavuligerus
+#=GS       ISSco3.1|IS5|IS1031|Transposase|Streptomyces DE    coelicolor
+#=GS ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas DE    maltophilia
+#=GS          ISWpi1.3|IS5|IS1031|Transposase|Wolbachia DE    pipientis
+#=GS         ISXo3.1|IS5|IS1031|Transposase|Xanthomonas DE    oryzae
+#=GS          ISZmo1.1|IS5|IS1031|Transposase|Zymomonas DE    mobilis
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        --------------------------------------------------
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        --------------------------------------------------
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        --------------------------------------------------
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         --------------------------------------------------
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      --------------------------------------------------
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    --------------------------------------------------
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        --------------------------------------------------
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        --------------------------------------------------
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        --------------------------------------------------
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       --------------------------------------------------
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        --------------------------------------------------
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      --------------------------------------------------
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      --------------------------------------------------
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     --------------------------------------------------
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     --------------------------------------------------
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      --------------------------------------------------
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      --------------------------------------------------
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        --------------------------------------------------
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            --------------------------------------------------
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            --------------------------------------------------
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       --------------------------------------------------
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       --------------------------------------------------
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          --------------------------------------------------
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          --------------------------------------------------
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          --------------------------------------------------
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       ----MAKSTVSEQPG-RPGRKRSLNAEHTSVLRRIIQEQPRSSLDEVTRE
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       --------------------------------------------------
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         --------------------------------------------------
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         --------------------------------------------------
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         --------------------------------------------------
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            --------------------------------------------------
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            MGRPLVRKKVEQSPPLGPDTNRDLR---YVEERGIVQQ-----CEEAGEL
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   --------------------------------------------------
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   --------------------------------------------------
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   --------------------------------------------------
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     --------------------------------------------------
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    --------------------------------------------------
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  --------------------------------------------------
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  --------------------------------------------------
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       --------------------------------------------------
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        -------------MP-KTGRPRSIAAEHYPVLVKLAHAQPYSSQAELALV
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          --------------------------------------------------
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     --------------------------------------------------
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            --------------------------------------------------
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       --------------------------------------------------
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          --------------------------------------------------
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      --------------------------------------------------
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            --------------------------------------------------
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           --------------------------------------------------
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           --------------------------------------------------
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  --------------------------------------------------
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           --------------------------------------------------
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          --------------------------------------------------
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           --------------------------------------------------
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        --------------------------------------------------
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        --------------------------------------------------
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        --------------------------------------------------
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         --------------------------------------------------
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      --------------------------------------------------
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    --------------------------------------------------
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        --------------------------------------------------
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        --------------------------------------------------
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        --------------------------------------------------
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       --------------------------------------------------
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        --------------------------------------------------
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      --------------------------------------------------
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      --------------------------------------------------
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     --------------------------------------------------
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     --------------------------------------------------
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      --------------------------------------------------
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      --------------------------------------------------
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        --------------------------------------------------
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            --------------------------------------------------
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            --------------------------------------------------
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       --------------------------------------------------
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       --------------------------------------------------
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          --------------------------------------------------
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          --------------------------------------------------
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          --------------------------------------------------
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       LLRR-------------------TGVKVNPVTVRRALREAGIERLK--PL
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       --------------------------------------------------
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         --------------------------------------------------
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         --------------------------------------------------
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         --------------------------------------------------
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            --------------------------------------------------
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            LLSQQAVGDKRRSHPFDERRPSIRGEATHPARVNSPKYRATAQRLGRHPL
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   --------------------------------------------------
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   --------------------------------------------------
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   --------------------------------------------------
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     --------------------------------------------------
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    --------------------------------------------------
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  --------------------------------------------------
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  --------------------------------------------------
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       --------------------------------------------------
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        FFAE-------------------TGITAHPDTFAKALKMAGITRVK--QR
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          --------------------------------------------------
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     --------------------------------------------------
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            --------------------------------------------------
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       --------------------------------------------------
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          --------------------------------------------------
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      --------------------------------------------------
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            --------------------------------------------------
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           --------------------------------------------------
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           --------------------------------------------------
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  --------------------------------------------------
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           --------------------------------------------------
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          --------------------------------------------------
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           --------------------------------------------------
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        ---------------------------MVTWTGIARREH-----------
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        ---------------------------MVAWTGIARHEH-----------
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        ---------------------------MVAWTGIARHEH-----------
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         ----------------------------MAWTEITRAQY-----------
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      -----------------------------MWTPAQRGRM-----------
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    -----------------------------MWTSKNRARY-----------
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        --------------------------------------------------
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        --------------------------------------------------
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        --------------------------------------------------
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       --------------------------------------------------
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        --------------------------------------------------
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      --------------------------------------------------
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      --------------------------------------------------
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     --------------------------------------------------
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     --------------------------------------------------
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      --------------------------------------------------
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      --------------------------------------------------
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        ---------------VIRSMLRSMTNDKTMWTEITRAQY-----------
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            --------------------------------------------------
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            --------------------------------------------------
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           --------------------------------------------------
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       --------------------------------------------------
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       -----------------------------MWTDTTRALH-----------
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          ------------------------MVTKLIY-------------------
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          --------------------------------------------------
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          --------------------------------------------------
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       RRSGE------------RAAAQGSALQRYGYTGAHRRS------------
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       --------------------------------------------------
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         --------------------------------------------------
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         --------------------------------------------------
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         -----------------------------MWTDTTRAHH-----------
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            ----------------VLSVVAWVEVDVVVRSVV-DGL------------
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            SAGSSVSEAVWDLDVCVLSVVAWVEVDVVVRSVV-DGL------------
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   ---------------------------MVTWTGIARREH-----------
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   -----------------------------MWTPEQRGRM-----------
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   ----------------------------MAWTEITRAQY-----------
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     --------------------------------------------------
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   -----------------------------MWTPAARAEL-----------
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   -----------------------------MWTNENRARY-----------
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   --------------------------------------------------
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   -----------------------------MWTPTTRRQH-----------
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   ----------------MSARLEWMNGPSLVWTAANRPRY-----------
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    -----------------------------MWTNADRETY-----------
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  --------------------------------------------------
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  ----------------------------MAWDDAARYHH-----------
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       --------------------------------------------------
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        AKGSF---------------QSPEPNKAYGYNETHRRQ------------
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          ----------------------------MSWTAIARREH-----------
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     -----------------------------MWTKENRRVY-----------
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            ---------------VILFVCLGRTETTMGWTDFTRRQY-----------
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       ----------------------------MGWTDFTRRQY-----------
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          --------------------------------------------------
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      ----------------------------MAWTDFTRPQY-----------
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            ------------------------METTMAWTDFTRPQY-----------
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           ----------------------------MGWTDFTRRQY-----------
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           ---------------MIPSDLRDSMENTMAWTKITRRQY-----------
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        --------------------------------------------------
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  --------------------------------------------------
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           --------------------------------------------------
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          --------------------------------------------------
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           ---------------------------MVTWVKAKRGSRQNMGCSPLHPQ
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        ----SREGLRYPSDMMDGEWALIMPFVPPAK------RG-GRPRTTDMRE
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        ----SREGLRYPSDMTDAEWALIMPFVPPAK------RG-GRPRTADMRE
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        ----SREGLRYPSDMTDAEWALIMPFVPPAK------RG-GRPRTADMRE
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         ----RRDDLEYASDLRDAEWALIAPLMPEKK------RL-GRPRRTDLRR
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      -AGITRKTKRYPSDLTDEEWERIAPLMSPAN------RR-GRKRTTDFRE
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    ----DRSKLRYPSDLTDDEWRLVEPVIPPGK------TG-GGKRTVIMRE
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        ---MRMRQKTYPSDMSREQFEHVLPILEQAR------KR-TKPRRVDVYE
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        ---MRMRQKTYPSDMSREQFEHVLPILEQAR------KR-TKPRRVDMYE
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        ----VSERKPYPSDLSDARWALIEPTLTAWRNARLERRPTGKPAQVDLRD
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        -----MRHRLYPSDMTDAEWALVEPLLPPPA---CDTARGGRPEKHPRRE
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        ----MIIREFYSTDITDSQWQLVEPHLPKAK------TG-GRKRKTSLRE
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       ----MKSLTAYETDLSDAEWAILEPMIPPAK------PG-GHPRTTDMRA
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        ----MIIREFYSTDITDSQWQLVEPHLPKAK------TG-GRKRKTSLRE
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      ------MRKAYPSDISRKQFEHILPILESAR------KK-TKPRTVDLYD
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      ------MRKPYPSDISREAFKEIEPLLLSGR------KQ-TRPRVVDVYE
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     -----MVRHPYDTDLTLDQWELLRPLLPKAK------SG-GRPRRVNLLA
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     ------MSKAYSSNLTLSQYELIAPLIPPAK------PG-GRPRSVNMWA
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      ------MPTAYDSDLTTLQWELLEPLIPAAK------PG-GRPRTTDMLS
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      ------MSTAYDSDLTAEQWELLEPLIPAAK------PG-GRPRTTDMLS
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        ----QRKGLRYSSDTTDAEWAVLEPLLPAAR------RL-GRPRTVNVRE
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            -----MGRKSYPTDLTDMEWEILAPLIPPAK------EG-GHPRTTDMRE
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            ---LLMARKSYPTDLTDIEWEILSELIPPAK------TG-GHPRTTDMRE
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           -----VSRKPYPSDVSEEEWHFVAPYLTLMT------EQ-APQRSYPLRE
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           ------MRKSYPSAISREQFEIIRPLLESAR------RK-TCPRRVDLYE
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           ------MRQCYPSDISHEQFEQIRSLLESAR------RK-TAPRKVDLYD
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       ---MPCPHDPYPSDLSDDEWEVVAPLFSKSE------RR-GRKPIYDLRR
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       ----ARSGLALPSDLTDAEWSLLEPLLPPAS------SV-GRPRKWPLRR
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          -----SESPMYTMLDKDTIKNEILPHLSKAK------R--GYATQSCLIE
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          ------MTQEYSTNINREQFEVIRPILEAAR------KK-TKPRQVDLYE
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          --------MPYTSDLTDKEWEVLEPLVTYIG------P--CRPRKYTIRE
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       -----DGPSGMNTDLTDAEWALVADLFERDG------KR-GAPPRFERRH
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       ----MAPRKPYPSDISREQFESIRPMLEGVR------KR-TKPRRVDLYE
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         -----MNRRAYPSDVDDETYHFLLPYLALSP------ED-APQRKYPLRE
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         ---MLSERKPYKSDLDDETYLFILPYFLLAP------ED-AHQRVYPIRE
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         ----ARAGLALPSDLTDAEWAVLEPFFPPPS------RV-GRPRKWPIRR
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            ---VMVRSDPYPSDLSDAEWALVEPLLPPVS------KD-GRKEAHPRRE
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            ---VMVRSDPYPSDLSDAEWALVEPLLPPVS------KD-GRKEAHPRRE
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   ----SREGLRYPSDMTDGEWALIMPFVPPAK------RG-GRPRTTDMRE
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   -ARITRKTKRYPSDMTEEEWARIAPLMPEPG------RT-GRPREIEFRE
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   ----RRDDLEYASDLRDAEWALIAPLMPERK------RL-GRPRRTDLRR
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     -MSEQTERLPYPSDLSDKEWKLIEPHIPNPP------TNRGKKRVHPYRE
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   ----ARESLPYASSLTDAEWALIAPHLPRPS------HT-GRPWRWPLRA
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   ----DRSHLRYPSDLTDDEWKLVEPLIPPGR------RG-GDKRTVIMRE
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   ---MPTDRPAYPSDVSDEEWALVAPYLALLR------ED-SAQRDYDLRE
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   ----SRSGLRYETDLTDAEWAVVEPLMPKPA------PC-GRPPVWTMRE
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   ----DRRSQRYPSDMTNDEWLTLEPLLPVAE------GI-GRPRTYPIRD
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    ----RDRSSRYPSDLTDAQWATVAPLLGG-----------YDPLTADLRE
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  ---MSTDRAAYPSDVSDEEWALVAPYLALLR------ED-SGQRDHDLRE
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  ----RRSSARYPSDMTDREWAVIAPLLPPPK------PG-GRPRTTELRA
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       ------MRRSYPSDISREQFELIKPLLESAR------RK-TSPRRIDLYD
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        -----LPEQLYPSCLTDTEWALVADLFESQG------GR-GVPPLHSRRT
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          ----NRDVLRFPSDLKDREWALIKPLIPPAR------RG-GRRRTTNMRS
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     ----ERHGLRYPSDLTDEEWALVEPLIPPAK------RG-GRWRTVNIRE
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            ----ARRTVRYASDLTDREWGLISPCLPGPR------RL-GRPRSTDLRE
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       ----GRRTGRYASDLTDREWSLIAPFMPMPP------QL-GRPRKTELRE
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          --------------------------MPAPR------RL-GRPRKTDLRD
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      ----ARRALRYASDLTDREWSLIAPFMPPPR------RL-GRPRKTDMRE
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            ----ARRALRYASDLTDREWSLIAPFMPPPR------RL-GRPRKTDMRE
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           ----ARRASRYASDLTDREWGLISPCLPGPR------RL-GRPRRTDLRE
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           ----ARRTARYASDMTDREWGLVQPFLPMPR------RL-GRPRTTDLRE
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        ----MSERKPYPSDLSDARWALIEPTLTAWRNARLERRPTGQPAKVELRD
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        ----MSERKPYPSDLSDARWALIEPTLTAWRNARLERRPTGKPAQVDLRD
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  ------VRKGYPSDIKREQFEVIRPLLESAR------RK-TAPRKVELYE
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           ------MRKKYPTDLSEREWARIEKHFRVSY------KKGGRPPKYSKRE
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          -----MREKNDPSDVSRERFEQIRPILEQAR------KR-TKPVTVDMYE
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           PHQIARHRLKRSGDRNDAEWAQIAGLMPANK------RQ---ARPGDLEL
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        VVNAMLYIASAGCAWRLLPKCF------PPVSTVRRYFYAWRDTG-----
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        VVNAILYIASGGCAWRLLPKCF------PPVSTVRRYFYAWRDAG-----
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        VVNAILYIASGGCAWRLLPKCF------PPVSTVRRYFYAWRDAG-----
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         VMEAILYIVTTGCQWRQLPRHF------PAFTTVQGYFYRWIREG-----
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      IINALRYLVRSGCGWEMLPVHF------GPWQTVYWWFRRLMRRF-----
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    VVNGLMYILSTGCQWRAIPKDL------PPRSSVHGYFDLWTYDG-----
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        VWCAVLYLLRTGCQWRALPSDF------PKWRTVHSYFAKWSECN-DEGV
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        VWCAVLYVLRTGCQWRALPSDF------PKWRTVHSYFAKWSECN-DEGV
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        VFNAILYLNRTGIPWKYLPHDF------PGHGTVYFYYAAWRDEG-----
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        IVDAIRYVVDTGCKWRALPADF------PPWRTVWGFMARWAAVG-----
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        ILNAIFYMLRTGCAWRLLPHDF------PKWRTVYGYFQQWHEDG-----
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       VCNGIYYQLKTGCQWAMLPHDF------PPSSTVYSYYRKWQRHG-----
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        ILNAIFYMLRTGCAWRLLPHDF------PKWRTVYGYFQPWHEDG-----
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      VFCGLLYVLRTGCQWRQLPHDF------PKWRTVHSYFQKWSELD-EEGN
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      IFCALLYILKSGCQWSMLPRDF------PAKSTVHYYFSIWNKKPSETEP
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     VVNAIFYLLRSGCPWRLIPHDF------PAWQTVYTYFRQWEADG-----
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     VLNAIFYLVSQGCKWRDLPGDF------PCWSTVYTYFRNWRIDG-----
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      VLNAIFYLVVTGCQWRQLPHDF------PCWSTVYSYFRRWRDDG-----
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      VVNAIFYLVVTGCQWRQLPHDF------HCWSTVYSYFRKWRDDG-----
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        IVNGILFLATSGCQWRQLPKDF------PPMTTVQRYFYRWRDDG-----
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            ICNAIYYHLKTGCQWNMLPGDF------PPSSTVYSYYRKWQRKG-----
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            ICNAIYYHLKTGCQWNMLPGDF------PPSSTVYSYYRKWQRKG-----
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           VFNALRWLARAGAPWRLLPNDF------PPWQMVYQQFRRWNDAG-----
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           VFCAVLYLLRSGCQGRMLPDGF------PKWRPVHAYFAIWSEPR--EGG
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           VFCAVLYLLRTGCQWRALPSDF------PKWRTVHSYFAIWSELR--EGG
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       ILDGCFYVLRGGIAWRMMAHDL------PPWRVVYDHFSQWRKTG-----
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       IVKATLYLLRGGLPWRMLPPCF------PPVSTVRRWFYLWRDNG-----
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          VVNAILYKLKTGCQWAFLPVEALFSGKVLSYGAVYHHYNKWSKSG-----
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          VFSGLLYLLKTGCQWRMLPKDF------PKWRTVHAYFQIWSEKQ-ENGI
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          VLDAIFYLEKTGCQWRMLPAHF------PP*KSVYDLYYRWRRNG-----
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       MVNACCYALRTGCAWRLLPKTF------PPWQATYMSFKRWAASG-----
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       VFNAVLYLLKSGCQWRMIPAGF------PNWCTVYSYFAKWSAPD-RDGV
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         VLNALLWISRTGAQWEYLPHDF------PPPKVVRSQAKRWFEAH-----
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         VLNAALWIGRTGSQWEYLPHDF------PPYKIVHQQLMRWFERG-----
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         IVEAILYLLRGGLPWRMLPPCF------PPVSTVRRWFYLWRDNG-----
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            IVNAILYVTHAGCSWRSLPRDF------PPWETVYGFFARWHDKG-----
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            IVNPILYVTHAGCSWRSLPRDF------PPWETVYGFFARWHDKG-----
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   VVNAMLYIASAGCAWRLLPKCF------PPVSTVRRYFYAWRGAG-----
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   VINAVRYLVRSGCGWRMLPIHF------GHWRTVYGWFRELARRF-----
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   VMEAILYIVTTGCQWRQLPRHF------PAFTTVQGYFYRWIREG-----
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     ILNGIFYLLRSGCAWRMLPHEF------PPWQTVYHYFRLWRLYG-----
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   ILDGIQYVLRTGCAWRHLPLDF------PPWSTVHRWFLRLSNAG-----
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   VVNGLMYILSTGCQWRAIPKDL------PPRSTLYDYFDLWSWNR-----
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   VFNGLRYIVKTGAPWRFMPHDL------PPWAAVYQQTQRWLSAD-----
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   ILNAIFYVLRGGIAWRLIPKDL------PPRSTTYGYFSRWRDDG-----
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   IMNGIRYVQRYGIPWDAMPKDL------PPASLCYDYWRLLTDGG-----
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    MVNACLYLEKTGCPWRYLPTDF------GPWETVRTWHDRFRADG-----
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  VFNGLRYIVKTGAPWRFMPHDL------PPWAAVYQQTQRWLAAE-----
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  VMDAILYIATGGCQWRMLPKDF------PPRSTVQGYFYSWRDSR-----
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       VFCAVLYLLKSGCQWRALPNDF------PKWRTVHSYWAIWSEPR--EGG
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        LLEACCYVVRTGCSWRMLPRDF------PHWDNVYKTFRRWSAQG-----
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          VAEAILYIASSGCQWRILPGDF------PPVSTVRGYFYAWRAIG-----
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     VLNGVFYVLMTGCQWRALPKDL------PPKSTVHEYLGLWEWDS-----
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            VVNALLYIATTGCQWRMMPRDF------PPFTTVQSYFYEWRATG-----
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       VLNALLYIASTGCQWRMLPKDF------PPYSTVQGYFYEWRSTG-----
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          VLNALLYIASTGCQWRMLPKDF------PPCSTVQRYFYEWRAMG-----
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      VVNALLYIASTGCQWRMLPKDF------PPFSTVQGYFYEWRATD-----
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            VVNALLYIASTGCQWRMLPKDF------PPFSTVQGYFYEWRATE-----
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           VVNALLYIASTGCQWRMLPKDF------PPFTTVQAYFYEWRAMG-----
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           VVNALLYIATTGCQWRMLPKDF------PPCSTVQRYFYEWRALG-----
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        VFNAILYLNRTGIPWKYLPHDF------PGHGTVYFYYAAWRDEG-----
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        VFNAILYLNRTGIPWKYLPHDF------PGHGTVYFYYAAWRDEG-----
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  VFCAVLYLLRTGCQWRALPSDF------PKWRTVHSYFAIWSEPR--EGG
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           ILEAIFYVLRTGCQWRYLPNDF------PLWKTVYEQFRQWKKQG-----
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          VWCAVLYLLRTGCPWRALPSDF------PKWRTVHSYFAKWSQVA-DEGM
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           VGQAGLYSTAVGSSWHYLYYSF------PEGRTSGVYLFRWMQSG-----
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        -LFEVMNTVLVMS-LREIEGREASPSAGVIDSQSVKTTESGG----LSGY
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        -LFEAMNTVLVMN-LREIEGRKASPSAGVIDSQSVKTTESGG----ISGY
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        -LFEAMNTLLVMN-LREIEGREASPSAGVIDSQSVKTTESGG----ISGY
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         -RWEAINHILVIL-SREQDGRDATPSDGIIDSQSVKTAENGG----PRGY
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      -LFQTIHDVCLML-DREAAGRETSPSGGVIDSQSIKAPHAK-----TRGY
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    -TLERIHHALYEQ-CRERAQRKASPTAAIIDSQSVKSAEKRGACIDPHGY
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        SLLEHRLKKSGWRGP-RQTGAQRCTRFLIVDAQSVKNTDTAG----QKGY
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        SLLEHDLKNQVGVAR-ARQERNACTRFLIVDAQSVKNTDTAG----QKGY
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        -IFTQLNYDLTAL-ARVKEGRKPEPTASVIDTQSVKTSTNVP--LTSQGT
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        -VIGQLRDALAQR-IRRDMGRGPRAVATIIDSQSVKAASTVG--KDSRGY
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        -TWRKLNRIFREK-VRLKAGRNTHPSAGCLDSQSLKKAGT-G---QETGY
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       -VWERLNLRLLEQ-CRLQSGKSLEPSVIAADSQSVKTTEKKG---EVYGF
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        -TWKKLNRIFREK-VRLKAGRNTHPSAGCLDSQSLKKAGT-G---QETGY
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      SILDQALKKLVK-KARKKDKRKSKTSFIIIDAQSVKNTDTAK----HKGY
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      SILEQALKNVVG-EARISNGRKEQTSFIIIDSQSVKNTDTAR----DKGY
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     -TWERLNRALREK-LRIQAGRHRHPSAACVDSQSVKTAGA-A---QEKGF
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     -TWVKIHDRLCSW-VRADNDRPASPSQAIIDSQSVPTATMVN---QAVGF
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      -TWVHINEHLRMQ-ERVSEDRHPSPSAAICDAQSVKVGNPRC---HSIGF
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      -TWRQINEHLRMQ-VRVSEDRHPSPSAAICDAQSVKVGNPRC---QSIGF
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        -TWETINHALVAM-VRESMGREASPTAGVIDSQSVKTTEAGG----PRGY
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            -VWEKLNHTLRGQ-VRTKLGKSTQPTAIAADSQSVKTDQKKG---EVYGF
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            -VWEKLNHTLRGQ-VRSKLGKSTQPTAIAADSQSVKTDQKKG---DVYGF
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           -CFEAMVSDMRSI-IRVGDGRKAQPSAVILDGRTLQSSCESG---PRAGY
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           SLLEQALKNQV-GAARQRLERNACSTVVIVDAQSVKNTDTAV----QKGY
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           SLLEQALKKSGWRGPRETGAQRAGSTLLIVDAQSVKNTDTAA----NKGY
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       -KWERINEALRER-YRVSRGRDPQPSAAVIDSQSVKTTQI-G---GPRSY
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       -LWLTLNHVLLMA-MREAQGREASPSAGVIDSQSVKTTEAGG----PRGY
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          -EWKSMWVRLLDK-HRHKLD----MSSVDLDGSHT-AALRGG---EEVGY
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          SFLEEVLKNMVA-RLRKQAGKAAQTSLIIVDAQSIKNTDTAK----EKGY
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          -KWDLVHDTLRDQ-VREKLGKQAIPSAAIMDSRSVKTAQK-G---GREAM
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       -VFETLHDRLRQQ-WRDRMGRAPQPTAAIIDAQSTRSTAQGG----NTGF
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       SALERALKKSVGE-AREKLGRNAMTSFLIVDAQSVKNTDSAE----RKGY
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         -CFENAVHDLRLF-SRIQQQRGQEPTAIILDSRTLQSTPESG---HRAGY
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         -CFENLAHDLHSL-VREDALKEGVPTVAIVDSRTLQSTPESG---GRAGY
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         -LWRGLNHDLLMT-AREAHGREASPSAGVIDSQSVKTTESGG----PRGY
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            -VIARVHDALRDT-SRELEGRDRQPTAGVIDPQSVKGAQTVD--AATRGY
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            -VIARVHDALRDT-SRELEGRDRQPTAGVIDPQSVKGAQTVD--AATRGY
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   -VFEVMNTVLVMS-LREIEGREASPSAGVIDSQSVKTTESGG----LSGY
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   -LFQTIHDVELML-DRERSGREASPSAGVIDSQSIKAPHAK-----TRGY
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   -RWEAMNHILVIL-SREQDGRDATPSVGIIDSQSVKTAENSG----PRGY
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     -IWERINAALRTE-LRIANGREPEPSAAILDSQSVKTTET-R---GVRGY
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   -VFERLAHAHPLA-DRERVGREASPAGV----------GVAG----ERGY
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   -TLDLIHHELYVK-CREAIGREASPTAAVIDSQSVKSAEKGGASIDPPGY
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   -SFADVAGDLRAV-LRMAAEREPEPSAVILDSRTLRFSPESG---ERAGY
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   -LFGRINHHLVMA-DRERIGREASPSAAVLDSQSIKTTESGG----PRGY
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   -HMDRINHHLVMR-DREKSGKEASPTLAIVDAQAVKCDAPQG----ERGY
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    -LWSEIAGLLTRA-VRQKRGRPAEPRTAILDSQSVVSGPQAG----VRGT
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  -CFADVAGDLRAV-LRQAAGREPEPSAVILDSRTQRSSPESG---ERAGY
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  -LWETINHLLVLS-ARELEGREASPTAGVIDSQSVKTSESGG----LAGY
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       SLLEQALKKSGWRGSYQTGAQRACTSFLIVDAQSVKNTDTAS----QKGY
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        -KFEQMHDRLRAQ-WREREERADSPSAAILDSQSTRSSPQGG----DSGY
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          -LWQSINQLLVMA-AREIEGREAQPTAGIIDSQSVKATQSGG----ISGY
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     -TLARIHHALFVE-VRELVGKEASPTAAIIDSQSVKGAEKRGARIDPSGY
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            -LWGRINHHLVME-ARDLEGREASPSAGVIDSQSVKTTESGG----ISGY
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       -LWLRINYHLVME-TRELEGKEASPTAGVIDSQSVKTTESGG----IAGY
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          -LWPRINHHLVMEEARELEGKEASPTAGAIDSQSVKTTESGG----IRGF
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      -LWNRINHHLVME-TRELEGRQASPTAGVIDSQSVKTTESGG----IRGF
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            -LWNRINHHLVME-TRELEGRQASPTAGVIDSQSVKTTESGG----IRGF
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           -LWGRINHRLVME-TRELEGRQASPSAGVIDSQSVKTTESGG----ISGY
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           -LWPRINHRLVME-TRELEGKEASPTAGVIDSQSVKTTESGG----IRGY
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        -IFAQLNYDLTAL-ARVKEGRKPDPTASVIDTQSVKTSTNVP--LTSQGT
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        -IFTQLNYDLTAL-ARVKEGRKPEPTASVIDTQSVKTSTNVP--LTSQGT
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  SLLEQALKKNQVGAAREKLGRNACSTLLIVDAQSVKNTDTAG----LKGY
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           -IFEKMNYEITKY-SRRKIGRNEQPSACIVDSQSVKTTEK-G---GSKAM
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          NLLERALKKIRLAPAREKQGRKACSTFLIVDAQSVKNSDTAG----QKGY
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           -TREGMNRHLIGR---NRS-GKPAPSDGVIIAISVRAPDDGQ----LPGE
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        DAGKKVKGRKRHI-VTDTCGFLIFLLVHAADIQDR-DGAVDVLAA----I
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        DAGKKVKGRKRHI-LTDTCGFLIFLLVHAADIQDR-DGAVDVLAA----I
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        DAGKKVKGRKRHI-LTDTCGFLIFLLVHAADIQDR-DGAVDVLAA----I
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         DAGKKIRGRKRHI-TTDTLGHVVAAVVHPADIQDR-DGAPLVATR----I
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      DAGKKIVGRKRHI-AVDTDGRLLLVQLTTADISDS-AGGQMILDA----I
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    DAGKKIKGKKRHI-LVDTVGLLLHAVVHPADIQDR-DGGVLVMAT----L
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        DAGKKVSGIKRHI-AVDTQGLPHAIAVTTAEVTDR-KGTLQALER----C
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        DAGKKVSGIKRHI-AVDTQGLPHAIAVTTAEVTDR-KGALQALER----C
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        DAAKKIVGRKRGI-LTDTIGLILAVTVTGAGLSEN-AVGIRLLDQ----A
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        DAGKRINGRKRHM-VVDTKGLPLMVMVTPADLHDS-AVAKEVLFR----L
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        DGGKKVNGRKRTI-LVDTMGLLLDVVVHGAHRSDH-QGLILL-ATW---F
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       DGGKKVKGRKRHL-IVDSLGLVLKVIVTEANASER-IVTAYALMSLLEEG
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        DGGKKVNGRKRTI-LVDTMGLLLDVVVHGAHRSDH-QGLILL-ATW---F
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      DAGKKVSGIKRHI-AVDSQGLPHAICITTANITDR-EGAKTLLRQ----N
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      DAGKKVSGIKRHI-IVDTQGLPHGILVTTADKTDR-QGALDAITI----H
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     DGGKKVKGRKRTI-LVDTMGLLIGATVHSARRSDH-QGMILL-GLW---F
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     DRAKYTKGRKRHT-AVDTLGLVLRVVVTAASLPER-EGGKKV-LTAVHQM
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      DGGKMVKGRKRHV-LVDTLGLVLMVMVTAANISDQ-RGAKIL-FWKARRQ
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      DGGKLIKGRKRHV-LVDTLGLILMVVVTAANISDQ-RGAKIL-FWKARRQ
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        DAGKCIKGRKRHV-LTDTNGLLVAAIVHAADIQDR-DGAPALLAS----V
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            DGCKKVKGRKRQT-LVDSLGLLLKVVVSEANAPER-VLAAYALMELLEER
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            DGCKKVKGRKRQT-LVDSLGLLLKVVVSEANAPER-VLAAYALMELLEER
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           DGYKRRRGSKVHM-AVDTLGQLIALTVTPANEQER-AQVKDLCEAV---Q
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           DAGKKVSGIERHI-AVDTQGLPYARAVSTAEVTDR-KGGLQAAAS----L
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           DAGKKVSGIKRHI-AVDTRGLPHAVAVSTAEVTDR-KGALLALSR----C
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       DGGKKVTGRKRQI-LVDTEGILLKVVVHSADLHDK-AGGMLL-LAW---L
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       DAGKKIKGRKRHI-LTDTQGNLVHAVIHAADIQDR-DGAPLVLAE----I
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          QGRKKRKTTNALY-LTDRQGLPIAMSSPKSGEHHDVHDIEKVIGDMFNDL
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          DGAKKINGIKRHI-AVDSQGLPHGIYVTRASETDR-DGAVTMLKD----H
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          MQQKKVKGRKQHI-IVDTLGLILCVVVHSAHLSDS-RGCHLLLIR----L
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       DAGKKVKGRKRHL-VVDTLGLLLAVTLTAASVQDR-DAAAEVVAQ----T
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       DAGKKVSGIKRHI-AVDTQGMPHAVAVTTAEVTDR-NGALVAIDR----C
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         DGAKRRKGTKVHL-AVDTLGHLVALMTTPANEQDR-AQVEALCLAA---Q
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         DGGKRRKGSKIHA-AVDTMGNVMTLLVTPGNEQDR-EQVYDLCREV---Q
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         DAGKKIKGRKRHI-LTDTEGNLVHAVVHTADIQDR-DGAPLVLAG----I
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            DAGKKVNGRKRFL-ITDTLGLLLSVLVLPASVQDR-DGGRRIMVD----H
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            DAGKKVNGRKRFL-ITDTLGLLLSVLVLPASVQDR-DGGRRIMVD----H
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   DAGKKVKGRKRHI-VTDTCGFLIFLLVHAADIQDR-DGAVDVLAA----I
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   DAGKKIVGRKRHI-AVDTDGRLLMVNLTPADISDS-AGAQMILDA----I
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   DAGKKIKGRKRHI-ATDTLGHVVAAVVHPADVQDR-DGAPLVATR----I
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     DAGKKVKRRKRHI-LVDTTGLILMVVVHAANIQDR-DGAKLV-LEQ---I
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   DPARRVVGRKRHA-LTDTDGRLLLATVSTAERHDS-HGGVALLRA----S
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   DAGKKIKGKKRHI-LVDTQGLLIHAIVHAADIQDR-DGGSFVMAT----M
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   DGAKRKRGAKVHL-AVDTPGHVVALHVTPASTDDR-AEVGRLAAEV---Q
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   DAGKKVKGRKRQA-LVDTDGRALVLDPQPADVQDR-DGAVPVLRL----S
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   DAAKQVLGRKRHL-AVDSDGRLLAVMITPANVQDQ-EGGIPLVKR----L
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    DGKKKVRGIKRHV-LTCSRGFVLAALVTAANVHDT-QAAGWLFDR----A
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  DGAKRMRGSKVHL-AVDTPGHGVALHVTPADVDDR-SQVGTLTCVV---Q
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  DAAKKIQGRKRHI-VTDTLGLMLFVLVHGADVQDR-DGAPSLLKA----I
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       DAGKKVSGIKRHI-AVDTQGLPHAIAVTTAEVTDR-KGALQAFRR----C
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        DAGKKVKGRKRSL-IVDTLGLLLAVSISAASVQDR-DAADDAVAY----S
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          DAGKKIKGRKRQI-VTDTLGFLIFVFIHAADIQDR-DGAPHVLKA----I
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     DAGKKVKGKKRHI-VVDRLAMILAAHIQPADVQDR-DGALPVLKE----V
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            DAGKKIKGRKRHI-VVDTLGLMVGLMVHSADIQDR-DGAPAVLKT----I
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       DAGKKIKGRKRHI-VVDTLGLMVGLVVHSADIQDR-DGAVAALKT----V
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          DAGKKIKGRKRHI-IVDTLGLMVGLMVHSADIQDR-DGAPDLLKS----I
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      DAGKKINGRKRHI-IVDTLGLMVGLMVHGADVQDR-DGAPDLLKS----I
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            DAGKKINGRKRHI-IVDTLGLMVGLMVHGADVQDR-DGAPDLLKS----I
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           DAGKKLKGRKRHI-IVDTLGLMVGLIVHGADIQDR-DGAFGLLKS----I
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           DAGKKTKGRKRHIIIVDTLGLMVGLMVHSADIQDR-DGAPDLLKS----I
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        DAAKKICGRKRGI-LTDTIGLILAVTVAGAGLSEN-AMGIRLLDQ----A
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        DAAKKIVGRKRGI-LTDTIGLILAVTVTGAGLSEN-AVGIRLLDQ----A
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  DAGKKVSGIKRHI-AVDTQGLPHAIAVTTAEVTDR-KGALQALQR----C
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           MEVKKVKGRKRHI-ITDTQGFILGCYVGAANENDR-DGIKIALNN----M
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          DAGKKVSGIKRHI-AVDTQGFPHAVAVTTAEVTDR-QGALEALKR----C
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           DAGDKSAGTKRHP--TDTRGH-------PVDIQDR-DGDCWLAK-----K
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        RRRFPWLRH--IFADGGYAGEKLRSALAS-MGK-WTVEIIRR--------
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        RKHFPWLRH--IFADGGYAGNKLRSALAS-MGK-WTVEIIRR--------
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        RKHFPWLRH--IFADGGYAGNKLRSALAS-MGK-WTVEIIRR--------
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         RSLFPWLRH--LIGDGGYAGEKLRGALAE-LGR-WTIEIVKR--------
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      RKRWPWMKH--LFADGAYDRLQLMDKAT--FLD-FTVEIIRR--------
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    FEMFPFLKK--LFVDSGYKGPKFANALAKVRPH-IEIEIVKR--------
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        QSNLTHVQS--LLCDSGYTGVRFPDGAREILGEQLTVQIAKR--------
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        QSNLTHVQT--LLCDSGYTGVRFADGVREILGEQLTVQIAKR--------
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        KRTYPTIVK--SWVDTGFKNAV--IEHGATL-G-IDVEVVNR--------
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        RLTHPEITL--VWADSAYAGK-LVTWAKKHL-N-LTIKTVSR--------
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        APLWQCLQV--IWTDSTFGGKDFIYWVEHTF-G-WNLNVVSK--------
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       TQLLESVKS--MLVDQGYRGDTFGLAIWLLI-Q-AKVQVISR--------
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        APLWQCLQV--IWTDSTFGGKDFIYWVEHTF-G-WNLNVVSK--------
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      TKRLSRVKN--VMVDGGYRGEAFANSVKTLLGETVTTEVAKR--------
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      RDTLQNVEV--VLVDGGYTGEPFYLAVKNLIRA--RVEVAKR--------
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     SAFWQSIQL--IWTDQTFGGQAFTAWFQKTF-G-WTMEVVKR--------
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     AEAVQRLYL--IWADGGYSGQPFLQWAMDNF-R-WVIAVVLR--------
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      GASLSRLVR--IWADAGYQGQALMKWVMDRF-Q-YVLEVVKR--------
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      GASLGRLVR--IWADAGYQGEALMQWVMDRF-R-YILEVIKR--------
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        RTLFPWLRH--VFADGSYAGPKLETALAQ-IGT-WTLEIVKR--------
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            PELLEKVQV--MWVDSGYDGDKFALSVWLMI-Q-AHVEVIRR--------
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            PELLEKVKV--MWVDSGYDGDKFALCVWLMI-Q-AHVEVIRR--------
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           QATGETVKV--AWADQGYTGDEARKAAKA--AG-IDLQIVKL--------
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           QAWARAGAT--RAVRQRL*GPALRAGRD--------GADRQA--------
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           KAGLDRVQS--VLADSGYVGGPFAQGVREILGEHVTVQIAKR--------
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       HLLFPRLVL--VWSDTHYQG--LKAWAKGHL-G-WTIEVVKHWWTGVRGF
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       VKPFPWLRH--VFADGGYARDKLKEALRR-IGK-WTIDIIKR--------
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          EKSHIRVDGLFLNADAGFDCDVLRGFLGEKEII-ANICINKRR-------
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          KEQLAKVKK--VLVDGGYSGEVFANQVKEVLQG-AEVEVAKR--------
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          FNTFPSIKH--IWVDGGYQKG-CIMWAYGVL-G-YTLEVVQR--------
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       CSKVPGLKT--LYTDGAYGGKCAQTIEQ--THG-IRVEVVRHPGNRSTGT
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       KPNLGLVES--VLVDGGYTGEPFADGVMERLK--ATVQVVKR--------
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         ETTGGMLEL--AFVDQGYTGEQPLEAARK--GN-IELVVVKR--------
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         QVTGDHIDV--VIADQGYTGEQPQIDASL--ND-VELVVVKR--------
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         VNRFPWLRH--LFADGGYAGDKLRDALRK-IGT-WTLDIVKR--------
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            YFDHWQCRH--LFADGGFAGRFVDWAGE--VMK-TSVDIVRK--------
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            YFDHWQCRH--LFADGGFAGRFVDWAGE--VMK-TSVDIVRK--------
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   RRRFPWLRH--IFADGGYAGDKLRSALAS-MGK-WTLEIIRR--------
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   RKRWPWVKH--LFADGAYDRLQLMDKAA--YLD-FVVEVIRR--------
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   RSLFPWLRH--LIGDGGYAGEKLRGALAE-LGR-WTIEIVKR--------
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     KGTFSRLQL--IWADAAYAGQ-LVDWVKITC-G-WVLEIVRR--------
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   RRLWPFLAH--CFADQAYQGERVGSA-----TA-ITVEILRP--------
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   FGLYPFLMK--LYADGGYQGPLFRRAVAKIMER-VNVEIVKR--------
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   AETSDSVEL--AFVDQGYSGPKPAAAASA--HG-IALEVVKA--------
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   RRTFPFITK--AFADAGYAGDRPATA-----TS-ITVAIVRK--------
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   VRLCPWIKT--IVVDGGYKARFIEAVQAG--TS-RVVEVVVR--------
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    AQAGWAPER--VKVDGIYTGARMDEAAAR--HG-LDVQVSTR--------
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  AETDGGVEK--AFVDQGYTGEKAATAAQA--NG-IALEVVKA--------
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  RHRFPWLRH--IFADGGYAGEKLRGALHG-QGV-WTIAIIKR--------
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       RSGLGRVVA--VLADSGYVGEPFAQGVRDVLSETVAVQIARR--------
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        KEKYPSLST--LFVDSAYAGKWAQRTHQ--LHA-IDVQVIRGPNNRRTGQ
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          RRRFPWLRH--IFADGGYAGAKLRRAMSG-HGD-WTIEIVKR--------
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     RRLFPFIER--VFADGGYQGASTAAAVRE-LGM-WHLEIVKR--------
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            LKRWPWLRH--IFADGGYAGSKLRGALQK-IAA-FTLQIVKR--------
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       LRRWPWLRN--IFADGGYAGPKLRASLRN-VAK-FTLQIVKR--------
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          KNRWPWLLH--VFADGGYAGDKLKKRLQK-IGK-WTLEIIKR--------
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      RHRWPWLLH--VFADGGYAGEKLKSRLKK-IGK-WTLDIIKR--------
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            RHRWPWLLH--VFADGGYAGEKLKSRLKK-IGK-WTLDIIKR--------
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           RHRWPWLRH--VFADGGYAGDKLKGRLAK-FGQ-WTIEIVKR--------
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           RHRWPWLLH--VFADGGYAGDKLKRRLKK-IGR-WTIEIIKR--------
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        KASYPTIAK--SWVDTGFKNAV--IEHGATL-G-IDVEVVNR--------
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        KRTYPTIVK--SWVDTGFKNAV--IEHGATL-G-IDVEVVNR--------
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  KPRLSRLQS--LLCDAGYIGRPFAQGVQQILGGHVTVQIAKR--------
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           RTKYTKVKK--MWADMGYQGRNLKNHIKEEY-D-IDIEIVKR---PPCRF
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          RSGLGRVKR--LLCDSGYTGDPFAEGVQDILGKHVTVQIAKR--------
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           RADFPWVTD--I-HDGGYFGKTLRVPLMTRR---NSSEIPRR--------
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        -----------SDTVKGFQILPRRWVVERTFAWL-----GRCRRLAKDWE
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        -----------SDTGRGFEILPRRWVVERTFAWL-----GRCRRLAKDWE
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        -----------SDTARGFEILPRRWVVERTFAWL-----GRCRRLAKDWE
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         -----------SDRAEGFVVLPKRWIVERSFAWL-----GRCRRLTKDVE
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      -----------SETAKGFEILPRRWVVERTFGWM-----IRWRRLVKDYE
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    -----------SDQVSSFVVLPKRWIVERTIAWL-----NRCRRLAKDWE
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        ------------SELHTFKVMPKRWIVERSFAWL-----EKNRRLWKNCE
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        ------------SELHTFKVMPKRWIVERSFAWL-----EKNRRLWKNCE
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        -----------NPEKRGFHVVKRRWVVERSIGWI-----MMHRRLARDYE
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        -----------PKDTSGWVLLPRRWVVERSLAWM-----MNARRHARDYE
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        -----------KQGQKGFEVLPRRWVVERTFAWF-----GRYRRLSKDYE
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       -------------SGKSFEVLPKRWIVERTFGWL-----NWYRRLSKDYE
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        -----------KQGQKGFEVLPRRWVVERTFAWF-----GRYRRLSKDYE
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      ------------DELHTFKVIPKRWVVERSFAWL-----EKNRRLWKNCE
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      ------------SELHKFAVIPQRWVVERSFAWL-----EKCRRLWKNCE
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     -----------PEEQQGFEVLPRRWVVERTFAWF-----GHYRRLSKDYE
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     -----------PEQTKGFVLLKKRWVVERTFGWF-----NWYRRLSKDYE
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      -----------SDNLAGFQVVSKRWIVERTFGWL-----LWSRRLNKDYE
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      -----------SDNLAGFKVVPKRWIVERTFGWL-----LWSRRLNKDYE
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        -----------SDAAKGFELLPRRWVVERTIAWL-----NRNRRLAKDFE
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            -------------TEQEFRILPKRWVVERTFGWL-----NQYHRLSKDYE
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            -------------TEQEFQVLPKRWVVERTFGWF-----NQYHRLSKDYE
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           -----------PEAKKGFVLLPRRWVVERSFGWL-----SRFRRLSRDFE
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           ------------PRTTAFKVMPKRWIVERSFAWL-----EKNRRLWEKCE
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           ------------SELHTFKVIPKRWVVERSFAWL-----DKNRRLWKNCE
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       WCA---PGQEPPEVLTGFHVLPRRWVVERCFSWL-----LTNRRFVVDYE
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       -----------SDTAKGFEVLPRRWVVERTLAWL-----NRNRRLAKDFE
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          --------ENADDIFVDDELYAERYSIERTNAWM-----DSFRTLLNRFD
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          ------------SELHRFKVIPKRWIVERSFGWL-----EKCRRLWKNCE
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          -------------LSNGFHILKKRWIVERTFAWL-----SFSRRLSKDYE
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       WQDAQQPLWP-EVVAKGFVVQAKRWVVERTHAWN-----ERARRLMAHHD
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       ------------NELHTFVVLPKRWIVERSFAWL-----EKCRRLWKNCE
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         -----------PDASRGFVLLPKRWVVERSFAWL-----SRFRRLGRDLE
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         -----------PTGATGFVLLPLRWVVERTFAWT-----ARFRRLSRDLE
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         -----------SNKTKGFQVLPRRWVVERTLAWL-----SRNRRLAKDFE
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            -----------NPGQRGFEALPKRWVVERTFSWI-----TAHRRLARISF
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            -----------NPGQRGFEALPKRWVVERTFSWI-----TAHRRLARDYE
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   -----------SDTAKGFQILPRRWVVERTFAWL-----GRCRRLAKDWE
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   -----------RDGAKGFEVLPRRWVVERTFGWM-----TRWRRLVRDYE
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   -----------SDRAQGFVVLPKRWIVERSFAWL-----GRCRRLTRDVE
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     -----------KDDVKGFQVLPRRWVVERTFGWL-----GRYRRLSKDYE
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   -----------DKGQKGFAVQPRRWVIERTFGWI-----ARCRRRARDYE
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   -----------SDHAKGFVVLPKRWVVERTFAWL-----GRCRRLAKDWE
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   -----------PEAKRGFVLLPRRWVVERSFAWA-----TRCRRLVKDYE
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   -----------PPGQVGFAVQPRRWVVERFFAWI-----SRNRRLWKDPE
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   -----------PQFGKGFVLLPKRWRIEQSIGAL-----TVSRRLKLDYD
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    -----------PPEVKGFEPLPLRWRIEATFGTLS----TRYRRLTRHWE
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  -----------PEAKRGFVLLPRRWVVERSLAWA-----VRCRRLVKDYE
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  -----------SDTARGFEVLPRRWVVERTFAWL-----GRCRRLAKDWE
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       ------------SELHTFAVIPKRWVVERSFAWL-----EKNRRLWKNCE
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        WHSEQGDLFSVEPVQTGFVVMPKRWVVERTHAWN-----ERARRLIMHHD
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          -----------SDHAKGFVVLPKRWVVERTFAWL-----GRCRRLAKDWE
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     -----------SDTTKGFEVLPKRWIVERTFGWL-----GRCRRLAKDFE
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            -----------TDKAKGFEVLPRRWVVERTFAWL-----GRCRRLAKDWE
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       -----------TDKAKGFEVLPRRWVVERTFAWL-----GRCRRLAKDWE
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          -----------SDKAKGFEILPRRWVVERTSAWL-----GRCRRLAKDFE
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      -----------SDKTKAFEILPRRWVVERTFAWL-----GRCRRLAKDFE
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            -----------SDKTKAFEILPRRWVVERTFAWL-----GRCRRLAKDFE
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           -----------SDKAKGFTVLPRRWVVERTFAWL-----GRCRRLAKDWE
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           -----------SDKAKGFEVLPRRWVVERTFAWL-----GRCRRLAKDVE
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        -----------NPEIRGFHVVKRRWVVERSIGWI-----MLHRRLARDYE
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        -----------NPEKRGFHVVKRRWVVERSIGWI-----MMHRRLARDYE
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  ------------SELHTFKVMPKRWVVERSFAWL-----DKNRRLWKNCE
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           WVHKDTPPELLPTREQGFKVQPRRWVVERTFAWV-----NRNRRLSKEYD
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          ------------SELHTFKVMPKRWSVERSFAWL-----EKNRRLWKNCE
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           -----------SNRDGLFLPLIIRANVEKSAALLSPFGLETCSRLEKDLP
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        QSIASSTAWTLIASIRMLTRRTARHCQA----------------------
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        KSIASSTAWTLIASIRMLTRRTARHCQC----------------------
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        KSIASSTAWTLIASIRMLTRRTARHCQC----------------------
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         ATISSSHAWLMIAHIRRVLRKINQTAF-----------------------
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      QRIDVAEAMIHIAMGSLMLRRNAHP-------------------------
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    CLNRKALAFLRLASIRLMLRKLCNPA------------------------
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        RKLNTSLQFIHLAFLALLLRRS----------------------------
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        RKLNTSLQFIHLAFLALLLRRS----------------------------
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        TLTTSSEAMIHIASIDNLAKRITDETTPTWRGTY----------------
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        RLIQHSEALITWAAITVMTKRLTRTGPTGWSKKPKATADSSPQVSTAATA
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        YLPTTSETMLYVAMVHLMLQRLA---------------------------
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       HLPEMSEAAIYAVMTRIMLRRLSATSTTL---------------------
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        YLPTTSETMLYVAMVHLMLQRLA---------------------------
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      RLLNSSLQFTNLAFIALLLKRL----------------------------
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      KHLNTSLQFINLAFLRLRLHRKYSG-------------------------
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     YLPTTSEMMLYAAMVNLMLKRLA---------------------------
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     RLTDSSEAMIYICMIRLMVRRLA---------------------------
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      VLTRTAEALAYVAMIRLMVRRLAQEH------------------------
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      VLTRTAEALVYVAMIRLMVRRLAQEY------------------------
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        ATVESAVAWVFIASVKLLSRRVART-------------------------
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            HLPEMSEAAIYAVMTRIMLRRLVS--------------------------
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            RLTEMSEAAIYAVMTRIMLRRLVS--------------------------
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           RMPQVLAGLHFVVFCILMLPKAAFWLALEASS------------------
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           RLLNTSLQFIHLAFLALLLNRL----------------------------
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           RLLNTSLQFIHLAFLCLMLKRL----------------------------
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       RLPKTDEAFIYMAMGRILLRRLAKALPN----------------------
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       HTIASATAWCFIVSVQLFVHHIARR-------------------------
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          TTVSSWMSWNYLAFAVLLLKKISRKQKV----------------------
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          RRLTTSLQMVVLAFLRICLQRL----------------------------
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          HNPKSSETHIKIVMIRIMLKRLL---------------------------
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       RSNWAPLAWVWLAEARILASRLAA--------------------------
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       RKLNTSLQMIHLAFLRLLLRRS----------------------------
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         RLSSTLIGFHFVAACVLMLAKLKPLLG-----------------------
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         RLQSSLLGFHWLAVSVTLLNKLKPILGSLA--------------------
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         QTIASATAWLFIASIQLFTRRIARLSNYTG--------------------
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            TRPDVVAQSGQRAT-------VPAAAATCTVDEPSASRSTNSTS------
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            RKPATSETFIRLAMIRTMVRRLPRQLAHSGQTTPSTTEGSR--N------
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   QSIASSTAWTLIASIRMLTRRTARHCHG----------------------
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   RRIDVSQAMIFVAMGANLTRRNAHP-------------------------
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   ATISSSHAWLMIAHIRRVLRKINQTAF-----------------------
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     GLTESSQAFIYAAMIHIMSRRLAKIEPLSR--------------------
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   ATPSSTIAFFVLAAAMILVRRLAQTL------------------------
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   NLNRKALAFLRLASIRLMLRKLCNPA------------------------
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   RYASTLAGLHMVAFVCFMLRQAEKLMTGA---------------------
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   ATLASAQAFLYAAAAMILVRRLGRAS------------------------
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   TLLHISAAAMLFASITRLLASITMK-------------------------
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    QSPAAAEDAISIANCHRLLRAYHREQDCAA--------------------
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  RYASTLAGMYMVAFVCDMLRKLGRIVESS---------------------
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  KTTASSTAWAFIASIRLMSRRLAGYCFPT---------------------
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       RLLNTSLQFIHLAFLALLLKRL----------------------------
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        RLFAVSEAWVWLAEARILARRLTT--------------------------
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          KSIESATAWAQIASIRMLIRRIARYWIYE---------------------
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     NLSRMALAFLRLAMIRLMLRRIARLRKS----------------------
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            KSVASAEAWVTIAHIRVLTRRLARYGYR----------------------
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       KSIASAEAWMLIAHIRILTRRLARYHVY----------------------
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          KSVASAEAWITIAHIRMLTRRLARYGYR----------------------
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      KSIASAQAWITIAHIRMLTRRLARYCYR----------------------
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            KSIASAQAWITIAHIRMLTRRLARYCYR----------------------
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           KTIASAEAWITIAHIRILTRRLAR--------------------------
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           RSIASAEAWIMIAHIRLITRRLARYGYR----------------------
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        TLTASSEAMIRIASIDNLAKRITDETTPTWRGTY----------------
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        TLTTSSEAMIHIASIDNLAKRITDETTPTWRGTY----------------
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  RWLNTSLQFVHLAFLVLLLKRL----------------------------
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           LLTTSTENFIYLAMSRVMLKREYA--------------------------
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          RRLNTSLQFIHLAFLALLLRRS----------------------------
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           EPVADGNSFIANAEIKALRRRKNRLSCLGR--------------------
+
+IS1031A.1|IS5|IS1031|Transposase|Acetobacter        ----------------------------
+IS1031C.1|IS5|IS1031|Transposase|Acetobacter        ----------------------------
+IS1031D.1|IS5|IS1031|Transposase|Acetobacter        ----------------------------
+IS1032.1|IS5|IS1031|Transposase|Acetobacter         ----------------------------
+IS12528.1|IS5|IS1031|Transposase|Gluconobacter      ----------------------------
+IS1355.3|IS5|IS1031|Transposase|Methylobacterium    ----------------------------
+IS1480a.1|IS5|IS1031|Transposase|Xanthomonas        ----------------------------
+IS1480b.1|IS5|IS1031|Transposase|Xanthomonas        ----------------------------
+IS468A.1|IS5|IS1031|Transposase|Streptomyces        ----------------------------
+IS4811.3|IS5|IS1031|Transposase|Streptomyces        GRPAGSATEEPARAAPLSARQPQPAGRF
+IS5Sa.1|IS5|IS1031|Transposase|Synechocystis        ----------------------------
+IS5Sa2.3|IS5|IS1031|Transposase|Synechocystis       ----------------------------
+IS5Sb.1|IS5|IS1031|Transposase|Synechocystis        ----------------------------
+ISAba15.3|IS5|IS1031|Transposase|Acinetobacter      ----------------------------
+ISAba37.3|IS5|IS1031|Transposase|Acinetobacter      ----------------------------
+ISAcma20.1|IS5|IS1031|Transposase|Acaryochloris     ----------------------------
+ISAcma43.1|IS5|IS1031|Transposase|Acaryochloris     ----------------------------
+ISAcma5.1|IS5|IS1031|Transposase|Acaryochloris      ----------------------------
+ISAcma9.1|IS5|IS1031|Transposase|Acaryochloris      ----------------------------
+ISAli1.1|IS5|IS1031|Transposase|Azospirillum        ----------------------------
+ISAva7.3|IS5|IS1031|Transposase|Anabaena            ----------------------------
+ISAva8.3|IS5|IS1031|Transposase|Anabaena            ----------------------------
+ISAzo23.1|IS5|IS1031|Transposase|Azoarcus           ----------------------------
+ISAzo36.1|IS5|IS1031|Transposase|Azoarcus           ----------------------------
+ISAzo37.1|IS5|IS1031|Transposase|Azoarcus           ----------------------------
+ISAzs16.1|IS5|IS1031|Transposase|Azospirillum       ----------------------------
+ISAzs28.1|IS5|IS1031|Transposase|Azospirillum       ----------------------------
+ISBf6.1|IS5|IS1031|Transposase|Bacteroides          ----------------------------
+ISCaa8.3|IS5|IS1031|Transposase|Candidatus          ----------------------------
+ISCaa9.3|IS5|IS1031|Transposase|Candidatus          ----------------------------
+ISCARN14.1|IS5|IS1031|Transposase|Metagenomic       ----------------------------
+ISCARN82.3|IS5|IS1031|Transposase|Metagenomic       ----------------------------
+ISDge7.1|IS5|IS1031|Transposase|Deinococcus         ----------------------------
+ISDra5.1|IS5|IS1031|Transposase|Deinococcus         ----------------------------
+ISEc61.1|IS5|IS1031|Transposase|Escherichia         ----------------------------
+ISFal3A.1|IS5|IS1031|Transposase|Frankia            ------KPARPSNPAPVS----------
+ISFal3B.1|IS5|IS1031|Transposase|Frankia            ------KI--------------------
+ISGdi1.1|IS5|IS1031|Transposase|Gluconacetobacter   ----------------------------
+ISGdi2.1|IS5|IS1031|Transposase|Gluconacetobacter   ----------------------------
+ISGdi3.1|IS5|IS1031|Transposase|Gluconacetobacter   ----------------------------
+ISMac15.1|IS5|IS1031|Transposase|Methanosarcina     ----------------------------
+ISMdi17.1|IS5|IS1031|Transposase|Methylobacterium   ----------------------------
+ISMdi21.3|IS5|IS1031|Transposase|Methylobacterium   ----------------------------
+ISMdi26.1|IS5|IS1031|Transposase|Methylobacterium   ----------------------------
+ISMex40.1|IS5|IS1031|Transposase|Methylobacterium   ----------------------------
+ISMno12.1|IS5|IS1031|Transposase|Methylobacterium   ----------------------------
+ISMpo5.1|IS5|IS1031|Transposase|Methylobacterium    ----------------------------
+ISMtsp14.1|IS5|IS1031|Transposase|Methylobacterium  ----------------------------
+ISMtsp20.1|IS5|IS1031|Transposase|Methylobacterium  ----------------------------
+ISNieu4.1|IS5|IS1031|Transposase|Nitrosomonas       ----------------------------
+ISPsy19.1|IS5|IS1031|Transposase|Pseudomonas        ----------------------------
+ISRel20.1|IS5|IS1031|Transposase|Rhizobium          ----------------------------
+ISRhru6.3|IS5|IS1031|Transposase|Rhodospirillum     ----------------------------
+ISRl2.1|IS5|IS1031|Transposase|Rhizobium            ----------------------------
+ISRm15.1|IS5|IS1031|Transposase|Sinorhizobium       ----------------------------
+ISRm4-1.1|IS5|IS1031|Transposase|Rhizobium          ----------------------------
+ISRm4-3.1|IS5|IS1031|Transposase|Sinorhizobium      ----------------------------
+ISRm4.1|IS5|IS1031|Transposase|Rhizobium            ----------------------------
+ISRtr3.1|IS5|IS1031|Transposase|Rhizobium           ----------------------------
+ISRtr4.1|IS5|IS1031|Transposase|Rhizobium           ----------------------------
+ISScl1.1|IS5|IS1031|Transposase|Streptomyces        ----------------------------
+ISSco3.1|IS5|IS1031|Transposase|Streptomyces        ----------------------------
+ISStma16.3|IS5|IS1031|Transposase|Stenotrophomonas  ----------------------------
+ISWpi1.3|IS5|IS1031|Transposase|Wolbachia           ----------------------------
+ISXo3.1|IS5|IS1031|Transposase|Xanthomonas          ----------------------------
+ISZmo1.1|IS5|IS1031|Transposase|Zymomonas           ----------------------------
+//

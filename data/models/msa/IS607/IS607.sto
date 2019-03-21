@@ -1,0 +1,307 @@
+# STOCKHOLM 1.0
+
+#=GS        IS1535.1|IS607|None|Transposase|Mycobacterium DE    tuberculosis
+#=GS        IS1536.1|IS607|None|Transposase|Mycobacterium DE    tuberculosis
+#=GS        IS1537.1|IS607|None|Transposase|Mycobacterium DE    tuberculosis
+#=GS        IS1538.1|IS607|None|Transposase|Mycobacterium DE    tuberculosis
+#=GS        IS1539.1|IS607|None|Transposase|Mycobacterium DE    tuberculosis
+#=GS        IS1602.1|IS607|None|Transposase|Mycobacterium DE    tuberculosis
+#=GS            IS1921.1|IS607|None|Transposase|Acidianus DE    ambivalens
+#=GS          IS607.1|IS607|None|Transposase|Helicobacter DE    pylori
+#=GS   ISAfe10.1|IS607|None|Transposase|Acidithiobacillus DE    ferrooxidans
+#=GS   ISAfe11.1|IS607|None|Transposase|Acidithiobacillus DE    ferrooxidans
+#=GS         ISArma1.1|IS607|None|Transposase|Arthrospira DE    maxima
+#=GS            ISBce17.1|IS607|None|Transposase|Bacillus DE    cereus
+#=GS     ISBlo12.1|IS607|None|Transposase|Bifidobacterium DE    longum
+#=GS          ISC1904.1|IS607|None|Transposase|Sulfolobus DE    solfataricus
+#=GS          ISC1913.1|IS607|None|Transposase|Sulfolobus DE    solfataricus
+#=GS          ISC1926.1|IS607|None|Transposase|Sulfolobus DE    sp.
+#=GS         ISCARN1.1|IS607|None|Transposase|Metagenomic DE    data
+#=GS        ISCARN56.1|IS607|None|Transposase|Metagenomic DE    data
+#=GS ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor DE    bescii
+#=GS         ISCbo10.1|IS607|None|Transposase|Clostridium DE    botulinum
+#=GS          ISCbt3.1|IS607|None|Transposase|Clostridium DE    botulinum
+#=GS          ISCbt4.1|IS607|None|Transposase|Clostridium DE    botulinum
+#=GS        ISCfe1.1|IS607|None|Transposase|Campylobacter DE    fetus
+#=GS        ISChh1.1|IS607|None|Transposase|Campylobacter DE    hyointestinalis
+#=GS      ISDka1.1|IS607|None|Transposase|Desulfurococcus DE    kamchatkensis
+#=GS        ISLhe9.1|IS607|None|Transposase|Lactobacillus DE    helveticus
+#=GS           ISNma20.1|IS607|None|Transposase|Natrialba DE    magadii
+#=GS           ISPfu4.1|IS607|None|Transposase|Pyrococcus DE    furiosus
+#=GS           ISSis5.1|IS607|None|Transposase|Sulfolobus DE    islandicus
+#=GS           ISSis7.1|IS607|None|Transposase|Sulfolobus DE    islandicus
+#=GS        ISSoc2.1|IS607|None|Transposase|Synechococcus DE    sp.
+#=GS          ISSto11.1|IS607|None|Transposase|Sulfolobus DE    tokodaii
+#=GS          ISSto12.1|IS607|None|Transposase|Sulfolobus DE    tokodaii
+#=GS          ISSto13.1|IS607|None|Transposase|Sulfolobus DE    tokodaii
+#=GS         ISTko1.1|IS607|None|Transposase|Thermococcus DE    kodakarensis
+#=GS         ISTko2.1|IS607|None|Transposase|Thermococcus DE    kodakarensis
+#=GS         ISTsi1.1|IS607|None|Transposase|Thermococcus DE    sibiricus
+#=GS         ISTvo1.1|IS607|None|Transposase|Thermoplasma DE    volcanium
+#=GS            ISvAR158_1.1|IS607|None|Transposase|Virus DE    AR158
+#=GS             ISvNY2A_1.1|IS607|None|Transposase|Virus DE    NY2A
+
+IS1535.1|IS607|None|Transposase|Mycobacterium         ---------------MNLADWAESVGVNRHTAYRWFREGTLPVPAE-RVG
+IS1536.1|IS607|None|Transposase|Mycobacterium         ---------------MNLAAWAERNGVARVTAYRWFHAGLLPVPAR-KVG
+IS1537.1|IS607|None|Transposase|Mycobacterium         ---------------MNLAVWAERNGVAWVIAYRWFRAGLLPVPAQ-RVG
+IS1538.1|IS607|None|Transposase|Mycobacterium         ---------------MNLATWAERNGVAPGTAYRWFRAGLLSVMAR-RVG
+IS1539.1|IS607|None|Transposase|Mycobacterium         ---------------MNLVVWAEGNGVARVIAYRWLRVGRLPVPAR-RVG
+IS1602.1|IS607|None|Transposase|Mycobacterium         ---------------MNLAVWAERNGVARVTAYRWFHAGLLPVPAR-KAG
+IS1921.1|IS607|None|Transposase|Acidianus             --------------MLKPKEVCQRLGISYRTLQSYVKKGYIKPVIL-QSG
+IS607.1|IS607|None|Transposase|Helicobacter           ----------MNKRMLSIGQASKLLGVTIQTLRNWDKKDLLKPDELTKGG
+ISAfe10.1|IS607|None|Transposase|Acidithiobacillus    -MEPIRPPLVLVFMGKKLSDYAKERGIGYRAAWNRFKAGRIPGAWL-DET
+ISAfe11.1|IS607|None|Transposase|Acidithiobacillus    -----------MSKAYSMGEFAKRIGRSAQTVRRWEREGKLVAKRL-PSG
+ISArma1.1|IS607|None|Transposase|Arthrospira          ----V--EDKPIARYVKPKEAAQILGVHERTLRRWDENGSIETIRT-PAG
+ISBce17.1|IS607|None|Transposase|Bacillus             --------------------------------------------------
+ISBlo12.1|IS607|None|Transposase|Bifidobacterium      ---------------MRVREWARREGFNEQTVWQWCRENRMPVPFE-RMS
+ISC1904.1|IS607|None|Transposase|Sulfolobus           --------------MLRSKEACQRLGISYATLREYVKKGYIKPVIL-QSG
+ISC1913.1|IS607|None|Transposase|Sulfolobus           -----------MERLLRPKEACQLLGISYSTLLRWIREGKIRVVTT-EGG
+ISC1926.1|IS607|None|Transposase|Sulfolobus           -MHLL--STNFVERLLRPKEACQLLSISYSTLLRWIREGKIRVVTT-EGG
+ISCARN1.1|IS607|None|Transposase|Metagenomic          -----------------LSDYARERGIGYRAAWNRFKAGRIPGAWM-DET
+ISCARN56.1|IS607|None|Transposase|Metagenomic         ---------------VKLSEWARRTGISYKTAWRWTQDGIMPVPWR-KLP
+ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor  -------------MLLSVQKVKEIYSICRRTLINWEKEGLITPLRT-PKG
+ISCbo10.1|IS607|None|Transposase|Clostridium          ---------------MKSKEVLELLQITRPTLTKYVKEGIIKTITL-PNG
+ISCbo6.1|IS607|None|Transposase|Clostridium           ------------MKYYSIGQFSKLIGKTSQTLREWDKKNILKPHHVAPTG
+ISCbt3.1|IS607|None|Transposase|Clostridium           ------------MNTYKPKDFAEMIGVSVKTLQRWDNEGKLKAYRN-PSN
+ISCbt4.1|IS607|None|Transposase|Clostridium           ------------MELMSIGKFAKRVGVNVVTLRRMEAKGEFLPAHVSSGG
+ISCfe1.1|IS607|None|Transposase|Campylobacter         -----------MSKLLSIGQASKALGVTIQTLRNWDKKGLLKPDELTRGG
+ISChh1.1|IS607|None|Transposase|Campylobacter         -----------MNKLLSIGQASKALGVTIQTLRNWDKKGLLKPDDMTKGG
+ISDka1.1|IS607|None|Transposase|Desulfurococcus       ----------MLERLLKPREFCEIVGISYRTFKRWVSEGRVSVVRT-PSG
+ISLhe9.1|IS607|None|Transposase|Lactobacillus         ---MA--SNTQLPKYLSIGQASKYLNIAIPTLRLWERKGIIKPIRTA-GN
+ISNma20.1|IS607|None|Transposase|Natrialba            -----------MPRSDSIGEFADELGVHPQTVKRWCRNDDLDYTRT-PGG
+ISPfu4.1|IS607|None|Transposase|Pyrococcus            MNNCE--CMVVKEKLYTVKQASEILGVHPKTIQKWDREGKIKTVRT-PGG
+ISSis5.1|IS607|None|Transposase|Sulfolobus            --------------MLKPKEVCQKLGISYRTLQSYVKKGYIKPVIL-QSG
+ISSis7.1|IS607|None|Transposase|Sulfolobus            --------------MLKPKEVCQKLGISYRTLQSYVKKGYIKPVIL-QSG
+ISSoc2.1|IS607|None|Transposase|Synechococcus         -----------MARYVKPREAADYFGVCLHTLRRWEQKGWIHAVRT-PSG
+ISSto11.1|IS607|None|Transposase|Sulfolobus           -----------------------------------MKKGYIKPVIL-QTG
+ISSto12.1|IS607|None|Transposase|Sulfolobus           -----------MERYLTPSEVAEIFGMSRSGVIKWIREGKIKAIE--ING
+ISSto13.1|IS607|None|Transposase|Sulfolobus           -----------MERLLRPKEACQLLGISYSTLLRWIREGKIRAVMT-EGG
+ISTko1.1|IS607|None|Transposase|Thermococcus          --------MVVKEKLYTVKQASEILGVHPKTIQKWDKEGKIKTIRT-PGG
+ISTko2.1|IS607|None|Transposase|Thermococcus          ------------MKLYRTGKASELLGISKPTLLRKIKTGEIKAYK--IGK
+ISTsi1.1|IS607|None|Transposase|Thermococcus          -----------MVRLYRTGEASKKLGVSKMTILRWIKSGKLKAHR--IGK
+ISTvo1.1|IS607|None|Transposase|Thermoplasma          ---------------MKAEEVLNLLQISRKTLHVYSKDGRIRYTVM-PNK
+ISvAR158_1.1|IS607|None|Transposase|Virus             -------------MFATLRDAKKHYQCNHKTIWKWADEGIIRTVDT-PGG
+ISvMimi_1.1|IS607|None|Transposase|Mimivirus          -----------MSKYMGGKEASSVLGVHQRTLYQWDKKGWIKTIRT-KGG
+ISvMimi_2.1|IS607|None|Transposase|Mimivirus          -----------MPKYVRRKEVLEVLKVHYQTLYRMEEKGLIEVKRT-NGG
+ISvNY2A_1.1|IS607|None|Transposase|Virus              -MSSK--NVKETAKFVAPGRARKILGISDATLRRWAETKKIESFIT-PSG
+
+IS1535.1|IS607|None|Transposase|Mycobacterium         RLILVKT-----------AASASAAAAGVVLYARVSS--HDRRS--DLDR
+IS1536.1|IS607|None|Transposase|Mycobacterium         RLILVDE-----------LASEAGAQPKTAVYARVSS--ADQKS--DLDR
+IS1537.1|IS607|None|Transposase|Mycobacterium         RLILVND-----------PAVEESGRGRTLVYARVSS--ADQRS--DLDR
+IS1538.1|IS607|None|Transposase|Mycobacterium         RLILVDE-----------PAGDAGMRSPTAVYARVSSDAADQKA--DLDR
+IS1539.1|IS607|None|Transposase|Mycobacterium         RVILVDE-----------PAGQPGRWGRTAVCARLSS--ADQKV--DLDR
+IS1602.1|IS607|None|Transposase|Mycobacterium         RLILVDD-----------QPADRSRRARTAVYARVSS--ADQKP--DLDR
+IS1921.1|IS607|None|Transposase|Acidianus             K-WRFREEDVEKLMGIVR-------KRKVILYARVSS--NAQKD--DLVN
+IS607.1|IS607|None|Transposase|Helicobacter           E-RRYKLESLRRINRS---IVFNQDELKTIAYARVSS--HDQQD--DLIR
+ISAfe10.1|IS607|None|Transposase|Acidithiobacillus    GHVVVPD-------------PSERKGTKAVIYARVSS--AENRP--NLES
+ISAfe11.1|IS607|None|Transposase|Acidithiobacillus    H-RYFDESDVRRML--GG-AP---ENRATIVYCRVSS--AGQKD--DLAS
+ISArma1.1|IS607|None|Transposase|Arthrospira          Q-RRYNVESYTAKS--------GSDKRKVVIYARVSS--RAQQS--DLNR
+ISBce17.1|IS607|None|Transposase|Bacillus             ----------------MG-IQEENKVGKVVIYTRVSN--PGQKD--DLEN
+ISBlo12.1|IS607|None|Transposase|Bifidobacterium      TGTIIIHDPKY-----ESQPVAPTANGRTVCYARVSS--SDQKD--DLTR
+ISC1904.1|IS607|None|Transposase|Sulfolobus           K-WRFREEDVERLMGIIR-------KRKVILYARVSS--STQKD--DLAN
+ISC1913.1|IS607|None|Transposase|Sulfolobus           K-YRIPYSEIKKYLEKRE-------ETRAVIYARVSS--TDQRE--DLER
+ISC1926.1|IS607|None|Transposase|Sulfolobus           K-YRIPYSEIKKYLEKRE-------EIRAVIYARVSS--SDQKE--DLER
+ISCARN1.1|IS607|None|Transposase|Metagenomic          GHVVVPD-------------PSEQKGTKAVIYARVSS--AENRP--NLDS
+ISCARN56.1|IS607|None|Transposase|Metagenomic         TGTIVVD-----------A-PEPIVCERVALYARVSS--HDQRN--DLDR
+ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor  R-RRYKKEDIEKLLGMIK----EKPKPTVVLYARVST--KKQEE--YLKN
+ISCbo10.1|IS607|None|Transposase|Clostridium          R-YDYNQEDVFKLFNKGV-------ERKTYIYARVST--PKQKK--DLEN
+ISCbo6.1|IS607|None|Transposase|Clostridium           Y-RYYSQEQLNHFLGL---KSEVQLNKKTIGYCRVSS--HKQKD--DLER
+ISCbt3.1|IS607|None|Transposase|Clostridium           R-RYYTHNQYVEYM--GK-IVQDKDKRKTIIYARVSS--NSQKD--DLKN
+ISCbt4.1|IS607|None|Transposase|Clostridium           T-RYYSTDQLKYFGKK---R---NAHKLAVGYCRVNT--PSQKD--DLEN
+ISCfe1.1|IS607|None|Transposase|Campylobacter         E-RRYKLETLKNINKN---IVFKNDNLKTIAYARVSS--NDQKD--DLIR
+ISChh1.1|IS607|None|Transposase|Campylobacter         E-RRYKLETLKAINKN---LVFNKDSLKTIAYARVSS--HDQKD--DLIR
+ISDka1.1|IS607|None|Transposase|Desulfurococcus       R-MRVPYSEVERILGGRP----EAREVRAVVYARVSS--SDQRS--DLER
+ISLhe9.1|IS607|None|Transposase|Lactobacillus         Q-RRYTLQMLDDALAGKKPAKPVSKDKLIIGYCRVSS--AGQKN--DLKR
+ISNma20.1|IS607|None|Transposase|Natrialba            E-RRIPHRELRRLAGDTR----P--TDRVVLYARVSS--HGQKDNGDLDH
+ISPfu4.1|IS607|None|Transposase|Pyrococcus            R-RRIPESEIKRLLGISE----E--KGLIIGYARVSS--HTQKD--YLER
+ISSis5.1|IS607|None|Transposase|Sulfolobus            K-WRFKEEDVERLMGVVR-------KRKVVLYARVSS--NTQKD--DLIN
+ISSis7.1|IS607|None|Transposase|Sulfolobus            K-WRFKEEDVERLMGIVR-------KRKVVLYARVSS--NTQKD--DLIN
+ISSoc2.1|IS607|None|Transposase|Synechococcus         RARRYDLDSYIGLRPADA-NRAPKKDKRVVLYARVSS--RGQKP--DLER
+ISSto11.1|IS607|None|Transposase|Sulfolobus           K-WRFREEDVEKLMGIIR-------KRKIILYARVSS--NTQKD--HLIN
+ISSto12.1|IS607|None|Transposase|Sulfolobus           R-WRIPYSEVERLLSGGG----R--LKQVAIYARVSS--NTQKD--DLER
+ISSto13.1|IS607|None|Transposase|Sulfolobus           K-YRIPYSEVKKYLERRE-------EIRAVIYARVSS--ANQKE--DLER
+ISTko1.1|IS607|None|Transposase|Thermococcus          R-RRIPESEIKRLLGISE----E--KGLIIGYARVSS--HTQKD--DLER
+ISTko2.1|IS607|None|Transposase|Thermococcus          E-YRIPESEIKRLLEGKV-------PDKVVIYARVSS--RDQKE--DLER
+ISTsi1.1|IS607|None|Transposase|Thermococcus          E-YRVPESEIKKILEGKI-------PDQVAIYARVSS--QNQKE--DLER
+ISTvo1.1|IS607|None|Transposase|Thermoplasma          R-YNYNEEDVYKILNKDV-------KRKTVLYERVST--AKQKN--DLQN
+ISvAR158_1.1|IS607|None|Transposase|Virus             Q-RRYELTER------------SKPEKTNYCYCRVSS--AKQYD--DLER
+ISvMimi_1.1|IS607|None|Transposase|Mimivirus          K-RLYDVGSYLADKDE----ESKEDHKLSICYVRVSS--NSQKD--DLER
+ISvMimi_2.1|IS607|None|Transposase|Mimivirus          H-RLYNLEKYLRDNGL----DNK--EKKGICYCRVSS--KKQIK--DLNR
+ISvNY2A_1.1|IS607|None|Transposase|Virus              R-RLYNVENLFGVVRPPTDDAIIPRGSKSFLYARVSS--SKQRD--DLQR
+
+IS1535.1|IS607|None|Transposase|Mycobacterium         QVARLTAWATER-DLGVGQVVCEVGSGLN-GKRPKLRRILSDPDA---RV
+IS1536.1|IS607|None|Transposase|Mycobacterium         QVARVTSWATAE-QIPVDKVVTEVGSVLN-GHRRKFPAVLRDLSV---TR
+IS1537.1|IS607|None|Transposase|Mycobacterium         RVARVTAWATSQ-HLSVDKVVAEGGWALN-GHRRKFFALLGDPVV---TR
+IS1538.1|IS607|None|Transposase|Mycobacterium         QVARVTAWATAQ-QMPVDKVVTEVGSAFN-EHRRKFLSLLRDPSV---HR
+IS1539.1|IS607|None|Transposase|Mycobacterium         QVVGVTAWATAE-QIPVGKVVTEVGSALY-GRRRTFLTLLGDPTV---RR
+IS1602.1|IS607|None|Transposase|Mycobacterium         QVARVTAWATTE-QIAVDKVVTEVGSALN-GHRRKFLALLRDPSV---KR
+IS1921.1|IS607|None|Transposase|Acidianus             QLKYLQEQVKDY-----GQVITDVGSGLN-MKRKGFLKLLRMILNNEVSK
+IS607.1|IS607|None|Transposase|Helicobacter           QVQVLELYCARC-GFN-YEVIQDLGSGMN-YYKKGLTKLLNLILDNQVKR
+ISAfe10.1|IS607|None|Transposase|Acidithiobacillus    QAERLGQYATAR-GWQVIEVVKETGSGVN-DHRKKLEKLLQKSTN--WDI
+ISAfe11.1|IS607|None|Transposase|Acidithiobacillus    QVDAMETYCRGA-GIAVDEWVQEIGGGMN-FKRKRFLGILDRMQRGEIGK
+ISArma1.1|IS607|None|Transposase|Arthrospira          QVAALSNLYPE------AEVVSEIGGGLN-FKGKKMLALLGHHLSGDVRM
+ISBce17.1|IS607|None|Transposase|Bacillus             QVEFFKTFANAR-GMIVDEVIKDIGSGLN-YKRKQWNNLIDSCMERNIST
+ISBlo12.1|IS607|None|Transposase|Bifidobacterium      QADRLRAFAVNM-GVEKPEVVTETGSGMN-DKRRKLNRLLADPTV---GT
+ISC1904.1|IS607|None|Transposase|Sulfolobus           QVKYLEEQVKEY-----DQVITDIGSGLN-MKRKGFLKLLRMILNNEVSR
+ISC1913.1|IS607|None|Transposase|Sulfolobus           QINYLTNYATAK-GYKVVEVLKDIASGLN-TQRKGLLKLFKLVEGRSVDI
+ISC1926.1|IS607|None|Transposase|Sulfolobus           QINYLTNYATAK-GYKVVEVLKDIASGLN-TQRKGLLKLFKLVEGRSVDV
+ISCARN1.1|IS607|None|Transposase|Metagenomic          QAERLGQYATAR-GWQVIDVVKETGSGVN-DHRKKLEKLLRKSND--WDI
+ISCARN56.1|IS607|None|Transposase|Metagenomic         QLARLSQYAAEH-DLHVVESVAEVGSGLN-GKRRKVMRLLLDANV---HA
+ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor  QIRRLEEYAKSQ-GWQY-EVISEIASKVD-ENRRGLLKLLNKIKRGEVTK
+ISCbo10.1|IS607|None|Transposase|Clostridium          QVQLLKQFCFSN-GWMINNVFQDVASGISFDKRKDFFKMLDDIIQNKVER
+ISCbo6.1|IS607|None|Transposase|Clostridium           QIENVKTYMFAK-GYQ-FEIITDIGSGIN-YNKKGLNQLIDMITNSEVEK
+ISCbt3.1|IS607|None|Transposase|Clostridium           QVEFLKQYANAK-GMIVDEIFEDVGSGLN-YNRKKWNKLLEDCMLGAIKT
+ISCbt4.1|IS607|None|Transposase|Clostridium           QVNNVKSYMIAK-GYQ-FEIIKDIGSGIN-YKKKGLKELIDKINNQEVSR
+ISCfe1.1|IS607|None|Transposase|Campylobacter         QVQVLELYCSKQ-GFN-YEIIQDLGSGMN-YYKKGLTRLLNLILDGEVKR
+ISChh1.1|IS607|None|Transposase|Campylobacter         QVQVLELYCSKQ-GFN-YEVIQDLGSGMN-YYKKGLTKLLNQILDGKVKR
+ISDka1.1|IS607|None|Transposase|Desulfurococcus       QVQYLTQYCSAR-GYRVVDVLTDIASGLK-ADRRGLLKLFEYVVSKQVDV
+ISLhe9.1|IS607|None|Transposase|Lactobacillus         QIAVVTNFCEMQ-GKP-FKIISDIGSGLN-YHKKGLKELIHLICTQQCSQ
+ISNma20.1|IS607|None|Transposase|Natrialba            QLERLTDYAHDH-GWSVENTYTDVGSGLN-EDRRGLNSLLDDLQEADYGR
+ISPfu4.1|IS607|None|Transposase|Pyrococcus            QVKAIEQYAKER-GWQV-QILTDIGSGLN-ENRKNYRKLLELVAKREVSK
+ISSis5.1|IS607|None|Transposase|Sulfolobus            QVKYLEENVKDY-----DQVITDIGSGLN-MKRKGFLKLLRMILNNEVSK
+ISSis7.1|IS607|None|Transposase|Sulfolobus            QVKYLEENVKEY-----DQVITDVGSGLN-MKRKGFLKLLRMILNNEVSK
+ISSoc2.1|IS607|None|Transposase|Synechococcus         QIARLVDLYPG------AEVVGEVGGGLD-FKRPKFLALLERVRAGDIGT
+ISSto11.1|IS607|None|Transposase|Sulfolobus           QVKYLEEQVKDY-----DQVITDMGSGLN-MKRKGFLKLLRMILNNEVSK
+ISSto12.1|IS607|None|Transposase|Sulfolobus           QINALREWVKKNYGNVSVIEIKDVGSGLK-EDRRGLKKLIELSRRRQIDV
+ISSto13.1|IS607|None|Transposase|Sulfolobus           QINYLTNYATAK-GYKVVEVLKDIASGLN-TQRKGLLKLLKLVESRNVDV
+ISTko1.1|IS607|None|Transposase|Thermococcus          QVEAIKQYAKER-GWQV-QILKDIGSGLN-EKRKNYRKLLELVAKGEVSK
+ISTko2.1|IS607|None|Transposase|Thermococcus          QVEYLKNYCSAK-GYQVARILTDISSGLN-ENRKGLKQLFKLVESGEVTK
+ISTsi1.1|IS607|None|Transposase|Thermococcus          QVEYLKNYCSAK-GYQVAKIITDISSGLN-ENRKGLKQLFKLVENGEITK
+ISTvo1.1|IS607|None|Transposase|Thermoplasma          Q---MKQXCFMN-GYTISAIYAHIASGISLEKRKGFFEMLDEIINNKVEK
+ISvAR158_1.1|IS607|None|Transposase|Virus             QVE----SMRTE-FPG-YRIITDIGSGIN-WKRKGLKTILESAMHGTCGR
+ISvMimi_1.1|IS607|None|Transposase|Mimivirus          QIK----FMKKK-YPN-HTIIKDISSGIN-MNRKGLNKIIDLAIEGRIKE
+ISvMimi_2.1|IS607|None|Transposase|Mimivirus          QVE----YMEKN-YPE-YEIIKDIGSGIN-MERKGLLQLIQMAIDGEISE
+ISvNY2A_1.1|IS607|None|Transposase|Virus              QID----FLKEK-HPD-FEVVSDIASGIN-WQRKGLRKLLDLSSAGGVER
+
+IS1535.1|IS607|None|Transposase|Mycobacterium         IVVEHR--DRLARFGVEHLEAALSAQGRRIVVADPGET----TDDLVCDM
+IS1536.1|IS607|None|Transposase|Mycobacterium         IVVEHR--DRFCRFGSEYVHAALAAQGRELVVVDSAEV----DDDLVWDM
+IS1537.1|IS607|None|Transposase|Mycobacterium         IVVEHR--DRFCWFGSEYVEAALVAQGRELVVVDLAEV----DDDLVGDM
+IS1538.1|IS607|None|Transposase|Mycobacterium         IVVEHRDADRFCRLGSKYVQAAFAAQGRELVVVDSAEV----DDDLVRDM
+IS1539.1|IS607|None|Transposase|Mycobacterium         IVMKRR--DRLGRFGFECVQAVLAADGRELVVVDSADV----DDDVVGDI
+IS1602.1|IS607|None|Transposase|Mycobacterium         IVVEHR--DRFCRFGSEYVEAALAAQGRELVVVDSAEV----DDDLVRDM
+IS1921.1|IS607|None|Transposase|Acidianus             VVIAYP--DRLVRFGFEILEEVCKAHNCELVVLNNE-DKT-PEQELVEDL
+IS607.1|IS607|None|Transposase|Helicobacter           LVLTHK--DRLLRFGAELVFSICEAKGVEVVIINKGDENVRFEEELAKDV
+ISAfe10.1|IS607|None|Transposase|Acidithiobacillus    LIVEHK--DRLTRFGFHYIDTLLSQLGKRIEVVNLADN---DKEDLVQDL
+ISAfe11.1|IS607|None|Transposase|Acidithiobacillus    LLVAHK--DRLVRFGYDLIMHLATENGCEIVVVNQNSL--SPQQEMVEDL
+ISArma1.1|IS607|None|Transposase|Arthrospira          VVVAHK--DRLAIWGFDLFRWLCEQNRCSLMVLNQTSL--SPEPEMVEDI
+ISBce17.1|IS607|None|Transposase|Bacillus             IIIAHK--DRFVRFGYEWFEKFLRKMGVEIMIVNNEKL--SPQEELVQDL
+ISBlo12.1|IS607|None|Transposase|Bifidobacterium      LIVEHR--DRLARMNAGLVESALKAQGRRVVVVDDTGL----DDDLVRDM
+ISC1904.1|IS607|None|Transposase|Sulfolobus           VVIAYP--DRLVRFGFEILEEVCKAHGCEIVVINQE-DK---EEELVEDL
+ISC1913.1|IS607|None|Transposase|Sulfolobus           VLITYK--DRLTRFGFEYIEEFFSTMGVKIEVVFGEEPKD-DAQELVEDL
+ISC1926.1|IS607|None|Transposase|Sulfolobus           VLITYK--DRLTRFGFEYIEELFSTMGVKIEVVFGEEPKD-ATQELVEDL
+ISCARN1.1|IS607|None|Transposase|Metagenomic          LVVEHK--DRLTRFGFHYIDTLLGQLGKRVEVVNLADN---DKADLVQDL
+ISCARN56.1|IS607|None|Transposase|Metagenomic         IVVEHR--DRFARFGSEYLEAALAASGRRLIVVDPSEM----NDDLVQDM
+ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor  VVIEYP--DRLARFGFEYLKFFMESFGVELVVLNGRENEEDINRELAEDL
+ISCbo10.1|IS607|None|Transposase|Clostridium          VVITYK--DRLSRVGFELFYYLFKKYHCEIVVMSEIGSEKLDSQEVFEEI
+ISCbo6.1|IS607|None|Transposase|Clostridium           VVILYK--DRLIRFGYELIENLCNKYGTTIEIIDNTEK--SEEQELVEDL
+ISCbt3.1|IS607|None|Transposase|Clostridium           IIVSHK--DRFIRFGFDWFERFVKSNGVELIVVNNESL--SPQEEMIQDL
+ISCbt4.1|IS607|None|Transposase|Clostridium           VVILYK--DRLIRFGFELIEYLCQINNVELEIIDHSEK--SKEEELTDDL
+ISCfe1.1|IS607|None|Transposase|Campylobacter         LVLTHK--DRLLRFGAELVFAICEAKEVEVIIINKGEENVKFEEELAKDV
+ISChh1.1|IS607|None|Transposase|Campylobacter         LVLTHK--DRLLRFGAELVFAICEAKEVEVIIINKGEESVKFEEELAKDV
+ISDka1.1|IS607|None|Transposase|Desulfurococcus       VVITYR--DRLTRFGFEYLEYFFRQYGVRIEVIYGDEPKD-ARQELVEDL
+ISLhe9.1|IS607|None|Transposase|Lactobacillus         VVVNYQ--DRLVRFGFELIEDICQENDVEITVINQTKAE-SSNEELVDDV
+ISNma20.1|IS607|None|Transposase|Natrialba            ILVTYE--DRLTRFGFSYLKRYFDCYGVTVTVIEDETDKS-AQEELVDDL
+ISPfu4.1|IS607|None|Transposase|Pyrococcus            VIITHP--DRLTRFGFKTLEFFFKENGAEIIIITDKEK-S-PREELIEDL
+ISSis5.1|IS607|None|Transposase|Sulfolobus            VVIAYP--DRLVRFGFEIIEEACKAHNCELVVLNKE-DKT-PEQELIEDL
+ISSis7.1|IS607|None|Transposase|Sulfolobus            VVIAYP--DRLVRFGFEIIEEVCKAHNCELVVLNKE-DKT-PEQELIEDL
+ISSoc2.1|IS607|None|Transposase|Synechococcus         IVVAHR--DRLCRFGFEFVEWYCRQYGCEILVLDDDHL--SPQQELVEDI
+ISSto11.1|IS607|None|Transposase|Sulfolobus           VLIAHP--DRLVKFGFEILEEVCKAHNCELVVLNNE-DKT-PEQELIEDL
+ISSto12.1|IS607|None|Transposase|Sulfolobus           VVVAYK--DRLTRFGFDYLVELFKAYGVGVVVAFQEEPKD-YMQELVEDF
+ISSto13.1|IS607|None|Transposase|Sulfolobus           VLITYK--DRLTRFGFEYLEEFFSAMGVRIEVVFGEEPKD-ATQELVEDL
+ISTko1.1|IS607|None|Transposase|Thermococcus          VIITHP--DRLTRFGFKTLEFFFKENGSEIIVINEKEK-P-PREELIEDL
+ISTko2.1|IS607|None|Transposase|Thermococcus          VVITYK--DRLTRFGFKYLEQYFNSHGVEIEVIFNDEEKT-PEKELVEDL
+ISTsi1.1|IS607|None|Transposase|Thermococcus          VVITYK--DRLTRFGFKYLEQYFNSHGVEIEVIFDDEEKTLEEKELVEDL
+ISTvo1.1|IS607|None|Transposase|Thermoplasma          VIITYK--DRLSRVGFDLFSYLFRKYRTEIAVISEVGNTKLDSEEVFEEI
+ISvAR158_1.1|IS607|None|Transposase|Virus             VVVAHR--DRIARFGFELVEWILRAN-GADLVVQHKDVDASPATELAEDI
+ISvMimi_1.1|IS607|None|Transposase|Mimivirus          VVVAYK--DRLAIFGFSLIERLIETYSDGKIVVVRKKENQEPQEELIEDM
+ISvMimi_2.1|IS607|None|Transposase|Mimivirus          VVVTYK--DRLARFGFELIEWIIKTYSNGQIKIIHKREEETPEEEITRDI
+ISvNY2A_1.1|IS607|None|Transposase|Virus              IVVAER--DRLCRFAFELVEYVFS--INGTIVEVVGSEESSPEQELQEDL
+
+IS1535.1|IS607|None|Transposase|Mycobacterium         IEVLTGMCARLYGRRGARNRAMRAVTEAKREPGAG---------------
+IS1536.1|IS607|None|Transposase|Mycobacterium         TEILTSMCARLYGKRAAQNRAKRA--VAAAAVDDHEAA------------
+IS1537.1|IS607|None|Transposase|Mycobacterium         TEILTSMCARLYGERAAQNGAKRA--LAAAVGDAEAA-------------
+IS1538.1|IS607|None|Transposase|Mycobacterium         TEILTSMCARLYGKRAAENRTKDARALAAAAGEDHEAA------------
+IS1539.1|IS607|None|Transposase|Mycobacterium         TEILTSICARLYGKRAAGNRAARAVAAAARAGGHEAR-------------
+IS1602.1|IS607|None|Transposase|Mycobacterium         TEILTSMCARLYGKRAAQNRAKRA--LAAAAEESEAA-------------
+IS1921.1|IS607|None|Transposase|Acidianus             ISILVSFSGKLQGMRSQKYEKVKKC--VEEIKN-----------------
+IS607.1|IS607|None|Transposase|Helicobacter           LEIITVFSARLYGSRSKKNKKLLDE--MQEVITNNVSYLNHA--------
+ISAfe10.1|IS607|None|Transposase|Acidithiobacillus    VAVIYSFSARMYGLRRSKRRTERLLACLEQEAATVASDPG----VVAS--
+ISAfe11.1|IS607|None|Transposase|Acidithiobacillus    LSIVHTFSCRLYGMRKYKKQLREDY--PEYKVAEPKELLQ----------
+ISArma1.1|IS607|None|Transposase|Arthrospira          LTILHCFSSRLYGRSKYKTQVKEDP--DLPQPRAKSSLA-----------
+ISBce17.1|IS607|None|Transposase|Bacillus             ISIIHVFSGRIYGLRKYKKKMSEDE--DL---------------------
+ISBlo12.1|IS607|None|Transposase|Bifidobacterium      TEVLTSFCARLYGRRGARHRAEKALEAMRDERV-----------------
+ISC1904.1|IS607|None|Transposase|Sulfolobus           VSILLSFSGKLHGMRSHKYEKVKKC--AEELKA-----------------
+ISC1913.1|IS607|None|Transposase|Sulfolobus           ISIITSFAGKIYGMRSHKKTLLVQG--VKKLIGELSGEDSEVKG------
+ISC1926.1|IS607|None|Transposase|Sulfolobus           ISIITSFAGKIYGMRSHKKTVLVQG--VKKLIGELSGEDDKVKG------
+ISCARN1.1|IS607|None|Transposase|Metagenomic          VAVIYSFSARMYGLRRSKRRTERLLACLEQEAATVASEPG----VVAS--
+ISCARN56.1|IS607|None|Transposase|Metagenomic         IAVLTSFCARLYGRRSARNRAISIERALARHEAQ---A------------
+ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor  IAIVTSFAARIYGQRGAKRHGNSSG--EVSVR------------------
+ISCbo10.1|IS607|None|Transposase|Clostridium          VSLLHCYSMKMYSKRKCNKIKEVLQ--EED--------------------
+ISCbo6.1|IS607|None|Transposase|Clostridium           IQIVTVFSCRLQGKRANKAKKMIKE--LIEDDTFKES-------------
+ISCbt3.1|IS607|None|Transposase|Clostridium           ISIIHVFSCRIYGLRKYKKKIKEDD--EIVKSLQSGDKTNSRT-KYKNS-
+ISCbt4.1|IS607|None|Transposase|Clostridium           IQIITVFANRLYGQRSKKTKRLIEE--VKKQ-------------------
+ISCfe1.1|IS607|None|Transposase|Campylobacter         LEIITVFSARLYGSRSKKNKKLIDE--MKEVVNNNVKN------------
+ISChh1.1|IS607|None|Transposase|Campylobacter         LEIITVFSARLYGSRSKKNKKLLDE--MQEVVVENVSK------------
+ISDka1.1|IS607|None|Transposase|Desulfurococcus       LSIVTSFAGKLYGLRSHRKKRLVEG--FKKLVEEVEKGGGESS-------
+ISLhe9.1|IS607|None|Transposase|Lactobacillus         LSVITVYSAKLYGKRSHHNEKIIKT--NQELFKDR---------------
+ISNma20.1|IS607|None|Transposase|Natrialba            IKLVASFSGKLYGMRSSKKQQVVNT--VESEVKPDE--------------
+ISPfu4.1|IS607|None|Transposase|Pyrococcus            TTIISHFAGKLYGMRSHKYKKLKEG--VKKLIEEVENG------------
+ISSis5.1|IS607|None|Transposase|Sulfolobus            ISILVSFSGKLYGMRSHKYEKVKKC--VEELKA-----------------
+ISSis7.1|IS607|None|Transposase|Sulfolobus            ISILVSFSGKLYGMRSHKYEKVKKC--VEELKA-----------------
+ISSoc2.1|IS607|None|Transposase|Synechococcus         LTILHCFSSRLYGLRKYRAAIEKDT--DLSGASAG---------------
+ISSto11.1|IS607|None|Transposase|Sulfolobus           IPILVSFSGKLHRMTSNKYEKVKKC--VEELKA-----------------
+ISSto12.1|IS607|None|Transposase|Sulfolobus           VEIVRSFASRIYGHRSHKYEKVIKC--VEDAEKDG---------------
+ISSto13.1|IS607|None|Transposase|Sulfolobus           ISIITSFAGKIYGMRSHKKTLFIQG--VKNLIGELSGEDSKVEG------
+ISTko1.1|IS607|None|Transposase|Thermococcus          ITIISHFAGKLYGMRSHKYKKLKKG--MKKLIEEVEND------------
+ISTko2.1|IS607|None|Transposase|Thermococcus          LAIVTSFAGKLYGARSHKKKRLVEA--VKNALRDD---------------
+ISTsi1.1|IS607|None|Transposase|Thermococcus          LAIVTSFAGKLYGARSHKKKRLVEA--VKNALRDD---------------
+ISTvo1.1|IS607|None|Transposase|Thermoplasma          VSMLHSYSMKMYSKRKNHYIEVGYE--G----------------------
+ISvAR158_1.1|IS607|None|Transposase|Virus             IAITTVFACKHYGKRRYAKKSDDIP--KS---------------------
+ISvMimi_1.1|IS607|None|Transposase|Mimivirus          MDVMNVFTARRNGSRKYSNK------------------------------
+ISvMimi_2.1|IS607|None|Transposase|Mimivirus          LQIMNVYVAKINGKKSGKLKAKK---------------------------
+ISvNY2A_1.1|IS607|None|Transposase|Virus              LSIVQVFCCRRNGKRRYKGKKKDEN--PEES-CDRNSNHKDSSDKITETT
+
+IS1535.1|IS607|None|Transposase|Mycobacterium         -
+IS1536.1|IS607|None|Transposase|Mycobacterium         -
+IS1537.1|IS607|None|Transposase|Mycobacterium         -
+IS1538.1|IS607|None|Transposase|Mycobacterium         -
+IS1539.1|IS607|None|Transposase|Mycobacterium         -
+IS1602.1|IS607|None|Transposase|Mycobacterium         -
+IS1921.1|IS607|None|Transposase|Acidianus             -
+IS607.1|IS607|None|Transposase|Helicobacter           -
+ISAfe10.1|IS607|None|Transposase|Acidithiobacillus    -
+ISAfe11.1|IS607|None|Transposase|Acidithiobacillus    -
+ISArma1.1|IS607|None|Transposase|Arthrospira          -
+ISBce17.1|IS607|None|Transposase|Bacillus             -
+ISBlo12.1|IS607|None|Transposase|Bifidobacterium      -
+ISC1904.1|IS607|None|Transposase|Sulfolobus           -
+ISC1913.1|IS607|None|Transposase|Sulfolobus           -
+ISC1926.1|IS607|None|Transposase|Sulfolobus           -
+ISCARN1.1|IS607|None|Transposase|Metagenomic          -
+ISCARN56.1|IS607|None|Transposase|Metagenomic         -
+ISCbe1.1|IS607|None|Transposase|Caldicellulosiruptor  -
+ISCbo10.1|IS607|None|Transposase|Clostridium          -
+ISCbo6.1|IS607|None|Transposase|Clostridium           -
+ISCbt3.1|IS607|None|Transposase|Clostridium           -
+ISCbt4.1|IS607|None|Transposase|Clostridium           -
+ISCfe1.1|IS607|None|Transposase|Campylobacter         -
+ISChh1.1|IS607|None|Transposase|Campylobacter         -
+ISDka1.1|IS607|None|Transposase|Desulfurococcus       -
+ISLhe9.1|IS607|None|Transposase|Lactobacillus         -
+ISNma20.1|IS607|None|Transposase|Natrialba            -
+ISPfu4.1|IS607|None|Transposase|Pyrococcus            -
+ISSis5.1|IS607|None|Transposase|Sulfolobus            -
+ISSis7.1|IS607|None|Transposase|Sulfolobus            -
+ISSoc2.1|IS607|None|Transposase|Synechococcus         -
+ISSto11.1|IS607|None|Transposase|Sulfolobus           -
+ISSto12.1|IS607|None|Transposase|Sulfolobus           -
+ISSto13.1|IS607|None|Transposase|Sulfolobus           -
+ISTko1.1|IS607|None|Transposase|Thermococcus          -
+ISTko2.1|IS607|None|Transposase|Thermococcus          -
+ISTsi1.1|IS607|None|Transposase|Thermococcus          -
+ISTvo1.1|IS607|None|Transposase|Thermoplasma          -
+ISvAR158_1.1|IS607|None|Transposase|Virus             -
+ISvMimi_1.1|IS607|None|Transposase|Mimivirus          -
+ISvMimi_2.1|IS607|None|Transposase|Mimivirus          -
+ISvNY2A_1.1|IS607|None|Transposase|Virus              D
+//

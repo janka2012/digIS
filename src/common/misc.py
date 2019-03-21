@@ -1,0 +1,138 @@
+import errno
+import os
+import pickle
+
+from os import walk
+
+import re
+
+from src.common.sequence import prepare_flank_sequences
+
+from definitions import ROOT_DIR
+
+
+def get_family_names(mypath):
+    records = walk(mypath)
+    (dirpath, dirnames, filenames) = next(records)
+    return dirnames
+
+
+def get_family_filenames(fam_path, include_subdir=True):
+    filename_list = []
+    for (dirpath, dirnames, filenames) in walk(fam_path):
+        for filename in filenames:
+            filename_list.append(os.path.join(dirpath, filename))
+        if(not include_subdir):
+            break
+    return filename_list
+
+
+def get_filenames_by_extension(dirpath, extension):
+    outfiles = []
+    for (dirpath, dirnames, filenames) in os.walk(dirpath):
+        for filename in filenames:
+            if os.path.splitext(filename)[-1] == extension:
+                outfiles.append(os.path.join(dirpath, filename))
+        break
+
+    return outfiles
+
+
+def get_filenames_by_substring(dirpath, substring):
+    outfiles = []
+    for (dirpath, dirnames, filenames) in os.walk(dirpath):
+        for filename in filenames:
+            if substring in filename:
+                outfiles.append(os.path.join(dirpath, filename))
+        break
+
+    return outfiles
+
+
+def save_object(obj_name, obj):
+    dump_file = os.path.join(ROOT_DIR, "data", "objs", obj_name)
+    with open(dump_file, 'wb') as out_handle:
+        pickle.dump(obj, out_handle, pickle.HIGHEST_PROTOCOL)
+
+
+def load_object(obj_name):
+    dump_file = os.path.join(ROOT_DIR, "data", "objs", obj_name)
+    if os.path.exists(dump_file):
+        with open(dump_file, 'rb') as in_handle:
+            return pickle.load(in_handle)
+    else:
+        return None
+
+
+def delete_file(file):
+    try:
+        os.remove(file)
+    except OSError:
+        print("Error while deleting file ", file)
+
+
+def clean_files(l):
+    for i in l:
+        if os.path.isfile(i):
+            os.remove(i)
+
+
+def clean_directory(dir_path):
+    file_list = os.listdir(dir_path)
+    for filename in file_list:
+        os.remove(os.path.join(dir_path, filename))
+
+
+def prepare_directory(dir_path):
+    if os.path.exists(dir_path):
+        clean_directory(dir_path)
+    else:
+        os.makedirs(dir_path)
+
+
+def get_best_blast_hits_in_range(recs, search_engine, flank, database):
+
+    seq_recs, seq_ranges = prepare_flank_sequences(recs, flank)
+
+    # Do BLAST
+    bl = search_engine.from_seqrec(seq_recs, database)
+    bl.search_database()
+    bl.parse()
+
+    # Get best hits in original sequence range
+    bl_bhits = []
+    for i, hit in enumerate(bl.query_hits):
+        bl_bhit = hit.get_best_hit(seq_ranges[i])
+        bl_bhits.append(bl_bhit)
+
+    return bl_bhits
+
+
+def check_if_file_exists(filename):
+    if not os.path.isfile(filename):
+        raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
+    else:
+        return filename
+
+
+def check_evalue(evalue):
+
+    if evalue is None:
+        raise TypeError("Wrong evalue argument type. Current type: {}".format(type(evalue)))
+
+    try:
+        evalue_val = float(evalue)
+
+        if evalue_val < 0:
+            raise ValueError("Evalue has to be a non-negative number. "
+                             "Current value: {}, type: {}".format(evalue, type(evalue)))
+    except ValueError:
+        raise ValueError("Evalue has to be a non-negative number. "
+                         "Current value: {}, type: {}".format(evalue, type(evalue)))
+
+def change_path_to_linux(line):
+    matchObj = re.match(r'(.):.*', line, re.M | re.I)
+    if matchObj:
+        line = line.replace(matchObj.group(1) + ":", '/mnt/' + matchObj.group(1).lower())
+    line = line.replace('\\', '/')
+    return line

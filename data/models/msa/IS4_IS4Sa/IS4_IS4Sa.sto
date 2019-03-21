@@ -1,0 +1,522 @@
+# STOCKHOLM 1.0
+
+#=GS      IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas DE    gingivalis
+#=GS          IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus DE    subtilis
+#=GS       IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis DE    sp.
+#=GS           IS5377.1|IS4|IS4Sa|Transposase|Bacillus DE    stearothermophilus
+#=GS            IS641.1|IS4|IS4Sa|Transposase|Bacillus DE    halodurans
+#=GS           ISAva3.1|IS4|IS4Sa|Transposase|Anabaena DE    variabilis
+#=GS   ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula DE    marina
+#=GS   ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula DE    marina
+#=GS       ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides DE    thetaiotaomicron
+#=GS      ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic DE    data
+#=GS      ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic DE    data
+#=GS         ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio DE    japonicus
+#=GS         ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium DE    phaeobacteroides
+#=GS      ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas DE    aromatica
+#=GS ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium DE    hafniense
+#=GS ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium DE    hafniense
+#=GS ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium DE    hafniense
+#=GS              ISDpr1.1|IS4|IS4Sa|Transposase|delta DE    proteobacterium
+#=GS   ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum DE    reducens
+#=GS       ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma DE    acidarmanus
+#=GS          ISGme2.1|IS4|IS4Sa|Transposase|Geobacter DE    metallireducens
+#=GS          ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter DE    sulfurreducens
+#=GS          ISGur4.1|IS4|IS4Sa|Transposase|Geobacter DE    uraniumreducens
+#=GS        ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter DE    violaceus
+#=GS        ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter DE    violaceus
+#=GS         ISHth3.1|IS4|IS4Sa|Transposase|Halococcus DE    thailandensis
+#=GS      ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum DE    walsbyi
+#=GS      ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum DE    walsbyi
+#=GS       ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter DE    sp.
+#=GS         ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter DE    carbinolicus
+#=GS        ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter DE    propionicus
+#=GS       ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas DE    gingivalis
+#=GS       ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas DE    sp.
+#=GS      ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus DE    torquis
+#=GS     ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula DE    baltica
+#=GS          ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium DE    etli
+#=GS      ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium DE    meliloti
+#=GS          ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium DE    sp.
+#=GS   ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium DE    spinosum
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       ---------------------------------MSTNISLFAQV----IR
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           -------------------------------MDKFTRKTSFEQW----FS
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        ------------------------------------MISNFGHIVKTYLS
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            ---------------------------------MN-KHTTLPNL----MQ
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             ------------------------DA-----MDKITRKTSFGQW----FS
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            -----------------------------------VIINSFPKIVKDILK
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    -----------MQP-KSRQRRTKRELAELPLWPDQVMGGKFVRL----L-
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    ------MAKKRKLP-T----------------EFSAHGAAMLRQ----VF
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        --------------------------------------------------
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       ---------------------------------MNEGKSTFSQL----IG
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       ------------------------------------------------MD
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          ---------------------------------MSHSNTAFHQL----LK
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          -----------MK--------L--HR-----RSKNNKKPIIRQV----LD
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       ---------------------------------MNIGKTLFAQL----MD
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  -------------------------M-----QDKDTTHSTFMQA----FQ
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  -------------------------M-----QDKDTTQSTFMQA----FQ
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  -------------------------M-----QDKDTTQSTFTQV----FQ
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               ---------------------------------MYTGKLVFSQV----MD
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    -------------------------------MDKNTNKSTYNQL----FQ
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        -------------------------------MDENVNK-ILKKH----CN
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           ---------------------------------MHTGPTVFKQL----LQ
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           ---------------------------------MAHCNTVLNQV----VG
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           -----------MR--------P--FK----RLKQRRKSRAFKLL----L-
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         ------------------------------------MLLDFPQLVKTALS
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         ------------------------------------MLLDFPQLVKTFLS
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          -----------MSVTSKSADRPSPDATD--ANNFNSAETVADEL----YS
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       -------MTTRNVCEFDSANRPSEDVTD--ASNINSTDLVADEL----YS
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       -----------MSVQFDSANRPSEDVTD--ASNINSTDLVADEL----YS
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        -------------------------I-----QALSHSNTAFHQL----LK
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          ---------------------------------MPHCSTVLSQI----VR
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         -----------MR--------P--FK----RLKQRRKARAFKLL----L-
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        ---------------------------------MSTNISLFAQV----IR
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        ---------------------------------MNVGKTLFAQV----ME
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       -----------MG--------L--FR-----RNKNNNKPVIRQI----LD
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      MPTKTKRLKRRKLP-DDQGERTQESLVKP---KIKIEGLKYFAM----LK
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           ---------------------------------VRHDNSVFHDL----LK
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       ---------------------------------MRFTPSIFAQL----LK
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           ---------------------------------------MI-TT----GT
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    ---------------------M--KF-----KPAKVIGSVLGQL----CK
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       LLPRPLIKKLSTE---FQVDKHSK-HFTSWQHLVSMIFSQFSS-CISLRE
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           PIFSTKLEELVES---YQLNYYTK-KLHIASFLKLFVFAQLNE-TESLRA
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        NFPKDDYPVLDTF-----------KFVSIWLGLVL-----DQS-QTSMRS
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            KLVSDEEIQLIAEA--VGYRDSSR-TFTLRELIHFFLLAAMHQ-WKSFRH
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             PINLQLFEEQVKT---MKLDRYTK-KLTTESFLKLLLFAQLHE-VESLHA
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            GLPKNDYPVLNSR-----------LFFEFWLSYVL-----DNS-LTSMRG
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    --QKQLSELRRRD---DSHGN--R-ELFLDDVFVTYLLAFFNPTIRTLRT
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    PLLAKLSASGTER---DKAGN--R-RLLFSQYASLILVGLFNPALESARA
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        ----------------------MY-QSHRWQEQIK-----IET-ITSLKN
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       FLPDREFRRCVAR---YGGDRYTK-KLSCWEQYLAMAFAQLTY-RESLRD
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       FLPWTTFNRYVEK---YDGDCGVR-TMTCAEQYRIMAFAQLTY-RESLRD
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          PLSRHEFEAEAKK---HHVGQKLR-SATRWDQFVGMAMSQLSG-RQSLRD
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          LIPGHLFRKSVRK---FQTDKGCH-KYKTYDQLVALTFGQLGK-CYTLSD
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       FLPWTTFARYVAR---YEGDKGVR-TLTCAEQFRIMAFAQLTY-RESLRD
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  PLFSKDLWKDIHQQ-VPDLDRRTQ-KLKTNQLTLLISNAQLQE-YRALRK
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  PFFSKDLWETIHRE-VPGLDLRSQ-KLTTNQLTLLISHAQLQE-YRALRK
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  PFFSKDLWRKIDQE-VPNLDQRNY-KLKTNQLTLLISHAQLQE-YKALRK
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               FLPLPVFRNCVAK---YRGHHKVR-KFSCLDQYYCMAFAQITY-RESLRD
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    TIYNEKFLSNVKE---SEVDAYAK-KLTVIKLIQMISYAQLEQ-LKGLRH
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        KIS---KESKVEG---IGIDSYSR-KFNLSAHLSILATG-----------
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           FLPRYEFNLCVRR---HRGEYREK-KFSTYDQFLCLAYAQMAG-RESLRD
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           FFKRHEFESLARK---HHIGQKFR-SFNRWSQFMAMMVCQLSG-RKSLRD
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           ---TPIFERFKSDNELESRGYRPL-QMTFDDQLKALIFYHLEE-FSSGSE
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         SLPNDDFPVLDSR-----------LFFSCWLALVM-----DKS-TVSMRD
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         ALPDRDFPVLDSR-----------LFFSCWLALIM-----DKS-TVSMQD
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          LLAAGDSESIAQE---FDIGIHTD-KHDFDNHLKVAIREGLDP-SSSLAE
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       LLDEVDSESIADE---FKIGLHSD-KHDFTTHVKTAVREGLDP-SSSLAE
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       LLDEVDSESIADE---FKIGLHSD-KHDFTNHVKTVVREGLDP-SSSLAE
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        PISRHEFESLASE---HHSGQKLR-SATRWDQFTAMAMAQLSG-RQSLRD
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          IFPRHEFQALAKK---YHAGQKFR-SFSRWTQFVSLLTAQLTG-RDSLRD
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         ---TPVFERFKSDKQLESRGYRPL-QMTFDDQLKALIFYHLEE-FSSGSE
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        LLPRPLIKKLSTE---FQVDKHSK-HFTSWQHLVSMIFSQFSS-CISLRE
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        FVPWTSFSRIVQR---HGGDAGVR-RMNCAEQFRVMAFAQLTW-RESLRD
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       LVPHWLFRSCTNT---YKTDKGVH-KYRTYDQFVALTFGQLNK-CQSLND
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      PLLEHLHEHECQR---DTAGN--R-TLHYDQYCMLVLLYVLNPTVSSLRA
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           RIPWTVFERLVEE---HQADKHVR-RLSTKSQLIALLYGQLAG-AVSPRE
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       AIDRRSFQAIVDR---HAGD-AYDKCFTSWDHLVALIYAQLSA-TTSLRG
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           PTTRRS----------AAGTAGADLCPVE------------------RCG
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    LIPGHLVANLCAQ---HHHGSQPR-TFSSWSHVVSLLYAQLTH-SISLND
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       ISNG--LRSATGNLNHLGICTAPSKSNLSYQNEHRTSDFFRACYYALLDY
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           VSET--LFSD-DLQKATHLE-AISFSQLGRRLNQVPTEVFQQVFLDLVAQ
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        MFKR---------LNLRGE--TVDISTFSKASKKRDVGVFREIIFSLKKE
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            GADV-------GPL--YGLP-RFHYSTVSKKAKEVPYDIMKRLLALIISK
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             LRDC--LFDD-QLQKGVDLD-SISISQLSRRLNGMNPDVFQRLFLDLVSQ
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            LFAR---------LNNTGF--ELDISTFSKANLHRSQKPFQEIYQKLNKL
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    IEDFSQTQ---QVQRHLSIQ-KICRTTLSDFHRLVDPQRLEPILQALREQ
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    IVAASGVK---KIAKLTGGK-KVADGSFSEASSIFDPRLLEGIIKDLRSR
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        MLTT--WLAK---------------------HDKSVLIIFSNLAVTFMLS
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       IEAC--LGAIGPKLYHLGIGSTVARSTLADANENRDWRIFADFAQVLIRT
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       IEVC--LGAQVGKLYHMGFRGTMKRSTLADANESRDWRIYADFGQRLIVQ
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          IQSN--LEAQQHKLYHLGAK-PIARSTLARINEVQPAELYKHVFARLLHR
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          ISCG--LSISSTFLTDLGLKQNPAKSTMSDGNRQRDYRVFEDIYYQLVNH
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       IEVC--LSAQAGKLYPMGFRQEIKRSTLADANETRDWRIYAEFAQRLIEQ
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  ISTS--VLSD-NLGQAIGLK-SISHSQISRRLKTLPTKVSEMLFRRTLHK
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  ISTS--VHHD-SLGQAIGLE-SISHSQISRRLKTLPTQVPEMLFKGTLHN
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  ISSN--VQSN-DFSEAIGLE-SISHSQISRRLRTLPIKVSEMLFKGVLNK
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               IEAC--LRSQGSKLYHMGIRGRVSRSTMADANEQRDWRIYAELAHSLIVT
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    ISNS--LNDD-NFSSAVGLD-SISASQLSRKLRDLSPELTQSLFSDIVHQ
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        -------IIKKNDLTDIAYNNGISKSQLSKLNNKRPYSIFEKVFYSILRP
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           IETC--LNSHQEKLYHIGFRGDVSRTTLADANERRDWRIFQDFGHVLIGI
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           IVEN--LKAQGHKLYHLGMK-TVSRTTLARVNDEQPHELYKELFYKMLHR
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           LLQA--LDQDDFAKECVAPPKGIKKSSFFEAINNRGLEQLSEVFGHLVKQ
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         LFKR---------VNHTGI--PVDISTFSKACKSRSLQIFEQLYQALLVR
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         LFKR---------LNRTGI--PVDISTFSKACKSRSLQMFEQLYRDLLAR
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          LADK--TAVD-------DSLDKMPESRFSELTNDRDYRAVVRMLFALLHT
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       LEDK--TIAD-------GSLEHMPKSRFSELTNDRDYCAVVQLLFEVLHT
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       LEDK--TIVD-------DSLEHMPKSRFSELTNDRDYRAVVRLLFELLHT
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        IETN--LLAQQDKLYHLGAK-PIARSTLARINEKQPAELYQSLFYKLLGK
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          IVEN--MSAQTSKLYHLGIK-PFSRSTLARTNETQPHQMYEALFQRLLTR
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         LLQA--LEQNDFAKECVAPPKGIKKSAFFEAINNRGLEQLSEVFGHLVKQ
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        ISNG--LRSATGNLNHLGICTAPSKSNLSYQNEHRTSDFFRACYYALLDY
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        IEVT--LGANAGKLYSMGLRHSVHRSTLADANDSRDWRIWSDLAALLIRR
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       ISAG--IGVSEIFISDLGLTQSPARSTMSDGNKKRDWQVFESLYYRLLSH
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      ISQASELT---KVRDKLGNE-KASLGSLSEAGGLFSADHLKPVIEALSAE
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           IVGS--LESHSARLYHLGAR-PVSRSTFADANGLRPSAVFAELFTQMLAR
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       LEAS--FNANSQHHYHLGSG-RLMRSTLSDANRRRPVAVFAETFALLAGQ
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           EPARPGGRLERQQPSPLS----PGQRPLADANARRPVAVFAETFGLLAGQ
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    VCDS--LRHHAGALAAIRGATPPARNTLSHANKNRDSDLMETLFWKMLDH
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       FGQQGMGQG--------RKFRFKQPVKLLDSTTITLCLALNDWAKY----
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           IHEKSHYEQ---RR------ETTTPLKIIDSSTLPLNLKNHKWAEF----
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        LSKR-KEIK-----------QGELEIFPLDSTIVSITSK-LMWNL-----
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            CNRQTRRSL-----------RFPKPLRVVDSTTVTVGKNRLPWAPY----
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             IHAKTHDSQ---R---------VMPLKIIDSSTLPLNLTNHKWAQF----
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            VQNKAENKL-----------HNKYAICPIDSTVITLTSK-LLWVL-----
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    LSRK----EAGLGRAANDLSELLKRTVAVDGTFLEAAAE-VAWAVRGSN-
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    WHQQRMSSEPRSGRAS---DRTVERLIAVDGSVLTALPQ-IVGRIA----
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        IRQLLTCA------FQSFGG-----QNSAKRKVVSKCIHYMMWKH-----
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       AIKLYANDA--------TGIAEVCDLYALDSTTIDLCLALFPWAKF----
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       ARDLYIKDD--------PGLDLSNTVYALDSTTIDLCLSVFPWAHF----
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          CKSMQGKHK--------F--QFKNPLYSLDASAIDLSLSVFPWAAH----
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          YRRTLTDTR---ER-QVIEEVKNETIKLIDSSTVSLCLNLFDWAKF----
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       ARKLYAGDS--------FGIELENTTYALDSTTIDLCLSLFPWALF----
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  VAQKQGYGK---IR------QQLGKLYMIDASTISLCLSRYPWAVF----
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  VAQKQGYGK---IR------QQLGKLYMIDASTMSLCLSRYPWAVF----
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  VAQKKGDGK---IQ------QRLGKLYMIDASVISLCLSRFPWAVF----
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               ARELYQAET--------FLTDLNETAYALDSSTIDLCLSLFPWAAF----
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    FGTEIGFKS---IR------QELGRIYLIDSSTISLCLSRYRWAEF----
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        FIKAHRYDI---YH--DY-IDRLYSVLAIDSTFIETMVKGSGIYQR----
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           AQQLYQADA--------ISVELTQPLYAFDSTTIDLCLTLFPWAEF----
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           CKAVAPSHR--------F--KIDEKVYLLDATTINLCLEAFPWATY----
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           AGRVLPDEY-----------AHLGNLVSIDGSLIDAVLS-MEWADY----
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         VRRE---LP-----------AKKLHPCPIDSTVVGLTSK-LLWAQ-----
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         VRRE---LP-----------VKQLHPCPIDSTVVGLTSK-LLWAQ-----
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          PQLYHQRAV---QRK--RLKWLTRGVIAVDATNLELTRSVVVSDEFVGDD
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       PQLYHQRGV---QRK--RLEWMTRDVVAVDATNLELTRSVVVSDEFVGDD
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       PQLYHQRGV---QRK--RLGWMTRGVVAVDATNLELTRSVVVSDEFVGDD
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        TQNCPSNHK--------F--RFKNPLYSLDASAIDLSLNICPWAEH----
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          CQGLAPTKR--------F--KFKEKLYLLDASMIDLTLSLFPWAKY----
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         AGKVLPAEY-----------AHLGNLVSIDGSLIDAVLS-MEWADY----
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        FGQQGMGQG--------RKFRFKQPVKLLDSTTITLCLALYDWAKY----
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        ARKLYREED--------LGLDLTNTVYALDATTIDLCLSLFDWAPF----
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       YKSVLKQHH---NT-HIIEEIKGKVVKLIDSSTISLCLAMFDWAEF----
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      VNDA----AP-----DPRLSSIQQTITAVDGSLVNALPS-LIAASILKQ-
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           AGRGLKR-------------AVGEAVYLIDGSSLPLSGAGSQWARF----
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       LDRQTRR-------------EGTKMLRLIDSTPIPL-GKLYDWAKS----
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           LDRQTRR-------------EGRAMLRLIDSTPIPL-GKLCGWAKS----
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    LQHRHPGFG---LRYEGLPRRFRRAIYAIDSSTIALVANCMSWAKH----
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       ------THTKGAVKLHTLLDFE---TLLPEYVHISDGK---GHD-GKMAN
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           ------RKTKSGIKLHLRLVYAEKGCSYPDKAVLTNAK---EHD-RGQLE
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        --------GFHQVKVFSGINLS---TGIPGGIVIHFGQ---GHD-NKYGN
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            ------HGERAGVKLHVAYSPE---FSLPADVVETTGL---RHD-GPVGE
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             ------RKTKAGVKLHLRLVFIEKGIFYPEKAVLTTAK---EHD-RGQLE
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            --------GHHQVKLFSSLNLA---TGSPEDNLINFGH---DHD-YKFGS
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    ----QHGRENSYIRLDFQVGVT---SWAPEMIVVAE-P---GHSESASAA
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    ------AKEKGQWRFHALVHVL---DGQPVASKLTEEPSAKGRAERDVLA
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        -------------------------RFLHSFI----SR---KHP-YTITK
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       ------RKHKAAVKMHTLLDLH---GSIPTFIRITNGK---VHD-VNVLD
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       ------RTTKAAVKMHTLLDLK---GNIPSFIHISNGK---MAD-VHALD
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          ------RDDTANVKLSVGLNHG---TQVPEFVALSDGQ---END-MIEGR
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          ------RTAKGGLKIHTVWDDT---LGLPDYINITEAK---KHD-SKGLE
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       ------RTTKSAVKMHTLLDLR---GNIPSFIHISDGK---LGD-VNVLD
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  ------RKSKAGVKIHLRLSFD-G-IALPDEVVITPAK---IAD-RKKLD
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  ------RKSKAGVKMHLRLSFD-A-MAVPDEVLVTPAK---TAD-RKKLD
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  ------RKTKAGVKMHLRLSFD-E-MAIPDEVIITPAK---TAD-RKKLD
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               ------RKTKAAVKLHTLLDLR---GNLPAFIHISDGK---LHD-VNVLD
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    ------RKTKSGVKLHLRIQLLEQ-GVLPDKAIIKPAK---SAD-KTQMD
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        ------GERRNGIKIHTAAIAS--PYPLPLKAIITPAN---VHD-SKVFD
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           ------RKTKAAVKMHTLIDLR---GPIPTWVTITTGK---VHD-VRMLD
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           ------RQKKGAIKMHVGLDAD---GYLPEFIDVTEGK---KHE-MSWAR
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           ------RSGSKKAKAHIGFDIN---RGIPRKIFLTDGK---EGE-RPFVD
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         --------DYHQVKLLTCLEHG---SGATEGSLINFGY---DHD-SNFVN
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         --------SYHQVKLLACLEHG---SGATEGSLINFGY---DHD-SNFVN
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          EHVYEIDTDDGGLELHCAARVDGE-HKHPLGTTVTEGE---THE-SPQFD
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       DKVYKIDTDDGGLELHCAARVDGE-NKHPLDATVTEGD---THE-SPQFD
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       EDIYEIDTDGGGVELHCAARVDGK-HKHPLGATVTEGD---THE-SPQFD
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        ------RDDTSNVKLSVALNNG---SQIPEFVAISDGN---END-MIEGR
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          ------RKSKGAAKLHIGLDAD---GYLPAFVDMTEGK---EHE-INRAR
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         ------RSGSKKAKAHVGFDIN---RGIPRKIYLSDGK---EGE-RPFVD
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        ------THTKGAVKLHTLLDFK---TLLPEYVHISDGK---GHD-GKMAN
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        ------RSTKAAVKMHTLLDLR---GSIPAFIHISDGK---MGD-VNVLD
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       ------RTAKGGIKLHTSWDYN---LMIPDVVNITEAK---VHD-RYGLK
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      ----TTGSALVRWRLHTHFEVN---NLLPVRVDVTP-DGGGEHDERAVLK
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           ------SDQACGAKMHVVYDAK---AERPIYAAVTPAN---VND-ITAAK
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       ------NGRIRGMKLHVVYDPK---ADCPGILDITDAN---VND-AQIGR
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           ------NGRIRGMKMHVVYDPD---SDCPRLLDITDAN---VND-AQIGR
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    ------RQRKAAAKLHLRLNLQ---TFLPAFAIIEEAS---HHD-DSRSR
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       SI--P-------IP-AGSIVVADRGYADTALLNSWDS-TQV-------SF
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           VL--V-------DD-KECMYVFDRGYLDYERFDRMTD-DGY-------FF
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        ETIEE-------TP-ENGVAVMDRGFCDLQRIKRLQKENNK-------YH
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            QL----------TN-AQQVLVEDRAYFKIERLDRFVE-QHQ-------LF
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             IM--V-------DD-KECMYVFDRGYLDYERFDRMTD-DGY-------FF
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            KMIAN-------LP-TNAVGVMDRGFAGLKFIQELVQ-ENK-------YF
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    ----------ANVQ-DGRLYLYDRGFSGFDVINAHYH-LQNESWTPRAQF
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    EMIAADQIDIPQSD-EGHLFLMDRGYRSAELFNKIHT-AGH-------DY
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        VMEIP-------YE-PSSYYIFDRGYNNFKMLYKIHQ-IEA-------YF
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       DI--A-------LQ-AGAFYVMDRGYIDFERLYRFTL-SSA-------FF
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       LL--Q-------PE-PGAIYVMDRGYVDFSRLHSLHL-AGA-------FF
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          KF--D-------FP-KGSIVAFDKGYVDYRWFKLLTD-KGV-------FF
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          NQ--I-------FP-KGTIIVEDRAYFDFELINKRGK-AKN-------IF
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       IL--V-------LE-VGAIYVMDRGYLDFARLYLMHQ-AQA-------FF
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  EL--I------VED-KDALNIFDRGYVDYELFDDYCE-KGI-------RF
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  EL--I------VQD-QEALNIFDRGYVDYKLFDDYCE-KGI-------RF
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  EL--I------VVD-KDALTIFDRGYIDYLLFDEYCE-KEI-------RF
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               LL--P-------LE-PGAFYIMDRAYLDFARLYHMSK-MGA-------FF
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    AL--V-------VE-KDALNVFDRGYLDYKRFDNYSN-NGT-------RF
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        DLLEY--I-NEYIS-GNTVLTFDLGYYNLGRFMELKE-KGI-------NF
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           HL--P-------VA-KDAIYTMDRGYVDFARLHSIHK-QGA-------FF
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           ML--Q-------LP-AGSLAVFDRGFTDYDWWQQLTT-NGI-------FF
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           KI----------ID-KGETGVMDRGYQSHNHFDQWQA-AEK-------FF
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         DMLEA-------IP-ENGVGIFDRGFAGLEYLKNAQA-SSK-------YF
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         EMLQA-------IP-ENGVGIFDRGFAGLEYLKNAQA-SSK-------YF
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          HLSDD--V-EVFADLDSVIWVFDRGYTRYRRFCEIKY-SDD-------DF
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       LLKED--V-EVFADLDSVIWVCDRAYTRYLRFCEIKH-SDN-------DF
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       LLEDD--V-EVFADLDSVIWTFDRAYTRYLRFCEIKH-SDN-------DF
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        KF--D-------FP-AGSMVALDKGYIDYEWFGDLTN-KGV-------SF
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          EL--E-------LP-KGSYVVFDRGYTDYTWYQDLCE-EDI-------RF
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         KI----------ID-KGETGVMDRGYQSHDHFDKWQA-AEK-------FF
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        SI--P-------IP-AGSIVVADRGYADTALLNSWDS-TQV-------SF
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        FL--P-------VE-AGAFYVMDRGYLDFARLYKMHQ-AGA-------FF
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       QL--I-------FP-KDTIIVEDRAYFDFELMLNRIK-AEN-------VF
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      ----------RVLE-EDRLYVMDRGYAKFSLFNSIVA-SSS-------SY
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           EM--P-------IE-AGATYVFDLGYYDFGWWAKLDA-AGC-------RI
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       TI--T-------IE-KGATYVFDKGYCHYGWWTAIAE-AGA-------SF
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           TI--A-------IE-SGATYIFDKGYCHYGWWTAIAE-AKA-------FF
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    ALCAS-------LK-DGEIALFDKAYINFAHLWELTG-RGI-------FW
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       VVRHPRSLKYEVI-QELELPE---------------HGHQQILVDQRVRL
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           VSRLRKNAVIRVI-E--PFKL---------------PEDSLVFSDEMVLI
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        VLRIKNNIKLEKL-A----------------------------NDN-YMV
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            VIRMKDNIELHQK-KSLNRLS---------------STSSSVQTDFTCQL
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             LSRLRKNAVIRAV-Y--DFKR---------------SENSTVLSDQMVLI
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            VLRIKNNWKLEFE-E----------------------------SSGLIKV
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    VIRYKPAGGNAP-----------HLADADENPLSEKDLAAGVVSDRRGRF
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    ICRLNRTDGKLLK-P---PKKGEVREPIQLPPLSAEAIAMGIVADELITM
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        VVRAKKNLQYKSI-Q---WKR---------------RLPKNVLSDASVLL
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       VVRTKTNVLLERR-Y--SRPV---------------DKTTGLRSDHTVIL
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       VTRAKSNMKAHRV-Y--SEKT---------------ERSTGIICDQAIAL
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          VTRLRAKAVYRVE-E--RRYA---------------DSSKGIISDQVIQL
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          VTRIKSNILYESI-EELDLPD---------------EIDQDILKDELIKF
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       VTRTKSNTRLRRV-H--SAAV---------------DRSTGIICDQTIAL
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  VTRLKNNAIMEFTGV--ERPV---------------EEDGIIEEDVDIIL
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  VTRLKNNAVIEFTGV--ERPV---------------KEDGLIEEDVDVIL
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  VTRLKNNAVIEFTGV--ERPV---------------EEEGSIEEDVDIIL
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               VTRAKSNTKFERR-Y--SHPV---------------DRTTGVICDQTIVL
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    VSRLKSNAIVETL-E--EFPT---------------NQDSLIKKDHKVIL
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        VSRIKKNADYTVI-K--EETF----------------------NSKIV--
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           VVRAKDNLKCQRL-Y--SHPK---------------DKESGVRADQIITL
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           VTRLKENALVEYF-K--KRPG---------------RKATGVILDQEIRL
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           VCRIRENTHKTVI-R--ENAV---------------NPDSIVFYDQIVLL
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         LMRIPSNYKLTFE-G----------------------------NAGQMRV
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         LMRIPSNYKFTFE-G----------------------------NAGQMRV
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          VTLLQSNARLDVL-DTLQNVEVT------------NEDGTRQIRDEQIEL
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       VTLMYSDARFELT-ETLEEFEVTVSGNNAAQPTHSDEESTRRVRDERIEL
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       VTLMYSDARFELI-ETLEEFEVSITPERGAQPRDSADESTRQVRDERIEL
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        VTRLRSGSVFSVL-E--HLGS---------------NPDQGILSDERIEL
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          VTRLKRNAVAISG-P--KRRG---------------RRSPGVLRDQQIQL
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         VCRIRENTIKIVI-R--ENAV---------------NPDSIIFYDRIVML
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        VVRHPRSLKYEVI-QELELPE---------------HGHQQILVDQRVRL
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        VTRAKRGMNARRV-Y--SAQT---------------DRATGVICDQSIAM
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       VTRIKSNTLYETI-EELELAD---------------DVDQHILKDEIIQL
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      VCRLRD----NT-----------VYKTTQELELTEGDRAAGVLNDKIVKL
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           VSRLKSHTKLTVS-A--EQAA---------------NEDAGILFDRIGLL
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       VTRPKTNMGLALV-A--ERPV---------------EQPQGDGFLVLEDS
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           VTRPKSNMGLKVV-R--QRRI---------------KVAEGDGFTVIDDA
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    VTRAKDNMSYRVT-R--KLQA---------------RPQGKVLRDDLIVL
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       TGVQK-QGKY--TKPLRHIALY----------------NEQHGDV--VEL
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           GT-----PQNRAENAFRLIKVL----------------D-SKGNE--LHL
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        GT-------GKNKIESRVVIFT------------------HDNSE--FRL
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            GTKQC-----RSTKRHRVVIFR----------------D-ANGRD--IRV
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             GT-----TQNRTENYFRLLRVM----------------D-SKGNE--LQL
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            GA-------SDDAQAYRVINFC----------------DLETKTE--FRL
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    RSSKAA-RHIVLDVPLREVIIE--------------YQEQDETKT--VRL
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    GGNCGA-SKIGSDHPMRRIKLIPPADRPSSARQGRVRTDQTGRDE--LVL
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        TGFYP-KQYY--PKPLRLVKYW----------------DEEQERE--FTF
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       TSRSS-ATAY--PDALRRVTYC----------------DPETGKR--LKF
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       DGFYT-KQDY--PVHLRRIRFK----------------DAESGRT--LVF
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          SSAHA-IKRG--APKLRRIGYR----------------DATTGKF--YEF
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          TSKEA-KKAGLEDAVFRLVTVY----------------KADENKI--IQI
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       TGTTS-RQDY--PEHLRRIRFK----------------DPETDKT--LVF
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  GT-----GSRKMKHTLREVTID----------------D-TINEP--FTI
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  GA-----GSRKMKHTLREVTID----------------D-NVHEP--FTI
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  GT-----GTRKMKHTLREVTID----------------D-NVNEP--FTI
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               TGVRS-RLDY--PEKLRRIKFR----------------DTDTGNT--LDF
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    GKD----GTTKMQNPLRLIETE----------------D-TEGKP--VII
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        --------RFRNGLELRLVSLD----------------I--NNRK--REY
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           VTQKS-KKGY--PEKLRRVSYV----------------DKERNKR--LVF
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           KGM---------KDKLRLVQFI----------------A-DDGND--YRF
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           GT----KGINQTEKELRLVGYR----------------I--DGKD--YWV
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         GT-------GKESGVYRVVNFC----------------DIENRAE--YRL
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         GT-------GKESGMYRVVNFC----------------DIENRAE--YRL
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          AE---------TGEQFRRIVLE----------------T-PDGEE--LQY
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       AE---------TGEEFRRIVLE----------------T-PDGEE--IEY
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       AE---------TGEEFRRIVLN----------------A-PDGEE--IEY
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        TSVHA-KKRS--EPELRLVHYI----------------DQESGQL--YHF
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          KGV---------AGTFRKVVYL----------------DAETNIT--YEF
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         GT----KGVNQTEKELRLVGYR----------------V--DGKD--YWI
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        TGVQT-QGKY--TKPLRHIALY----------------NEQHGDV--VEL
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        NGFYV-CKDY--PEQLRRIRFK----------------DPETGKT--LVF
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       TSGRA-IETGISKHKLRLVHVY----------------KEDENKV--IAI
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      GGSSSS--SSSPDHPIRLIQIRCTPHQNRTGGKARGSKAPNSDGI--LRI
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           PQRQAKSRRNPMNRPVREIGER----------------I-ETGKV--LRI
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       QVSLASKGDSKLPIGLRRVIVK----------------R-QDGDT--ITL
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           TVRLASKGDSKLPIPLRRLTVK----------------R-ADGDT--ITL
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    KGARS-LSQH--PGPLRRVEML----------------VELDGKEVRMAF
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       LTNID-------TLAASSIALLYRSRWLIEIFFRNLKQRLSMKAFLGTTR
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           ITNRF-------DLSADEIAELYKSRWAIELFFKWLKQHLNIKKFYAQSE
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        VTNLPIESKEIEGVSDEKIAEIYKKRWQIELLWKFLKMHLKLNRLIAKNE
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            VTNLF-------HASAETIADMYQQRWAVEVFFRWVKQYLNVPTLFGTTE
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             LTNRF-------DLSAEDISEMYKSRWAIELFFKWMKQHLNIKKFYGQSE
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            VTNLPADGEA--TVSDDDIRDIYLLRWGVELLWKFLKMHLKLDKLITKNV
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    ITNLL-------DVSAEVIAQLYQQRWQIELFFRWLKCFANFNHLISHHR
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    ATTLM-------DLTAEEIVRLYEHRWEVELFFRFLKQVLGCKKLLSAKT
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        ITNAM-------HISALQVAELYKNRWQVELFFKWLKQHLKIKRFWGTTE
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       LTNNF-------ALPPLAIAEIYKKRWAVELFFRWIKMHLRIKAFYGTSE
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       LTNQM-------TLPAATICALYKSRWQVELFFKWIKQHLRIKCFFGTSE
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          LTNNF-------QLAAATIAAIYKDRWQVELFFKAIKQNLKIKAFVGTSR
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          ISNQL-------DWQARTIADLYKKRWDIEIFFKLMKQNLQIKTFLGTSE
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       LTNNF-------TIPAANICALYKRRWQVELFFKWIKQHLRIKKFYGNSD
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  LTNDF-------ELSAEELGEIYRYRWQIELFFKWLKQHAQIKHFYGTSE
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  LTNDF-------NLSAEELGEIYRYRWQIELFFKWLKQHAQIKHFYGTSE
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  LTNDF-------DLSAEELGEVYRYRWQIELFFKWLKQHAQIKHFYGTSE
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               LTNNF-------ALPATTIADLYRCRWQVELFFKWIKQNLRIKRFYGTSE
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    ITNDF-------ELSAEEISDIYRYRWQIELFFKWIKQHFCVKHFYGLSQ
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        ITDIL-------DLPEIYIYYIYMRRWVIEKIFENMKRILKITHLISRDL
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           LTNNF-------EIPAATVAAIYKQRWQVELFFKWIKQHLRIKSFIGTSV
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           VTNAH-------HLKAAIVADLYKERWKIELFFKWIKQNLKIKTFLGTSE
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           ATNRY-------DLTAEEVAQVYKLRWNIETFFGWWKRHLKVYHLIARSE
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         VTNLPAEGEW--LVRDEEVMELYRQRWQIELLWKFLKMHLKLKRLMTKNE
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         VTNLPAEGEC--FVSDEEVMELYRQRWQIELLWKFLKMHLKLKRLMTKNE
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          LTTLA-----SSAYDPIDVISIYTLRTMIEILFREFKQYLNVENFHSKSL
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       LTTLA-----SSEYDPIDVINIYTLRTVIEILFREWKQYLNIENFHSKSL
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       LTTLA-----SSAYDPIDVISIYTLRTCIEILFRELKQYLNIENFHSKSL
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        VTNNF-------QLSARTIAAIYKDRWQVELFFKAIKQTLKIKNFAGYSK
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          LTNAL-------DIPAATVAELYKERWQIELFFKWIKQNLRVKSFLGTSR
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         ATNRY-------DLTAEQVAEVYKLRWNIETFFGWWKRHLKVYHLIARSK
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        LTNID-------TLAASSIALLYRSRWLIEIFFRNLKQRLSMKAFLGTTR
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        LTNNT-------TLPALTIAALYKSRWQVELFFKWIKQHLRIKKFLGTSE
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       ITNQL-------DWEYNTIAALYKKRWDIELFFKALKQNLQVKTFWGTSE
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      ATNLL-------NVPAEIIALIYAYRWTIEIFFRFYKQLMGGDHLISHNA
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           FSNDL-------TAPAEEIAALYKRRWAIELFFPWVKQTLKIRHFLGNSE
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       LTNDL-------ERSAVEIGQLYKDRWQIELLFRWIKQHLKIRKFLGNND
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           LTNDR-------KRPAVAIAALYKGRWQIELLFRWIKQHLKIRSFLGNND
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    ITNQT-------EWAASTVGELYQSRWGIEVFFKQIKQTLCICDFLGHSK
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       NAVEVQIWTALITMLLMVYLKSIAK---------------YRWCLSNLVS
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           QGVHNQVYIAMIVYCLNVLAQLNTN---------------SSRTYLQISR
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        NAIGIQIYTCIIAYLILKLLVIPKE---------------AGTTMLDKLR
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            NAVYNQLFAAFIAYVLLRWLYDQTKK---QTN--------VSLSFISFVR
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             WAIQNQVFIALIVFCLHVLVQIETN---------------SRRKTLQISR
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            NGITIQIYVSLIAYLILQLVSIPEQ---------------WGHTLLDKFR
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    SGVLLSFYVAVIAALLTYLHLGHRP---------------SKYMFVMLEQ
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    AGVQIQLYCAIIASLLLALTTGGDL---------------TRRKFEMICL
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        NAVRIQIYAAICAYCLVAIIQHDMQ---------------LDRSTYEVLQ
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       NAVKTQIWIAVSVYVLVAIVRKRLS---------------IEGSLYQLLQ
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       NAVKTQIWIAVSVYVLVAIIKKRLN---------------LNASLYTLLQ
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          NAVLTQIWIAMITYLLLAFSRHSTK---------------AGWTVQRIMR
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          NAVKSQIFVAMIVFLLLELIRRVYCK---AKTAFSNFCEKVRICLLHYLS
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       NAVRSQIWIAISVYVLVAIVKKRLK---------------LDASLYTLLQ
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  TAVTNQILLALMTYCSLMLLKLEVE---------------YPRDLLTLQR
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  TAVINQILLALMMYCLLVLLKLEAG---------------YPRDLLTLQR
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  AAVINQIRLDLMTYCTLILLKLEVE---------------HQRDLLTLQR
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               NAVKSQIWIAVSVYVIAAIMKKQLH---------------LQDSLYTLLQ
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    QAVENQLMIALITYCLMMLLKKKTG---------------YEGPLLKIQM
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        NGIINQVFATLISYIVLLILQSSMN---------------IYHTPAEIVR
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           NAVKSQIWVALCIYLLVAITKKKLG---------------VPCSLYTFLQ
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           NAVLTQIWIALCVYLVLAYLTFLSK---------------IGSSMQQILR
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           YGLMVQILGGLITYLLLAIYCREQHQ---EPVSISRVRE-----------
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         NGIRMQLYITLIAHLLLELVSVPKI---------------WGSQRLDKLR
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         NGIRMQLYVTLIAHLLLELVAVPKM---------------WGSQRLDKLR
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          NGVLFELFCALIGYVLVEWLRQRHPVKGGVARAIQKVRTHWNETLTSFG-
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       NGVLFELFCALIGYMLVVWFRQRHPVKGGVACAIQKVRTFWNETLDSFG-
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       NGVLFELFCALIGYVLVEWFRQCHPVKGGMARAIQQVRTFWNKTLDTFG-
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        NAVLTQIWIAMIIYLLVSISKHSAK---------------TGWTVLRIMR
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          NAVMTQLWIALCAYLVLAFLKFQSK---------------LGHSMQQMLR
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         YGLMVQLLGGLITYLLLAIYCREQHN---EPVSITRVRE-----------
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        NAVEVQIWTALITMLLMVYLKSIAK---------------YRWCLSNLVS
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        NAVKTQIWCAVCTYVLIAIVKKELQ---------------LDASLYTLLQ
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       NAVKSQIYVALINYLLLELIKRTISK---KAVAFSNLSEKVRFCLYHYLS
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      NGIQIQVYCSVIACLLINLWTGSRP---------------TKRTFEMISF
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           NAVRIQVAVALIAYLLLQMAKADQA---------------TIISPLAFAR
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       NAIRLQIFAAMIAYALLRIAARLAR---------------VPLPILRFTD
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           NAVRLQLFAAMIAYALLRIAARLNR---------------ITMPILRFTD
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    NAIRWQLWAALLLYVLLRFLAQVSG---------------WPHSFTRLFT
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       S-------------LRINTFTKMDLMQWLNEPFTP-------PPEP----
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           L-------------LKAAPWKSAHLWLRKIVGKTV-------P-------
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        Y-------------LQAFMCEKISYVHWLRELALR---------------
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            RFFSGQLPLDWKSGMAAALFEYAQIYGRR---------------------
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             Y-------------LRAALWKPAHIWLRKMEGKVV-------PDA-----
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            Y-------------LQSCMCQKISYVHWFEEMMLC---------------
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    V-ACG-----------AATWEEIAPILRERERQRD--VERASAAKRRAKK
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    Y-FAG-----------WADEEELLEAMEKRPP------------------
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        I-------------LSISLTDKTHLRDLFDKTKFQ-------NDKER-F-
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       I-------------FSVTIFEKTPILRALQRFDSQ-------EELHA---
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       V-------------LSLTLFEKITLQQALTNTSDT-------SGQHQ---
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          V-------------IQLNLFERRSLKSILIPDPPN-------HKKS----
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          F-------------GYLCSING-KVKKIEKPPDKT-------L-FDV-DK
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       I-------------LSLTLFEKMPLQQAFSPSEYI-------LPEGA---
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  L-------------LITCLFESYEEFLEKLRRRRR----------KA-AK
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  L-------------LIACLFERYEEFLEKLRRRRR----------KG-SK
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  M-------------LIACLYESYDEFLGKLRRRRR----------KG-SK
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               V-------------LSVTIFERTPIFQLLTERDYK-------TAQEP---
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    L-------------LHTCLYVDFTKFVRKLHHKSG-------QSSRG-RR
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        SIRNS-KELDIGH-DYMSNFNKI---------------------------
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           I-------------LEVNLFEKKPISSLVAEALKR-------NADYP---
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           L-------------LQLNLFERRDLESLFKPPKVE-------AS------
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           --------------LRNQIANEAAAEQQSRRTRIQGNSNKIRQLKRK-KR
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         Y-------------LQCCMCQEISYVHWLGKLLGSQR-----RRARL-PR
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         Y-------------LQCCMCKEISYVHWLGKLLGSRR-----RRVWS-LK
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          --------------------------------------------------
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       --------------------------------------------------
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       --------------------------------------------------
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        V-------------FQVNLFERKTLKSLLQPDRPM-------GKRS----
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          L-------------LQLNLFERRDFMELFAPPRPK-------RLLC----
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         --------------LRNQIANEAAEELEQKRMRTQQKSHKNKLLKKK-RR
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        S-------------LRINTFTKMDLMQWLNEPFTP-------PPEP----
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        I-------------LSVSIFEKTQLSCALQLGFPI-------PETPL---
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       L-------------DYVCNEVREGVRKVTISPQKV-------LVLER-DL
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      Y-FQG-----------LATEEELIAHIEKQAAAEE--AKRAKEER---KE
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           L-------------VRTNLMHRKRIDRLLKPRHSP-------P-------
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       L-------------VTQCLFQRKSIAEIHKPPQVN-------PSRPK-PR
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           L-------------VIRCLFERRDIAAIERPPPVN-------PSHRR-PR
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    M-------------IRGVTWSRVDLLRLLAFYGTA-------GGPWK-MR
+
+IS1598.1|IS4|IS4Sa|Transposase|Porphyromonas       --EN------------------Q-LF---------------
+IS4Bsu1.1|IS4|IS4Sa|Transposase|Bacillus           -----------------------------------------
+IS4Sa.1|IS4|IS4Sa|Transposase|Synechocystis        -----------------------------------------
+IS5377.1|IS4|IS4Sa|Transposase|Bacillus            ------------------------MYNFG------------
+IS641.1|IS4|IS4Sa|Transposase|Bacillus             -----------------------------------------
+ISAva3.1|IS4|IS4Sa|Transposase|Anabaena            -----------------------------------------
+ISBlma1.1|IS4|IS4Sa|Transposase|Blastopirellula    KAES-------------------------------------
+ISBlma3.1|IS4|IS4Sa|Transposase|Blastopirellula    -----------------------------------------
+ISBthe1.1|IS4|IS4Sa|Transposase|Bacteroides        --GP------------------NGPSLFNF-----------
+ISCARN70.1|IS4|IS4Sa|Transposase|Metagenomic       -TFN------------------Q-LILFDF-----------
+ISCARN93.1|IS4|IS4Sa|Transposase|Metagenomic       -LNN------------------K-LILDGI-----------
+ISCja2.1|IS4|IS4Sa|Transposase|Cellvibrio          --EP------------------Q-MRLAL------------
+ISCph2.1|IS4|IS4Sa|Transposase|Chlorobium          -FSV------------------Q-MDLFSY-----------
+ISDar2.1|IS4|IS4Sa|Transposase|Dechloromonas       -HNN------------------Q-LNLFTI-----------
+ISDha2.1|IS4|IS4Sa|Transposase|Desulfitobacterium  -RINHEKIYQMTEHYIITEEDTGWLNDLIYDPVIL------
+ISDha3.1|IS4|IS4Sa|Transposase|Desulfitobacterium  -RIRYEEIYRMTEHSILKEEETQWLDDLTYDPVIL------
+ISDha4.1|IS4|IS4Sa|Transposase|Desulfitobacterium  -RIKHDTIYQMTDHYIMAEEDTEWLNDLIYDPVIL------
+ISDpr1.1|IS4|IS4Sa|Transposase|delta               -SCK------------------Q-LNLFN------------
+ISDre1.1|IS4|IS4Sa|Transposase|Desulfotomaculum    -CIDHEKVYNITLVQVLQ-GEAEHLDDLTYDPIIA------
+ISFac10.1|IS4|IS4Sa|Transposase|Ferroplasma        -----------------------------------------
+ISGme2.1|IS4|IS4Sa|Transposase|Geobacter           -ERN------------------Q-LNLFNY-----------
+ISGsu1.1|IS4|IS4Sa|Transposase|Geobacter           ---P------------------Q-LVLL-------------
+ISGur4.1|IS4|IS4Sa|Transposase|Geobacter           -RAK---T---------------------------------
+ISGvi3.1|IS4|IS4Sa|Transposase|Gloeobacter         ACTY---VH--------------------------------
+ISGvi4.1|IS4|IS4Sa|Transposase|Gloeobacter         LCAN---VY--------------------------------
+ISHth3.1|IS4|IS4Sa|Transposase|Halococcus          -----------------------------------------
+ISHwa8.1|IS4|IS4Sa|Transposase|Haloquadratum       -----------------------------------------
+ISHwa9.1|IS4|IS4Sa|Transposase|Haloquadratum       -----------------------------------------
+ISOsp1.1|IS4|IS4Sa|Transposase|Oceanobacter        --EP------------------Q-MRFAI------------
+ISPca1.1|IS4|IS4Sa|Transposase|Pelobacter          --DK------------------Q-LSLI-------------
+ISPepr3.1|IS4|IS4Sa|Transposase|Pelobacter         -HAK---T---------------------------------
+ISPg4.1|IS4|IS4Sa|Transposase|Porphyromonas        --EN------------------Q-LF---------------
+ISPosp4.1|IS4|IS4Sa|Transposase|Polaromonas        -GDN------------------Q-LNLFNF-----------
+ISPto2.1|IS4|IS4Sa|Transposase|Psychroflexus       -FSG-------------------------------------
+ISRba5.1|IS4|IS4Sa|Transposase|Rhodopirellula      IC---------------------------------------
+ISRel1.1|IS4|IS4Sa|Transposase|Rhizobium           -GNP------------------GQMSLQW------------
+ISRm16.1|IS4|IS4Sa|Transposase|Sinorhizobium       -TIP------------------NQMVFRYA-----------
+ISRsp6.1|IS4|IS4Sa|Transposase|Rhizobium           -CSP------------------HQMSFAYV-----------
+ISVsp5.1|IS4|IS4Sa|Transposase|Verrucomicrobium    -ASP------------------QSVYLPGLEPPVYGTAGVA
+//

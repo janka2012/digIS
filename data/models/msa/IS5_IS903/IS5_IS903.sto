@@ -1,0 +1,1322 @@
+# STOCKHOLM 1.0
+
+#=GS           IS1420.1|IS5|IS903|Transposase|Ralstonia DE    solanacearum
+#=GS         IS17.1|IS5|IS903|Transposase|Acinetobacter DE    haemolyticus
+#=GS          IS903.1|IS5|IS903|Transposase|Escherichia DE    coli
+#=GS         IS903B.1|IS5|IS903|Transposase|Escherichia DE    coli
+#=GS             ISAae1.1|IS5|IS903|Transposase|Aquifex DE    aeolicus
+#=GS          ISAav2.1|IS5|IS903|Transposase|Acidovorax DE    avenae
+#=GS      ISAba10.1|IS5|IS903|Transposase|Acinetobacter DE    baumannii
+#=GS      ISAba12.1|IS5|IS903|Transposase|Acinetobacter DE    baumannii
+#=GS      ISAba13.1|IS5|IS903|Transposase|Acinetobacter DE    baumannii
+#=GS      ISAba40.1|IS5|IS903|Transposase|Acinetobacter DE    baumannii
+#=GS       ISAba5.1|IS5|IS903|Transposase|Acinetobacter DE    baumannii
+#=GS       ISAba7.1|IS5|IS903|Transposase|Acinetobacter DE    baumannii
+#=GS      ISAcma6.1|IS5|IS903|Transposase|Acaryochloris DE    marina
+#=GS          ISAeme7.1|IS5|IS903|Transposase|Aeromonas DE    media
+#=GS       ISAha1.1|IS5|IS903|Transposase|Acinetobacter DE    haemolyticus
+#=GS       ISAha2.1|IS5|IS903|Transposase|Acinetobacter DE    haemolyticus
+#=GS       ISAha3.1|IS5|IS903|Transposase|Acinetobacter DE    haemolyticus
+#=GS       ISAjo1.1|IS5|IS903|Transposase|Acinetobacter DE    johnsonii
+#=GS       ISAli17.1|IS5|IS903|Transposase|Azospirillum DE    lipoferum
+#=GS       ISAlw1.1|IS5|IS903|Transposase|Acinetobacter DE    lwoffii
+#=GS       ISAra1.1|IS5|IS903|Transposase|Agrobacterium DE    radiobacter
+#=GS        ISArch22.1|IS5|IS903|Transposase|Uncultured DE    archeon
+#=GS        ISArch23.1|IS5|IS903|Transposase|Uncultured DE    archaeon
+#=GS        ISArch24.1|IS5|IS903|Transposase|Uncultured DE    archeon
+#=GS        ISArch25.1|IS5|IS903|Transposase|Uncultured DE    archeon
+#=GS      ISArve1.1|IS5|IS903|Transposase|Archaeoglobus DE    veneficus
+#=GS           ISAs13.1|IS5|IS903|Transposase|Aeromonas DE    salmonicida
+#=GS           ISAs14.1|IS5|IS903|Transposase|Aeromonas DE    salmonicida
+#=GS           ISAs15.1|IS5|IS903|Transposase|Aeromonas DE    salmonicida
+#=GS            ISAs4.1|IS5|IS903|Transposase|Aeromonas DE    salmonicida
+#=GS          ISAte1.1|IS5|IS903|Transposase|Acidovorax DE    temperans
+#=GS           ISAve2.1|IS5|IS903|Transposase|Aeromonas DE    veronii
+#=GS       ISAzba3.1|IS5|IS903|Transposase|Azospirillum DE    brasilense
+#=GS        ISBam3.1|IS5|IS903|Transposase|Burkholderia DE    ambifaria
+#=GS        ISBhu1.1|IS5|IS903|Transposase|Burkholderia DE    humi
+#=GS        ISBps3.1|IS5|IS903|Transposase|Burkholderia DE    pseudomallei
+#=GS       ISButh7.1|IS5|IS903|Transposase|Burkholderia DE    thailandensis
+#=GS        ISBvi6.1|IS5|IS903|Transposase|Burkholderia DE    vietnamiensis
+#=GS        ISBvi8.1|IS5|IS903|Transposase|Burkholderia DE    vietnamiensis
+#=GS         ISC1058.1|IS5|IS903|Transposase|Sulfolobus DE    solfataricus
+#=GS          ISCap2.1|IS5|IS903|Transposase|Candidatus DE    Accumulibacter
+#=GS     ISCpi1.1|IS5|IS903|Transposase|Chromobacterium DE    piscinae
+#=GS           ISCte6.1|IS5|IS903|Transposase|Comamonas DE    testosteroni
+#=GS ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium DE    thermolithotrophum
+#=GS     ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter DE    shibae
+#=GS     ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter DE    shibae
+#=GS         ISEc35.1|IS5|IS903|Transposase|Escherichia DE    coli
+#=GS        ISEcl3.1|IS5|IS903|Transposase|Enterobacter DE    cloacae
+#=GS        ISEcl7.1|IS5|IS903|Transposase|Enterobacter DE    cloacae
+#=GS         ISFac2.1|IS5|IS903|Transposase|Ferroplasma DE    acidarmanus
+#=GS        ISFesp1.2|IS5|IS903|Transposase|Ferroplasma DE    sp.
+#=GS        ISFesp2.2|IS5|IS903|Transposase|Ferroplasma DE    sp.
+#=GS        ISGNB1-1.1|IS5|IS903|Transposase|Uncultured DE    bacterium
+#=GS             ISHph1.1|IS5|IS903|Transposase|Hoeflea DE    phototrophica
+#=GS     ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga DE    sp.
+#=GS            ISJca1.1|IS5|IS903|Transposase|Jettenia DE    caeni
+#=GS   ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium DE    sp.
+#=GS       ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya DE    sp.
+#=GS           ISLil2.1|IS5|IS903|Transposase|Leptonema DE    illini
+#=GS           ISLil3.1|IS5|IS903|Transposase|Leptonema DE    illini
+#=GS          ISLlo3.1|IS5|IS903|Transposase|Legionella DE    longbeachae
+#=GS          ISLve2.1|IS5|IS903|Transposase|Loktanella DE    vestfoldensis
+#=GS     ISMba15.1|IS5|IS903|Transposase|Methanosarcina DE    barkeri
+#=GS     ISMebo2.1|IS5|IS903|Transposase|Methanoculleus DE    bourgensis
+#=GS       ISMeco1.1|IS5|IS903|Transposase|Methanocella DE    conradii
+#=GS         ISMeth1.1|IS5|IS903|Transposase|Candidatus DE    Methanoperedens
+#=GS       ISMte1.1|IS5|IS903|Transposase|Methanoplasma DE    termitum
+#=GS        ISMth3.1|IS5|IS903|Transposase|Methanosaeta DE    thermophila
+#=GS      ISMye2.1|IS5|IS903|Transposase|Metallosphaera DE    yellowstonensis
+#=GS     ISNov2.1|IS5|IS903|Transposase|Novosphingobium DE    sp.
+#=GS      ISOan4.1|IS5|IS903|Transposase|Octadecabacter DE    antarcticus
+#=GS       ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum DE    anthropi
+#=GS          ISOgr3.1|IS5|IS903|Transposase|Oceanicola DE    granulosus
+#=GS         ISPa35.1|IS5|IS903|Transposase|Pseudomonas DE    aeruginosa
+#=GS          ISPam1.1|IS5|IS903|Transposase|Paracoccus DE    aminophilus
+#=GS          ISPam2.1|IS5|IS903|Transposase|Paracoccus DE    aminophilus
+#=GS             ISPan1.1|IS5|IS903|Transposase|Pantoea DE    ananatis
+#=GS   ISParac1.1|IS5|IS903|Transposase|Paracaedibacter DE    acanthamoebae
+#=GS          ISPko1.1|IS5|IS903|Transposase|Paracoccus DE    kondratievae
+#=GS          ISPko3.1|IS5|IS903|Transposase|Paracoccus DE    kondratievae
+#=GS          ISPlc1.1|IS5|IS903|Transposase|Paracoccus DE    alcaliphilus
+#=GS         ISPna4.1|IS5|IS903|Transposase|Polaromonas DE    naphthalenivorans
+#=GS         ISPna5.1|IS5|IS903|Transposase|Polaromonas DE    naphthalenivorans
+#=GS          ISPpa3.1|IS5|IS903|Transposase|Paracoccus DE    pantotrophus
+#=GS          ISPpa4.1|IS5|IS903|Transposase|Paracoccus DE    pantotrophus
+#=GS          ISPpa8.1|IS5|IS903|Transposase|Paracoccus DE    pantotrophus
+#=GS          ISPth1.1|IS5|IS903|Transposase|Paracoccus DE    thiocyanatus
+#=GS    ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales DE    bacterium
+#=GS        ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter DE    sphaeroides
+#=GS       ISRm33.1|IS5|IS903|Transposase|Sinorhizobium DE    meliloti
+#=GS        ISRssp5.1|IS5|IS903|Transposase|Roseovarius DE    sp.
+#=GS          ISRsu1.1|IS5|IS903|Transposase|Rhodovulum DE    sulfidophilum
+#=GS         ISRta5.1|IS5|IS903|Transposase|Cupriavidus DE    taiwanensis
+#=GS           ISRusp1.1|IS5|IS903|Transposase|Ruegeria DE    sp.
+#=GS           ISRusp2.1|IS5|IS903|Transposase|Ruegeria DE    sp.
+#=GS         ISSba21.1|IS5|IS903|Transposase|Shewanella DE    baltica
+#=GS             ISSgl1.1|IS5|IS903|Transposase|Sodalis DE    glossinidius
+#=GS          ISSis3.1|IS5|IS903|Transposase|Sulfolobus DE    islandicus
+#=GS       ISSisp2.1|IS5|IS903|Transposase|Silicibacter DE    sp.
+#=GS         ISSod12.1|IS5|IS903|Transposase|Shewanella DE    oneidensis
+#=GS            ISSoEn1.1|IS5|IS903|Transposase|Primary DE    endosymbiont
+#=GS        ISSpo9.1|IS5|IS903|Transposase|Silicibacter DE    pomeroyi
+#=GS         ISSpu11.1|IS5|IS903|Transposase|Shewanella DE    putrefaciens
+#=GS         ISSpu14.1|IS5|IS903|Transposase|Shewanella DE    putrefaciens
+#=GS         ISSpu16.1|IS5|IS903|Transposase|Shewanella DE    putrefaciens
+#=GS         ISSpu20.1|IS5|IS903|Transposase|Shewanella DE    putrefaciens
+#=GS   ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales DE    archaeon
+#=GS      ISTasp1.1|IS5|IS903|Transposase|Thalassiobium DE    sp.
+#=GS     ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota DE    archaeon
+#=GS        ISUnCu15.1|IS5|IS903|Transposase|uncultured DE    bacterium
+#=GS             ISV-M52.1|IS5|IS903|Transposase|Vibrio DE    mimicus
+#=GS               ISVa1.1|IS5|IS903|Transposase|Vibrio DE    anguillarum
+#=GS               ISVa2.1|IS5|IS903|Transposase|Vibrio DE    anguillarum
+#=GS              ISVal1.1|IS5|IS903|Transposase|Vibrio DE    alginolyticus
+#=GS         ISVba2.1|IS5|IS903|Transposase|Vibrionales DE    bacterium
+#=GS             ISVbsp3.1|IS5|IS903|Transposase|Vibrio DE    sp.
+#=GS              ISVch8.1|IS5|IS903|Transposase|Vibrio DE    cholerae
+#=GS              ISVpa3.1|IS5|IS903|Transposase|Vibrio DE    parahaemolyticus
+#=GS              ISVvu5.1|IS5|IS903|Transposase|Vibrio DE    vulnificus
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            ---------------MHRD------THKQAEPKATYRVKNWAQ----YNA
+IS17.1|IS5|IS903|Transposase|Acinetobacter          --------------------------------------------------
+IS903.1|IS5|IS903|Transposase|Escherichia           ------------------------------VAKQKFKITNWST----YNK
+IS903B.1|IS5|IS903|Transposase|Escherichia          ------------------------------VAKQKFKITNWPT----YNK
+ISAae1.1|IS5|IS903|Transposase|Aquifex              -----------LTQWKR-------RSRRKG---MRTRNNK--Q---LIKL
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           -------------------------MRETSWGRVKYRTTNWKA----YNA
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       ---------------------------MNTESKSRYKTTNWSE----YNQ
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       ---------------------------MKKPAHKIYRTTNWPA----YNR
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       ---------------------------MNKSTPKIYRTTNWSS----YNR
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       ---------------------------MNKPTPKIYRTSNWSF----YNR
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        --------------------------------------------------
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        ---------------------------MKKPVPKIYRTTNWSS----YNQ
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       ---------------------------------MSYQIRNWSE----YNA
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           ------------------------------MGKSLHPITNWPK----YNK
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        ---------------------------MNKPTPKIYRTTNWSS----YNS
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        ---------------------------MNKPTPKTYRTTNWSY----YNR
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        ---------------------------MKKPTPKIYRTTNWSS----YNQ
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        ---------------------------MKNPASKIYRTTNWSS----YNQ
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        -----------ML--YKAN-----EPRRAKIPKARYRMENWAA----YDA
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        ---------------------------MKKPPPNIYRTINWSK----YNQ
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        -----------MP--HKHN-----AARRHHVGKMKFKVTNWSE----YEA
+ISArch22.1|IS5|IS903|Transposase|Uncultured         ------------------------------------MQRNWSK----YNE
+ISArch23.1|IS5|IS903|Transposase|Uncultured         -------------MTPQQITAIGNRSTRRYW---VGSNRRHDR----YNR
+ISArch24.1|IS5|IS903|Transposase|Uncultured         ------------------------------------MTRDWKK----YNE
+ISArch25.1|IS5|IS903|Transposase|Uncultured         ------------------------------------MTRNWRE----YNG
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       -----------------------------------MPKINWKE----YNE
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            ------------------------------MSTSLHPITNWPT----YNK
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            ------------------------------MGTSLHPITNWPQ----YNK
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            ------------------------------MGKSLHAISNWSQ----YNR
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             ------------------------------MGKALHPITNWPQ----YNR
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           -------------------------MNEPQGPKTRYKTTNWAA----YNA
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            ------------------------------MGTPLQPITNWPT----YNK
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        -----------MP--YKHN-----EPRRHKIPKAKYKVENWRE----YNR
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         ---------------MRRD------KGKTSGAKARYRVRNWSA----YNA
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         ---------------MRKD------EHKTREPKGKYRVRNWTQ----YNA
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         ---------------MRKD-----TTSKQASSKANYRVKNWTQ----YNA
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        ---------------MRKD------KNGTQEPKAKYRVRNWAA----YNA
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         -------------------------MTLKKKTPVRYRTTNWSQ----YNA
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         -------------------------MSESKYPRGKYKTTNWAA----YNA
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          -------------------------------MEKSKYKRDWSK----YDE
+ISCap2.1|IS5|IS903|Transposase|Candidatus           -------------MAMRVK-----PETGEVGLKQRYRVTNWSE----YDR
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      ---------------------------MTKPAPKRYRTTNWKA----YNQ
+ISCte6.1|IS5|IS903|Transposase|Comamonas            -------------------------MSQLPHSKPRYRTTNWKQ----YNA
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  -----------MPKLRK-------KPILSG---MKAKRLNFHKVLNLSKT
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      ---------------------------MPKPAPPRYRTTNWSE----YNK
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      ---------------------------MPKPAPPRYRTTNWSE----YNK
+ISEc35.1|IS5|IS903|Transposase|Escherichia          ------------------------------MGKSKHKISNWKQ----YNQ
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         ------------------------------MAKQKFKITNWST----YNS
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         ---------------------------MIAPVKLKYRTTNWKD----YNA
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          -------------MTP-QINNKINRSIKRYW---IGSNRRWEK----YNE
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         --------MGINPNSDINIWQYAHTVIMPRWGKTYRDKRNWKE----YNE
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         ---------------------------MSRWGKTYKDKRNWKE----YNE
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         -------------------------MSESKSAKPRYKTTNWAA----YNA
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              ---------------------------------MKFKVTNWAE----YEA
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      ------------------------------------MSRDWSK----YNG
+ISJca1.1|IS5|IS903|Transposase|Jettenia             MKQQKRDVKKLAGTDKRPL-----QEQKKKKSKKDYRVRNWSE----YTE
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    ----------------------------MKPAPQKYRTTNWKT----YNE
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        -------------------------------MKRSYKLRNWSE----YTA
+ISLil2.1|IS5|IS903|Transposase|Leptonema            -------------MARKKA-----ETQTEAKEKTRYRVKNWRE----YNQ
+ISLil3.1|IS5|IS903|Transposase|Leptonema            ---------------MSAL-----RIKGKQDPKVPYRVLNWRD----YNR
+ISLlo3.1|IS5|IS903|Transposase|Legionella           -----------MP--DKYA-----KKKGWNVPKQKYKLRNWSE----YND
+ISLve2.1|IS5|IS903|Transposase|Loktanella           --------------------------------------------------
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      MI---ITKPPLIPLNE---------------------DFKWQL----LSE
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      -------------------------------------MSSW---------
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        -------------MVYGFFVVFMRKKRGGRWGKKYEDKRDWKE----YNE
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          -------------MNSKKAQQKKEKVKQKRWGKKFEDKRNWKE----YNE
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        -------------------------MAEMGWDR--QYNRHWDE----YNQ
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         --------------------------------MAYEDNRNWRE----YNE
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       -------------------------------MGKSEYKRDWSK----YDE
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      ---------------------------MSRPPRARYRTTNWKS----YNA
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       ---------------------------MSSWIPTKYKTRNWAE----YNF
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        -----------MP--FKHN-----SARRHRIPKQKFKVTNWAE----YEA
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           ---------------------------MSRPIPPSYKTKNWPA----YNE
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          ---------------------------MTKPAPAQYRTTNWKD----YNA
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSKPVP-LFRTTNWSS----YSQ
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MTRPDPARYRTNNWKS----YNE
+ISPan1.1|IS5|IS903|Transposase|Pantoea              ----------LQDQNTHSP-----DNTGSPVANQKFKITNWPT----YNK
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    -----------MPYKERIR-----RSGAIHKRQKHYRLQNWPD----YNQ
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSRPTPPTYRTRNWPA----YNE
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSRPTPPAYKTRNWPS----YNE
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSRPKPPTYKTRNWPA----YNE
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          ---------------MPKD------TLLPSQPKGVYRVKNWPE----YNA
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          ---------------MRKD------KHLPSQPKGVYRVKNWPE----YNA
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSKPEPTRYRTMNWKS----YND
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSKPSPARYRTTNWSS----YNA
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSRPTPPAYKTRNWPT----YNE
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           ---------------------------MSKPEPARYRTTNWKS----YND
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     ---------------------------MSKPKPARYRTTNWSS----YND
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         ---------------------------MSKPKPARYRTTNWST----YTA
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        -----------MP--FKHN-----AARRHRIGRMKFKVTNWPE----YEA
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         ---------------------------MSRPPKPTYKTTNWRS----YNQ
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           ---------------------------MPKPAPTRYRTTNWST----YNA
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          ---------------MRKD------NRQQAEPKGVYRVKNWAQ----YNK
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            ---------------------------MSRPIPPSYKTKNWPA----YNE
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            ---------------------------MSSWSPTRYKTRNWPS----YNT
+ISSba21.1|IS5|IS903|Transposase|Shewanella          ------------------------------MGKSIRKIVNWKQ----YNQ
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              ------------------------------MAKQKFKITNWST----YNK
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           -------------------------------MGKSKYKRDWHK----YDE
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        ---------------------------MSRPTPPAYKTRNWPA----YNE
+ISSod12.1|IS5|IS903|Transposase|Shewanella          ------------------------------MSKPRYKTTNWKQ----YNQ
+ISSoEn1.1|IS5|IS903|Transposase|Primary             ------------------------------MAKQKFKITNWPA----YNN
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         ---------------------------MSRPTPPTYKTRNWPA----YNK
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          ------------------------------MSKPRYKTTNWKQ----YNQ
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          ------------------------------MGKSKRKILNWKQ----YNQ
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          ------------------------------MGKSKSRITNWPE----YNK
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          ------------------------------VPKPRYKTTNWKQ----YNQ
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    ---------------------------MSRWGKPYKDKRNWKE----YNE
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       ---------------------------MSSWSPTKYKTKNWSS----YND
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      -------------------------------------MIDWPS----YNR
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         ---------------------------MSKPSPARYRTTNWSS----YTA
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              ------------------------------MPKPRYKTNNWKQ----YNQ
+ISVa1.1|IS5|IS903|Transposase|Vibrio                ------------------------------MGKAKKKITNWAE----YNK
+ISVa2.1|IS5|IS903|Transposase|Vibrio                ------------------------------MPKPRYKTTNWKQ----YNK
+ISVal1.1|IS5|IS903|Transposase|Vibrio               ------------------------------MPKPRYKTTNWKQ----YNK
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          ------------------------------MPKPRYKTTNWKQ----YNQ
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              ------------------------------MAKPRYKTTNWKH----YNQ
+ISVch8.1|IS5|IS903|Transposase|Vibrio               ------------------------------MPKPRYKTNNWKQ----YNQ
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               ------------------------------MPKPRYKTTNWKQ----YNK
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               ------------------------------MPKPHYKTTNWKQ----YNK
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            GLIARGDVTMWIDEGMCKA-SA-AQ---ARKRGHPLVYSDALIQGLLGLK
+IS17.1|IS5|IS903|Transposase|Acinetobacter          --MSRGNIAIWFDPAT--QWYAP----SKGKQGRNQTYSDAAIQCCLMIK
+IS903.1|IS5|IS903|Transposase|Escherichia           ALINRGSLTFWLDDGAIQAWYESAT---PSSRGRPQRYSDLAITTVLVIK
+IS903B.1|IS5|IS903|Transposase|Escherichia          ALINRGSITFWLDDEAIQAWYESAT---PSSRGRPQRYSDLAITTVLVIK
+ISAae1.1|IS5|IS903|Transposase|Aquifex              ILTKSREI--------CNTIRPS----QYNKRGRPRVYEDHLIVAALLIK
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           ALKARGELTIWLDRDM--QWLAR----PTGKRGRCQKFSDAAIQFCLTIK
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       ALRQRGAFTIWFDPQM--QWSAT----PTGKKGRQPTYTDIAIQFALTIR
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       ALMSRGNIAIWFDPAT--QWYAP----SKGKQGRNQTYSDAAIQCCLMIK
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       ALINRGNIAIWFDPAT--QWYAP----SKGKQGRNQTYSDAAIQCCLMIK
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       ALINRGNLSIWFDPKT--QWYAQ----PKGKHGRNQTYSDTAIQCCLMIK
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        --MSRGNIAIWFDPAT--QWYAP----SKGKQGRNQTYSDAAIQCWLMIK
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        ALIKRGNISIWFDPKT--QWYAQ----PQGKHGRNQTYSDAAIQCCLMIK
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       GLKQRGSVTFWLEQSAIVHWLETTP---RQKRGASLTYSDTAISTFETVK
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           SLINRGSLTFWVDAETMNNWFHHDH---HGRRGRSQLYTDQTICTFLMLK
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        ALINRGNLSIWFDPKT--QWYAQ----PKGKHGRNQTYSDTAIQCCLMIK
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        ALINRGNISIWFDRNT--QWYAQ----PQNKQGRNQTYSDTAIQCCLMIK
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        ALIKRGNISIWFDPKT--QWYAQ----PQGKQGRNQTYSDTAIQCCLMIK
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        ALIKRGNISTWFDPQT--KWYAQ----PQAKHGRNQTYSDTAIQCCLMIK
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        ALRRRGDLTIWVSPEAIAAWTPPAT--G--RRGRPSRYSAIAIEAGLMLR
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        ALINRGNISIWFDPKT--QWYAQ----PKGKHGRNQTYSDTAIQCCLMIK
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        GLRRRGSLTLWITPEALAGWVAPRR--K--TRGGQPLYSDLAIETTLMLG
+ISArch22.1|IS5|IS903|Transposase|Uncultured         SLVKRGEF--YLSLDFLSNWRRELNRMNRNKRGRPYAYTDSFIKFTAFLK
+ISArch23.1|IS5|IS903|Transposase|Uncultured         SLVNRVED--LMDPSFLMNWKNLLQDNNRGKRGHPFKTPNAFITFLAKLR
+ISArch24.1|IS5|IS903|Transposase|Uncultured         ELVKRGEF--YLSPDFLKNWDEELKGMNEGKVGRPYKFPESYVQFAALWY
+ISArch25.1|IS5|IS903|Transposase|Uncultured         KLVKRGEF--YLSPDFLDSWDEELEEMNRGKIGRPYEFPESFVQFAALWY
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       KLVKRGEI--LFSTEFIENWKRELDSMNERKRGHPYEYPNSFMQFLASIR
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            SLINRGSLTFWVDAEAMNNWFHHGH---HGRRGRSQLYTDQTICTFLMLK
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            SLINRGSLTFWVDAEAMNNWFHHGH---HGCRGRSQLYTDQTICTFLMLK
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            SLVKRGSLTFWVDENVVHNWFHQEH---HGRRGRSALYTDQTICTFLMLK
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             SLINRGSLTFWVDAEAMDNWFHQDH---HGKRGRSQLYTDQSICTFLMLK
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           ALKVRGALTIWLDKDM--QWYAP----ASGKRGRQQTFTDAAIQFCLSIK
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            SLINRGSLTFWVDAEAMSNWFHHDH---HGRRGRSQLYTDQSICTFLMLK
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        ALRQRGSLTVWISPDALAMWTPAQT--G--RRGRPPAYSDLAIETGIMLR
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         GLINRGNVTMWIDEAALAGMPE--A---EPTRGRPRLYSDALIQALLGIK
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         GLIARGDVTMWIEQSVLKT-TE-TR---LPKRGRPYAYSDAVIQMLLGLK
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         GLLAQGDVTMWIDPSLFAAPPE-LD---VRSRGRPCVYPDALVQMLLGLK
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        GLINRGNITMWIGDDALANMPD--T---EPTRGRSRLYSDALIQALLGLK
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         ALKARGSLGIWLDPGM--QWLAA----ASGRRGRQQRYSDAAIQFCLSVK
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         ALKARGSLTVWLNKDM--QWYAP----ASGKRGRPQRFSDAAIQFCLSLK
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          NVITRYKL--MFPFYVFEHWWDLLAEENRNA-RTKYKAPKEFDEFLAFLH
+ISCap2.1|IS5|IS903|Transposase|Candidatus           ALVNRGNLTIWFDEASIRDSWTPPR---PIGRGKPGLYSETAIQTCLTIK
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      ALIQRGSLSVWLDTSM--SWQAT----PQGKRGRTQTYSDAVIQFCLTIK
+ISCte6.1|IS5|IS903|Transposase|Comamonas            ALKARGSLTIWLDKGM--SWFAA----ASGKRGRSPQFSDAAIQFCLTIK
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  YMNRRGQA--------VLVYLYP----FKTKRGRPKKYPDEIILTLLFLQ
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      ALRRRGSLLVWFDRDM--TWLSE----RTGKRGRPDVFSDAAIQFCLSVK
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      ALRRRGSLLVWFDRDM--TWLSE----RTGKRGRPDVFSDAAIQFCLSVK
+ISEc35.1|IS5|IS903|Transposase|Escherichia          ALVQRGSLTVWMDEQAIQQWHCQTH---HGRRGRGFHYSDSAIETALMLK
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         ALRQRGSLTVWLDESAIAAWTDSAQ---PEGRGRPLHYTDMAISTVLMMK
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         ALKARGSLLIWLDKDM--CWHGS----ASGKRGRSPKYSEAAVQFCLTVK
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          SLVDRVEY--LTDLSFIKDYDTLLEEKNSGKIGHPYKVPDALIMYLARLR
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         ELVIRGKF--FFDFDFVDQWDSELEKMNLGKRGSPFLFPESFMQFMMIWH
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         ELVIRGKF--FFDFDFVDQWGSELEKMNLGKRGSPFLFPESFMQFMMIWH
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         ALKARGSLAIWLDKDM--QWYAP----ASGKRGRQHVFSDAAIQFCLSIK
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              GLRRRGSLTLWITPEALAGWAAPRR--K--TRGGQPRYSDLAIETTLTLG
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      ELVKRGEI--LIDSMS---FGLKAKSERNRNTGRPPVYSDHLILMLLFIK
+ISJca1.1|IS5|IS903|Transposase|Jettenia             ALRQRGSLDVWIDEGVQEKW-NAEP---TGQRGSPPTYSDLAITSTLQLG
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    ALKSRGSLLIWLDPKM--NWHGQ----PSGKRGRSQTFSDEAIQFCLSIK
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        ALVKRGSLTLWLSEEVIETWENTQK---TGNPGASKTYSDLAIQTLLTLR
+ISLil2.1|IS5|IS903|Transposase|Leptonema            ALVNRGSLTVWISDDISTTWAAEYR---HRGRGHQPVYSDQAIEFMLTLR
+ISLil3.1|IS5|IS903|Transposase|Leptonema            GLVKRGDLCLWIEDGIEDRWYSVET---PNRRGRRDKYSDAAIECVLVLK
+ISLlo3.1|IS5|IS903|Transposase|Legionella           ALMRRGDITIRLSADAVAQWYERER--VYDGTGTPRRFTDFAIIACHEIR
+ISLve2.1|IS5|IS903|Transposase|Loktanella           ---------------M--SWEAE----ASGRRGRQKTYSDAAIQACLTLK
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      ---------------ILNVFDLRFCKQTLTRRGIVPLHRSVPTIKIVLLS
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      ---SSAAN--SLSLDFVDQWDAQLAQMNAGKRGRPFQYPESFIAWMARIH
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        ELVRRGEL--YLSLDFLERWGEEVRKMNEGKRGRPFRFPEAFVEWMALLH
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          KLVKRGEL--YLSLDFLENWDNELDKMNKDKKGAPFSYPEQFVLFMAFVY
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        RLVERGRI--FWDLSWVPKHLDEI-GSNEKKRGRPRLYGDALISYVSRVR
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         KLVRRGWF--YLSTDFVNNWDEELLKMNKNKNGRPYRYPETFIQFCGLAY
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       NVITRYKL--MFPFYVFEHWWDLLAEENRDA-KKTYKAPKEFNEFLAFLH
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      ALAQRGSLQVWFDPEM--EWLST----PTGKRGRQPVFSDVAIQACLTLK
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       SLKMRGSLSIWFDAGM--TWEAV----PSGRRGRQQAYSDAAIQACLTLK
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        GLRQRGSVTLWISEAAIAGWIAPLR--K--TRGGQCRYSDLAIETTLICG
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           ALKQRGSLTIWFDPDM--AWVPP----PTGKRGRQPQYSDAAIQTCLTMK
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          ALKARGSLSVWLDRDM--QWHGQ----PTGRRGRSPTFSDAAIQFCLTIK
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLMVWFDPEM--AWFAV----PSGKAGHPERFSAAAIQFCLSIK
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLLIWLDKDM--TWLAP----KAGGNGRPPVFSDASVQFCLMVK
+ISPan1.1|IS5|IS903|Transposase|Pantoea              ALINRVSITFWLDDEAIQAWYESAA---PSSRGRPQRYSDLAITTVLMIK
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    ALINRGDLTLWLCEDLHHNWYAQKS--PIPKKGRPLHYSDHAITLMLTLR
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLTIWFDPEM--SWDAA----PTGRRGRQQTYSDAAIQTCLSMK
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLTIWFDPEM--IWAAA----PTGKRGRQPSYSDAAVQTCLTMK
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLTIWFDPEM--SWDAA----PSGRRGRQQSYSDAAIQTCLSMK
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          GLIERGNVTVWMDERMFSPALQ--T---PGQRGRPQAYCDAMIQMLLTLK
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          GLIERGNVSIWMDEEMFAPMAG--A---SVQRGRPQAYCDAVIQMLLALK
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           ALKQRGSLLIWLDKDM--VWRAP----KSGCNGRPPVFSDAAIQFCLMVK
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           SLRKRGSLLIWVDTDM--TWLAP----RDGRPGRPAVFSDAAIQFCLSIK
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLTIWFDPSM--IWEAA----PTGKRGRQPDYSDAAIQTCLTMK
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           ALKRRGSLLVWLDRDM--DWLAP----KAGKPGRPPVFSDAAIQFCLMIK
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     ALRKRGSLLIWLDKEM--TWHAP----HEGRPGRPPVFSNAAIQFCLSLK
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         ALRKRGSLLIWLDKEM--AWHAP----HEGRPGRPLVFSDAAIPFCLSIK
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        GLRRRGSLTLWLTPEALAMWLAPRR--T--TRGGQPRYSDLAIETALTLG
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         ALRRRGSLTVWFDPLM--QWKAA----PSGRRGRQQTYSDAAIQACLTLK
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           SLRQRGSFSVWFDPDM--VWHAE----KSGKRGRPETFSDAAIQTCLTLK
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          GLIARGDVTMWVEESLLVPPAK-AQ---SPKRGHPLVYTDALIQGLLGLK
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            ALKQRGSLTIWFDPDM--AWVPP----PTGKRGRQPQYSDAAIQTCLTMK
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            ALKQRGSLSIWFDPEM--SWHAL----PTGKRGRQPEFSDAAIQICLTMK
+ISSba21.1|IS5|IS903|Transposase|Shewanella          ALVNRGSLTFWVDEAAVKAWYCNEH---HGGRGRGFSYSDVAIETALMIK
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              ALKQRGALTIWLDESAIVAWTEKTT---PEQRGQPLHYADMAITTVLMMK
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           NVITRYTL--MFPFYVFEHWWDLLAEENKHA-KKTYKAPKEFNEFLAFLH
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        TLKRRGSLTIWFDPEM--SWNAA----PTGRRGRQQNYSDTAIQTCLTMK
+ISSod12.1|IS5|IS903|Transposase|Shewanella          ALINRGSLTFWIDEDAIAKWKAKVE---PPKKGRPQLFSDLAITTALMVK
+ISSoEn1.1|IS5|IS903|Transposase|Primary             ALRQRGDMTVWLDESAIAAWTESTP---PEHRGRPLHYTDMAITTVLMIK
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         ALKRRGSLTIWFDPAM--TWDAA----PTGKRGRQPDYSDAAVQTCLTMK
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          ALINRGSLTFWIDEDAIAQWKAKAE---QPRKGRPHVFSDLAITTALMVK
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          ALVNRGSVTFWLDKSAINAWHCKAH---HGGRGRGFQFSDTAIETALMLK
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          ALTNRGSLTFWIDEQALNLWCHTEH---HGGRGRGFQYSDTAIETALMLK
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          ALINRGSLTFWIDEEAIATWKATTE---PSKKGRPLVFSDLAITTALMVK
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    ELVIRGKF--FFDLDFVDQWDSELKKMNLGKRGSPFRFPGSFMQFMMIWH
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       SLKRRGSLSVWFDPEM--VWTPP----PNGKRGRQQQFSDAAIQTCLTLK
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      SLVQRGEI--LFSYDFLDGWGSEIENMNINKKGKPFVFPDSFILAIGYIR
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         SLRKRGSLLIWLDKEL--TWFAP----PDGSPGRPSVFSDAAIQFCLTIK
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              AFINRGSVTFWIDEEAIREWKQGK----QNKRGRPRIFSELAITTALMVK
+ISVa1.1|IS5|IS903|Transposase|Vibrio                ALCKRGSVTFWIDDSAIDAWRCRTH---DGKRGRGFQYSDTAIETALMIK
+ISVa2.1|IS5|IS903|Transposase|Vibrio                ALINRGSLTFWIDEETIAEWKQNK----QGKRGRPRRFSDLAITTALMVK
+ISVal1.1|IS5|IS903|Transposase|Vibrio               ALINRGSLTFWIDEEAIVEWKQNK----QGKRGRPRRFSDLAITTALMVK
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          SLINRGSLTFWIDEEAISGWTQSK----QNKRGRPRRFSDLAITTALMVK
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              ALINRGSLTFWIDEEAIQLWKQIK----QGNRGRPRLFSDLAITTALMVK
+ISVch8.1|IS5|IS903|Transposase|Vibrio               ALINRGSLTFWIDEEAISEWKQGK----QNKRGRPRVFSDLAITTALMVK
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               ALINRGSLTFWIDEEAIRQWKQSK----QDKRGRPRQFSDLAITTALMVK
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               ALINRGSLTFWIDEEAIRQWKQSK----QDKRGRPRQFSDLAITTALMVK
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            QVFH------LPLRALQGFAMSLRRLAYPELPVPNYTTLSRRAQD----L
+IS17.1|IS5|IS903|Transposase|Acinetobacter          SLFR------LSLRMVTGFVQSLIKLCGLNWTAPDYSTLCRRQKH----I
+IS903.1|IS5|IS903|Transposase|Escherichia           RVFR------LTLRAAQGFIDSIFTLMNVPLRCPDYSCVSRRAKS----V
+IS903B.1|IS5|IS903|Transposase|Escherichia          RVFR------LTLRAAQGFIDSIFSLMNVPLRCPDYSCVSRRAKS----V
+ISAae1.1|IS5|IS903|Transposase|Aquifex              ILEN------LSLRDLEERLKDLFP------KVPDFTTLHYRFRKLNRGY
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           CLFG------QPLRQTLGLVESLLGMAGLHWPVPDYSTVCRRQKS----L
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       NLFQ------LALRQTQGFIQSFLQMAHLDWNVPDFSTLSRRADK----L
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       SLFR------LSLRMVTGFVQSLIKLCGLNWIAPDYTTLCRRQKH----I
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       SLFR------LSLRMVTGFVQSLIHLCGLNWIAPDYTTICRRQQH----I
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       SLFR------LSLRMVTGFVQSLIHLCRLDWTAPDYSTLCRRQKY----L
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        SLFR------LSLHMVTGFVQSLIKICVLNWTAPDYTTLCRRQKH----I
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        SLFR------LSLRMVTGFAQSLIKLCGLNWTAPDYSTLCRRQKR----I
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       CIYG------LAGRQTEGFLNSLFELMGIELPVCDHSTVSRRKGQ----L
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           GIFN------LTLRATQGLLDSLFELMNVPLCAPDYSCVSKRART----V
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        SLFR------LSLRMVTGFVQSLIHLCRLDWTAPDYSTICRRQKH----I
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        SLFR------LSLRMVTGFVQSLIKLCGLNWTAPDYSTLCRRQKH----I
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        SLFR------LSLRMVTGFVQSLIKLCGLNWTAPDYSTLCRRQKH----I
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        SIFR------LSLRMVTGFVQSLIQLSGLSWTAPDYSTLCRRQKQ----I
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        LAFG------RPWRQTEGLLGSLMRLLGLDLPVPDHTTFSRRSAD----L
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        SLFR------LSLRMVTGFVKSLIKLCGLDWTAPDYSTICRRQKH----I
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        IVFG------LRLRQSEGLLSSVLAMMGLDLPVPDHTTLSRRART----W
+ISArch22.1|IS5|IS903|Transposase|Uncultured         TAFG------LEYRQTEGVLRALSKYV-PGVKAADYTTLWVRFAR----M
+ISArch23.1|IS5|IS903|Transposase|Uncultured         ALYS------VPFRSLEGIARVFSRIS--GIRTVCYTNIFRRIRK----I
+ISArch24.1|IS5|IS903|Transposase|Uncultured         EFFH------LPYRQLEGALRKLSELI-PELEVSNYSRLCRRFKE----L
+ISArch25.1|IS5|IS903|Transposase|Uncultured         EFFH------LPYRQLEGVLRKLGSLF-PELKASDYSTLWHRFKD----L
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       YYCH------LDYRTLEGFCRSLSRIL-D-IPAPDHSTIHKRAPR----L
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            GIFN------LTLRATQGLLDSLFELMNVPLCAPDYSCVSKRART----V
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            GIFN------LTLRATQGLLDSLFELMNVPLCAPDYSCVSKRART----V
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            GIFN------LSLRATQGLLDSLFELMNVPLCAPDYSCVSKRAST----V
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             GIFS------LTLRATQGLLDSLFELMNVPLCAPDYSCVSKRART----V
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           CLFG------LALRQSLGLIQSLLRLAGLNWRVPDFSTISRRQRT----L
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            GIFN------LSLWATQGLFDSLLELMNVPLCAPDYSCVSKRAST----V
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        LAMG------RPWRQTEGLLRSIVKLLGLDLPVPDYTTLARRSAR----L
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         TVFR------LPLRALQGFAQSLRELAFATLPMPNYTTLCRRAQT----L
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         QVYR------LPLRALQGFAHSLRELAFADLPVPNYTTLSRRAQD----L
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         QVFH------LPLRALQGFALSLSKLAFPGLPVPNYTTLSRRAQK----L
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        TVFH------LPLRALQGFAQSLRDLAFAELPVPNYTTVCRRAQA----L
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         YLFN------LALRQALGLVESLLKLAGLDWPVPDFSTVCRRQRN----L
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         CLFG------LALRQSLGMVESLLRLAGLDCQVPDFSTVCRRQKN----L
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          IF--------LPYRAIEGVLRALEQLK-IIPTSLDYSTIWKRVRN----M
+ISCap2.1|IS5|IS903|Transposase|Candidatus           TLFQ------LPYRATEGLIKSLMRLCHLDLPVPDHTHMSRRAGE----L
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      NLLG------LALRQTIGFIQSLIQLAGLDWSVPDYSTLSRRQQT----Q
+ISCte6.1|IS5|IS903|Transposase|Comamonas            NLFG------LALRQTTGFVQSLLALSGLPWFVPDFSTLCRRQRS----L
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  VAWN------LSFRDLEYLAVQIFGRE----NIPDFSTYYYRLKQLPSIL
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      VLFG------LPLRQTSGMVASLLEMADLDWPVPDFSTLCRRQRT----L
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      VLFG------LPLRQTSGMVASLLEMADLDWPVPDFSTLCRRQRT----L
+ISEc35.1|IS5|IS903|Transposase|Escherichia          AVFK------LPLRALEGFINSLFELMNVPLQSPDYSCISKRAKT----V
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         RVFN------LPLRALQGFVDSVFTLMALPLRCPDYSLVSKRAKC----V
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         GLFN------LPLRQAMGMTQSLLGLAGLDWQVPDFSTVSRRQKR----L
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          SIFN------VPFRSLEGILRSLAIIT--GIKSISYSEIFRRIRR----I
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         QY--------LDYRGLEGMARSLVNLG-IIPEYGDYTTIWHRIHD----K
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         QY--------LDYRGLEGMARSLVNLG-IIPEYGDYTTIWHRIHN----M
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         CLFG------LALRQSLGLVQSLLHLADLDWRVPDFSTVSRRQKT----L
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              MVFG------LRLRQSEGLLSSVLDMMGLDFAVPDHTTLSRRART----W
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      FALK------LPYRQTQGLAKKLFQNS--GLKIPDFRTLHYRFKT----M
+ISJca1.1|IS5|IS903|Transposase|Jettenia             IVFH------QRLRQTEGLVKSLFRLMNIPLKVPDYSTLSRRGET----V
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    CLFN------LPLRQAMGMAQSLLRLAGLDWPVPDYSTVSRRQKT----L
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        VIYG------LALRQTIGFAGSIFELMGVSVALPVHTTLSRRQKT----L
+ISLil2.1|IS5|IS903|Transposase|Leptonema            GLFK------FPLRQTTGFVRSLFTMLKLDLQVPDYSQVCRRQAG----I
+ISLil3.1|IS5|IS903|Transposase|Leptonema            SLFG------LPLRQTTGLLASLFKLSGLDLEVPDYSRISRRQGR----L
+ISLlo3.1|IS5|IS903|Transposase|Legionella           QVYR------LPLRQPQGFINSLFRLMGFPLSCPNFSCISKRLKE----L
+ISLve2.1|IS5|IS903|Transposase|Loktanella           VLFG------LPLRQTTGFVESLLKRVELDWSVPDFSTLCRRQKT----L
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      MFFSCEISYSIKELKEREILRNFLKISLVPTEKEVYGILSKYEPQEFTAF
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      IFLQ------MPYRQMEGFVRKLATFI-PSLKAANYTTLFCRIKN----L
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        VWFF------MPFRQMEGFLRALSQHA-PL-EPADYTTLFKRIKG----L
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          SIFH------LPYRQLEGFLRKLSDLI-SRDIAADYTTLFKRIAK----M
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        TVTG------IPFRMLEGLFKPVFDLI--GIEVPSYPTLWRRCTS----L
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         AFLH------LPYRQLEGFIQALSGFV-PGLLAADYSTLWQRITN----L
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       LF--------LPYRAMEGVLRALEGLK-IVPTSLDYSTMWERVRN----M
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      GVFK------LPLRQTTGMVASLLEMAGLDWPVPDFSTLSRRQKT----L
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       VLFG------LPLRQTAGFVESLLKLAGLNWSVPDFSTLCRRQRT----L
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        KVFN------QPLRQTEGLMASLLRLLNVELPVPDHTTFSRRCAN----L
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           VLFG------MALRQTTGFVESLLRLVGLDWAVQDFSTLSRRQKA----L
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          GLFG------LPLRQVIGFVQSLMHLAGLDWPVPDYSTVCRRQKT----L
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           VLFG------LPLRQTTGFVESLLALSGFDWPVPDYTTLCRRQKH----L
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           VLFG------LPLRQTTGMVASILSMAGLDWPVPDFSTLSRRQKR----I
+ISPan1.1|IS5|IS903|Transposase|Pantoea              RLFR------LALRAAQGFIDSVFALMDVPLRSPDYTSVSKRAKS----V
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    LIFK------QKLRQTQGVVKSLFHLLGLQLDVPNYTRLSRRGTV----P
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           VLFG------MALRQTTGFVESLLRLVGLDWAVPDFSTLSRRQKT----L
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           VLFG------MALRQTTGFVESLPQLIGLDWAVPDFSTLSRRQKT----L
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           VLFG------MALRQTTGFVESLLQLVGLNWAVPDFSTLSRRQKT----L
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          SVYR------LPLRALQGFTTSLQHLALPGLPVPNYSTLSRRAKS----L
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          SVYR------LPLRALQGFAMSLRRLALPALPVPNYSTLSRRAKA----L
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           VLFG------LPLRQTTGMVASILSMAGLDWRVPDFSTLSRRQKR----I
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           VLFK------LPLRQTAGMVASLLKLAGLDWPVPDFSTLCRRQKT----L
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           VLFG------MALRQTTGFVESLLRLIDLNWAVPNFSTLSRRQKT----L
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           VLFG------LPLRQTTGMVASILEMAGLDWPVPDFSTLSRRQKT----I
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     VLFK------LPLRQTAGMVASLLRLAGLDWPVPDYSTLCRRQKT----L
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         VLFK------LPLRQTAGMVTSLLRLAGLDWPVPDYSTLCRRQKT----L
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        LVFG------LRLRQVEGLLGSVLPLMGLALAVPDHTTLSRRART----W
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         VLLG------LPLRQTTGFVASLLELSGLGWSVPDFSTLSRRQKT----L
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           VLFG------LPLRQTVGLVESLIRMAGLDWPVPDFSTLCRRQAR----L
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          QVFH------LPLRALQGFAQSLRTLAFPTLPVPNYTTLSRRAQN----L
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            VLFG------MALRQTTGFVESLLRLVGLDWAVPDFSTLSRRQKT----L
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            VLFG------MPLRQTTGFVESLLRLAGLDWKVPDFSTLCRRQKT----L
+ISSba21.1|IS5|IS903|Transposase|Shewanella          GIFN------LSLRALEGFLNSLFTLMNVPLISPDYTSISKRAKT----V
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              RVFG------LSLRALQGFVDAIFKLMGLPLRCPDYSLLSKRAKT----V
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           IF--------LPYRAIEGVLRALERLK-IIPTSLDYSTIWERVRN----M
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        VLFG------MALRQTTGFVESLLRLIGLDWAVPDFSTLSRRQKT----L
+ISSod12.1|IS5|IS903|Transposase|Shewanella          RIFS------MPLRALQGFINSVFKLGDIPLSCPHYTCISKRAKT----V
+ISSoEn1.1|IS5|IS903|Transposase|Primary             RVFN------LSLRALQGFVDAIFKLMGLSLRCPDYSLVSRRAKT----V
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         VLFG------MALRQTTEFVESLLGLIDLDWAVPDFSTLSRRQKT----L
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          RVFS------MPLRALQGFINSVFKLADIPLSCPHYTCISKRAKA----V
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          GVFK------LSLRATEGFINSLFRLMDVPLAAPDYTCISKRAKT----V
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          GLFN------LPLRALEGFLNSVFSLMSLQLTSPGYSCISKRAKT----V
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          RVFS------MPLRALQGFINSVFKLANVPLVCPHYTCISKRAKT----V
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    QY--------LDYRGLEGMARSLVDLG-LIPRYGDYTTFWYRIHD----M
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       VLFG------MPLRQTTGFVQSLLQLVGLYWSVPDFSTLCRRQKT----L
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      YLFH------LPYRQTQGIIKATGKRL-PA-NPPSYGHICKRINK----L
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         VLFK------LPLRQTTGMVASLLKMAGLDWAVPDYTTLCRRQKT----L
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              RIFS------MPLRRSQGFMDPVFRLAQLPLRCPHYSCISRRAKD----V
+ISVa1.1|IS5|IS903|Transposase|Vibrio                GIFS------LPLRALQGFIDSIFELLDAPLTSPDYTCISKRSKT----V
+ISVa2.1|IS5|IS903|Transposase|Vibrio                RVFS------MPLRALQGFLDSVFKLANIPLVCPHYTCISRRAKE----V
+ISVal1.1|IS5|IS903|Transposase|Vibrio               RVFS------MPLRALQGFLDSVFKLAHIPLVCPHYTCISRRAKE----V
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          RVFS------MPLRALQGFINSIFRLAHVPLSCPHYTCISRRAKQ----V
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              RVFS------MPLRGLQGFINSIFKLAELPLSCPHYSCISKRAKT----V
+ISVch8.1|IS5|IS903|Transposase|Vibrio               RIFS------MPLRASQGFMDSVFQLAQLPLRCPHYSCISRRAKD----V
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               RVFS------MPLRALQGFIDSVFSLANVPIVCPHYSCISRRAKQ----V
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               RVFS------MPLRALQGFIDSVFSLANVPIVCPHYSCISRRAKQ----V
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            QVVL-----PA----LH--TGEPVHMLLDSTGLKVFGEGEWK--------
+IS17.1|IS5|IS903|Transposase|Acinetobacter          DIAI--SYQK---------SSDGLHLLVDSTGMKFLGEGEWK--------
+IS903.1|IS5|IS903|Transposase|Escherichia           NISF-----KT----FT--RGEIAHLVIDSTGLKVFGEGEWK--------
+IS903B.1|IS5|IS903|Transposase|Escherichia          NVSF-----KT----PT--RGEIAHLVIDSTGLKVFGEGEWK--------
+ISAae1.1|IS5|IS903|Transposase|Aquifex              LKEL--IHRTAKEIMEKLQAKEFYCLIADGTGFGYAQAYELK--------
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           DVQV--RYRA---------SDKGLHMLADSTGIKFLGEGEWK--------
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       QPLLHKSAKN---------PQEDLHILVDSTGIKVTGDGEWV--------
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       DIVI--SYQK---------SSYGLHLLMDSTGMKFLGEGEWK--------
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       DIVI--SYQK---------SCDGLYLIVDSTGLKFLGEGEWK--------
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       DIAI--NYQK---------NSNGLHLLVDSTGLKFLGEGEWK--------
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        DIAI--SYQK---------SRDGLHLLVDSTGLKFLGGGEWK--------
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        DIAI--SYQQ---------SRDGLHLLVDSTGLKFLGEGEWK--------
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       SISL-----PV----IP--KQGAIHVVIDSTGIKVYGEGEWK--------
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           TVAY-----RQ----PP--KGGITDLVIDSTGLKVFGEGEWK--------
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        DIAI--NYQK---------SSNGLQLLVDSTGLKFLGEGEWK--------
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        DIAI--SYQK---------SSDGLHLLVDSTGLKFLGEGEWK--------
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        DIAI--SYQK---------SHDGLHLLVDSTGLKFLGEGEWK--------
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        DIAI--SYQK---------SHEGLHLLIDSTGLKFLGEGEWK--------
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        AV-------ET----ALVRTDGPATVVIDSTGLKVFGKGEWY--------
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        DLVI--GYQK---------SSDGLHLLVDSTGLKFLGEGEWK--------
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        KSSA---GGGD----RQHVAEGPVHILVDSTGLKVYGAGQWL--------
+ISArch22.1|IS5|IS903|Transposase|Uncultured         KFEL--PEAL-------D--DPERVVAFDGTGVKASNRSEWY--------
+ISArch23.1|IS5|IS903|Transposase|Uncultured         VPTL--PHTD----------GKPVDCAIDSTGFKITIRGDYL--------
+ISArch24.1|IS5|IS903|Transposase|Uncultured         EFEI--PQS-----------EDKVVAAVDATGVKVTNRGEWL--------
+ISArch25.1|IS5|IS903|Transposase|Uncultured         KIEV--PKS-----------NV-IIVAVDSTGIKVTNRGEWM--------
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       DFTP--PAVN----------SEEIVIAVDSSGIKVHNRGEWM--------
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            AVAY-----RQ----PS--KGRITDLVIDSTGLKVFGEGEWK--------
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            KVAY-----RQ----PP--KGRITDLVIDSTGLKVFGEGEWK--------
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            KVAY-----RQ----PP--KGKVTDLVIDSTGLKVFGEGEWK--------
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             KVAY-----RQ----PP--KGRITDLVIDSTGLKVFGEGEWK--------
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           QVQL--PYQR---------SATALDLLVDSTGIKFLGEGEWK--------
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            KVAY-----RQ----PP--KSKVTDLVIDSTGLKVFGEGEWK--------
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        SR-------TT----ALKTPTGPVDVVIDSTGLKISGTGEWQ--------
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         EVQL-----PI----VG--DGEPIHLVVDSTGMKVYGEGEWK--------
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         KVRL-----PA----LR--SGEPLHLVVDSTGVKLYGEGEWK--------
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         KVAL-----PA----LH--TGEPLHLVVDSTGLKVYGEGEWK--------
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        QVKL-----PV----IH--SDEPLHLVVDSTGAKVCGEGEWK--------
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         QAQL--SYQP---------RHGGLDLLVDSTGVKFLGEGEWK--------
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         QVQL--PYRP---------SSSALSLLVDSTGIKFLGEGEWK--------
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          KITF--PEAS-----------DELEVIADATGISTNTGGQYI--------
+ISCap2.1|IS5|IS903|Transposase|Candidatus           SVKI-----PR----RP--RQGPTHVVVDSTGLKIFGEGEWK--------
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      QVQI--PYQK---------GSGALHLLVDSTGIKMLGEGEWK--------
+ISCte6.1|IS5|IS903|Transposase|Comamonas            DVKV--AYRP---------SPGGLNLLLDSTGIKFLGEGEWK--------
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  LVDF--LNFVSRRLLGKY-HKELRFLIIDGTGFKYNEIYPLK--------
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      NVQI--PYRR---------VDGPLNLLVDSTGIKFLGDGEWQ--------
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      NVQI--PYRR---------VDGPLNLLVDSTGIKFLGDGEWQ--------
+ISEc35.1|IS5|IS903|Transposase|Escherichia          EIKY-----RL----PS--HGPVAHLVIDATGLKVYGEGEWK--------
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         NISI-----KT----PT--RGEISHLVIDATGLKVFGEGEWK--------
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         SVTI--GAQP---------TTTGLHLLVDSTGIKMLGEGEWK--------
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          KPEL--NNIN-----------NKLDCIIDSTGYKITIRGDYL--------
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         IPDL--DISG----------IQYAELGTDGTGMKTNNAGSYR--------
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         VPDI--DISG----------IQYAELGTDGTGMKTNNAGSYR--------
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         QVQL--PYRA---------STSALNLLVDSTGIKFLGEGEWK--------
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              KPSA---RSKG----HQHVASGPIHVLVDSTGLKIYGAGQWL--------
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      EINI--KDFPD----P-EDLPDDFVIVLDSTGIKVTNRGEWL--------
+ISJca1.1|IS5|IS903|Transposase|Jettenia             GISL-----AK----EK--K-ENLVLVLDSSGLKVYGEGEWK--------
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    QVAI--GAVP---------TTTGLHLLVDSTGIKMLGEGEWK--------
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        IIDL-----PT----KP--ATGGRHVVVDSTGIKVYGEGEWK--------
+ISLil2.1|IS5|IS903|Transposase|Leptonema            KMKP-----IN----ASKAMKKGVDLVMDSTGLKVYGDGEWM--------
+ISLil3.1|IS5|IS903|Transposase|Leptonema            SPSI-----KL----PKGIRSKPIHLVLDGTGLKVFGEGEWK--------
+ISLlo3.1|IS5|IS903|Transposase|Legionella           KIKV--PKYKK----TDKPLDRVHAIAIDSTGLKRFERGEWH--------
+ISLve2.1|IS5|IS903|Transposase|Loktanella           SVAI--PYKG---------SAGPLHLLVDSTGIKAEGEGEWN--------
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      VFEI--LN-DL----CPKRKNGSRDIIIDSTDINLNL--NWHAKKITKES
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      DLSL--EALP-------EILADDVIVGADSTGIKVTNRGEWM--------
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        KLDL--SSTI-------VA-GSDVVIAVDSTGIRVTNRGEWM--------
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          NIIL--PETI-------SEKKEDIVIAVDSSGVKVTNRGEWM--------
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        EAAA--GIK---------ATARKRIVAVDSTGIKVTVRGGWM--------
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         ELNI--PIP-----------DNDLVVAVDSTGMKVTNRGDWM--------
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       DITF--PEAN-----------DQLEVIADATGISTTRGGQYI--------
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      LVEI--PCQP---------SSGPLHLLIDSTGIKAVGDGEWC--------
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       SVAI--PYKG---------STGPLHLLIDSTGIKAEGEGEWN--------
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        VVSS--LTRCT----RRDGTDEPLHVIVDSTGMKIYEAGQWL--------
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           AVTI--PYRN---------SQGPLNLLIDSTGIKAEGEGEWH--------
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          TVNI--PYRP---------SRGGLHLLVDSTGVKMLGEGEWK--------
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           KVQI--PYRA---------ASGPLHLLVDSTGIKFSGEGEWQ--------
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           TVQI--SNRR---------ASGPLNLLVDSTGIKFLGDGEWL--------
+ISPan1.1|IS5|IS903|Transposase|Pantoea              NVSF-----KT----ST--RGEIAHLVIDSSGLKVFGEGEWK--------
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    LITR-----HL----EK--MDEPGHLVIDSTGIKVFGESEWL--------
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           AVNI--PYRG---------SKGPLHLLIDSTGIKVEGEGEWH--------
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           KVNI--PYRG---------SQGPLHLLIDSTGIKVEGEGEWN--------
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           AVNI--PYRG---------SKGPLHLLIDSTGIKVEGEGEWH--------
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          RVSL-----PV----LR-NAGEAVHLLVDSTGLKLFGEGEWK--------
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          RVTL-----PV----LR-NAGEAVHLLVDSTGLKLFGEGEWK--------
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           TVQI--TSRR---------APGPLNLLVDSTGIKFLGDGEWL--------
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           AVQI--PYRR---------ADGPLNLLVDSTGIKFLGDGEWQ--------
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           KVNI--PFRG---------SQGPLHLLIDSTGIKVEGEGEWN--------
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           VVQL--SSRR---------APGPLNLLVDSTGIKFLGDGEWL--------
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     KVQI--PYRR---------AEGPLNLLVDSTGIKFLGDGEWQ--------
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         KVQI--PYRR---------ADGPLNLLVDSTGIKFLGDGKWQ--------
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        QSPN---KAHD----LQGRPDGPVHILVDSTGLQVYGAGQGL--------
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         DVSI--PYRG---------SKGALHLLVDSTGIKVEGEGEWH--------
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           AVQI--PYRA---------PGQPLNLLIDSTGIKFRGDGEWL--------
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          NVVL-----PA----SR--TGESLHLVIDSTGLKLYGDGEWK--------
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            AVSI--PYRG---------SHGPLNLLIDSTGIKAEGEGEWH--------
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            NVAI--PYRG---------GSGPLHLLIDATGIKAEGEGEWN--------
+ISSba21.1|IS5|IS903|Transposase|Shewanella          NVQY-----RN----PS--RGPIAHVVVDATGLKVFGEGKWK--------
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              KISI-----KT----PT--RGEISPLVIDGTGLKVFGEGEWK--------
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           NIKF--PEAN-----------DQLEVIADATGISTNKGGQYI--------
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        KVNI--PYRG---------SQGQLHLLVDSTGIKVEGEGEWN--------
+ISSod12.1|IS5|IS903|Transposase|Shewanella          NIAF-----KT----KT--RGAIEHLAIDSTGLKVYGEGEWK--------
+ISSoEn1.1|IS5|IS903|Transposase|Primary             DISI-----KT----PT--RGEISHLVIDGTGLKIFGEGEWK--------
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         KVNI--PYRG---------SDGPLHLLIDSTGIKVEGEGEWN--------
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          KIAF-----KT----KT--RGTIEHLAIDSTGLKVYGEGEWK--------
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          EVKY-----RN----PC--RGPVTHLVVDSTGLKVYGEGEWK--------
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          KVNY-----RP----PC--RGAIAHLVVDATGLKVYGEGEWK--------
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          NISF-----KT----KT--RGAIEHLAIDATGLKVYGEGEWK--------
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    MPEL--DISG----------MQYAELGTDGTGLKTNNAGSYR--------
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       NVSL--PYRG---------GAGPLNLLIDSTGIKAEGEGEWN--------
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      NIDI--KRDK-------MDDDDDLIISVDSTGIKITNRGQWM--------
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         AVQI--PYRR---------VDGPLNLLVDSTGIKFLGDGEWQ--------
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              DVSF-----KT----KT--KGPIQHLAIDATGLKVYGEGKWK--------
+ISVa1.1|IS5|IS903|Transposase|Vibrio                QVKY-----RN----KS--KGAIRHIAIDSTGLKVFGEGEWK--------
+ISVa2.1|IS5|IS903|Transposase|Vibrio                EVSF-----KT----KT--RGAIQHLAIDATGLKVYGEGEWR--------
+ISVal1.1|IS5|IS903|Transposase|Vibrio               EVSF-----KT----KT--RGAIQHLAIDATGLKVYGEGEWK--------
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          EVSL-----KT----KT--RGTIQHLAIDATGLKAYGEGEWK--------
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              NVAF-----KT----KT--KGTIQHLAIDSTGLKVYGEGEWK--------
+ISVch8.1|IS5|IS903|Transposase|Vibrio               NVSF-----KT----KT--KGPIQHLAIDATGLKVYGEGEWK--------
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               EVSF-----KP----KT--RGAIQHLAIDATGLKVYGEGEWK--------
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               EVSF-----KP----KT--RGAIQHLAIDATGLKVYGEGEWK--------
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            ----VRKHGWS--KRRTW---RKVHL---------------AMDAKTGQI
+IS17.1|IS5|IS903|Transposase|Acinetobacter          ----RKKHGAE--YRRQW---RKLHI---------------GIDAKTLQI
+IS903.1|IS5|IS903|Transposase|Escherichia           ----VKKHGQE--RRRIW---RKLHL---------------AVDSKTHEI
+IS903B.1|IS5|IS903|Transposase|Escherichia          ----VKKHGQE--RRRIW---RKLHL---------------AVDSNTHEI
+ISAae1.1|IS5|IS903|Transposase|Aquifex              -----WKKGKE----LRN---VKSHVKTEVLVGVV-RNKAIVVDINTGKS
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           ----TKKHGAE--RRRQW---RKVHL---------------GIDAQTLQI
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       ----RKKHGVN--QHRQW---LKLHL---------------ATDANSGEI
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       ----RKKHGPE--YRRQW---RKLHI---------------GIDAKTLQI
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       ----RKKHQPE--YRRQW---RKLHI---------------GIDAKTLQI
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       ----RKKHQPE--YRRQW---RKLHI---------------GIDAETLQI
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        ----CKKHGSE--YRRQW---RKLHI---------------AIEAETLQI
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        ----RKKHQPA--YRRQW---RKLHI---------------GIDAKTLQI
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       ----TRQHGVS--KRRTW---RKLHL---------------SVDESTGEI
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           ----VRKHGAE--KRRVW---RKLHL---------------AVDPVTHDI
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        ----RKKHQPE--YRRQW---RKLHI---------------GIDAETLQI
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        ----RKKHGPE--YRRQW---RKLHI---------------GIDAETLQI
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        ----RKKHQPE--YRRQW---RKLHI---------------GIDAETLQI
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        ----RKKHQPE--YRRQW---RKLHI---------------GIDARTLQI
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        ----LQKYGGP--PRRSW---RKLHL---------------AVDPDTGEV
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        ----RKKHQPE--YRRQW---RKLHI---------------GIDAETLQI
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        ----EEKHGVK--SRRSW---RKLHL---------------AVDADSGEI
+ISArch22.1|IS5|IS903|Transposase|Uncultured         ----QIISG----KKRKW---IKVMI---------------AIDVKTGEI
+ISArch23.1|IS5|IS903|Transposase|Uncultured         ----GTKWNR---RRRGW---NKLHA---------------VISIHDVSV
+ISArch24.1|IS5|IS903|Transposase|Uncultured         ----RKYHKK---ERRGW---IKVHV---------------AVDVESKEL
+ISArch25.1|IS5|IS903|Transposase|Uncultured         ----RKTHRG---ERGGW---IKVHV---------------AVDVESKEI
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       ----REKYR----RRRGW---IKIHF---------------AVDVETKQV
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            ----VRKHGAE--KRRVW---RKLHL---------------AVDPVTHDI
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            ----VRKHGTE--KRRVW---RKLHL---------------AVDPVTHDI
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            ----VRKHGYD--KRRVW---RKLHL---------------AVDPATHDI
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             ----VRKHGAE--KRRVW---RKLHL---------------AVDPVTHDI
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           ----RKKHGAE--YRRQW---RKVHL---------------GIDAHTLEI
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            ----VRKHGHD--KRQVW---RKLHL---------------AVDPATYDI
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        ----HEKHGGR--PRRSW---RRLHL---------------AIDPDSGDI
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         ----VRQHGYS--KRRTW---RKVHL---------------GLDANHGQM
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         ----VRKHGYS--KRRTW---RKVHL---------------GLDAKTGQV
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         ----VRKHGWS--KRRTW---RKVHL---------------AMDANTGQI
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        ----VRQHGYS--KRRTW---RKVHL---------------ALDANTGQL
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         ----TQKHGAD--YRRQW---RKVHL---------------AVDANTLEI
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         ----CKKHGAE--YRRQW---RKVHL---------------GIDAQTLEI
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          ----VAKWGKT--RDSKF---LKIEI---------------VMDNNEFNV
+ISCap2.1|IS5|IS903|Transposase|Candidatus           ----VRQHGVG--KRRTW---RKIHL---------------AVDESTKDI
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      ----TKKHGAE--YRRQW---RKVHL---------------GIDAETLQI
+ISCte6.1|IS5|IS903|Transposase|Comamonas            ----CKKHGVE--RRRQW---RKLHI---------------GIDAQTLQV
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  -----ILRGKE----IKE---VKSHVKVVVLSVHLKDGKRFILTALPGES
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      ----VRKHGTS--RRRQW---RKVHL---------------AMDTTTSDI
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      ----VRKHGTS--RRRQW---RKVHL---------------AMDTTTSDI
+ISEc35.1|IS5|IS903|Transposase|Escherichia          ----IRKHGKE--KRRVW---RKLHL---------------AVDAATHAI
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         ----VRQHGAD--KRRVW---RKLHL---------------AADSATHEI
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         ----TKKHGAD--YRRQW---RKIHL---------------GIDAATLEI
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          ----GHKWHK---KRKGW---LKLHV---------------IISLKDVNV
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         ----IMKYGDPDARQRKH---LVVII---------------TADVKTKKI
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         ----IMKYGDPDARQRKH---LVVII---------------TADVKTKKI
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         ----RKKHGAE--YRRQW---RKVHL---------------GIDASTLEI
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              ----EEKHGVK--SRRSW---GKLHL---------------AVDADSGEI
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      ----RKKHGKR--ARKGW---IKLHV---------------AFDLKRKKV
+ISJca1.1|IS5|IS903|Transposase|Jettenia             ----VRQHGYT--KRRTW---RKIHL---------------SITP-DGEI
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    ----TKKHGAD--YRRQW---RKVHL---------------GIDASTLEI
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        ----TRQHGVS--KRRTW---LKLHL---------------GVDEQTGEI
+ISLil2.1|IS5|IS903|Transposase|Leptonema            ----TRKHGPS--KRRTW---RKLHI---------------GIDVNSGEI
+ISLil3.1|IS5|IS903|Transposase|Leptonema            ----VREHGAG--KRRTW---RKLHL---------------AIDAGSGQI
+ISLlo3.1|IS5|IS903|Transposase|Legionella           ----QEKYELS--SKASW---CKLHV---------------GVNQNH-YF
+ISLve2.1|IS5|IS903|Transposase|Loktanella           ----ARKHGGP--KRRLW---RKIHI---------------GVDEETLEI
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      LKNKEYKWGHS--THRGFFIGMKLTL---------------ALDSQTLKP
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      ----REKWG----ARRGW---IKVHL---------------MIDVETNQA
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        ----REKWN----NHRGW---IKVHL---------------SVDVESKQI
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          ----REKWK----VHRGW---IKAHI---------------AIDIKTKET
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        ----REKWK----VHKGW---LKLHI---------------LSDVETNEI
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         ----RESHGV---ERRGW---IKVHI---------------AVDVETRKP
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       ----IAKWGKR--RDSKF---LKIEI---------------VMDKDELNV
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      ----RRKHGPS--KRRQW---RKVHL---------------GVDLGSLDI
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       ----ARKHGGP--KRRLW---RKIHI---------------GIDEQTLEI
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        ----EEKHGAK--SARKW---LKLHL---------------AIDADSNQV
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           ----ARKHGGA--KRRLW---RKIHI---------------GVDEQTLEI
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          ----TKKHGSE--YRRQW---RKVHL---------------GIDAETLEI
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           ----VRKHGAS--RRRQW---RKIHI---------------GIDADTLEV
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGTQ--RRRQY---RKVHL---------------AMDTATGDI
+ISPan1.1|IS5|IS903|Transposase|Pantoea              ----VKKHGKE--RRRIW---RKLHL---------------AVDGKTHEI
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    ----ETKYGKQ-YKRKVW---RKLHL---------------GINSK-GFI
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGGP--KRRVW---RKIHL---------------GIDEETLEV
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGGP--KRRIW---RKVHL---------------GIDEKTLEI
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGGP--KRRVW---RKIHL---------------GIDEQTLEV
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          ----VRQHGYS--KRRSW---RKVHL---------------ALDAKTAQV
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          ----VRKHGYA--KRRSW---RKVHL---------------GMDDETGQV
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGPH--RRRQY---RKVHL---------------AMDTATGDI
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGVQ--GRRQW---RKVHL---------------AMDPATSDI
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGGT--KRRVW---RKIHI---------------GIDEQTLEI
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           ----ARKHGTH--RRRQY---RKVHL---------------AMDTATGDI
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     ----ARKHGVQ--GRRQW---RKVHL---------------AMDIATSDI
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         ----ARKHGVQ--GRRQW---RKVHL---------------AMDTATSDV
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        ----EEKHGAR--SRRGW---RKLHV---------------ALDADSSEI
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         ----TRKHGGS--KRRVW---RKIHL---------------GIDEQTLEI
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           ----ARKHGAS--RRRQW---RKVHL---------------AMDAGTGDV
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          ----VRKHGWS--KRRTW---RKVHL---------------AMDANTGQI
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            ----ARKHGGA--KRRLW---RKIHI---------------GVDEQTLEI
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            ----ARKHGGS--KKRLW---RKLHL---------------GMDEETLEI
+ISSba21.1|IS5|IS903|Transposase|Shewanella          ----TRKHGSE--KRRTW---RKLHL---------------AIDASTHEV
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              ----VRQHGAD--RRRVW---RKLHM---------------AADSVTHEI
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           ----IAKWGKT--KDSKF---LKIEI---------------VMDKDQFNV
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        ----ARKHGGT--KRRVW---RKIHL---------------AIDEQTLEI
+ISSod12.1|IS5|IS903|Transposase|Shewanella          ----VKKHGTD-GKRRVW---RKLHI---------------AVDTHSHEI
+ISSoEn1.1|IS5|IS903|Transposase|Primary             ----VRQHGAE--RRRVW---RKLHL---------------AVDSATHEI
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         ----ARKHGGT--KRRVW---RKIHI---------------GIDEKSLEI
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          ----VKKHGTD-GKRRVW---RKLHI---------------AVDTHSHEI
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          ----TRKHGKE--RRRTW---RKLHL---------------AIDADTHDV
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          ----MRKHGKE--KRRTW---RKLHL---------------AIDAATHEV
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          ----VKKHGTD-GKRRVW---RKLHI---------------AVDTHTHEI
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    ----IMKYGDPDARKRKH---LVVII---------------TADVRTKKI
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       ----ARKHGGS--KRRIW---RKIHI---------------GIDEETLEV
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      ----DEKWNTQ--NRKGY---LKIHV---------------AVDIKTRKI
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         ----ARKHGVQ--GRRQW---RKVHL---------------AMDTATSDI
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              ----VKKHGTD-GKLRVW---RKLHL---------------AVDTSTHEI
+ISVa1.1|IS5|IS903|Transposase|Vibrio                ----VKKHGAE--KRRTW---RKLHL---------------AVDIETHET
+ISVa2.1|IS5|IS903|Transposase|Vibrio                ----VKKHGTD-GKRRVW---RKLHI---------------AVDTSTHEI
+ISVal1.1|IS5|IS903|Transposase|Vibrio               ----VKKHGTD-GKRRVW---RKLHI---------------AVDTSTHEI
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          ----VKKHGTD-GKRRVW---RKLHI---------------AVDTNTHEI
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              ----VKKHGTD-GKRRVW---RKLHL---------------AVDTSTHEI
+ISVch8.1|IS5|IS903|Transposase|Vibrio               ----VKKHGTD-GKRRVW---RKLHL---------------AVDTSTHEI
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               ----VKKHGTD-GKRRVW---RKLHL---------------AVDTSTHEI
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               ----VKKHGTD-GKRRVW---RKLHL---------------ALDTRTHEI
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            CAALMTHQD--VGDADVLPDLLDQ-L----PPDISVDIVGGDGAYDSKQC
+IS17.1|IS5|IS903|Transposase|Acinetobacter          RAIQLTTNN--VSHSQVLGDLLNQ-I----PQDEQIDSVYTDGAYDTKQC
+IS903.1|IS5|IS903|Transposase|Escherichia           ICADLSLNN--VTDSEAFPGLIRQ-T----HR--KIRAASADGAYDTRLC
+IS903B.1|IS5|IS903|Transposase|Escherichia          ICADLSLNN--VTDSEAFPGLIRQ-T----HR--KIRAAAADGAYDTRLC
+ISAae1.1|IS5|IS903|Transposase|Aquifex              YADENMLLR-------S---MLKE--LGFRARYFLGDAYYGKSAG----V
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           RAIAVTTNE--VGDSPMAADLLGQ-I----PSNEEIASFTGDGAYDTQDV
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       QAVEVTTCQ--YGDAEMLQPLLDQ-I------DEPIASVTADGAYDTVNC
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       RAVQLTTNN--VSDSQVLGDLLNQ-I----PQDEQINSVYTDGAYDTKQC
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       RAVQLTTNN--VSDSQVLGDLLDQ-I----PQDERVDSVYTDGAYDTKQC
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       RAVQLSTNN--VSDSQVLGDLLDQ-I----PQDEQIDSVYTDGAYDTKQC
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        RTVQLTTNN--VSDSQVLEDLLSQ-V----PLDERIDSVYTDGAYDTKHC
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        RAIQLTTNN--VSDSQVLGDLLDQ-I----PLDERIDSVYTDGAYDTKHC
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       LTGVVTTND--VQDGEVFEDLLEG-I----DD--EIEQVSADGAYDQSHC
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           VAAEVSLEN--VHDAEVLPTLLNP-L----RR--KLGHVYADGAYDSKAS
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        RAIQLTTNN--VSDSQVLGDLLDQ-I----PQDEQIDSVYTDGAYDTKQC
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        RAVPLTTNN--VSDSQVLGDLLAQ-I----PLDERIDSVYTDGAYDTKHC
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        RAVQLTTNN--VSDSQVLGDLLDQ-I----PLDERIDSVYTDGAYDTKCC
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        RAVQLTTNN--VSDSQVLGDLLDQ-I----PLDEQIDSVYTDGAYDTKQC
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        LASELTGNE--EGDASLVGSLLDQ-I----TR--PIDAVIADGAYDGEPI
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        RSVQLTTNN--VSDSQVLGDLLNQ-I----PLDEQIDSVYTDGAYDTKQC
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        IAHSPTDQE--AGDATQLGSLLDQ-I----DD--EIDQFTADGAYDGDPS
+ISArch22.1|IS5|IS903|Transposase|Uncultured         LDVVVADGA--SRDNALFKEKARKIK---------MKAFMGDGAFDDKEI
+ISArch23.1|IS5|IS903|Transposase|Uncultured         LSFSITDEH--VHDAKEGRKILESVRDR-------ILRIYGDKGYDSKKI
+ISArch24.1|IS5|IS903|Transposase|Uncultured         LSIEVTDEK--TGDSEVFEDLVEDLD---------LENCIADGAYDSEEI
+ISArch25.1|IS5|IS903|Transposase|Uncultured         LSIEVTDEK--TGDSEVFEDLVEDLD---------PKDCLGDGGYDSEKV
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       VAYEVTDEQ--VHDNKVFKDLVEKSEERA-K----VRRVLADKAYDSYEN
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            VAAEVSLEN--VHDAEVLPTLLNP-L----RR--KLGRVYADGAYDSKAS
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            VAAEVSLEN--VHDAEVLPTLLNP-L----RR--KLGHVYADGAYDSKAS
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            VAAEASLEN--VHDAEVLPTLFNP-L----RR--ALGTVYADGAYDTKAC
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             VAAEVSLEN--VHDAEVLPTLLNP-L----RR--KLGRVYADGAYDSKAS
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           RAIEVTDNS--VGDAPMLPELLAQ-I----PLDEPVASVGGDGAYDTKGC
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            VAAEASLEN--VHDAEVLPTLFNP-L----RR--ALGTVYADGAYDTKTC
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        LAAELTTTD--DGDASQVGPLLDQ-I----AG--PVRAVLADGAYDGEPV
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         RAALMTHQD--VADGDVLAELLDQ-I----PDDELLDVIGGDGAYDTKPC
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         CAALMTHQD--VADADVLPKLLDQ-I----SADEPIDTIGGDGAYDTKQC
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         CAALMTHQD--EGDGEVLPDLLDQ-I----PTDVPIDTIGGDGAYDTKPC
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        RAALMTHQD--VADGEVLPELLEQ-I----SADESIDTIGGDGAYDTQAC
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         RGIEVTSNA--VGDAPMLPELLKQ-I----PADEPIASVSGDGAYDTKLC
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         RAIEVTDNR--IGDAPMLPELLSQ-I----PEDEPIASVGGDGAYDTKAC
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          INAEVTSNE--VESAVKT---V----KDLQDKGKKVKKFYGDKTYDANEV
+ISCap2.1|IS5|IS903|Transposase|Candidatus           IGIEVTTTA--WGDSEILPGLLDQ-I----EG--EIAQVSADGAYDSHGC
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      RAIEVTDNR--QGDAQMLPSLLTQ-I----PADEPIACVSGDGAFDTKAC
+ISCte6.1|IS5|IS903|Transposase|Comamonas            RAICVTSNN--VTDAAVVPQLLAQ-L----PTDEPLLSVTGDGAYDTQPV
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  YASEVKLGE-------KIVRWLNE--RGFIWRALKGKPFLGDKAYDSIKF
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      RAVEFTSSR--DGDSPVLPDLLEQ-I----PEDEQIGTVTADGAYDTRRC
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      RAVEFTSSR--DGDSPVLPDLLEQ-I----PEDEQIGTVTADGAYDTRRC
+ISEc35.1|IS5|IS903|Transposase|Escherichia          VAAEVSLET--VGDNEVLPTLLNP-L----RR--KIEQVSADGAYDTKAC
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         ICADLSLSG--TTDAQALPELINQ-T----HR--KIREASADGAYDTRYC
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         RAIEVTDNA--TGDAPMLPCLLDQ-I----PTEEVVASVSGDGAYDTKGC
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          LSFTITDEH--THDSKAARKLLSKMKNN-------ILRIFGDRGYDSKYI
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         IGIESHIEG--TGPSEPETA--SRHIKEAVKRGVNIKTFYGDGAFDVNNL
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         IGIESHIEG--TGSSEPETA--STHIKEAVKKGINVKTFYGDGAFDVNNL
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         RAIEVTDNS--VGDAPMLPGLLGQ-I----PPGEPIASVSTDGAYDTKAC
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              IAHSLTDQE--TGDASQVQPLLDQ-I----DD--EIDQFTADGAYDGHPS
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      VEIEVTDER--VHDSQKAKKLVEGAKREAKDKGKKVSKVVADSGYDTHEF
+ISJca1.1|IS5|IS903|Transposase|Jettenia             RAQELTENS--TGDSEVVDKLLSQ-E----ES--RIDTFAGDGSYDKRKV
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    RAMEVTDNS--IGDAPVLPALLDQ-I----PADESIASVSGDGAYDTKDC
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        LAAVVTSNA--ISDGEILPALLDQ-I----PD--EIDQVSADGAYDRTYC
+ISLil2.1|IS5|IS903|Transposase|Leptonema            VYAELTSNNEDSGDSKEAVKAMRDLI----SSGVKIKSFRGDGAYDTHAV
+ISLil3.1|IS5|IS903|Transposase|Leptonema            LTALLTQRD--THDAEPAPDIIRSLV----KQGYDIKDFRGDGAYDAHRV
+ISLlo3.1|IS5|IS903|Transposase|Legionella           EACELTDRF--THDDQLVKLLLAQ-I----NE--PIDHFSGDGAYDEAPI
+ISLve2.1|IS5|IS903|Transposase|Loktanella           RAIEVTSSS--IGDAPMLPDLLSQ-I----PPDQELGSVTADGAYDTRKC
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      LAFLINEAN--VAESKIYPEILKELKRKRIIK--AGDVIYADRGYYSYEN
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      LGLEITDEA--MQDDQRFIPLLDQTQQNC-GEEHPVYRVLADGAYDRNKL
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        LGLEITNEE--VGDADMFPSLLEQSKANS-K-G--VIKVLADGAYDDRHA
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          LAIEITDET--VADSDKFDDLINQTEQNI-E-GRKVKRALGDGGYDDKDC
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        LAFVATDER--SSDAKHLLALVDAAL----AAGHGIAKVLADGAYDTRKN
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         VTFEITDET--VTDHEMVKPLLEDVK---------LEDSLMDGAYDKEGV
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       IDAEVTSDE--VETAVKT--------KDLQDEGKKVKRFYGDKAYDANEV
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      RAIEVTGSR--VGDAPMLPELLDQ-I----PYDQAIASVSADGAFDTRAC
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       RAVEVTNSS--IGDAPMLPDLLNQ-I----PADQELGSVTADGAYDTRKC
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        IAETLTDQN--TSDLSQVPDLLDM-I----DR--PIACFMADGAYDSDQT
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           RALEITGSN--VGDAPMLPELLSQ-I----PPDVEIGSVTADGAYDTRKC
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          RAIEVTDNR--IGDAPMLPELLTQ-I----PATETVATVSGDGAYDTKAC
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           RAVEMTSNR--IGDAPVLPDLLAQ-I----PMQERIGSVTADGIYDTKGC
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           RAVEFTSSD--KGDSPVLPHLLDQ-I----PADEQIGTVTGDGAFDTRRC
+ISPan1.1|IS5|IS903|Transposase|Pantoea              ICSDLSLNN--VTDSEAFPGLIRQ-T----HR--KIRAAAVDGAYDTRLC
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    VSRIMTSHL--TDDRSCLDAHLKQAD----V--TKVKELIADAGYDGQNV
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           RAVEVTGSH--IGDAPVLPDLLNQ-I----PAYEQISSVTADGAYDTRKC
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           RAVEFTSSD--VGDAPMLPELLDQ-I----PPDQEIASVTADGAYDTRKC
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           RAVEVTGSH--IGDAPVLPDLLSQ-I----PEDQEIGSVTADGAYDTRKC
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          CAVLMTHRD--VDDASVLPELLAQ-L----PPQTQVEIVGGDGAYDTKVA
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          CAVLMTHKD--VIDASVLPELLAQ-I----PQETKIEVVIGDGAYDTKAA
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           RAVEFTSSR--EGDSPVLPDLLNQ-I----PEDEQIGTVTGDGAFDTRRC
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           RAVEFTPSR--DGDSPVLPDLFGQ-I----PADEKIGTVTADGAYDTRRC
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           RAAEFTTSD--VGDAPMLPELLDQ-I----PPDQEIASVTADGAFDTRKC
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           RAVEFTSSR--EGDSPVLPDLLDQ-I----PEDEEIGTVTGDGAFDTRRC
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     RAVEFTPSR--EGDSPVLPDLLGQ-I----PEDEDIGTVTADGAYDTRRC
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         RAVEFTPSR--EGDSPVLPDLLDQ-I----RVDEAIGTVTADGAYDTPRC
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        IAHTMTDQD--AGDASQVEPLLNQ-I----DG--RIGQFTADGAYDGKPT
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         RAIEVTSSN--VGDAPMLPDLLAQ-I----PAEEEIATVTADGAYDTRAC
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           RAVEFTSSR--QGDSPLLPELLSQ-I----PPDEPIDTVTADGAYDTRRC
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          RAALMTHQD--VGDGEVLADLLDQ-I----PADTPIDTIGGDGAYDSKPC
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            RAIEVTGSN--IGDAPILPELLNQ-I----PADVEIGSVTADGAYDTRKC
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            RAVGVTTSN--IGDAPMLPDLLDQ-I----PPDQEIATVTADGAYDTRRC
+ISSba21.1|IS5|IS903|Transposase|Shewanella          VAAEVSVVS--VGDNEVLPTLLNP-L----RR--KITQVSADGAYDTKGC
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              ICADLSLSG--TTDAQALPALINQ-T----HR--KIREASADGAYDTRYC
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           INAEVTSNE--VETAVKT---V----KDLQDKGKKVKKFYGDKAYDANEV
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        RAVEITGSH--IGDAPILPDLLSQ-I----PAEEEIGSVTADGAYDTRKC
+ISSod12.1|IS5|IS903|Transposase|Shewanella          IAAELSLSG--VTDAEVMPNLLKQ-T----HR--KIRNISGDGAYDTKAC
+ISSoEn1.1|IS5|IS903|Transposase|Primary             ICADLSLSG--TTDAQALPGLINQ-T----HR--KIREASADSAYDTRYC
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         RAAEFTTSE--IGDAPMLPELLDQ-I----PPEQEIGSVTADGAFDTRKC
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          IAAELSLSG--VTDAEVMPNLLKQ-T----HR--KIRNISGDGAYDTRAC
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          VSAEVSLVN--VADNEVLPTMLNP-L----RR--KVNQVSADGAYDTKEC
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          IAAEVSLES--VADSEVLPTLLNP-L----RR--KVKQVSADGAYDTKKC
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          IAAELSLSN--VTDAEVLPNLLNQ-T----YR--KIHTISGDGAYDTREC
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    IGIESHIEG--TGSSEPETA--SKHITDAVMKGTRVKEFYGDGAFDVNDL
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       RAVEVTGSN--IGDAPVLPALLNQ-I----PLDQDIGSVTADGAYDTRKC
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      IALEVTDEK--VHDGKMLKKLVNHVLDSREPNTVKIKSVLADGAYDSNPN
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         RAVEFIPSS--DGDSPVLPELLDQ-I----PDDEEIGTVTADGAYDTRRC
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              IAAELSLST--VSEAEVLPNLLKQ-T----RR--KILEISGDGAYDTRDC
+ISVa1.1|IS5|IS903|Transposase|Vibrio                ISAEVSLVS--VGDNEVLPTLLNP-L----RR--KIHTVSADGAYDTKSC
+ISVa2.1|IS5|IS903|Transposase|Vibrio                VAAELSLSN--VTDSEVLPNLLKQ-T----RR--KIIEISGDGAYDTRNC
+ISVal1.1|IS5|IS903|Transposase|Vibrio               VAAELSLSN--VTDAEVLPNLLKQ-T----RR--KIIEISGDGAYDTRNC
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          IAAELSLST--VTDGEVLPNLLKQ-T----RR--SIHEVSGDGAYDTRAC
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              VAAELSLSN--VTDAEVLPNLLKQ-T----RR--RIIEISGDGAYDTRDC
+ISVch8.1|IS5|IS903|Transposase|Vibrio               IAAELSLSS--VTDAEVLPNLLKQ-T----RR--KILEISGDGAYDTRGC
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               VAAELSLSN--VTDAEVLPNLLKQ-T----RR--RIIEISGDGAYDTRDC
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               VAAELSLSN--VTDAEVLPNLLKQ-T----RR--RILEISGDGAYDTRGC
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            HAAIAKRG--ARP--SIPPREGASS-WPEATP--G--------AAWRN--
+IS17.1|IS5|IS903|Transposase|Acinetobacter          RQVIADRQ--AHA--VIPPRKNAKP-WKDTKS--S--------SLERN--
+IS903.1|IS5|IS903|Transposase|Escherichia           HDELRRKK--ISA--LIPPRKGAGY-WPG-------------EYADRN--
+IS903B.1|IS5|IS903|Transposase|Escherichia          HDELRRKK--ISA--LIPPRKGAGY-WPG-------------EYADRN--
+ISAae1.1|IS5|IS903|Transposase|Aquifex              LEEIKKLR--MES--IVPVRDTAHT-RVR-----N---------MYRL--
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           HKACYLRG--AIP--IIPPRKGAKL-RKGL----A--------FAHRN--
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       YDAILKRQ--ANV--IIPPRSNAAL-WAENEI-----------GKARN--
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       RQVIADRQ--AHA--VIPPRKNAKP-WKDTKS--S--------SLERN--
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       RQVIADRQ--AHA--VIPPRKNAKP-WKDKKM--G--------SLERN--
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       RQVISDRQ--AHA--VIPPRKNAKP-WKDTKI--C--------SLERN--
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        RQVILNRD--AHA--VIPPRKNTKP-RKD*NKSGL--------SIERN--
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        RQVILDRD--AHA--VIPPRKNAKP-WKDKKL--R--------SLERN--
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       YDALMERN--ATA--AIPPRKNAKI-WQHGNC--NA------PPHPRD--
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           HQLISHKG--AAA--CIPPRKNAGL-WEK--------------GHPRN--
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        RQVIADRQ--AHA--VIPPRKNAKP-WKDTKT--S--------SLERN--
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        RQVILDRD--AHA--LIPPRKNAKP-WKDQKL--R--------SLERN--
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        RKVISDRQ--AHA--VIPPRKNAKP-WKDSKI--S--------SIERN--
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        RQVIADRQ--AYA--VIPPRKNTKP-WKDNKV--H--------SRERN--
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        YCAVAERAPDAEV--IIPPRATAVV-SDSAET--A--------PTRRD--
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        RQVIADRQ--AHA--VIPPRKNARP-WKDTKV--H--------SRERN--
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        YDAVLRHSPGARV--VIPPRSNAVE-RP-NAQ--A--------SCQRD--
+ISArch22.1|IS5|IS903|Transposase|Uncultured         FDYCDENN--IQP--IIKIRKGASP-KSR-----G--------SRLRR--
+ISArch23.1|IS5|IS903|Transposase|Uncultured         FNDFGHGT--IIP-----PRKNAST-QSR-----G--------SPARA--
+ISArch24.1|IS5|IS903|Transposase|Uncultured         FEILKEKG--VDPPPAVKLRKNANT-G-L---------------SPRG--
+ISArch25.1|IS5|IS903|Transposase|Uncultured         FKILEKKG--VGS-PGIKIRKNART-G-L---------------SPRG--
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       FEFLQSRD--IDP--AIPVRKGAID-ILK---------------HPRS--
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            HQLISRKG--ATA--CIPPRKNAGL-WEK--------------GHPRN--
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            HQLISCKG--ATA--CIPPRKNAGL-WKK--------------GHPRN--
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            HELIKRKG--AKA--CIPPRKNAGL-WEK--------------GHPRN--
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             HRLIARKG--ATA--CIPPRKNAGL-WKK--------------GHPRN--
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           HAAIAQRG--AQA--VIPPRKNARP-WRQTLE--G--------AGGRN--
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            HELIKRKG--AKA--CIPPRKNAGL-WEE--------------GHPRN--
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        YHAIAERHADAAV--IIPPRSTAVL-SDTATT--A--------PTQRD--
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         HAAIAARG--ATP--SIPPREGAAH-WAANTF--G--------ATWRN--
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         HAAIAARD--AQP--SIPPREGAMP-WSENTP--G--------ASWRN--
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         HAQIAARA--ATP--SIPPREGAIP-WPDSTP--G--------AAWRN--
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        YASITARG--ALP--SIPPREGAVH-WPTTTP--G--------ASRRN--
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         HAAIAARG--AQA--IIPPRRNAQF-WKPGRA--G--------AAARN--
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         HAAIARRN--AHA--LIPPRKNARA-WKSTEA--G--------AASRN--
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          YKT----G--VEV--VVPPKKNAST--KR-----G--------HLARR--
+ISCap2.1|IS5|IS903|Transposase|Candidatus           HAAIAERD--ARA--TIPPRDGAVT-WGG--------------DHARD--
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      HEAIAALG--AIG--YIPTRKNARP-WRGNSL--G--------VLARN--
+ISCte6.1|IS5|IS903|Transposase|Comamonas            YAAVMERN--AMP--IIPPRKNARV-RKGA----A--------FAHRN--
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  IELVLLVG--LKP--YIKVRETLRK-GIK-----S---------EIRL--
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      HAAIIARD--AEA--IIPVRRNGRL-WKEDGP--A--------ARVRN--
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      HAAIIARD--AEA--IIPVRRNGRL-WKEDGP--A--------ARVRN--
+ISEc35.1|IS5|IS903|Transposase|Escherichia          YALLQKKG--AKA--TIPPRKNAAF-WKT--------------DHPRN--
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         HDALLRKK--IRP--LIPPRSGAQY-WPD-------------KYHERN--
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         HEAIAQRG--AQA--LIPTRKNAKP-WKDQRP--G--------AKARN--
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          YNMFGYNA--VIP-----PRKNAST-KSR-----G--------SSTRA--
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         FNLTHSIG--AIP--VIKIRKNASTDRQR-----G--------SKHRR--
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         FNLIHSIG--AIP--VIKIRKNASTDRQR-----G--------SKHRR--
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         HAAIMERG--AQA--IIPPRKNAQV-WKSQTP--G--------AMVRN--
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              YDAVLRHSPGVRV--VIPPRSNAVE-HP-KAH--A--------CCQRD--
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      FRYLHDEG--ICA--GVLVRKGAKV---R-----G--------NPLRD--
+ISJca1.1|IS5|IS903|Transposase|Jettenia             YESCKRRG-ILRI--LIPPRKDAKI-WQHGNC--ST------EPHVRD--
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    HEAIALRA--AHA--IIPTRKNAKP-WKANRC--G--------ADARN--
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        YDAIDERE--ATA--AIPPRKDAKI-WFHGNR--KQ------EPHPRD--
+ISLil2.1|IS5|IS903|Transposase|Leptonema            YNTARING--INV--IVPPREHAVT-LDEKYS--NAER--FKISWQRD--
+ISLil3.1|IS5|IS903|Transposase|Leptonema            FLTCLQHG--IKA--IIPSREGAIL-SSEKYE--NA----MDNTWPRD--
+ISLlo3.1|IS5|IS903|Transposase|Legionella           YDALFAHLPNVDV--LIPPRSNAVL-SDN-----S--------ATMRN--
+ISLve2.1|IS5|IS903|Transposase|Loktanella           HDAIAARN--AHA--VIPPRKNAKM-WKPDTA--G--------AKARN--
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      YVISVR-N--FKVVPLIFPRKNCNF-KKL--F--NMFRYPLKIFDLRRNT
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      FNALEHRG--IAS--GIKTRVNAAT-HST-----G--------SPYRA--
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        FNLLKKGG--IES--GIKTRSNAST-KSH-----G--------SLYRA--
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          FNTLDKKK--IES--GIKTRINAST-KSR-----G--------SPYRA--
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        WNGMRERK--IEF--IAHIRKNAST-TSR-----G--------CTVRS--
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         FDFMKEKG--VDM-PGIKIRKNAIV-KAG---------------SSRA--
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       YNT----G--VEV---VPPGEDAST--GR-----G--------HPARR--
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      HEAIAARD--ACA--IIPARSNAQA-WPESTP--G--------VAARN--
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       YDAIAARN--AHA--VIPPRKNAKL-WKHDTP--G--------ARARN--
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        YQALRSHSPGVSI--IIPPRIRDLQ-EA-SYG--P--------PDQRD--
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           HDAVADGG--AHA--IIPPRRNAKP-WKPSTA--G--------AIARN--
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          HAAIAARG--AAA--VIPTRKNAQT-WKGSSA--G--------VEARN--
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           HTAIAARG--ADA--IIPPRRNARD-WKGHDP--G--------LQARN--
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           HSAILERG--GTA--IIPIRKNGRR-WRENCP--A--------ARARN--
+ISPan1.1|IS5|IS903|Transposase|Pantoea              HDELRRKK--ISA--LIPSRKSMGY-WPG-------------EYAYRN--
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    YSQLASVN--IKP--IIPPARGSPS-LSKEHC--S----------VRQ--
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           HDAIADRG--ARA--VIPPRKNAKP-WKTVTA--G--------AVARN--
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           HDAIAARA--AAA--IIPVRKNAKP-WKKTSA--G--------AVARN--
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           HDAIADRS--AHA--VIPPRKNAKP-WKAITA--G--------AMARN--
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          RAAIAGCA--ALA--LIPPVEGAVH-WPASQA--G--------APERN--
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          RAAIAGCG--ALA--VIPPVEGAVH-WPASQA--G--------APERN--
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           HTAILDRG--GTA--IIPIRRNGRL-WKEDCP--A--------ARARN--
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           HTAILARE--ATP--IIPIRKNGRL-WKEDCP--A--------ARARN--
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           HDAIAARG--AAA--IIPPRKNAKP-WKPDSA--G--------AIARN--
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           HSAILARG--GTG--IIPIRRNGRL-WKEDCP--A--------ALARN--
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     HGAVIARG--GTA--IIPTRRNGRA-WKEDCP--A--------AKARN--
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         HSAIIARG--GTA--IIPIRKNGRL-WKENCP--A--------ARARN--
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        YDAVTDHSAAAVI--VIPPRANAIE-PA-GDQ--S--------PGQRD--
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         HDAIAARD--AAA--VIPPRRTARP-WEPDTA--G--------ARARN--
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           HGAIIERG--ADA--IIPIRRNGRA-WKADCP--A--------AIARN--
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          HAAIAARD--AQP--SIPPRDGAKP-WSESTP--G--------AAWRN--
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            HDAIADRG--AHA--VIPPRKNAKP-WKPSTA--G--------AIARN--
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            HNVIAARG--AAA--VIPPRKNAQL-WKPTTV--G--------AIARN--
+ISSba21.1|IS5|IS903|Transposase|Shewanella          YQLLRRKG--CKA--TIPPRSNAGL-WEK--------------GHPRN--
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              HDALLRKK--IRP--LIPPRGGAQY-WPD-------------RYHERN--
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           YKT----G--VEV--VVPPRKNAST--RR-----G--------HPARR--
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        HDAIAERG--AHA--VIPPRKNAKP-WKTVTA--G--------AVARN--
+ISSod12.1|IS5|IS903|Transposase|Shewanella          HEAVRRKR--ALV--LIPPREGAAL-WEK--------------GHPRN--
+ISSoEn1.1|IS5|IS903|Transposase|Primary             HDALLRKK--IKP--LIPPRSGAQY-WPA-------------RYHERN--
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         HEAIAARG--AAA--IIPPRKNAKP-WKPDTA--G--------AIARN--
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          HDAVRRKR--ALV--LIPPREGAAL-WEQ--------------GHPRN--
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          HKLLRHKG--AKP--TIPPRSNAGY-WED--------------GHPRN--
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          HKLLKRRG--CKP--TIPPRKNAGY-WEE--------------GHPRN--
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          HTVIRRKR--AFS--LIPPRDGAAY-WKQ--------------GHPRN--
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    FNALNLTK--TKP--VIKIRKNASADHYR-----G--------SKYRR--
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       HEAIAARG--AHV--VIPPRKNAKP-WKPTSA--G--------AIARN--
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      FVYLEDKK--INP--GIKVRRNSIV-SPK-----N--------NRLRN--
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         HTAIIDRQ--ATA--IIPIRKNGRP-WKEDCP--A--------AIARN--
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              HAAIRIRR--TVA--LIPPREGAAF-WER--------------GHPRN--
+ISVa1.1|IS5|IS903|Transposase|Vibrio                HETLKNKG--CTP--LIPPRNNAAL-WED--------------GHPRN--
+ISVa2.1|IS5|IS903|Transposase|Vibrio                HDAIRIKQ--AVA--LIPPREGAAF-WEQ--------------GHPRN--
+ISVal1.1|IS5|IS903|Transposase|Vibrio               HDAIRIKR--AVP--LIPPREGAAF-WEQ--------------GHPRN--
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          HDAIKIKR--AVA--LIPPREGAAF-WER--------------GHPRN--
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              YEAIRFKR--AVP--LIPPREGAAF-WES--------------GHPRN--
+ISVch8.1|IS5|IS903|Transposase|Vibrio               HAAIRIKR--AIA--LIPPREGAAF-WER--------------GHPRN--
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               HDAIRFKR--AVP--LIPPREGAAF-WEN--------------GHPRN--
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               HDAIRFKR--AVP--LIPPGEGAAF-WEN--------------GHPRN--
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            --------AAIDAIAK-TSRCEWKEASGY-HRRSL-VENLMYRLKTLTGP
+IS17.1|IS5|IS903|Transposase|Acinetobacter          --------ELLRTVKRL-GRTLWKKWSGY-HRRSL-VETKMHCIKL-LGD
+IS903.1|IS5|IS903|Transposase|Escherichia           --------RAVANQRMTGSNARWKWTTDY-NRRSI-AETAMYRVKQLFGG
+IS903B.1|IS5|IS903|Transposase|Escherichia          --------RAVANQRMTGSNARWKWTTDY-NRRSI-AETAMYRVKQLFGG
+ISAae1.1|IS5|IS903|Transposase|Aquifex              --------WAKRNYEI-------R-RKVYRKNRYR-VEQVIGIVKNRFGD
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           --------EAVKACRQL-GRAIWKRWSGY-HRRSL-VETKMNCFKR-LGE
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       --------HAVQGCWDK-GQKQWKRDIGY-HRRSR-IEAKMFALKR-LGQ
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       --------ELLRAIKRL-GRILWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       --------ELLRTVKRL-GRTIWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       --------ELLRTVKHL-GRTIWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        --------ELLKTVKLL-GRSLWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        --------ELLKTVKRL-GRSLWKKWSGY-HRRSL-VETKMHCIK-----
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       --------QNLRAIRK-QGRKRWKKQAHY-HRRSL-AETTMFRFKTIFGG
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           --------EAVLVMRK-EGLEHWKKISGY-HRRSL-AETAMYRFKQLMTG
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        --------ELLRTVKRL-GRTIWKNWSGY-HRRSL-IETKMHCIKL-LGD
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        --------ELLKTVKRL-GRTLWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        --------ELLQTVKHL-GRTLWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        --------ELLRTVKRF-GRTLWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        --------RHIRMIKE-RGRLGWQRAVQY-GRRSL-VEVAILRYKVLIGR
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        --------ELLRTVKHL-GRIIWKKWSGY-HRRSL-VETKMHCIKL-LGD
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        --------DHTASMQI-DGRLKWQTPIGY-SKRAL-AETAMGRYKGVIGP
+ISArch22.1|IS5|IS903|Transposase|Uncultured         --------KCIRELEKI-GQEAWNEKYDY-GKRWL-VESCFSAVKRAYGE
+ISArch23.1|IS5|IS903|Transposase|Uncultured         --------KVVRQIRRT-SEKRWKESVQY-GKRWN-VEIYFSGLKRTMGE
+ISArch24.1|IS5|IS903|Transposase|Uncultured         --------KAAREFHKL-GYEKWKEKHNY-GKRWS-VEGFFSAVKRCFGE
+ISArch25.1|IS5|IS903|Transposase|Uncultured         --------QAAKEFQEL-GHEEWKKKHEY-GKRWA-VEGFFSAVKRCFGE
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       --------EEARK---QKDFDGWKEEKKY-GLRWA-VETAYSVFKRCFGE
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            --------EAVLVMRK-EGLAHWKKISGY-HRRSL-AETAMYRFKQLLAG
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            --------EAVLVMRK-EGLAHWKKISGY-HRRSL-AETAMYRFKQLLAG
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            --------EAVLVMRK-EGLTHWKQQSGY-HRRSL-AETAMYRFKQLMTG
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             --------EAVQVMRK-EGLAHWKKISGY-HRRSL-AETAMFRFKQLMAG
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           --------EALRACQRL-GRRIWKKWSGY-HRRSL-VETKMHCFKR-LGE
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            --------EAVLVMRK-EGLTHWKQQSGY-HRRSL-AETAMYRFKQLLAG
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        --------QHIQLLAE-KGRIGWQTATGY-GKRAL-GETAFSRYKTVIGR
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         --------DAVDAIAR-LGRREWKKDSGY-HRRSL-AENAMYRFKTLTGN
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         --------EAIDAIAR-SGRQEWKKRSGY-HRRSL-VENLMYRLKTLTGT
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         --------AAIDAIAK-SSRREWKQESGY-HRRSL-AETLMYRLKVLTGP
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        --------AALDAIAQ-GSRREWKQQSGY-HRRSL-AENAMYRLKTLTGP
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         --------EALRACQYL-GRRLWKRWSRY-HRRSL-VETKMHCFKR-LGD
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         --------EALRACRRL-GRTIWKKWSGY-HRRSL-VETTMYCFKR-LGE
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          --------KAVREFRKL-GYDRWREEKGY-GVRWR-VESLFSAVKRTFGE
+ISCap2.1|IS5|IS903|Transposase|Candidatus           --------VILQEIET-KGLDGWKNDSGY-HRRSI-AENMMYRFKQL-GD
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      --------EILRATKRL-GRAIWKRWSGY-HRRSL-VETKMHCFKR-LGE
+ISCte6.1|IS5|IS903|Transposase|Comamonas            --------AAIAACQRF-GRKLWKSWSGY-HRRSL-VETKMYCIKR-LGE
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  --------KCKELLES---------DEIY-RFRGL-IESIFGEVKQDVGS
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      --------EILRASQRF-GRSLWKRWSGY-HARSR-VEAKMRCLKS-FGE
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      --------EILRASQRF-GRSLWKRWSGY-HARSR-VEAKMRCLKS-FGE
+ISEc35.1|IS5|IS903|Transposase|Escherichia          --------EAVAALKA-GELEQWKKDSGY-HQRSI-AETAMYRFKQLIGP
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         --------HAVANQHLSGGNDVWKKKVSY-HRRSI-AETAMFRIKSLLGG
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         --------AILAATRRL-GRKIWKKWSGY-HRRSL-VETKMRCFKL-LGE
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          --------KIVRFIKKN-SMEQWKENNSY-GKRWI-VEIYFSGLKRVMTE
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         --------KEVREYREK-GYKQWAEEKHY-GMRWPGTEGIFSAVKRKFGE
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         --------KEVREYREK-GYKQWAEEKHY-GMRWPGTEGIFSAVKRKFGE
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         --------EAVLACKRL-GWRIWKKWSGY-HRRSL-VETKMHCFKR-LGE
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              --------DHIASMQA-EGRLKWQASTGY-GKRAL-VETAMGRYKGVIGQ
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      --------EVVRAIR--RGKRRWKERIEY-GKRWL-VENFFSVFKRWFGE
+ISJca1.1|IS5|IS903|Transposase|Jettenia             --------ETIRHIRR-TSLRQWKERVGY-HVRSL-VENAIFRFKTIFGD
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    --------EILHTTRRL-GRAIWKKWSGY-HRRSL-VETKMRCFKL-LGE
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        --------ENLRAIRK-QGRSNWKEEINY-HRRSL-SETAMYRVKTIFTG
+ISLil2.1|IS5|IS903|Transposase|Leptonema            --------DTIRAVRE-KTRAAWKEESDY-HKRSL-VEMTFFRYKTVFGE
+ISLil3.1|IS5|IS903|Transposase|Leptonema            --------EIVKRIRE-IGKGGWKTESGY-FKRSL-VEMAIYRYKRTFGD
+ISLlo3.1|IS5|IS903|Transposase|Legionella           --------RNIQEIND-HGRMQWQKQREY-GRRNY-SELGVQRYQKILGD
+ISLve2.1|IS5|IS903|Transposase|Loktanella           --------EAVRSSKYL-GRALWRNLTGY-HRRSR-VETKMHCVKL-LGQ
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      EKEIKFYKEIIAKFKE--LISKWKELR---SVRSI-IEDVFKIAKKAYSM
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      --------ECVRNRKRWGGYPMWALVVTY-GMRWK-VEGAFSTIKRILGE
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        --------QCVRERQNL-GYKEWSKKKGY-GKRWG-VEGVISVVKRIFGE
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          --------KCVREKEELGGYKGWRDKYEY-SKRWL-AESVLSAVKRIFGE
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        --------AHVRERNAI-GEDEWRKRYGY-NMRWK-VESVFSDLKRMFGE
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         --------EPVLEFMKY-GYHSWKIVHGY-GRRWA-AESVFSAIKRIFGE
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       --------KAVREFKEL-GYDRWREERGY-GVRWR-VESLFSAVKRTFGE
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      --------EIVRSSQRF-GRTIWKRWSGY-HQRSL-VETKMHCFKL-LGE
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       --------EAVRASKYL-GSALWRQVTGY-HRRSR-VETKMHCVKL-LGQ
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        --------WHSRTNAQ-RGRMEWQNLTEY-GKRAR-VENAIGNYKSTNGP
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           --------EALRASKYL-GRAIWRKWSGY-HRRSR-AETKMHCVKL-LGQ
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          --------ETLRSTRYL-GRTIWKKWSGY-HRRSL-VETKMGCFKL-LGE
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           --------EALRACKRF-GRANWKKWSGY-HRRSR-VEAKMRCLKL-LGE
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           --------EILKATQRL-GRAVWKRWSGY-HARSR-IEAKMRCLKS-FGE
+ISPan1.1|IS5|IS903|Transposase|Pantoea              --------RAVANQRLSGSNARWKWTTDY-NRRSI-AETAMYQVKQLFGG
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    --------KGINYIDK-KGLYAWQTKNDY-GRRTK-VENTIYRYKEMIGR
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           --------EALRASKYL-GRALWRRWSGY-HRRSR-VETKMHCVKL-LGQ
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           --------DILRTTKYL-GRTIWRRWSAY-HRRSR-AETKMHCMKL-LGQ
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           --------EALRAAKYL-GRTLWRRWSGY-HRRSR-IETKMHCVKL-LGQ
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          --------AAIDHIAQ-SGKQDWKDKSGY-HCRSL-VENLMYRFKTLTGD
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          --------EAIDHIAQ-SSKQDWKDKSGY-HRRSL-VENLMYRFKVLTGD
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           --------EILRATQRL-GRAIWKRWSGY-HVRSR-IEARMRCLKA-FGE
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           --------DTLRATRHY-GRAFWKRWTGY-HARSR-IEARMRCLKS-FGE
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           --------EALRASKRF-GRTIWRRWSGY-HRRSR-VETKMHCVKL-LGQ
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           --------DILRATQRL-GRTIWKRWSGY-HVRSR-VEARMRNLKS-FGE
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     --------ETLRATRHY-GRAFWKRWTGY-HARSR-VEAKMRCLKA-FGE
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         --------EILRATRYY-GRALWKRWTGY-HVRSR-AEARMRCLKS-FGE
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        --------QHIAAISR-DGRMKWQVSTGY-GKRSL-VETAIGRYKSIIGR
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         --------EILRASKHL-GRALWRNWSGY-HRRSR-VETKMNCVKQ-LGQ
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           --------EILRATRHL-GRALWKKWARY-HVRSR-VEARMNCLKR-FGE
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          --------EAIDVIEK-SSRREWKAASGY-HRRSL-AETLMYRLKTLTGH
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            --------EALRASKYL-GRAIWRKWAGY-HRRSR-AETKMHCVKL-LGQ
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            --------EAVRACKYL-GRALWRKLTGY-HRRSR-AETKMNCVKL-LGQ
+ISSba21.1|IS5|IS903|Transposase|Shewanella          --------EAVEALKA-GQLKQWKIDNGY-HQRSL-AETAMGRYKQLNSP
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              --------YAVANQRLSGSNDVWKKQVGY-HRRSV-AETAIFRFKTLMGD
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           --------KAVREFKRL-GYNRWREEKGY-GVRWR-IESLFSAVKRTFGE
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        --------EALRAAKYL-GRAIWRNWSGY-HRRSR-AETKMHCMKL-LGQ
+ISSod12.1|IS5|IS903|Transposase|Shewanella          --------LAVSWQQLHGSNKQWKKRYGY-HRRSI-SETAMYRIKQLLGG
+ISSoEn1.1|IS5|IS903|Transposase|Primary             --------HAVANQHLSGNNDTWKKKVGY-HRRSL-AETAMFRFKILLGG
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         --------EILRTSKRV-GRTIWRLWSGY-HRRSR-AETKMHCVKL-LGQ
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          --------LAVSWQQLHGSNKQWKKRYGY-HRRSI-SETAMYRVKQLLGG
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          --------EAVEALKS-GTLKQWKDDNDY-HQRSL-SETAMYRYKQLISS
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          --------EAVSALKS-DELKQWKQENDY-HQRSL-SETAMYRYKQLISP
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          --------LAVSFQKLYGSNKKWKKRYGY-HRRSI-SETAMHRIKQLLGG
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    --------RAVRDYKEK-GYKSWAADNSY-GMRWPGTEGIFSATKRKFGE
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       --------DAVNAQRYL-GRTLWRHWSGY-HRRSR-VETKMHCMKL-LGQ
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      --------NEVKL--QAKDLLKWKTKRKY-GQRWI-SETVFSAIKRMFGE
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         --------ETLRATRHY-GRAFWKRWTGY-HARSR-IEAKMRCLKA-FGE
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              -----------GCQKLYGSNKYWKKRYGY-HKRSL-SETAMYRVKQLLGG
+ISVa1.1|IS5|IS903|Transposase|Vibrio                --------EAVEALKN-GTITEWKSESGY-HYRSI-SETAMSRYKGLTSG
+ISVa2.1|IS5|IS903|Transposase|Vibrio                --------LAVGCQKLYGSNKKWKKRYGY-HKRSL-SETAMYRVKQLLGG
+ISVal1.1|IS5|IS903|Transposase|Vibrio               --------LAVGCQKLYGSNKKWKKRYGY-HKRSL-SETAMYRVKQLLGG
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          --------LAVGCQKLYGSNKYWKERYGY-HKRSL-SKTAMYRVKQLLGG
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              --------LAVGCQKLYGSNNQWKKRYGY-HKRSL-SETAMYRVKQLFGG
+ISVch8.1|IS5|IS903|Transposase|Vibrio               --------LAVGCQKLYGSNKHWKERYGY-HKRSL-SETAMYRVKQLLGG
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               --------LAVGCQKLYGSNNKWKKRYGY-HKRSL-SETAMYRVKQLLGG
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               --------LAVGCQKLYGSNNKWKKRYGY-HKRSL-SETAMYRVKQLLGG
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            CLWARKVDSQAT-EVSIRAGVLNRIAALARPHSVRIA-------------
+IS17.1|IS5|IS903|Transposase|Acinetobacter          KLMARSFPSQVN-EIHARVAVLNRFTELGRPLTQVTP-------------
+IS903.1|IS5|IS903|Transposase|Escherichia           SLTLRDYDGQVA-EAMALVRALNKMTKAGMPESVRIA-------------
+IS903B.1|IS5|IS903|Transposase|Escherichia          SLTLRDYDGQVA-EAMALVRALNKMTKAGMPESVRIA-------------
+ISAae1.1|IS5|IS903|Transposase|Aquifex              RDNVYDFEIASL-YVLGRFVLYNLILLLKLLLLC-LNLLRITWASSRFIL
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           KVMARTFERQVT-ELHIRASILNQFTALGTPQTVAAA-------------
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       GVSSRCFNRQVV-DLQIRVDILNKFTQLGTAKTVAVA-------------
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       KLSARSFDSQVN-EIHARVAVLNRFTELGRPLTQVTP-------------
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       KLSARNFQSQVN-EIHARMAVLNKFTDLGRPHTRVVT-------------
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       KLSARNFQSQVN-EIHTRVAILNKFTELGRPQTRVVT-------------
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        KLTARSFPSQVN-EIHARVALLNKFTELGRPHTQVVT-------------
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        --------------------------------------------------
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       QVRSRNFDNQAT-ELLLQCAALNRMIQIAKPETVWVEA------------
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           KISLRTYNGQVG-EVMAYVGAINKLNTLGLPVRKPRV-------------
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        KLRARNFQSQVN-EIHARVAVLNKFTDLGRPHTQVAT-------------
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        KLTARSFSSQVN-EIHARIAVLNKFTELGRPHTQVVT-------------
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        RLTARHFQSQVN-EIHARVAVLNRFTELGRPRTQVVS-------------
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        KLSTRNFQSQVN-EMHARVAVLNKFTELGRPLTQVVT-------------
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        SLRARTLPAQKV-EAAIGCKVMNLMTSLGMPVTRKVA-------------
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        KLSARNFQSQVN-EIHARVAVLNKFTELGRPHTRVVS-------------
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        QLRARSFRAQQT-EAAISVAILNRMLACGRPKSVRCRALTGKAK------
+ISArch22.1|IS5|IS903|Transposase|Uncultured         SVSAKRFDMAKK-EALLKFMLYSAVKNSC---------------------
+ISArch23.1|IS5|IS903|Transposase|Uncultured         VIKAVRSDYIVQ-EIALKVQYYNIMREMTHAY------------------
+ISArch24.1|IS5|IS903|Transposase|Uncultured         TVRAATPEGMVR-EVKRKFALYNLVTKI----------------------
+ISArch25.1|IS5|IS903|Transposase|Uncultured         TVRAASPAGMVR-EVKRKFGLYNLVTKI----------------------
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       FVSARKQDYMVK-EIAAKVWIYNSLRAVLC--------------------
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            KISLRNYNGQVG-EVMAYVSAINKLNTLGLPVRKPRV-------------
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            KISLRNYNGQVG-EVMAYVCAINKLNTLGMPVRKPRV-------------
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            KISLRNYNGQVG-EIMAYVCAMNKLNALGLPVREPQV-------------
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             QITLRKYNGQVG-EVMAYVSAINKLNTLGLPVRKPRV-------------
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           RVMARTFERQVT-ELHVRVALLNRFTQLGRPATVPVPAVA----------
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            KISLRNYNGQVG-EVMAYVSAINKLNALGLPVRKPQV-------------
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        SLRARTLSAQKV-EAHIACAVINRMTSLGMPVSEKAA-------------
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         CLWARRTESQAT-EVAIRVGVLNRMADLARPQSVRIA-------------
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         RLWARCIGSQAT-EVAIRVGVLNRMTALARPQSTRIA-------------
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         CLWAREIGSQAT-EVSIRAGVLNRMAALARPQSIRIA-------------
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        CLWARRTDTQAT-EVAVRVGVLNRMAELSRPQSVRIA-------------
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         RVAARTFERQVV-ELQIRAALLNRFSQLGRPNTVAAAAMA----------
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         RVMARTFERQVA-ELHMRVALFNRFTQLGRPQTVAVA-------------
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          SVRATSFAGQVV-EAKLKFWAYAWMVHLANSVVGRAPGIRV---------
+ISCap2.1|IS5|IS903|Transposase|Candidatus           TLFSRRFERQVN-EAHVRAAIINTFTYLGMPQSVRVGQVAPAA-------
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      RVTARRFDGQVA-ELQVRAAILNRFSMLGRPCTVAVA-------------
+ISCte6.1|IS5|IS903|Transposase|Comamonas            RVMSRTFERQVN-ELHVRVAILNRFTELGCPQTVAVA-------------
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  YEKTKSFHIAQL-FVLAKFILFNMGVLFFVWMIF-QTL------------
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      RIMARDPDRQTA-EIHIRIALMNRFSALGKADVVCEA-------------
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      RIMARDPDRQTA-EIHIRIALMNRFSALGKADVVCEA-------------
+ISEc35.1|IS5|IS903|Transposase|Escherichia          KLSLRSYNAQVG-EILAGVKVMNKVIGLGMPIRQAVN-------------
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         HLSLRGYDAQVG-EAMAMVKALNRMTLLGMPHSVRIA-------------
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         RVMARDFDRQVA-ELQVRAAILNRFTRLGTPTTVAVTMP-----------
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          VIKAKKIEYIIQ-ELALKVVNYNIMRGMTHAY------------------
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         NCVSRSTEGLKA-EGYQRLWDI----------------------------
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         NCVSRSTEGLKA-EGSQRLWIYDYINQRAKMEVNQMN-------------
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         RVMARTFERQVT-ELHVRVALLNRFTQLGCPTTVAVPAVA----------
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              RLRARSFLAQQT-EAAISVAILNRMLACGRPKSAQRRASAGAAK------
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      YVVSLKFENMKK-ELVFKVGIMNMLMMAGVV-------------------
+ISJca1.1|IS5|IS903|Transposase|Jettenia             RLYARNLAQQRT-EVGIKASVLNCMMKLGMPESYAIS-------------
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    RVMARDFDRQVA-ELQIRAAVLNRFTRLGTPVTVPVL-------------
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        EVSARCFENQTT-ELMLECSIINKFSHLGMPDSYLVEG------------
+ISLil2.1|IS5|IS903|Transposase|Leptonema            RMAARNFPNQQA-EVLLRSRLLNKLNQLGKPVSVPIKT------------
+ISLil3.1|IS5|IS903|Transposase|Leptonema            RLSARNLENQRV-EVTLRASMLNKMIKTAKPKSEKRIR------------
+ISLlo3.1|IS5|IS903|Transposase|Legionella           SLHVREITSQKQ-EAIIGCGVINKMTSLGIPESYRSA-------------
+ISLve2.1|IS5|IS903|Transposase|Loktanella           RLSARDFDRQVA-EIQIRAAILNGFTAIGIPRTVAVG-------------
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      ENLHRYTRSSVQKYCSLAVLLVGVTVNYGINERKELQA---------FSE
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      RVQATSREGMFR-EVRMKVNSYNRLIALAA--------------------
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        TVRAASIQGMYR-EMRTKLLAYNILLNMI---------------------
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          TVRATSIDGMFR-ETKMKFMCYNILLNCK---------------------
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        SVSSKTFENMVA-EISRSIECFNMMKAAGM--------------------
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         TVRATSKEGMIR-EVRRMFTFYTIILSV----------------------
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       SVGATSFLGQVV-EAKLKFWAYAWMVHLANSLVGRAPGIKV---------
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      RIMARDFDRQVA-EMQIRAAILNRFTALGRPQTQRVG-------------
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       RLSARDFDRQVA-EIQIRAAILNGFTALGIPKTEAVG-------------
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        KLRSRKFTNQKT-EVKLGCGVRNRMLQTPRPKSVRVKVETT---------
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           SLMGRDFDRQVA-EPQIRAAVLNGYTALGIPVTEPGA-------------
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          RVMARDFDRQVT-ELQVRAAILNQFTRLGTPHTIRVS-------------
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           RIMARDFDRQDA-EVQIRIALMNRFTSLGTPETFRMH-------------
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           RIASRDPDRQTA-EVQIRVALMNRFNALGTAEIERVA-------------
+ISPan1.1|IS5|IS903|Transposase|Pantoea              SLTLRDYDGQVT-EAIAMVRALNKMTKAGMPESERIA-------------
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    KLNARLWDNQDA-ELHLGCFILNTFTNLGMPESVKI--------------
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           RLMARDFDRQVA-ELQVRIAVLNGYTALGIPVTEPVG-------------
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           RLTAREFDCQVA-ELHIRMAVMNGYTALGIPVTETVG-------------
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           RLMARDFDRQVA-ELQVRIAVLNGYTALGIPVTEAVG-------------
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          RLWARDVDVQDA-EVAVRVGILNRMIVLARPNSVRIA-------------
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          RLWARDVDVQDA-EVAVRVGIINRMLVLARPKSVRIA-------------
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           RISSRDPDRQTA-EIHIRIALMNRFNALGSAEIKRVA-------------
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           RIMARDPDRQTA-DVHIRVALMNRFNALGTADIVRVA-------------
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           RLMARDFDRQVA-EFQIRVAVLNGFTALGIPETQAVG-------------
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           RIASRDPDRQTA-EIHIRVALMNRFNALGTAEIERVA-------------
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     RIAARDPDRQTA-EIHIRVALVNRFNALGTAHVVRVA-------------
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         RIAARDLDRQAA-EIHIRIALINHFNALGTAEIARVA-------------
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        RLRARSFHAQQT-EVAIGCAALNRMLACARPKSIRRNGPNT---------
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         RLMSRDFDRQVA-EVQIRAAVMNRFTALGIPMTVAAG-------------
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           RIMSQDPERQTA-EIHIRIAIMNTFSALGRAEIEAVA-------------
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          SLWAREIGSQAT-EVAIRAGVLNRMVALARPQSVCIA-------------
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            SLMARDFDRQVA-ELQIRAAVLNGYTALGIPVTEPVG-------------
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            GLMARDFDRQVA-ELQVRIAVLNRYTALGIPITEPVG-------------
+ISSba21.1|IS5|IS903|Transposase|Shewanella          MLSLRDYNGQVA-EALAGVKAMNKVIRLGMAVRQQVAYSGRSLGTITFYE
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              HLSLRDYDAQVG-EAMAMVKALNKMTLLGMPNSIRIASQSIC--------
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           SVRATSFLGQVV-EAKLKFWAYAWMVHLANSVVGRAPGIRV---------
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        RLMARDFDRQVA-EVQVRIAVMNGYTALGIPVTEVVG-------------
+ISSod12.1|IS5|IS903|Transposase|Shewanella          TLSMRNYNAQVG-ETYAMIRALNKLTGLSMPETHYVA-------------
+ISSoEn1.1|IS5|IS903|Transposase|Primary             HLSLHDYDAQVG-EAMAMVKALNRITLLGMPNSVRIM-------------
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         RLTARDFDRQVA-EFQLRVAVLNGFTALGTPITDAMG-------------
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          RLSLRNYNGQVG-ETYAMIKALNKLTGLGMPETYRVV-------------
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          KLSLRDYNAQVG-EALAGVKAMNKVIGLGMPVRQTTA-------------
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          KLSLRDYNGQVG-EALAGVKVMNKVIGLGMPIRQRVN-------------
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          SLSMRNYNAQVG-EAYAMIKALNKLTKLGMPETQYFV-------------
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    NCVSWSTEGLES-GGYQRFWIYDYINQRAKKEVKCMN-------------
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       SLMARDFDRQVA-EIQVRIAVLNRYTALGIPITKPVG-------------
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      YTSANRFQNMVK-EIMIKVSLYNIFRRI----------------------
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         RIAARHPDSQTA-EIQIRVSLINRFNALGTADIVRMA-------------
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              RLSLRNYNAQVG-ETYAMIKALNKLTGLVCLKLVVLADN-----------
+ISVa1.1|IS5|IS903|Transposase|Vibrio                KLSLRCYNAQVG-EIMANVKAINKVIGLGMPVRS----------------
+ISVa2.1|IS5|IS903|Transposase|Vibrio                KLSLRNYNAQVG-ETYAMIKALNKLTGLGMPETQYIA-------------
+ISVal1.1|IS5|IS903|Transposase|Vibrio               RLSLRNYNSQVG-ETHAMIKALNKLRGLGMPETQYIV-------------
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          RLSLRNYNAQVG-ETYAMIKALNKLTGLGMPETCRID-------------
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              RLSLRTYNAQVG-ETYAMIKALNKLTGLGMPETTVIA-------------
+ISVch8.1|IS5|IS903|Transposase|Vibrio               RLSLRNYNAQVG-ETYAMIKALNKITGLGMPKTCRIG-------------
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               RLSLRNYNAQVG-ETYAMIKALNKLTGLGMPETQCIV-------------
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               RLSLRNYNAQVG-ETYAMIKALNKLTGLGMPKTQCVV-------------
+
+IS1420.1|IS5|IS903|Transposase|Ralstonia            --
+IS17.1|IS5|IS903|Transposase|Acinetobacter          --
+IS903.1|IS5|IS903|Transposase|Escherichia           --
+IS903B.1|IS5|IS903|Transposase|Escherichia          --
+ISAae1.1|IS5|IS903|Transposase|Aquifex              --
+ISAav2.1|IS5|IS903|Transposase|Acidovorax           --
+ISAba10.1|IS5|IS903|Transposase|Acinetobacter       --
+ISAba12.1|IS5|IS903|Transposase|Acinetobacter       --
+ISAba13.1|IS5|IS903|Transposase|Acinetobacter       --
+ISAba40.1|IS5|IS903|Transposase|Acinetobacter       --
+ISAba5.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAba7.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAcma6.1|IS5|IS903|Transposase|Acaryochloris       --
+ISAeme7.1|IS5|IS903|Transposase|Aeromonas           --
+ISAha1.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAha2.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAha3.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAjo1.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAli17.1|IS5|IS903|Transposase|Azospirillum        --
+ISAlw1.1|IS5|IS903|Transposase|Acinetobacter        --
+ISAra1.1|IS5|IS903|Transposase|Agrobacterium        --
+ISArch22.1|IS5|IS903|Transposase|Uncultured         --
+ISArch23.1|IS5|IS903|Transposase|Uncultured         --
+ISArch24.1|IS5|IS903|Transposase|Uncultured         --
+ISArch25.1|IS5|IS903|Transposase|Uncultured         --
+ISArve1.1|IS5|IS903|Transposase|Archaeoglobus       --
+ISAs13.1|IS5|IS903|Transposase|Aeromonas            --
+ISAs14.1|IS5|IS903|Transposase|Aeromonas            --
+ISAs15.1|IS5|IS903|Transposase|Aeromonas            --
+ISAs4.1|IS5|IS903|Transposase|Aeromonas             --
+ISAte1.1|IS5|IS903|Transposase|Acidovorax           --
+ISAve2.1|IS5|IS903|Transposase|Aeromonas            --
+ISAzba3.1|IS5|IS903|Transposase|Azospirillum        --
+ISBam3.1|IS5|IS903|Transposase|Burkholderia         --
+ISBhu1.1|IS5|IS903|Transposase|Burkholderia         --
+ISBps3.1|IS5|IS903|Transposase|Burkholderia         --
+ISButh7.1|IS5|IS903|Transposase|Burkholderia        --
+ISBvi6.1|IS5|IS903|Transposase|Burkholderia         --
+ISBvi8.1|IS5|IS903|Transposase|Burkholderia         --
+ISC1058.1|IS5|IS903|Transposase|Sulfolobus          --
+ISCap2.1|IS5|IS903|Transposase|Candidatus           --
+ISCpi1.1|IS5|IS903|Transposase|Chromobacterium      --
+ISCte6.1|IS5|IS903|Transposase|Comamonas            --
+ISDeth1.1|IS5|IS903|Transposase|Desulfurobacterium  --
+ISDsh4.1|IS5|IS903|Transposase|Dinoroseobacter      --
+ISDsh5.1|IS5|IS903|Transposase|Dinoroseobacter      --
+ISEc35.1|IS5|IS903|Transposase|Escherichia          --
+ISEcl3.1|IS5|IS903|Transposase|Enterobacter         --
+ISEcl7.1|IS5|IS903|Transposase|Enterobacter         --
+ISFac2.1|IS5|IS903|Transposase|Ferroplasma          --
+ISFesp1.2|IS5|IS903|Transposase|Ferroplasma         --
+ISFesp2.2|IS5|IS903|Transposase|Ferroplasma         --
+ISGNB1-1.1|IS5|IS903|Transposase|Uncultured         --
+ISHph1.1|IS5|IS903|Transposase|Hoeflea              --
+ISHysp1.1|IS5|IS903|Transposase|Hydrogenivirga      --
+ISJca1.1|IS5|IS903|Transposase|Jettenia             --
+ISJsp2.1|IS5|IS903|Transposase|Janthinobacterium    --
+ISLesp5.1|IS5|IS903|Transposase|Leptolyngbya        --
+ISLil2.1|IS5|IS903|Transposase|Leptonema            --
+ISLil3.1|IS5|IS903|Transposase|Leptonema            --
+ISLlo3.1|IS5|IS903|Transposase|Legionella           --
+ISLve2.1|IS5|IS903|Transposase|Loktanella           --
+ISMba15.1|IS5|IS903|Transposase|Methanosarcina      --
+ISMebo2.1|IS5|IS903|Transposase|Methanoculleus      --
+ISMeco1.1|IS5|IS903|Transposase|Methanocella        --
+ISMeth1.1|IS5|IS903|Transposase|Candidatus          --
+ISMte1.1|IS5|IS903|Transposase|Methanoplasma        --
+ISMth3.1|IS5|IS903|Transposase|Methanosaeta         --
+ISMye2.1|IS5|IS903|Transposase|Metallosphaera       --
+ISNov2.1|IS5|IS903|Transposase|Novosphingobium      --
+ISOan4.1|IS5|IS903|Transposase|Octadecabacter       --
+ISOcan1.1|IS5|IS903|Transposase|Ochrobactrum        --
+ISOgr3.1|IS5|IS903|Transposase|Oceanicola           --
+ISPa35.1|IS5|IS903|Transposase|Pseudomonas          --
+ISPam1.1|IS5|IS903|Transposase|Paracoccus           --
+ISPam2.1|IS5|IS903|Transposase|Paracoccus           --
+ISPan1.1|IS5|IS903|Transposase|Pantoea              --
+ISParac1.1|IS5|IS903|Transposase|Paracaedibacter    --
+ISPko1.1|IS5|IS903|Transposase|Paracoccus           --
+ISPko3.1|IS5|IS903|Transposase|Paracoccus           --
+ISPlc1.1|IS5|IS903|Transposase|Paracoccus           --
+ISPna4.1|IS5|IS903|Transposase|Polaromonas          --
+ISPna5.1|IS5|IS903|Transposase|Polaromonas          --
+ISPpa3.1|IS5|IS903|Transposase|Paracoccus           --
+ISPpa4.1|IS5|IS903|Transposase|Paracoccus           --
+ISPpa8.1|IS5|IS903|Transposase|Paracoccus           --
+ISPth1.1|IS5|IS903|Transposase|Paracoccus           --
+ISRhba5.1|IS5|IS903|Transposase|Rhodobacterales     --
+ISRhsp8.1|IS5|IS903|Transposase|Rhodobacter         --
+ISRm33.1|IS5|IS903|Transposase|Sinorhizobium        --
+ISRssp5.1|IS5|IS903|Transposase|Roseovarius         --
+ISRsu1.1|IS5|IS903|Transposase|Rhodovulum           --
+ISRta5.1|IS5|IS903|Transposase|Cupriavidus          --
+ISRusp1.1|IS5|IS903|Transposase|Ruegeria            --
+ISRusp2.1|IS5|IS903|Transposase|Ruegeria            --
+ISSba21.1|IS5|IS903|Transposase|Shewanella          MI
+ISSgl1.1|IS5|IS903|Transposase|Sodalis              --
+ISSis3.1|IS5|IS903|Transposase|Sulfolobus           --
+ISSisp2.1|IS5|IS903|Transposase|Silicibacter        --
+ISSod12.1|IS5|IS903|Transposase|Shewanella          --
+ISSoEn1.1|IS5|IS903|Transposase|Primary             --
+ISSpo9.1|IS5|IS903|Transposase|Silicibacter         --
+ISSpu11.1|IS5|IS903|Transposase|Shewanella          --
+ISSpu14.1|IS5|IS903|Transposase|Shewanella          --
+ISSpu16.1|IS5|IS903|Transposase|Shewanella          --
+ISSpu20.1|IS5|IS903|Transposase|Shewanella          --
+ISTar1.2|IS5|IS903|Transposase|Thermoplasmatales    --
+ISTasp1.1|IS5|IS903|Transposase|Thalassiobium       --
+ISThar1.1|IS5|IS903|Transposase|Thaumarchaeota      --
+ISUnCu15.1|IS5|IS903|Transposase|uncultured         --
+ISV-M52.1|IS5|IS903|Transposase|Vibrio              --
+ISVa1.1|IS5|IS903|Transposase|Vibrio                --
+ISVa2.1|IS5|IS903|Transposase|Vibrio                --
+ISVal1.1|IS5|IS903|Transposase|Vibrio               --
+ISVba2.1|IS5|IS903|Transposase|Vibrionales          --
+ISVbsp3.1|IS5|IS903|Transposase|Vibrio              --
+ISVch8.1|IS5|IS903|Transposase|Vibrio               --
+ISVpa3.1|IS5|IS903|Transposase|Vibrio               --
+ISVvu5.1|IS5|IS903|Transposase|Vibrio               --
+//

@@ -1,0 +1,268 @@
+# STOCKHOLM 1.0
+
+#=GS        IS2621.2|IS4|ISPepr1|Transposase|Deinococcus DE    radiodurans
+#=GS         IS943.1|IS4|ISPepr1|Transposase|Bacteroides DE    fragilis
+#=GS    ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris DE    marina
+#=GS           ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena DE    sp.
+#=GS         ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides DE    fragilis
+#=GS         ISCku4.1|IS4|ISPepr1|Transposase|Candidatus DE    Kuenenia
+#=GS ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium DE    hafniense
+#=GS              ISDpr2.1|IS4|ISPepr1|Transposase|delta DE    proteobacterium
+#=GS        ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus DE    radiodurans
+#=GS          ISGur1.1|IS4|ISPepr1|Transposase|Geobacter DE    uraniumreducens
+#=GS        ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus DE    delbrueckii
+#=GS      ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus DE    hokkaidonensis
+#=GS      ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus DE    reuteri
+#=GS     ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus DE    sp.
+#=GS        ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter DE    propionicus
+#=GS        ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter DE    propionicus
+#=GS      ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus DE    torquis
+#=GS        ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured DE    murine
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          --M----------VKDKHIISEIDSFFSKND-CNRAINCII------GTI
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     --------------------------------------------------
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            ------------------------------------------MFDILTLL
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          ------M------EAKIEKISELSKLLSVKTRMSDDLFHLFGKFGIGHLL
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          -------------------------------------------MKLWILW
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  -------------------MLQHN--SLPEQ-HQNQLSLIFSSLKLSQLL
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               --------------MDTTSQFEIE--QEAKR-LQSAIKSFFDNFSIGTLL
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         -------------------------------------------MGLMAIL
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           -------------------MQQIV--AGFAS-VENRIHSFFHNQNLGQLL
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         --------------------------------------------------
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       -------------------MSTIQ--HSATD-IHLAMQHFTKLVHLPVIL
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       -------------------MKSINQIQAEND-TKKLISSFIRLIGLGQIS
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      MNQHNREQATVPTPMIDEIKTQSFGVFGVD----NAIVDFLQEIGFQAIF
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         -------------------MQQIV--AGVAA-VENRIHSFFHNQGLGLFL
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         -------------------MNRIL--PEIAT-VENQINLFFHNHKLGELL
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       MLQHEYI------AKVQEIKGKFNKVWFNSD-YLRAHLNIL------GFN
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         MPV----------HKVTDFLSEISAFFKKDD-AHNAMYSIM------DVI
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          SRLNLNFS-GIGIEKRHNCKLTSLQVL-ELLLLFPFFMVRNSFQYSHSGL
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     --------------------------------------------------
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            -QC-L--LPEIKV--TTMRQL--SQI------IMAMLAMSGRVTMLGISR
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          SRLSL----------EKQDGVSASELL-LSLCLFRIVG-ESIHSICKHKI
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          -WSTV--WQLRPACSRLRNFLWFATVLAGITVRPDLLGVSSIIRGLGLKG
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  RAAGI----------RKSYGVSSFVVF-QIIFQLVFQG-RNLFRLLEGSR
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               NRSGI----------KKVRGATPLAVF-EAIFTLAFRG-QNFYRGIVLNG
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         -QY-V--LSAVPLRKTQRNFL--TVL------LSVFLAVPGRLNALNLSR
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           RQSNV----------RKEKGVSLDTLF-QLLLSLAFTG-KNLFRLLESPD
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         --------------------------------------------------
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       RRANI----------HKTRGIGVPILF-EWLITTIFAR-YSISRAQRN--
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       NRINF----------KRHSTISLTAII-TWLFEVTFSC-RSLYRAQPS--
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      --------NRRGWS--KRTGKDLPTLI-MLLILHPLLKVPSIHLFCRDHF
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         RQSNI----------RKEKGVCLDTLF-QFMLALAFTG-KNLFRLIESAD
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         RQSNV----------RKDKGVSLDILF-QFLLTMAFTG-KNLFRLLNTPD
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       -RIKKQFS----WC--KKAGFSFEDLI-ATLLILPLIGINSIYGLTTDKD
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         KWLKMTESSLFGMKSKCNNIYSLLQVF-QALLLYPCFMIRNPYHFHDSSL
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          S--KLFSCRKDMFYRFLEQD-------HIDWRKLVYRMSLRLLRRT--GA
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     --------------------------------------------------
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            WTLSGGSY--RTVIRFFR-T-------VIPWATVFWVFFRRHLF------
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          Y--ELSNHGKNCFYRMMIRP-------QMDWRRLMNHFALRYMCLLRKYG
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          YCY-------DRLLDFFHSNALNVEKLTKLWTKLI---IKTHPQVK----
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  A---ESLPGKDVVYRFLNDS-------RYNWRRFYQLLSLKMV-GR--FE
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               ----ELGFQKDAAYELLENP-------RYNWRQFLLKLAMKII-GA--ID
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         YAACSESTIRRWLHRSDD-G-------AIPWGALHQATVSTAIESG----
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           S---PDGIGKDTAYRLLNSV-------NANWRRFLLLLSTRVIVQR--LL
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         --------------------------------------------------
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       -----PKFTKKTVRNCLNDS-------HTNWQKLVILLAIYLI-QY--VE
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       -----QLFSPRTARNVLNDG-------RINWQKLLCLVAVKII-SL--LR
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      L--SVFAVGKDTFYRLLQR--------QFPWRNAHWALIKKLLPQWRTL-
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         T---PEGIGKDTVYRLLNSI-------TANWRRFLLLLSARVIVQR--LL
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         TPDIPPGISKDVVYRFLNCI-------SSNWRKFLFLLSTRVILQK--LL
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       P--ELNKCGKDSYYRILANQ-------KINWRAFLAQFVKQYLLKD--EL
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         S--GLLNCKKDVFYRFMSNP-------KIDWRKLVYHLNMQLWSKI--KV
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          RSDSEGSLQCLIIDDTDLPK-TGFKTELIGRIYSHVLHRS----ILGFKG
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     ------------------MEKSGHYTHGVDWFFNGKTQRA----ERGIEW
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            ----CPNDVYLLAGDEVVISKAGKKTYGLDRFFSSLTSKP----ISGLSF
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          EVPQSDTTTCFIIDDTVLEK-SGVRMEGISRVFDHMKGRC----VLGYKL
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          ----RFRGKLLLCGDGLKVPKEGKKMPGVKSLHQESDSNNKAEYIMGHSC
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  KLTSAQRIRVFIVDDSVMERERSKKVELLARVFDHVSGRF----VRGYTL
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               LLTSAERERVLVVDDSDYDRARSKKVELLAKIFDHNSGKY----LKGFKL
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         ----LISPLCVLAIDASFHRKAGQHTAHLGSFWNGCAART----ERGIEQ
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           PLTDETTTKVLIADDTLYRRDRSKRVELLARVHDHNTGRY----VRGFRM
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         --------------------------------------------------
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       HFTDARRAQAFILDDSLFKREFSKKTELLSKVFDHDKQKF----YRGFRG
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       PLIDRRRRLAFIVDDTLISRPYSTKTELLAKVYDHNQDKY----ITGYRN
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      ----DLGPGYLVADTTVKEK-RGDRIEGVCWHHDHNTGRS----VAGFEA
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         PLTDETTTKVLIADDTLYSRDRSKCVELLARVHDHNTGRF----MRGFRM
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         PLTDDATTKVLIADDTLYLRDRSKCVELLARVHDHNTKRY----HRGFRM
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       FTPSADPTRCLIFDDTDLSK-TGKTIEGVSKIYNHVSKTY----YLGFKL
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         RSEHKENTTCLIVDDTDYPK-TGRRFEYIGRVHSHVQHRS----ILGFKA
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          LFLCHTDGKTQTMLDFSLHGEEGKNPEKIQGLTSKQRNARFCKVRDEKSV
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     SVIAIIDLAQHTGYTLSAQQTEA-------GLQAK---PPEPSRLAKDSP
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            FTLSLVSVQQRHSFPIQIEQVIK-------SDVEKSIVSPIPEVKPQEKP
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          LLCAFFDGKTTIPFDFSLHQEKGKQGN--CGLTRQQLKKAYHTKRNTGNP
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          QVVSLLAEAGKSCFAIPL-----------------------VSRIHEGVV
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  LTLGWSDGFSFAPLDFTLMSSAKA----------KNRLCEMREDLDKRSV
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               LTLGWGDGVTFLPLDFVLRSSANA----------VNRIQGITKDLDKRTC
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         SCCALIDVQHRQALTVDVRQTLT-------GSEA-------PTRLEQXA-
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           LTLGWSDGNSFVPMMLSMLSSAKD----------KNRLAPMREGIDKRTN
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         ----------------------------------------MTKKIDKRTI
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       LTLGWSDGNTFLPVNFALMSSNNS----------KNRFNQL-KHFDCRSL
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       LTIGWSDGNTFLPVNFALMSTKNR----------ANLVGTKACVTDQRTI
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      AHLVWVNKQGTLPLDAALRFSKRPLISNLLHILS--------YRFDCRSH
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         LTLGWSDGNSFVPMALSMLSSAKE----------KNRLAPMHDGIDKRTN
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         LTLGWSDGNSFVPMLFSMLSSSKE----------KNRLAAMRTDLDKRTN
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       LVAGYWNGSVFIPIDFSLHRESK-TSRLKYGLTAKQRKAQKKTPRCSKTV
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         LFLVITDGTSQMILDFALLGEKGRKGN--FGMSAKELKDRFTKPRDEQDA
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          VNTRIRE--YKQSKIERSIEMVR----------HAMKKGIRFDYLLVDSW
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     SP---------TSRVDFYVGHLVECDS---------YLPERVCYIVADGF
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            GRGRPKGSKNKNKQEVIFTSELLRIQKMINELFKLIANFIPLTYLVVDGH
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          DYKRFQE--CKMSKMEVAMDMLR----------RGWKMGLHAKYVITDSW
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          --------FSNRDQRTLLDKMVLLINS---------LELKELFYFIADAY
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  GYKRRLE--AMSPKPDTVVQMLE----------RALKAGFSADYVLMDSW
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               GYKRRIE--AMTKSTDALEVMVK----------RVMALGVRADYLLMDSW
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         ---------------DQLDDVLLDLRT---------VQQLDLAAVVADGN
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           GYQRRRE--SMRKSTDVLVDMVA----------LAMKAGTTARHLLFDSW
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         AAKRRIM--AQSKGTDVVIQLLD----------QALKAGLTAKYVMFDTW
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       AAKRRFQ--AQRKMNDVALELID----------EALKAGLKTKYVLFDSW
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       AGQRRNQ--AQRKMNDVVIELIH----------QALKFGISAKYVLFDSW
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      LGRRYRE-AAKMSKLDQTVDMVA----------RAIQAGIPAQYFLADAW
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         GYKRRQE--SMRKSTDVLVDMVS----------LVMTAGTKAQPLLLDSW
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         GYKRRQE--SVNKSPDVLVELVK----------VAMAAGSKARYLLFDSW
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       AAKRYRE--LNKKKTDLVVQMFS----------RVVKRKIPVDYILIDTW
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         LQERINE--YTASKISLMIDMIK----------RAIGKGVKFRYVLADSW
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         -----MVETVTGHGL---PFISRFPRN--ANLKYLYT------------G
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          FTCADLIRFITSRHL-ECHLIGMLKMG---KTRYRTEAGNLNAPVIIDRL
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     YSKRKWINAVVQINR---HAIGKLRCD--ANLKFLYR------------G
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            FGNNNALQMARQVKL---HIISKLRHD--SALYIPYQ------------H
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          FTCEQLMTCVRSIGKGAMHFVGLAKMG---KTKYTISGKKKNAAELIATY
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          YASHAIINGVVARGS---HLISRVRSN--AVAYFPVEP-----------T
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  FTHAPLLQKLRDKEL---HVIGMVKE--LKQ-RYLFEGKSLSLRELYARV
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               FCFASLIRKLST-HL---PVICMAKD--LKSNFYQYRGESLRLGRLYQQL
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         YAKEPIVETVTGHGL---PFISRLPRN--ANLNDLYT------------G
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           FAFPATIRRIRALGM---HTICMLKD--TGKVTYEVQGWPFTLKELFKEV
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         FSNPHQIVQISQRGL---NVIAMVKK--SSKITYEFEEKRMNVKQIFNAC
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       FSSPRMFFELLQRGQ---FGIGMLKR--SKKVYFRYRGRQMDVKSLYTML
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       YSSPRMFWRLKELGL---DSVAMLKR--SSKVYYRYRGRAYSIKALYLRL
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      YSSVKFVKKILDLGV-----VPLIRWK-RNNTKFLFQGERLTSAELYTRF
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         FAFPATIRRIKALGM---HTVCMLKD--TGKVTYEMQGWPLSLKELYKSV
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         FAFPVTIRRIHALGM---HTICMLKD--S-KTRYTFQGDGMPLKELFKWV
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       FTSVGLLKKLRSICS-STHIIGMYKYNSKIEVRSKV-------KTLAQLK
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         FACKDIIRFVRSRHM-KCDYLGMIKIGESGRTKYHFERKDFTAPALIKLL
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         EHPRRRG--RPKKFDGKVDFSDLQRFDLVSE----TSTERVWTQVV----
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          KKEKSVR--YSRKLNCY--------------YAHMDAE---YANR-----
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     PQK-RQG--RRRRYAAKVELADPSNLTFVCE---LESGDQLYMAVV----
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            PDPNHRS--R-RKYGDKLDWRNIAGEYLRQSSIDEDIKTDIYQMTL----
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          -ERERGK--NCRKYKCR--------------YIQLNGN---LGDI-----
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          PEKKGRG--RPKKYGMKVKLKTLLNDRASMK----EAESPVYGEQGIKIN
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  --PKNPK---AEILGS---------------VRVHTPS------GL----
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               --KKRPG--RAQILAS---------------IVLSMVN------GP----
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         EHPRRRG--RKKKFDGKVDFSDLQRFDLVSA----RPTERVWTQVV----
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           --RKRPG--RAKVLAE---------------VLVTIGQDI-HGKPV----
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         --KKRRG--RSRYLLS---------------VPVKVGDPAKDGAQI----
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       SRSKRPT--HTTYLYS---------------SIVN---FIIDGHKM----
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       LHSKRHQ--AENYLYS---------------SNVE---ANFQGYSF----
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      AKGKIRKAKGSKRFKGT--------------FL--DAE---HPEIG----
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         --RKRCG--RAKVLAE---------------VLVTIGSAD-QGIPV----
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         --RKRPG--RAKVLAS---------------VMVTIGEDD-KGNPV----
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       KQKAKPK--RCRKFNYY--------------YHHYIAE---IDGL-----
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         SKRKRRK--YNRKLRCY--------------YMVADVV---FADT-----
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         ---WSVQWAREVRAVVIQQVGKKGQVTGYAVLFSTAVTMPAHEVIALYRS
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          ----------KIRIFFCK----RGRKGAWNAFLSTDTRLDFFEAYRIYSM
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     ---WSVSLKRAIRMAY--VCGHKDGKHSYAVLFSTDLDIDPYDIYRYYSA
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            ---LHKEFAQSLNVVILVKTNIKTNAVSHVILFSSDLDLSYEKIIDYYRL
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          ----------PIRIFLIK----YGRNSAWNVLLTTDTTMYFVKAFEVYQI
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          YRTLDLLWKPV-G-ILIRFVLVDHPQRGKIILMSTDLTISAMEIICLYGL
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  ----------ALKVVFVQ---NRNNRREWLAILTTDLSLETTEVVRIYGM
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               ----------TVKLVFVR---NRN-GRGWLALLSTDTTLPDEEIIRIYGK
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         ---WSVQWAREVRAVVIQQIGKKGQVTGYAVLFSTAVTMPAHEVIALYRS
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           ----------AAKIVFVR---DRS-SKKWLALLSTDTTLTAEEIITLYGR
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         ----------DARIVCVR---NRSNRKDWIALICTDMTIDENEIIRIYGK
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       ----------KIKLVYVA---NRNKTNQYLVLGTTNTALQPNQIIQMYGR
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       ----------PLKVVFVA---KKGTKNQYLVLASTNTKLTPQKIIQLYNR
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      ----------LIRLFFVRLIDPKTGSKEWAVFLTTDRSMGLSNMIEHYAN
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         ----------PAKIVFVR---DRN-SKRWLALLSTDTTLTAEEIIKLYRR
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         ----------AAKIVFVR---DRS-KKSWLALLSTDTTLADEEIIKLYGR
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       ----------KVALFISK----RGKNGKWHTLITTDTSLKFVKAIEVYSI
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         ----------KVRLFFVK----RSKNAAWNGLITTDTTLDFLCAYKIYAQ
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         RFEIELIFRDAKQFLGGQD-VQ--LRSQPGIEAHW---------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          RWAIEVCFSEMKGLLRLGK-CQ--CRNFSSQIASI---------------
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     RFQIEFIFRDARLFTGLTH-CQ--VRNANALDSHV---------------
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            RFQIEFNFRDAKQFWGLED-FM--NRGQTAVTNAA---------------
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          RWNIEVMNKETKQYLGLGG-YQ--GCDFNGQIADA---------------
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          RFKIEVSFKQALRTLGTYA-YHFWMRNMQPIKRRSGNQHVHKRSAEYRNA
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  RWSIETFFKMAKSHLKLGTEFQ--GRSFDMMVSHT---------------
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               RWDIEVFFKMAKHHLNLEREVQ--LRDYDGLVAHT---------------
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         RFEIELIFRDAKQFLGGQD-VQ--LRSQQGIEAHW---------------
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           RWDIEVFFKMAKSFLNLAKEFQ--SRSFDALVAHA---------------
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         RWDIEVFFKTCKSFLKLGTEYH--GLSYDALTAHT---------------
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       RWQIEGYFKVAKQYLQYDH-TQ--VQSYDGLCGHM---------------
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       RWSIETYFKTAKQYLRLNK-SQ--IQSYDGQVAQI---------------
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      RWGIEVFYKESKQHLGFLN-ES--VRSFEAVIACL---------------
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         RWDIEVFFKMAKSFLNLAKEFQ--SRSFDALIAHA---------------
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         RWDIEVFFKMSKSFLNLAKECQ--GRSFDALVAHT---------------
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       RWSIEVFFKEAKQLFGLGK-CQ--STNFDVQIAQI---------------
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         RWALEVIFKEAKGLLGLGK-CQ--ANNFASQIAAT---------------
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         ------------NVVLLTLNLCRLEALRAAEGGQNL-VFSLEDMKRRAYN
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          -----------------SLTLMQYNILSHIKRFEAY-ETIGGLFDRTVNG
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     ------------NASLLALNLAKAAWRRDCQKAEPS-RFSIASFKRWALN
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            ------------NLSFFMVNLSHYLLAQFRQD--NP-GAGIIDLKAYCRG
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          -----------------TLCYLTYTVMALEKRFTEY-QTMGELFSDMEGD
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          VRRKLAAYHRHIQAGVIAQGLLQYISSAF------P-SLVWNSFGSWLRT
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  -----------------TIVFTRYLILEWERRENNDERSLGGLFYLFADE
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               -----------------SLVFTRYLFLALQQRFHDDPRSIGSLFYACCDE
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         ------------NVVLLTLNLCRLEALRAAGGGQDL-VFSLEDMKRRAYN
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           -----------------TLVCCRYILLELVKRENADPRTLGSLFHALCDE
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         -----------------AFVFLRYMFMSVEKRDDEDDRTIGELFYCMVDE
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       -----------------AMVIMSYDILALEQRQQVDDRTLGDLFYHYGQS
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       -----------------TITALTFILLAWQERQSKDDRTLGDLFYLMNDA
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      -----------------HLAAMRHAVLSSMVAIK------GSQRDQLAHN
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         -----------------TLVCCRYIMLELAKRENADPRTLGSLFHAVCDE
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         -----------------TVVFCRYIMLELARRTNADPRTLGNLFHATCDE
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       -----------------TIAMTQYLLTSIRYRMEAY-ETIGGLFKDLKQD
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         -----------------SLTALQYNILSLVKRFAAY-ETMGKLFEKVSKD
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         ALLA-------QVILSKLDLSARF-------------EELEHLPSSPLNF
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          AMELSVTERIWELILQIVAVIAELFSADEE-E-----IIRM-IAYDNPKI
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     EHLL-------ELFIDMFELDPTL-------------IKSHINYQKLLKY
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            FRYV-------REMLKMLPEQPEP-------------ILLAQIFAKLTSL
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          LMALTLWKRVLTCIERILRILGEILGMTPQ-Y-----LMATISGNDKEMS
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          MRPGIC-PSEQVTAIAMRNCLPEFLVDSSQKSILTKFILERIDFSRAEGA
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  VMDLDLKTALRQLMTFVLNLLPNKPENNES-L-----S--Q---------
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               MQDLTLFEALHRLLTLTLEKVRASKEFAES-A-----I------------
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         ALLA-------QVILSNLDLSARF-------------EE-----------
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           IRRIGFTEAMALLLTFLEESLNSIIGLCKE-Q-----VQQL---------
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         LADITFYYSLQTLVEAMFESVKEIFQPTEE-Q-----MERF---------
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       LPDIRVVDALNWLMEQL-SGLGEALGSAES-I-----INEI---------
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       LPEIKFIEALVYLLKTL-ESHET------V-F-----LNQT---------
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      LAALTYARKLWHTFRAIFNDA---LGRTS-------------ILENHQKN
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         MRQIVYTEALALLLKLLEETLNSVIGLCKE-Q-----VKQL---------
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         LRQTSFVEALALLLKLLEQSLNKLAGFTKE-L-----MLQL---------
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       YIENKLNIRILAVVNLILTNLEKLVESIDI-E-----LITSKIIEDIESY
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         SLELSIIERIWGTLQELIIAIANLFGLADE-D-----IYDV-MINRSEEM
+
+IS2621.2|IS4|ISPepr1|Transposase|Deinococcus         GLKAA---------------------------------
+IS943.1|IS4|ISPepr1|Transposase|Bacteroides          NII----------KDL------CGVKKTA---------
+ISAcma11.1|IS4|ISPepr1|Transposase|Acaryochloris     GAIDH---------------------------------
+ISAsp3.1|IS4|ISPepr1|Transposase|Anabaena            GRVHN-------------------------APTAVEPS
+ISBf8.1|IS4|ISPepr1|Transposase|Bacteroides          KIL-VMAEALEKWDEV------CG--------------
+ISCku4.1|IS4|ISPepr1|Transposase|Candidatus          RLVA----------------------------------
+ISDha5.1|IS4|ISPepr1|Transposase|Desulfitobacterium  --LQKWIAALPS------YI------KALFPQLGCES-
+ISDpr2.1|IS4|ISPepr1|Transposase|delta               ---NAMIDAIMGTAID--MI--KSAQKMAAPAS-----
+ISDra7.1|IS4|ISPepr1|Transposase|Deinococcus         --------------------------------------
+ISGur1.1|IS4|ISPepr1|Transposase|Geobacter           --IQRFIETLPRAFR----------ERMLLLAPVCS--
+ISL5.1|IS4|ISPepr1|Transposase|Lactobacillus         --TNAFISRLPKYMQE--AI--SP-------SLAA---
+ISLho3.1|IS4|ISPepr1|Transposase|Lactobacillus       --FDHFMQTLPNNLIQ--LL--DTTNRC----------
+ISLre1.1|IS4|ISPepr1|Transposase|Lactobacillus       --ISQFMNYLPENIQN--AL--HEAV------------
+ISMasp2.1|IS4|ISPepr1|Transposase|Magnetococcus      EVIELFEQEVEAWLSKALMLDPLGSQRQILAETNCET-
+ISPepr1.1|IS4|ISPepr1|Transposase|Pelobacter         --IERFVETLPAIFR----------ERLLLLTQ-----
+ISPepr4.1|IS4|ISPepr1|Transposase|Pelobacter         --VEQFVAQLPLPFK----------ARMLLSALATQ--
+ISPto3.1|IS4|ISPepr1|Transposase|Psychroflexus       GFL-TNT----HSFNH------QGVK------------
+ISUnCu6.1|IS4|ISPepr1|Transposase|uncultured         NHI----------CDI------YKLKLAS---------
+//

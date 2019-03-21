@@ -1,0 +1,354 @@
+# STOCKHOLM 1.0
+
+#=GS      ISC1200.1|ISH3|None|Transposase|Sulfolobus DE    solfataricus
+#=GS      ISC1225.1|ISH3|None|Transposase|Sulfolobus DE    solfataricus
+#=GS      ISC1359.1|ISH3|None|Transposase|Sulfolobus DE    solfataricus
+#=GS     ISC1439A.1|ISH3|None|Transposase|Sulfolobus DE    solfataricus
+#=GS     ISC1439B.1|ISH3|None|Transposase|Sulfolobus DE    solfataricus
+#=GS      ISFac1.3|ISH3|None|Transposase|Ferroplasma DE    acidarmanus
+#=GS    ISH20A.1|ISH3|None|Transposase|Halobacterium DE    salinarum
+#=GS   ISH27-1.1|ISH3|None|Transposase|Halobacterium DE    salinarum
+#=GS   ISH27-2.1|ISH3|None|Transposase|Halobacterium DE    salinarum
+#=GS   ISH27-3.1|ISH3|None|Transposase|Halobacterium DE    salinarum
+#=GS     ISH3B.1|ISH3|None|Transposase|Halobacterium DE    salinarum
+#=GS     ISH3C.1|ISH3|None|Transposase|Halobacterium DE    sp.
+#=GS         ISH51.1|ISH3|None|Transposase|Haloferax DE    volcanii
+#=GS       ISHla1.1|ISH3|None|Transposase|Halorubrum DE    lacusprofundi
+#=GS      ISHla11.1|ISH3|None|Transposase|Halorubrum DE    lacusprofundi
+#=GS       ISHla8.1|ISH3|None|Transposase|Halorubrum DE    lacusprofundi
+#=GS       ISHla9.1|ISH3|None|Transposase|Halorubrum DE    lacusprofundi
+#=GS        ISHli5.1|ISH3|None|Transposase|Halohasta DE    litchfieldiae
+#=GS       ISHvo20.1|ISH3|None|Transposase|Haloferax DE    volcanii
+#=GS       ISHvo21.1|ISH3|None|Transposase|Haloferax DE    volcanii
+#=GS       ISHvo22.1|ISH3|None|Transposase|Haloferax DE    volcanii
+#=GS   ISHwa12.1|ISH3|None|Transposase|Haloquadratum DE    walsbyi
+#=GS   ISHwa13.1|ISH3|None|Transposase|Haloquadratum DE    walsbyi
+#=GS  ISMba14.1|ISH3|None|Transposase|Methanosarcina DE    barkeri
+#=GS ISMbu7.1|ISH3|None|Transposase|Methanococcoides DE    burtonii
+#=GS ISMbu8.1|ISH3|None|Transposase|Methanococcoides DE    burtonii
+#=GS   ISMma1.1|ISH3|None|Transposase|Methanosarcina DE    mazei
+#=GS    ISNamo6.1|ISH3|None|Transposase|Natronomonas DE    moolapensis
+#=GS       ISSis6.1|ISH3|None|Transposase|Sulfolobus DE    islandicus
+#=GS      ISSto14.1|ISH3|None|Transposase|Sulfolobus DE    tokodaii
+#=GS       ISSto8.1|ISH3|None|Transposase|Sulfolobus DE    tokodaii
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       --------------------------------------------------
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       MTRTQLIEERFKVRKPVLSRGEDKVITPGLPHQNNLQQVG----------
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       -----------------------------MKHENTTKPAKFNRDF-ARSA
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      -----------------------------------MQTI-----QVSKTE
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      -----------------------------------MQVYE----TGFKTE
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       -----------------------MNNKTIPPKLNANKVKK----F-YSSQ
+ISH20A.1|ISH3|None|Transposase|Halobacterium     -------------------------MQQPEADS-----------KIEEEH
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    ------------------------MSTTQQADG-----------EIHEDQ
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    ------------------------MSTTQQADS-----------EIHEDQ
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    ------------------------MSTTQQADS-----------EIHEDQ
+ISH3B.1|ISH3|None|Transposase|Halobacterium      ------------------------MSTTQQADG-----------EIHEDQ
+ISH3C.1|ISH3|None|Transposase|Halobacterium      ------------------------MSTTQQADS-----------EIHEDQ
+ISH51.1|ISH3|None|Transposase|Haloferax          ------------------------MSNNQQTDD-----------EIHEDQ
+ISHla1.1|ISH3|None|Transposase|Halorubrum        ------------------------VSKTKQADG-----------EIHEDQ
+ISHla11.1|ISH3|None|Transposase|Halorubrum       -------------------------MKPTQADS-----------EIEEEH
+ISHla8.1|ISH3|None|Transposase|Halorubrum        ------------------------MFTIPDPDE-----------YLSASD
+ISHla9.1|ISH3|None|Transposase|Halorubrum        ------------------------MFTIPQPDG-----------HLSATD
+ISHli5.1|ISH3|None|Transposase|Halohasta         -------------------------MIAHQADN-----------QIEEEH
+ISHvo20.1|ISH3|None|Transposase|Haloferax        ------------------------MSNTKQADG-----------SIHEDQ
+ISHvo21.1|ISH3|None|Transposase|Haloferax        -----------------------MSKQQQQADS-----------EIHEDQ
+ISHvo22.1|ISH3|None|Transposase|Haloferax        ------------------------MSNTKQADS-----------EIHEDQ
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    MC---------DV------NLPKLKRILTDPDE-----------FISNSQ
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    ------------------------MLDLTDPDG-----------YLSASE
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   -----------------------------MPTKNDSMTLDTASLLAVSSE
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  -----------------------MLSR-----L-----------ELTPAH
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  --------------------------------------------------
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    -----------------------MKSFAMTPKNDSMSDVDTASLLALSSE
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     ------------------------MLDLPEPDG-----------VLSARD
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        ------------------------MVTPVLPHQNNIQQIG----------
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       ------------------------MVIPNLPHQNNVQRIG----------
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        -----------------------------MKGNEDKGTKSYNRDF-VRSA
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       -----------MLN--FQG---EKVDKVAKT-LISACLWNDSVENKSRAY
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       ------YKLLSMLS--FKG---RKAEEVSRV-LVSACLWNDSVESKSKGY
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       LK--IIYSVLTKIL--FPE-------ELLSALLKASGSYLSRLG---KD-
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      LKSLAINLATNN--------INVISQDLDPEIVKAAPSLLT---------
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      LKSLASYFIVNN--------LNVISQELDTRIADAAPFLLT---------
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       M-----YNIFSNNI--HV-QSRYNSGDIVNTVRDA-IAHKMYV----ETY
+ISH20A.1|ISH3|None|Transposase|Halobacterium     LLNFVVNSLDEELAIDLGENVEVTTEKLYEVLAG-ASAGGTSINHVCETT
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    LLNFLVNALDEEVALTLAENAEIDAEDIYEVLVG-ACVHGTSVSTLCEKS
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    LLNFLVNCLDEEVSLNLANNAEIGAEDIYEVLVG-ATADGTSISTLCNSS
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    LLNFLVNCLDEEVSLNLANNAEIGAEDIYEVLVG-ATADGTSISTLCNSS
+ISH3B.1|ISH3|None|Transposase|Halobacterium      LLNFLVNALDEEVALTLAENAEIDAEDIYEVLVG-ACADGTSVSTLCEKS
+ISH3C.1|ISH3|None|Transposase|Halobacterium      LLNFLVNCLDEEVSLNLANNAEIGAEDIYEVLVG-ATADGTSISTLCNSS
+ISH51.1|ISH3|None|Transposase|Haloferax          LLNFLVNSLDEEVALSLAENAELDAEDIYEVLVG-ACADGTSVSTLCKRS
+ISHla1.1|ISH3|None|Transposase|Halorubrum        LLNFLVNRLDEEVSLSLANNAEITAEDIYEVLVG-ACADGTSVSTLCASS
+ISHla11.1|ISH3|None|Transposase|Halorubrum       LLNCVVNSLDEELAIDLGENVEVTTETLYEVLAG-ASAGGTSINHVCETT
+ISHla8.1|ISH3|None|Transposase|Halorubrum        VK-DVAEEVITPLPLPGVEGSPLDPGDIWLVVIL-ACTNQNSIWDTCNDT
+ISHla9.1|ISH3|None|Transposase|Halorubrum        VK-ELAEDIVEQLPLPGIEGSPLDSGEIWAVVTL-AAVNQTSVWETCKDN
+ISHli5.1|ISH3|None|Transposase|Halohasta         LLNFVVNSLNEDLPIDLTDGVRVSTEELYEVLAG-ASASGTSINHICETT
+ISHvo20.1|ISH3|None|Transposase|Haloferax        LLNFLVNSLDEEVALTLGENAEIGAEDIYEVLVG-ACADGTSVSTLCKRS
+ISHvo21.1|ISH3|None|Transposase|Haloferax        LLNFLVNSLDEEVALSLAENAELDAEDIYEVLVG-ACADGTSVSTLCERS
+ISHvo22.1|ISH3|None|Transposase|Haloferax        LLNFLVNRLDEEVSLNLANNAKIDAENIYEVLVG-ACTDGTSVSTLCENS
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    LK-SLSMELLELIPMEGIEGSGLDSDQIMEVVLR-AAVDQTSVNGVTTST
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    VK-DTAEAVISPLPLPGVEGSPLDPGDIWLVVIF-ACVNETSIWETCNEH
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   L-----ISKYNIIT--LPESANYKCQDTLNILLHAATFSTNSLESASNDL
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  CIKTVLPPLLDNIP--ISINGSLTPKDLFTNILG-MSTDKLSIHSIGKQY
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  -----------------------------------MATWNRSIHSIHKQY
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    F-----FSIVDIIT--LPDGANYSYQEFLNVLLHAATSSTDSLESASNDL
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     VK-EVAADVITELPLPGIEGSPLDSGDIWPVVTM-ASVNQTSVWDVTSQT
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        ------YKLLSMLN--FKG---KKGEEVART-LISACLWNDSVESKSRAY
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       ------YKLLSMLD--FKG---KKAEDVGKT-LISACLWNSSIENKSSAY
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        LK--LIYTFLTNIL--FPE-------ELLKTLLKARGTYLSRLG---NE-
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       --------DVSPQTVRNYVEK-QG----MEVIEKLLERARKISLEI----
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       --------NVSPQTVRNYVEE-QG----TEVIEKLLESMRRISMEI----
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       -----------GRRALRKLNA-VQ-------VEDVRDALRKMGRMT----
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      -----------GNRGKYYLKV-VR--RGEKVISKGQRTFKFYPIYR----
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      -----------GNRGKEYLKV-VR--EGEKVMSQGERSFKFYPHV-----
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       VRNYHRIHTPSGDTVFKRIYE-AAVNHGIDLLTMLIDNTVKMAMEL----
+ISH20A.1|ISH3|None|Transposase|Halobacterium     ------EDSPHANTVRGHLTDQFDLDS---VEAVGDTLLQRDALET----
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    ------EDAPHENSVLYHLRTKFDLET---LEQVGNALLQKDVLDV----
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    ------EDSPSANTILYHLRTKFEPER---LERVANTLLRRDIVEL----
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    ------EDSPSANTVLYHLRTKFEPER---LERVANTLLRRDIVEL----
+ISH3B.1|ISH3|None|Transposase|Halobacterium      ------EDAPHENSVLYHLRTKFDLET---LEQVGNALLQKDVLDV----
+ISH3C.1|ISH3|None|Transposase|Halobacterium      ------EDSPSANTILYHLRTKFEPER---LERVANTLLRRDIVEL----
+ISH51.1|ISH3|None|Transposase|Haloferax          ------EDAPHENSVLYHLRTKFDLET---LEQIGNTLLQKDILNV----
+ISHla1.1|ISH3|None|Transposase|Halorubrum        ------QNSPAGNTVLYHLRTKFEPER---LERVANTLLRKDLDEL----
+ISHla11.1|ISH3|None|Transposase|Halorubrum       ------DDSPHANTVRGHLTDQFELDS---VEAVGDTLLQRDTLET----
+ISHla8.1|ISH3|None|Transposase|Halorubrum        ------EGTPCDDTVLRWLHT-LNRQW---LEVVANLLLARLAMTI----
+ISHla9.1|ISH3|None|Transposase|Halorubrum        ------DNAPCDDTVMDWLHT-LNREW---LERIANDLLKEMAMTI----
+ISHli5.1|ISH3|None|Transposase|Halohasta         ------EDSPHANTVRGHLTDQFDLDT---VEQVGDTLLQQETIDA----
+ISHvo20.1|ISH3|None|Transposase|Haloferax        ------EDAPHENSVLYHLRTKFDLET---LEQIGNTLLQKDVLDV----
+ISHvo21.1|ISH3|None|Transposase|Haloferax        ------EDAPHENSVLYHLRTKFDLET---LEQVGNTLLQKDVLDV----
+ISHvo22.1|ISH3|None|Transposase|Haloferax        ------EDAPPANTVLYHLRTKFELDQ---LQRVGNTLLQKDVLDV----
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    ------EDTPNRETVMDWLHT-LEKET---MLDAVNDILALVAMTV----
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    ------DGTPCDDTVLAWLHT-LNRGW---LEVVANLQLSRLAMTI----
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   QRKNPDLRIPSADTIFNYINE-NK-------IEDILSSFRKMNLELFKMM
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  ------HNTPCETSMRYHLHK-IDFDQ---LIENNAKILLQSSHKT----
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  ------HKIPCETSMRFHLQK-TELDQ---LIEHNTKILLQSSLET----
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    KSKVPNTRIPSADTIFNYIKS-NS-------IEYILSSFRKINNEIFRMM
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     ------DGTPCDDTVMTWLHT-LQRGW---LEFSANLLFRHLALTI----
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        --------GVSPQTVRNYVEE-QG----MEVIEKLLESARKISLKV----
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       --------NVSPQTVRNYVEE-QG----IEVVEKLLEQMRKISLET----
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        -----------GRRALKLLNN-ID-------VDDVRKALREMGKKV----
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       LKGVKEIDLSIDWTTKTWYGKPVKG-----------SSEKGNSWNYAT--
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       LKGVKEVDISIDWTTKTWYGKPVEG-----L----GSSAKGNSWNYATAT
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       LRGVRDRRVAVDFHAIPQYHADK-S-----FLSR-IKPTKGTSWGLVQAA
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      EVKGEINVVAVDETGLTVGEKEQEKAEG-------FLLYNWKRKGVKMRS
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      KVEGETTIVAVDETAITVGEKESRKVEG-------FQLYNGKRKGVKLRS
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       NAFNSYVNVAIDEHDEPYTGKDNPY-----LIDAPFHRFRGTDMAYRFAT
+ISH20A.1|ISH3|None|Transposase|Halobacterium     L-PDRPVEVCADLHLDPYYGDEDET-EA--LYF--SQAKRGTTTFHAYAT
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    L-PQ-QVEVVSDLHLRPYYGDEDGT-DG--LYH--SQAKRGTTAFHAYAT
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    L-PE-QVEVCADLHLRPYYGDEDDT-EN--LYH--SEAKRGTTAFHAYAT
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    L-PE-QVEVCADLHLRPYYGDEDDT-EN--LYH--SEAKRGTTAFHAYAT
+ISH3B.1|ISH3|None|Transposase|Halobacterium      L-PQ-QVEVVSDLHLRPYYGDEDGT-DG--LYH--SQAKRGTTAFHAYAT
+ISH3C.1|ISH3|None|Transposase|Halobacterium      L-PE-QVEVCADLHLRPYYGDEDDT-EN--LYH--SEAKRGTTAFHAYAT
+ISH51.1|ISH3|None|Transposase|Haloferax          L-PQ-QVEVCADLHLRPYYGDEDDT-DG--LYH--SQAKRGTTAFHAYAT
+ISHla1.1|ISH3|None|Transposase|Halorubrum        L-PE-QVEVCADLHLRPYYGDEDDT-DG--LYH--SVAKRGTTAFHAYAT
+ISHla11.1|ISH3|None|Transposase|Halorubrum       L-PDRPVEVVADLHLDPYYGDEDET-EA--LYS--SQAKRGTTAFHAYAT
+ISHla8.1|ISH3|None|Transposase|Halorubrum        FDPDRSRTVSIDFIDNPYHGEHHAE-KG-ELCS--MAPKDGTTTCHRYCT
+ISHla9.1|ISH3|None|Transposase|Halorubrum        LDPDRSRIVSIDFVDNPYHGTYADE-SG-ELCR--MAAKDGTTTCHRYCS
+ISHli5.1|ISH3|None|Transposase|Halohasta         L-PDRPVEVVADLHLDPYYGDEDET-VA--LYS--SLAKRGTTTFHAYAT
+ISHvo20.1|ISH3|None|Transposase|Haloferax        L-PE-QVEVCADLHLRPYYGDEDDT-DG--LYH--SQAKRGTTAFHAYAT
+ISHvo21.1|ISH3|None|Transposase|Haloferax        L-PQ-QVEVVSDLHLRPYYGDEDDT-DG--LYH--SQAKRGTTAFHAYAT
+ISHvo22.1|ISH3|None|Transposase|Haloferax        L-PK-QVEVCADLHLRPYYGDEDDT-DG--LYH--SQAKRGTTAFHAYAT
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    LDRDGSRTICIDFMNNPFHGCPDDE--D-EFRR--MSARDGTTKCHRYCT
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    LDAEQSRIVSIDFIDNPYHGDHYDE-EG-ELCS--MAPKDGTTTCHRYCT
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   KLENKIHDIAIDFHDISYYGDKNTP-----GIRG-IKLKNGSSWGKSFCT
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  LDSNKKYDLAIDYTNDPYYGEVNYV-NENYVIR--GQAKKSTNSFYSYIS
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  LKQKKKHDFAIDYTNDQYYGSIDDS-NNRYVIR--GQAKKSTNSFYSYIS
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    KLKNNVHDIAIDFHDVEYYGCRDTL-----CVRG-IKPKNGTSWGYSFCT
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     LDPDRSRIVSIDFVDNPYHGHPDED-DG-ELCS--SSPTDGTTTCHRYCT
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        LKGVKEIDVSIDWTTKTWYGRPVGG-----L----GSSEEGNSWNYATAT
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       LKGVKEIDISIDWTTKTWYGKQVKG-----L----GTSEKGNSWNHATAT
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        LRETRNRRVAIDLHSQPQYHKDK-S-----LLSR-IKPNKGTSWGLAQIA
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       TKYKGK-VLL-LAFIP----QVNGMTKD--EIVKVLVEQVMAMGFKIRLI
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       TKYQNM-VLL-LAFVP----QVNGMSKD--EIVKLLMEQIVGMGFKVGLV
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       IFLLGR-TRSFLDVIP---VTVKNVAEGFKAVMEVIVKELEEDKLRLVMV
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      LDLVYP---LRLPLLVEVADLRSDSPSQ--FLLRSVRE--VSQYMEIDYV
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      VDLVFP---LRLSLLEEIADLRSDTPSQ--FLMRAVSE--VAQHLKIDYV
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       LDCVDN-NRFTLAAMVKHPLDVINNAKE----VRMVIEHALSLGIKVNTV
+ISH20A.1|ISH3|None|Transposase|Halobacterium     LYARVPNKRYTLAVRQ----LVAGDTTS--DVLTEFLELLNGLDLGVKAV
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGILRRLDLDVKAV
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGVLDGLDTDVKAV
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    LYARVKNKRYRLAVRR----LEDGDTAS--SVLAEFLGVLDGLDTEVKAV
+ISH3B.1|ISH3|None|Transposase|Halobacterium      LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGILDGLDLDVKAV
+ISH3C.1|ISH3|None|Transposase|Halobacterium      LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGVLDGLDTDVKAV
+ISH51.1|ISH3|None|Transposase|Haloferax          LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGILDGLDLGVKAV
+ISHla1.1|ISH3|None|Transposase|Halorubrum        LYARVKNKRYTLAVRR----LKDGDTAS--SVLAEFFGVLDGLDAGVKAV
+ISHla11.1|ISH3|None|Transposase|Halorubrum       LYARVRNKRYTLAVRQ----LVAGETTS--DVLAEFLELLDGLDLGVKAV
+ISHla8.1|ISH3|None|Transposase|Halorubrum        AYVVSNGKPVTLAMTY----VRSDEDEA--DAVERVLARVENYPFEIDLL
+ISHla9.1|ISH3|None|Transposase|Halorubrum        AYLVSNGKPVTLAMTY----VRSDESEA--DAVERVLDRVEAYPFDIDLL
+ISHli5.1|ISH3|None|Transposase|Halohasta         LYARVRNKRYTLAVRQ----LVAGETSS--DVLSEFFELLDGLDLGVKAV
+ISHvo20.1|ISH3|None|Transposase|Haloferax        LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGILDGLDLGVKAV
+ISHvo21.1|ISH3|None|Transposase|Haloferax        LYARVKNKRYTLAVRR----LEDGDTAS--SVLAEFLGILDGLDLGVKAV
+ISHvo22.1|ISH3|None|Transposase|Haloferax        LYARVKNKRYTLAVRR----LEDGDTAS--SVLAGFLGILDGLDLNVKAV
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    AFVLAQGKPLTLAVDP----VDGKDSKA--DAVERVLARVETYPFEIDQI
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    AYVVSNGKPVTLAMTY----VRNDETEA--DAVERVLARVENYPFEIELL
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   LDIIGT-SHLTLDVID---I--NSLNKNYSLLIESLFKRLQTIGVKTGTV
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  LCIINKYTRFTISMLP----VEKGKTKT--DYLKYFIDVVDKINLKINIL
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  LCIIDKDERVTISVLP----VEKGNSKT--DYLKYFIDQIKQIKLKINVL
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    LDVIGN-SKLTLDVID---I--NGLSKDYSILMESLFERVEKMGVKVGTV
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     AYVVSNGKPVTLALTY----VRSDEQEA--DAVERVLDRVGAYPFAIDLL
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        TKFNGK-VLL-LAFVT----QVKGMTKE--EIVKALVEQVVAMGFKIRLI
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       TKYGGK-ILL-LAFIT----QVNGMTKE--DIVKALVEQVVAMGLKIRLI
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        IFLLNR-KSIFLDVLP---ITVKNIAEDFKMVMQVVLEELDKFDLRLVRV
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       TLDAGFYTVDVLNFISQFK--YIIAVLVGDV-KVYEEFD--------GDY
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       TLDAGFYTVEVLKFISQFK--FVIGVPVGDV-KIYEEFD--------GEY
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       FADREFAVNEVIRFLLELGLDFVISAKAQMY-KKYKGMLQDVDVSFGGVR
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      VADAGFLNLGVIKEM---PVKTIVRGKSNLKGFK--E-LSNV--------
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      VADAGFLNLKVIKEM---PVKTVVGGKTNLKGFK--E-LSNV--------
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       LMDRGYLDSSVMDAVDSMKLKYIIPAKDNHKVIKFKKM----DLKYCKDV
+ISH20A.1|ISH3|None|Transposase|Halobacterium     YLDRGFYNSTCLGLLYAHNYAYVMPIVKWGETIQ--DELSR-GWSREIEH
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    FLDREFYDSKCLTLLQAHNHAYVMPIVRWGQTIK--QELSE-GWSRVIQH
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    YLDRGFYDSKCLTLLQTHNYAYVVPIIRWGEAIQ--QELSE-GWSRVIQH
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    YLDRGFYDSKCLTLLQAHNYAYVVPIIQWGEAIQ--QELSE-GWSRIIQH
+ISH3B.1|ISH3|None|Transposase|Halobacterium      FLDREFYDSKCLTLLQAHNHAYVMPIVRWGQTIK--QELSE-GWSRVIQH
+ISH3C.1|ISH3|None|Transposase|Halobacterium      YLDRGFYDSKCLTLLQTHNYAYVVPIIRWGEAIQ--QELSE-GWSRVIQH
+ISH51.1|ISH3|None|Transposase|Haloferax          YLDREFYDSKCLTLLQAHNHAYVMPIVRWGQTIK--RELSE-GWSRVIQH
+ISHla1.1|ISH3|None|Transposase|Halorubrum        YLDRGFYDSKCLTLLQAHNYAYVIPIIRWGEAIQ--QELSE-GWSRVIQH
+ISHla11.1|ISH3|None|Transposase|Halorubrum       YLDRGFYNSTGLKLLYAHNYAYVMPIVKWGETIQ--DELNS-GWSREIEH
+ISHla8.1|ISH3|None|Transposase|Halorubrum        LADSGFYNERVIRRARD-IAPTVVHVPKKGERMK--DKLET-HKSYMTTY
+ISHla9.1|ISH3|None|Transposase|Halorubrum        LADRGFYNERILRRSHD-IAATVVPVQKKGKRMK--KKLDT-HCSYMTTY
+ISHli5.1|ISH3|None|Transposase|Halohasta         YLDRGFYNSTCIGLLYAYNYAYVIPVVKWGDTIK--DELSS-GWSRVIEH
+ISHvo20.1|ISH3|None|Transposase|Haloferax        YLDREFYDSKCLTLLQAHNHAYVMPIVRWGRTIK--RELSE-GWSRVIQH
+ISHvo21.1|ISH3|None|Transposase|Haloferax        YLDREFYDSKCLTLLQAHNHAYVMPIVRWGRTIK--RELSE-GWSRVIQH
+ISHvo22.1|ISH3|None|Transposase|Haloferax        YLDREFYDSKCLTLLQAHNHAYVMPIVRWGQSIK--QELSE-GWSRVIQH
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    LMDRDAFCGELIGVLRE-AAPPVFPVRTGKETLE--EKLTT-GSSYMTEE
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    LADSGFFNERVIRRSRE-IAATVVHVPKKGDRMK--EKLDV-HKSYMTTY
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   YLDREFFNTDVIPKLDELKVNFVIAVKSTQV-IN--RELKNHQKEYGNT-
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  CLDREFYSRDVFTFLQENDIPHITPVVRKGKRIK--DILDG-NNKRYEKY
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  CLNREFYSRDVFSFLQENEVAHIVPVVKMGKRLK--EIIDG-TKKRCDTY
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    YMDREFFNRKVISKMEKYKVDFVIAAKSNKR-IK--EMLERHRKENRDT-
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     LADRGFYNGRVIRRGRE-LATTVIPVQEKGERMK--EKLDT-HCSYMTTY
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        TLDAGFYTVDVLNFISQFK--YIVAVPVGDV-KVYEEFD--------GDY
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       TLDAGFYTVGVLNFISQFK--YIIGVPVGDV-KVYEEFD--------GEY
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        YADREFAVNEVIKFLLGLGVDFVITARYQMY-KKYEDKLRDVDITYCGVR
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       TTN---SKRHRRDE------QVKFRF---LVYSKEEVRR--KSLVYFARA
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       TTN---SKRHKKEE------QVKFRL---LVYGKEIVKKRKKTVVYFARA
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       YTG---FLCVRHGS------GA---Y--LIIL-----RKEDGKIIAFLVR
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      PLVEKRYEVKDKVYVAYRVLKFEGLYYYDVVYVKGKP-------RHFMFV
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      PLTEKKCEVNDRVYVAYRVLKYNDLYYYEVIYVKEKP-------RHFIFV
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       YGNEFPFMVLRDNIGSSKRVNANFVH--IVYY------SHKKH--DFSFY
+ISH20A.1|ISH3|None|Transposase|Halobacterium     DLA---GE-------------VAFPVFIDCVYQQGRYDEHGVARHGYAAD
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    DMT---AKLDGHSW------TVEFLVYIDCTYQNGRCDEHGVARHGYAAD
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    DLT---GKLDGHSW------TVEFPVYIDCTYLNGRYDEHGVARHGYAAD
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    NLT---GKLDGHSW------TVEFPVYIDCTYLNGRYDENGVARHGYAAD
+ISH3B.1|ISH3|None|Transposase|Halobacterium      DMT---AKLDGHSW------TVEFLVYIDCTYQNGRCDEHGVARHGYAAD
+ISH3C.1|ISH3|None|Transposase|Halobacterium      DLT---GKLDGHSW------TVEFPVYIDCTYLNGRYDEHGVARHGYAAD
+ISH51.1|ISH3|None|Transposase|Haloferax          SLT---AKLDGHSW------TVEFPVYIDCTYQNGRYDEHGVARHGYAAD
+ISHla1.1|ISH3|None|Transposase|Halorubrum        DLT---GKLDGHSW------TVDFPVYIDCTYLNGKYDENGVARHGYAAD
+ISHla11.1|ISH3|None|Transposase|Halorubrum       DLA---GE-------------VTFPVFIDCVYQQGRCDEHGVARHGYAAD
+ISHla8.1|ISH3|None|Transposase|Halorubrum        RM------YKDSER------ELRFPLAVAVSYQNGDRGKHGEVVRGYVAC
+ISHla9.1|ISH3|None|Transposase|Halorubrum        RM------YKDCKR------ELKFPLAVAVSYQAGDRGKSGEVVRGYVAC
+ISHli5.1|ISH3|None|Transposase|Halohasta         ELA---GK-------------VTFPVYIDCVYQQGRYDENGVARHGYAAD
+ISHvo20.1|ISH3|None|Transposase|Haloferax        SLT---AKLDGHSW------TVEFPVYIDCTYQNGRYDEHGVARHGYAAD
+ISHvo21.1|ISH3|None|Transposase|Haloferax        DLT---AKLDGHSW------TVEFPVYIDCTYLNGRYDEHGVARHGYAAD
+ISHvo22.1|ISH3|None|Transposase|Haloferax        SLT---ARLDGHSW------TVEFPVYIDCTYQNGRYDEHGVARHGYAAD
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    II------CEGKEH------EQTYPLAVNVTYQNGDRGKSGLKQTGYAAY
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    RM------YKDSER------ELRVPLAVSVSYQNGDRNKHGEVVRGYVAC
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   STI---FEYQFQKG------GPSFNV--VAIY-----NDEKKKYLLFATN
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  VMK-------NKKG------DVGLDIAIDVKYLKGKRGKNGCENLGFVVY
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  TMN-------STKG------KVELVLAIDVKYRKGKRGKNGCENLGFVVY
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    STV---FEYKFQGE------EQTFNI--VAVW-----DKE-KEYSIFATN
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     RM------FKDSER------ELRFPLAVSVSYHNGDRGKHGEVVRGYVAC
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        ATN---SKRHRRDE------QVKFRL---LVYSKEKVRRKKKSVVYFARA
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       TTN---SKRKRREE------QVKFRL---LVYSKEKVRRKRREVVYFARA
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        YTG---FLCVRHVS------GA---Y--LVIL-----RKGDG-IIAFLVS
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       TNLDLSKR--EVLDLYNKVRGPIETSYRNIK-AFLPFTGSTKFVFRTLIF
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       TNLDLPKR--EVLKLYNKVRSPIETSYRNIK-AFLPFTSSTKFIFRELIF
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       KEMDLY--DAIVLAEMYRERWGIENAFRSLE-EFRIRTRTCDVRKELVLV
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      T---NFEGDPYELAELYRLRWQVEEGFKVRKARIRYV---RKLSNKIFLF
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      T---NFNGDPYKLAELYRLRWQSEEGFKVRKARIRYV---RKLTNKIFLY
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       TNINVNENNVIELAELYRKRWGIENGYQERKIDIREKTHSSHMAIRQFLY
+ISH20A.1|ISH3|None|Transposase|Halobacterium     A---PFIDTPRDAREHYSKRFGIESSYRLAK-QSLAFTSSQDAGLRLVMF
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    A---PFIESPRDARYHYAKRFGIEGSYRLSE-QSIATTSTQNPVVRLLYV
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    A---PFIENPRDARYHYSKRFGIESSYRLSE-QAIATTTTRDSTVRLLYV
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    A---PFIETPREARYHYSKRFGIESSYRLSE-QAIATTTTRDATVRLLYV
+ISH3B.1|ISH3|None|Transposase|Halobacterium      A---PFIESPRDARYHYAKRFGIEASYRLSE-QSIATTSTQNPVVRLLYV
+ISH3C.1|ISH3|None|Transposase|Halobacterium      A---PFIENPRDARYHYSKRFGIESSYRLSE-QAIATTTTRDSTVRLLYV
+ISH51.1|ISH3|None|Transposase|Haloferax          A---PFIDSPRDARYHYAKRFGIEASYRLSE-QSIATTSTQNPVVRLLYV
+ISHla1.1|ISH3|None|Transposase|Halorubrum        A---PFIDSPRDARYHYSKRFGIESSYRLFE-QAIATTTTRDPTVRLLYV
+ISHla11.1|ISH3|None|Transposase|Halorubrum       A---PFIDTPRDARNHYSKRFGIESSYRLAK-QSLAFTSSQDAGLRLVMF
+ISHla8.1|ISH3|None|Transposase|Halorubrum        G---VTDRSAKQVEHRYRKRSGIETTYRLLR-QARGITTTRDPVVRFAIM
+ISHla9.1|ISH3|None|Transposase|Halorubrum        D---LADRTPKRVEQLYRKRSAIETSYRVFR-QARVVTTTQDSIVRFGFV
+ISHli5.1|ISH3|None|Transposase|Halohasta         A---PFIETPRDAREYYRKRFGIESSYRLAR-QSLALTSSRDAGLRLLLF
+ISHvo20.1|ISH3|None|Transposase|Haloferax        A---PFINSPRDARYHYAKRFGIEASYRLSE-QTIATTTTQNPVVRLLYV
+ISHvo21.1|ISH3|None|Transposase|Haloferax        A---PFIDSPRDARYHYAKRFGIEASYRLSE-QTIATTTTQNPVVRLLYV
+ISHvo22.1|ISH3|None|Transposase|Haloferax        A---PFIDSPRDARYHYAKRFGIEASYRLSE-QSIATTSTQNPVVRLLYV
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    G---LEDRTPRQVAQVYNHRAQIEKSYETFR-KARALTTTPSTTIRLFYV
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    G---VTDHTAKQVERIYRKRSGIETTYRLIR-QARGVTTTRDPVVRFAFM
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   KKAESIEKFEKMIPEEYRKRWNIETGYRVKN-EFKIRSCTKSPVARLLFF
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  G---I-DWEPGKISTIYRKRFTIESSYRMRN-VVKPKTSSRDPMLRYFYA
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  G---I-DWDPRKVSDTYRKKFAIESSYRMRN-VVNHKTCSKDSMLRYFYA
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    KKVSSIDTFVKQIPEEYRKRWNIETGYRVKK-DFKIRTCSKSPVARTLFF
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     D---LADRTPTQIERRYRKRSAIETSYRLFR-QARATTTTQDPLVRFAFV
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        TNLDLPKG--EVLDLYNKVRGPIETSYRNIK-AFLPFTSSTKFVFRTLIF
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       TNLDLKKG--DVLKLYNKVRGPIETSYRDIK-AFLPFTSSTKFVFRTLIF
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        GEVDVR--TAVVLAEDYRERWGVENAFRSLE-EFRVRTRTCDVRKELVLI
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       VLALVLYSLYTIFKGEV---------GRE-EF-RLLLILLFP-DLF----
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       VLAMIFYSLYTVFKNVM---------TRE-EF-RLLLILCFLDDLS----
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       LLSYLLLNVWFLIRSWR---------KVK-LW-EFSVSLS--NLLDREV-
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      LYYTVLDSAWNLVNHLLFNFKSTCKKVL-----SFDS-FV--KLL-----
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      LYYTVLDSVWNLVNYLLFNFKSTKRKPL-----SFNS-FV--RLL-----
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       FFSILVYNIWVLINLIR---------RIY-GL-SHIILMD---FLIS---
+ISH20A.1|ISH3|None|Transposase|Halobacterium     VVSLLLQNSWRYLHWKYVAAPRRGGRRLW-NW-SFTE-FC--EMVL-RAA
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    VVSLLLQNVWRYLHWEYVRTPRRGGRRLW-KW-SFKE-FI--NMIQ-RAA
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    VVSLLLQNTWRYLHYEYVATPRRGGRRLW-WW-PYKE-FV--NMVR-RAA
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    VVSLLLQNVWRYLHYEYVATPRRGGRRLW-WW-PYKE-FV--NMVR-RAA
+ISH3B.1|ISH3|None|Transposase|Halobacterium      VVSLLLQNVWRYLHWEYVATPRRGGRRLW-KW-SFKE-FI--NMIQ-RAA
+ISH3C.1|ISH3|None|Transposase|Halobacterium      VVSLLLQNTWRYLHYEYVATPRRGGRRLW-WW-PYKE-FV--NMVR-RAA
+ISH51.1|ISH3|None|Transposase|Haloferax          VVSLLLQNVWRYLHWEYVATPRRGGRRLW-EW-SFKE-FI--NMVR-RAA
+ISHla1.1|ISH3|None|Transposase|Halorubrum        VVSLLLQNVWRYLHYEYVATPRRGGRRLW-WW-PYKE-FV--NMIR-RAA
+ISHla11.1|ISH3|None|Transposase|Halorubrum       VVSLLLQNSWRYLHWRYVAAPRRGGRRLW-RW-SFTE-FC--EMVL-RAA
+ISHla8.1|ISH3|None|Transposase|Halorubrum        LVAALLENLWLVLRWAVVARPRRGGRDLPEEF-TFKT-FC--DWIR-HEL
+ISHla9.1|ISH3|None|Transposase|Halorubrum        LVGFLLENLWLVLRWAVVARPRRGGRDLPEEF-TFKT-FS--DWIR-HAL
+ISHli5.1|ISH3|None|Transposase|Halohasta         VVSLLLQNVWRYLHWMYVAAPRRGGRRLL-EW-PFTE-FC--EMVL-RAA
+ISHvo20.1|ISH3|None|Transposase|Haloferax        VVSLLLQNVWRYLHWEYVATPRRGGRRLW-EW-SYKE-FT--NLIR-RAA
+ISHvo21.1|ISH3|None|Transposase|Haloferax        VVSLLLQNVWRYLHWEYVATPRRGGRRLW-QW-SFKE-FI--NMIR-RAA
+ISHvo22.1|ISH3|None|Transposase|Haloferax        VVSLLLQNVWRYLHWEYVATPRRGGRRLW-QW-PFKE-FI--NMIR-RAA
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    GVGFLLEQLWVVLQWAVLARPRRGGRALPTDF-TFNDAFL--HGVE-EVL
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    LVAAILENLWLVLRWAVVARPQRGGRDLPEEF-TFSV-FC--DWIR-REL
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   IIQCIMYNVLNMLKSVL---------KIT-AY-ELKSLIN--EDIN----
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  LISFMLKNAWVSIQRMHFMKVKRGPKTIEEDVFRFDL-FV--HFVE-EWV
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  LISFLFKNAWVSIQRMHFIKVKRGPKTIESDMFRFDM-FV--HLIV-EWV
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    VVQCIMYNILNVLKSVL---------DIT-AY-QMKSVIN--QDII----
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     LVSFLLENIWLVLRWAVVARPRRGGRDLPTQF-TFGT-FC--DWIR-HVL
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        VLAVAFYSLYTVFKGEV---------RRE-QF-RILLILLFSDDLF----
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       VLAMAFYSFYTIFKSVM---------GRE-EF-RRLLILLFPEDLL----
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        LLCYFLLNVWFLVRSWR---------RVR-LW-EFCQSLV--DFLVLKEM
+
+ISC1200.1|ISH3|None|Transposase|Sulfolobus       -NPENFTFNAIE-----TLIYTIDLFLRR---------------
+ISC1225.1|ISH3|None|Transposase|Sulfolobus       -DLKDFIFNLEE-----TLINTIDLFLWR---------------
+ISC1359.1|ISH3|None|Transposase|Sulfolobus       RVEQERAFREVKTSFPQTPANPMHLLPA-----------T----
+ISC1439A.1|ISH3|None|Transposase|Sulfolobus      --------------------------------------------
+ISC1439B.1|ISH3|None|Transposase|Sulfolobus      --------------------------------------------
+ISFac1.3|ISH3|None|Transposase|Ferroplasma       --MGNRKWK--------TIINNNG--------------------
+ISH20A.1|ISH3|None|Transposase|Halobacterium     WTALGVR-------RAVPANQSLD---------DRFFR------
+ISH27-1.1|ISH3|None|Transposase|Halobacterium    WTALATR-------RAVPANRPPD---------DRFTR------
+ISH27-2.1|ISH3|None|Transposase|Halobacterium    WTALAVR-------RAVPADRPPD---------DRFHR------
+ISH27-3.1|ISH3|None|Transposase|Halobacterium    WTALAVR-------RAVPANRPPD---------DRFHR------
+ISH3B.1|ISH3|None|Transposase|Halobacterium      WTALATR-------RAVPANRPPD---------DRFTR------
+ISH3C.1|ISH3|None|Transposase|Halobacterium      WTALAVR-------RAVPANRPPD---------DRFHR------
+ISH51.1|ISH3|None|Transposase|Haloferax          WTALAVR-------RAVPANRPPD---------DRFHR------
+ISHla1.1|ISH3|None|Transposase|Halorubrum        WTALAVR-------RAVPANRPPD---------DRFHR------
+ISHla11.1|ISH3|None|Transposase|Halorubrum       WTALGVR-------RSVPANQPLD---------DRFFR------
+ISHla8.1|ISH3|None|Transposase|Halorubrum        EEELRRRWKIKANGVGVPASQATA---------AG---------
+ISHla9.1|ISH3|None|Transposase|Halorubrum        EEELERSWEIKMNGVGVPEAYAAA---------AG---------
+ISHli5.1|ISH3|None|Transposase|Halohasta         WTALGVR-------RAVPANQPLD---------SRFFR------
+ISHvo20.1|ISH3|None|Transposase|Haloferax        WTALAVR-------RAVPANRPPD---------DRFSR------
+ISHvo21.1|ISH3|None|Transposase|Haloferax        WTVLAVR-------RAVPANRPPD---------DRFSR------
+ISHvo22.1|ISH3|None|Transposase|Haloferax        WTALATR-------RAVPANRPPD---------DRFHR------
+ISHwa12.1|ISH3|None|Transposase|Haloquadratum    DDELGWKDEHQTNDQGLPAGHEHG---------LG---------
+ISHwa13.1|ISH3|None|Transposase|Haloquadratum    EEQLERRWKIKMNGTGIPPSYQAA---------AG---------
+ISMba14.1|ISH3|None|Transposase|Methanosarcina   -KVVRYGLKSLN---FIPVSVLLDCLRWVNEERNRVLRTRLTII
+ISMbu7.1|ISH3|None|Transposase|Methanococcoides  KKRLKVKLVVKCYR------------------------------
+ISMbu8.1|ISH3|None|Transposase|Methanococcoides  RRKLKVRLIVKCFR------------------------------
+ISMma1.1|ISH3|None|Transposase|Methanosarcina    -KAVKEGVNSLS---NITVRSFLECLTRYNKERRRALRARLRDL
+ISNamo6.1|ISH3|None|Transposase|Natronomonas     EQELERRWEIEMNRTGVPDAYGSA---------AG---------
+ISSis6.1|ISH3|None|Transposase|Sulfolobus        -YLKDFLFKSIE-----PLINNIDLFSRR---------------
+ISSto14.1|ISH3|None|Transposase|Sulfolobus       -NLENSLFNLVE-----TLINTIDLFLRR---------------
+ISSto8.1|ISH3|None|Transposase|Sulfolobus        REVITQGLPQVGELFFVNFS------------------------
+//

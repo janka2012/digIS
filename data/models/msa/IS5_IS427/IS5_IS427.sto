@@ -1,0 +1,1262 @@
+# STOCKHOLM 1.0
+
+#=GS         IS1248A.3|IS5|IS427|Transposase|Paracoccus DE    denitrificans
+#=GS         IS1248B.2|IS5|IS427|Transposase|Paracoccus DE    denitrificans
+#=GS           IS1301.1|IS5|IS427|Transposase|Neisseria DE    meningitidis
+#=GS           IS1421.3|IS5|IS427|Transposase|Ralstonia DE    solanacearum
+#=GS          IS1502.3|IS5|IS427|Transposase|Leptospira DE    interrogans
+#=GS        IS1647.3|IS5|IS427|Transposase|Streptomyces DE    coelicolor
+#=GS        IS1648.3|IS5|IS427|Transposase|Streptomyces DE    coelicolor
+#=GS        IS1650.3|IS5|IS427|Transposase|Streptomyces DE    coelicolor
+#=GS          IS298.3|IS5|IS427|Transposase|Caulobacter DE    crescentus
+#=GS         IS402.3|IS5|IS427|Transposase|Burkholderia DE    cepacia
+#=GS        IS427.3|IS5|IS427|Transposase|Agrobacterium DE    tumefaciens
+#=GS             IS711.3|IS5|IS427|Transposase|Brucella DE    ovis
+#=GS        IS869.3|IS5|IS427|Transposase|Agrobacterium DE    tumefaciens
+#=GS      ISAac2.1|IS5|IS427|Transposase|Actinobacillus DE    actinomycetemcomitans
+#=GS       ISAar38.1|IS5|IS427|Transposase|Arthrobacter DE    arilaitensis
+#=GS      ISAba31.1|IS5|IS427|Transposase|Acinetobacter DE    baumannii
+#=GS      ISAli12A.1|IS5|IS427|Transposase|Azospirillum DE    lipoferum
+#=GS      ISAli12B.3|IS5|IS427|Transposase|Azospirillum DE    lipoferum
+#=GS        ISAli9.3|IS5|IS427|Transposase|Azospirillum DE    lipoferum
+#=GS           ISAs34.3|IS5|IS427|Transposase|Aeromonas DE    salmonicida
+#=GS       ISAzba5.3|IS5|IS427|Transposase|Azospirillum DE    brasilense
+#=GS       ISAzba7.3|IS5|IS427|Transposase|Azospirillum DE    brasilense
+#=GS           ISAzo24.3|IS5|IS427|Transposase|Azoarcus DE    sp.
+#=GS           ISAzo38.3|IS5|IS427|Transposase|Azoarcus DE    sp.
+#=GS        ISAzs9.3|IS5|IS427|Transposase|Azospirillum DE    sp.
+#=GS      ISBcen20.3|IS5|IS427|Transposase|Burkholderia DE    cenocepacia
+#=GS       ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium DE    japonicum
+#=GS      ISBli8.3|IS5|IS427|Transposase|Brevibacterium DE    linens
+#=GS           ISBth21.3|IS5|IS427|Transposase|Bacillus DE    thuringiensis
+#=GS       ISBugl2.3|IS5|IS427|Transposase|Burkholderia DE    glumae
+#=GS       ISBuph1.3|IS5|IS427|Transposase|Burkholderia DE    phytofirmans
+#=GS        ISBvi5.3|IS5|IS427|Transposase|Burkholderia DE    vietnamiensis
+#=GS         ISCaa13.3|IS5|IS427|Transposase|Candidatus DE    Amoebophilus
+#=GS      ISCaac1.1|IS5|IS427|Transposase|Catenulispora DE    acidiphila
+#=GS       ISCARN30.3|IS5|IS427|Transposase|Metagenomic DE    data
+#=GS       ISCARN33.3|IS5|IS427|Transposase|Metagenomic DE    data
+#=GS       ISCARN38.3|IS5|IS427|Transposase|Metagenomic DE    data
+#=GS       ISCARN85.3|IS5|IS427|Transposase|Metagenomic DE    data
+#=GS          ISCc1.3|IS5|IS427|Transposase|Caulobacter DE    crescentus
+#=GS     ISCef8.1|IS5|IS427|Transposase|Corynebacterium DE    efficiens
+#=GS     ISCgl5.1|IS5|IS427|Transposase|Corynebacterium DE    glutamicum
+#=GS     ISCgl6.1|IS5|IS427|Transposase|Corynebacterium DE    glutamicum
+#=GS         ISDds9.3|IS5|IS427|Transposase|Deinococcus DE    deserti
+#=GS        ISDge16.3|IS5|IS427|Transposase|Deinococcus DE    geothermalis
+#=GS             ISEhe2.3|IS5|IS427|Transposase|Pantoea DE    agglomerans
+#=GS         ISFtu2.1|IS5|IS427|Transposase|Francisella DE    tularensis
+#=GS   ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus DE    obscurus
+#=GS   ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus DE    obscurus
+#=GS   ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus DE    obscurus
+#=GS             ISHch3.3|IS5|IS427|Transposase|Hahella DE    chejuensis
+#=GS            ISJp4.1|IS5|IS427|Transposase|Ralstonia DE    eutropha
+#=GS         ISKpn12.3|IS5|IS427|Transposase|Klebsiella DE    pneumoniae
+#=GS       ISKra1.1|IS5|IS427|Transposase|Ktedonobacter DE    racemifer
+#=GS       ISLpl3.3|IS5|IS427|Transposase|Lactobacillus DE    plantarum
+#=GS         ISLpn10.1|IS5|IS427|Transposase|Legionella DE    pneumophila
+#=GS           ISLxx6.1|IS5|IS427|Transposase|Leifsonia DE    xyli
+#=GS     ISMac11.1|IS5|IS427|Transposase|Methanosarcina DE    acetivorans
+#=GS      ISMasp6.3|IS5|IS427|Transposase|Magnetococcus DE    sp.
+#=GS     ISMba19.1|IS5|IS427|Transposase|Methanosarcina DE    barkeri
+#=GS      ISMba5.1|IS5|IS427|Transposase|Methanosarcina DE    barkeri
+#=GS    ISMch2.3|IS5|IS427|Transposase|Methylobacterium DE    chloromethanicum
+#=GS    ISMch9.3|IS5|IS427|Transposase|Methylobacterium DE    chloromethanicum
+#=GS   ISMdi24.3|IS5|IS427|Transposase|Methylobacterium DE    dichloromethanicum
+#=GS   ISMex15.3|IS5|IS427|Transposase|Methylobacterium DE    extorquens
+#=GS   ISMex19.3|IS5|IS427|Transposase|Methylobacterium DE    extorquens
+#=GS   ISMex32.3|IS5|IS427|Transposase|Methylobacterium DE    extorquens
+#=GS   ISMex42.3|IS5|IS427|Transposase|Methylobacterium DE    extorquens
+#=GS     ISMma12.1|IS5|IS427|Transposase|Methanosarcina DE    mazei
+#=GS   ISMno18.3|IS5|IS427|Transposase|Methylobacterium DE    nodulans
+#=GS    ISMpo7.3|IS5|IS427|Transposase|Methylobacterium DE    populi
+#=GS    ISMpo8.3|IS5|IS427|Transposase|Methylobacterium DE    populi
+#=GS    ISMra2.3|IS5|IS427|Transposase|Methylobacterium DE    radiotolerans
+#=GS    ISMra5.3|IS5|IS427|Transposase|Methylobacterium DE    radiotolerans
+#=GS    ISMra6.3|IS5|IS427|Transposase|Methylobacterium DE    radiotolerans
+#=GS        ISMt1.1|IS5|IS427|Transposase|Mycobacterium DE    tuberculosis
+#=GS        ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas DE    europaea
+#=GS           ISNGR9.3|IS5|IS427|Transposase|Rhizobium DE    sp
+#=GS         ISPa67.1|IS5|IS427|Transposase|Pseudomonas DE    aeruginosa
+#=GS      ISPaen3.3|IS5|IS427|Transposase|Paenibacillus DE    sp.
+#=GS         ISPaes1.3|IS5|IS427|Transposase|Paracoccus DE    aestuarii
+#=GS         ISPaes2.3|IS5|IS427|Transposase|Paracoccus DE    aestuarii
+#=GS          ISPak1.3|IS5|IS427|Transposase|Paracoccus DE    alkenifer
+#=GS         ISPal1.2|IS5|IS427|Transposase|Pseudomonas DE    alcaligenes
+#=GS          ISPam4.3|IS5|IS427|Transposase|Paracoccus DE    aminophilus
+#=GS          ISPbe2.3|IS5|IS427|Transposase|Paracoccus DE    bengalensis
+#=GS          ISPha1.1|IS5|IS427|Transposase|Paracoccus DE    halophilus
+#=GS          ISPist1.1|IS5|IS427|Transposase|Pirellula DE    staleyi
+#=GS          ISPko5.3|IS5|IS427|Transposase|Paracoccus DE    kondratievae
+#=GS        ISPlu7.1|IS5|IS427|Transposase|Photorhabdus DE    luminescens
+#=GS          ISPme2.3|IS5|IS427|Transposase|Paracoccus DE    methylutens
+#=GS          ISPpa2.2|IS5|IS427|Transposase|Paracoccus DE    pantotrophus
+#=GS          ISPpa6.3|IS5|IS427|Transposase|Paracoccus DE    pantotrophus
+#=GS        ISPrst2.1|IS5|IS427|Transposase|Providencia DE    stuartii
+#=GS        ISPrst3.3|IS5|IS427|Transposase|Providencia DE    stuartii
+#=GS          ISPs1.3|IS5|IS427|Transposase|Pseudomonas DE    syringae
+#=GS          ISPso2.3|IS5|IS427|Transposase|Paracoccus DE    solventivorans
+#=GS        ISPsp10.3|IS5|IS427|Transposase|Pseudomonas DE    sp.
+#=GS         ISPst8.3|IS5|IS427|Transposase|Pseudomonas DE    stutzeri
+#=GS        ISPsy44.1|IS5|IS427|Transposase|Pseudomonas DE    syringae
+#=GS          ISPze1.3|IS5|IS427|Transposase|Paracoccus DE    zeaxanthinifaciens
+#=GS      ISRba8.1|IS5|IS427|Transposase|Rhodopirellula DE    baltica
+#=GS          ISRel11.3|IS5|IS427|Transposase|Rhizobium DE    etli
+#=GS          ISRel13.3|IS5|IS427|Transposase|Rhizobium DE    etli
+#=GS         ISRer2.1|IS5|IS427|Transposase|Rhodococcus DE    erythropolis
+#=GS     ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum DE    rubrum
+#=GS        ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter DE    sphaeroides
+#=GS           ISRme6.3|IS5|IS427|Transposase|Ralstonia DE    metallidurans
+#=GS        ISSan1.3|IS5|IS427|Transposase|Streptomyces DE    anulatus
+#=GS          ISSen2.3|IS5|IS427|Transposase|Salmonella DE    enterica
+#=GS            ISSfl7.3|IS5|IS427|Transposase|Shigella DE    flexneri
+#=GS      ISSoc13.3|IS5|IS427|Transposase|Synechococcus DE    sp.
+#=GS          ISSod6.1|IS5|IS427|Transposase|Shewanella DE    oneidensis
+#=GS        ISSpo7.1|IS5|IS427|Transposase|Silicibacter DE    pomeroyi
+#=GS         ISSpu10.1|IS5|IS427|Transposase|Shewanella DE    putrefaciens
+#=GS        ISSsv1.1|IS5|IS427|Transposase|Streptomyces DE    sviceus
+#=GS       ISStau10.1|IS5|IS427|Transposase|Stigmatella DE    aurantiaca
+#=GS        ISStau9.1|IS5|IS427|Transposase|Stigmatella DE    aurantiaca
+#=GS  ISStro1.1|IS5|IS427|Transposase|Streptosporangium DE    roseum
+#=GS       ISStsp9.1|IS5|IS427|Transposase|Streptomyces DE    sp.
+#=GS ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus DE    elongatus
+#=GS         ISThsp20.3|IS5|IS427|Transposase|Thiomonas DE    sp.
+#=GS         ISThsp21.3|IS5|IS427|Transposase|Thiomonas DE    sp.
+#=GS          ISThsp6.3|IS5|IS427|Transposase|Thiomonas DE    sp.
+#=GS              ISVha3.3|IS5|IS427|Transposase|Vibrio DE    harveyi
+#=GS         ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus DE    bovienii
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          --------------------MSDLYWLTDEQMAKLAPFF-----PKS---
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          --------------------------------------------------
+IS1301.1|IS5|IS427|Transposase|Neisseria            ---------------------MARTAITDNIWEQLQTTM-----KAHG--
+IS1421.3|IS5|IS427|Transposase|Ralstonia            ---------------------MARKKISNELWKALQPLL-----PVVEP-
+IS1502.3|IS5|IS427|Transposase|Leptospira           -----------------MKSELGHLDIPEEIWKRLRPLL-----PKIKI-
+IS1647.3|IS5|IS427|Transposase|Streptomyces         -----------------MTAALVERMAPEDLWALFQRVV-----PPAPV-
+IS1648.3|IS5|IS427|Transposase|Streptomyces         ---------------------MGRGDLTNREWSLLEPHL-----PPLG--
+IS1650.3|IS5|IS427|Transposase|Streptomyces         --------------MVVGLFVVRRHELTDESWAVIEPFL-----APPR--
+IS298.3|IS5|IS427|Transposase|Caulobacter           ---------------------MDRLVLSDAAWDRIAPLI-----IGRP--
+IS402.3|IS5|IS427|Transposase|Burkholderia          ---------------------MAKPIIDDELWTLIEPLL-----PPPKP-
+IS427.3|IS5|IS427|Transposase|Agrobacterium         ---------------------MSRYDLTDFEWRVIEPLL-----PNKP--
+IS711.3|IS5|IS427|Transposase|Brucella              ---------------------VSRRSLTDEQWNRIEAYL-----PGRV--
+IS869.3|IS5|IS427|Transposase|Agrobacterium         -------------------MTRRRFDLTDFEWTVIQPLL-----PNKP--
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       --------------------MSLRTILTDKLWDRLAYLL-----DRTG--
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        -------------------VPALPSSIIEPLWRQFEALI--PDR---NV-
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       ---------------------MPRTMLTDQHWQKLKVIL-----RN-L--
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       ---------------------MRRYALRDDQWERVQDFL-----PGRV--
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       ---------------------MRRYALRDDQWERVQDFL-----PGRV--
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         ---------------------LDRMVLRDDQWERIAALL-----PGKV--
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            --------------------MSRRYQLTDAQWGLIEPLF-----PYH---
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        -------------------MNDGQFWLTVEQFGRLEPHL-----PRDT--
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        ---------------------MAAPLVSDALWAIIEPLI-----PPEPP-
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            ---------------------MAVELLPDALWAEIEPLL-----PEHDP-
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            ---------------MGLVCKDDGWRLPDELWAKMEPLL-----PAR-K-
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         -------------------MALDRIVLRDDQWERIAPLL-----PGKV--
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       ---------------------MAKPIIDDELWTLIEPLL-----PPPKP-
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        ----------M--LIRGRENARWFFWLNDRQWARIEPHL-----PRGL--
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       -----------------MTTQQRHRVFTDEQWEKIEPLL-----PSNV--
+ISBth21.3|IS5|IS427|Transposase|Bacillus            -----------------MSNPYNRHDVTDENWNKLEPII-----TELL--
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        ---------------------MEAPIIDDELWILIEPLL-----PPAKL-
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        ---------------------MPKELIDDELWSFIEPLL-----PARAP-
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         ---------------------MQAPIVDDELWILIEPLL-----PPPKP-
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          ---------------------MRRYALTDQQWEKIKDLL-----PGRS--
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       -------------------MPAVPSSLFDVLWDQFAALL--PERPEFDP-
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        -----------------MAETHQRHDISDAALALLEPRL-----LGRQ--
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        ------------------------MEISPEQFALVEHCL-----PKQ---
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        -----------------LGKRAESWVVTDAFWRRVEPLV-----PPRVVS
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        ------------------------MEITAELYNKIKDSL-----PTQ---
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           --------------------MLEGEVLRDDQWARIELFV-----PGGR--
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      -------------------MPALPSSIIDPLWCQFAALI--PPV---TD-
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      -------------------MPAVPSSIIEPIWDQFAALI--PPI---ID-
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      -------------------MPALPSSIIDPLWRQFSALI--PPV---II-
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          -----------------------MMRLTDQQWTVLAPLL-----PRPV--
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         ---------------------MGRTDLTEQQWVKLAPLL-----PAHP--
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              ---------------------MARYDIPDEAWAIIQPLL-----PAVP--
+ISFtu2.1|IS5|IS427|Transposase|Francisella          ----------------------MNYHIKEVFWSIILSFL-----KSQK--
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    ----------------MSLVSSPPRLISDELWAFFEPVI-----PPQPP-
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    ----------------MSSVSSPPRLISDELWALAEPLI-----PPQRP-
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    ---------------------MIEELVPDGLWQRIASLL-----PPPKP-
+ISHch3.3|IS5|IS427|Transposase|Hahella              --------------------------VPDELWLRIEPIL-----KEDWQ-
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             ---------------------MSAPIIDDELWALIEPLL-----PPPKP-
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          --------------------MSNLFWLTDEQMARLQPYF-----PKS---
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        ---------------------------------MLQPLL-----PVHVN-
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        ------------------MTTPKRYELEDAQWDRIKGYF-----PPYR--
+ISLpn10.1|IS5|IS427|Transposase|Legionella          ----------------------MHHNISEELWSKIYSYL-----RGLK--
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            ------MLWLVGGDAGGVSALAEDRFIKDTLWERLESLI-----PSRPP-
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      ---------------MTKRKTEHDYEISDELWTKIKALL-----PLPKP-
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       -----------------MTASYRRHDISDQLWSRLEPHL-----PGRA--
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      ---------------------MSFREIDDVLWNSIEPYL-----PPQK--
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       ---------------MSTRKNGHDYEISNDFWNKIKPLL-----PLPKS-
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     ---------------------MARPLLPDDLWTEIAPLL-----PPPRP-
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     ----------------------MDALVPDDLWAVVEPLL-----PPEPE-
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    ----------------------MDALVPDDLWAVISPLL-----PPEPE-
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    ---------------------MGEFWLTDEQFAKIAPHL-----PTDT--
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    ----------------------MDALVPDDLWAVVEPLL-----PPEPE-
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    ---------------------MARPLLPDDLWREIAPHL-----PPPRP-
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    -------------------------MLSDAQWDELEPLI-----EACR--
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      ---------------MTRRKNGHDYEISDKLWNKIKPLL-----PLPKP-
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    -------------------MTGAEDGLRDDQWERVKDLL-----PGGR--
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     --------------------VADLFWLSDEQWAVIEPFL-----PRNQ--
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     --------------------MADLFWLSDEQWVVIEPFM-----PKNQ--
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     ---------------------MRRFELTDAQWEQIAPLL-----PPQK--
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     ---------------------MDHFWLTDEQFARIAPLL-----PNDT--
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     ---------------------MARPLLPDGLWAEIAPLL-----PPEPA-
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         --------------------VTRVGVISDEFWAVVEPLM-----PSHE--
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         ---------------------MKRYELNREQWRRIEPFI-----PGKI--
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            ---------------------MDCDGLRDDQWERIRGFV-----PGGT--
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          ---------------------MPRLLLSDELWSKLREIL-----LH-K--
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       ----------------MANAPKQLFSIPDELWEKIQPLL-----PEEPP-
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          -------------------MNLARNLISDDEWTFFEGFI-----RAVR--
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          --------------------MSNLYWLSDAQMERLKPFF-----PKS---
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           --------MIQ--APQGGWIMSNLFWLTDAQMARLQPFF-----PKS---
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          --------------------------------------------------
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           --------------------MSNLYWLTDDQMERLRPFF-----PKS---
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           -------------------VSLARNLISDDEWAFFEGFI-----RAVR--
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           --------------------MSDYYWLTEAQMERLRPHF-----PKS---
+ISPist1.1|IS5|IS427|Transposase|Pirellula           ---------------MDGAVSFDAYRMPDELWQQMQFLL-----PPYIP-
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           -------------------VTLARNLMSDDEWAFFEGFI-----RAVR--
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         ---------------------MARYDLPDEAWELLLPLL-----PPE---
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           -----------------METSVARNLMSNDEWAFFERFI-----LAVR--
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           --------------------------------------------------
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           -----------------MGMSLARNLMSDDEWAFFEGFI-----RAAR--
+ISPrst2.1|IS5|IS427|Transposase|Providencia         -------------------MTGNKWQISDGLWEKMAPLI-----PEHKT-
+ISPrst3.3|IS5|IS427|Transposase|Providencia         -------------------MAGNKWQISDELWEKMAPLI-----PEHRT-
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           --------------------MAKRYELSDASWELIKDLV-----SPE---
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           --------------------MSDLFWLTDAQMARLAPFF-----PKS---
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         --------------------MSKRYELSDAEWEIVADLF-----TAH---
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          --------------------MAKRYELPDAAWELIKDLV-----SPE---
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         ---------------------MPRLMLSDEHWPKLREIL-----LH-E--
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           --------------------MSNLFWLTDEQMERLKPFF-----PKS---
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       -MRVTTLSTTRRGLTMDGATSFDHFRMSDELWEQMNAVL-----PIYED-
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           ---------------------MDGEVLRDDQWERLTPLV-----PGGR--
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           ------------------MGVLDRLILRDEQWERISHHI-----IGDE--
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          -----------------MPVPLLPVSLIEPLWVEFSALLSVADRPEFSP-
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      -------------------MTRRRYELTEYEWSVIQPLL-----PNKQ--
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         --------------------MSNLYWLSEAQMERLKPFL-----PKS---
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            ---------------------MEAPIIDDELWTLIEPLL-----PPPKP-
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         ---------------------VTRRQLTHAQWKFIEPYL-----PIGR--
+ISSen2.3|IS5|IS427|Transposase|Salmonella           -------------------VTHSYFWLSDQQFDRLAPLL-----PQDT--
+ISSfl7.3|IS5|IS427|Transposase|Shigella             ---------------------MARYDLPDEAWTIIKPLL-----PPEP--
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       ---------------------MKLVFLDENKWQKILAFL-----QTEE--
+ISSod6.1|IS5|IS427|Transposase|Shewanella           ---------------------MPRLMLTDARWEKLFHLM-----KSTG--
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         -------------------------------MERLKPFF-----PKS---
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          ---------------------MPRTMLTDEYWSKLIRLM-----LKTG--
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         -------------------MPALPSWLTEPLWDQFAALL--PQRPVYAP-
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        ---------------------MAEPWVSDELWRKLEPLL-----PKPRRK
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         --------------------------MTEEVWAKLEPLL-----PPR-P-
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   -------------------MPVLPSCLLGPLWDQFVALL-----PEHVD-
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        -------------------MPAVPSCILDPIRDQFLALL-----PVHED-
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  ----------------MRTPDYRRHDISDRVWERLEPHL-----PGRR--
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          -----------------MPETLHRHDLSDRHWELLEPHL-----PGRA--
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          -----------------LAKRAESWVVTDAFWQRAEPLV-----PQRVAP
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           MMALF--GAVHTNRAIEMPETLPRHDLSDRHWELLEPHL-----PGRA--
+ISVha3.3|IS5|IS427|Transposase|Vibrio               -------------------MNSTQYLISDALWAKIEPLL-----PIHKT-
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          ----------------MNKKSIAQWFISDELWQKIEPLL-----PPHKT-
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          ----------HGKP-RVDDKRVLSGIIFINRNGLRWRDAPR--EYGPHKT
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          --------------------------------------------------
+IS1301.1|IS5|IS427|Transposase|Neisseria            ---------CHQWK---NDRTVMEAILWKLRTGAPWRDIPI--ELGSWKT
+IS1421.3|IS5|IS427|Transposase|Ralstonia            -----S--TKGGRP-RVDDRAALNGILFVLHTGIPWEDLPKELGFGSGMT
+IS1502.3|IS5|IS427|Transposase|Leptospira           ------NPLKGGRP-RLDDRVAMAAIFYRVRTGIQWRYIPP--MFGSKST
+IS1647.3|IS5|IS427|Transposase|Streptomyces         -----RPQG-GGHR-RRGDREVLAAIIFVATSGCTWNQLPPGFGL-SGVT
+IS1648.3|IS5|IS427|Transposase|Streptomyces         ---------GRGGR-WNDHRTVVNGILFRVRTGVPWRDLP-E-RYGSWKT
+IS1650.3|IS5|IS427|Transposase|Streptomyces         ----------MGRP-VRDRRQVVNGILWKLSTGAAWRDLP-E-RYGPWKT
+IS298.3|IS5|IS427|Transposase|Caulobacter           --------DQKGTT-GRDNRMFVEGVLWLVRTGSPWRDLPE--VFGDWNS
+IS402.3|IS5|IS427|Transposase|Burkholderia          -----RREKNPGRL-PVSNRAALTGILFVLKTGLRWRDLPAEMGCGSGVT
+IS427.3|IS5|IS427|Transposase|Agrobacterium         ----------RGVP-RVDDRRVLNGIFWVLRSGAPWRDLPE--RYGPRTT
+IS711.3|IS5|IS427|Transposase|Brucella              --------GTPGRS-GVDNRLFVDAILWMAANAAHWRDLPA--TFGKWTA
+IS869.3|IS5|IS427|Transposase|Agrobacterium         ----------RGVP-RVDDRRVINGILWRFRTGSPWADVPD--RYGPYTT
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       --------RVYNKP---EHRNTVEGILYRLRTGCPWRDLPA--EFGLWNT
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        -----THPLGCHKP-RISDRIIFDKFIQVLVLGAAYEKISD--TTCSATT
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       --------SIHHNS---NLRNFIEAILYRIRTGCPWRDIPS--CFGHSNS
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       --------GHVGGT-AKDNRLFVEAVLYRYRAGIPWRDLPT--RFGDWKN
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       --------GHVGGT-AKDNRLFVEAVLYRYRAGIPWRDLPT--RFGDWKN
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         --------GDPGRS-GADNRLFLEAVLWIVRVGSPWRDLPE--AFGNWNS
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            --------RISGRP-TREPRQVLDGILWILHTGAPWRDLP-E-RFGLWSS
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        ----------RGKP-RVDDRRVISGIVHVLKSGGRWADAP-P-VYGPRKT
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        -----K--PKGGRP-RLDDRAALTGILFVLRTGIPWELLPVEMGCGSGMT
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            -----SPSIDGGRP-RIPDRVALKGIIFVLTYSIPWNKLPKDLGFGSGRT
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            -----AHPLGCHRP-RVPDRIAMNAILLVLRTGMQWNALNGS-GICSSSS
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         --------GDPGRS-AADNRLFLEAVLWIVRVGAPWRDLPA--AFGNWNS
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       -----RREKNPGRL-PVSNRAALTGILFVLKTGLRWRDLPAEMGCGSGVT
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        ----------TGPD-RDDDRRIVSGIIHMLQSGARWRDCPR--EYGPYTT
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       --------GKRARP-FENNRRIVEGIVYRYRAGIAWRDLPRE-HFGPWQT
+ISBth21.3|IS5|IS427|Transposase|Bacillus            --------GKWGGCNANDNRLFVNACLWIIRTGSPWRDLPT--EYGKFNA
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        -----RAKSDPGRP-RVSDRAALNGILFVFKTGIRWNHLPTRLGFGSGAT
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        -----RNRQFAGRK-PTPDRAVLTAIVFVLRSGIAWNLLPQEMGCGSGTA
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         -----RRTKNPGQF-PVPNRATLNGILFVLKTGIRWNHLPTQLGFGSGAT
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          --------GTVGPT-AKDNRLFVEAVLYRYRAGIPWRDLPE--RFGDFRV
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       -----AHPWGCHRR-RIPDLVVFRHVVDALVHGSGYERIAS--QGCSATT
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        --------GVWGGI-AHDNRRLINAVCWILRTGAPWRDLPP--SYGDWKN
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        ----------RGNV-SMTNLQVVNAMLYVAEQGCKWRGLPH--RFGNWHT
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        PDKVYQRRPGAGRP-PKPARQVFEAIVYVLRTGCQWKALPKE-RFGSASA
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        ----------RGNV-KLQNLQVVNAILYVAEQGCKWRGLPS--RFGNWHS
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           --------KGKRGP-RSNGRLFVDALLWMARSGGRWRDLPE--RFGPYQT
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      -----THPLRCHRP-RIPDRIIFDKLIQVLVLGASYVKIAD--TTCSATT
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      -----THPLGCHRL-RIADRIIFDKLIQVLVLGASYTKISD--STCSATT
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      -----THPLGCHRA-RIADRIIVDKLIAVLVLGVSYIKISD--STCSATT
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          ------KRTRRGRT-RQPDREVLEGILWILRTGAQWDALPKG-EYPSKTT
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         ---------KRGHA-YKDHRVVLNGIVWRQKTGAPWRDIP-E-RYGSWHT
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              ------ASPRTGRP-WAEHRMIINGMFWVLCSGAPWRDLP-E-RYGLWKT
+ISFtu2.1|IS5|IS427|Transposase|Francisella          --------GIHTND-EAKLRLFIEAVFYVLRTGCQWRMLPF--YYGKYRS
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    -----AVHGRTGRP-RTADRDVLEGIAFVLTTGIGWTKLPRELGYGSGWT
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    -----AVHGRTGRP-RVFDRDVLEGVAFVLSTGIGWPKLPRELGYGSGWT
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    -----RRHRYPGRR-PIDDRAALAGIMFVLKTGITWNQLPTSLVGCSGVT
+ISHch3.3|IS5|IS427|Transposase|Hahella              ------PSAKGGRP-IGNWRGYLNGIIFRMRSGCQWNQLPR--RFGDDAT
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             -----RRKKYPGRL-PVSNRAALNGILFVFKTGIRWCDLSTKLGFGSGPT
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          ----------HGRQ-RVDDRRVLSGIIFVNRNGLRWRDAPK--EYGPAKT
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        -----THCFGGGRP-RIPDRHCAEAIFYVLRTGCQWQALDQT-ELCAHST
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        ---------TGRPS-SLDNRTALNAILWLMRSGAPWRDLPE--RYGSWKT
+ISLpn10.1|IS5|IS427|Transposase|Legionella          --------GLHVKN-EASLRRFIEGVWYVLRTGCQWRLLPY--YYGHWRQ
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            -----AVNGRTGQP-RVPDRKVFAGIVFVLLTGIPWRKLPSELGYGSGIT
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      -----K--KKAGRP-REDDRKIMNGIFYLLRTGCQWKALPR--CYGAPST
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       --------GSWGGV-AKDNRLFINAVFWILRTGAPWRDLPP--DYGDWNN
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      --------PHTGRP-RANMRKLMNGIFYVVMTGCTWKDVP-R-RYGSKST
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       -----K--KKPGRP-RKDDKRILSGILYLLRTGCQWKSLPR--FYGAPST
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     -----R--PKGGRP-PIDNRAALTGIVFVLRSGLPWEMLPAEMGCGCGMS
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     -----K--PKGGRP-RASDRSALAGIILVLRTGMQWKHLPHSEVGCSGKT
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    -----K--LKGGRP-RASDRSALAGIILVLRTGMQWKHVPGNALGCSGKT
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    ----------RGKE-RVDDRRVISGIIHVLKSGGRWTDAPRE-IYGPKKT
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    -----K--PKGGRP-RASDRAALAGIILVLRSGMQWKHLPRSEVGCSGKT
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    -----R--PKGGRR-PIENRAALTGILFVLRSGLPWEMLPAEMGCGCGMS
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    --------PKAKTP-PQELRRTISAILWRHQNGAKWRAIP-E-ELGPWWR
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      -----K--KKPGRP-RKDDRKIMSGIFYVLLTGCQWKLLPR--FYGAPST
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    --------KGKRGP-RLQNRLFLDAILWFARSGGRWKDLPE--RFGQSDT
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     ----------PGPE-RKDDRRIISGILHVITAGCRWCDCP-D-TYGPSTT
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     ----------PGPE-RNDDRQVISGIIHVVKTGCRWCDCP-S-EYGPPTT
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     --------PRTGRP-AEDHRQVLNGMLWILRTGAPWEDLP-A-RYGAVGT
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     ----------RGKE-RVDDRRVISGIVHVLKSGGRWTDAPRD-LYGPKKT
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     -----K--PKGGRP-RRSDRAALTGILFVLRSGTPWELLPREMGCGSGMT
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         --------GKPGRR-FSDHRLILEGIAWRFRTGSPWRDLP-A-EFGPWQT
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         --------GDRGRH-GADNLLFINGVLWVLRSGAHWHDLPE--RYGKWKT
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            --------KGKRGP-RTNNRLFLDALLWMARSGGRWRDLPE--RLGDYRA
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          --------AIYNKR---DLRMTVEGMLYRMRTGCPWRDLPA--AFGNWNK
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       -----K--PKGGRP-RMDDRQAMTAIFYVLRTGIQWKALPR--QMGAASM
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          --------HANGRK-PANHRLVLDGIFWIARTGAPWRDLPE--EFGKWSS
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          ----------HGKP-RVDDRRVLSGIIFINRNGLRWCDAPK--EYGPAKT
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           ----------HGKP-RVDDRRVLSGIIFINRNGLRWCDAPK--EYGPPKT
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          --------------------------------------------------
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           ----------HGRP-RVDDRRVLSGIIFINRNGLRWCDAPP--EYGPPKT
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           --------RPNGRK-PADHRIVLDGIFWIARTGAPWRDLPE--EFGKWSS
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           ----------RGVP-RVDDRRVLSGIIYVKRNGLQWRDAPS--VYGPHKT
+ISPist1.1|IS5|IS427|Transposase|Pirellula           -----S--PLGGRP-RAVLRDVADAIFYRIRTGCQWKAIPR--CLAAGST
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           --------HPNGRK-PADHRLVLDGIFWVARTGAPWRDLPE--EFGKWSS
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         ------HSQRAGHP-YVEHRRVINGMFWILCSGAPWRDLP-E-RYGSWKT
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           --------SPNGRK-PTNHRLVLDGIFWIARTGSPWRDLPE--EFGKWSS
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           --------------------------------------------------
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           --------HPNGRK-PTDHRLVLDGIFWVARTGAPWRDLPE--EFGKWSS
+ISPrst2.1|IS5|IS427|Transposase|Providencia         -----HHPLGTHRK-RVDNRAAMNAIFFVLRTGCQWNALNAT-GICSSSS
+ISPrst3.3|IS5|IS427|Transposase|Providencia         -----QHPLGTHRK-RVDNRAAMNAIFFVLRTGCQWNALNAT-GICSSSS
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           --------QKMGRP-RSDDRLVLHGVLWILCSGAAWRDLP-E-RFGPWST
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           ----------HGKP-RVDDRRVLSGIIFINRNGLRWRDAPA--AYGPHKT
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         --------RRTGRP-RVDDRLMLNGVLWVLCSGATWRDMP-E-RFGPWST
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          --------QKMGRP-RSDDRLMLNGILWVLCSGAAWRDMP-E-RFGPWST
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         --------SIYNKR---DLRTTVEGMLYRMRVGCPWRDLPK--AFGNWSK
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           ----------HGKP-RVDDRRVLSGIIFINRNGLRWCDAPR--EYGPPKT
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       -----C--GKGGRP-RANLRGVADAIFYRMRTGCQWKAIPR--CLAAGST
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           --------KGRRGP-RSDGRRFFDAVLWLARSGARWRDLPED-RFGPYQT
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           --------RTRGSS-GRDNRMFMEAVLWIVRTGSPWRDLPE--VFGEWNS
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          -----NHPWGCHRR-RVPDRIVFEHVLAALVHGSGYERIAT--AGCSDRT
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      ----------RGVP-RVDDRRVLNGILWRFRTGSPWAEVPE--RYGPPTT
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         ----------HGKP-RVDDRRVLSGIIFINRNGLRWCDAPK--EYGPAKT
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            -----RRKGHPGRP-RVSDRAALNGILFVLKTGLRWNHLPTVLGFGSGAT
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         ----------SGPY-PERLREQFEGVIWRFRSSGQWREMP-A-EFGPWAT
+ISSen2.3|IS5|IS427|Transposase|Salmonella           ----------RGKP-RVDDRRVISGIVHVLKSGCRWVDAP-E-VYGPRKT
+ISSfl7.3|IS5|IS427|Transposase|Shigella             ------ATPRAGRP-WAEHRKIINGMFWVLCSGAPWRDLP-E-RYGAWKT
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       --------RVNIGK-EANCKQFIEAVLWIARSGAPWRYLPE--GYGKWYT
+ISSod6.1|IS5|IS427|Transposase|Shewanella           --------RVYDKP---EHRQTFEGILYRLRTGIPWRDLPK--EFGHWST
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         ----------HGKP-RVDDASRPQRHNL---HQSQWVALV*--R------
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          --------RVYDKP---EHRNTFEGILYRMRVGCPWRDVPE--AFGDWSA
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         -----THPLGCHRT-RISDRIIFDKLLQLLRFGCSYEALAD--TTCSATT
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        D----RHVQFAGRK-RTDPRRIFSGIVFVLRTGVPWRALPATGAFPSGYT
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         -----EHPLGCHNP-RVPDRKAMEAILLVLRTGMQWQALKAT-GICHPSS
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   -----AHPLGCHNP-RIPDRTVFEHVIAALVHGSGYERIAT--PGCSDRT
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        -----KHPLGCHNP-RISDAVVFDRLVQVLVFGCGYERAAD--EHCSATT
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  --------GSWGGV-AKDNRQFINAVFWILRTGAPWRDLPP--EYGDWKN
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          --------GVWGGV-AQDNRQFINAVFWILRTGAPWRDLPA--SYGGWKN
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          VDRVYKRRPGAGRP-PKPARQVFEAIVYVLRTGCQWKALPKE-RFGSASA
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           --------GVWGGV-ARDNRQFINAVFWILRTGAPWRDLPV--SYGGWKN
+ISVha3.3|IS5|IS427|Transposase|Vibrio               -----NHPLGTHRK-RVDNRDAMNGILFVLRTGCQWNALNAT-GICTSSS
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          -----HHPLGCHRR-RVDNRAAMNAIFFVLRTGCQWNALNAT-GICSSSS
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          LYSRWKRWSEKGIFARMMIGLAA-D--------------HGEEKT---VM
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          -----------------MEALERERHFRQDDDRAGRRPRRGKDRD---DR
+IS1301.1|IS5|IS427|Transposase|Neisseria            AYNRFNRWSKKRLVAEFFFDLRKE----------------IDKEW---VF
+IS1421.3|IS5|IS427|Transposase|Ralstonia            CWRRLREWQANGVWERLHLALLKR----------LREHDQIDWSR---AS
+IS1502.3|IS5|IS427|Transposase|Leptospira           LHRRFQEWVAAGVFDKIEKEALKL----------YERTVKIRTKR---MA
+IS1647.3|IS5|IS427|Transposase|Streptomyces         AFRRFTEWSEARVWAKLHRLVLDE----------LGARGELDWSR---CA
+IS1648.3|IS5|IS427|Transposase|Streptomyces         IYERHRRWSADGTWDRILQSVQAD----------ADLAGRIDWSM---VG
+IS1650.3|IS5|IS427|Transposase|Streptomyces         VYERFRRWSADGTWDRLLAHVQQH----------SDAAGAVDWTV---VC
+IS298.3|IS5|IS427|Transposase|Caulobacter           VFRRFSRWSAKGVWWRIFEAMSDD----------------PDFEY---LI
+IS402.3|IS5|IS427|Transposase|Burkholderia          CWRRLRDWQAAGVWDRLHELLLAK----------LRAADQIDFSR---AA
+IS427.3|IS5|IS427|Transposase|Agrobacterium         CYNRFIRWRKAGVWDRMMDAITAA----------------YDGDI---QM
+IS711.3|IS5|IS427|Transposase|Brucella              VHARFRRWSHAGVWERLFHALADT----------------PDFEY---VL
+IS869.3|IS5|IS427|Transposase|Agrobacterium         CYNRFVRWRKAGVWDHVLGEISKA----------------FDGDI---VM
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       VYRRFNLWSKKGIWQEVLKFFRQC----------------IDSEW---IF
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        IRRRRDEWITAGIFRELEQICLES----------YDRIIGLDLEN---LV
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       IFKRFNRWSSSGKLLRLFKLLASC----------------PDMEW---IF
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       THRRYRRWLRERGVRAPFQSPGRG----------------QRQRV---HD
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       THRRYRRWCESGVFERLFKALAED----------------SDNEY---MM
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         VFQRFRRWAKAGVFDEVFAALSSD----------------ADFEY---AI
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            VYNTFRRWQSTGHIDAILEALQLH----------LNEAGLIDFDL---WC
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        LYNRFVRWAAKGVWEDIFHALAAAG---------------GPPAQ---VM
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        CWRRLHEWHRAGVWERLHRVLLDR----------LGYANAINWDR---AA
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            CLRRLQEWQEAGVWAALHQKLLAH----------LNQADQIDWSR---AA
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            AYRRFAEWRDAGVFGRFWHEGLLE----------YDRLEGIDWSW---LS
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         VFQRYRRWAKAGVFDEVFAALSSD----------------ADFEY---AI
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       CWRRLRDWQAAGVWDRLHELLLAK----------LRAADQIDFSR---AA
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        IYNRFNRWAKRGRWCAIFEALAKPG---------------EDGVV---LS
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       VWKRHRRYAADGTWDRVLARVLSD----------ADAAGDIDWNI----S
+ISBth21.3|IS5|IS427|Transposase|Bacillus            VHRRYKRWCDKGIWDKILAKLMDE----------------PDYEW---IR
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        CWRRLSDWQKAGVWDQLHELLLDK----------LRAAGQIDLSY---AA
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        CWRRLVAWQEAGVWQHIHETLLAE----------LRRRGEINFSR---AL
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         CWRRLRDWHEAGVWNRLHELLLAK----------LQAAGQIDFSR---AA
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          VHIRHARWSKKGVWQKVFEVLLQE----------------SDNAY---YM
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       IRRRVKQWAHIGLAQELHRIVLAA----------YDTMIGLDLHD---LS
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        THRRFCRWRDNGAWEALLEQWIDE----------------PDDAW---LM
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        IYTRMRRWAKAGVLDKMFEELQRQQ------------VVRIKIEA---VS
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        VHKRFLEWEKAGFFEALWRAGLAE----------YDEMQGIAWAW---QS
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        IYTRMNRWAKSGVLDRVFEKLQAEQ------------IVRIKIEA---FS
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           AKRRYYRWIEMGVLNRLFEAVAAE----------------PDLEW---AM
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      LRTRRDEWITAGIFEQLEQICLEF----------CDRIVGLDLEN---LS
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      LRTRRDEWITTGIFYTLEQICLEF----------YDRIIGLELDN---LS
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      IRTRRDEWITAGIFKNLEQICLES----------YDRFIGLDLEN---LN
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          CHDRFQEWNEQNVFPTVLSALYEL----------GEEEHLLDLRE---AF
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         CHDRFTRWSRDGTWAAILAALQLK----------ADAEGKIDWEG---AA
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              VYNRFNRWSKSGLINIIFNRLLSL----------LYANGLVDWSA---TA
+ISFtu2.1|IS5|IS427|Transposase|Francisella          IHKRFKDWCDKDIFSRLFKSVQN-----------------PDLQE---VM
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    CWRRMREWADAGVFDRVHQAVLDR----------LGEQGRLDWSR---AC
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    CWRRMHEWAEAGVFDQLHTAVLDR----------LGESGRLDWSR---AS
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    CWRRLRDWTEAGVWPALHELLLAE----------LRAAGELDLDR---CA
+ISHch3.3|IS5|IS427|Transposase|Hahella              VHRWFQRWSKNGVMEKIWASLLRD----------CQELEGVDWEW---QS
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             CWRRLRDWQKAGVWKRLHELLLAK----------LREAGELDFSR---AA
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          LYNRWKRWGDKGVFIQMMEGLAVPE--------------AAEHKT---IM
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        AHDRFQVWVEAGVFLKLWQTGLEQ----------FDELCGIEWDW---LA
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        VYSRFRAWVSSGLFEQVFLELIDD----------------PDMEN---LS
+ISLpn10.1|IS5|IS427|Transposase|Legionella          IHRRYKVWSDRGIWSELMSVVSD-----------------VDIQT---MM
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            CWRRLREWSEAGVWDALRRILLDE----------LGHAKRSAGKPQPNAS
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      VHDRFQEWQISGLFEKIWQLGLLD----------YDDEEGLEWEW---QA
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       TQRRFCRWRDKGIWEKLLDQMIED----------------PDYEW---LM
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      VHRFHLYLCEHGIYPKIFNELLNK----------GYDLKKIDLSH---CF
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       VHDRFQEWQRSGFFEKMWQSGLME----------YENKNGLEWEW---QA
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     CWRRLRDWQVAGVWARLHQVLLER----------LHAAGEIDWRR---AS
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     SWRRLGAWQAAGVWAALHRAMLEQ----------LQDAGALDWSR---AA
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    SWRRLGEWQAAGVWANLHRVLLEQ----------LQDANALNWSR---AA
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    LYNRFVRWAAKGIWRDLFETLARAG---------------GPPSQ---VL
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    SWRRLGTWQAAGVWAALHRVMLEQ----------LQDADALDWSR---AA
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    CWRRLRDWQEAGVWARLHQVLLER----------LHAAGEIDWSR---AS
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    AAQIFIRWARAGVWERLLDRVQER---------------GLALGM---VF
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      VHDRFQEWRKSSLFEKMWKAGLLD----------YDKNKGLEWEW---QA
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    IKRRYYRLVDRGVFDQILDRLAQD----------------ADLEW---LM
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     VYNRFNRWSRRGFWRAMLAALAKAG---------------WAGDA---AA
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     IYNRFNRWSRRGFWKAMLVALAKAG---------------WSGEA---NA
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     VSSRFYRWRKAGVFDRVLQRLQAQ----------ADARGALDWDL---HF
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     LYNRFVRWAAKGVWIGLFETLAQAG---------------GPPSQ---VL
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     CWRRLRDWQKAGVWDRLQQTLLDR----------LGRRNGIDFSR---AS
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         VWKRHHRWSLDGTCDEVFAHVAAVF------GVDAEVAEDIE-KL---LS
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         AHKRFTRWAQAGIWEKIFDVLTED----------------PDNQY---IM
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            VKRRYYRWIEMGVLDEMLAVLARE----------------ADLEW---LM
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          VYKRFNAWSAAGKWLKVFKVLVVE----------------PDMEW---VF
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       VHDRFQYWQEQGVFKRMWEAGLQA----------YDEAKGIEWTW---QA
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          VYRQFRRWTLAGLWEDILDALNHAE--------------IAPDKL---QM
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          LYNRWKRWSDNGVFARIIVGLAA-E--------------SAEHKT---IM
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           LYNRWKRWGEKGVFARMMEGLAS-E--------------AAVPKT---VM
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          ----------------MDDRLHCR----------TSNPGLI---------
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           LYNRWVRWSRMGVFARMMVGLAS-G--------------GGEEKV---VM
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           VYRQFRRWTLAGLWEDILDALNHAG--------------IAPDKL---QM
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           LYNRFVRWSRMGVFARIFKDLAQPG---------------RDGDT---IM
+ISPist1.1|IS5|IS427|Transposase|Pirellula           AHSYFQQWVEQGVFDDLWQLALEL----------FDDLVGLDWRW---QA
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           VYRQFRRWTLAGLWEDILDALNHAK--------------LAPDKL---QM
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         VYNRFNRWAKSGLINLIFNKLLSI----------LDEQGLVDWSA---IS
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           VYRQFRRWTLAGLWEQILEALNESR--------------IVPDAL---QM
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           -----------------MEALERERHLRPDDGRSGCGTRRGKDRD---DR
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           VYRQFRRWTLAGLWEDILDVLNHAK--------------LAPDKL---QM
+ISPrst2.1|IS5|IS427|Transposase|Providencia         AHRRFQEWRDAGVFERFWQNGLLA----------CEQLDAIDWSW---LS
+ISPrst3.3|IS5|IS427|Transposase|Providencia         AHRRFQEWRDAGVFERFWQNGLLA----------CEQLDAIDWSW---LS
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           VYQRFRDWRDNGTFDRILERLHIR----------LNQEGLIDLDT---WM
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           LYSRWKRWSEKGIFARMMAGLAA-E--------------HGEKTT---VM
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         VYQRFRDWRNQGTFNKMLKRLHLK----------LNAQGQIDLTT---WC
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          VYQRFRDWRDDGTFDQVLERLHIR----------LNQEGLIDLDT---WM
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         VYKRFNAWSASGKWVKVPEVLMTD----------------PDMEW---VF
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           LYNRWKRWSEMGVFARIFEGLAS-E--------------ATDQKT---LM
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       AHAYFQEWVGFGVFDDLWQLALEV----------YDELVGLDWTW---QS
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           IKRRYYRWIEQGIFDKIFEAVAID----------------PDMEW---LS
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           VFRRFSRWSRKGIWWRIFEAMADD----------------PDFEY---LI
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          IRRRLDQWADRGLGIEVLRSALTA----------YDRMLGLDLDH---LS
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      CYNRFVRWRKAGVWDRLSEEVSKT----------------YDGDI---VM
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         LYNRWKRWSDNGVFARIMMGLAA-E--------------RAEHKT---IM
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            CWRRLNDWRKAGVWDRLHELLLDK----------LREAGQIDLSY---AA
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         VYGRFRVWRDAGVFTALLEGLIAE----------GARVGRTDLSL---VS
+ISSen2.3|IS5|IS427|Transposase|Salmonella           LYNRFVRWAAKGIWTDIFKALADAG---------------GPPSD---VM
+ISSfl7.3|IS5|IS427|Transposase|Shigella             VYNRFNRWSKSGVINIIFNRLLSL----------LDANGFIDWSA---TA
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       IYQRFHRWSRFGVWERMFKYFIDD----------------PDLEH---LI
+ISSod6.1|IS5|IS427|Transposase|Shewanella           VFRRFHLWSKKGVLAHLFKALANL----------------ADIEW---VF
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         ----AEGIRPGQDPLQPLETLERQRGLRPDHGGPGHRKRRAQDDH---DR
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          IYRRFNLWSKKGILMQLFAELRQL----------------ADLEW---EF
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         IRNRRDEWIRLGVFARLRHIALEA----------YDRIVGLVLDQ---VA
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        CRLWLLRWHRAGVWKRLSQLLLAE----------LRSKGRLHWTH---AV
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         AYRRFREWTEAGVFREFWRLGLVA----------YEQMRGIEWKW---MS
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   IRRRVNYWAQIGIVEKIHALALQA----------YDRMIGLQLDE---LS
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        LRRRRDEWIAHGVMESLRLLALAA----------YDRMIGLELDH---LS
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  VHRRFCRWRDKGVWEKVLEQLIDE----------------PDYEW---LI
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          THRRFCRWRDQGIWESLLEQFIVE----------------PDFEW---LM
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          VHKRFLEWEKAGFFEALWKAGLAE----------YDDMQGIAWRW---QS
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           THRRFCRWRDKGIWESLLEQCIDE----------------PDFEW---IM
+ISVha3.3|IS5|IS427|Transposase|Vibrio               AHRRFQEWRDAGVFERFWQNGLIY--------------EGVDWSS---IS
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          AHRRFQEWVAGGVFERLWQNGLLA----------SEKIGAIDWGK---LA
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          ID---ATYLKAHRTAT-SMAAKKGG-------------------------
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          RD---L------SESA-PHRDQHGRE------------------------
+IS1301.1|IS5|IS427|Transposase|Neisseria            ID---GSYVRCHQHAS-GA---RRG-------------------------
+IS1421.3|IS5|IS427|Transposase|Ralstonia            VD---GATVASPPGGE-QTG----P-------------------------
+IS1502.3|IS5|IS427|Transposase|Leptospira           AD---GSFARAPKGGA-FTG----P-------------------------
+IS1647.3|IS5|IS427|Transposase|Streptomyces         ID---SVSVRALK-GQ-LTG----P-------------------------
+IS1648.3|IS5|IS427|Transposase|Streptomyces         VD---STSCRAHQHAA-GARKTRPRVPK----------------------
+IS1650.3|IS5|IS427|Transposase|Streptomyces         VD---STTVRAHQHAA-GARKKGQ--------------------------
+IS298.3|IS5|IS427|Transposase|Caulobacter           VD---STIVRAHQHAA-GA--KKGG-------------------------
+IS402.3|IS5|IS427|Transposase|Burkholderia          VD---SSSIRAVGAGQKKTG----P-------------------------
+IS427.3|IS5|IS427|Transposase|Agrobacterium         ID---STSVRAHQQAA-TA--KKGD-------------------------
+IS711.3|IS5|IS427|Transposase|Brucella              ID---STISKVHADAA-GA---KRG-------------------------
+IS869.3|IS5|IS427|Transposase|Agrobacterium         ID---SSCVRVHQHAA-TG--KKGD-------------------------
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       ID---GSIVKAHQHAM-GA---SGQ-------------------------
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        ID---GCLVKAPCGGE-AAG----K-------------------------
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       ID---GSHVRAHQHSA-GI---A---------------------------
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       AR---RDHRPRPPAQR-RG--AKKG-------------------------
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       LD---ATIVRAHQHSA-GA--RKKG-------------------------
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         ID---GTIVRVHQHGT-GA---RGG-------------------------
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            ID---GSNVRASKDAA-GARKKN---------------------------
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        ID---STAVRAHRSAS-GG---KGG-------------------------
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        VD---SASVPAKKGGE-ETG----P-------------------------
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            VD---AGSVPSPLGGE-DTG----P-------------------------
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            LD---GAMTKAPLGGE-KTG----P-------------------------
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         ID---GTIVRVHQHGT-GA---RGG-------------------------
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       VD---SSSIRAVGAGQ-KTG----P-------------------------
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        LD---STSIKAHRCAS-GG---KGK-------------------------
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       VD---GTINRAHQHAT-NTTRLDQDTGG-----------------ATSNY
+ISBth21.3|IS5|IS427|Transposase|Bacillus            ID---ASHCKVHPHAA-GA---VGG-------------------------
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        VD---SSSVRAVGAGE-KTG----P-------------------------
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        VD---SSSIHAVLAGK-KIG----P-------------------------
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         VD---SSSVRAVGAGQ-KTG----P-------------------------
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          LD---ATIVKAQQHSA-GA---KKP-------------------------
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       AD---GCHTKAPCKGD-KAG----P-------------------------
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        ID---ASHIKVHPHAA-GA---RGG-------------------------
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        LD---STSIKVHPDGT-GAL-KKNG-------------------------
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        VD---GAMMKAPLAQE-AVG----P-------------------------
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        LD---STSIKVHPDGT-GAL-KKNG-------------------------
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           LD---ATVIRAHAQAA-GARRKKGG-------------------------
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      VD---GCIVKAPCGGE-AAG----R-------------------------
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      VD---GCIVKAPCGGE-VAG----R-------------------------
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      VD---GCIVKAPCGGE-VAG----R-------------------------
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          ID---GTFSPAKKGAR----------------------------------
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         VD---STHVKAHRSAV-GARKEPAKLEK----------------------
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              LD---GSNIRALKCAA-GAQKKH-PD------------------------
+ISFtu2.1|IS5|IS427|Transposase|Francisella          LD---STIARAHACAT-GY--DKDD-------------------------
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    LD---SVSVRAKKGGA-LTG----P-------------------------
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    LD---SVSVRAKKGGE-LTG----P-------------------------
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    VD---GSHIRALKRGD-QVG----P-------------------------
+ISHch3.3|IS5|IS427|Transposase|Hahella              AD---GWLGKKPALGGENVG----P-------------------------
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             VD---SSSVRAVGAGEKKTG----P-------------------------
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          ID---ATYLKAHRTAS-SLRVKKGG-------------------------
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        MD---GAMTKAPLGGD-KTG----P-------------------------
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        LD---STIVRAHQKAT-GA--KKNAE------------------------
+ISLpn10.1|IS5|IS427|Transposase|Legionella          ID---GTIVRAHACAS-GY--VKDG-------------------------
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            LNYSPANRRVATTTGI-RPG----P-------------------------
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      ID---GAMTKAPLGGA-GTG----A-------------------------
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       ID---ASHCKVHPHAA-GA---KGG-------------------------
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      TD---TKDIPAKKGEI-SATMDTKK-------------------------
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       ID---GAMTKAPLGGS-GTG----A-------------------------
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     LD---RASVPAKKGGP-ATG----P-------------------------
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     LD---SASLPAKKRGA-ATG----P-------------------------
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    LD---SASVPAKK--A-ATG----P-------------------------
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    ID---SSAVKAHRCAS-GG---KGG-------------------------
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    LD---SASLPAKKRGW-STG----P-------------------------
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    LD---SASVPAKKRGS-ATG----P-------------------------
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    LD---GSNVRAHQKAA-GAAKKGGSAAE----------------------
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      ID---GAMTKAPLGGA-GTG----A-------------------------
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    ID---STIVRAHHRAA-GARLTKGG-------------------------
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     LD---STYVRAHRSAH-GG---KGG-------------------------
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     ID---ATYVKAHRSAQ-GG---KGG-------------------------
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     VD---ATVVRAHQHAA-GARRSGAIGG-----------------------
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     ID---STAVKAHRCAA-GG---KGG-------------------------
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     LD---SASIAAKKGGP-ASG----P-------------------------
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         VD---STNVRAHQHSA-GAARTRSPQGA------------------LSDY
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         ID---STIVRAHQQAA-CG--KGGA-------------------------
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            ID---STIVRAHQHAA-GARRAKGG-------------------------
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          ID---GSYVKAHQHSA-GA---ASG-------------------------
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       VD---GAMTKAPLGGK-KTG----P-------------------------
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          VD---STVIRAHHHAA-GA--KGGT-------------------------
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          ID---ATYLKAHRTAS-SLGVKKGG-------------------------
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           ID---ATYLKAHRTAS-SLRAKKRGP------------------------
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          -----------------RCREKRGFE------------------------
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           ID---ATYLKAHRTAS-SLRVKKGGA------------------------
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           VD---STVIRAHHHAA-GA--KRGT-------------------------
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           ID---STHMKAHRTAA-SLSKR----------------------------
+ISPist1.1|IS5|IS427|Transposase|Pirellula           VD---GAMTKAPLGGE-ATG----K-------------------------
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           ID---STVIRAHHHAA-GA--KRGT-------------------------
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         LD---GSNIRAAHCAA-GAKKNI-PM------------------------
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           ID---STVVRAHHQAA-GA--KRGT-------------------------
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           RD---V------SESP-PHCDQPGRE------------------------
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           ID---STVIRAHHHAA-GA--KRGA-------------------------
+ISPrst2.1|IS5|IS427|Transposase|Providencia         MD---GCMTKSPLAGSKKQA----R-------------------------
+ISPrst3.3|IS5|IS427|Transposase|Providencia         MD---GCMTKSPLAGSKKTG----K-------------------------
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           ID---STAVRATRASS-GAGKKGGPE------------------------
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           ID---ATYLKAHRTAT-SMAAKKGG-------------------------
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         ID---STAVRATRASA-GAGKRG-AE------------------------
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          ID---STAVRATRASS-GAGKKGGPE------------------------
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         ID---GSYAKAHQHSA-GA---AST-------------------------
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           ID---ATYLKAHRTAS-SLRSKKGG-------------------------
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       VD---GAMTKAPLGGD-ATG----K-------------------------
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           ID---ATVIRAQAQAA-GGRRKKGG-------------------------
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           VD---STIIRAHQHAA-GA--KKG--------------------------
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          VD---GSITKSPFGGE-VSG----R-------------------------
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      ID---STCVRVHQHGA-TG--KKGD-------------------------
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         ID---ATYLKAHRTAS-SLRVKKGG-------------------------
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            VD---SSSVRAVGAGE-KTG----P-------------------------
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         VD---STTVRGHHDAA-GMRVSRHLMDALEEAAQEQEKARKKRGGAEEQY
+ISSen2.3|IS5|IS427|Transposase|Salmonella           ID---SSAVRAHRCAS-GG---KGG-------------------------
+ISSfl7.3|IS5|IS427|Transposase|Shigella             LD---GSNIRALKCAA-GTQKKH-PD------------------------
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       ID---STMVRAHSCAA-GK-------------------------------
+ISSod6.1|IS5|IS427|Transposase|Shewanella           ID---GSIVRAHQHSA-GA---ATL-------------------------
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         RD---L------SQGT-PHCVEPVRE------------------------
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          ID---GSIVKAHQHAT-GA---RSE-------------------------
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         ID---GSITKAPGGGE-AAG----R-------------------------
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        VD---SSFVRAPSGGR-KTG----P-------------------------
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         LD---GAMTKAPLGGQ-KTG----P-------------------------
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   VD---GCITKAPGGGE-SAG----R-------------------------
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        AD---GCLTKAPSGGE-CAG----K-------------------------
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  ID---ATHVKVHPHAT-GA---KGG-------------------------
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          MD---ASHCKVHPHAA-GA---RGG-------------------------
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          VD---GAMTRAPLAQQ-SVG----P-------------------------
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           ID---ASHCKVHPHAA-GA---RGG-------------------------
+ISVha3.3|IS5|IS427|Transposase|Vibrio               MD---GCQTKAPLAGQ-KTG----K-------------------------
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          LD---GCLTKAPLAGSKKTG----R-------------------------
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          ----------------RGRLVGRT-KGGM-NTKLHAI--CDSQGRPLDL-
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          -------------KGGRGRLVGRT-KGGM-NTKLHAI--CDSLGRPLDL-
+IS1301.1|IS5|IS427|Transposase|Neisseria            ----------------FDRAIGQS-RGGN-TTKIHLC--VDSHGNPLDF-
+IS1421.3|IS5|IS427|Transposase|Ralstonia            ---------------------NPTDRGKL-GSKRHLV--VDRRGVPLAL-
+IS1502.3|IS5|IS427|Transposase|Leptospira           ---------------------NPTDRGKR-GIKRHIL--VDRRGAPVAF-
+IS1647.3|IS5|IS427|Transposase|Streptomyces         ---------------------NPTDRGKK-GSKIHLL--VDRRGLPLSI-
+IS1648.3|IS5|IS427|Transposase|Streptomyces         -KR------TTPRHHRPDEGLGRS-RGGL-TCKIHLA--GEGGCRPLAL-
+IS1650.3|IS5|IS427|Transposase|Streptomyces         --------------DWPGEALGRS-RGGL-TTKIHLA--CDGEGRPLAF-
+IS298.3|IS5|IS427|Transposase|Caulobacter           ---------------SEDQAIGRS-RGGL-STKIHMA--VRGLGCPVRF-
+IS402.3|IS5|IS427|Transposase|Burkholderia          ---------------------NPTDRARP-GSKHHIV--TDANGTPLAA-
+IS427.3|IS5|IS427|Transposase|Agrobacterium         ---------------R-DHCLGRS-RGGL-TTKIHAV--VDGQGLPIRL-
+IS711.3|IS5|IS427|Transposase|Brucella              ---------------AEAACIGRS-RGGL-TTKLHAV--VDAIGLPLRI-
+IS869.3|IS5|IS427|Transposase|Agrobacterium         ---------------KHDGCMGRS-RGGL-TTKIHAV--VDADGRPIRL-
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       ----------------NPQAIGKS-VAGN-TTKIHLA--VDSCGNPIDF-
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        ---------------------SPVDRGKQ-GTKRSLM--TDGKGIPVGC-
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       -----------------NQSISKS-VGGN-SSKIHLI--VDAHGNPIDF-
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       ---------------GACQAIGRS-RGGL-TTKIHAI--VDALGNPVAI-
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       ---------------GACQAIGRS-RGGL-TTKIHAI--VDALGNPVAI-
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         ---------------TQAQAIGRS-RGGL-TTKILAV--VDGLGNLGRF-
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            --------------TLVNQALGRS-RGGF-GSKIHLV--TDGNGLPLGF-
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        ---------------ERAQAIGRS-RGGR-TTKIHAL--SDPRGRPLAF-
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        ---------------------NPTDRGKP-GSKRHIL--VDANGIPLAL-
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            ---------------------NPTDRGKL-GTKHHLL--VDRNGLPLAV-
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            ---------------------NPTDRGKG-GVKRSLL--TEASGIPLAI-
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         ---------------TQAQAIGRS-RGGL-TTKILAV--VDALGNLGRF-
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       ---------------------NPTDRARP-GSKHHIV--TDANGTPLAA-
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        ----------------HNQAIGRS-RGGR-TTKIHAL--SDPLCRPVVL-
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       KNL------PDSECEPAGHGIGRS-RGGL-TTKIHHA--VDGKGRPLAV-
+ISBth21.3|IS5|IS427|Transposase|Bacillus            -----------------NQDMGRTKKRGL-NTKIHLV--VDAN-NPIKF-
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        ---------------------NPTDRARP-GSKHHVL--VDANGVPLVA-
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        ---------------------NPTDRRKL-GSKHHLI--VDAQGIPLAV-
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         ---------------------NPTDRARP-GSKHHIV--TDANRTPLAA-
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          ---------------LNKQAIGRS-RAGL-STKIHTL--CDGKGRPIAF-
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       ---------------------SPVDRAKQ-GLKRSTL--VDGDGVPLGL-
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        -----------------NQAMSLT-KRGL-NTKLHLA--VDAFGLPLRV-
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        -----------------PQSIGKS-RGGW-NTKIHLV--AADARTAVTF-
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        ---------------------NPTDRGKK-GSKRHLL--VDGRGVPLSL-
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        -----------------PQAIGKS-RGGW-NTKIHMV--AADARTAVVF-
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           ---------------PHAQALGRS-RGGF-GTKIHVC--VDALGLPVRI-
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      ---------------------SPVDRGKQ-GTKRSLL--VDGAGIPLGC-
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      ---------------------SPVDRGKQ-GTKRSLM--VDGAGIPIGC-
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      ---------------------FPVDRE-K-GTKRSLM--VDGHGIPIGC-
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          -------------------TSGQQ-KKGK-GTKVMIM--VDASGVPLAV-
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         -KG-----------ALEDEWLGVS-RGGR-TTKIHVL--SDGNRRPLSV-
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              --------------IAGDNGLGRS-RGGF-GTKIHLA--TDGSGLPLNI-
+ISFtu2.1|IS5|IS427|Transposase|Francisella          -----------------NQAIGRS-VGRI-TTKIHAM--TDALGNPIEI-
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    ---------------------NPTDRGKA-GSKYHLL--VDAHGLPLNV-
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    ---------------------NPTDRGKA-GSKYHLL--VDATGLPLNV-
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    ---------------------SPVDRGRP-GSKHHLI--CDADGIPLAV-
+ISHch3.3|IS5|IS427|Transposase|Hahella              ---------------------NPTDRGKK-GTKKSLL--VEAEGGPLGL-
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             ---------------------NPTDRSRP-GSKHHIL--VDANGVPISA-
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          ----------------AGRLIGRT-KGGM-NTKLHAV--TDASGRPISF-
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        ---------------------NPTDRGKS-GVKRSLL--TEGHGVPIGL-
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        -------------CMVENQAIGLS-RGGR-TTKIHAL--VDGLGNPLGF-
+ISLpn10.1|IS5|IS427|Transposase|Legionella          ---------------NETQALGRS-KGGF-TTKIHAL--VDGLGNPIKF-
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            ---------------------NPTDRGKL-GTKYHVL--TDRNGIPLHV-
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      ---------------------NPTDRGKK-GTKRSLL--TDGKGIPLSV-
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       -----------------NQEMSRT-KRGL-NSKIHLA--VDAHGMPVRA-
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      --------------------------------------------------
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       ---------------------NPTDRGKK-GTKRSIL--TDGKGIPLSV-
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     ---------------------NPTDRAKP-GTKRHIV--TDARGTPLGL-
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     ---------------------NPTDRGKP-GTKRHLV--VDARGTPLGL-
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    ---------------------NPTDRGKP-GTKRHLV--VDADGTPLGL-
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    ----------------QSHAIGRS-RGGR-TTKIHAL--TDRFCRPLAF-
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    ---------------------NPTDRGKP-GTKRHLV--VDARGTPLGL-
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    ---------------------NPTDRGKP-GTKRHLV--TDARGTPLGF-
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    --------------RDHREALGRS-GGGY-GTKACVI--ADGAGRAVAF-
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      ---------------------NPTDRGKK-GTKRSLL--TDGKGIPLSV-
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    ---------------AAAQGLGRS-RGGL-STTIHAA--VDAHGNPVRL-
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     ---------------ARTQAIGPS-RGGQ-TTKVHAL--TDVLGRPGVL-
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     ---------------AKAQDIGPS-RGGQ-TTKIHAL--VDVVGRPAVL-
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     ----------EATVEGVGEALGRS-QGGF-STKLHLR--AEGGGKPIAA-
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     ---------------EQSQAIGRS-RGGR-TTKIHAL--TDRFCRPLAF-
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     ---------------------NPTDRGKP-GTKRHVL--TDAKGIPLAL-
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         KK---------SADEPDDHAIGRS-RGGL-TTKIHAL--TDQREAPVRI-
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         ---------------R-REALGRS-RGGL-STKIHMC--VDASGRPLRF-
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            ---------------ADAQGLGRS-RGGL-STKIHAA--GDALGLPLRL-
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          ----------------NDEAIGKS-RAGN-TSKIHLA--VDAHGLPIEF-
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       ---------------------NPTDRGKR-GTKRSLW--TDGRGMPLGV-
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          ---------------P-KEALGRS-RGGF-STKIHLR--VNGAGLPMRT-
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          ----------------RGRQIGRT-KGGM-NTKLHAV--ADAKGRPIGF-
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           -------------GDQRGRLIGRT-KGGM-NTKLHAV--TDADGRPIRF-
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          --------------EPQDHALGRS-RGGL-TTKIHML--CDANGVPLRF-
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           -------------DDKRGRLIGRT-KGGL-NTKLHAV--TDAIGRPIRF-
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           ---------------P-KEALGRS-RGGF-STKIHLR--VNGAGLPMRT-
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           --------------GIKPRAIGRT-KGGL-NSKLHMV--SDGRGRPLTF-
+ISPist1.1|IS5|IS427|Transposase|Pirellula           ---------------------NPTDRAKL-GTKRSLM--TDARGIPVGL-
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           ---------------P-KEAPGHS-RGGF-STKIHLR--VNGAGLPIRT-
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         --------------SPKIMAWV-----------------------ALRV-
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           ---------------P-RQGFGRS-RGGF-TTKIHLR--VNAAGLPMRT-
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           -------------KRGRGRLIGRT-KGGM-NTKLHAI--CDSQGRPLSL-
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           ---------------P-KEALGRS-RGGF-STKIHLR--VNGAGLPMRT-
+ISPrst2.1|IS5|IS427|Transposase|Providencia         ---------------------IQQTGGKQ-GVKRSLM--TDGNGLPLAL-
+ISPrst3.3|IS5|IS427|Transposase|Providencia         ---------------------NPTDRGKR-GVKRSLM--TDGNGLPLAL-
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           --------------EPLDHALGRS-RGGL-TTKIHMV--CDANGVPLRF-
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           ----------------RGRLIGRT-KGGM-NTKLHAI--CDSQGRPIDL-
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         --------------EPTDHALGRS-RGGL-TTKIHMV--SDARGIPLHF-
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          --------------EPVDHALGRS-RGGL-TTKIHMV--CDANGIPLRF-
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         ----------------QDQAIGKS-RAGN-TSKIHLA--VDACGLPIAF-
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           ----------------RGRLIGRT-KGGM-NTKLHAV--TDARGRPLKF-
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       ---------------------NPTDRGKL-GTKRSLM--TEAAGIPISL-
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           ---------------PQAQALGRS-RGGF-GSKIHAV--VDALGLPVRL-
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           ---------------AEDQALGRS-RGGL-STKIHMA--VRGLGCPVRF-
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          ---------------------SPVDRGKQ-GTKRSVV--CDGGGIPLAL-
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      ---------------LEDGGMGRS-RGGL-ISKIHAL--VDAEGRPVTL-
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         ----------------RGRQIGRT-KGGM-NTKLHAV--ADANGRPIGF-
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            ---------------------NPTDRSRP-GSKHHIL--VDANGVPISA-
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         GQVERRSIRRRQRLRLKEALLGRS-RGGL-TSKIHLA--ADRRCRPLAL-
+ISSen2.3|IS5|IS427|Transposase|Salmonella           ---------------ERSQAIGRS-RGGR-TTKIHAL--TDQFGRPLRLH
+ISSfl7.3|IS5|IS427|Transposase|Shigella             --------------IDGDNGPGRS-RGGF-GTKIHLA--TDGSGLPLNI-
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       ---------------KGEQALGRS-RGGY-STKIHVS--VDGLGNPLEL-
+ISSod6.1|IS5|IS427|Transposase|Shewanella           ----------------SNESIGKS-RGGN-STKIHLA--VDSGGLPIYF-
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         -------------KGGRGRQIGRT-KGGM-NTKLHAV--ADAKGRPIGF-
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          ----------------DKEAIGKS-RGGN-TTKIHMA--VDSCGLPIDF-
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         ---------------------SPVDRGKQ-GLKRSGM--TDGYGIPLGR-
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        ---------------------SPVDRRKL-GTKHHVI--TDAMGTPLAV-
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         ---------------------NPTDRAKK-GTKRSLL--TDGRGTPLGV-
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   ---------------------SPVDRGKQ-GLKRSVA--TEATGVPLGI-
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        ---------------------SPVDRAKL-GLKRSQL--TDGSGIPLIT-
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  -----------------NQDMGRT-KGGL-NTKIHLA--VDAHGMPLRM-
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          -----------------NQAMSRT-KGGL-NTKIHLA--VDAHGLPLRA-
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          ---------------------NPTDRGKKNGSKRHLL--VDGRGVPLLL-
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           -----------------NQAMSRT-QGGL-NTKIHLA--VDAHGLPLRA-
+ISVha3.3|IS5|IS427|Transposase|Vibrio               ---------------------NPTDRAKQ-GVKRILLTMTDANGLPLAV-
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          ---------------------NPTDRGKQ-GVKRSLL--TDGQGLPLAI-
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          -FVTAGQVSDYIGARALLSSLP-----------K-VDWLLGDRGYDAD-W
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          -FVTAGQVSDYIGARALLSSLP-----------K-VDWLLGDRGYDAD-W
+IS1301.1|IS5|IS427|Transposase|Neisseria            -KVTGGNVHDGQVANDLIEVIQ-----------E-AQYFIADKGYDSQ-E
+IS1421.3|IS5|IS427|Transposase|Ralstonia            -MVTGANRHDSVVFEVLVDAIPSVP-GLDGRPRCRPDKLHADKGYDFA-R
+IS1502.3|IS5|IS427|Transposase|Leptospira           -VIAPAGTHDSKLLFPNLRNFRILR---NSKV-LKPEILSLDKAYANN-A
+IS1647.3|IS5|IS427|Transposase|Streptomyces         -GISAANLHDSQALIPLVRGIPPIRS-RRGPRRRRPGKLHGDKGYDYR-H
+IS1648.3|IS5|IS427|Transposase|Streptomyces         -LLTPGQWGDAPQLVEVLDRIRVPR-PLGGRPRTRPDHVSGDKAYSSR-R
+IS1650.3|IS5|IS427|Transposase|Streptomyces         -TLTAGNVNDCTQFEQVMARIRIQR-CGPGRPRTRPERVAADKGYSST-K
+IS298.3|IS5|IS427|Transposase|Caulobacter           -SLTAGQKGDAPQAAALIEGLP-----------A--KVVMADTAYDAD-H
+IS402.3|IS5|IS427|Transposase|Burkholderia          -ILTGANVNDVTQLLPLIDAIPPIR-GLRGHPLQRPRVVYADRGYDSE-R
+IS427.3|IS5|IS427|Transposase|Agrobacterium         -SLTAGQSHDGQAADGLLDHVG-----------A-GTIVLADKAYDAD-R
+IS711.3|IS5|IS427|Transposase|Brucella              -KPTPGHYGDCPQASSLLSGLK-----------GV-GHVIADAAYDAD-H
+IS869.3|IS5|IS427|Transposase|Agrobacterium         -ALTAGQAHDGRMAEPLLQTIS-----------K-GAILLADKAYDTN-A
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       -ILTGGEVHDSKAAPDLVALLP-----------D-SEAIIADRGYDCQ-A
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        -ITAGANRHDSPLLRPTLER---LSR--FGYQLPEQITVHLDAGYDSR-K
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       -MITDGTTHDVKVAPDLISTLD---------LKE-TKVVCADKGYDSE-P
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       -SLTPGQASDFSQAAPLLDAVE-----------P--QALIADKAYDGD-A
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       -SLTPGQASDFSQAAPLLDAVE-----------P--QALIADKAYDGD-A
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         -ILLPGQRHDSVGVEPVLDGIE-----------F--SALLADRAFDSN-A
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            -CLSPGQSAEIRYATSALAMARIPT-S-SGRYRTRPAHLAADKAYSSR-A
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        -LLTGGQVADCTAADRLLDRMP-----------A-TDLLHGDKGYDSA-A
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        -KISPANRHDSKLLETLVDAVPAIRQ-CAGRPRRRPAKLHADKGYDFA-H
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            -ALSAANTHDSQVFIPLLDGARAIA-GKRGRPRWRPHKLHADKGYDFR-F
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            -EIDGANRHDMKLVEATLGKLMVKR---PTPSMTRPQGLCLDKGYDYD-E
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         -ILLPGQRHDSVGVEPVLDGIE-----------F--SALLADKAFDSN-A
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       -ILTGANVHDVTQLLPLIDAIPPIR-GLRGHPLQRPRVVYADRGYDSE-R
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        -HLTPGQDADIAAAPDVLALAP-----------P-MSVLLADKGYDGD-K
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       -VVTGGQRHDGVILPQVLADIRVPR-VGGGRPRTCPDAVLADRAYGSR-A
+ISBth21.3|IS5|IS427|Transposase|Bacillus            -TITGGEVSDFTETVDLITGLQ-----------A--EYLLADKGYDSD-E
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        -ILTGANTNDVTQLLPLVDAIPPIR-GVRGRPLQKPGVVYADRGYDST-R
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        -ILSAANRHDITQLDALVDAIPHIR-GKRGRPPHKPQIVQGDRGYSSE-S
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         -ILTGANVNDVTQLLPLIDAIPSIR-GLRGHPIQRPRVVYANRRYDSE-R
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          -HLTGGEAHDLQGADALLEKVN-----------A--PALLADKAYYAQKR
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       -ASAGANRHDSKLLEPTI---EAAKQ--QVGHLPDRATIHLDSAYNGK-P
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        -LVTQGTAADCTQVGLLIEGLS-----------A--EHLLADKGDDSD-A
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        -SLSPGQAHDAPEGRTLLESLG---------PTSRPIHLLMDRAYEGN-E
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        -IVTGANVNDGKRLDEVLGAIMVKR---ESPPVRRHKHLCADAGYRSA-D
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        -ALSPGNAHDAPAGRSLLEELG---------PMPEGLPMLMDKAYEGN-E
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           -ALGPGQQNDMAPACDLIDGLA-----------A--QNVLADKAYDAD-R
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      -VVAGANRHDSPLLRPTLEK---LGR--FGLALPDQITVHLDAGYDSS-K
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      -VVAGANRHDSPLLRPTLDK---LGR--FGFDLPEAITVHLDAGYDSK-K
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      -VVAGANRHDLPLLAATLDT---LGR--FGGSLPDQITVHLDAGYDSK-K
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          -HTSSASPAEVTLVHDTLE---------ASFGMDFPKRLIGDKAYDSD-G
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         -LVSAGQASDPTYLVPLLDAVRVGR-PGPGRPRKRPITVRMDRAYGAR-T
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              -VLSPGQAHESQFAQRLLDGIGVQR-K-NGSMKRRGHAVLADKAYSGH-V
+ISFtu2.1|IS5|IS427|Transposase|Francisella          -LLSEDKTHDSKVAIDLLKNVY-----------N--TKVIADRAYHSN-E
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    -LVSAANRHDSLFVEPILDSMPAIRIGGRGHPRRRPVKLHGDKGYDNP-R
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    -LFSGANRHDSLFVEPILDPMPAIKRGGRGHPRRRPIKLHGDKGYDNP-R
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    -TLTGGNRNDVTQLIPLVDAVPPIR-GRRGRPRRRPRELFADRGYDHD-I
+ISHch3.3|IS5|IS427|Transposase|Hahella              -VIAGANVNDHKLLEATLESIVVER---PAPTVEARQHLCLDKGYDNV-A
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             -ILTGANRNDVTQLLPLVDAIPPIR-GVRGRPLQKPKVIYADRGYDSE-P
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          -FITAGQVSDYTGAAALLDELP-----------K-AKWLLADRGYDAD-W
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        -TVEGANRHDMKLVRATIESLVVVR---PEPIKERLQGMCLDKGYDYD-E
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        -RLTGGQVHDSQVASELLEGFD-----------ISQSNIIADKAYGTA-K
+ISLpn10.1|IS5|IS427|Transposase|Legionella          -ILTGGHRNDITQAAELLKEQH-----------D--TIVLADKGYDSQ-E
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            -EISGANRHDSMLVQPVLDNITAIKGVGRGRPRRRPVIFHADKAYDNR-R
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      -VVDGANRHDKMLVKGTLDAIIIER---PSHK--VTQNICMDKGYDFP-D
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       -IITKGTRADCSQAQALISGFE-----------A--ECLLADRGYDSD-A
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      --------------------------------------------------
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       -TVDGANRHDKKLVKRTLDAIIFER---PFPDE-GIQNMCMDKGYDFP-D
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     -RLTEANRHDSPQMAPTLDAIPPLSTGRRGRPRRRPDKLHADKAYDAK-A
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     -TLTGANCHDSRMLAATLDAVPGVRTGRRGRPRRRPDKLHADKGYDHH-R
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    -TLTGANCHDSRMLAATLDAVPGLRTGRRGRPRRRPDKLHADKAYDHR-R
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    -LLTGGQVADCKAGAQLLEGAP-----------A-CRIMLADKGYDSD-A
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    -TLSGANCNDSRMLAATLDAVPGVRTGRRGRPRRRPDKLHADKGYDHR-R
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    -RLSGANRHDSVMMAQTLDAIPPLRNGRRGRPRRRPGKLHADKAYDAR-A
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    -RIAPGQAHELPHAIPLLDQLP-----------GVPKWVVGDRGYSSH-G
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      -TVDGANRHDKKLVKGTLDAIIFQR---PSLDE-GIQNICMDKGYDFP-D
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    -IGGPGQEHDLAKAGALIAGFP-----------A--EFTLADKGYDGD-P
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     -LLTPGNASDVTTAPAVLAEAP-----------GRIRRLAADKGYDAD-W
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     -LLTPGNASDVRTAPDVLAEAP-----------GRIRRLIADKGYDAN-W
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     -VLTAGERHEQFALDALMDKGAVPR-PGRGRPRLRPRRTAGDRGYSSP-P
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     -LLTGGQAADCKAGALLLERLP-----------S-CRIVLADKGYDSD-A
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     -KLTGANVHDSRMLEAVVDAVPPIRQ-CWGRPRKRPSRLHADKAYDHR-R
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         -RLTAGQAGDNPQLLPLLDDYRHAS-TEYAL-GSTDFRLLADKAYSHP-S
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         -ILTGGQCNDCTQALDLISGFR-----------P--SHVLADKGYDSD-N
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            -IGTAGQRNDITAAHDLVDGLH-----------A--DALLADKGYDAG-H
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          -EITGGQINDCTQARALISKLP-----------R-AETIVADKGYDSE-K
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       -VVDGANRHDMKLLGPTLSEPAAPR---PEPDAKNPQHLCLDKGYDYP-I
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          -EITPGQESDYTGYDLVMADNL-----------PQPAVLVADRGYDSD-K
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          -FMSAGQVSDYTGAAALLGSLP-----------K-AEWLLADRGYDAD-W
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           -FMTAGQVSDYSGAAALLGSLP-----------A-AEWLLGDRGYDAD-W
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          -LLSGGQASDIAYAQPLLDQACIPS-L-RGRPRKRCRWLLADKGYDAE-A
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           -FMTAGQVSDYIGAAALLDCLP-----------D-ADWLIADRGYDAD-W
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           -EITPGQDSDYTGYDLVMADNL-----------PQPAVLVADRGYDSD-K
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           -FLSPGQMSDARGAVVLLGDLP-----------K-AKRLLGDKGYDAD-W
+ISPist1.1|IS5|IS427|Transposase|Pirellula           -AVSGANTHDSRLLQATLENRLLRF---PRDPNSRCERLLLDKAYDSQ-A
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           -EITPGQDSDYTGYDLVMADNL-----------PQPAVLVADRGYDSD-K
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         -VMAPKSIWRSME-----KAIH----------------------------
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           -EITAGQTSDYLGFDLVMADNL-----------PEPSVLLADRGYDSD-N
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           -FVTAGQVSDYIGARALLSSLP-----------K-VDWLLGDRGYDAD-W
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           -EITPGQHSDYTGYDLVMADNL-----------PQPAVLVADRGYDAD-K
+ISPrst2.1|IS5|IS427|Transposase|Providencia         -VVAGANTHDIKL-ADTLDALQTGR---PCKR----LRLCMDKGYEAE-W
+ISPrst3.3|IS5|IS427|Transposase|Providencia         -VVAGANTHDIKLVADTLDALQTGR---PGKR----LRLCMDKGYEAE-W
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           -MLSPGQASDIAHAQLLLDQVRISG-K-PGRPRKRSRWLLADKGYDAE-H
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           -FVTAGQVSDYIGARALLSGLP-----------N-VKWLLGDRGYDAD-W
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         -TLSGGHASDISHAQRLLDGVHIPL-N-RGRPRKRCRWLLADKGYDAE-S
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          -LLTPGQASDISNAQVLLDQVRIPG-K-QGRPRKRCRWLLAGKGYDAE-Q
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         -DVTAGQTNDCSQAASLIAKVP-----------D-AEVIIADKGYDTE-A
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           -FMTAGQVSDYTGAAALLSSLP-----------R-ADWLLADRGYDAD-W
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       -IVDGANTHDIKLLQETIEHCLVRW---PREHNEFDEHICLDKGYQSA-S
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           -HLGPGQQNDMAPACDLVRGLP-----------A--KQVLADRAYDAD-S
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           -TLTAGQKGDAPQADALIEGLP-----------A--DIIMADTAYDSN-H
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          -VSAGANRHDSPLLEPTI---RAVPD--MIGPLPQHSCVHLDRGYDSA-K
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      -RLTGGQVHDSLEAEALIENLG-----------E-GDILLADKGYDSN-A
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         -FLSAGPVSDYTGAAALLGSLP-----------K-ADWLLADRGYDAD-W
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            -ILTGANRNDVTQLLPLVDAIPPIR-GARGRPLQRPKVIYADRGYDSD-P
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         -VLTAGQAGDSPQFIPVLAKVRIRL-P-AGRPRTRPGAVAADKAYSSR-G
+ISSen2.3|IS5|IS427|Transposase|Salmonella           LHLTGGNASDCRGGEPLLEALP-----------A-EVLVHADKGYDTD-R
+ISSfl7.3|IS5|IS427|Transposase|Shigella             -VLSPGQAHESQFAQRLLDGIGVQR-Q-NGSMKRRGHAVLADKAYSGR-A
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       -RITGGEKSDITQGEELIEGWQ-----------RKDTKVIGDKGYDAD-K
+ISSod6.1|IS5|IS427|Transposase|Shewanella           -ELSEGQKHDITHAPSLIEHLK-----------Q-VDTVIADKGYDSD-A
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         -FMSAGQVSDYTGAAALLGSLP-----------K-AGWLLADRGYDAD-W
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          -IVTGGEVHDSKAAIELLKQLP-----------D-AEHVIADRGYDSE-K
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         -VLAGANCHDSPLLAPTLDL---LDG--LG-PLPDDITVNLDAGYDSG-R
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        -TLTGANRNDITQLLPLVDELPRVR-GKRGSPKQKPQKLYADRGYDSD-S
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         -VVAAANVNDHKLVEATFDSVRVRR---PKPSKGTPQHLCLDAGYDCQ-A
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   -VSAGANRHDSPLLVPTL---KVTKE--QVGELPDRVNVNLDRGYDSD-K
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        -EPAPANTPDHTLLPTTLDRFTALEQ--ALGPLPEHPRLALDAGYDYR-I
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  -VITAGTTADCRQAATLIEGID-----------A--KYLLADKGYDSD-A
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          -VITEGARADCAEAERLMDGFR-----------M--QCLLADKGYDSD-A
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          -IVTGANINDCKRLDEVLSAIMVKR---ESPPSRRHKHLCADAGYRGA-D
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           -VITEGTRADCAEAERLMDGFK-----------M--DYLLADKGYDSD-A
+ISVha3.3|IS5|IS427|Transposase|Vibrio               -VSDGANVHDIKLVLQTLDALECYR---PPLK----VPLYLDKGYTGQ-W
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          -AVAPANIHDIRLVIATLDGLQTGR---RGYG----TKLHRDKAYEAE-W
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          FREALQ-DKGIRACIPG---RKQRK-----------TP-VKYDKRRYKRR
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          FREALQ-DKGIRACIPG---RKQRK-----------TP-VKYDKRRYKRR
+IS1301.1|IS5|IS427|Transposase|Neisseria            IRDKA-IEHGMKAIIPK---RKNAK-----------KPNPDFDSYLYKLR
+IS1421.3|IS5|IS427|Transposase|Ralstonia            CRRHLR-KRGMTPRIAR---RGIE-----------------KNDRLGKHR
+IS1502.3|IS5|IS427|Transposase|Leptospira           IKDKLK-KRNIRYRIPN---KK-NA-----------KN-PEWIAPLNPFR
+IS1647.3|IS5|IS427|Transposase|Streptomyces         LRRWLA-SRGIAHRLAR---KGVD-----------------SSRHLGRHR
+IS1648.3|IS5|IS427|Transposase|Streptomyces         NRRYLR-RRRIRHTIPE---PKDQRANRRRRGREGGRP-AGFDRDHYRRR
+IS1650.3|IS5|IS427|Transposase|Streptomyces         IRTYLR-RRGIKAAIPE---RIDQINGRIRRG---ESL-CRLDRAAYRRR
+IS298.3|IS5|IS427|Transposase|Caulobacter           LRQAIA-DKGALAVIPN---NPSRA-----------LK-HPLDAQLYAQR
+IS402.3|IS5|IS427|Transposase|Burkholderia          HRRALR-DRGIEPVIAK---RRTE-----------------HGSGLGKYR
+IS427.3|IS5|IS427|Transposase|Agrobacterium         IRASLR-EKGAFANIPP---KANRR-----------SK-PYFSTWLYRER
+IS711.3|IS5|IS427|Transposase|Brucella              LRAFIASNLKATAQIKV---NPTRS-----------SV-PTIDWRLYKER
+IS869.3|IS5|IS427|Transposase|Agrobacterium         IRAFAK-QRQAWANIPA---KSNRK-----------GS-FPFSQWVYRQR
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       LRELILTDKKAIPVLPR---KRNSK-----------VGNDDVDWCLYRYR
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        TRELLT-ELGCDWEIST---KGE--------------------PLQAGVR
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       LREQI-RKTGTKANIPK---KTNSQ-----------SNNDHMDWYLYKIR
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       LIDALK-ERDIVPVIPS---KANRL-----------IA-RDTDFALYRER
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       LIDALK-ERDIVPVIPS---KANRL-----------IA-RDTDFALYRER
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         IRTLIA-ERGAVAVIPS---KTSRT-----------TP-IPHDAEMYKWR
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            LRAELR-RRRIKAVIPQ---RSDQQRH------HKGRP-LVLDKARYRRR
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        VRRKIE-EAGAAPNIPP---RANKR-----------WK-NCFSPYLYRNR
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        CRRALR-QRAIIPRIAR---RGVE-----------------SSERLGRHR
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            CRDYLR-RQGILHRIAR---RGIE-----------------SKERLGRHR
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            VRELVA-GLGFTAHIRA---RGEEQ-----------RD-I-RELGYRARR
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         IRILIA-ERGAVAVIPS---KANRS-----------PP-IPHDAEMYKWR
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       HRRALR-DRGIEPVIAK---RRTE-----------------HGSGLGKYR
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        LRGAII-RRGAKPVIPN---KSNRV-----------VI-HRFNKRAYKGR
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       NRDYLR-SRGIRAVIPE---KKDQIATRKKRGSKGGRP-PAFDAGVYRNR
+ISBth21.3|IS5|IS427|Transposase|Bacillus            TVRFAK-NQGMNPVIPP---RKNRN-----------EQ-REYDKHLYKLR
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        HRRALR-ERGIKPVIAK---RRTE-----------------HGSGLGKYR
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        HRRRLR-ERGVTPALAK---IGSP-----------------HGSGLGITR
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         HRRALR-NRGIQPVIAK---RRTR-----------------HGSGLGKYR
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          VLARLQ-KSNCVAVIPS---KANHK-----------NK-RSYDKQLYKWC
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       CRKVLD-DHHLIGEIAA---KGVP------------------APIQVGKR
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        IALQAT-AQGLRVVIPP---RQNRK-----------EQ-RSDDKPLDRHR
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        TRQLAL-DLGFIPVVPP---LKTRI-----------EP-WDYDREMDKRR
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        NARTIE-QHGYIAHVVD---RRKEA-----------DI-KRRDPRKKARR
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        TRQLVL-DLGMIPVVPP---KSNRL-----------DP-WEYDRELYKKR
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           LYEKII-AQGGDPVVPP---RRHRK-----------RQ-HAYDAVLYKER
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      TRSLLT-ELGCEWVISQ---KGV--------------------PLQAGAR
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      TRSLLE-ELGCDGVIST---KGE--------------------PLQAGGR
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      TRRLLS-EFGYSWVISI---KGE--------------------PLQAGTR
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          LDVELE-TLGIEMIAPN---RRNRKKT------QDGRP-L----RRYRRR
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         YRRALR-ARKIRCVCPE---RQDARKARLRKGSRGGRP-PQFDAQAYKGR
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              LRNELK-NNGIKAVIPR---KSNEKMA------SDGRS--KLDRNAYRNR
+ISFtu2.1|IS5|IS427|Transposase|Francisella          IRQHIQ-GISSEAVIPC---KSNTL-----------NH-IPFDSHVYKER
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    VRRYLR-RRGITARIAR---IGRD-----------------SSARLGRHR
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    VRRYLR-HRGITARIARIGRIGRD-----------------SSARLGRHR
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    YRRRLR-ARGITPRIAR---RGVA-----------------HGSGLGKQR
+ISHch3.3|IS5|IS427|Transposase|Hahella              SEDVAA-RHDYIPHICR---IGEEA-----------QP-ADRHPSGKPRR
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             HRQRLR-ERGIKPVLAK---RRTE-----------------HGSGLGKFR
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          YRDALQ-AKGITPCIPG---RKSRK-----------KT-IKYDKRRYKRR
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        VYAILQ-EFGFTAHVRS---RGEEA-----------RA-IKREAGFKARR
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        LRQYIE-DKAGVYTIPP---KENTK-----------DK-WTCDYHVYCER
+ISLpn10.1|IS5|IS427|Transposase|Legionella          LIDTLH-HQRCSPVIPS---RKNSK-----------YP-RKIDKQLYKER
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            VRRYLR-RRGIKTRIAR---IGVN-----------------SKQRLGKHR
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      IRQLVN-DYGYTAHIRK---RGEEN-----------IK--IDIPGYRARR
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       IVEQAC-EQGMKPVIPP---RKNRK-----------TP-RVYDVDLYKIR
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      --------------------------------------------------
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       IRELVK-EYGYTAHIKS---RGEEN-----------IR--IEIPGFRARR
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     RRQECR-ARGIVPRIAR---KGIE-----------------SSEKLGRHR
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     CRCECR-ARRITPRIAR---RGIE-----------------SSERLGRYR
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    CRQECR-ARSIMPRIAR---RGVE-----------------SSRHLGRHR
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    IRRQIE-ATGAAPNIPP---KSNRR-----------WK-PCFSPVLYKGR
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    CRCECR-ARSITPRIAR---RGIE-----------------SSERLGRYR
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    RRQECR-ARGIVPRIAR---KGIE-----------------SSERLGRHR
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    FRDHIW-KAGARPAIPT---KRNE------------AP-VACPSWVYNNR
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      IRELVK-EYGYIAHIRR---RGEEN-----------IR-KKEIPGYRARR
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    LCDAIT-AQGSEVVIPP---RRGRT-----------HP-RSYDKDLYKER
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     LRTDLR-EAGITPVIPG---KRGRK-----------RK-IRHDKRRYRER
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     LRKDLR-ASNTTPIIPG---TRARK-----------RK-IRLDKKRYRER
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     ARCRLR-QRRIEPVIPT---RKDQ-----------PRQ-PDFDKAAYRER
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     IRRQIE-AAGAAPNIPP---KINRR-----------WK-PCFSPVLYRGR
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     CRQALT-RRRIQHRIAR---RGIE-----------------SSQRLGRHR
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         TRAALR-SKKIKHTIPE---RHDQIDRRKAKGSAGGRP-PAFDAALYGLR
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         ILDAIA-SMKAVPVIPP---RSNRK-----------IR-RTYDREIYKCR
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            LIEKLE-KTGTEIVIPP---KRDRK-----------MQ-RAYDAALYKER
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          VREQI-ERQGAKPVIPR---KRNSV-----------KGNADLDRGLYRNR
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       IREQVA-ELGYVLHLRS---RGEEK-----------EE-KAAIPGYRARR
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          IREDIE-SRNALPMIPM---RKNRR-----------VR-KAVDMTIYTLR
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          FRDALK-DKGIKVCIPG---RRSRK-----------KV-VKYDKRRYKRR
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           FRDALK-DKGIKPCIPG---RKSRG-----------KP-VKYDKRRYKRR
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          LRQYCD-RYRMQPVIPL---RSMKRKT------KPGLP-RLFDRPKYRQR
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           LRDALK-DKGIKPCIPG---RKSRG-----------KP-IKHDKRRYKRR
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           IREDIE-SRNALPMIPM---RKNRK-----------VR-KAVDLTIYTLR
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           FREELK-RMGMRTCIPP---RTKRK-----------RP-ATYNKRLYRKR
+ISPist1.1|IS5|IS427|Transposase|Pirellula           IRTLVEEQLSFRAHIRS---RHQEI-----------RE----KERARPRR
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           IREDIE-SRNALPMIPM---RKNRK-----------VR-KVVDMTIYTLR
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         --------------------------------------------------
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           IRKTME-VRDVVPVIPM---RKTRK-----------LR-VAVDRRLYRLR
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           FREALK-DKGIRACIPG---RKQRK-----------KA-VKYDKRRYKRR
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           IREDIE-SRNALPMIPM---RKNRR-----------VR-KVVDMTIYTLR
+ISPrst2.1|IS5|IS427|Transposase|Providencia         LGSYLR-SRRDEPHIQS---RKDES-----------EA-I-KNTDFKAHR
+ISPrst3.3|IS5|IS427|Transposase|Providencia         LGSYLR-SRRYEPHVQS---RKDES-----------EA-I-KNTDFKAHR
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           LRYYCD-RYRIQPVIPL---RAMPRKP------RAGLP-RLFDRPKYRQR
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           FREALQ-DKGIRACIPG---RKKRK-----------TA-IKYDKRRYKRR
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         LRQYCD-RYRMQPVIPL---RDMKRRP------KPGLP-RLFDKPKYRQR
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          LRQYCD-RYRMQPVIPL---RTMKRKP------KPGLP-RLFDRPKYRQR
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         IRAQV-EQQGSKVVIPR---KRNSL-----------KGNADLDKGLYRNR
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           FRDALK-DKGIRPCIPG---RKSRG-----------KP-VKYDKRRYRRR
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       MHTLIESVYHYTAHVRS---RAEEK-----------RE-LKRQRGERPRR
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           LHDIIL-EQGGEPVIPP---RRHRK-----------YQ-HAYDRIAYKAR
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           LRNAIA-DKGAVAVIPN---NPSSA-----------RK-YPLDKHLYAQR
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          TRDLLE-ELGYDYDIAR---KGVP------------------APIQAGKR
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      IRALAA-EKKAWANIPP---RSNRK-----------GS-FAFSSWVYRQC
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         LREALK-HKGMKVCIPG---RKSRK-----------KA-VRYDKRRYKRR
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            HRQRLR-ERGIKPVIAR---RRTE-----------------HGSGLGKFR
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         NRSYLR-RRGIKAVIPE---KKDQAANRKKKGARGGRP-LNHDADLYKER
+ISSen2.3|IS5|IS427|Transposase|Salmonella           VRQIIE-NQGAAPNIPP---KANRR-----------WK-NCFSPFLYRDR
+ISSfl7.3|IS5|IS427|Transposase|Shigella             LRNELK-NNGIKAVIPR---KSNEKMA------SDGRA--QLDRDAYCNR
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       LIEKIG-E--AQAVIPP---KRNRK-----------TQ-RHYDKHLYKER
+ISSod6.1|IS5|IS427|Transposase|Shewanella           FRELI-ANKGGKSVIPR---RRYKN-----------TPQERVDWCLYRYR
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         FREALK-DKGIKVCIPG---RKSRK-----------KA-VKYDKRRYKRR
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          IREQI-REKKGVPNIPR---KRNSK-----------IGNGDIDWCLYKYR
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         TRITLD-ERGLRGRIAH---RGEK------------------APVQATGR
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        HRLQLK-KRHIEPYIAR---RRTA-----------------HGSGLGRKR
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         VRQWGD-KFHLQLHIRP---RRPPA-----------TT-AKKSRRKKARR
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   TRSALG-ELGFTGEIAR---KGIP------------------APIQAGKR
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        VHDDLA-SRKIDARIAP---RGAK------------------TPIQTGGR
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  LIAQAK-EHGMQPVIPS---RRHRR-----------QR-RECDKQLYRLR
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          IVAKAQ-EQGAQAVIPS---RKNRK-----------QP-RAYDKALYKLR
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          NARTIE-KHDNIAHVVS---RRKEA-----------DI-KRRDPTKKARR
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           IVAHAQ-AQGAQAVIPP---RKHRK-----------PP-RTYDKALYKLR
+ISVha3.3|IS5|IS427|Transposase|Vibrio               LHDELV-DLNYIPHVQS---RAEEA-----------AN-LKQSDDFKAHR
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          LEKELK-TRGYVPCIQS---RKEEQ-----------DA-LAEQEDFKVNR
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          NRIEIMFGRLK-DWRRVATRYDRCPKVFLSAIALAATVIYWL--------
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          NRIEIMFGRLK-DWRRVATRYDRCPKVFLSAIALAATVIYWL--------
+IS1301.1|IS5|IS427|Transposase|Neisseria            HLVENAFARLK-QFRSIATRYEKLARNFKSMLYLAC-SIIHAKLN-----
+IS1421.3|IS5|IS427|Transposase|Ralstonia            WVVERTHAWLA-GFGKLRIRFERSLQTHLALLTLAC-AVICGRFVDRFC-
+IS1502.3|IS5|IS427|Transposase|Leptospira           WTVERTFAWFN-AFRAVKTCWEFKLKNYTALFQIAF-AIILFRMSCK---
+IS1647.3|IS5|IS427|Transposase|Streptomyces         WVVERTVSWLS-GCRRLHRRYERKPEHFLAFTAIAA-TLICHRRLTN---
+IS1648.3|IS5|IS427|Transposase|Streptomyces         NEVERTINRLK-NFRAVATRYDKRAYVFHGTVTAAA-IRLWLRQ------
+IS1650.3|IS5|IS427|Transposase|Streptomyces         NVVERCFNKLK-HNKALATRYDKRARHYQALVTLAC-LKLWLP-------
+IS298.3|IS5|IS427|Transposase|Caulobacter           HLVECCFSKLK-QFRRVATRFEKTARNYLAVVTLAA-IALWLR-------
+IS402.3|IS5|IS427|Transposase|Burkholderia          WVVERTHAWLH-HFRRLRIRFERRADIHGAFLKLGC-CLICWNTLRRADQ
+IS427.3|IS5|IS427|Transposase|Agrobacterium         NLIERFFSKLK-HFRRVATRYDKLAENFLAMVQLAS-MRLWLRAYESTA-
+IS711.3|IS5|IS427|Transposase|Brucella              HQIECFFNKLK-RYRRIALRCEKTLTAFMGFVHLAC-AMIWLR-------
+IS869.3|IS5|IS427|Transposase|Agrobacterium         NLVERFFSKLK-QFRGIATRYDKDPLNFLAAVKLAA-VRIWIRSL-----
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       HLVENAFALLK-QYRAIATRYDKLARNYASSLAFTC-CIRWARLIFG---
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        WVVERNQFVAQPGVQEIGDLHRAQGPGH----------------------
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       HLVENMFCRLK-QFRGIATRYDKLKRNYQSSVALAC-IFLWLPL------
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       NLVERFFNKLK-GFRAIATRYDKLASTFLAAVYLVS-AVIWLN-------
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       NLVERFFNKLK-GFRAIATRYDKLASTFLAAVYLVS-AVIWLN-------
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         HLVENFFCKIK-EFRRIATRYDKTDTSYAAAINLVA-TVLATR-------
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            NVVERCFGWLK-KFRRFSTRYEKLAGSFAAFIKLAF-CLRYLRELLVDRK
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        NVIERMFGRLK-DFRRIATRYDRSATNFMAAVHIVATVAYWL--------
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        WVVERTLAWFA-RFRRIAVRYERRADIFTAFHHIAA-SLICWRFVQRWFC
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            WVVERTISWLH-RFRRLRIRYDKRSAIHLAFLLLAC-SIIAWRFVQRFCH
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            WVVERTHGWLN-RYRRLLIRWEKKADSYLAMLHFAC-GIITWRATGLLE-
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         HLVENFFCKIK-EFRRIATRYDKTDTSFAAAINLVA-TVLVTR-------
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       WVVERTHAWLH-HFRRLRIRFERRADIHGAFLKLGC-CLICWNTLRRADQ
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        NVIERCFCRLK-DFRRIAMRYDKLARNFLAAVHLAALVAYWLN-------
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       NVVERSFAYVK-QWRGLATRYDKLAITYRAAVVISA-ILTWLRQ------
+ISBth21.3|IS5|IS427|Transposase|Bacillus            HLVENAFLKLK-RFRGIATRYTKTTSAFRGAVTLAA-ISQWLKLV-----
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        WVVERTHSWLH-NFRRLRTRFERSAYIHEAFLKLGC-SIICWNIFRRAEQ
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        WPVERSIAWLH-SFRRLKIRYERYAHVHEVFRSLAC-A------------
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         WVVERTHSWLH-SFRRLRTRFERRPDIHEAFLKLGC-SLVCWNIFRRIEQ
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          YLIEHFFAYLK-QYRAIATRYDNLAVNFLGGIYLAA-SSLWAIC------
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       WVVERSQSWMN-GYGKIRRCFERDGEIVDFYLYLAA-AFVTVRALIRRAR
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        HLVENTFLHLK-RWRGIATRDAKNAASFLAAVHIRC-LVLWLAIS-----
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        NEIERLFRRLK-GFRRIFSRFEKLDAMFLGFLSFVL-VVDGLRSLC----
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        WVVEVCHSWFN-RFRKLLVRDEKLARSFLALNHLAA-AIIAFRKVPLKLN
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        NEVERLFRRLK-GFRRIFSRFEKLDVVFLAFINFVL-IADALR-------
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           NRVERFFSRIK-HFRRIATRYDKLAANFMGFVTLAA-IMLWLK-------
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      WVVERTNSWHNRGFKKLQVCTERRIRVIEAFISLAN-AVIVVRRLVRGPG
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      WVVERTNSWHNRGFKKLALCTERRARVVEAFIALAN-AVIIVRRLIRQAW
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      WVVERTNSWHNRGFKKLSICTERCTRVVEAFIALAN-AVIILRRLIKQAW
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          WKVERTIAWLQ-SFRRVRTRDEVKAQNFLGMVQLAC-IVILLRLVTSPPV
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         QVVECGINRLK-DFRALATRYEKRGYQFLAGVHVAC-ILLWL--------
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              NVVERCFGRLK-EYRRIATRYDKTARNYLAMVKLGC-IRLFYRRLCN---
+ISFtu2.1|IS5|IS427|Transposase|Francisella          HLIENFFSKIK-HFRRVFSRFDKTILAYIGMIKLAC-TFIWLR-------
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    WVVERTLSWLL-SYKRLALRYDRTATTITALARLAI-TLICARRVPTN--
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    WVVERTLGWLL-SYKRLALRYDRTALTITALVRLAV-TLICARRLPAN--
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    WVVERSFAWLH-AFKRLRTRYERRADIHLGLMQLAC-ALICYRRLRSF--
+ISHch3.3|IS5|IS427|Transposase|Hahella              WVVERTFGWLS-KCRALLIRYDKKDSNYLGLLQLAC-GLLWFRRMWRLQG
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             WVVERTHAWLH-NFRRLRIRFERRADIHEAFLKLGC-SLVCWNIFRRAEP
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          NRIEIMFGRLK-DWRRVATRYDRCPMAFLSAIALAATVIFWL--------
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        WVVERAHSWMN-RFRRLLIRWEKKPANYLAFLHFAC-GLIAFRAAGLL--
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        HLIENFFNQLK-NFRRIATRYDKLAHVYLATVYIAS-ICILLK-------
+ISLpn10.1|IS5|IS427|Transposase|Legionella          FLIEAFFSKLK-HFRRIFSRFDKTTSAFSGFLHLAG-ALIWMR-------
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            WVVEHTMAWVL-DFRKLATSYDRTAPTITTLVALAV-AITSARKLTKTNY
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      WVVERTHSWLN-RFRRLLIRWEKKIENYLAMLHLAC-AWITFRAAGLFG-
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       HLVENAFLHLK-RWRGIATRYAKNVDSFLAAVQIRC-IAIWGAIL-----
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      --------------------------------------------------
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       WVVERTHSWLN-RFRRLLIRWEKKIENYLAMLHFAC-AWITFRAAGFFG-
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     WVVERTHAWFN-RFRRLPIRYERRADIYEAFTRLAA-SLITLNQIKRFC-
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     WIVERTLAWLA-RFRRLAIRYERRADLHLAFTTLAC-ALICQAQAKRFCP
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    WIVERTLAWIA-RFRRLAIRYERRADLHLAFTTLAC-ALICRKQAKRFCP
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    NAIERMFGRLK-DFRRIATRYDRLAANYLAAVCIAATVSYWL--------
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    WIVERTLAWLA-RFRRLTIRYERRADLHLALTTLAC-ALICQAQAKRFCP
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    WVVERTHAWFN-SFRRLPIRYERRSDIYEAFTSLAA-SLITLNQIKRFC-
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    NIVERLWARLK-KWRAVATRYEKTALSFTGVLCLAA-TLDWIK-------
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      WVVERTHSWLN-RFRRLLIRWEKKIENYYAMLQLAC-ACITFRAAGLFG-
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    NVIERFFARLK-DFRRVATRYDKLLKNYMGFVTLAA-IAIWLR-------
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     WRIEATFNRLK-DFRRIATRYDKLARNYASALALAAVIAFWC--------
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     WRVEATFCRLK-DFRRIATRYDKLARNFASALALAAVIAFWC--------
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     NKVERLINRLK-QYRRIATRYEKRAANYLAMVTLGM-TMLWLT-------
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     NAIERMFGRLK-DFRRIATRYDRLATNYLAAVCLAATVSYWL--------
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     WVVERTLAWFA-QFRRLAICYERRTDIHLAFSTLAA-ALIVWRFIERWFC
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         NTVERGFHRLK-QWRGIATRYDKYALTYLGGVLLAC-AVIHARVGTPKLG
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         NIIERTFNKLK-HWRRLSTRYDRKAIYFSAFIHLAA-ATLWL--------
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            NRIERFFNKLK-QFRRVATRYDKLLANFMGFVKLAA-IAIWLK-------
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          HLVENAFARLK-HYRAVASRFDKLKRNYESMVAMAC-AFLWLPM------
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       WVVERTHSWMN-RFRRLLIRWEKKVENYEAMLHFAC-AWICFRCAEVFG-
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          NMVERCFNKLK-NSRRLATRYDKTAESFLGFVDVAC-IRLWLRHLST---
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          NRIEIMFGRLK-DWRRVATRYDRCPETFFSAIMLAATVLFWL--------
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           NRIEIMFGRLK-DWRRVATRYDRCPKVFLSAIALAATVMFWL--------
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          NIIERHV-WLG---------------------------------------
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           NRIEIMFGRLK-DWRRVATRYDRCPKVFLAAVTLAATVIFWL--------
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           NMVERCFNKLK-NSRRLATRYDKTAESFLGFIDVAC-IRLWIRHLST---
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           HRIENAFARLK-DWRRIATRYDRCGDLFLSAICIAAIVIFWLPK------
+ISPist1.1|IS5|IS427|Transposase|Pirellula           WVVERTHSWLN-RFRGVLLRWEKKVDNHIAILQLAC-AFYTLKQAQVLG-
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           NMVERCFNKLK-NSRRLATRYDKTADSFLGFIDIAC-IRLWLRHL-----
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         --------------------------------------------------
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           NLVERCFNKLK-NARRVATRYDKTAESFLGFIDITS-IRLWLRHLST---
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           NRIEIMFGRLK-DWRRVATRYDRCPKVFLSAIALAAVVIYWL--------
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           NMVERCFNKLK-NSRRLATRYDKTADSFLGFIDIAC-IRLWLRHLST---
+ISPrst2.1|IS5|IS427|Transposase|Providencia         WVVERTHSWMN-RYRRVLTRWEKKVENDEAMLHFAC-GIIVWNKTLLG--
+ISPrst3.3|IS5|IS427|Transposase|Providencia         WVVERTHSWMN-RYRRVLTRWEKEVENYEAMLHLSC-AIIVWNKTLLG--
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           NIIERMFGWLK-ENRRIGTRYDKLAKSYAAMVTLAC-SLRCMRQYFSYKT
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           NRIEIMFGRLK-DWRRVATRYDRCPKVFLSAIALAALVIYWL--------
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         NAIERLFGWLK-EHRRLGTRYCKLAESFAAMVTLAC-WRRCLRHYFSYSA
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          NIIERMFGWLK-ESRRIGTRYDKLARSFAAMVTLAC-TLRCLRQYFSYRT
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         HLVENAFARLK-HFRAVASRFDKLKRNYESVIAMAC-AFLWLPM------
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           NRIEIMFGRLK-DWRRVATRYDRCPKVFLSAVALAATVMFWL--------
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       WVVERTHSWLN-RFRAVLVRWEKKIDNHVAALQLAC-AYFTFSRAGVFG-
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           WGIESFFAKLK-QWRRIATRYDKVAANFMGFIKIAA-IMLWLK-------
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           HLIECCFSKLK-QFRRVATRFEKTAENYLAVVTIAA-TMLWIR-------
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          WVVERTHAWMN-GFGKLRRWTDKRAVIVDFYLALAA-ALTVIRRLINRAR
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      TLVERFFNRIK-QFRGIATRYDKDPLNFLAAVKLVA-LRIWCQP------
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         NRIEIMFGRLK-DWRRVATRYDRCPQTFFSAIALAATVMFWL--------
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            WVVERTHSWLH-NFRRLRIRFDRRADIHEAFLKFGC-ALVCWNIFRRTEQ
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         NTVERLINKLK-AWRGIATRYDKTPESYLAGLHLRA-SMIWIDDLLKTAE
+ISSen2.3|IS5|IS427|Transposase|Salmonella           NAIERMFGRLK-DFRRIATRYDRLAVNFLAAVQIAAFVSYWL--------
+ISSfl7.3|IS5|IS427|Transposase|Shigella             NVVERCFGRLK-EYRRIATRYDKTARNYLAIVKLGC-IRLFYQRLRN---
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       HLIECFFHKLK-QYRHLFSRFDKLARNFLSFLYLVS-ALFWLK-------
+ISSod6.1|IS5|IS427|Transposase|Shewanella           HLVENAFGRIK-HYRAISTRYDKLARNYASMVSLAF-MLMWLPMYC----
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         NRIEIMFGRLK-DWRRVATRYDRCAETFFSAIMLAATVLFWL--------
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          HLVENVFARLK-HYRSVATRYDKLARNYASTLALAC-CLIWLPMWVG---
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         WHVERTHAWQN-AFHRLARCYERRIDVINAFFDLTD-AVITVRSLVRRAW
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        SVVERTLSWLH-QFRKLEIREEHSVATYKALADLAL-CLIYERLLES---
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         WVVERSHSWMN-RFRRLLVRWEKREDTFLAMVHLAL-GLITWFHFLLR--
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   WVVERSHAWMN-GFGKLRRCTEKRSRVVDFYLYLSA-AIVTLRMLIRRAT
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        WVVERTNSWMN-NFGKLRRCTERRKAAVEFYLALAA-TLITLRSLIRHAW
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  HLVENAFLHLK-RWRGIATRYAKNTASFLAAVHIRC-IAIWASIS-----
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          HLVENAFLHLK-RWRGIATRYAKNVASFVAAVQIRC-IVLWLRIS-----
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          WVVEVCHSWFN-RLRKLLVRYEKLERSFVALNHLAA-AIIAFRKVPLQVN
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           HLVENAFLHLK-RWRGIATRYAKNVASFVAAVQIRC-LALWLQIL-----
+ISVha3.3|IS5|IS427|Transposase|Vibrio               WVVERTHSWLN-RYRRLLVRWEKKIENYEAMLHFAC-GLIVWNKSLLG--
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          WVVERTHSWLN-RFRRILVRWEKRVENYEAMLHLAC-SLIVWNIILLG--
+
+IS1248A.3|IS5|IS427|Transposase|Paracoccus          ----------------------
+IS1248B.2|IS5|IS427|Transposase|Paracoccus          ----------------------
+IS1301.1|IS5|IS427|Transposase|Neisseria            ----------------------
+IS1421.3|IS5|IS427|Transposase|Ralstonia            ----------------------
+IS1502.3|IS5|IS427|Transposase|Leptospira           ----------------------
+IS1647.3|IS5|IS427|Transposase|Streptomyces         ----------------------
+IS1648.3|IS5|IS427|Transposase|Streptomyces         ----------------------
+IS1650.3|IS5|IS427|Transposase|Streptomyces         ----------------------
+IS298.3|IS5|IS427|Transposase|Caulobacter           ----------------------
+IS402.3|IS5|IS427|Transposase|Burkholderia          SL--------------------
+IS427.3|IS5|IS427|Transposase|Agrobacterium         ----------------------
+IS711.3|IS5|IS427|Transposase|Brucella              ----------------------
+IS869.3|IS5|IS427|Transposase|Agrobacterium         ----------------------
+ISAac2.1|IS5|IS427|Transposase|Actinobacillus       ----------------------
+ISAar38.1|IS5|IS427|Transposase|Arthrobacter        ----------------------
+ISAba31.1|IS5|IS427|Transposase|Acinetobacter       ----------------------
+ISAli12A.1|IS5|IS427|Transposase|Azospirillum       ----------------------
+ISAli12B.3|IS5|IS427|Transposase|Azospirillum       ----------------------
+ISAli9.3|IS5|IS427|Transposase|Azospirillum         ----------------------
+ISAs34.3|IS5|IS427|Transposase|Aeromonas            PAF-------------------
+ISAzba5.3|IS5|IS427|Transposase|Azospirillum        ----------------------
+ISAzba7.3|IS5|IS427|Transposase|Azospirillum        ----------------------
+ISAzo24.3|IS5|IS427|Transposase|Azoarcus            ----------------------
+ISAzo38.3|IS5|IS427|Transposase|Azoarcus            ----------------------
+ISAzs9.3|IS5|IS427|Transposase|Azospirillum         ----------------------
+ISBcen20.3|IS5|IS427|Transposase|Burkholderia       SL--------------------
+ISBj2.3|IS5|IS427|Transposase|Bradyrhizobium        ----------------------
+ISBli8.3|IS5|IS427|Transposase|Brevibacterium       ----------------------
+ISBth21.3|IS5|IS427|Transposase|Bacillus            ----------------------
+ISBugl2.3|IS5|IS427|Transposase|Burkholderia        GF--------------------
+ISBuph1.3|IS5|IS427|Transposase|Burkholderia        ----------------------
+ISBvi5.3|IS5|IS427|Transposase|Burkholderia         SF--------------------
+ISCaa13.3|IS5|IS427|Transposase|Candidatus          ----------------------
+ISCaac1.1|IS5|IS427|Transposase|Catenulispora       KRYRWDTRPTSRRLP-------
+ISCARN30.3|IS5|IS427|Transposase|Metagenomic        ----------------------
+ISCARN33.3|IS5|IS427|Transposase|Metagenomic        ----------------------
+ISCARN38.3|IS5|IS427|Transposase|Metagenomic        IIYG------------------
+ISCARN85.3|IS5|IS427|Transposase|Metagenomic        ----------------------
+ISCc1.3|IS5|IS427|Transposase|Caulobacter           ----------------------
+ISCef8.1|IS5|IS427|Transposase|Corynebacterium      APIAGRLARPNNPDLSARSLIY
+ISCgl5.1|IS5|IS427|Transposase|Corynebacterium      TSYRCDTRPARRP---------
+ISCgl6.1|IS5|IS427|Transposase|Corynebacterium      TSYRWDTRPGHRP---------
+ISDds9.3|IS5|IS427|Transposase|Deinococcus          P---------------------
+ISDge16.3|IS5|IS427|Transposase|Deinococcus         ----------------------
+ISEhe2.3|IS5|IS427|Transposase|Pantoea              ----------------------
+ISFtu2.1|IS5|IS427|Transposase|Francisella          ----------------------
+ISGeob5.3|IS5|IS427|Transposase|Geodermatophilus    ----------------------
+ISGeob6.3|IS5|IS427|Transposase|Geodermatophilus    ----------------------
+ISGeob7.3|IS5|IS427|Transposase|Geodermatophilus    ----------------------
+ISHch3.3|IS5|IS427|Transposase|Hahella              RQ--------------------
+ISJp4.1|IS5|IS427|Transposase|Ralstonia             SF--------------------
+ISKpn12.3|IS5|IS427|Transposase|Klebsiella          ----------------------
+ISKra1.1|IS5|IS427|Transposase|Ktedonobacter        ----------------------
+ISLpl3.3|IS5|IS427|Transposase|Lactobacillus        ----------------------
+ISLpn10.1|IS5|IS427|Transposase|Legionella          ----------------------
+ISLxx6.1|IS5|IS427|Transposase|Leifsonia            ----------------------
+ISMac11.1|IS5|IS427|Transposase|Methanosarcina      ----------------------
+ISMasp6.3|IS5|IS427|Transposase|Magnetococcus       ----------------------
+ISMba19.1|IS5|IS427|Transposase|Methanosarcina      ----------------------
+ISMba5.1|IS5|IS427|Transposase|Methanosarcina       ----------------------
+ISMch2.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMch9.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMdi24.3|IS5|IS427|Transposase|Methylobacterium    ----------------------
+ISMex15.3|IS5|IS427|Transposase|Methylobacterium    ----------------------
+ISMex19.3|IS5|IS427|Transposase|Methylobacterium    ----------------------
+ISMex32.3|IS5|IS427|Transposase|Methylobacterium    ----------------------
+ISMex42.3|IS5|IS427|Transposase|Methylobacterium    ----------------------
+ISMma12.1|IS5|IS427|Transposase|Methanosarcina      ----------------------
+ISMno18.3|IS5|IS427|Transposase|Methylobacterium    ----------------------
+ISMpo7.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMpo8.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMra2.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMra5.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMra6.3|IS5|IS427|Transposase|Methylobacterium     ----------------------
+ISMt1.1|IS5|IS427|Transposase|Mycobacterium         DT--------------------
+ISNeu3.3|IS5|IS427|Transposase|Nitrosomonas         ----------------------
+ISNGR9.3|IS5|IS427|Transposase|Rhizobium            ----------------------
+ISPa67.1|IS5|IS427|Transposase|Pseudomonas          ----------------------
+ISPaen3.3|IS5|IS427|Transposase|Paenibacillus       ----------------------
+ISPaes1.3|IS5|IS427|Transposase|Paracoccus          ----------------------
+ISPaes2.3|IS5|IS427|Transposase|Paracoccus          ----------------------
+ISPak1.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPal1.2|IS5|IS427|Transposase|Pseudomonas          ----------------------
+ISPam4.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPbe2.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPha1.1|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPist1.1|IS5|IS427|Transposase|Pirellula           ----------------------
+ISPko5.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPlu7.1|IS5|IS427|Transposase|Photorhabdus         ----------------------
+ISPme2.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPpa2.2|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPpa6.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPrst2.1|IS5|IS427|Transposase|Providencia         ----------------------
+ISPrst3.3|IS5|IS427|Transposase|Providencia         ----------------------
+ISPs1.3|IS5|IS427|Transposase|Pseudomonas           ----------------------
+ISPso2.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISPsp10.3|IS5|IS427|Transposase|Pseudomonas         ----------------------
+ISPst8.3|IS5|IS427|Transposase|Pseudomonas          ----------------------
+ISPsy44.1|IS5|IS427|Transposase|Pseudomonas         ----------------------
+ISPze1.3|IS5|IS427|Transposase|Paracoccus           ----------------------
+ISRba8.1|IS5|IS427|Transposase|Rhodopirellula       ----------------------
+ISRel11.3|IS5|IS427|Transposase|Rhizobium           ----------------------
+ISRel13.3|IS5|IS427|Transposase|Rhizobium           ----------------------
+ISRer2.1|IS5|IS427|Transposase|Rhodococcus          TYYRWPTRPTTRRLK-------
+ISRhru5.3|IS5|IS427|Transposase|Rhodospirillum      ----------------------
+ISRhsp4.3|IS5|IS427|Transposase|Rhodobacter         ----------------------
+ISRme6.3|IS5|IS427|Transposase|Ralstonia            PF--------------------
+ISSan1.3|IS5|IS427|Transposase|Streptomyces         ----------------------
+ISSen2.3|IS5|IS427|Transposase|Salmonella           ----------------------
+ISSfl7.3|IS5|IS427|Transposase|Shigella             ----------------------
+ISSoc13.3|IS5|IS427|Transposase|Synechococcus       ----------------------
+ISSod6.1|IS5|IS427|Transposase|Shewanella           ----------------------
+ISSpo7.1|IS5|IS427|Transposase|Silicibacter         ----------------------
+ISSpu10.1|IS5|IS427|Transposase|Shewanella          ----------------------
+ISSsv1.1|IS5|IS427|Transposase|Streptomyces         TTHRWDDRPTRRP---------
+ISStau10.1|IS5|IS427|Transposase|Stigmatella        ----------------------
+ISStau9.1|IS5|IS427|Transposase|Stigmatella         ----------------------
+ISStro1.1|IS5|IS427|Transposase|Streptosporangium   PRYRWDGRPTTRRLK-------
+ISStsp9.1|IS5|IS427|Transposase|Streptomyces        TLYRWNTRPQSPRIR-------
+ISTel4.3|IS5|IS427|Transposase|Thermosynechococcus  ----------------------
+ISThsp20.3|IS5|IS427|Transposase|Thiomonas          ----------------------
+ISThsp21.3|IS5|IS427|Transposase|Thiomonas          IIYG------------------
+ISThsp6.3|IS5|IS427|Transposase|Thiomonas           ----------------------
+ISVha3.3|IS5|IS427|Transposase|Vibrio               ----------------------
+ISXbo1.3|IS5|IS427|Transposase|Xenorhabdus          ----------------------
+//

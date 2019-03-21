@@ -1,0 +1,327 @@
+# STOCKHOLM 1.0
+
+#=GS       IS1294.1|IS91|None|Transposase|Escherichia DE    coli
+#=GS        IS801.1|IS91|None|Transposase|Pseudomonas DE    syringae
+#=GS         IS91.1|IS91|None|Transposase|Escherichia DE    coli
+#=GS         ISAzo26.2|IS91|None|Transposase|Azoarcus DE    sp.
+#=GS    ISCARN110.2|IS91|None|Transposase|Metagenomic DE    data
+#=GS       ISEc37.1|IS91|None|Transposase|Escherichia DE    coli
+#=GS      ISFn1.1|IS91|None|Transposase|Fusobacterium DE    necrophorum
+#=GS  ISMbu9.1|IS91|None|Transposase|Methanococcoides DE    burtonii
+#=GS ISMno23.2|IS91|None|Transposase|Methylobacterium DE    nodulans
+#=GS ISMno24.1|IS91|None|Transposase|Methylobacterium DE    nodulans
+#=GS    ISPda2.1|IS91|None|Transposase|Photobacterium DE    damselae
+#=GS       ISPps1.1|IS91|None|Transposase|Pseudomonas DE    huttiensis
+#=GS       ISPsy3.1|IS91|None|Transposase|Pseudomonas DE    syringae
+#=GS          ISSbo1.1|IS91|None|Transposase|Shigella DE    boydii
+#=GS       ISSde12.2|IS91|None|Transposase|Shewanella DE    denitrificans
+#=GS       ISShvi3.2|IS91|None|Transposase|Shewanella DE    violacea
+#=GS       ISSod25.2|IS91|None|Transposase|Shewanella DE    oneidensis
+#=GS           ISTha3.1|IS91|None|Transposase|Thauera DE    sp.
+#=GS             ISVa3.1|IS91|None|Transposase|Vibrio DE    anguillarum
+#=GS       ISVsa10.1|IS91|None|Transposase|Aliivibrio DE    salmonicida
+#=GS       ISVsa21.1|IS91|None|Transposase|Aliivibrio DE    salmonicida
+#=GS            ISVsa3.1|IS91|None|Transposase|Vibrio DE    salmonicida
+#=GS        ISVsa9.1|IS91|None|Transposase|Aliivibrio DE    salmonicida
+#=GS          ISWz1.2|IS91|None|Transposase|Weeksella DE    zoohelcum
+
+IS1294.1|IS91|None|Transposase|Escherichia        -----------------------------VCCTANQCWTSFLD-------
+IS801.1|IS91|None|Transposase|Pseudomonas         -------MKPAYPPLLLQMSPAYTPRPLKNLFTANQCWAHLLE-------
+IS91.1|IS91|None|Transposase|Escherichia          -----------------------MLPRFADIFQQGNRWLNWLEKQ-----
+ISAzo26.2|IS91|None|Transposase|Azoarcus          --------------V------RATGLEVADIF--RQAGPIYRRDH-----
+ISCARN110.2|IS91|None|Transposase|Metagenomic     ------------------------MIRLAHIV--ETYATELIAQQ-----
+ISEc37.1|IS91|None|Transposase|Escherichia        -----------------------MLPRFADIFQQGNRWLNWLEKQ-----
+ISFn1.1|IS91|None|Transposase|Fusobacterium       --------------------------------------------------
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   --------------MQTTTYASNQLLTVKRIFKDNNNWDQFCIDH-----
+ISMno23.2|IS91|None|Transposase|Methylobacterium  --------------V------PRPALELADVL--NQHGEASLRAH-----
+ISMno24.1|IS91|None|Transposase|Methylobacterium  --------------M------ARSSLEVADIL--NRHGDAFLARH-----
+ISPda2.1|IS91|None|Transposase|Photobacterium     ---------------------MHVPRATKLIFNKDEAWEKYLTHC-----
+ISPps1.1|IS91|None|Transposase|Pseudomonas        MSAT--SKPKLYNPR--------HPERTLLYQTVAEHYETWLELASAGQF
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        -------MKPAYPPL-LQMSPAYTPRPLKNLFTANQCWAHLLE-------
+ISSbo1.1|IS91|None|Transposase|Shigella           ---------------MTRSGGDFQPRPLKRLFTANQCWTSFLD-------
+ISSde12.2|IS91|None|Transposase|Shewanella        -------------------------MKFIDIL--RDHLDEFNAHY-----
+ISShvi3.2|IS91|None|Transposase|Shewanella        -------------------------MTFIDIL--RDHLDAFNQAY-----
+ISSod25.2|IS91|None|Transposase|Shewanella        ---------------------MATSYHLSDIL--QQHLAHYQQQH-----
+ISTha3.1|IS91|None|Transposase|Thauera            ----------------------MDQPTLASIL--RTHGGTYRRSH-----
+ISVa3.1|IS91|None|Transposase|Vibrio              ------VVQYSGRRRRHHTLKEFVPRATKLLFEKDNAWEKVLWKH-----
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        ----------------------MSKHTVQTFL--QKRFESYSKNH-----
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        ---------------------MYDPNHFKHLFTLGRCFYKAY-KD-----
+ISVsa3.1|IS91|None|Transposase|Vibrio             --------------------------------------------------
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         ---------------------MHAYKPLKQLFNSQNNWLKFLHNN-----
+ISWz1.2|IS91|None|Transposase|Weeksella           MSGLKTSKKQSVQPQ------SQPQYEVADVL--NILGS-KLENL-----
+
+IS1294.1|IS91|None|Transposase|Escherichia        -----AGGLRDIEVEAVTKMLACRTRILGVKEFGCDNPDCQHVKYLTNSC
+IS801.1|IS91|None|Transposase|Pseudomonas         -----EGGLRDIEVETVTKMLACGTSILGVKHYTCGNHSCPHVKYLCNTC
+IS91.1|IS91|None|Transposase|Escherichia          ----PEGSVRPVVTESVTKIMACGTTLMGYTQWCCSSPDCCHTKKVCFRC
+ISAzo26.2|IS91|None|Transposase|Azoarcus          -----AATLSRGQYQVMRAIERCRTAALGGHVEQCD--ACGHQRIAFNSC
+ISCARN110.2|IS91|None|Transposase|Metagenomic     -----GHRLLPSQLAALSAFQLCRSSMSPRMELACD--GCTEQSYLPHSC
+ISEc37.1|IS91|None|Transposase|Escherichia        ----PEGSVRPVVTESVTKIMACGTTLMGYTQWCCSSPDCCHTKKVCFRC
+ISFn1.1|IS91|None|Transposase|Fusobacterium       --------------------------------------------------
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   -----EDILRNVEIEEVNKMLSCKDKSRGFFTYQCE--SCGNYKTVYFGC
+ISMno23.2|IS91|None|Transposase|Methylobacterium  -----AGHLSRGQRKVIAAIRACRTAALGGHVARCQ--ACDQIQVSSNSC
+ISMno24.1|IS91|None|Transposase|Methylobacterium  -----R--PSHGQMKVMAAIRACRTAALGGHVVRCE--GCDHVAIASNSC
+ISPda2.1|IS91|None|Transposase|Photobacterium     -----GDNITTNQIECIEKMLACGTSKVGSKHYECENPYCEHRKVIYNSC
+ISPps1.1|IS91|None|Transposase|Pseudomonas        DGQGDHHTPKPFVRKAFAKYLECGIFAHGFARARCG--DCGHDYFVAFSC
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        -----EGGLRDIEVESVSKMLACGTSILGVKHYTCGNHSCPHVKYLCNTC
+ISSbo1.1|IS91|None|Transposase|Shigella           -----AGGLRDIGVEAVTKMLACGTRILGVKEYICDKPECPHVRYVTNSC
+ISSde12.2|IS91|None|Transposase|Shewanella        -----QGYITTSMRQAIHAMLSCRTHSQKVSHWACQ--GCAHTADFPLSC
+ISShvi3.2|IS91|None|Transposase|Shewanella        -----EQQITSSMQQAIHAMLSCRSNTERTSQWACQ--SCTHIADFPLSC
+ISSod25.2|IS91|None|Transposase|Shewanella        -----K--LTEQQALVCQHIQQCRTQTLGMQHWRCD--TCQYEQQVCCSC
+ISTha3.1|IS91|None|Transposase|Thauera            -----A--LSPTQARAWRAIVDCRTAALGGLRERCA--NCGAERHVWRSC
+ISVa3.1|IS91|None|Transposase|Vibrio              -----AQTFSLWQITCVERMLACGTNMMGAKHYDCGTSNCPHTKVVCQSC
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        -----R--LPLYQLKGISRLSSCRTSSMGGHALYCD--NGHLNGYWYNSC
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        -----NYPFRTVELEAVVKYLSCKTDRLGKLTYSCRNNACSHVKYVFSTC
+ISVsa3.1|IS91|None|Transposase|Vibrio             --------------------------------------------------
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         -----KANLRAVVIENVTKMLSCGTAAFGSREYHCCNPDCTHIKYIHQTC
+ISWz1.2|IS91|None|Transposase|Weeksella           -----E--LNSWQLRTLFALKKCRTSALGGHIDACD--ECGNVSISYNSC
+
+IS1294.1|IS91|None|Transposase|Escherichia        GSR-ACPSCGKKATDLWTA-TQLNRLPDCDWVHLVFTLPDTLWPVFESNR
+IS801.1|IS91|None|Transposase|Pseudomonas         HCR-ACPSCGKKATDQWIT-VQNNRLPDCPWQHLVFTLPDTLWPLFFYNR
+IS91.1|IS91|None|Transposase|Escherichia          KSR-SCPHCGVKAGAQWIQ-YLLSLVPDCPWQHIVFTLPCQYWSLVFHNR
+ISAzo26.2|IS91|None|Transposase|Azoarcus          RNR-HCPKCQSLVRAQWLE-ARQADLLPVEYFHVVFTVPEDIAAISYQNK
+ISCARN110.2|IS91|None|Transposase|Metagenomic     GHR-NCPHCQAHESQRWID-QQLQKLVPGKYFMVTFTLPAQFRALAWQHQ
+ISEc37.1|IS91|None|Transposase|Escherichia        KSR-SCPHCGVKAGAQWIQ-YLLSLLPDCPWQHIVFTLPCQYWPLVFHNR
+ISFn1.1|IS91|None|Transposase|Fusobacterium       ---------------------------------------KQIFDYQFQNT
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   NSC-ICTNCGLNHTEKWSK-SLKRAMFNVVHRHAVLTIPDLLWGFVRKNR
+ISMno23.2|IS91|None|Transposase|Methylobacterium  RNR-HCPKCQGQTARAWLE-RQQADLLPVAYFHVVFSRPAPIARVAFQNK
+ISMno24.1|IS91|None|Transposase|Methylobacterium  RNR-HCPKCQGQTARAWLE-RRQADLLPVPYYHVVFTLPAPVAAVAFQNK
+ISPda2.1|IS91|None|Transposase|Photobacterium     KSK-ACSSCGVMLTEKWIA-KQLSILPKCEYQHMTLTMPDKLWPIFRLNP
+ISPps1.1|IS91|None|Transposase|Pseudomonas        KGRGVCPSCTTRRMVETAAHLNDHVFPRLPVRQWVLSVPKRLRYFMQRDG
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        SCR-ACPSCGKKATDQWIA-NQQHRLPECTWQHLVFTLPDTLWPLFFHNR
+ISSbo1.1|IS91|None|Transposase|Shigella           GSR-ACPSCGKKATDLWIA-TQLNRLPDCDWVHLVFTLPDTLWPVFESNR
+ISSde12.2|IS91|None|Transposase|Shewanella        GHR-SCPQCQYNTTSDWLA-KQQAKLLPVNYYMVTFTLPFELRVVAKHQP
+ISShvi3.2|IS91|None|Transposase|Shewanella        GHR-SCPQCQHNTTIDWLA-KQQAKLLPVEYYMVTFTLPFELRVIAKHQP
+ISSod25.2|IS91|None|Transposase|Shewanella        GDR-HCPRCQGRQTQAWIA-TQQAQVLPCRYFHLVFTLPHELNILAHYAA
+ISTha3.1|IS91|None|Transposase|Thauera            RNR-HCPQCQTRAKEAWRA-ARLREVLPVPYAHWVFTLPHALNPLAIRHP
+ISVa3.1|IS91|None|Transposase|Vibrio              KTK-ACSSCGTKSTEQWIH-TQLDVMPDCEHQHITFTMPSELWPIFEANP
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        GHR-SCPQCGALKREQWLK-KVDSFILDTSHHHWVFTLPHELHEIWRYNR
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        KSK-LCPSCGQKATERWIA-AQSEILPDCKFRHITFTMPGQFWPLFQLNR
+ISVsa3.1|IS91|None|Transposase|Vibrio             --------------------------------------------------
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         KSR-ACSSCGMKATERWIQ-KQQHVFPECEYQHITFTLPNTLWPIFRHNR
+ISWz1.2|IS91|None|Transposase|Weeksella           RNR-HCPKCQGKKREQWIE-NRETELLPVPYFHVVFTLPDVLNKTALHEP
+
+IS1294.1|IS91|None|Transposase|Escherichia        WLL-NDVCRLAV----ENLLYA---------ARKRGL---EPGIFCAIHT
+IS801.1|IS91|None|Transposase|Pseudomonas         WLL-DALFRLAA----DNLIYA---------AKRRGL---RVGIFGALHT
+IS91.1|IS91|None|Transposase|Escherichia          WLL-AEMSRIAA----DVILEI---------CHQTDV---EPGIFTVIHT
+ISAzo26.2|IS91|None|Transposase|Azoarcus          SVVYEILFHATA----ETLRII---------AADPRHLGAELGFIAILHT
+ISCARN110.2|IS91|None|Transposase|Metagenomic     RVMYELITRSAW----ETVNTF---------SQNDRKLRGTTGAVTVLHT
+ISEc37.1|IS91|None|Transposase|Escherichia        WLL-AEMSRIAA----DVILEI---------CRQADV---EPGIFMVIHT
+ISFn1.1|IS91|None|Transposase|Fusobacterium       HKKRKRKKKIGK----YSKNYF---------TESDIV---HYGLITVIHT
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   FLL-KVLMDAAIVAINDTISFK---------HRNDRL---LAGAIVVLHP
+ISMno23.2|IS91|None|Transposase|Methylobacterium  AVVYHLLLRTAA----DTLLTL---------AADPKHLGARIGLTAVLHT
+ISMno24.1|IS91|None|Transposase|Methylobacterium  AAVYDLLFRTAA----DTLLTI---------AADPKHLGAKIGLTAVLHT
+ISPda2.1|IS91|None|Transposase|Photobacterium     WLI-NLLYRCAV----SAFLSF---------AKKRGI---EIGLFCVVHT
+ISPps1.1|IS91|None|Transposase|Pseudomonas        AVL-SMVLRIFLRVIAQTLQTHSPGAAHMD--KA----GLHIGAIAFIHR
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        HGL-DALCRLAV----DNLLYA---------GRRRGV---EVGVFCAIHT
+ISSbo1.1|IS91|None|Transposase|Shigella           WLL-NDVCRLAV----ENLLYA---------ARKRGQ---EPGIFCAIHT
+ISSde12.2|IS91|None|Transposase|Shewanella        EVMYQAMFSVAA----SVLKEF---------AKNSKLLGGEIGFTGVLHT
+ISShvi3.2|IS91|None|Transposase|Shewanella        ESMYQAMFWGAA----SVLKEF---------AKNSKQLGGEIGFTGVLHT
+ISSod25.2|IS91|None|Transposase|Shewanella        KPLYSALFESVW----QTLAQF---------GMKRKHLQGQLGCTMVLHT
+ISTha3.1|IS91|None|Transposase|Thauera            RWLYGALFDSAA----ATLLEL---------AANPRWLGAVPGFSLVLHT
+ISVa3.1|IS91|None|Transposase|Vibrio              TLL-NDLFSLAA----DTLLEW---------AKKHGL---EVGIFGALHT
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        ALCQQTLFDSVR----KTIQIL---------SADERFLGAKVGCVLALHT
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        WLL-GDLFSISA----NTLLTQ---------AKTKKL---TIGIFAALHT
+ISVsa3.1|IS91|None|Transposase|Vibrio             --------MLFLDGV---YVEQSHGSARFRWVKAPTSPELTQLTHTIAHR
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         -LL-NKLFKCAA----NILLGW---------AKDKGI---DVGIFCALHT
+ISWz1.2|IS91|None|Transposase|Weeksella           KMLYDFLFESAW----ETLQTF---------GENRGL---KMGMIAVLHT
+
+IS1294.1|IS91|None|Transposase|Escherichia        YGRRLNWHPHVHVSVTCGGLNK-HGQWKK-----L-----SFLKDAMRSR
+IS801.1|IS91|None|Transposase|Pseudomonas         YGRRLNWHPHVHLSVTAGGLDE-QGVWKN-----L-----SFHKEALRRR
+IS91.1|IS91|None|Transposase|Escherichia          WGRDQQWHPHIHLSTTAGGVTS-GHTWKN-----L-----HFYARKVMSM
+ISAzo26.2|IS91|None|Transposase|Azoarcus          WGQNMLHHPHLHCVVPGGGVSADGERWIA-----CR-RGFFLPVRVLSRL
+ISCARN110.2|IS91|None|Transposase|Metagenomic     HSRRLDYHPHAHLVMPAAAFDNKQRRWRN-----KD-GGYLFDHKALAKV
+ISEc37.1|IS91|None|Transposase|Escherichia        WGRDQQWHPHIHLSTTAGGVTS-GHTWKN-----L-----HFYARKVMSM
+ISFn1.1|IS91|None|Transposase|Fusobacterium       FGRDLKWNPHVHALISLGGFNK-RFVWKK-----LD----YFHVDVIANQ
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   FSKDMGFNPHLHILLTEGRFDM-YGKFIH-----QK----FIHFKTMRKT
+ISMno23.2|IS91|None|Transposase|Methylobacterium  WGSAMTHHPHVPVIVPGGGLSPDGARWIA-----CR-PGFFLPVRVLSRL
+ISMno24.1|IS91|None|Transposase|Methylobacterium  WGSAMTHHPHVHIVVPGGGLSSDGSRWIA-----CR-PGFFLPVRVLSRL
+ISPda2.1|IS91|None|Transposase|Photobacterium     FGRQLNWNVHFHLSVTRGGVNLKTKRWGN-----I-----YFNAAMVEQH
+ISPps1.1|IS91|None|Transposase|Pseudomonas        FGSSLNEHVHFHVCVVDGVFEEVEGEGDADATPRISSPGVIFHAATGIDA
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        YGRRLNWHPHIHVSVTLGGIDD-AGVWKD-----L-----SVHPSALRRR
+ISSbo1.1|IS91|None|Transposase|Shigella           YGRRLNWHPHVHVSVTCGGLNK-HGQWKK-----L-----SFLKDSMRSR
+ISSde12.2|IS91|None|Transposase|Shewanella        HNRRRDLHPHIHFIIPAGSFDKDRKQWHK-----SK-GKYLFNNVNLASV
+ISShvi3.2|IS91|None|Transposase|Shewanella        HNRRRDFHPHIHFIIPAGSFNKDKKQWRK-----SK-GKYLFNAFNLATV
+ISSod25.2|IS91|None|Transposase|Shewanella        WGQTLSQHIHLHCLIPGGVVTSAGDWHGV-----KT--DYLFPVKALSTV
+ISTha3.1|IS91|None|Transposase|Thauera            WSQDLRVHLHVHALITCGGLDAEGRWRIP-----ARGTHFLFPIQAASKV
+ISVa3.1|IS91|None|Transposase|Vibrio              YGRALNWHPHIHLSVTRGGLDK-HNTWKP-----I-----YFKKKHVEYH
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        WARNLTFHPHLHCLITHGGLSDDG-WVEP-----K--KSILFPARVMMKL
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        YGRKLNFNCHIHLALAELGLDK-HENLKK-----F-----SFKFASLMKQ
+ISVsa3.1|IS91|None|Transposase|Vibrio             VGRYLERQGLLERD-VENSYLASDAVDDDPMTPL-LGHSITYRIAVGSQA
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         YGRKLNWNTHLHLSVTRGGICERTGLWKP-----I-----YFQMKTTEPC
+ISWz1.2|IS91|None|Transposase|Weeksella           WGQNLSLHPHLHCIVPGGGVDESGRWKNL-----RSDGKFLFPVKALSKV
+
+IS1294.1|IS91|None|Transposase|Escherichia        WMW-----NMRQLLLKAWSE--GMA-MPESLSHITTESQWRSLVLKSGGK
+IS801.1|IS91|None|Transposase|Pseudomonas         WMW-----LVRDYLLGQPLS--QLT-MPPPLAHILCESDWRRLILAAGGQ
+IS91.1|IS91|None|Transposase|Escherichia          WRY-----RITRLLSRKYPE--LVI-PDELAVEGNSKRDWNCFLDTHYRR
+ISAzo26.2|IS91|None|Transposase|Azoarcus          FRH-----LFLKRLQQAFDAGELHF-FNALAAL-HAPAVFARHLARARRS
+ISCARN110.2|IS91|None|Transposase|Metagenomic     FRA-----KMLAGI-KQAG----------------------LKLPDAYPT
+ISEc37.1|IS91|None|Transposase|Escherichia        WRY-----RITRLLSRKYPD--LVM-PDALAAEGSSKREWNRFLDTHYRR
+ISFn1.1|IS91|None|Transposase|Fusobacterium       WKF-----IVLQLIQSGNYQ--DPI-WKEKAKQVA---------NKLYKE
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   WQY-----QVLTRFKDALSK--VQA-----------FSHLVNQLFKEYPD
+ISMno23.2|IS91|None|Transposase|Methylobacterium  FRG-----LFLDRLSQAHRAGRLTF-GAELSRL-AEPMAFAALLAPLRRA
+ISMno24.1|IS91|None|Transposase|Methylobacterium  FRR-----LFLTRLAEAHRVGRLGF-HGELAPL-AEAGAFAAHLAPLRRA
+ISPda2.1|IS91|None|Transposase|Photobacterium     WKQ-----QVVSFLRDHYNA--LNT-KHDNYQHIRDFHGWSQFLSSQYSR
+ISPps1.1|IS91|None|Transposase|Pseudomonas        ATVAPVQTTLQKRILRAFVARGLLENCDAKDML------------GYKHS
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        WMW-----NVRQYLLSQW-E--HTT-VPPENAHLQSENDWRHLVLNAGGQ
+ISSbo1.1|IS91|None|Transposase|Shigella           WMW-----NMRQLLLKAWSE--GLA-MPESLSHITTESQWRSLVLKAGGK
+ISSde12.2|IS91|None|Transposase|Shewanella        WRA-----KLLEQLTKKFN----------------------IKLPSATPK
+ISShvi3.2|IS91|None|Transposase|Shewanella        WRA-----RLLELLTNKLG----------------------IKLPEHLPN
+ISSod25.2|IS91|None|Transposase|Shewanella        YRA-----KLLRALRQHEL------------------AI--PAAETLMAK
+ISTha3.1|IS91|None|Transposase|Thauera            FRG-----KFLARLDAAHRSGELPD-D----PQ-GAPGAWQDRRRALLVH
+ISVa3.1|IS91|None|Transposase|Vibrio              WRR-----TLIRLLRQKYDD--LNL-STSTTHHIQYYRQWNFFLERHYQR
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        FRG-----KFIAALRAAMNKGELNY-PDTLSKQ-DVLNLFN----KWGVL
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        WRY-----GIIKLLRDNYDR--LIF-PSELSDEAKNTQSWNGFLNTQYNR
+ISVsa3.1|IS91|None|Transposase|Vibrio             GR-------------KVFTLQTLPTSGDPFGDG------------IGKVA
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         WRA-----AIVSLLGKAYYE--LDL-SSEECPYIRNKTDWSRFLSSQYNR
+ISWz1.2|IS91|None|Transposase|Weeksella           FRA-----KFCEKLKDKNL------------------KEYTKIRQNLWEK
+
+IS1294.1|IS91|None|Transposase|Escherichia        YWHVYM---SKKTAGGRNTARYLGRYLKKPPIAASRLAHYNGGASLSFRY
+IS801.1|IS91|None|Transposase|Pseudomonas         HWHIHL---SKKTKNGRKTVNYLGRYLKKPPISGSRLAHYTNGATLRFTY
+IS91.1|IS91|None|Transposase|Escherichia          GWNVNI---SRVMDNATHVAVYFGSYLKKPPVPMSRLEHYAGQDEIGLRY
+ISAzo26.2|IS91|None|Transposase|Azoarcus          EWVVFA---KPPFGGPQQVLEYLGRYTHRVAISNNRLVACT-DDEVSFRW
+ISCARN110.2|IS91|None|Transposase|Metagenomic     EWVVDC---KD-VGSGHQALVYLGRYLYRGVIQEKDILSHD-NGRVTFRY
+ISEc37.1|IS91|None|Transposase|Escherichia        GWNVNV---SRVMDNATHVAVYFGSYLKKPPVPMSRLEHYAGQDEIGLRY
+ISFn1.1|IS91|None|Transposase|Fusobacterium       NARLFFSVGRQEVNSAEGLLKYLGRYLARAPIADYKIVNVT-EKEVTFFF
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   GFYVHMPKNSR-ITNKQRMAQYVGRYIRHPAIANSRLYSYD-GKSVTFWY
+ISMno23.2|IS91|None|Transposase|Methylobacterium  EWVVYA---KPPLAGPEAVLTYLSGYTHRVAIANSRLLRLD-EHGVTVRW
+ISMno24.1|IS91|None|Transposase|Methylobacterium  EWIVYA---KRPFAGPEAVLAYLSRYTHRVAIANSRLIAMD-ERGVTFRW
+ISPda2.1|IS91|None|Transposase|Photobacterium     KWRIHL---AKKTEDVGPTVRYLGRYFKRPPIAASRLRHYQ-GGDVHFVY
+ISPps1.1|IS91|None|Transposase|Pseudomonas        GFSVDAG--VCIEAHDRAALERLLRYCARPPFSMERLRKEG--SKLVYRC
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        HWHIHL---SKKTKNGKKTVNYLGRYLKKPPISGSRLAHYTNSATLSFTY
+ISSbo1.1|IS91|None|Transposase|Shigella           YWHVYM---SKKTAGGRNTARYLGRYLKKPPIAASRLAHYNVGASLNFRY
+ISSde12.2|IS91|None|Transposase|Shewanella        KWVVDC---QH-VGKGLPALKYLSRYLYRGVLPDKSIIGTT-DEQVCFEY
+ISShvi3.2|IS91|None|Transposase|Shewanella        KWVVDC---QH-VGKGLPALKYLSRYLYRGVLPDKCITSVV-NEQVSFEY
+ISSod25.2|IS91|None|Transposase|Shewanella        PWCVYS---KACLSRAETVVEYLGRYTRKGMLHESRIAEVT-ADHVRFNY
+ISTha3.1|IS91|None|Transposase|Thauera            DWVVYA---KPPPGGPAQVLDYLARYTHRVALSNDRLLGCE-VGQVRLRV
+ISVa3.1|IS91|None|Transposase|Vibrio              YWNIHF---AKKTKVLKQTVNYLGRYLKRPPISASRLRHYS-GGTVVFKY
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        DWVVHC---AKPYSHGAGVVKYLARYVRGGAIKNSQIMHVS-NKEVRVKY
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        HWNVNI---AKKTSHKKHTAKYLGSYVKKPPIAASRLKEYA-NGEVTFTY
+ISVsa3.1|IS91|None|Transposase|Vibrio             GSSLHAG--VAARADERKKLERLCRYISRPAVSEKRLSLTR-GGNVRYQL
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         RWKLHF---AKKTNNVKPTMNYLGRYLKRPPISASRLSHYAKGGMITFNY
+ISWz1.2|IS91|None|Transposase|Weeksella           PWVVYA---KKPFGSPKSVVEYLGRYTHKIAISNQRIRKID-AKTVTFSY
+
+IS1294.1|IS91|None|Transposase|Escherichia        LDHK-TGE-------TATETLTQRELVARLKQHIPE-KFFKMVRYFGFLA
+IS801.1|IS91|None|Transposase|Pseudomonas         LDHR-TQA-------YQQETLSQADMLFRVVQHIPE-KHFRMIRYFGFLA
+IS91.1|IS91|None|Transposase|Escherichia          NSHR-TKR-------EEYLLMSGDEFMERFSWHVAD-KGFRMVRYYGFLS
+ISAzo26.2|IS91|None|Transposase|Azoarcus          KDYR-HHGR------NKVMRLEAHEFIRRFLLHVLP-AGFHRIRHYGFLA
+ISCARN110.2|IS91|None|Transposase|Metagenomic     QNSE-TKR-------SERRSVSGVEFLRLILQHILP-KGYRRARNFGFLH
+ISEc37.1|IS91|None|Transposase|Escherichia        NSHR-TKR-------EEYLLMSGDEFMERFSWHVAD-KGFRMVRYYGFLS
+ISFn1.1|IS91|None|Transposase|Fusobacterium       HDLANHKK-------KTYITMSREKFIQQVLIHLPP-KHFKMISRFGFYG
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   NDHE--GV-------RHFVTMELQEFIRALIQHIPD-RNFKMIRYYGAYS
+ISMno23.2|IS91|None|Transposase|Methylobacterium  TDDR-VRAGARGREWIKRMTLSADEFIRRFLLHVLP-DGFHRIRHDGLFA
+ISMno24.1|IS91|None|Transposase|Methylobacterium  KDYR-ARDGAKGREWIKTMTLAPDEFIRRFLLHVLP-DGFHRIRHYGLFA
+ISPda2.1|IS91|None|Transposase|Photobacterium     KDHR-DNC-------YKTLVRSQIEMIDRLVSHIPAEKNFRAIRYYGFLS
+ISPps1.1|IS91|None|Transposase|Pseudomonas        AKQRSEPTSDKRGAKADELHLTPLELIDRIAALVPP-PRTHRHRYFGVLA
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        LDHR-TKT-------YQQETLSQTDMLRRVVQHIPE-KHFRMIRYFGFLA
+ISSbo1.1|IS91|None|Transposase|Shigella           LDHK-TGE-------TATETLTQRELVARLKQHIPE-KFFKMVRYFGFLA
+ISSde12.2|IS91|None|Transposase|Shewanella        QNSQ-TKT-------TEIRTLPTVKFLWLVLQHVLP-KGLRRVRDYGLLS
+ISShvi3.2|IS91|None|Transposase|Shewanella        QNSQ-TKT-------TEIRTLPVTEFLWLVLQHVLP-KGLRRVRDYGLLR
+ISSod25.2|IS91|None|Transposase|Shewanella        KDYR-DGQQ------HKQMWLSCDEFIRRYLLHVLP-KGLMRVRHFGFLA
+ISTha3.1|IS91|None|Transposase|Thauera            RDNA-TGG-------KRTVSLPTDTFIGRFLRHVLP-AGFKRLRHYGLLA
+ISVa3.1|IS91|None|Transposase|Vibrio              LDHR-DGT-------HKTKTLTQEEMILRYVSHIPQ-HHFKMVRYYGFLS
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        KSHQ-TKK-------TEMIRLEPNHFIERILSHIAI-PKKQQYHFVGLYH
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        LDHN-SKK-------HKELSLTQTEMMLRVLSHVPE-KYFKMIRYFGFLS
+ISVsa3.1|IS91|None|Transposase|Vibrio             KT----P----YRDGTTHVIFEPLDFIARLAALVPK-PRVNLTRFHGVFA
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         LDHR-TGT-------TDSLTLSPEEMIRRIVEHYPD-KHFKMIRYYGFLS
+ISWz1.2|IS91|None|Transposase|Weeksella           KDYR-QKGI------KKQMVLSHEEFIRRFAMHILP-KRFVKIRHYGFLS
+
+IS1294.1|IS91|None|Transposase|Escherichia        NRVCGEKLPQVYRALGM----------------------------DKPE-
+IS801.1|IS91|None|Transposase|Pseudomonas         NRVCGQYLPKVYEALKM----------------------------ATPG-
+IS91.1|IS91|None|Transposase|Escherichia          PVKRRLLEEVVYVITET-----------------------------VRK-
+ISAzo26.2|IS91|None|Transposase|Azoarcus          NRLRASALAHCRALLSA----------------------------PA-PE
+ISCARN110.2|IS91|None|Transposase|Metagenomic     PNSKLIP---------L----------------------------VQLLK
+ISEc37.1|IS91|None|Transposase|Escherichia        PAKRRLLEEVVYIITET-----------------------------VRK-
+ISFn1.1|IS91|None|Transposase|Fusobacterium       VENQIL--------------------------------------------
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   RKVKKRYSKCLQRSIKQ----------------------------TNL--
+ISMno23.2|IS91|None|Transposase|Methylobacterium  RGTRAGAIATIRALLAS----------------------------GTSHD
+ISMno24.1|IS91|None|Transposase|Methylobacterium  SGTRAANITRIRSLLAP----------------------------MQAPC
+ISPda2.1|IS91|None|Transposase|Photobacterium     NRKRGEALPLVYDLLDQ----------------------------EEPV-
+ISPps1.1|IS91|None|Transposase|Pseudomonas        PNSPLRAAVTALAQPAASQPATVETAQPGAGVPGVAAPGNAATPTPEPEA
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        NRVCGRQLPRVYEALRM----------------------------ERRG-
+ISSbo1.1|IS91|None|Transposase|Shigella           NRVCGEKLPQVYRALGM----------------------------DKQE-
+ISSde12.2|IS91|None|Transposase|Shewanella        GNCSKLR-----QQIQL----------------------------MLAVA
+ISShvi3.2|IS91|None|Transposase|Shewanella        GSAANLR-----QRIRL----------------------------MLAVA
+ISSod25.2|IS91|None|Transposase|Shewanella        NACRRKKLALILRQLRK----------------------------PQVV-
+ISTha3.1|IS91|None|Transposase|Thauera            CGRKRARLAAARAALQT----------------------------PAPQA
+ISVa3.1|IS91|None|Transposase|Vibrio              NRKRGRLLPLVYLALEK----------------------------KSLE-
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        NRCRE-RLNKARQYLGQ----------------------------ERIK-
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        TRLRGDMLPIIYEKLEQ----------------------------KV-N-
+ISVsa3.1|IS91|None|Transposase|Vibrio             PNSRHRALVTPAKR----------------------GRGNKVRVADEPAT
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         MRRRGEALPRVYAALGM----------------------------TIEA-
+ISWz1.2|IS91|None|Transposase|Weeksella           STWKRIKLKNLQQKLGI----------------------------QPKE-
+
+IS1294.1|IS91|None|Transposase|Escherichia        --PGRKCAMHKWMVKQFLSRDPFECVLCG-CRMVYRRAIAGLNVSGLKK-
+IS801.1|IS91|None|Transposase|Pseudomonas         --PTPKL-YFAPMAKAFLNVDPFRCVLCG-ARMVYTAAISGLTVQGLNL-
+IS91.1|IS91|None|Transposase|Escherichia          --TAMQI-RWRGMYQRLLKVDPLKCILCG-SQMRFTGLKRGYRLAELVL-
+ISAzo26.2|IS91|None|Transposase|Azoarcus          PQTDAPR-DYRERYQQLTGRSLRDCPQCGRGHMVCLETFLPGALPRAP-P
+ISCARN110.2|IS91|None|Transposase|Metagenomic     RVVLPPP----------QPRPAIRCKCCG-GTMKIVRTRIKTFTQRSR--
+ISEc37.1|IS91|None|Transposase|Escherichia        --TAMQI-TWRGMYQRLLKVDPLKCVLCG-SQMRFTGLKRGYRLAELVL-
+ISFn1.1|IS91|None|Transposase|Fusobacterium       --------------------------------------------------
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   -----------KDFKKVLNKWAPQCSFCG-GKMKFVWYEKRPPGEIAEVN
+ISMno23.2|IS91|None|Transposase|Methylobacterium  PVKPEPA---R------APPAPPACPRCG-GCLSIVERFRRGETPRLP-P
+ISMno24.1|IS91|None|Transposase|Methylobacterium  AAKPEPA-AMT------DPPAGPACPCCG-GRLVVIERFRRGEVPKLR-P
+ISPda2.1|IS91|None|Transposase|Photobacterium     --EPKPL-NYAQMMHHLVGIDPYKCILCS-GRMCFVKMEMGLKGHELVT-
+ISPps1.1|IS91|None|Transposase|Pseudomonas        RPKRAAHYLWAVLIARIYEAFPLLCPMCG-GQMRIIAFITHSAEIRHIL-
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        --KAQKL-YFAQMSKAFLHRDPFSCVLCG-ARMVYTAAIAGLTVQGLIN-
+ISSbo1.1|IS91|None|Transposase|Shigella           --PVAKVCY-AQMVKQFLSRDSFECVLCG-GRMVYRRAIAGLNVEGLKK-
+ISSde12.2|IS91|None|Transposase|Shewanella        GAVFPII-SE-----LKRTVAIRLCPCCH-QPMSFIGIHARPASL----Q
+ISShvi3.2|IS91|None|Transposase|Shewanella        GVVFAPL-ES-----STKTQAIRPCPCCK-QPMKFMGVHGNKHARPTSFI
+ISSod25.2|IS91|None|Transposase|Shewanella        --LASPL---------VKKDCLWSCPQCQLGHLQFIGLIR---PQSVV-M
+ISTha3.1|IS91|None|Transposase|Thauera            AVIYSA----EDFLARVSGEDPRCCPHCRVGRWDTVEIVMARRYDPPA-P
+ISVa3.1|IS91|None|Transposase|Vibrio              --QAEPL-TYAKQYKGFTGNDPYQCVLCG-GRMEFTGFMKGPKNDELLD-
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        --DISPL-LWREYA--ESKEQVPCCDECG-GKVTVLARFKVINGEFIF-S
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        --KPMVF-SFASMMKALMKVDPFECILCG-SKMFFSGFIRGPKLGQLVS-
+ISVsa3.1|IS91|None|Transposase|Vibrio             PAQRRASMTWAQRLKRVFNIDIETCSGCG-GAMKVIACIEDPIVIKQIL-
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         --EPKMP-GYAAMLKGYVKVDPYECILCE-SRLVFTNFRVGNSVNDLVT-
+ISWz1.2|IS91|None|Transposase|Weeksella           --NVPP------------KVFQPKCSCCKVGNLVTIATFDLRGPPQWF-L
+
+IS1294.1|IS91|None|Transposase|Escherichia        -NARDISLLRYMPA------------------------------------
+IS801.1|IS91|None|Transposase|Pseudomonas         -NAQAIAQMRYVKP------------------------------------
+IS91.1|IS91|None|Transposase|Escherichia          -MHERLGTTAGVRLRAAEGKLRPFYRKRSKKPPF-IPCINQCHPV-----
+ISAzo26.2|IS91|None|Transposase|Azoarcus          RVPS----------------------------------------------
+ISCARN110.2|IS91|None|Transposase|Metagenomic     TSASNRETAM----------------------------------------
+ISEc37.1|IS91|None|Transposase|Escherichia        -MHEPLARMRWCG-------------------------------------
+ISFn1.1|IS91|None|Transposase|Fusobacterium       --------------------------------------------------
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   GNINDRGIVMG---------------------------------------
+ISMno23.2|IS91|None|Transposase|Methylobacterium  LRAVRIDT--S---------------------------------------
+ISMno24.1|IS91|None|Transposase|Methylobacterium  SA-VRINT--S---------------------------------------
+ISPda2.1|IS91|None|Transposase|Photobacterium     -LRKATIREKRRLRYSL---------------------------------
+ISPps1.1|IS91|None|Transposase|Pseudomonas        -NHIGVESAPPH---ITP----------ARGPPLWEGCDAPVDDGAQGEP
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        -NAQSIAQLRYVPA------------------------------------
+ISSbo1.1|IS91|None|Transposase|Shigella           -NARDISLLRYMPA------------------------------------
+ISSde12.2|IS91|None|Transposase|Shewanella        TPISNTA-------------------------------------------
+ISShvi3.2|IS91|None|Transposase|Shewanella        MQITREPNATV---------------------------------------
+ISSod25.2|IS91|None|Transposase|Shewanella        INSQGQPVRMSG--------------------------------------
+ISTha3.1|IS91|None|Transposase|Thauera            APRCRDGP--R---------------------------------------
+ISVa3.1|IS91|None|Transposase|Vibrio              -SRRMSMREARRLSVAA---------------------------------
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        LKM-----------------------------------------------
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        -SIENLALLRP-M-------------------------------------
+ISVsa3.1|IS91|None|Transposase|Vibrio             -DHLKHKAETSGTRALPE----------SRAPPA---------ELLLGLF
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         -HAIVQSELR----AA----------------------------------
+ISWz1.2|IS91|None|Transposase|Weeksella           EMSQNLSAPKSA--F-----------------------------------
+
+IS1294.1|IS91|None|Transposase|Escherichia        -----------------
+IS801.1|IS91|None|Transposase|Pseudomonas         -----------------
+IS91.1|IS91|None|Transposase|Escherichia          -----------------
+ISAzo26.2|IS91|None|Transposase|Azoarcus          -----------------
+ISCARN110.2|IS91|None|Transposase|Metagenomic     -----------------
+ISEc37.1|IS91|None|Transposase|Escherichia        -----------------
+ISFn1.1|IS91|None|Transposase|Fusobacterium       -----------------
+ISMbu9.1|IS91|None|Transposase|Methanococcoides   -----------------
+ISMno23.2|IS91|None|Transposase|Methylobacterium  -----------------
+ISMno24.1|IS91|None|Transposase|Methylobacterium  -----------------
+ISPda2.1|IS91|None|Transposase|Photobacterium     -----------------
+ISPps1.1|IS91|None|Transposase|Pseudomonas        DWDLAAQPDEVDQRVNW
+ISPsy3.1|IS91|None|Transposase|Pseudomonas        -----------------
+ISSbo1.1|IS91|None|Transposase|Shigella           -----------------
+ISSde12.2|IS91|None|Transposase|Shewanella        -----------------
+ISShvi3.2|IS91|None|Transposase|Shewanella        -----------------
+ISSod25.2|IS91|None|Transposase|Shewanella        -----------------
+ISTha3.1|IS91|None|Transposase|Thauera            -----------------
+ISVa3.1|IS91|None|Transposase|Vibrio              -----------------
+ISVsa10.1|IS91|None|Transposase|Aliivibrio        -----------------
+ISVsa21.1|IS91|None|Transposase|Aliivibrio        -----------------
+ISVsa3.1|IS91|None|Transposase|Vibrio             D----------------
+ISVsa9.1|IS91|None|Transposase|Aliivibrio         -----------------
+ISWz1.2|IS91|None|Transposase|Weeksella           -----------------
+//

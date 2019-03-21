@@ -1,0 +1,596 @@
+# STOCKHOLM 1.0
+
+#=GS      IS1187.1|IS982|None|Transposase|Bacteroides DE    fragilis
+#=GS      IS1592.1|IS982|None|Transposase|Pasteurella DE    trehalosi
+#=GS        IS1599.1|IS982|None|Transposase|Moraxella DE    sp.
+#=GS        IS19.1|IS982|None|Transposase|Lactococcus DE    lactis
+#=GS     IS195.1|IS982|None|Transposase|Porphyromonas DE    gingivalis
+#=GS         IS233A.1|IS982|None|Transposase|Bacillus DE    thuringiensis
+#=GS       IS982.1|IS982|None|Transposase|Lactococcus DE    lactis
+#=GS      IS982B.1|IS982|None|Transposase|Lactococcus DE    lactis
+#=GS      IS982C.1|IS982|None|Transposase|Lactococcus DE    lactis
+#=GS    ISAba4.1|IS982|None|Transposase|Acinetobacter DE    baumannii
+#=GS    ISAba6.1|IS982|None|Transposase|Acinetobacter DE    baumannii
+#=GS  ISAba825.1|IS982|None|Transposase|Acinetobacter DE    baumannii
+#=GS    ISAba9.1|IS982|None|Transposase|Acinetobacter DE    baumannii
+#=GS   ISAcsp2.1|IS982|None|Transposase|Acinetobacter DE    sp.
+#=GS          ISBs1.1|IS982|None|Transposase|Bacillus DE    stearothermophilus
+#=GS       ISCaa5.1|IS982|None|Transposase|Candidatus DE    Amoebophilus
+#=GS       ISCca1.1|IS982|None|Transposase|Candidatus DE    Cardinium
+#=GS       ISCca4.1|IS982|None|Transposase|Candidatus DE    Cardinium
+#=GS  ISCef2.1|IS982|None|Transposase|Corynebacterium DE    efficiens
+#=GS  ISCef3.1|IS982|None|Transposase|Corynebacterium DE    efficiens
+#=GS     ISClce1.1|IS982|None|Transposase|Clostridium DE    cellulovorans
+#=GS      ISCth1.1|IS982|None|Transposase|Clostridium DE    thermocellum
+#=GS      ISDds4.1|IS982|None|Transposase|Deinococcus DE    deserti
+#=GS      ISDds5.1|IS982|None|Transposase|Deinococcus DE    deserti
+#=GS      ISDge8.1|IS982|None|Transposase|Deinococcus DE    geothermalis
+#=GS     ISEfm1.1|IS982|None|Transposase|Enterococcus DE    faecium
+#=GS    ISFba2.1|IS982|None|Transposase|Flavobacteria DE    bacterium
+#=GS      ISFtu4.1|IS982|None|Transposase|Francisella DE    tularensis
+#=GS      ISGsp1.1|IS982|None|Transposase|Geobacillus DE    sp.
+#=GS      ISGth1.1|IS982|None|Transposase|Geobacillus DE    thermodenitrificans
+#=GS     ISLgar2.1|IS982|None|Transposase|Lactococcus DE    garvieae
+#=GS     ISLgar3.1|IS982|None|Transposase|Lactococcus DE    garvieae
+#=GS     ISLh1.1|IS982|None|Transposase|Lactobacillus DE    helveticus
+#=GS    ISLhe1.1|IS982|None|Transposase|Lactobacillus DE    helveticus
+#=GS    ISLhe5.1|IS982|None|Transposase|Lactobacillus DE    helveticus
+#=GS    ISLhe7.1|IS982|None|Transposase|Lactobacillus DE    helveticus
+#=GS      ISLla2.1|IS982|None|Transposase|Lactococcus DE    lactis
+#=GS      ISLll1.1|IS982|None|Transposase|Lactococcus DE    lactis
+#=GS    ISLpl4.1|IS982|None|Transposase|Lactobacillus DE    plantarum
+#=GS     ISNeu1.1|IS982|None|Transposase|Nitrosomonas DE    europaea
+#=GS     ISNeu2.1|IS982|None|Transposase|Nitrosomonas DE    europaea
+#=GS           ISNsp1.1|IS982|None|Transposase|Nostoc DE    sp.
+#=GS   ISPasp1.1|IS982|None|Transposase|Parachlamydia DE    sp.
+#=GS   ISPasp2.1|IS982|None|Transposase|Parachlamydia DE    sp.
+#=GS   ISPasp3.1|IS982|None|Transposase|Parachlamydia DE    sp.
+#=GS       ISPfu3.1|IS982|None|Transposase|Pyrococcus DE    furiosus
+#=GS    ISPlu11.1|IS982|None|Transposase|Photorhabdus DE    luminescens
+#=GS     ISPlu6.1|IS982|None|Transposase|Photorhabdus DE    luminescens
+#=GS ISPrsp2.1|IS982|None|Transposase|Parabacteroides DE    sp.
+#=GS  ISPsa1.1|IS982|None|Transposase|Piscirickettsia DE    salmonis
+#=GS   ISPsma1.1|IS982|None|Transposase|Psychrobacter DE    maritimus
+#=GS        ISRa1.1|IS982|None|Transposase|Riemerella DE    anati
+#=GS    ISRmsp1.1|IS982|None|Transposase|Ruminococcus DE    sp.
+#=GS     ISSa4.1|IS982|None|Transposase|Streptococcus DE    agalactiae
+#=GS    ISScr1.1|IS982|None|Transposase|Streptococcus DE    criceti
+#=GS       ISSde7.1|IS982|None|Transposase|Shewanella DE    denitrificans
+#=GS    ISSmu5.1|IS982|None|Transposase|Streptococcus DE    mutans
+#=GS      ISSod20.1|IS982|None|Transposase|Shewanella DE    oneidensis
+#=GS    ISSpy2.1|IS982|None|Transposase|Streptococcus DE    pyogenes
+#=GS   ISSsu12.1|IS982|None|Transposase|Streptococcus DE    suis
+#=GS    ISSude1.1|IS982|None|Transposase|Sulfurimonas DE    denitrificans
+#=GS     ISTli1.3|IS982|None|Transposase|Thermococcus DE    litoralis
+#=GS       ISVsa6.1|IS982|None|Transposase|Aliivibrio DE    salmonicida
+#=GS       ISWpi16.1|IS982|None|Transposase|Wolbachia DE    pipientis
+#=GS      ISXne5.1|IS982|None|Transposase|Xenorhabdus DE    nematophila
+
+IS1187.1|IS982|None|Transposase|Bacteroides       --------MSKKLYMSLIFSNLVVIKTLSSNHRMYN-LYA----KFVKIL
+IS1592.1|IS982|None|Transposase|Pasteurella       --------------------------------------MDNLTELYCHID
+IS1599.1|IS982|None|Transposase|Moraxella         --------------------------------------MDNLTELYCHID
+IS19.1|IS982|None|Transposase|Lactococcus         ----------------M--RSSKYT------EHYTD-TFITFKEIMRTVS
+IS195.1|IS982|None|Transposase|Porphyromonas      -------------------------------------MKTNIVDVFCIID
+IS233A.1|IS982|None|Transposase|Bacillus          ----------------M--QSLNYT------DNYTD-TYTVFNQILEIVV
+IS982.1|IS982|None|Transposase|Lactococcus        -------------------------------MTYNSTLPKVFVYLLTTIE
+IS982B.1|IS982|None|Transposase|Lactococcus       -------------------------------MTYNSTLPKVFVYLLTTIE
+IS982C.1|IS982|None|Transposase|Lactococcus       -------------------------------MTYNSTLPKVFVYLLTTIE
+ISAba4.1|IS982|None|Transposase|Acinetobacter     --------------------------------------MYDFTEIFCIVD
+ISAba6.1|IS982|None|Transposase|Acinetobacter     ----------------------------------MP-IDTQLTTLFCLID
+ISAba825.1|IS982|None|Transposase|Acinetobacter   ----------------------------------MS-TEEFIIIVYLIIE
+ISAba9.1|IS982|None|Transposase|Acinetobacter     ----------------------------------MS-IEEFIIFVYVIIE
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    --------------------------------------MFNSTELFCVID
+ISBs1.1|IS982|None|Transposase|Bacillus           ---------------MQ--EHFHFT------TDRAK-IQKQYAAIF--VF
+ISCaa5.1|IS982|None|Transposase|Candidatus        -------------------------------------MIEKSIAIYSFID
+ISCca1.1|IS982|None|Transposase|Candidatus        -----------------------------------M-NVDKLVEIYYMVD
+ISCca4.1|IS982|None|Transposase|Candidatus        -----------------------------------M-NVSKLVEIYYAVD
+ISCef2.1|IS982|None|Transposase|Corynebacterium   ---------------------------------VNNNLNTLLTTLYVTLV
+ISCef3.1|IS982|None|Transposase|Corynebacterium   ---------------------------------VNNKLNTLLTTLYVTLV
+ISClce1.1|IS982|None|Transposase|Clostridium      ---------------MPEFNK-DFI------ITINN-LKDFIVVTYVIID
+ISCth1.1|IS982|None|Transposase|Clostridium       ---------------MMELDKNYYI------KEIEN-LKDFVTVAYIIID
+ISDds4.1|IS982|None|Transposase|Deinococcus       ----------------------------MARYRLHH-----SLGRRRVIR
+ISDds5.1|IS982|None|Transposase|Deinococcus       ----------------------------MARYRLHH-----SLGRRRVIR
+ISDge8.1|IS982|None|Transposase|Deinococcus       ----------------------------MCRPDLS------LLPIPEALQ
+ISEfm1.1|IS982|None|Transposase|Enterococcus      ----------------M--RSSKYT------EHYTD-TFITFKEIMRTVS
+ISFba2.1|IS982|None|Transposase|Flavobacteria     --------------------------------------------------
+ISFtu4.1|IS982|None|Transposase|Francisella       -------------------------------------MINQLISTSCRID
+ISGsp1.1|IS982|None|Transposase|Geobacillus       ---------------MQ--EHFHFT------TDPAK-LQKQYAAIF--CF
+ISGth1.1|IS982|None|Transposase|Geobacillus       ---------------MQ--EHFHFT------TDRAK-LQKQYVSIL--CF
+ISLgar2.1|IS982|None|Transposase|Lactococcus      -------------------------------MIYNSTLPKVFVYLLTAIE
+ISLgar3.1|IS982|None|Transposase|Lactococcus      ---------------------------------MQNNFITPFNELLKRVS
+ISLh1.1|IS982|None|Transposase|Lactobacillus      ---------------------------------------VSFKDLVIICR
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     --------MEKSLT-RL--NCLKLK------HFSHH-LQVSFTRLNNICR
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     ----------------L--NYLKLK------RFSHH-LQVSFSRLNMICR
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     ----------------L--NCLKLK------RFSHH-LQVSFTRLNNICR
+ISLla2.1|IS982|None|Transposase|Lactococcus       -------------------------------MTYNSTLTKVFVYLLISIE
+ISLll1.1|IS982|None|Transposase|Lactococcus       -------------------------------MTYNSTLPKVFVYLLTTIE
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     ---------------ML--NHPKFK------QIRHE-LQGNYHYFYQLCQ
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      --------------------------------------MDSLTELFCLID
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      --------------------------------------------------
+ISNsp1.1|IS982|None|Transposase|Nostoc            ---------------------------------MFS-IEEFIIAVFCCVD
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    ---------------------------------------MDVTELYCTID
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    ---------------------------------------MDLIKLYCSVD
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    -------------------------------------MEEQIIALYCLLD
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        -------------------------------MV----VMNFQQEILIIKS
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     --------------------------------------MNKLVEIFCDVD
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      --------------------------------------MDNLVEIFCDVD
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  --------MFKKLCILLIFSKLKVTKLLIDKYRMHN-LYA----IFAKLL
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   -------------------------------------MDLTLISLFCVID
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    ----------------------------------MP-IDEFIINIYLMVE
+ISRa1.1|IS982|None|Transposase|Riemerella         ---------------------------------MNN-LEQ----IYERIL
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     ---------------MLKFQDN-NT------TVIAT-FEDFILTAYVIID
+ISSa4.1|IS982|None|Transposase|Streptococcus      ----------------M--SHLQYT------AKSHH-LQWNLKQLSKICH
+ISScr1.1|IS982|None|Transposase|Streptococcus     ----------------M--SHLQYT------AKSHH-LQWNLKQLSKICH
+ISSde7.1|IS982|None|Transposase|Shewanella        --------------------------------------MDNLVDVFCDVD
+ISSmu5.1|IS982|None|Transposase|Streptococcus     ---MLLVIKRTGVT-QM--NHLHYT------AKHHH-LQYSMTQLKVICS
+ISSod20.1|IS982|None|Transposase|Shewanella       ------------------------------------------MEVFCDVD
+ISSpy2.1|IS982|None|Transposase|Streptococcus     ----------------M--SHLQYT------AKSHH-LQWNVTQLSTICH
+ISSsu12.1|IS982|None|Transposase|Streptococcus    MDYTVSDETYRRSV-KK--SHLQYT------AKSHH-LQWNVCQLSQICH
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     -------------------------------------MEENIITIFCLVD
+ISTli1.3|IS982|None|Transposase|Thermococcus      -------------------------------MV----VLSFQRKILIIKS
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        --------------------------------------MNKLVDIFCDVD
+ISWpi16.1|IS982|None|Transposase|Wolbachia        -------------------------------------MKKDITELYCCVE
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       --------------------------------------MYNLEELYCCVD
+
+IS1187.1|IS982|None|Transposase|Bacteroides       EICKQFSENL--VNDSGNVPRRGP-VPKFSDLEVVALSLTAETESIDSEK
+IS1592.1|IS982|None|Transposase|Pasteurella       DFYQAFKPQFERQLIENGT-KRLRAC-KISVPEIMTILVLFHQLRYRQFK
+IS1599.1|IS982|None|Transposase|Moraxella         DFYQQFKPEFDAHLIATGH-QRLRAC-QISVAEMMTILVLFHQLRYRQFK
+IS19.1|IS982|None|Transposase|Lactococcus         NIYHN-------CVPDKIKNRRNTDQLKQRDTVIIACVIWGIINGYTSQR
+IS195.1|IS982|None|Transposase|Porphyromonas      DFSKLFDETIKKKTLEEADKKRRNRKFKMSDSEVMTILILFHLSRYRDLK
+IS233A.1|IS982|None|Transposase|Bacillus          KLYKK-------CIPATIKNRKNVDKLVQPDTVIIACVLWGIMLGYNSQR
+IS982.1|IS982|None|Transposase|Lactococcus        TLYQT-------RVPLEVQNRKNVHLAT-SGCLVIACYLWGVLHFSETLK
+IS982B.1|IS982|None|Transposase|Lactococcus       TLYQT-------SVPLEVQNRKNVHLAT-SDCLVIACYLWGVLHFSETLK
+IS982C.1|IS982|None|Transposase|Lactococcus       TLYQT-------SVSLEVQNRKNVHLAT-SDCLVIACYLWGVLHFSETLK
+ISAba4.1|IS982|None|Transposase|Acinetobacter     DFFKKFEPIYWQFLKQENK-RQRIRQATLSLSEIVAISIYYKTSQVHNFK
+ISAba6.1|IS982|None|Transposase|Acinetobacter     DFCTDITQNVEQYMLTYGQ-TKRLRQSKIHASEVITLLLWFHLTGSRNFK
+ISAba825.1|IS982|None|Transposase|Acinetobacter   EIY-P-------TIVSEPLRKRGF-PPALTDIEIITMQIVGECLKMDTDK
+ISAba9.1|IS982|None|Transposase|Acinetobacter     ELY-P-------IVVTQPLRTRGF-PPAVTDAEIITMQIVGEFLGLDTDK
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    DFFLKFESTYWEFLKQNCG-SLRIRTAKLTISEICFIAIWYKCSHFNNFK
+ISBs1.1|IS982|None|Transposase|Bacillus           VSAQL-------SCIQVHLHRRNRHLVKQEDAVIIAIHLLGKLLGFTS-R
+ISCaa5.1|IS982|None|Transposase|Candidatus        TLLKY-------------LHHQEDKKRKLSDAEVLTTAIISALYFGGHLD
+ISCca1.1|IS982|None|Transposase|Candidatus        EFLIKFMPYMEKKLLTEPT-RKPTRTCSLNLSEIMTILIAFHLIGFRNFK
+ISCca4.1|IS982|None|Transposase|Candidatus        EFLIKFMPYMESHLLPTSD-RKPTRTCSLTLSEIMTILIAFHVIGFRNFK
+ISCef2.1|IS982|None|Transposase|Corynebacterium   DDVLP-------SLGIN-RTHRPGRKPALDDAELLCLVIAQHLLHGTSSE
+ISCef3.1|IS982|None|Transposase|Corynebacterium   DRVLP-------DLDYD-RTHRPGHRPALDDAELLCLAVAQHLLHGSSSE
+ISClce1.1|IS982|None|Transposase|Clostridium      DFYQK-------VTPAFIMNRRNIDKSVMSDSEIITLSLVGELLTIDSEK
+ISCth1.1|IS982|None|Transposase|Clostridium       DIYQK-------VTPPHIANRCNINNSVMSDSEIITICIVGELLTIDSEK
+ISDds4.1|IS982|None|Transposase|Deinococcus       --------TLWRWGRKHFSDQKSCRHQKVTDAFLVALLLSRYVFKHPYPS
+ISDds5.1|IS982|None|Transposase|Deinococcus       --------TLWRWGRKHFSDHRSCRHQKVTDAFLVALLLSRYVFKHPYPS
+ISDge8.1|IS982|None|Transposase|Deinococcus       --------HLTVWLTPQMPPKLIHPHEKISDGELVAVALLQRLYKAPYFK
+ISEfm1.1|IS982|None|Transposase|Enterococcus      NIYHN-------CVPDKIKNRRNTDQLKQRDTVIIACVIWGIINGYTSQR
+ISFba2.1|IS982|None|Transposase|Flavobacteria     ----VNFEL-------EFKSGIGR-KPKMTDLEVVALSLTAEFMSIDSEN
+ISFtu4.1|IS982|None|Transposase|Francisella       DFCIIYHKELQSKSIDHQK-KKVGFKPSLSLSKIMTILIMYQAVRYKDFK
+ISGsp1.1|IS982|None|Transposase|Geobacillus       VSAQL-------SLIQMYLHRRNRHLVKQEDEVVMAVHLLGKLLGFSSER
+ISGth1.1|IS982|None|Transposase|Geobacillus       VSAQL-------SSIQIHLQRRNLHLLKQKDEVIIAVHVLGKLLGFTSER
+ISLgar2.1|IS982|None|Transposase|Lactococcus      KLYQE-------TVPLEVQNRKNIHLAT-SDCLVITCYLWGVIHFSETLK
+ISLgar3.1|IS982|None|Transposase|Lactococcus      DLYKT-------FAPNEVKNRKNIHLAKQSDEVILACYLFGLLHSCSTLI
+ISLh1.1|IS982|None|Transposase|Lactobacillus      HWYRL-------YAPAEFTHRRNIDQSKTTDSLILALLIWQAKTGIESQR
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     SWYKL-------YAPNSLKHRRNTDQIKLSDSSILAMLIWQAELGIESQR
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     SWYKL-------YAPDSLKHRRNTDHTKISDSSILAMLIWQAELGIESQR
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     SWYKL-------YAPSSLKHRRNTDQIKLSDSSILAMLIWQAELGIESQR
+ISLla2.1|IS982|None|Transposase|Lactococcus       AIYQT-------SVPLEIQNRKNVHLAT-SDCLVIACYLWGVLHFSETLK
+ISLll1.1|IS982|None|Transposase|Lactococcus       TLYQT-------SVPLEVQNRKNVHLAT-SDCLVIACYLWGVLHFSETLK
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     SLYQR-------YCPRCVTQRRNVAHVKIDDCRLLALLCLQTTLGIQSQR
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      DFCCQFEPALERRLLETGV-KKRKRCSGLSLSELMTLTVLFHQLRFRQFK
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      --------------------------------------------------
+ISNsp1.1|IS982|None|Transposase|Nostoc            DVLME-------ITQIYPIKRRGF-APSLRESEVLTMEVVAEFLGIDADK
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    DFWKSFKQEWEKHLIDSGK-HKKGPESVLSPAEMMTIIVLFHQSNYRTFK
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    DFWKSFEKKWNKQLIDHGK-TKRGPQPELSIPEMMTIVILFHQSNYRTFK
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    DYILS-------------IGYKDWPNTKLSTSEIMLINLVGMRFFYGNME
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        EIYPIVSK----------HYPKNTRREVISLYDLITFAILAHLHFGGVYK
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     DFCRFFIPQWELFCFEKGY-RQRHRQGHMHPSEIMTILILFHMAHYRDFK
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      DFCRFFIPQWEQFCLDSGH-RLRRRQGHMYPSEIMTILILFHMSHYRDFK
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  NICKQIAGNL--VNESGNVPRRGV-VPKFSDLEVVALNMASEAVGIDSES
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   DFCQELLPQWNAILLEDTN-KKRNKPSQMSTSEIMTIMIYFHKSNYRNFK
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    QYY-K-------IVVTKPLRSAGY-APKLSDPEVICMEMVGEFLHLDQDK
+ISRa1.1|IS982|None|Transposase|Riemerella         EVLGLFSEN-------QLISYQRR-TPKMSDLEVISLNITAEYLSIDSEL
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     ELYHQ-------FAPPEVTRRRHILNAKLSDSEIITISLCGELAGVDSEN
+ISSa4.1|IS982|None|Transposase|Streptococcus      QLYRD-------YCPESFKHRHNISLSKVSDQSLLVLLILQAELGIKSQR
+ISScr1.1|IS982|None|Transposase|Streptococcus     QLYRD-------YCPYSFKHRHNISLSKVSDQSLLVLLILQAELGIKSQR
+ISSde7.1|IS982|None|Transposase|Shewanella        DFCAVFMPQWKKQCVTDGT-RKRQRSSRMSMSEIMTIIILFHTSHHRDFK
+ISSmu5.1|IS982|None|Transposase|Streptococcus     YYYRH-------YAPKELTQRRNVHYCKVNDDTILVLLVLQAELGIKSQR
+ISSod20.1|IS982|None|Transposase|Shewanella       DFCAVFIPEWEKTLLTDGT-RKRQRAGRMTMSEVMTIIILFQMSHHRDFK
+ISSpy2.1|IS982|None|Transposase|Streptococcus     QLYRD-------YCPEGLKHRRNISLSKVSDESLLVLLVLQAELGIKSQR
+ISSsu12.1|IS982|None|Transposase|Streptococcus    HFYQN-------YCPDSFKHRRNVGLAKVSDESLLVLLLLQAELGITSQR
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     DILKA-------------INVKDDVRAKICNAEILTIGYMAVRYFHGNYY
+ISTli1.3|IS982|None|Transposase|Thermococcus      EIYPIVSK----------HYPKNTHREIISLYDLITFAILAHLHFNGVYK
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        DFCYQFLSQWEKYLVEASE-RKRKRQSVMSTSECMTIVIAFHQSNHRDFK
+ISWpi16.1|IS982|None|Transposase|Wolbachia        DFCRAVDDNFANRFLSNGK--KPTRVPEIAHSEILTIILLYHKSPCKNFK
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       DFCQKFIPLWHQQLIENGL-RKRHREASLSLSEVMMILILFHMSHYRDFK
+
+IS1187.1|IS982|None|Transposase|Bacteroides       WLF-DYKLQEYKDSIP--NLISRRQFNDRRKKTSGLCEELRKRIAMEMD-
+IS1592.1|IS982|None|Transposase|Pasteurella       GFYYHHMLGMMKKDFP--DLPSYSRFIELVPRALVPLCAYLK--SLM---
+IS1599.1|IS982|None|Transposase|Moraxella         AFYYHHMLGMMKREFP--NLPSYSRFIELVPRSIIPLCSYLQ--SMM---
+IS19.1|IS982|None|Transposase|Lactococcus         ATY-RAVCSV---LFPNGDFASRSRFTRLSSNLAYTIKIIRYFFIKK-L-
+IS195.1|IS982|None|Transposase|Porphyromonas      AFYLQYITHSCRSEFP--HLVSYNRFVELQSRVGFKLIAFLNM-CCL---
+IS233A.1|IS982|None|Transposase|Bacillus          ATY-RAVRTI---LFF-TEFPSRTRYTRLCASLTYAIKIIRFFFMKQ---
+IS982.1|IS982|None|Transposase|Lactococcus        AKH-QLAQS----LF-P-NFLEYSRFVRRCNGLLPSIQVIRQALVFKEV-
+IS982B.1|IS982|None|Transposase|Lactococcus       AKH-QLAQS----LF-P-NFLEYSRFVRRCNALLPSIQVIRQALVFKEV-
+IS982C.1|IS982|None|Transposase|Lactococcus       AKH-QLAQS----LF-P-NFLEYSRFVRRCKALLPSIQVIRQALVFKEV-
+ISAba4.1|IS982|None|Transposase|Acinetobacter     MFF-NLLCQFESKLFK--DLPCYKNLITLINQHQLAIHALLYA-LSQ---
+ISAba6.1|IS982|None|Transposase|Acinetobacter     AFYLYWAKPFLCSYFT--NLPSYSRFIELKAKYAMYFVALIE--SLK---
+ISAba825.1|IS982|None|Transposase|Acinetobacter   SIW-MFFKNNYLSWFP--HLGSYPNFCKHCANLWQVHQKITAQLTAHYG-
+ISAba9.1|IS982|None|Transposase|Acinetobacter     NIW-MYFKNNWLEWFP--KLGSYPNFCKHCANLWHVSQSIMAQLIQRYG-
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    AFF-TWLKEDKSHLFK--YLPCYQRMIHLINMHQLALHALHVA-LMK---
+ISBs1.1|IS982|None|Transposase|Bacillus           AWH-RFVTGN---LFTNVSFLERSRYNRRCRALGFAIKWIAVVSK-T---
+ISCaa5.1|IS982|None|Transposase|Candidatus        KAR-SFMHST--KLIP--NMLDKSRYNRRLHAIGEEITSLFLEIGTLIKQ
+ISCca1.1|IS982|None|Transposase|Candidatus        MYY-IHLEQFHSSEFR--TLVSYNRFISLVKRTLVPMYFFTH--SLS---
+ISCca4.1|IS982|None|Transposase|Candidatus        LYY-IHLQQFHSNDFC--KLVSYSRFISLVQRTVVPFYFFSQ--SLS---
+ISCef2.1|IS982|None|Transposase|Corynebacterium   TRWVRYAHQHFSEMFP--DIPQQSGYNKRVRAASSLISLVITALARDTA-
+ISCef3.1|IS982|None|Transposase|Corynebacterium   SRWVRYARAHLTGMFP--AMPQQSGYNKRIRAAGPLISAVITALAKDTA-
+ISClce1.1|IS982|None|Transposase|Clostridium      AWF-GFCSKNLRDLFP--NFCSRTRFHRVRKSLFRVTDAIRKEFMKFLN-
+ISCth1.1|IS982|None|Transposase|Clostridium       AWL-GFCKKNMRDLFP--KFCDRTRFNRTRRNLHAVIEEIRKELSNLTG-
+ISDds4.1|IS982|None|Transposase|Deinococcus       IWW-NILGE----DRP--NLPSYTQAFTRGQRLLEHLEALVS----P---
+ISDds5.1|IS982|None|Transposase|Deinococcus       IWW-NILRE----DRP--GLPSYTQAFTRGQRLLEHLEALVS----P---
+ISDge8.1|IS982|None|Transposase|Deinococcus       GWW-KLN------HCP--HFPSEVQARTRLERLTPVMERLAT----E---
+ISEfm1.1|IS982|None|Transposase|Enterococcus      ATY-RAVCSV---LFPNGDFASRSRFTRLSSNLAYTIKIIRYFFIKK-L-
+ISFba2.1|IS982|None|Transposase|Flavobacteria     SLF-KQ---ISLCEIP--NLIERSQFNKRRKKLFLFSEQIRTKLAAQFL-
+ISFtu4.1|IS982|None|Transposase|Francisella       TYYVEFIKIYWKHYFP--KAPSYNRFVLI-DIAMLPLIAFIS--SNH---
+ISGsp1.1|IS982|None|Transposase|Geobacillus       AWH-RFVTGN---LFTNGSFLERSRYNRRCRALGFAIKWIRHELAKR---
+ISGth1.1|IS982|None|Transposase|Geobacillus       AWH-RFVIGN---LFSKDLFPERSRYNRHCRALGFAIKWMRHQLAKR---
+ISLgar2.1|IS982|None|Transposase|Lactococcus      AKH-QLAQS----LF-P-DFLEYSRFVRRCNALLPSIQVIRQALVLKEI-
+ISLgar3.1|IS982|None|Transposase|Lactococcus      GIY-RLSSS----MF-GDDFPSETRFYRTINNLKPTIELMNQGLLKDNV-
+ISLh1.1|IS982|None|Transposase|Lactobacillus      RFC-EC-------F----NCLSHSRFNRRSRQLLQLIYQIRQEMNKKV--
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     RFC-RF-------F----VGLSHSRFNRRARQLLPLIYLIRHTLNQEV--
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     RFC-KF-------F----AGLSHSRFNRRSRQLLPLIYLIRHVLNQEV--
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     RFC-RF-------F----VGLSHSRFNRRARQLLLLIYLIRHTLNQEV--
+ISLla2.1|IS982|None|Transposase|Lactococcus       AKH-QLAQS----LF-P-NFLEYSRFVRRCNALLPSIQVIRQALVFKEV-
+ISLll1.1|IS982|None|Transposase|Lactococcus       AKH-QLAQS----LF-P-NFLEYSRFVRRCNALLPSIQVIRQALVFKEV-
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     RFW-RLMTA----FMPQKITISRSRFNRRALQLLPVVNAIRTGLTREA--
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      SFYLVYVCRHLQAEFP--KLPSYQRCVELLPRCVAPLAALFE--MLK---
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      -------------------------MCGTPARCVAPLAALFE--MLK---
+ISNsp1.1|IS982|None|Transposase|Nostoc            DIW-KYFHRHWLGLFP--QLKSRYAFIRQAANCWQYKELIQQKLAQYLG-
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    HFY-NYINFYLRNEFP--KLISYDRFVYLKKNMFVPLFAYLM--HRK---
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    HFY-GYVTKYLVKEFP--NLISYSRFVYLKKNLFVPLFAYLL--DKR---
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    TSR-KFLIEH--RYIM--NKLSKSALNRRIHQIPMKWWEEILEFIQKLKN
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        HAY-GALIEEM-KLFP---KIRYNKLTERLNRHEKLLLLAQEELFKK---
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     HFYLEHIWKYHHKDFP--TLLSYTRFVSVAPSVLVPLCSYLT--QLK---
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      HFYLEHIWKYHHKDFP--TLLSYPRFVSVAPSVLVPLCSYLT--QLK---
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  LLF-A-KLQEYRVEIP--NLISRRQYNDRRKITSSLCNAIRERMVSKMD-
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   MYYLHVIKGSMVKYFP--NSVSYNRFVELMPSILLPLCFFIA--AQG---
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    QIW-QYFTQHWQDWFP--AIGSYPNFAKHCANLWQVKQQIQDKVSQIEG-
+ISRa1.1|IS982|None|Transposase|Riemerella         QLF-RK---LPNS-LI--NKIERSVYNKRKRRLSLQTEQIRQRISMEFN-
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     AWF-SFVKRNYRHLFP--QLCSRSRFNRTRRALMQTTELLRQKMISVFP-
+ISSa4.1|IS982|None|Transposase|Streptococcus      HFY-RICHL----F-PCGCLLERSRFNRRARQLIWLVQIIRQAMNSH---
+ISScr1.1|IS982|None|Transposase|Streptococcus     HFY-RLCHL----F-PCGQLLERSRFNRRARQLVWLVQVIRQAMNTQ---
+ISSde7.1|IS982|None|Transposase|Shewanella        NYYTGYLARFFKSDFP--HLLSYTRFLELMPTAVVPLCSYFS--SIR---
+ISSmu5.1|IS982|None|Transposase|Streptococcus     RFY-QLCQV----F-LVTTGLERTRFYRRARYLIPLLKRIHQGMTSQ---
+ISSod20.1|IS982|None|Transposase|Shewanella       NFYIGYLAHFYKSAFP--NLLSYTRFLEVMPTALVPLCSDFT--CLK---
+ISSpy2.1|IS982|None|Transposase|Streptococcus     HFY-RICQL----F-PCGHLLERSRFNRRARQLIWLVQVIRQAMNAR---
+ISSsu12.1|IS982|None|Transposase|Streptococcus    HFY-SICHL----F-PCGQLLERSRFNRRSKQLIWLVQLIRKAMSEI---
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     SAH-QFFMSM--KPS---YPIDYSRFIRRLNNLHNAIDYAFQLLSEVFY-
+ISTli1.3|IS982|None|Transposase|Thermococcus      HAY-RVLIEEM-K------------LTERLNRHEKLLLLAQEELFKK---
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        NFYIGLVHQYWKGYFP--NLLSYTRFVSKMPSLIAPMCAYFQ--SIK---
+ISWpi16.1|IS982|None|Transposase|Wolbachia        AFYLCYLQLFYRSEFS--KLPSYHRFIALKPRVLWYLALLLQWFCEQ---
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       TFYIEHVKQYFTADFP--GLVSYTRILTLKKRALIPLCAFLS--SRK---
+
+IS1187.1|IS982|None|Transposase|Bacteroides       -G-GEEQFFVDSKPIEVCRVARGKR-CKMGRAGNFSQAPDFGFCASQNTY
+IS1592.1|IS982|None|Transposase|Pasteurella       -GSCTGISFVDATKLSVCHNRRIKR-HKVFEG-----IAQRGKTS--MGW
+IS1599.1|IS982|None|Transposase|Moraxella         -GDCTGISYIDSTKIAVCHNKRIYR-HKVFEG-----LATRGKSS--MGW
+IS19.1|IS982|None|Transposase|Lactococcus         -TKGELVGIIDSFPSPLCKPVRNRQ-AKLLNQ-----IAKVGYNSTKRSY
+IS195.1|IS982|None|Transposase|Porphyromonas      -GQCTGISFIDSTPLKACHIKRAHG-HRTMRG-----WAQKGKST--MGW
+IS233A.1|IS982|None|Transposase|Bacillus          --KNVMTAIVDSFPSPFCKKIRNRR-AKVLGS-----IAEIGYNSTKEMY
+IS982.1|IS982|None|Transposase|Lactococcus        --EGMSVSIIDSFPIPLCQPIRNFR-SKGLGD-----YANVGYNATKGQY
+IS982B.1|IS982|None|Transposase|Lactococcus       --EGMSVSIIDSFPIPLCQPIRNFR-SKVLGD-----YANVGYNATKGQY
+IS982C.1|IS982|None|Transposase|Lactococcus       --EGMSVSIIDSFPIPLCQPIRNFR-SKVLGD-----YANVGYNATKGQY
+ISAba4.1|IS982|None|Transposase|Acinetobacter     -KDESSYLWIDSTPLPVCKNKRIPKGHHALDE-----IASRGKST--MGW
+ISAba6.1|IS982|None|Transposase|Acinetobacter     -VHSAGIAFIDSTKLAVCHNKRIHQ-HRVFAD-----SASRGKTS--VDW
+ISAba825.1|IS982|None|Transposase|Acinetobacter   ---QDHIHFIDGFPIPVCRYSRAKR-HKNFKE-----HAGFSYCAAQQEK
+ISAba9.1|IS982|None|Transposase|Acinetobacter     ---SDNIHFIDGFPLPVCSYTRARK-HKNFKE-----YAGFSYCAAKQEK
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    -DQATQYLWIDSTTLPVCKNQRIQR-HKSLVQ-----IASRGRSS--MGW
+ISBs1.1|IS982|None|Transposase|Bacillus           -RPTSCLCVVDSLPLPLCHTARMHR-VKRFQE-----IADIGYCASKKQW
+ISCaa5.1|IS982|None|Transposase|Candidatus        -VATCKDFVLDSFPVPVCDNIRISR-CKLLQS-----EAYRGYKASMRRY
+ISCca1.1|IS982|None|Transposase|Candidatus        -KTRTGCYFMDSTAIKVCKVQRACS-NKVFKS-----IATKGKTT--TGW
+ISCca4.1|IS982|None|Transposase|Candidatus        -KTRTGCYFMDSTAIKVCNIKRAYA-HKVFKT-----IASKGKTT--TGW
+ISCef2.1|IS982|None|Transposase|Corynebacterium   -SWYDLCRLLDSTPIPCAMSRETVK-RSDLAG-----YANYGYCASHSRY
+ISCef3.1|IS982|None|Transposase|Corynebacterium   -SWHEILRLLDSTPVPCGTSRKTVK-RSDLVG-----HAGYGYCASHSRF
+ISClce1.1|IS982|None|Transposase|Clostridium      -YQYDRIRIVDSMPIPVCKFGRAHF-HKSFKP-----KAAYGRCASKKET
+ISCth1.1|IS982|None|Transposase|Clostridium       -YAQQPYRIVDSIPIPVCKFGRAKF-HKTFRG----FGATYGKCPSKKEI
+ISDds4.1|IS982|None|Transposase|Deinococcus       -PLPCTEVVVDSMPLPVCRPKRGKR-CA-FPG------ARWGFGT--QGD
+ISDds5.1|IS982|None|Transposase|Deinococcus       -PLPCTDVVVDSMPLPVCRPKRGKR-CA-FPG------ARWGYGT--QGD
+ISDge8.1|IS982|None|Transposase|Deinococcus       -VQALDFVAVDSEPLPVCTFKRAPR-CK-FKG------ARHGFST--AGP
+ISEfm1.1|IS982|None|Transposase|Enterococcus      -TKGELVGIIDSFPSPLCKPVRNRQ-AKLLNQ-----IAKVGYNSTKRSY
+ISFba2.1|IS982|None|Transposase|Flavobacteria     -R-FEDYFIIDSMPLEICKFSRHNR-IKICKD-DFETAPSKGFCASQNNW
+ISFtu4.1|IS982|None|Transposase|Francisella       -ANHTDLYFIDATKPPVCHNLRESR-HKVFKG-----LAAKG------SW
+ISGsp1.1|IS982|None|Transposase|Geobacillus       -GQHHAYAVVDSLPLPLCHPARMQR-VKRFRG-----IADMGYCASKKQW
+ISGth1.1|IS982|None|Transposase|Geobacillus       -GQHHAYAVVDSLPIELCHSSRMYR-AKRFRG-----IADIGYCASKKIA
+ISLgar2.1|IS982|None|Transposase|Lactococcus      --EGISVSIIDSFPIPLCQPIRNFR-SNVLGE-----YANIGYNATKEQY
+ISLgar3.1|IS982|None|Transposase|Lactococcus      -SEEEKLGIIDSLPIPLCQPIRNFR-AHGASE-----IADIGYNATKKIW
+ISLh1.1|IS982|None|Transposase|Lactobacillus      -DLNGQFLIIDSFPAPVCQPIRNYR-AKIFGG-----YANIGYKATKKIY
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     -DLSGKILIIDSFPVPVCQPVRNYR-VKIFHD-----IADIGYKATKKVY
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     -DLSGKILIIDSFPVPVCQPVRNYR-VKIFHD-----MADIGYKATKKVY
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     -DLSGKILIIDSFPVPVCQPVRNYR-VKIFHD-----IADIGYKATKKVY
+ISLla2.1|IS982|None|Transposase|Lactococcus       --EGISVSIIDSFPIPLCQPIRNFR-SKVLGD-----YANVGYNATKGQY
+ISLll1.1|IS982|None|Transposase|Lactococcus       --EGMSVSIIDSFPIPLCQPIRNFR-SKVLGD-----YANVGYNATKGQY
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     -AQPGQIAIIDSLPNPLCEPVRKFR-ARIFAG-----QANIGYNATKQMS
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      -GQCDGISIADATAIAVCDNRRIAR-HRVFAD-----SARRGKTS--MGW
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      -GQCDGISIADATAIAVCDNRRIAR-HRVSAD-----SARRGKTS--MGW
+ISNsp1.1|IS982|None|Transposase|Nostoc            -AYSDQLHLIDGLPIPLCGLSRAPN-CRSFKS-----LADYGFCAAKKQT
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    -GKVTGIAFIDSTSIAVCHNKRISR-NKVFAG-----LAKRGKNT--SGW
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    -GEITGIAFIDSTSIDVCHNKRIKR-NKVFKG-----LAKRGKTT--SGW
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    FGKLPFEYIVDAFPVSVCRNIRIQN-CRIYRG-----EEFRGYNASKREY
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        -HAREYVRILDSKPIQTKELARKNRKDKEGSSEIISEKPAVGFVPSKKKF
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     -GKPTKIAFIDSTSLCVCHNIRIPR-HKVFKG-----IAQRGKTS--MGW
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      -GKPTGIAFIDSTRLSVCHNIRIPR-HKVFAG-----IAKRGKNS--MGW
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  -G-GEDYFCIDSKPIEVCRIARSKR-CSMGKK-DFRKAPGVGYCASQSMY
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   -KTATGIYFVDSTILRVCHEKRASQ-NRAFKG-----LAKKSKST--MGW
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    ---RDNIHFMDGFPIPVCHYGRAYR-HKNYQD-----LAAFSYCAAKQER
+ISRa1.1|IS982|None|Transposase|Riemerella         -E-FEDIFIVDSMPMKVCENARSTR-SKICKE-QSYSSPTYGYCASQKLY
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     -IPVSSYYIVDSFPLAVCKFGRARY-CKAFRG----HGADYGKCPSKKET
+ISSa4.1|IS982|None|Transposase|Streptococcus      -MSHETIVIIDSLPLLLCQPIRHHR-VRIFEG-----LADIGYNASKHLW
+ISScr1.1|IS982|None|Transposase|Streptococcus     -ISPDTIAIIDSFPLPLCQPVRNCR-TRIFND-----LADIGYNASKHLW
+ISSde7.1|IS982|None|Transposase|Shewanella        -SLPTGIEFVDSTSVKVCHNLRIPR-HKTLSG-----LARRGKGT--MGW
+ISSmu5.1|IS982|None|Transposase|Streptococcus     -FHQDDIVIMDSFPIPVCCPARHYK-VCIFRD-----QATISYNPSKKMW
+ISSod20.1|IS982|None|Transposase|Shewanella       -SEPTGTEFVDSTRIKVCHNLRIHR-HKTLAG-----LACRGKGT--MGW
+ISSpy2.1|IS982|None|Transposase|Streptococcus     -ISPDTIVIIDSFPLPLCQPVRNHR-AHIFKG-----VADIGYNTSKHLW
+ISSsu12.1|IS982|None|Transposase|Streptococcus    -LPSDKLAIVDSFPLPLCQPVRNHR-ATIFNG-----LADIGYNASKHLW
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     KTAKSTIYSVDSFPVEVCKIERSST-CNIYNH-----KDMKGYNASKKRF
+ISTli1.3|IS982|None|Transposase|Thermococcus      -HAREYVRILDSKPIQTKELARKNRKDKEGSLEVISEKPAVEFFPSK-KF
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        -GKPTGIAFVDSTSLKVCHNIRIPR-HKVFDG-----VAKRGKGT--MGW
+ISWpi16.1|IS982|None|Transposase|Wolbachia        -AKMTGTSYIDTSTIAVCHKKRISR-NKVFNH-----LAEISKST--YGW
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       -AQTQGIAFIDSTKIAVCHNLRIPR-HRVFEG-----MAQRGKTS--TGW
+
+IS1187.1|IS982|None|Transposase|Bacteroides       YFGYKLHALCGLSGVIHSYDLSKASVADLHYMK----DVKHT--------
+IS1592.1|IS982|None|Transposase|Pasteurella       FYGFKLHAIINHHGELLSIRVTPGNIDDREPLRQ---GLAND--------
+IS1599.1|IS982|None|Transposase|Moraxella         FYGFKLHAIINHKGELVSVKVTAGNTDDRVPVK----DMATP--------
+IS19.1|IS982|None|Transposase|Lactococcus         FYGLKIHMIVTKTGFPITYSITNPGVHDVKVLE----TLSEE--------
+IS195.1|IS982|None|Transposase|Porphyromonas      FYGFKLHIVINDRGEIINYQITPGNCDDREPLKDG--TFTKN--------
+IS233A.1|IS982|None|Transposase|Bacillus          YYGVKISAAVTESGFPIAYVVSSPKIHDVQLLE----TLINE--------
+IS982.1|IS982|None|Transposase|Lactococcus        FYGCKCHALVSESGYVIDYTITPASMADSSMTE----EVLSQ--------
+IS982B.1|IS982|None|Transposase|Lactococcus       FYGCKCHALVSESGYVIDYTITPASMADRSMTE----EVLSQ--------
+IS982C.1|IS982|None|Transposase|Lactococcus       FYGCKCHALVSESGYVIDYTITPASMADSSMTE----EVLSQ--------
+ISAba4.1|IS982|None|Transposase|Acinetobacter     FYGCKLHLLMNQEGEIVNSDLSNGHIADLKKVE----DLVNG--------
+ISAba6.1|IS982|None|Transposase|Acinetobacter     FYGFKIHLICDHIGRLVSYCITTGNVDDRKVLPDL--IEHSK--------
+ISAba825.1|IS982|None|Transposase|Acinetobacter   YYGFKGHLVINLEGMITGYTFAPANVDERDVAP----EITEN--------
+ISAba9.1|IS982|None|Transposase|Acinetobacter     YYGFKAHIVINLSGMISGYTFAPAHCDERDVAP----EITND--------
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    FYGCKLHIAMNQFGEIACSALSNGHVADIKMVE----QLVAG--------
+ISBs1.1|IS982|None|Transposase|Bacillus           YYGLKLHLQVTDQGLPMGYVVTEASCHDRIAAE----SVMTQ--------
+ISCaa5.1|IS982|None|Transposase|Candidatus        FYGIKVQLITTDCGIPVEFSIVAGSQADVKGLH----QLPFS--------
+ISCca1.1|IS982|None|Transposase|Candidatus        FFGFKLHLIVNDLGEIMNFTLTPGRVKDRFPAK----SLCKN--------
+ISCca4.1|IS982|None|Transposase|Candidatus        FYGIKLNLIVNDLGEIMNFSLTTGKSNDRWPVE----NLCKN--------
+ISCef2.1|IS982|None|Transposase|Corynebacterium   FWGFRLYLVCAPDGMPVIWGLADPKIGEREAAM----VLLAHDQH-----
+ISCef3.1|IS982|None|Transposase|Corynebacterium   FWGFRLYLVCTPDGMPVIWGLANPKIGERETTQ----VLLDHDCH-----
+ISClce1.1|IS982|None|Transposase|Clostridium      YYGFKLHALVALDGYITDFSITAANIDDRDAVW----ELIDN--------
+ISCth1.1|IS982|None|Transposase|Clostridium       YLGYKLHMLATLDGFITDFAITPANVDDRAGVW----DLIDS--------
+ISDds4.1|IS982|None|Transposase|Deinococcus       FFGFKLHAWVSPAGQVMQYLIRPANLHDTTVAY----ELNRRWVDF----
+ISDds5.1|IS982|None|Transposase|Deinococcus       FFGFKLHAWVSPAGQVMQYLIRPANLHDTTVAY----ELNRRWADF----
+ISDge8.1|IS982|None|Transposase|Deinococcus       VYGFKLHAWTTLNGKIAKYEIRPANEHDFTVGC----VMNQDWPAYGRNG
+ISEfm1.1|IS982|None|Transposase|Enterococcus      FYGLKIHMIVTKTGFPITYSITNPGVHDVKVLE----TLSEE--------
+ISFba2.1|IS982|None|Transposase|Flavobacteria     FFGYKLHGVCSVTGVFHSLDITKAEVHDVHFLK----NIKQQ--------
+ISFtu4.1|IS982|None|Transposase|Francisella       FFSFKLDLLTNDVGEIVSINISPGNKDDRSFLT----KLCKG--------
+ISGsp1.1|IS982|None|Transposase|Geobacillus       YYGFKLHLQVTNQGLAMGYVVTEASCHDVKAAE----TVMTQ--------
+ISGth1.1|IS982|None|Transposase|Geobacillus       FYGLKLHLQVTDQGLPMGYVVTEASCHDRVAAE----TVMTQ--------
+ISLgar2.1|IS982|None|Transposase|Lactococcus      FYGCKCHALVSESGYVIDYVITPASIADSTMAE----EVVAH--------
+ISLgar3.1|IS982|None|Transposase|Lactococcus      FYGLKFHAIVNPSGLILNFVLSSASFHDAKVCE----DCLTD--------
+ISLh1.1|IS982|None|Transposase|Lactobacillus      FYGFKVHAIVSDDGYILDYVVTKASVHDAKETV----ELMEN--------
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     YYGFKVHAIVSDDGYLLDYAVTKASVHDAKETV----ELMNN--------
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     YYGFKVHAIVSDDGYLLDYAVTKASVHDAKETT----ELMAN--------
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     YYGFKVHAIVSDDGYLLDYAVTKASVHDAKETV----ELMNN--------
+ISLla2.1|IS982|None|Transposase|Lactococcus       FYGCKCHALVSESGYVIDYTITPASMADSSMAK----EVLSQ--------
+ISLll1.1|IS982|None|Transposase|Lactococcus       FYGCKCHALVSESGYVIDYTITPASMADSSMTE----EVLSQ--------
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     FYGFKTHMLVTTDGYILNYVVTAASVHDTKVAV----SLIDD--------
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      FYGFKLHAIINSRGELIRLRLTAGNVDDRKPMP----DLCQG--------
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      FYGFKLHAIINSRGELIRLRLTAGNVDDRKPMP----DLCQG--------
+ISNsp1.1|IS982|None|Transposase|Nostoc            YYGFHGHLIVSGTGVISGFTLTPANGSERDALW----DLITR--------
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    FYGFKLHIINNDSGEILAFQLTPGNVSDVSMAE----TLSKG--------
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    FFGFKLHLMINEKGEILAFQLTPGNVADVSIAE----TLSKG--------
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    FYGLKVTVLASQDGCPFRVILCPGREHDAVPFK----YMERN--------
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        YYGYKLTCYS-DGNLLALLSVDPANKHDVSVVREKFWVIVEE--------
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     FYGFKLHLVVNHQGEILALKVTPGNVNDREPVR----ELSKS--------
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      FYGFKLHLVVNHQGEILALKVTPGNVDDREPVR----ELSKE--------
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  YYGYKLHAVCWLSGIIHSFDLTKASVHDIHYLK----DVKVD--------
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   YYGFKLHIIVNDMGELMAFKMSKATTDDRVVLP----KMAEN--------
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    YYGFEGHLLVNLSGMIKGFTVAPANVDERAVAP----DITDH--------
+ISRa1.1|IS982|None|Transposase|Riemerella         FYGYKLHAVCSLNGVIKNFDISPASVHDIHYLK----DIGEQ--------
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     YYGYKVHALITLEGYIASFEITPASTDDREGLR----DLADH--------
+ISSa4.1|IS982|None|Transposase|Streptococcus      FYGFKVHMLVTLSGYILNYVVTSASVHDIRAVD----DLLEN--------
+ISScr1.1|IS982|None|Transposase|Streptococcus     FYGFKVHMLVTLSGYILNYVVTPASVHDIRTVD----DLLEN--------
+ISSde7.1|IS982|None|Transposase|Shewanella        FYGFKLHLIVNHKGGIVAAKITPANTHDTKPVS----GMVVN--------
+ISSmu5.1|IS982|None|Transposase|Streptococcus     FYGFKAHMLVTLSGFIVNYVVTPASVHDRQVAE----DLLEN--------
+ISSod20.1|IS982|None|Transposase|Shewanella       FYGFKLHLIVNHQGGIVAAKVTPANVHDTKPMN----EMVRS--------
+ISSpy2.1|IS982|None|Transposase|Streptococcus     FYGFKVHMLVTLSGYILNYVVTPASVHDIKAVH----ELLEE--------
+ISSsu12.1|IS982|None|Transposase|Streptococcus    FYGFKVHMLVTLSGFILNYVVTPASVHDIKVVY----ELLEG--------
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     FYGFKVHMVVTTNKEPLHCYISYANEHDATAAK----RYLPA--------
+ISTli1.3|IS982|None|Transposase|Thermococcus      YYGYKLTCYS-DGNLLALLSVDPANKHDVSVVREKFWVIVEE--------
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        FFGFKLHLLINHLGEIISLKITAGNVNDRTPVP----DLCKE--------
+ISWpi16.1|IS982|None|Transposase|Wolbachia        FFGFKLHLVINEIGEIQALTLTKGNVDDRKPLP----TLTKR--------
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       FYGFKLHLVINDCGELLAVKLTAGNQDDRQPVR----ALTKG--------
+
+IS1187.1|IS982|None|Transposase|Bacteroides       ------YH--DCSIYGDKGYIGADVQLDLFETAHIRLECPYRLNQKDW-K
+IS1592.1|IS982|None|Transposase|Pasteurella       ------IF---GKLFGDRGYVSQDLKDKLFNDFNIDFITKLRRNMKQQ-I
+IS1599.1|IS982|None|Transposase|Moraxella         ------VF---GKVFGDRGYISKALNAWLTKHSDTTLITKLRRNMKPQ-L
+IS19.1|IS982|None|Transposase|Lactococcus         ------AN--LPNILGDKGYISHKIHEKLA-LKGITISVPPRKNMDKS-E
+IS195.1|IS982|None|Transposase|Porphyromonas      ------LF---GKLIADRGYISQNLFDRL-FVDDIHMITKIKKNMKNS-L
+IS233A.1|IS982|None|Transposase|Bacillus          ------TETPVAHILGDKGYISSSIQEKIA-RKGVTVTTPLRKNMKDA-D
+IS982.1|IS982|None|Transposase|Lactococcus        ------FG--TPTVLGDMGYLGQSLHDRLE-LEGIDLMTPVRKNMKQK-N
+IS982B.1|IS982|None|Transposase|Lactococcus       ------FG--TPTVLGDMGYLGQSLHDRLE-LKGIDLMTPVRKNMKQK-K
+IS982C.1|IS982|None|Transposase|Lactococcus       ------FG--TPTVLGDMGYLGQSLRDRLE-LKGIDLMTPVRKNMKQK-K
+ISAba4.1|IS982|None|Transposase|Acinetobacter     ------LS---ATVYGDRGYISQPLKETL-KEQGIDLITYPRKNMRVT-L
+ISAba6.1|IS982|None|Transposase|Acinetobacter     ------LK---GKLFGDRGYVGKNWKSHL-AEVGVQLITRVKRNMKPQ-V
+ISAba825.1|IS982|None|Transposase|Acinetobacter   ------IH---GLLGADKGYLRPSLKEYYK-FQYVDLQTPLRKNMPDS-R
+ISAba9.1|IS982|None|Transposase|Acinetobacter     ------IY---GLLGADKGYLRPELKRYYE-YQGIDLQTPFRKNMIDF-R
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    ------IE---ALLYGDRGYISQELKIRL-KDQGIDLITYHRKNMRAI-Q
+ISBs1.1|IS982|None|Transposase|Bacillus           ------IP--HPYNFGDKGFISRDLQKRLYEEYQMALWTPSRKNQKHR-A
+ISCaa5.1|IS982|None|Transposase|Candidatus        ------MP-AGSALYADSAYTNYHLEDMLADD-RIKLYSQRKSNAHRK-D
+ISCca1.1|IS982|None|Transposase|Candidatus        ------LI---GKVFSDKGYISKELFEKL-MEKGIELITHIKKNMKNA-F
+ISCca4.1|IS982|None|Transposase|Candidatus        ------LI---GKVFADKGYLSKELFEKL-MGKGIELITQIRKNMKNA-F
+ISCef2.1|IS982|None|Transposase|Corynebacterium   ------LLSTGQVIVADKGFAGCDFEGFISHELGVELIRPDRKNEAHR-Y
+ISCef3.1|IS982|None|Transposase|Corynebacterium   ------LVHDGQVILADKGFAGKEFEAFVTDELGAHLVRPDRKDEKPR-F
+ISClce1.1|IS982|None|Transposase|Clostridium      ------SV--VNTLIGDKGYIGQKIASQLKEIMDINLLTISRNNSKIK-L
+ISCth1.1|IS982|None|Transposase|Clostridium       ------YR--RITLIGDKGYIGTEFAVELKEEKEIEILPVKRSNSKLQ-F
+ISDds4.1|IS982|None|Transposase|Deinococcus       ---------AGPQIIGDKGYCA------------LGFIYPPKKNTRY--D
+ISDds5.1|IS982|None|Transposase|Deinococcus       ---------GGPRVIGDKGYCA------------LGFIYPPKKNTRY--D
+ISDge8.1|IS982|None|Transposase|Deinococcus       VLRGVRSRRTGPKQIGDKGYQS------------GTYLTPPKKNAKRS-D
+ISEfm1.1|IS982|None|Transposase|Enterococcus      ------AN--LPNILGDKGYISHKIHEKLA-LKGITISVPPRKNMDKS-E
+ISFba2.1|IS982|None|Transposase|Flavobacteria     ------MS--DCVLLGDRGCLSESIQLDLFQSVNIKLETPKRMNQLNY-K
+ISFtu4.1|IS982|None|Transposase|Francisella       ------LK---GLVFGDRGYISKDKAQLL-EQQGLKLITTLKKNIKKV-P
+ISGsp1.1|IS982|None|Transposase|Geobacillus       ------IP--HPYNFGDKGYISHALREKLYKEHQAAFWTPSRHNQKHG-P
+ISGth1.1|IS982|None|Transposase|Geobacillus       ------IP--HPYNLGDKGYISQKLQKKLYEEHRVAFWTPVRKNQRIL-Q
+ISLgar2.1|IS982|None|Transposase|Lactococcus      ------FG--TATVLGDMGYLGHALHDRLK-LKGIELITPVRKNMKKK-I
+ISLgar3.1|IS982|None|Transposase|Lactococcus      ------FH--LPILIGDAGYVGQALAGRCA-EKGTALLATPRSNMSKT-G
+ISLh1.1|IS982|None|Transposase|Lactobacillus      ------THPSNYYLLGDEGYLGKELHQQLK-QMGYELWTPYRKNMTGA-K
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     ------AHPTNHYLLGDEGYLGKDLAAKLK-QMSYVLWTPYRKNMQGA-K
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     ------AHPVNHYLLGDEGYLGKDLAFKLN-QMGYKLWTPYRKNMQGA-K
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     ------AHPTNHYLLGDEGYLGKDLAAKLK-HMGYVLWTPYRKNMQGA-K
+ISLla2.1|IS982|None|Transposase|Lactococcus       ------FG--TPIVLGDMGYLGQVLHDRLE-LKEIELITPVRMNMKKK-D
+ISLll1.1|IS982|None|Transposase|Lactococcus       ------FG--TPTVLGDMGYLGQSLHDRLE-LEGIDLITPVRKNMKQK-K
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     ------CP--CPIVLADVGYVGKRLGAEFK-QLGYTLWTPYRSNMKGA-K
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      ------LF---GQLFADKGYLAQWLTEAL-DQQNLQLITPLRKNMRPV-P
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      ------LF---GQLFADKGYLAQWLTETL-DRQNLQLITPFKKNMKPA-P
+ISNsp1.1|IS982|None|Transposase|Nostoc            ------IK---GLLIGDKGYLSQFLSGELK-EVGITLQTPLRSNMSDS-R
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    ------LF---GKLFGDKGYISGKLTESL-LEQGLELFTSVRANMKQK-L
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    ------IF---GKLFGDKGYISKELSKRL-LKQGLELFTTLRSNMKQN-L
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    ------LP-AGSKIYGDSAYVDYKHQDMLEKIENIKLIVEPKSNSLRS-I
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        ------FS--GCFLFLDKGYVSRELQEEFL-KFGVVYTPVKRENQVSNLE
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     ------LT---GYLYGDKGYLSQELADDL-AKIGVTFITKKRRNMKAQ-A
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      ------LT---GSLYGDKGYLSQELADDL-AKTDVTFITKKRRNMKAS-M
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  ------YS--NCTVIGDRGYISAQVQLDLFETANIRLEVPYRCNQKEW-K
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   ------LT---GKIIGDKGYISQKLFDQL-YEKGLQLITKIRKNMKNK-L
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    ------IH---GLLGADKGYISPSLTSYYD-AQGVDLQTPLRANMKED-R
+ISRa1.1|IS982|None|Transposase|Riemerella         ------MR--NCTLIGDRGYLSAKVQIDLFNYANIKLDTPMRSNQKDY-I
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     ------WS--NVTILADKGYVGKNMKQEMQ-EKNICLFALKRSNSKEN-W
+ISSa4.1|IS982|None|Transposase|Streptococcus      ------CR--QPYILADLGYLSRDLKDHLV-QKGYHLWTPLRQNMEGS-K
+ISScr1.1|IS982|None|Transposase|Streptococcus     ------CR--QPYILADLGYLSRELKDHLV-QKGYHLWTPLRQNMAGA-K
+ISSde7.1|IS982|None|Transposase|Shewanella        ------AM---DKLYADKGYISKALASEL-LEQGVTLVNNVRKNMKKK-V
+ISSmu5.1|IS982|None|Transposase|Streptococcus     ------TP--FPIVLADLGYLSQVLKQHLT-QRGYHFWTPLRRNMANA-K
+ISSod20.1|IS982|None|Transposase|Shewanella       ------DM---DKLYADKGFISKALSSEL-QEKGVTLVTNVRKNMKEK-V
+ISSpy2.1|IS982|None|Transposase|Streptococcus     ------CD--QSIILADLGYLSRELKNNLE-QKGYQLWTPLRQNMTGA-K
+ISSsu12.1|IS982|None|Transposase|Streptococcus    ------CK--QSVILGYLGCLSSELKKDLE-QQGYHLWTPFRQNMTGA-K
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     ------MK-ANSSVIGDKGYVSKKLATFLTKFG-VNLNAIQRSNM----G
+ISTli1.3|IS982|None|Transposase|Thermococcus      ------FS--GCFLFLDKGYVSRGLEEEFL-RFGVVYTPVKRGNQISNLE
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        ------LS---GKLYADKGYIGKKLSESL-KNSDVDLVTTSRKNMKAK-E
+ISWpi16.1|IS982|None|Transposase|Wolbachia        ------LT---GLLFGDKGYIKKELFEKL-FDRGLKLVTKVKKGMKNA-L
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       ------LT---GCLYGDKGYLSQALCDEL-EAEGVTLITNVRNNMKTK-A
+
+IS1187.1|IS982|None|Transposase|Bacteroides       PTF--IPFAKARKRIETIFSQLTDQFLVIRNYAKITNGLFARIIGKISAL
+IS1592.1|IS982|None|Transposase|Pasteurella       LKPIDEALLNGRSLIETVFDELKNLCQIEHSRHRSFTGFAANLLAGLIAY
+IS1599.1|IS982|None|Transposase|Moraxella         LKPMDEVLLNHRSLVETVFGELKNLCQIEHSRHRSVTGFITNLLSGLIAY
+IS19.1|IS982|None|Transposase|Lactococcus         KLDH-SLLGKQRKTVETVFSSL-EKLGCQNFNSRSVKGLESRFESILLAY
+IS195.1|IS982|None|Transposase|Porphyromonas      MHLYDKVLLRKRALIETVNDMLKNVCQIEHTRHRSVNNFVTNLISGIIAY
+IS233A.1|IS982|None|Transposase|Bacillus          KIND-TLLGKRRKKIETVFSSL-ERLGIQDFRSRSILGFKSRLESILLVY
+IS982.1|IS982|None|Transposase|Lactococcus        -ILF-PNFSKRRKVIERVFSFL-TNLGAERCKSLSPQGFQLKLEMILLAY
+IS982B.1|IS982|None|Transposase|Lactococcus       -ILF-PNFSKRRKVIERVFSFL-TNLGAERCKSRSPQGFQLKLEMILLAY
+IS982C.1|IS982|None|Transposase|Lactococcus       -ILF-PNFSKRRKVIERVFSFL-TNLGAERCKSRSPQGFQLKLEMILLAY
+ISAba4.1|IS982|None|Transposase|Acinetobacter     LPFSDEFHLRQRKRIETLIGLLKEKYHLVTSKHRSIAGFLAGVFSSLCAY
+ISAba6.1|IS982|None|Transposase|Acinetobacter     LAPFDHAVLRKRGIIEAPFKLMKSQFDLEHSRHRSKMGLLTTIFAALTLY
+ISAba825.1|IS982|None|Transposase|Acinetobacter   SQESMRLLMRARRKIETVIGQLTDRFNIQKVRARDLWHLSHRFIRKILSH
+ISAba9.1|IS982|None|Transposase|Acinetobacter     PKETLQILMKARRKIETVIGQLTDRFHIQKVRAKDLWHLTHRITRKILSH
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    LCASDEYHLRQRNKIETLFSLLKGQYNLVTSQARSLHGFLSGIYASLCAY
+ISBs1.1|IS982|None|Transposase|Bacillus           SEAWEKWIQQKRKVIETVFSVLVDHYRITGIRANSIIGFEVALDGILLAY
+ISCaa5.1|IS982|None|Transposase|Candidatus        TPSLAYLKERMRKVIETSISGI-KGLFLRKIHAVTFQGFLIKILLFLLAF
+ISCca1.1|IS982|None|Transposase|Candidatus        MTLWDKLMLRKRSIIETIIDQLKNISQIEHSRHRSIPNFIVNLIAGITAY
+ISCca4.1|IS982|None|Transposase|Candidatus        MPIWDRLMLRKRSIIETIIDQLKNISQIEHSRHRSIPNFIVNLIAGITAY
+ISCef2.1|IS982|None|Transposase|Corynebacterium   -----GDLGGIRQWVESVFDTLKDQLGLEHHRARSPGGVYAKVAGKLLAL
+ISCef3.1|IS982|None|Transposase|Corynebacterium   -----GALGGIRQWVESVFDTLKGQLGLEQHGGRTVEGVYARVAAKLLAL
+ISClce1.1|IS982|None|Transposase|Clostridium      LKPLRQLIFKARRRIETTFSQLSEQLNIQRVLAKSTWGFATRIVNKILAH
+ISCth1.1|IS982|None|Transposase|Clostridium       PKAIRQLIFKLRRRIETSASQLTQQLNIEKVLAKSYWGFLARVKTKLLAY
+ISDds4.1|IS982|None|Transposase|Deinococcus       TGWRENRHPRLRKRIETVFSQL-VESQIRSVQTKTLTSLRFRVVLAILAH
+ISDds5.1|IS982|None|Transposase|Deinococcus       TRWREDHHPKLRKRIETVFSQL-VEAQVRSVQSKTLTSLRLRVVLAVLAH
+ISDge8.1|IS982|None|Transposase|Deinococcus       PRWKEE-YAAARKIIESAFSVL-VGSGLRWGQVKTLVSLCLKVALLVLAH
+ISEfm1.1|IS982|None|Transposase|Enterococcus      KLDH-SLLGKQRKTVETVFSSL-EKLGCQNFNSRSVKGLESRFESILLAY
+ISFba2.1|IS982|None|Transposase|Flavobacteria     PQP--YIFRKSRKRIETLFSQLCDQFLIRRNYAKTFEGFKTRILAKITAL
+ISFtu4.1|IS982|None|Transposase|Francisella       KTRFEKAMLAKRSIIETIFDYLKNNVTLWHTRHRSINNPFTHLMAALAQF
+ISGsp1.1|IS982|None|Transposase|Geobacillus       SKAWEEWIRKKRKVIETVFSILVDQYRITDIRANSMAGFEVALDGILLAY
+ISGth1.1|IS982|None|Transposase|Geobacillus       SDAWKQWMKRKRKVIETVFSILVDSYRITEIRANSVSGFETALDGILLAY
+ISLgar2.1|IS982|None|Transposase|Lactococcus      -IAF-PDFSKRRKVIERVFSFL-TNLGAERCKSRSAYGFQVKLEMLLLAY
+ISLgar3.1|IS982|None|Transposase|Lactococcus      -IDY-RSVKAIRKSVETVFSSL-QGFGIEQLTAHQSYQIMTRVQLLILLY
+ISLh1.1|IS982|None|Transposase|Lactobacillus      KHND-HQLMAIRRTIESDFSLL-TYYNAENNRARSLIGFQSRLEIAILAY
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     KITI-IN-------------------------------------------
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     EHND-HQLMAIRRTIESDFSLL-SYYNAENNRARSLTGFQERLEAAVLAY
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     KHNN-HQLIAVRRTIESDFALL-SYYNAENNRARSLAGFQERLEVAVLAY
+ISLla2.1|IS982|None|Transposase|Lactococcus       -ITF-PIFSKRRKVIERVFSFL-TNLGAERCKNRSPQGFQLKLEMILLAY
+ISLll1.1|IS982|None|Transposase|Lactococcus       -ILF-PNFSKRRKVIERVFSFL-TNLGAERCKSRSPQGFQLKLEMILLAY
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     EHNK-RALKALRRTIESRFSTLVSDFGIETNLTRSAFGFQLKIELAILVY
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      RTRFEKVILRRRSLIETVFDELKNLCQIEHTRHRSLFNFIVNLMAGIVAY
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      RTGFEKAILRRRSLIETVFDELKNLCQIKHTRHRSFFNFVVNLMAGIVAY
+ISNsp1.1|IS982|None|Transposase|Nostoc            SRSSVRLMQRFRRLIETVIGQLVERFHIEKIRARDMWHLTSRLNRKILAH
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    MTFNDKILLRKRSLIETVNDQLKNISQIEHTRHRNIGNFLVNMLGGLAAY
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    MKLTDKILLRKRAIIETVNDQLKNISQIEHTRHRNAGNFLINLLAGIVAY
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    DLHDFVNLKHIRKFIEGVFGVI-SRLMPRKIHATTSNGFEIKVLGFLVAA
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        EKKFYKYLSDFRRRIETLFSKF-SEFLLRPSRSVSLRGLAVRILGAILAV
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     LSEWNNLMLKKRFIIETINGQLKTISQIEHSRHRSIKGFLLCVLGGLIAY
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      QAEWDKIMLKKRFIIETINGQLKTLSQIEHSRHRSIKGFLLCVLGGLIAY
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  PTF--PAFAKARKRIETLFSQLCDQFMIIRNYAKDTDGLFARIIGKISAL
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   VLMIDKILLKKRGIIA----------------------------------
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    PKPVVRRLMKARRIVETVIGQLSERFNIQRVRARDLWHLSHRLIRKILSH
+ISRa1.1|IS982|None|Transposase|Riemerella         PQF--SLYKKKRKRIETFFSQLCDQFMIKRNNAKTFEGFKTRIISKITAA
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     PKSVRQLIFKLRRRVETVFSQLSGQLNAERVLAKSFQGLCTRLVNKVLAY
+ISSa4.1|IS982|None|Transposase|Streptococcus      QHNH-WKLMTMRRTIETRFSELCSLFDIEHTLTRGLTGLQLSIEQMILAY
+ISScr1.1|IS982|None|Transposase|Streptococcus     QHNH-WKLMAMRRTIETRFSELCALFDVEHTLTRGLAGLQLRLEQIILTH
+ISSde7.1|IS982|None|Transposase|Shewanella        LSLWDRAMLSRRFIIETINDQLKNISQIEHSRHRSVHGFMLNMIGGLIAY
+ISSmu5.1|IS982|None|Transposase|Streptococcus     KHNH-WKLKAERRTIETRFSVLCSEFDIERPLARSLKGLELWLEQAIFAY
+ISSod20.1|IS982|None|Transposase|Shewanella       MSLWDRAMLSRRFIIETINDQLKNISQIEHSRHRSGHGFMLNMIAGLIAY
+ISSpy2.1|IS982|None|Transposase|Streptococcus     QHNH-WRVMAMRRTIETRFSELCSLFDIEHTLTRGVTGLQLRIEQIILAY
+ISSsu12.1|IS982|None|Transposase|Streptococcus    EHND-WKVMAMRRTIETRFSELCRLFDIEHTLTRSLAGLQLRIEQIILAH
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     EDKDCFIKRRLRKKVETVFSII-TGRFGNVIKATSIDGFLTKLKLFITAY
+ISTli1.3|IS982|None|Transposase|Thermococcus      EKKFYKYVSDFRRRVETLFFRF-SEFLLRLSRSVSLRGLTVRILGAILAV
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        ISAFDKAMLSKRYIIETINDQLKNISQIEHSRHRSVTGFMLNVISGVVAY
+ISWpi16.1|IS982|None|Transposase|Wolbachia        ISLKEKILLRKRSIIETVFDSLKNKFEIEHTRHRSPTNFLIHVFSVLISY
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       LSLWDRLMLRRRFLIETVVDQLKNISQIEHSRHRSQLGFLLEVAAGLIAY
+
+IS1187.1|IS982|None|Transposase|Bacteroides       TI-LQYVN-FINDKP-IGRIKYA-----LN----
+IS1592.1|IS982|None|Transposase|Pasteurella       CWFP-F-------KPT-LKNVSA-YGQAAKN---
+IS1599.1|IS982|None|Transposase|Moraxella         CWFP-Y-------KPT-IKNMPQ-QGQVATL---
+IS19.1|IS982|None|Transposase|Lactococcus         SVLLSRAQRR---FEGTLRYSLG-----Y-----
+IS195.1|IS982|None|Transposase|Porphyromonas      NILP-K-------KPE-LNIEII-RNPNFPISA-
+IS233A.1|IS982|None|Transposase|Bacillus          CLMLDKARER---FGNTLKYSLR-----CF----
+IS982.1|IS982|None|Transposase|Lactococcus        SLLLKSAKSL---EPETLRYSIG-----YQVMAK
+IS982B.1|IS982|None|Transposase|Lactococcus       SLLLKSAKSL---EPETLRYSIG-----YQVMAK
+IS982C.1|IS982|None|Transposase|Lactococcus       SLLLKSAKSL---EPETLRYSIG-----YQVMAK
+ISAba4.1|IS982|None|Transposase|Acinetobacter     QLCQKN-------KPK-IHVIKSLAYP-------
+ISAba6.1|IS982|None|Transposase|Acinetobacter     ALVL-V-------NGY-KSGIQQILKPIDLNSA-
+ISAba825.1|IS982|None|Transposase|Acinetobacter   TV-CVVMNKKCGYSP--IQFEKL-----I-----
+ISAba9.1|IS982|None|Transposase|Acinetobacter     TI-CVVLNKKLGHSP--IQFENL-----ILS---
+ISAcsp2.1|IS982|None|Transposase|Acinetobacter    QLTHQN-------KPT-IQIKESSA---------
+ISBs1.1|IS982|None|Transposase|Bacillus           SLVTLGLVER------------------------
+ISCaa5.1|IS982|None|Transposase|Candidatus        QINKAFLN--------------------------
+ISCca1.1|IS982|None|Transposase|Candidatus        GLKE-K-------KPA-IANIYT-TGLQ------
+ISCca4.1|IS982|None|Transposase|Candidatus        SLKE-K-------KPA-IDNIYT-TGLQ------
+ISCef2.1|IS982|None|Transposase|Corynebacterium   ASVI-WHNWRIGAPDK---RSLT-------AYDH
+ISCef3.1|IS982|None|Transposase|Corynebacterium   AAGI-WHNWLIDAPNK---RSLI-------AYDH
+ISClce1.1|IS982|None|Transposase|Clostridium      NL-CYFINKILNIGIDTAKIKTL-----IFG---
+ISCth1.1|IS982|None|Transposase|Clostridium       NL-CYYINKLIGRDINFSRIKEL-----VFG---
+ISDds4.1|IS982|None|Transposase|Deinococcus       NLMQP-----------------------------
+ISDds5.1|IS982|None|Transposase|Deinococcus       NLMHR-----------------------------
+ISDge8.1|IS982|None|Transposase|Deinococcus       NLKFLDLSP-------------------------
+ISEfm1.1|IS982|None|Transposase|Enterococcus      SVLLSRAQRR---FEGTLRYSLG-----Y-----
+ISFba2.1|IS982|None|Transposase|Flavobacteria     TL-VQYINKFIFDRP-INKIKNQ-----LI----
+ISFtu4.1|IS982|None|Transposase|Francisella       IINP-I-------KIN-NSKSLSMK---------
+ISGsp1.1|IS982|None|Transposase|Geobacillus       SLVTLGLVER------------------------
+ISGth1.1|IS982|None|Transposase|Geobacillus       SLVVLGLVER------------------------
+ISLgar2.1|IS982|None|Transposase|Lactococcus      SLLLKSAKSL---NSKTLRYSIG-----YQVMAK
+ISLgar3.1|IS982|None|Transposase|Lactococcus      NLLEVEAHKI---KPMTLKFSLG-----IKQLAS
+ISLh1.1|IS982|None|Transposase|Lactobacillus      NLAYCLERFN------------------------
+ISLhe1.1|IS982|None|Transposase|Lactobacillus     ----------------------------------
+ISLhe5.1|IS982|None|Transposase|Lactobacillus     NMAYCLERFN------------------------
+ISLhe7.1|IS982|None|Transposase|Lactobacillus     NMAYCLERFN------------------------
+ISLla2.1|IS982|None|Transposase|Lactococcus       SLLLKSAKSL---EPETLRYSIG-----YQVMAK
+ISLll1.1|IS982|None|Transposase|Lactococcus       SLLLKSAKSL---EPETLRYSIG-----YQVMAK
+ISLpl4.1|IS982|None|Transposase|Lactobacillus     NLGFFNFVTN------------------------
+ISNeu1.1|IS982|None|Transposase|Nitrosomonas      CLSD-N-------KPT-LNLTRV-NSLAKA----
+ISNeu2.1|IS982|None|Transposase|Nitrosomonas      CLSD-N-------KPT-LNLTRV-NTLVKA----
+ISNsp1.1|IS982|None|Transposase|Nostoc            TV-CFWLNRH-NCDP--LQFDDL-----VTEY--
+ISPasp1.1|IS982|None|Transposase|Parachlamydia    SHQR-K-------KPS-LNFREE-KFCVAIAA--
+ISPasp2.1|IS982|None|Transposase|Parachlamydia    THQP-K-------KPS-INLTEQ-HRLLLMAA--
+ISPasp3.1|IS982|None|Transposase|Parachlamydia    ATNFLIN---------------------------
+ISPfu3.1|IS982|None|Transposase|Pyrococcus        NLDRLYNFTDGGN---------------------
+ISPlu11.1|IS982|None|Transposase|Photorhabdus     SLKL-K-------KPS-LKIFYS-EKDILMTA--
+ISPlu6.1|IS982|None|Transposase|Photorhabdus      CLKL-K-------KPS-LKVFYS-EDDFSMTD--
+ISPrsp2.1|IS982|None|Transposase|Parabacteroides  TI-LQYIN-YKNEKP-IGRVKYA-----LF----
+ISPsa1.1|IS982|None|Transposase|Piscirickettsia   ----------------------------------
+ISPsma1.1|IS982|None|Transposase|Psychrobacter    NSAALILNKKLGNPP--LQFDLL-----ISS---
+ISRa1.1|IS982|None|Transposase|Riemerella         TV-IQYINKFIFQRK-LNHLKIS-----II----
+ISRmsp1.1|IS982|None|Transposase|Ruminococcus     NL-CIALNSIFGETCELGKIKKL-----IF----
+ISSa4.1|IS982|None|Transposase|Streptococcus      NLRYFEIN--------------------------
+ISScr1.1|IS982|None|Transposase|Streptococcus     NLRYFEIN--------------------------
+ISSde7.1|IS982|None|Transposase|Shewanella        QLKE-S-------KPQ-LNITDV-DFNAISVMA-
+ISSmu5.1|IS982|None|Transposase|Streptococcus     NLRFFN----------------------------
+ISSod20.1|IS982|None|Transposase|Shewanella       QLKD-N-------KPQ-LNITSA-EFNAIAVMAR
+ISSpy2.1|IS982|None|Transposase|Streptococcus     NLKYVEFN--------------------------
+ISSsu12.1|IS982|None|Transposase|Streptococcus    NLRYFEMN--------------------------
+ISSude1.1|IS982|None|Transposase|Sulfurimonas     SMDCFLKLSD---DE--KQLSI------------
+ISTli1.3|IS982|None|Transposase|Thermococcus      NLDRLYNFTGGGN---------------------
+ISVsa6.1|IS982|None|Transposase|Aliivibrio        CLKK-Q-------KPR-IKLSEC-EFELILA---
+ISWpi16.1|IS982|None|Transposase|Wolbachia        SMQS-K-------KPS-ISMPFF-IG--------
+ISXne5.1|IS982|None|Transposase|Xenorhabdus       TFQP-K-------KPS-LNLRDN-EIAIFKRS--
+//

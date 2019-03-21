@@ -1,0 +1,884 @@
+# STOCKHOLM 1.0
+
+#=GS               IS1004.1|IS200/IS605|IS200|Transposase|Vibrio DE    cholerae
+#=GS          IS1469.1|IS200/IS605|IS200|Transposase|Clostridium DE    perfringens
+#=GS            IS1541A.1|IS200/IS605|IS200|Transposase|Yersinia DE    pseudotuberculosis
+#=GS            IS1541B.1|IS200/IS605|IS200|Transposase|Yersinia DE    pseudotuberculosis
+#=GS            IS1541C.1|IS200/IS605|IS200|Transposase|Yersinia DE    enterocolitica
+#=GS            IS1541D.1|IS200/IS605|IS200|Transposase|Yersinia DE    enterocolitica
+#=GS            IS200.1|IS200/IS605|IS200|Transposase|Salmonella DE    typhimurium
+#=GS          IS200C.1|IS200/IS605|IS200|Transposase|Escherichia DE    coli
+#=GS           IS200F.1|IS200/IS605|IS200|Transposase|Salmonella DE    typhimurium
+#=GS             IS200G.1|IS200/IS605|IS200|Transposase|Yersinia DE    pestis
+#=GS           IS200H.1|IS200/IS605|IS200|Transposase|Salmonella DE    abortusovis
+#=GS        IS200S.1|IS200/IS605|IS200|Transposase|Streptococcus DE    pneumoniae
+#=GS              IS657.1|IS200/IS605|IS200|Transposase|Bacillus DE    halodurans
+#=GS       ISAac1.1|IS200/IS605|IS200|Transposase|Actinobacillus DE    actinomycetemcomitans
+#=GS      ISAac3.1|IS200/IS605|IS200|Transposase|Aggregatibacter DE    actinomycetemcomitans
+#=GS      ISAcma39.1|IS200/IS605|IS200|Transposase|Acaryochloris DE    marina
+#=GS            ISAsp20.1|IS200/IS605|IS200|Transposase|Anabaena DE    sp.
+#=GS            ISAzo20.1|IS200/IS605|IS200|Transposase|Azoarcus DE    sp.
+#=GS            ISBsph1.1|IS200/IS605|IS200|Transposase|Bacillus DE    sphaericus
+#=GS            ISBsph2.1|IS200/IS605|IS200|Transposase|Bacillus DE    sphaericus
+#=GS          ISCaa10.1|IS200/IS605|IS200|Transposase|Candidatus DE    Amoebophilus
+#=GS        ISCARN10.1|IS200/IS605|IS200|Transposase|Metagenomic DE    data
+#=GS         ISCth10.1|IS200/IS605|IS200|Transposase|Clostridium DE    thermocellum
+#=GS  ISDha13.1|IS200/IS605|IS200|Transposase|Desulfitobacterium DE    hafniense
+#=GS          ISDra9.1|IS200/IS605|IS200|Transposase|Deinococcus DE    radiodurans
+#=GS       ISEha1.1|IS200/IS605|IS200|Transposase|Ethanoligenens DE    harbinense
+#=GS      ISEnfa200.1|IS200/IS605|IS200|Transposase|Enterococcus DE    faecium
+#=GS      ISMba16.1|IS200/IS605|IS200|Transposase|Methanosarcina DE    barkeri
+#=GS      ISMba18.1|IS200/IS605|IS200|Transposase|Methanosarcina DE    barkeri
+#=GS         ISMco2.1|IS200/IS605|IS200|Transposase|Methanosaeta DE    concilii
+#=GS    ISMex20.1|IS200/IS605|IS200|Transposase|Methylobacterium DE    extorquens
+#=GS    ISMex34.1|IS200/IS605|IS200|Transposase|Methylobacterium DE    extorquens
+#=GS      ISMma21.1|IS200/IS605|IS200|Transposase|Methanosarcina DE    mazei
+#=GS       ISOih2.1|IS200/IS605|IS200|Transposase|Oceanobacillus DE    iheyensis
+#=GS         ISPin5.1|IS200/IS605|IS200|Transposase|Psychromonas DE    ingrahamii
+#=GS         ISPlu2.1|IS200/IS605|IS200|Transposase|Photorhabdus DE    luminescens
+#=GS         ISPlu5.1|IS200/IS605|IS200|Transposase|Photorhabdus DE    luminescens
+#=GS      ISPpr13.1|IS200/IS605|IS200|Transposase|Photobacterium DE    profundum
+#=GS       ISSep3.1|IS200/IS605|IS200|Transposase|Staphylococcus DE    epidermidis
+#=GS          ISSham1.1|IS200/IS605|IS200|Transposase|Shewanella DE    amazonensis
+#=GS          ISShes4.1|IS200/IS605|IS200|Transposase|Shewanella DE    sp.
+#=GS          ISShes8.1|IS200/IS605|IS200|Transposase|Shewanella DE    sp.
+#=GS          ISShwo2.1|IS200/IS605|IS200|Transposase|Shewanella DE    woodyii
+#=GS          ISSod23.1|IS200/IS605|IS200|Transposase|Shewanella DE    oneidensis
+#=GS        ISSpn6.1|IS200/IS605|IS200|Transposase|Streptococcus DE    pneumoniae
+#=GS        ISSsu4.1|IS200/IS605|IS200|Transposase|Streptococcus DE    suis
+#=GS      ISStin10.1|IS200/IS605|IS200|Transposase|Streptococcus DE    iniae
+#=GS       ISStrs1.1|IS200/IS605|IS200|Transposase|Streptococcus DE    salivarius
+#=GS              ISW1.1|IS200/IS605|IS200|Transposase|Wolbachia DE    sp.
+#=GS       IS1253A.1|IS200/IS605|IS605|Transposase|Dichelobacter DE    nodosus
+#=GS       IS1253B.1|IS200/IS605|IS605|Transposase|Dichelobacter DE    nodosus
+#=GS          IS605.1|IS200/IS605|IS605|Transposase|Helicobacter DE    pylori
+#=GS          IS606.1|IS200/IS605|IS605|Transposase|Helicobacter DE    pylori
+#=GS           IS609.1|IS200/IS605|IS605|Transposase|Escherichia DE    coli
+#=GS          IS8301.1|IS200/IS605|IS605|Transposase|Deinococcus DE    radiodurans
+#=GS       ISAba30.1|IS200/IS605|IS605|Transposase|Acinetobacter DE    baumannii
+#=GS           ISAeme8.1|IS200/IS605|IS605|Transposase|Aeromonas DE    media
+#=GS            ISAs26.1|IS200/IS605|IS605|Transposase|Aeromonas DE    salmonicida
+#=GS             ISAsp6.1|IS200/IS605|IS605|Transposase|Anabaena DE    sp.
+#=GS             ISBce3.1|IS200/IS605|IS605|Transposase|Bacillus DE    cereus
+#=GS            ISBth16.1|IS200/IS605|IS605|Transposase|Bacillus DE    thuringiensis
+#=GS         ISCARN6.1|IS200/IS605|IS605|Transposase|Metagenomic DE    data
+#=GS          ISCbt1.1|IS200/IS605|IS605|Transposase|Clostridium DE    botulinum
+#=GS          ISCbt2.1|IS200/IS605|IS605|Transposase|Clostridium DE    botulinum
+#=GS        ISCco1.1|IS200/IS605|IS605|Transposase|Campylobacter DE    coli
+#=GS         ISClte2.1|IS200/IS605|IS605|Transposase|Clostridium DE    tetani
+#=GS          ISCpe2.1|IS200/IS605|IS605|Transposase|Clostridium DE    perfringens
+#=GS ISCsa5.1|IS200/IS605|IS605|Transposase|Caldicellulosiruptor DE    saccharolyticus
+#=GS         ISCysp13.1|IS200/IS605|IS605|Transposase|Cyanothece DE    sp.
+#=GS         ISCysp14.1|IS200/IS605|IS605|Transposase|Cyanothece DE    sp.
+#=GS         ISDge10.1|IS200/IS605|IS605|Transposase|Deinococcus DE    geothermalis
+#=GS      ISDka2.1|IS200/IS605|IS605|Transposase|Desulfurococcus DE    kamchatkensis
+#=GS          ISDra2.1|IS200/IS605|IS605|Transposase|Deinococcus DE    radiodurans
+#=GS          ISEc41.1|IS200/IS605|IS605|Transposase|Escherichia DE    coli
+#=GS          ISEc46.1|IS200/IS605|IS605|Transposase|Escherichia DE    coli
+#=GS         ISEfa4.1|IS200/IS605|IS605|Transposase|Enterococcus DE    faecium
+#=GS              ISFsp4.1|IS200/IS605|IS605|Transposase|Frankia DE    sp.
+#=GS        ISH1-8.1|IS200/IS605|IS605|Transposase|Halobacterium DE    salinarum
+#=GS         ISH12.1|IS200/IS605|IS605|Transposase|Halobacterium DE    sp.
+#=GS         ISH22.1|IS200/IS605|IS605|Transposase|Halobacterium DE    sp.
+#=GS         ISH34.1|IS200/IS605|IS605|Transposase|Halobacterium DE    salinarum
+#=GS         ISH35.1|IS200/IS605|IS605|Transposase|Halobacterium DE    salinarum
+#=GS         ISH36.1|IS200/IS605|IS605|Transposase|Halobacterium DE    salinarum
+#=GS          ISHaca1.1|IS200/IS605|IS605|Transposase|Haloarcula DE    californiae
+#=GS            ISHal1.1|IS200/IS605|IS605|Transposase|Haloferax DE    alexandrinus
+#=GS      ISHall1.1|IS200/IS605|IS605|Transposase|Halostagnicola DE    larsenii
+#=GS        ISHarch15.1|IS200/IS605|IS605|Transposase|Halophilic DE    archaeon
+#=GS           ISHas1.1|IS200/IS605|IS605|Transposase|Halonotius DE    sp.
+#=GS      ISHbo4.1|IS200/IS605|IS605|Transposase|Halogeometricum DE    borinquense
+#=GS      ISHbo5.1|IS200/IS605|IS605|Transposase|Halogeometricum DE    borinquense
+#=GS            ISHel2.1|IS200/IS605|IS605|Transposase|Haloferax DE    elongans
+#=GS           ISHez3.1|IS200/IS605|IS605|Transposase|Halorubrum DE    ezzemoulense
+#=GS            ISHgi1.1|IS200/IS605|IS605|Transposase|Haloferax DE    gibbonsii
+#=GS        ISHhu1.1|IS200/IS605|IS605|Transposase|Halobacterium DE    hubeiense
+#=GS        ISHhu2.1|IS200/IS605|IS605|Transposase|Halobacterium DE    hubeiense
+#=GS        ISHhu3.1|IS200/IS605|IS605|Transposase|Halobacterium DE    hubeiense
+#=GS      ISHje2.1|IS200/IS605|IS605|Transposase|Halalkalicoccus DE    jeotgali
+#=GS           ISHko3.1|IS200/IS605|IS605|Transposase|Halorubrum DE    kocurii
+#=GS          ISHla15.1|IS200/IS605|IS605|Transposase|Halorubrum DE    lacusprofundi
+#=GS          ISHla16.1|IS200/IS605|IS605|Transposase|Halorubrum DE    lacusprofundi
+#=GS          ISHla17.1|IS200/IS605|IS605|Transposase|Halorubrum DE    lacusprofundi
+#=GS          ISHla19.1|IS200/IS605|IS605|Transposase|Halorubrum DE    lacusprofundi
+#=GS          ISHla21.1|IS200/IS605|IS605|Transposase|Halorubrum DE    lacusprofundi
+#=GS           ISHli11.1|IS200/IS605|IS605|Transposase|Halohasta DE    litchfieldiae
+#=GS           ISHlsp1.1|IS200/IS605|IS605|Transposase|Halopiger DE    sp.
+#=GS          ISHma12.1|IS200/IS605|IS605|Transposase|Haloarcula DE    marismortui
+#=GS          ISHma17.1|IS200/IS605|IS605|Transposase|Haloarcula DE    marismortui
+#=GS           ISHma7.1|IS200/IS605|IS605|Transposase|Haloarcula DE    marismortui
+#=GS        ISHmu3.1|IS200/IS605|IS605|Transposase|Halomicrobium DE    mukohataei
+#=GS        ISHmu5.1|IS200/IS605|IS605|Transposase|Halomicrobium DE    mukohataei
+#=GS        ISHmu6.1|IS200/IS605|IS605|Transposase|Halomicrobium DE    mukohataei
+#=GS        ISHp608.1|IS200/IS605|IS605|Transposase|Helicobacter DE    pylori
+#=GS            ISHru2.1|IS200/IS605|IS605|Transposase|Halovivax DE    ruber
+#=GS           ISHsi2.1|IS200/IS605|IS605|Transposase|Haloarcula DE    sinaiiensis
+#=GS          ISHti1.1|IS200/IS605|IS605|Transposase|Halorhabdus DE    tiamatea
+#=GS           ISHvo18.1|IS200/IS605|IS605|Transposase|Haloferax DE    volcanii
+#=GS       ISHwa17.1|IS200/IS605|IS605|Transposase|Haloquadratum DE    walsbyi
+#=GS        ISLjo5.1|IS200/IS605|IS605|Transposase|Lactobacillus DE    johnsonii
+#=GS       ISMac7.1|IS200/IS605|IS605|Transposase|Methanosarcina DE    acetivorans
+#=GS      ISMba17.1|IS200/IS605|IS605|Transposase|Methanosarcina DE    barkeri
+#=GS      ISMma19.1|IS200/IS605|IS605|Transposase|Methanosarcina DE    mazei
+#=GS      ISMma22.1|IS200/IS605|IS605|Transposase|Methanosarcina DE    mazei
+#=GS          ISMmu1.1|IS200/IS605|IS605|Transposase|Mitsuokella DE    multacida
+#=GS       ISNamo17.1|IS200/IS605|IS605|Transposase|Natronomonas DE    moolapensis
+#=GS       ISNamo18.1|IS200/IS605|IS605|Transposase|Natronomonas DE    moolapensis
+#=GS       ISNamo19.1|IS200/IS605|IS605|Transposase|Natronomonas DE    moolapensis
+#=GS            ISNhu1.1|IS200/IS605|IS605|Transposase|Natrialba DE    hulunbeirensis
+#=GS     ISNin1.1|IS200/IS605|IS605|Transposase|Natronolimnobius DE    innermongolicus
+#=GS           ISNma12.1|IS200/IS605|IS605|Transposase|Natrialba DE    magadii
+#=GS           ISNpe10.1|IS200/IS605|IS605|Transposase|Natrinema DE    pellirubrum
+#=GS         ISNph5.1|IS200/IS605|IS605|Transposase|Natronomonas DE    pharaonis
+#=GS         ISNph6.1|IS200/IS605|IS605|Transposase|Natronomonas DE    pharaonis
+#=GS         ISNph7.1|IS200/IS605|IS605|Transposase|Natronomonas DE    pharaonis
+#=GS               ISNsp2.1|IS200/IS605|IS605|Transposase|Nostoc DE    sp.
+#=GS               ISNsp3.1|IS200/IS605|IS605|Transposase|Nostoc DE    sp.
+#=GS           ISSen6.1|IS200/IS605|IS605|Transposase|Salmonella DE    enterica
+#=GS           ISSis2.1|IS200/IS605|IS605|Transposase|Sulfolobus DE    islandicus
+#=GS       ISSoc10.1|IS200/IS605|IS605|Transposase|Synechococcus DE    sp.
+#=GS        ISSoc3.1|IS200/IS605|IS605|Transposase|Synechococcus DE    sp.
+#=GS        ISSoc6.1|IS200/IS605|IS605|Transposase|Synechococcus DE    sp.
+#=GS           ISSto1.1|IS200/IS605|IS605|Transposase|Sulfolobus DE    tokodaii
+#=GS         ISTac1.1|IS200/IS605|IS605|Transposase|Thermoplasma DE    acidophilum
+#=GS  ISTel2.1|IS200/IS605|IS605|Transposase|Thermosynechococcus DE    elongatus
+#=GS         ISTfu1.1|IS200/IS605|IS605|Transposase|Thermobifida DE    fusca
+#=GS         ISTsi3.1|IS200/IS605|IS605|Transposase|Thermococcus DE    sibiricus
+#=GS         ISTvo5.1|IS200/IS605|IS605|Transposase|Thermoplasma DE    volcanium
+
+IS1004.1|IS200/IS605|IS200|Transposase|Vibrio                ---------------------------MGDYRSSSHVYWRCKYHIVWTPK
+IS1469.1|IS200/IS605|IS200|Transposase|Clostridium           ----------------------------MDTNSLAHTKWNCKYHIVFAPK
+IS1541A.1|IS200/IS605|IS200|Transposase|Yersinia             ---------------------------MRDEKSLAHTRWNCKYHIVFAPK
+IS1541B.1|IS200/IS605|IS200|Transposase|Yersinia             ---------------------------MRDEKSLAHTRWNCKYHIVFAPK
+IS1541C.1|IS200/IS605|IS200|Transposase|Yersinia             ---------------------------MRDEKSLAHTRWNCKYHIVFAPK
+IS1541D.1|IS200/IS605|IS200|Transposase|Yersinia             ---------------------------MGDEKSLAHTRWNCKYHIVFAPK
+IS200.1|IS200/IS605|IS200|Transposase|Salmonella             ---------------------------MGDEKSLAHTRWNCKYHIVFAPK
+IS200C.1|IS200/IS605|IS200|Transposase|Escherichia           ----------MRSGNCKCQTRNQKGVPMGNEKSLAHTRWNCKYHIVFAPK
+IS200F.1|IS200/IS605|IS200|Transposase|Salmonella            ---------------------------MGDEKSLAHTRWNCKYHIVFAPK
+IS200G.1|IS200/IS605|IS200|Transposase|Yersinia              ---------------------------MRDEKSLAHTRWNCKYHIVFAPK
+IS200H.1|IS200/IS605|IS200|Transposase|Salmonella            ---------------------------MGDEKSLAHTRWNCKYHIVFAPK
+IS200S.1|IS200/IS605|IS200|Transposase|Streptococcus         ----------------------------MDTNSLAHTKWNCKYHIVFAPK
+IS657.1|IS200/IS605|IS200|Transposase|Bacillus               ---------------------------MKDKNSLAHTTWNCKYHIVFAPK
+ISAac1.1|IS200/IS605|IS200|Transposase|Actinobacillus        -----------------------MVSKANDDSSLSHTKWNCKYHIVFTPK
+ISAac3.1|IS200/IS605|IS200|Transposase|Aggregatibacter       -----------------------MVSKANDDSSLSHTKWNCKYHIVFTPK
+ISAcma39.1|IS200/IS605|IS200|Transposase|Acaryochloris       ----------------------------MTYRKLSHSVWECKYHVVFVPK
+ISAsp20.1|IS200/IS605|IS200|Transposase|Anabaena             -----------------------------------MALWRLYYHVVWATK
+ISAzo20.1|IS200/IS605|IS200|Transposase|Azoarcus             ---------------------------MKEYQSLSHTRWDCKYHVVFIPK
+ISBsph1.1|IS200/IS605|IS200|Transposase|Bacillus             ----------------------------MDSKSLAHTTWNCKYHIVFVPK
+ISBsph2.1|IS200/IS605|IS200|Transposase|Bacillus             ----------------------------MDSKSLAHTTWNCKYHIVFVPK
+ISCaa10.1|IS200/IS605|IS200|Transposase|Candidatus           ---------------------------MSKYIHKSHNVTVLLYHLVLPAK
+ISCARN10.1|IS200/IS605|IS200|Transposase|Metagenomic         ---------------------------MDEGLSLRHSRWECKYHVVFIPK
+ISCth10.1|IS200/IS605|IS200|Transposase|Clostridium          ---------------------------MRDNASLAHTQWNCKYHIVFVPK
+ISDha13.1|IS200/IS605|IS200|Transposase|Desulfitobacterium   --------------------------MANKEYSLAHTKWMCKYHIVFTPK
+ISDra9.1|IS200/IS605|IS200|Transposase|Deinococcus           ---------------------------MGQQRSGSHTVSRLTLHVVWATK
+ISEha1.1|IS200/IS605|IS200|Transposase|Ethanoligenens        ---------------------------MSEYIHKSHNVSVLMYHFVCPAK
+ISEnfa200.1|IS200/IS605|IS200|Transposase|Enterococcus       ----------------------------MDSNSLSHTRWNCKYHIVFAPK
+ISMba16.1|IS200/IS605|IS200|Transposase|Methanosarcina       ---------------------------MLELRSFSHGYGQITYHIVLVPK
+ISMba18.1|IS200/IS605|IS200|Transposase|Methanosarcina       ----------------------------MELRHANHCVYKIRYHMVFCMK
+ISMco2.1|IS200/IS605|IS200|Transposase|Methanosaeta          ---------------------------MIEVKKASHCAYKIRYHMVFSIK
+ISMex20.1|IS200/IS605|IS200|Transposase|Methylobacterium     --------------------------------------------------
+ISMex34.1|IS200/IS605|IS200|Transposase|Methylobacterium     ---------------------------MDEFESLSHTKWTCKYHVVFIPK
+ISMma21.1|IS200/IS605|IS200|Transposase|Methanosarcina       ----------------------------MELHSFSHGYGQITYHIVLVPK
+ISOih2.1|IS200/IS605|IS200|Transposase|Oceanobacillus        ---------------------------MKDKNSLAHTQWRCKYHLVFAPK
+ISPin5.1|IS200/IS605|IS200|Transposase|Psychromonas          ----------------------------MDYRYGSHTVFKIQYHFVFVTK
+ISPlu2.1|IS200/IS605|IS200|Transposase|Photorhabdus          ----------------------------MDYRYGSHTVFQIEYHFVWVTK
+ISPlu5.1|IS200/IS605|IS200|Transposase|Photorhabdus          --------------------------MGIKAQSSAHTKWLCKYHIVFSPK
+ISPpr13.1|IS200/IS605|IS200|Transposase|Photobacterium       --------------------------MIMDYRYGSHTVFKIQYHFVFVTK
+ISSep3.1|IS200/IS605|IS200|Transposase|Staphylococcus        --------------------------MSSDTNSLAHTKWNCKYHIVFAPK
+ISSham1.1|IS200/IS605|IS200|Transposase|Shewanella           ---------------------------MSRYESASHVFYRCQYHLVWTPK
+ISShes4.1|IS200/IS605|IS200|Transposase|Shewanella           ---------------------------MGDYRSSSHVYWRCKYHIVWTPK
+ISShes8.1|IS200/IS605|IS200|Transposase|Shewanella           ---------------------------MSRYEQASHVFWRCQYHIVWTPK
+ISShwo2.1|IS200/IS605|IS200|Transposase|Shewanella           ---------------------------MSRYEKASHVYWRCQYHIVWTPK
+ISSod23.1|IS200/IS605|IS200|Transposase|Shewanella           ---------------------------MGDYRSSSHVYWRCKYHIVWTPK
+ISSpn6.1|IS200/IS605|IS200|Transposase|Streptococcus         --------------------------MREDNQSLSHTTWNCKYHIVFAPK
+ISSsu4.1|IS200/IS605|IS200|Transposase|Streptococcus         --------------MFKPIVKRKEKNMAQKAHSLSHTKWLCKYHIVFTPK
+ISStin10.1|IS200/IS605|IS200|Transposase|Streptococcus       --------------------------MAQKAHSLSHTKWMCKYHIVFTPK
+ISStrs1.1|IS200/IS605|IS200|Transposase|Streptococcus        --------------------------MRQDNNSLAHTTWNCKYHIVFAPK
+ISW1.1|IS200/IS605|IS200|Transposase|Wolbachia               ---------------------------MEYYRKSSHSVYECTYHIVWITK
+IS1253A.1|IS200/IS605|IS605|Transposase|Dichelobacter        ---------------------------------------------VLVTK
+IS1253B.1|IS200/IS605|IS605|Transposase|Dichelobacter        ---------------------------------------------VLVTK
+IS605.1|IS200/IS605|IS605|Transposase|Helicobacter           --------------MNKDRGMRKNHYPLRGYISTNRSKHNLKAHLILVCK
+IS606.1|IS200/IS605|IS605|Transposase|Helicobacter           ------------------------MKKIDDMRHGRHCVFLMHTHLVFVTK
+IS609.1|IS200/IS605|IS605|Transposase|Escherichia            ------------------MILWS-VKKETDIRRGRHCVFLMHVHLVFVTR
+IS8301.1|IS200/IS605|IS605|Transposase|Deinococcus           ---------------------MTYVILPLEMKKGRGYVYQLEYHLIWCVK
+ISAba30.1|IS200/IS605|IS605|Transposase|Acinetobacter        ------------------------MSDDNDIRLGRHCVFKMHVHLVFVAK
+ISAeme8.1|IS200/IS605|IS605|Transposase|Aeromonas            --------------------MSVHHDDLTRYLRRRHSVSKLVVHLIFTTK
+ISAs26.1|IS200/IS605|IS605|Transposase|Aeromonas             -------------------------MQFTKINKSRHAAYALHVHLVFITK
+ISAsp6.1|IS200/IS605|IS605|Transposase|Anabaena              ------------------------MLTQEDYKTHNYIKFLVNYHFVWIPK
+ISBce3.1|IS200/IS605|IS605|Transposase|Bacillus              --------------------------MINDYRRTKTTVSLINYHFVFCPR
+ISBth16.1|IS200/IS605|IS605|Transposase|Bacillus             ----------------------------MKLDSNNHSVFLLYYHLVLVVK
+ISCARN6.1|IS200/IS605|IS605|Transposase|Metagenomic          --------------------------------------------------
+ISCbt1.1|IS200/IS605|IS605|Transposase|Clostridium           --------------------------MENKYRKTSTTISLINYHFIFCPR
+ISCbt2.1|IS200/IS605|IS605|Transposase|Clostridium           ---------------------MKHYRKNNKYYSSSHLVYRCCYHVVFCPK
+ISCco1.1|IS200/IS605|IS605|Transposase|Campylobacter         --------------------------MKIEYERNLHSVFLLQYHLILVVK
+ISClte2.1|IS200/IS605|IS605|Transposase|Clostridium          --------------------------MEQKYKSNNNIVYSCKYHIVWCPK
+ISCpe2.1|IS200/IS605|IS605|Transposase|Clostridium           ---------------------------MAQVKQGRGYVYCIQYHIVWCVK
+ISCsa5.1|IS200/IS605|IS605|Transposase|Caldicellulosiruptor  -------------MINIWFRYTIKLVMTMKFDTNKHSVFLLYYHLILVTK
+ISCysp13.1|IS200/IS605|IS605|Transposase|Cyanothece          --------------------------------------------------
+ISCysp14.1|IS200/IS605|IS605|Transposase|Cyanothece          -------------------------MSFRKPRKSSHSVFSVRLHFVFVTH
+ISDge10.1|IS200/IS605|IS605|Transposase|Deinococcus          --------------------------MADQYKHANTTVYLLNYHFVFIPK
+ISDka2.1|IS200/IS605|IS605|Transposase|Desulfurococcus       ---------------------MGNSQTWLRLRSTRHVKYWCAYHFVWIPK
+ISDra2.1|IS200/IS605|IS605|Transposase|Deinococcus           ---------------------MTYVILPLEMKKGRGYVYQLEYHLIWCVK
+ISEc41.1|IS200/IS605|IS605|Transposase|Escherichia           --------MWLFRMYNISTFFW-EGQYVCEINRSRYSAYLLHVHVVFMTK
+ISEc46.1|IS200/IS605|IS605|Transposase|Escherichia           --------------------MSNHDDLLAGFLRKRHSVSKLVVHLIFTTK
+ISEfa4.1|IS200/IS605|IS605|Transposase|Enterococcus          ----------------------------MELDTNNHSVFLLYYHLVLVTK
+ISFsp4.1|IS200/IS605|IS605|Transposase|Frankia               ------------------------MTEADDYRRGRHVVSSLHAHLVFVTR
+ISH1-8.1|IS200/IS605|IS605|Transposase|Halobacterium         --------------------------MEYHLQTGSHTVYALQYHFVTVTK
+ISH12.1|IS200/IS605|IS605|Transposase|Halobacterium          --------------------------MEYHLQTGSHTVYALQYHFVTVTK
+ISH22.1|IS200/IS605|IS605|Transposase|Halobacterium          --------------------------MPRGFDRERTNVHKLQYHFIWCPK
+ISH34.1|IS200/IS605|IS605|Transposase|Halobacterium          ---------------------------MEEYRSHAHSVSSCKYHFVWCPK
+ISH35.1|IS200/IS605|IS605|Transposase|Halobacterium          ------------------------------MKTTRHATYNLNYHIVWLPK
+ISH36.1|IS200/IS605|IS605|Transposase|Halobacterium          ---------------------------MGEKRS-NHTVYNVNYHFVWCPK
+ISHaca1.1|IS200/IS605|IS605|Transposase|Haloarcula           ---------------------------MGEKRS-NHTVYNVNYHFVWCPK
+ISHal1.1|IS200/IS605|IS605|Transposase|Haloferax             --------------------------MKYNLETGSHTVYALQYHFVTVTK
+ISHall1.1|IS200/IS605|IS605|Transposase|Halostagnicola       ---------------------------MGEYRSHTHSISLCKYHFVWCPK
+ISHarch15.1|IS200/IS605|IS605|Transposase|Halophilic         -----------------------------MVKSTRHAKYELYYHIVFVPK
+ISHas1.1|IS200/IS605|IS605|Transposase|Halonotius            ---------------------------MGEKRS-NHTVYNVNYHFVWCPK
+ISHbo4.1|IS200/IS605|IS605|Transposase|Halogeometricum       --------------------------MEYDLDSGAHSTYSLHYHLILTTK
+ISHbo5.1|IS200/IS605|IS605|Transposase|Halogeometricum       -----------------------------MVKSTRHAKYELYYHIVFVPK
+ISHel2.1|IS200/IS605|IS605|Transposase|Haloferax             ---------------------------MGEKQS-NHTVYNVNYHFVWCPK
+ISHez3.1|IS200/IS605|IS605|Transposase|Halorubrum            ---------------------------MGEKRS-NHTVYNVNYHFVWWPK
+ISHgi1.1|IS200/IS605|IS605|Transposase|Haloferax             ---------------------------MEEYWSHAHSISSCKYHFVWCPK
+ISHhu1.1|IS200/IS605|IS605|Transposase|Halobacterium         -----------------------------MVKSTRHAKYELYYHIVFVPK
+ISHhu2.1|IS200/IS605|IS605|Transposase|Halobacterium         --------------------------MKYNLETGSHTVYALQYHFVTVTK
+ISHhu3.1|IS200/IS605|IS605|Transposase|Halobacterium         --------------------------MPRGFDRERTNIHKLQYHFIWCPK
+ISHje2.1|IS200/IS605|IS605|Transposase|Halalkalicoccus       --------------------------MEYDLDSGAHSTFSLHYHLILTTK
+ISHko3.1|IS200/IS605|IS605|Transposase|Halorubrum            --------------------------MEYDLDSGAHSTYSLHYHLILTTK
+ISHla15.1|IS200/IS605|IS605|Transposase|Halorubrum           ---------------------------MYDLDSGAHSTFSLHYHLILTTK
+ISHla16.1|IS200/IS605|IS605|Transposase|Halorubrum           -----------------------------MVKSTRHAKYELYYHIVFVPK
+ISHla17.1|IS200/IS605|IS605|Transposase|Halorubrum           -----------------------------MVKSTRHAKYELYYHIVFVPK
+ISHla19.1|IS200/IS605|IS605|Transposase|Halorubrum           --------------------------MKYNLETGSHTVYALQYHFVTVTK
+ISHla21.1|IS200/IS605|IS605|Transposase|Halorubrum           ------------------------------MKTTRHATYNLNYHLVWLPK
+ISHli11.1|IS200/IS605|IS605|Transposase|Halohasta            -----------------------MNPIEYDLDSGSHSMYSLHYHLILTTK
+ISHlsp1.1|IS200/IS605|IS605|Transposase|Halopiger            ---------------------------MEEHRSHAHSVGSCKYHFVWCPK
+ISHma12.1|IS200/IS605|IS605|Transposase|Haloarcula           --------------------------MGYDLDSGAHSTYSLHYHLILTTK
+ISHma17.1|IS200/IS605|IS605|Transposase|Haloarcula           ------------------------------MKTTRHATYNLNYHIVWLPK
+ISHma7.1|IS200/IS605|IS605|Transposase|Haloarcula            ---------------------------MGEKRS-NHTVYNINYHFVWCPK
+ISHmu3.1|IS200/IS605|IS605|Transposase|Halomicrobium         ---------------------------MGEKRS-NHTVYNVNYHFVWCPK
+ISHmu5.1|IS200/IS605|IS605|Transposase|Halomicrobium         --------------------------MESHLQSGSHTVYALQYHFVTVTK
+ISHmu6.1|IS200/IS605|IS605|Transposase|Halomicrobium         --------------------------MEYDLDSGAHSTFSLHYHLILTTK
+ISHp608.1|IS200/IS605|IS605|Transposase|Helicobacter         ------------------------MSNAVLYKNNHNIVYSCKYHIVWCPK
+ISHru2.1|IS200/IS605|IS605|Transposase|Halovivax             --------------------------MQYDLDSGSHSVYSLHYHLILTTK
+ISHsi2.1|IS200/IS605|IS605|Transposase|Haloarcula            --------------------------MEYDLDTGAHSVYSLHYHLILTTK
+ISHti1.1|IS200/IS605|IS605|Transposase|Halorhabdus           ---------------------------MGEKRS-NHTVYNVNYHFVWCPK
+ISHvo18.1|IS200/IS605|IS605|Transposase|Haloferax            ------------------------------MKATRHATYNLNYHIVWIPK
+ISHwa17.1|IS200/IS605|IS605|Transposase|Haloquadratum        ---------------------------MGETRS-NHTVYNINYHFVWCCQ
+ISLjo5.1|IS200/IS605|IS605|Transposase|Lactobacillus         --------------------MIKKKDKIKDAGYEKHYVYNTHYHLIWCTK
+ISMac7.1|IS200/IS605|IS605|Transposase|Methanosarcina        ----------------------------MKYETRNHSKFLLMYHIIFVCK
+ISMba17.1|IS200/IS605|IS605|Transposase|Methanosarcina       -------------------------MVNKKCETRNHSKFLLMYHIIFVCK
+ISMma19.1|IS200/IS605|IS605|Transposase|Methanosarcina       ----------------------MYFLVNMKYETRNHRKFLLMYHVIFVCK
+ISMma22.1|IS200/IS605|IS605|Transposase|Methanosarcina       ---------------------MAGKEHW---ISARGCVYNTNYHFVWSTK
+ISMmu1.1|IS200/IS605|IS605|Transposase|Mitsuokella           ---------------------MKRKERIPGAIYERGYVYNFHFHLIWVTK
+ISNamo17.1|IS200/IS605|IS605|Transposase|Natronomonas        ------------------------------MKTTRHATYNLNYHIVWLPK
+ISNamo18.1|IS200/IS605|IS605|Transposase|Natronomonas        ------------------------------MKTTRHATYNLNYHIVWIPK
+ISNamo19.1|IS200/IS605|IS605|Transposase|Natronomonas        --------------------------MKYNLETGSHTVYALQYHFVTVTK
+ISNhu1.1|IS200/IS605|IS605|Transposase|Natrialba             ---------------------------MEEYRSHAHSVSSCKYHFVWCPK
+ISNin1.1|IS200/IS605|IS605|Transposase|Natronolimnobius      ---------------------------MEEYRSHAHSVSSCKCYFVWCPK
+ISNma12.1|IS200/IS605|IS605|Transposase|Natrialba            ------------------------------MKTKRHATYNLNYHIVWVPK
+ISNpe10.1|IS200/IS605|IS605|Transposase|Natrinema            ------------------------------MKTTRHATYNLNYHIVWLPK
+ISNph5.1|IS200/IS605|IS605|Transposase|Natronomonas          --------------------------MEYHLQSGSHTVYALQYHFVTVTK
+ISNph6.1|IS200/IS605|IS605|Transposase|Natronomonas          ---------------------------MEEYRSHAHSVSSCKYHFVWCRK
+ISNph7.1|IS200/IS605|IS605|Transposase|Natronomonas          ---------------------------MGETRS-NHTVYNINYHFVWCPK
+ISNsp2.1|IS200/IS605|IS605|Transposase|Nostoc                --------------------------MKSVYNHYNHAIGLATVHLVWIPC
+ISNsp3.1|IS200/IS605|IS605|Transposase|Nostoc                --------------------------MKTTYNHYNHSIGLATVHLVWIPC
+ISSen6.1|IS200/IS605|IS605|Transposase|Salmonella            -------------MFATLLFLRSTSIQKHKINRSRHAAFLLHVHLVFVTK
+ISSis2.1|IS200/IS605|IS605|Transposase|Sulfolobus            ----------------------------MEYKSTRHTKYLCNYHFVWIPK
+ISSoc10.1|IS200/IS605|IS605|Transposase|Synechococcus        --------------------------MKHDFVSSGRAVSDLKAHLVLTTK
+ISSoc3.1|IS200/IS605|IS605|Transposase|Synechococcus         MVVAGQDPVLVGDNHET-----VLAFSAMSYNIGHRSVYSLQIHLVLVTK
+ISSoc6.1|IS200/IS605|IS605|Transposase|Synechococcus         -----------------------MREGSQRYNHYNHAVGLAVVRLVFCPK
+ISSto1.1|IS200/IS605|IS605|Transposase|Sulfolobus            ----------------------------VEYKSTRHAKYLCNYHFVWIPK
+ISTac1.1|IS200/IS605|IS605|Transposase|Thermoplasma          ---------------------MEISNVEKEYHHEPHLVYSCQYHVIFCPK
+ISTel2.1|IS200/IS605|IS605|Transposase|Thermosynechococcus   --------------------------MSSHLRKGRHSVTDLKIHLVCVTK
+ISTfu1.1|IS200/IS605|IS605|Transposase|Thermobifida          --------------------------MAVTLRSNSNVVFQCAYHVVWCPK
+ISTsi3.1|IS200/IS605|IS605|Transposase|Thermococcus          -----------------------METRIPAFSSTRHVKHFLAYHFVWIPK
+ISTvo5.1|IS200/IS605|IS605|Transposase|Thermoplasma          ----------------------------MELKSTRHVKYLCNYHYLWIPK
+
+IS1004.1|IS200/IS605|IS200|Transposase|Vibrio                F-----------------RFKIL-KGNV--AKELNRSIYILC--NMKDCE
+IS1469.1|IS200/IS605|IS200|Transposase|Clostridium           H-----------------RRKEI-YGEK--KQEISEILRQLC--ELKGVR
+IS1541A.1|IS200/IS605|IS200|Transposase|Yersinia             Y-----------------RRQVF-YREK--RRAIGSILRKLC--EWKNVN
+IS1541B.1|IS200/IS605|IS200|Transposase|Yersinia             Y-----------------RRQVF-YREK--RRAIGSILRKLC--EWKNVN
+IS1541C.1|IS200/IS605|IS200|Transposase|Yersinia             Y-----------------RRKVF-YGEK--RKAIGSILRKLC--EWKSVN
+IS1541D.1|IS200/IS605|IS200|Transposase|Yersinia             Y-----------------RRQVF-YGEK--RRAVGSILRKLC--EWKNVH
+IS200.1|IS200/IS605|IS200|Transposase|Salmonella             Y-----------------RRQAF-YGEK--RRAVGSILRKLC--EWKNVR
+IS200C.1|IS200/IS605|IS200|Transposase|Escherichia           Y-----------------RRQVF-YREK--RRAIGCILRKLC--EWKSVR
+IS200F.1|IS200/IS605|IS200|Transposase|Salmonella            Y-----------------RRQAF-YGEK--RRAVGSILRKLC--EWKNVR
+IS200G.1|IS200/IS605|IS200|Transposase|Yersinia              Y-----------------RRQVF-YREK--RRAIGSILRKLC--EWKNVN
+IS200H.1|IS200/IS605|IS200|Transposase|Salmonella            Y-----------------RRQAF-YGEK--RRAVGSILRKLC--EWKNVR
+IS200S.1|IS200/IS605|IS200|Transposase|Streptococcus         H-----------------RRKEI-YGEK--KQEISEILRQLC--EWKGVR
+IS657.1|IS200/IS605|IS200|Transposase|Bacillus               Y-----------------RRQII-YGKY--KKSIGQIIRELC--ERKGVT
+ISAac1.1|IS200/IS605|IS200|Transposase|Actinobacillus        Y-----------------RRKAI-YGRL--RTDIGSILRQLC--DYKNVE
+ISAac3.1|IS200/IS605|IS200|Transposase|Aggregatibacter       Y-----------------RRKAI-YGKL--RTDIGSILRQLC--DYKNVE
+ISAcma39.1|IS200/IS605|IS200|Transposase|Acaryochloris       Y-----------------RKRRI-YGRI--RQNLGDIFHELA--RHKESA
+ISAsp20.1|IS200/IS605|IS200|Transposase|Anabaena             K-----------------REPLI-TNDV--EEKFYGYLIGKA--DHLGCI
+ISAzo20.1|IS200/IS605|IS200|Transposase|Azoarcus             R-----------------RQKKL-FGAL--RRHLGEMLHELA--AHKESK
+ISBsph1.1|IS200/IS605|IS200|Transposase|Bacillus             Y-----------------RRQVI-YRQI--KAEIGRILRQLC--ERKGVE
+ISBsph2.1|IS200/IS605|IS200|Transposase|Bacillus             Y-----------------RRQVI-YRKI--KAEIGKILRQLC--ERKGVE
+ISCaa10.1|IS200/IS605|IS200|Transposase|Candidatus           Y-----------------RRVVF-DKEV--DEALKEICIKIE--ERYQIK
+ISCARN10.1|IS200/IS605|IS200|Transposase|Metagenomic         C-----------------RRKVL-YGQL--RNDLGEVFRALA--RHKESR
+ISCth10.1|IS200/IS605|IS200|Transposase|Clostridium          Y-----------------RRQVI-YGKI--KKDIGQILRKLC--EMKGVE
+ISDha13.1|IS200/IS605|IS200|Transposase|Desulfitobacterium   Y-----------------RRKII-YNQY--RESIGEILKQLC--GYKGVE
+ISDra9.1|IS200/IS605|IS200|Transposase|Deinococcus           Y-----------------RYHVL-VGEI--KPRCRELLIQIC--KAEDVR
+ISEha1.1|IS200/IS605|IS200|Transposase|Ethanoligenens        Y-----------------RRAIF-SEEV--TKTLVEVCGGIS--ERFEMY
+ISEnfa200.1|IS200/IS605|IS200|Transposase|Enterococcus       Y-----------------RRKVA-YGKI--KQDIANILSMLC--KRKGVK
+ISMba16.1|IS200/IS605|IS200|Transposase|Methanosarcina       Y-----------------RYSIFYNKRI--KKDCELILSSIC--MEKGYK
+ISMba18.1|IS200/IS605|IS200|Transposase|Methanosarcina       Y-----------------RKKLLLDAEI--IRFLKTICFGIG--ERYCFE
+ISMco2.1|IS200/IS605|IS200|Transposase|Methanosaeta          Y-----------------RRKLLQDIDR--INYIKFVCSEIG--ERYYFD
+ISMex20.1|IS200/IS605|IS200|Transposase|Methylobacterium     ---------------------VL-SALA--IRDLTAIFAKVC--RDFGAE
+ISMex34.1|IS200/IS605|IS200|Transposase|Methylobacterium     G-----------------RRKAL-YGTL--RPHLGEVFRTLA--QQKESR
+ISMma21.1|IS200/IS605|IS200|Transposase|Methanosarcina       Y-----------------RYSIFYNKRI--KKDCELIFSNIC--TKNGYK
+ISOih2.1|IS200/IS605|IS200|Transposase|Oceanobacillus        Y-----------------RRQII-YGKY--KKSIGEIIRELC--ERKDVE
+ISPin5.1|IS200/IS605|IS200|Transposase|Psychromonas          Y-----------------RYQVL-KSDV--GLKVRELIRQTC--NSFEIE
+ISPlu2.1|IS200/IS605|IS200|Transposase|Photorhabdus          Y-----------------RYKVL-TGEV--ASRVRELIRQTC--GSFEIR
+ISPlu5.1|IS200/IS605|IS200|Transposase|Photorhabdus          Y-----------------RRKVI-FTRI--RSRIGEILRDLC--QYKGVE
+ISPpr13.1|IS200/IS605|IS200|Transposase|Photobacterium       Y-----------------RYQVL-TGDV--GLKARELIRQTC--HAFEID
+ISSep3.1|IS200/IS605|IS200|Transposase|Staphylococcus        Y-----------------RRQVI-YGKI--KRDIGVILRQLC--ERKGVE
+ISSham1.1|IS200/IS605|IS200|Transposase|Shewanella           Y-----------------RYKIL-KGNL--GKELYRSIYVYC--NMKKCR
+ISShes4.1|IS200/IS605|IS200|Transposase|Shewanella           Y-----------------RFKIL-KGNL--GKELYRSIYILC--NMKSCE
+ISShes8.1|IS200/IS605|IS200|Transposase|Shewanella           Y-----------------RFRIL-KGNV--GKEVYRCIQVYC--HQMGCI
+ISShwo2.1|IS200/IS605|IS200|Transposase|Shewanella           Y-----------------RFRIL-KNKL--GKDVYRCIHVYS--EQLGCV
+ISSod23.1|IS200/IS605|IS200|Transposase|Shewanella           Y-----------------RFKIL-KGNL--GKELYRSIYILC--NMKGCE
+ISSpn6.1|IS200/IS605|IS200|Transposase|Streptococcus         Y-----------------RRQII-YGRY--KASIGRIIRDLC--ERKGVI
+ISSsu4.1|IS200/IS605|IS200|Transposase|Streptococcus         Y-----------------RRKII-YNQY--RSSLGEMSRRLC--TYKGVK
+ISStin10.1|IS200/IS605|IS200|Transposase|Streptococcus       Y-----------------RRKII-YNQY--RSSLGEIFQRLC--SYKGVE
+ISStrs1.1|IS200/IS605|IS200|Transposase|Streptococcus        Y-----------------RRQII-YGKY--KASIGQILRLLC--ERKGVE
+ISW1.1|IS200/IS605|IS200|Transposase|Wolbachia               Y-----------------RYPVL-VGDI--GQKAKEVVQEVC--ANNQVE
+IS1253A.1|IS200/IS605|IS605|Transposase|Dichelobacter        Y-----------------RRKCF-TSAM--LDRLKEIVTDLC--QKWEVE
+IS1253B.1|IS200/IS605|IS605|Transposase|Dichelobacter        Y-----------------RRKCF-TSAM--LDRLKEIVTDLC--QKWEVE
+IS605.1|IS200/IS605|IS605|Transposase|Helicobacter           Y-----------------RKKLL-QGDL--NNFIKSVIDEIA--TQSHFI
+IS606.1|IS200/IS605|IS605|Transposase|Helicobacter           Y-----------------RRKAF-NKEV--IDFLGSVFAKVC--KDFESE
+IS609.1|IS200/IS605|IS605|Transposase|Escherichia            Y-----------------RRQIF-DHDA--TEKLRTYFSKVC--ADFEAE
+IS8301.1|IS200/IS605|IS605|Transposase|Deinococcus           Y-----------------RHQVL-VGEV--ADGLKDILRDIA--AQNGLE
+ISAba30.1|IS200/IS605|IS605|Transposase|Acinetobacter        Y-----------------RRRVF-DGDA--INRLRTIFAKVC--TDFEAQ
+ISAeme8.1|IS200/IS605|IS605|Transposase|Aeromonas            Y-----------------RRKLL-DGTM--IEQMRGAFLSAA--EKLEID
+ISAs26.1|IS200/IS605|IS605|Transposase|Aeromonas             Y-----------------RKPIL-GDLH--HASFGQCAAEVC--RDFGAE
+ISAsp6.1|IS200/IS605|IS605|Transposase|Anabaena              R-----------------RKKVL-TGDI--ATRIRQIFAELA--IEKGWD
+ISBce3.1|IS200/IS605|IS605|Transposase|Bacillus              Y-----------------RRKIFLNTKV--EERFKELVQEIC--GEMDVA
+ISBth16.1|IS200/IS605|IS605|Transposase|Bacillus             Y-----------------RRNVF-DDDM--SDYAKEMFVRLS--ENYNIT
+ISCARN6.1|IS200/IS605|IS605|Transposase|Metagenomic          ----------------------M-TGPM--LDRLEAICRSTA--AKWECE
+ISCbt1.1|IS200/IS605|IS605|Transposase|Clostridium           Y-----------------RRKIFDISNV--ENRFKELVKDIC--EELDIK
+ISCbt2.1|IS200/IS605|IS605|Transposase|Clostridium           Y-----------------RRSIL-LGNV--TNRLKEICYEIA--KTHDFL
+ISCco1.1|IS200/IS605|IS605|Transposase|Campylobacter         Y-----------------RKKVI-TDEI--CCRLKEIFEYIAKSSNYQLE
+ISClte2.1|IS200/IS605|IS605|Transposase|Clostridium          Y-----------------RRKVL-IGNV--ETRLKELLIETC--ADIEVD
+ISCpe2.1|IS200/IS605|IS605|Transposase|Clostridium           Y-----------------RRKVL-FGDV--DKSLKEIILKIA--NDNNFE
+ISCsa5.1|IS200/IS605|IS605|Transposase|Caldicellulosiruptor  Y-----------------RRDVI-DEKI--SKRLKEIFEYIQ--PNYNIT
+ISCysp13.1|IS200/IS605|IS605|Transposase|Cyanothece          ---------------------------M--LERLREMIWQVS--RKMDCE
+ISCysp14.1|IS200/IS605|IS605|Transposase|Cyanothece          Y-----------------RRKVI-TTPM--LERLREMIWQVS--RKLDCE
+ISDge10.1|IS200/IS605|IS605|Transposase|Deinococcus          R-----------------RRKVL-VGPV--ETRLKEVLAEKC--AEMKWD
+ISDka2.1|IS200/IS605|IS605|Transposase|Desulfurococcus       Y-----------------RRDIL-IGDV--AEYTKEVLRGII--TGIGCE
+ISDra2.1|IS200/IS605|IS605|Transposase|Deinococcus           Y-----------------RHQVL-VGEV--ADGLKDILRDIA--AQNGLE
+ISEc41.1|IS200/IS605|IS605|Transposase|Escherichia           Y-----------------RRPVF-GELH--HANMRQYVAEVC--ADFGAE
+ISEc46.1|IS200/IS605|IS605|Transposase|Escherichia           Y-----------------RRKLF-DSQM--IAQLREAFGSAA--AKLECE
+ISEfa4.1|IS200/IS605|IS605|Transposase|Enterococcus          Y-----------------RRQVI-DDEI--SDYAKTTFERIS--ESYHIT
+ISFsp4.1|IS200/IS605|IS605|Transposase|Frankia               Y-----------------RRGGL-DDAM--LTRCEQIMRSVC--CDFGAA
+ISH1-8.1|IS200/IS605|IS605|Transposase|Halobacterium         Y-----------------RADIL-TYER--LERVAEIAHDIA--DDFEAD
+ISH12.1|IS200/IS605|IS605|Transposase|Halobacterium          Y-----------------RADIL-TYER--LERVAEIAHDIA--DDFEAD
+ISH22.1|IS200/IS605|IS605|Transposase|Halobacterium          Y-----------------RKSVL-TGEV--RDRLEELIKEKA--DELGVE
+ISH34.1|IS200/IS605|IS605|Transposase|Halobacterium          -----------------YRHPVL--NVV--EDDVRELFSETA--DHFGHE
+ISH35.1|IS200/IS605|IS605|Transposase|Halobacterium          Y-----------------RQSVL-VNEV--ASRVRSILHEIA--ADKGVE
+ISH36.1|IS200/IS605|IS605|Transposase|Halobacterium          -----------------YRHAIL--EPI--EDSLEASFRDVC--DEYGYE
+ISHaca1.1|IS200/IS605|IS605|Transposase|Haloarcula           -----------------YRHPIL--GVI--EDSLESSFREVC--DKYNYE
+ISHal1.1|IS200/IS605|IS605|Transposase|Haloferax             Y-----------------RADLL-TDEI--AERIGEIASDIS--EDFGVN
+ISHall1.1|IS200/IS605|IS605|Transposase|Halostagnicola       -----------------YRHGML--ELV--RDELAELFQGTA--ERFGHE
+ISHarch15.1|IS200/IS605|IS605|Transposase|Halophilic         SGRTEGSADLAEQGSAQYRRSHL-TGKT--KERLETIFAEIC--EDNDLE
+ISHas1.1|IS200/IS605|IS605|Transposase|Halonotius            -----------------YRHAIL--NPI--DDSLEASFRDVC--EEYGYE
+ISHbo4.1|IS200/IS605|IS605|Transposase|Halogeometricum       Y-----------------RRGVL-TEER--TQFIHEVISGFT--DNYGVE
+ISHbo5.1|IS200/IS605|IS605|Transposase|Halogeometricum       SGGIEDSADLAEQGSAQYRRSHL-TGKT--KERLETIFAEIC--EDKGLE
+ISHel2.1|IS200/IS605|IS605|Transposase|Haloferax             -----------------YRHAIL--EPI--EDSLETSFRDVC--DEYDYE
+ISHez3.1|IS200/IS605|IS605|Transposase|Halorubrum            -----------------YRHAIL--API--EKSLEASFRDVC--DEYGYE
+ISHgi1.1|IS200/IS605|IS605|Transposase|Haloferax             -----------------YRHPIL--ELV--KDEVTGLFTETA--DHFGHE
+ISHhu1.1|IS200/IS605|IS605|Transposase|Halobacterium         -----------------YRRSPL-TGKT--KDRLETIFTEIC--EDKDLE
+ISHhu2.1|IS200/IS605|IS605|Transposase|Halobacterium         Y-----------------RADLL-TDEV--AERVGEIASDIS--EDFGVN
+ISHhu3.1|IS200/IS605|IS605|Transposase|Halobacterium         Y-----------------RKSVL-EGEV--RDRLEELIEEKA--DELGLE
+ISHje2.1|IS200/IS605|IS605|Transposase|Halalkalicoccus       Y-----------------RCGVL-TEER--TQFIREVISGFT--DNYGVE
+ISHko3.1|IS200/IS605|IS605|Transposase|Halorubrum            Y-----------------RRGVL-TEER--TQFIRGVISGFT--DNYGVE
+ISHla15.1|IS200/IS605|IS605|Transposase|Halorubrum           Y-----------------RRGVL-TEER--TQFIHEVIGGFT--DNYGVE
+ISHla16.1|IS200/IS605|IS605|Transposase|Halorubrum           -----------------YRRSHL-TGKT--KERLESIFAEIC--EDKGLE
+ISHla17.1|IS200/IS605|IS605|Transposase|Halorubrum           LGGSEGSADLAEQGSAQHRRSHL-TGKT--KERLETIFAEIC--EDKDLE
+ISHla19.1|IS200/IS605|IS605|Transposase|Halorubrum           Y-----------------RADLL-TDEI--AERVGEIASDIS--EDFGVN
+ISHla21.1|IS200/IS605|IS605|Transposase|Halorubrum           Y-----------------RNSVL-VNEV--ADRVRTILHEIA--DDKGLE
+ISHli11.1|IS200/IS605|IS605|Transposase|Halohasta            Y-----------------RRGVL-TEER--TQFIHEIICGFA--DNYGVE
+ISHlsp1.1|IS200/IS605|IS605|Transposase|Halopiger            -----------------YRHPVL--GVV--EDDVRELFAETA--DHFGHE
+ISHma12.1|IS200/IS605|IS605|Transposase|Haloarcula           Y-----------------RRGVL-TEER--TQFIHEVISGFT--DNYGVE
+ISHma17.1|IS200/IS605|IS605|Transposase|Haloarcula           SRRTDGSADIAERSSAQYRKAVL-TGEV--ADRVESILHEIA--DEKGLD
+ISHma7.1|IS200/IS605|IS605|Transposase|Haloarcula            -----------------YRHTIL--EPI--EDSLEASFRAMC--DEYGYE
+ISHmu3.1|IS200/IS605|IS605|Transposase|Halomicrobium         SSKAKLCVPRGIEDPAQYRYTIL--EPI--EDSLEASFRDVC--DEYGYE
+ISHmu5.1|IS200/IS605|IS605|Transposase|Halomicrobium         Y-----------------RADIL-TDER--LERVAEVAHEIA--EDFEAD
+ISHmu6.1|IS200/IS605|IS605|Transposase|Halomicrobium         Y-----------------RRGVL-TEER--TQFIHEVISGFT--DNYGVE
+ISHp608.1|IS200/IS605|IS605|Transposase|Helicobacter         Y-----------------RRKVL-VGAV--EMRLKEIIQEVA--KELRVE
+ISHru2.1|IS200/IS605|IS605|Transposase|Halovivax             Y-----------------RRGVL-TEER--TNFIRGIIEGFA--DNYGVE
+ISHsi2.1|IS200/IS605|IS605|Transposase|Haloarcula            Y-----------------RRGVL-TEER--TQFIRGVIEGFA--DKYGVT
+ISHti1.1|IS200/IS605|IS605|Transposase|Halorhabdus           -----------------YRHPIL--GVI--EDSLESSFREVC--DDYNYE
+ISHvo18.1|IS200/IS605|IS605|Transposase|Haloferax            Y-----------------RRSVL-VGDV--ATRVRDILHEIA--DEKGLE
+ISHwa17.1|IS200/IS605|IS605|Transposase|Haloquadratum        SEI--DCLQIGDLQCRKYRRSVL--GEI--EQS*ETSFRAVC--DEYNYE
+ISLjo5.1|IS200/IS605|IS605|Transposase|Lactobacillus         Y-----------------RNQIFTNTNL--AEEMRKLLLQIA--EDNQIK
+ISMac7.1|IS200/IS605|IS605|Transposase|Methanosarcina        Y-----------------RKAIL-EPIS---EELKQIVIDIS--KGSNFE
+ISMba17.1|IS200/IS605|IS605|Transposase|Methanosarcina       Y-----------------RKVAL-EPIS---EELKQIMYDIS--KESNFE
+ISMma19.1|IS200/IS605|IS605|Transposase|Methanosarcina       Y-----------------RKVIL-EPIS---EELKQIMIDIS--KESNFE
+ISMma22.1|IS200/IS605|IS605|Transposase|Methanosarcina       Y-----------------RRKIL-IGKI--AEDLKELHEQIA--KEKGVT
+ISMmu1.1|IS200/IS605|IS605|Transposase|Mitsuokella           Y-----------------RNPAFTTPEL--VQEMKDILLRIA--QLNDVT
+ISNamo17.1|IS200/IS605|IS605|Transposase|Natronomonas        Y-----------------RQSVL-VNGV--ASRVRSILYEIA--DDKGVE
+ISNamo18.1|IS200/IS605|IS605|Transposase|Natronomonas        Y-----------------RRSVL-VGDV--ATRVREILHEIA--DEKGLE
+ISNamo19.1|IS200/IS605|IS605|Transposase|Natronomonas        Y-----------------RADIL-TDEI--AERIGEIASDIT--EDFGVS
+ISNhu1.1|IS200/IS605|IS605|Transposase|Natrialba             -----------------YRHPVL--NVV--EDDVRELFDETS--DHFGHK
+ISNin1.1|IS200/IS605|IS605|Transposase|Natronolimnobius      -----------------YRHPIL--NVV--EDDVRELFGETS--DHFGHK
+ISNma12.1|IS200/IS605|IS605|Transposase|Natrialba            C-----------------RNSVL-VNEV--ANRVRRILHEIA--DEKGLE
+ISNpe10.1|IS200/IS605|IS605|Transposase|Natrinema            Y-----------------RQLGL-VNEV--ASRIRSILHEIA--DDKGVE
+ISNph5.1|IS200/IS605|IS605|Transposase|Natronomonas          Y-----------------RADIL-TDER--LERVAEVAHEIA--EDFEAD
+ISNph6.1|IS200/IS605|IS605|Transposase|Natronomonas          -----------------YRHQIL--NAV--EDDVRELFDETA--DHFGHE
+ISNph7.1|IS200/IS605|IS605|Transposase|Natronomonas          SSKSKICVPRGISDPAQYRHSVL--DEI--EQSLEASFKDVC--GEYNYE
+ISNsp2.1|IS200/IS605|IS605|Transposase|Nostoc                R-----------------RRRVF-ANNEKLKLRCIEIFQSVA--NDKRWI
+ISNsp3.1|IS200/IS605|IS605|Transposase|Nostoc                R-----------------RRRVF-NNNEKLKLRCIEIFQSVA--NDKKWI
+ISSen6.1|IS200/IS605|IS605|Transposase|Salmonella            Y-----------------RRKIL-GESH--YAAFHQYAAEVC--RDFGGE
+ISSis2.1|IS200/IS605|IS605|Transposase|Sulfolobus            Y-----------------RRDLL-VGEV--TEYTKEVLKSIA--EELDCE
+ISSoc10.1|IS200/IS605|IS605|Transposase|Synechococcus        Y-----------------RRKVF-TSEM--LQRLHEVMYDLC--QKWGCK
+ISSoc3.1|IS200/IS605|IS605|Transposase|Synechococcus         Y-----------------RRRVI-TAPM--LQRLEDIFRATC--QKWRCS
+ISSoc6.1|IS200/IS605|IS605|Transposase|Synechococcus         R-----------------RKKVL-VGEV--RNRLFELWQELS--SEKGWH
+ISSto1.1|IS200/IS605|IS605|Transposase|Sulfolobus            Y-----------------RRKVL-TGEI--AEYTKEVLRTIA--EELGCE
+ISTac1.1|IS200/IS605|IS605|Transposase|Thermoplasma          Y-----------------RRKVL-VDGI--DKRLKELILEKQ--NEYQYK
+ISTel2.1|IS200/IS605|IS605|Transposase|Thermosynechococcus   Y-----------------CRPVL-SAEG--LELIEKSFREVA--KKMDFQ
+ISTfu1.1|IS200/IS605|IS605|Transposase|Thermobifida          Y-----------------RRRVL-GGRI--EERLKDLIREVV--DEKGAW
+ISTsi3.1|IS200/IS605|IS605|Transposase|Thermococcus          Y-----------------RRDIL-TGKV--AERLKQMLKEFA--GEIGCE
+ISTvo5.1|IS200/IS605|IS605|Transposase|Thermoplasma          Y-----------------RRAIL-TNEV--AEYTKEVLKSIA--KELGCE
+
+IS1004.1|IS200/IS605|IS200|Transposase|Vibrio                VLELNVQPDHVHLVAIIPPKVSI--STLMGVLKGRSAIRLFNK--FPHIR
+IS1469.1|IS200/IS605|IS200|Transposase|Clostridium           IVEAHACVDHIHMLVEIPPKMSV--SSFVWVLKCKSSLMIFEK--FANLK
+IS1541A.1|IS200/IS605|IS200|Transposase|Yersinia             ILEAEYCVDHIHMLLEIPPKMSV--SGFMGYLKGKSSLMLYEQ--FGDLK
+IS1541B.1|IS200/IS605|IS200|Transposase|Yersinia             ILEAECCVDHIHMLLEIPPKMSV--SGFMGYLKGKSSLMLYEQ--FGDLK
+IS1541C.1|IS200/IS605|IS200|Transposase|Yersinia             ILEAECCVDHIHMLLEIPPKMSV--SGFMGYLKGKSSLMLYEQ--FGDLK
+IS1541D.1|IS200/IS605|IS200|Transposase|Yersinia             ILEAECCADHIHMLVEIPPKMSV--SSFMGYLKGKSSLMLYEQ--FGDLK
+IS200.1|IS200/IS605|IS200|Transposase|Salmonella             ILEAECCAYHIHMLLEIPPKMSV--SSFMGYLKGKSSLMLYEQ--FGDLK
+IS200C.1|IS200/IS605|IS200|Transposase|Escherichia           ILEAECCADHIHMLVEIPPKMSV--SGFMGYLKGKSSLMPYEQ--FGDLK
+IS200F.1|IS200/IS605|IS200|Transposase|Salmonella            ILEAECCADHIHMLLEIPPKMSV--SSFMGYLKGKSSLMLYEQ--FGDLK
+IS200G.1|IS200/IS605|IS200|Transposase|Yersinia              ILEAEYCVDHIHMLLEIPPKMSV--SGFMGYLKGKSSLMLYEQ--FGDLK
+IS200H.1|IS200/IS605|IS200|Transposase|Salmonella            ILEAEGCAYHIHMLLEIPPKMSV--SSFMGYLKGKSSLMLYEQ--SGDLK
+IS200S.1|IS200/IS605|IS200|Transposase|Streptococcus         IVEAHACVDHIHMLVEIPPKMSV--SSFVWVLKCKSSLMIFEK--FANLK
+IS657.1|IS200/IS605|IS200|Transposase|Bacillus               IHEANACPDHIHMLVSIPPKLSV--SQFMGFLKGKSSLMIFDR--HANLK
+ISAac1.1|IS200/IS605|IS200|Transposase|Actinobacillus        IIEAHAMKEHIHMLLKIPPKLSV--SSFMGYLKGKS----FER--HANLK
+ISAac3.1|IS200/IS605|IS200|Transposase|Aggregatibacter       IIEACAMKEHIHMLIKIPPKLSV--SSFMGYLKGKSSLMIFER--HANLK
+ISAcma39.1|IS200/IS605|IS200|Transposase|Acaryochloris       IEEGHLMLDHVHMLLSIPPKYSV--SNVVGYVKGKSAIYIARE--LGN-S
+ISAsp20.1|IS200/IS605|IS200|Transposase|Anabaena             IHAIGGIEDHIHFVVSIPPKLSI--AEFVKTLKGSSAYHYNHT--FGKTQ
+ISAzo20.1|IS200/IS605|IS200|Transposase|Azoarcus             IVEGHLMGDHVHMCLSIPPKYAV--SNVVGYLKGKSAIQIARR--FGGRQ
+ISBsph1.1|IS200/IS605|IS200|Transposase|Bacillus             IVEATACSDHIYMLVKIPPKLSV--SAFMGYLKGKSSVMIFNR--HDSLK
+ISBsph2.1|IS200/IS605|IS200|Transposase|Bacillus             IVEATACSDHIYMVVKIPPKLSV--SAFMGYLKGKSSVMIFNR--HDSLK
+ISCaa10.1|IS200/IS605|IS200|Transposase|Candidatus           FLEIGTDKDHVYMLVQSVPTYSI--TKLVTLIKSLTAREIFKL--CRQVK
+ISCARN10.1|IS200/IS605|IS200|Transposase|Metagenomic         IEEGHLMVDHVHMLISIPPKYAV--SSVMGYIKGKSAIHIART--YGERK
+ISCth10.1|IS200/IS605|IS200|Transposase|Clostridium          IIEASLCPDHIHMLVSIPPKISV--SSFMGYLKGKSSLMIFDR--HANLK
+ISDha13.1|IS200/IS605|IS200|Transposase|Desulfitobacterium   VIEGHLMPDHVHMLVSIPPKISV--SSFMGYLKGKSALMIFDK--HANLK
+ISDra9.1|IS200/IS605|IS200|Transposase|Deinococcus           ILKGVVSKDHVHMHVEYPPRLAV--SDLVKRLKGRTSRRLQQE--FPHLE
+ISEha1.1|IS200/IS605|IS200|Transposase|Ethanoligenens        FVEIGTDKNHVHFLIQSVPKYSP--TKIITTVKSITAREIFSK--HPEVK
+ISEnfa200.1|IS200/IS605|IS200|Transposase|Enterococcus       IIEAEICPDHVHMLVEIPPSMSV--SYFVGYLKGKSTLMIFER--HANLK
+ISMba16.1|IS200/IS605|IS200|Transposase|Methanosarcina       IHAMEVVDDHVHLFLEFHPSTSL--SEVIQYLKGGSSYRLFKL--HPEMR
+ISMba18.1|IS200/IS605|IS200|Transposase|Methanosarcina       FDAIGTDGDHVHLFVGAEPKYSP--SRVMQIIKSITARQIFKQ--YPEIK
+ISMco2.1|IS200/IS605|IS200|Transposase|Methanosaeta          FDAIGTDGDHVHIFVGAAPRYSP--SKVMQIVKSITAREFFKK--YPEVK
+ISMex20.1|IS200/IS605|IS200|Transposase|Methylobacterium     LIECSGEDDHVHLLVTYPPTVVI--PKLVNSLKGVSSRKLRDM--RPEIT
+ISMex34.1|IS200/IS605|IS200|Transposase|Methylobacterium     IEEGHLLADHVHMMIAIPPKYAV--SQVIGYIKGKSAIHLARV--YGERR
+ISMma21.1|IS200/IS605|IS200|Transposase|Methanosarcina       IHAMEVVDNHVHLFLEFHPSNSL--SEVIQYLKGGSSYRLFKL--HPDLK
+ISOih2.1|IS200/IS605|IS200|Transposase|Oceanobacillus        IHEANACRDHVHMLVSIPPKLSV--SQFMGYLKGKSSLMIFDR--HANLK
+ISPin5.1|IS200/IS605|IS200|Transposase|Psychromonas          ILKEVVSKDHVHLLVSAPPNMAP--SKIMRRVKGRSSSKLFKC--FPNLK
+ISPlu2.1|IS200/IS605|IS200|Transposase|Photorhabdus          ILKGVVSQDHVHILVSSPPTLAP--SEIMRRLKGRTASKLFEE--FSHLK
+ISPlu5.1|IS200/IS605|IS200|Transposase|Photorhabdus          IIEGHLMPDHVHILVSIPPKISV--SSFMGYLKGKSALMIFDK--HANLK
+ISPpr13.1|IS200/IS605|IS200|Transposase|Photobacterium       ILKGVISKDHVHLLVSAPPNMAP--SEIMRRIKGRTSAKLFES--YPDLK
+ISSep3.1|IS200/IS605|IS200|Transposase|Staphylococcus        IIEAEACKDHIHMLVSIPPKLGV--SSFVGYLKGKSSLMIFDR--HANLK
+ISSham1.1|IS200/IS605|IS200|Transposase|Shewanella           VVELNVQEDHVHLVVRTPPSLSV--SDLMGFVKGRTAIRMFAK--FPYLR
+ISShes4.1|IS200/IS605|IS200|Transposase|Shewanella           VLELNVQIDHVHLVVIIPPKLSV--STLMGILKGRSAIRLFNK--FPHVR
+ISShes8.1|IS200/IS605|IS200|Transposase|Shewanella           VMELNVQVDDVHLVVKVPPKISI--SNLMGALKGKVALKIFSK--FPYLR
+ISShwo2.1|IS200/IS605|IS200|Transposase|Shewanella           VVELNVQIDHVHLVIKVPPKLSI--SKLMGALKGKIALKMFSK--YPYLR
+ISSod23.1|IS200/IS605|IS200|Transposase|Shewanella           ALELNVQIDHVHLVVIIPPKLSV--STLMGVLKGRSAIRLFNK--FPHVR
+ISSpn6.1|IS200/IS605|IS200|Transposase|Streptococcus         IHEANACSDHIHMLISIPPKLSV--SSFMGYLKGKSSLMIFDK--HANLK
+ISSsu4.1|IS200/IS605|IS200|Transposase|Streptococcus         IIEGHLMPDHVHMLVSIPPRLSV--SSFIGYLKGKSALMMFDK--HANLK
+ISStin10.1|IS200/IS605|IS200|Transposase|Streptococcus       IIEGHLMPDHVHMLVSIPPRISV--SSFMGYLKGKSALMMFDK--HANLK
+ISStrs1.1|IS200/IS605|IS200|Transposase|Streptococcus        IHEAEACPDHIHMLVSEPPKLSI--SSFMGYLKGKSSLMIFDR--HANLK
+ISW1.1|IS200/IS605|IS200|Transposase|Wolbachia               IIRGRVASSHVHVYVSVPPYLSI--SKLVQLIKGKSSRKIQQN--FPELK
+IS1253A.1|IS200/IS605|IS605|Transposase|Dichelobacter        LLEFNGEADHVHLLLDMYPNIMP--SKFINNLKTVTSRLMRKE--FAEHL
+IS1253B.1|IS200/IS605|IS605|Transposase|Dichelobacter        LLEFNGEADHVHLLLDMYPNIMP--SKFINNLKTVTSRLMRKE--FAEHL
+IS605.1|IS200/IS605|IS605|Transposase|Helicobacter           IIAMESDIDHLHLMVQYIPRMSI--SSIISKIKQITTYRVWHDKRFIPLL
+IS606.1|IS200/IS605|IS605|Transposase|Helicobacter           LVEFDGESDHVHLLINYPPKVSV--SKLVNSLKGVSSRLTRQH--HFKSV
+IS609.1|IS200/IS605|IS605|Transposase|Escherichia            LVEMDGEPDHVHLLINYPPKLAI--SSLVNSLKGVSGRLLRRD--RPDIA
+IS8301.1|IS200/IS605|IS605|Transposase|Deinococcus           VITMEVMPDHVHLLLSATPQQAI--PDFVKALKGASARRMFVA--YPQLK
+ISAba30.1|IS200/IS605|IS605|Transposase|Acinetobacter        LIEMDGEDDHVHLLVEYPPKVAV--SNLVNSLKGVSSRLLRKE--RPDIQ
+ISAeme8.1|IS200/IS605|IS605|Transposase|Aeromonas            ILEMDGEADHVHLLVAYPPKLAV--SVLVNNLKSISSRQIRIL--NTHLR
+ISAs26.1|IS200/IS605|IS605|Transposase|Aeromonas             LKECDGEADHVHMLIEYAPTVQL--SVLVNSLKAVTSRRLRNE--FLDLR
+ISAsp6.1|IS200/IS605|IS605|Transposase|Anabaena              ILALEVAPDHIHLFISVKPTDTP--HLVIKAFKGRSSFYLRKE--FPQLK
+ISBce3.1|IS200/IS605|IS605|Transposase|Bacillus              IVAMECDKDHVHLFLNTLPTLSP--ADTMAKIKGVTSKRLREE--VPHLQ
+ISBth16.1|IS200/IS605|IS605|Transposase|Bacillus             LVEWNHDVDHVHILFKAHPNTEM--TKFINAYKSASSRLIKRD--FPQVK
+ISCARN6.1|IS200/IS605|IS605|Transposase|Metagenomic          VLEFNGEADHVHLLLALTPKVLP--SAFVNNLKTVTSRLLRKE--FADHL
+ISCbt1.1|IS200/IS605|IS605|Transposase|Clostridium           IIAMECDRDHTHMFLNCLPTLSP--RDIMQKIKGVTSRELRKE--FVELS
+ISCbt2.1|IS200/IS605|IS605|Transposase|Clostridium           IEEIETDKDHVHMIINCNPRYGV--IKCVQLIKGISGYKLFEE--FPFIK
+ISCco1.1|IS200/IS605|IS605|Transposase|Campylobacter         IIEFNHDIDHLHILFKAKPKSEL--LKFINAYKSASSRLIKKE--FSEIK
+ISClte2.1|IS200/IS605|IS605|Transposase|Clostridium          IIKMELMPDHVHMLIEVDPQFGV--HKAIKRMKGRTSKMLRQE--FPHLK
+ISCpe2.1|IS200/IS605|IS605|Transposase|Clostridium           ISEMETDKDHIHLLIECSPQHQI--PNIIKALKGVSARLLFLK--HPEIK
+ISCsa5.1|IS200/IS605|IS605|Transposase|Caldicellulosiruptor  LVEWNHDKDHVHVLFKATPTTSL--SKFINAYKSASSRLIKKE--FPEIR
+ISCysp13.1|IS200/IS605|IS605|Transposase|Cyanothece          LLEFSGEMDHVHILLDFHPKNSI--STVAGCLKSSTARVMKKD--FPEQV
+ISCysp14.1|IS200/IS605|IS605|Transposase|Cyanothece          VLEFSGEADHIHILLDFHPKNSI--SAVAGCLKSSTARTMKKD--FPEQI
+ISDge10.1|IS200/IS605|IS605|Transposase|Deinococcus          ILALEVMPDHVHLFLAADPATAP--NQVMHLLKGYTSRILRQE--FPHLN
+ISDka2.1|IS200/IS605|IS605|Transposase|Desulfurococcus       PLAIEVMPDHVHVLLLCPPRLAP--SYVANYLKGKSARLILKR--FPQLR
+ISDra2.1|IS200/IS605|IS605|Transposase|Deinococcus           VITMEVMPDHVHLLLSATPQQAI--PDFVKALKGASARRMFVA--YPQLK
+ISEc41.1|IS200/IS605|IS605|Transposase|Escherichia           LKECDGEADHVHMLIEYPPLVQL--TKLVNSLKSVTSRRLRND--FIDLR
+ISEc46.1|IS200/IS605|IS605|Transposase|Escherichia           IIEMDGEPDHVHLLVAYPPKLAV--SVMVNNLKSVSSRLLRQQ--NAHLR
+ISEfa4.1|IS200/IS605|IS605|Transposase|Enterococcus          LVEWNHDKDHVHIMFKAQPKTEL--TKFINAYKSASSRLIKRD--FPRVK
+ISFsp4.1|IS200/IS605|IS605|Transposase|Frankia               LTEFNGEDDHVHLLVEYPPKVAV--SALVNSLKGVSARRLRTE--FTDRV
+ISH1-8.1|IS200/IS605|IS605|Transposase|Halobacterium         IKNVDGGTDHVHILFQTKPTTDL--TKFINSLKGVTSRRIRSE--FPEVT
+ISH12.1|IS200/IS605|IS605|Transposase|Halobacterium          IKNVDGGTDHVHILFQTKPTTDLDATKFINSLKGVTSRRIRSE--FPEVT
+ISH22.1|IS200/IS605|IS605|Transposase|Halobacterium          ILELAIRPDHVHLFITGDPTLAP--NKIMQQIKGYSSRHLRDE--FDF--
+ISH34.1|IS200/IS605|IS605|Transposase|Halobacterium          ILALEIADDHVHLFVQCDPKHSP--ADIARQFKSYSGKHLLER--YPEIR
+ISH35.1|IS200/IS605|IS605|Transposase|Halobacterium          ILDLTVQHDHVHLFVSSPPKNEP--ALLANWFKGISSRKYNHR--YADHD
+ISH36.1|IS200/IS605|IS605|Transposase|Halobacterium          ILSLHISPDHVHFFLSTHPKHAP--GEIVRTVKSITAREMWEQ--HESYL
+ISHaca1.1|IS200/IS605|IS605|Transposase|Haloarcula           ILSLHTSPDHVHLFLSTHPKHAP--SKIVRTVKSITAREMWQQ--HEFLL
+ISHal1.1|IS200/IS605|IS605|Transposase|Haloferax             IQNVNGGSDHVHILFTAKPTTDL--TKFINSLKGVTSRKIRDE--NPEVR
+ISHall1.1|IS200/IS605|IS605|Transposase|Halostagnicola       IVSMEIATDHVHLFVEADPKWSP--AEIAKQFKGYSGRTILKH--HPEIK
+ISHarch15.1|IS200/IS605|IS605|Transposase|Halophilic         LAESEVMPDHVHLFIGSPPKNAP--SLIVNWVKGISARKYNQR--YDD--
+ISHas1.1|IS200/IS605|IS605|Transposase|Halonotius            ILSLHISPDDVHLFLSGLPKHAP--SEIARTVKSITAREMWEQ--HESFL
+ISHbo4.1|IS200/IS605|IS605|Transposase|Halogeometricum       LTNFDGEDDHVHILFRAKPTTDL--VKFINTAKGATARRIRNE--YADEL
+ISHbo5.1|IS200/IS605|IS605|Transposase|Halogeometricum       LAESEVMPDHVHLFIGSPPKNAP--SLIVNWVKGISARKYNQR--YDD--
+ISHel2.1|IS200/IS605|IS605|Transposase|Haloferax             ILSLHISPDHVHLFLSAHPKHAP--SEIARTVKSITAREMWEQ--HESFL
+ISHez3.1|IS200/IS605|IS605|Transposase|Halorubrum            ILSLHISPDHVHLFVSAHPKHSP--SEIVRTVKSITAREMWEQ--HEAFL
+ISHgi1.1|IS200/IS605|IS605|Transposase|Haloferax             ILALEIADDHVHLFVQTDPKHSP--ADVARQFKSYSGKHIIER--HPAIR
+ISHhu1.1|IS200/IS605|IS605|Transposase|Halobacterium         LAESEVMPDHVHLFIGSPPKNAP--SLIVNWVKGISARKYNQR--YDD--
+ISHhu2.1|IS200/IS605|IS605|Transposase|Halobacterium         IQNVNGGSDHVHILFTAKPTTDL--TKFINSLKGVTSRKIRDE--NPEIR
+ISHhu3.1|IS200/IS605|IS605|Transposase|Halobacterium         ILELAIRPDHVHLFITGDPTLAP--NKIMQQVKGYSSRHLRDE--FDF--
+ISHje2.1|IS200/IS605|IS605|Transposase|Halalkalicoccus       LTNLDGKDDHVHILFRAKPTTDL--VKFINTVKGATARRIRNE--YADEL
+ISHko3.1|IS200/IS605|IS605|Transposase|Halorubrum            LTNLDGEDDHVHILFRAKPTTNL--VKFINTVKGATARRIRNE--YEDEL
+ISHla15.1|IS200/IS605|IS605|Transposase|Halorubrum           LTNLDGEDDHVHILFRAKPTTDL--VKFINTVKGATARRIRNE--YADEL
+ISHla16.1|IS200/IS605|IS605|Transposase|Halorubrum           LAESEVMPDHVHLFIGSPPKNAP--SLIVNWVKGISARKYNQR--YDD--
+ISHla17.1|IS200/IS605|IS605|Transposase|Halorubrum           LVESEVMLNHVHLFIGSPPKNAP--SLIVNWVKGISARKYNQR--YDD--
+ISHla19.1|IS200/IS605|IS605|Transposase|Halorubrum           IQNVNGGSDHVHILFTAKPTTDL--TKFINSLKGVTSRKIRDE--NPEVR
+ISHla21.1|IS200/IS605|IS605|Transposase|Halorubrum           ILDLTVQPDHVHLFVSSPPKHAP--SLLANWFKGISSRKYNHR--YADHD
+ISHli11.1|IS200/IS605|IS605|Transposase|Halohasta            LTNLDGEDDHVHILFRAKPTTDL--VKFINTVKGATARRIRNE--YADEL
+ISHlsp1.1|IS200/IS605|IS605|Transposase|Halopiger            ILALEIADDHVHLFAQCDPRHSP--SDIARQFKSYSGKHLLER--YPEIR
+ISHma12.1|IS200/IS605|IS605|Transposase|Haloarcula           LTNLDGEDDHVHILFRAKPTTDL--VKFINTVKGATARRIRNE--YADEL
+ISHma17.1|IS200/IS605|IS605|Transposase|Haloarcula           IQNLTVQPDHVHLFVSSPPKHSP--SLLANWFKRISSRKYNHR--HTDHD
+ISHma7.1|IS200/IS605|IS605|Transposase|Haloarcula            ILSLHISPDHVHLFLSAHPKHAP--SEIVRTVKSITAREMWEQ--YESYL
+ISHmu3.1|IS200/IS605|IS605|Transposase|Halomicrobium         ILSLHISPDHVHLFLSAHPKYGP--SEIVRTIKSITAREMWEQ--HEPFL
+ISHmu5.1|IS200/IS605|IS605|Transposase|Halomicrobium         IKNVDGGTDHVHILFTTKPTTDL--TKFINSLKGVTSRRIRQE--YPEVK
+ISHmu6.1|IS200/IS605|IS605|Transposase|Halomicrobium         LTNLDGEDDHVHILFRAKPTTDL--VKFINTVKGATARRIRNE--YADEL
+ISHp608.1|IS200/IS605|IS605|Transposase|Helicobacter         IIEMQTDKDHIHILADVDPSFGV--MKFIKTAKGRSSRILRQE--FNHLK
+ISHru2.1|IS200/IS605|IS605|Transposase|Halovivax             LVNLDGEDDHIHVQFRAKPTTDL--VKFINTVKGATARRIRNE--YEDEL
+ISHsi2.1|IS200/IS605|IS605|Transposase|Haloarcula            LTNLDGEDDHVHILFRAEPTTDL--VKFINTVKGATARRIRNE--YEDDL
+ISHti1.1|IS200/IS605|IS605|Transposase|Halorhabdus           ILSLHISPDHVHLFLSAHPKYAP--SEIVRTVKSITAREMWQQ--HEPLL
+ISHvo18.1|IS200/IS605|IS605|Transposase|Haloferax            IIDLTVQPDHIHLFVSSPPKHAP--SLLANWFKGISSRKYNHR--HADHD
+ISHwa17.1|IS200/IS605|IS605|Transposase|Haloquadratum        ILSLHISPDHVQLFLSAHPKHST--SEIARKIKSITAREMWQQ--HEHLL
+ISLjo5.1|IS200/IS605|IS605|Transposase|Lactobacillus         IEKMEIMPEHVHLLVSFKPSKSG--SSVIKALKGRSGRLFLQA--HPEIR
+ISMac7.1|IS200/IS605|IS605|Transposase|Methanosarcina        ILEMETDKDHIHFLIKSETKVSV--LSIVRKQKHESTNRIWKTQK--EYL
+ISMba17.1|IS200/IS605|IS605|Transposase|Methanosarcina       ILEMETDKDHIHFLIKSEPKVSV--LSIVRKLKQESTNRLWKTQK--EYL
+ISMma19.1|IS200/IS605|IS605|Transposase|Methanosarcina       ILEMETDKDHIHFLIKSEPKVSV--LSIVRKLKQESTNRLWKTQK--DYL
+ISMma22.1|IS200/IS605|IS605|Transposase|Methanosarcina       LVTQEVMPDHVHLFIIMHPKFAP--ADIVKIFKGITAKKLFEM--HPEIK
+ISMmu1.1|IS200/IS605|IS605|Transposase|Mitsuokella           VEELEVMPEHVHMLISFKPKYTP--TNIVKALKGGSARLFLKK--HPEIK
+ISNamo17.1|IS200/IS605|IS605|Transposase|Natronomonas        ILDLTVQPDHVHLFVSSPPKNEP--ALLANWFKGISSRKYNHR--YADHD
+ISNamo18.1|IS200/IS605|IS605|Transposase|Natronomonas        IIDLTIQPNHIHLFVSSPPKHAP--SLLANWFKGISSRKYNHR--HADHD
+ISNamo19.1|IS200/IS605|IS605|Transposase|Natronomonas        IQNVNGGSDHVHILFTAKPTTNL--TKFINSLKGVTSRKIRDE--NPEVR
+ISNhu1.1|IS200/IS605|IS605|Transposase|Natrialba             ILALEIADDHVHLFVQCDPKHSP--ADLARQFKSYSGKHLLER--YPEIQ
+ISNin1.1|IS200/IS605|IS605|Transposase|Natronolimnobius      ILALEIADDHVHLFVQCDPKHSP--ADLARQFKSYSGKHLLER--YPEIR
+ISNma12.1|IS200/IS605|IS605|Transposase|Natrialba            IIDLTVQSDHVHLFVSSPPKHAP--SLLANWFKGISSRKYNHR--HADHD
+ISNpe10.1|IS200/IS605|IS605|Transposase|Natrinema            ILDLTVQPDHVHLFVSSPPKNEP--ALLANWFKGISSRKYNHR--YADHD
+ISNph5.1|IS200/IS605|IS605|Transposase|Natronomonas          IKNVDGGTDHVHILFTTKPTTDL--TKFINSLKGVTSRRIRQE--YPEVK
+ISNph6.1|IS200/IS605|IS605|Transposase|Natronomonas          ILALEIADDHVHLFVQTDSKYSP--ANIARQFKSYSGKHLLER--YPEIR
+ISNph7.1|IS200/IS605|IS605|Transposase|Natronomonas          IPSLHISPDHVHLFLSAHPKYSP--SKIARKIKSITAREMWQQ--HEHLL
+ISNsp2.1|IS200/IS605|IS605|Transposase|Nostoc                IKALEIAPDHIHLLVEYDPHHSI--SQIVKAFKGRSSRYLRQE--FPELM
+ISNsp3.1|IS200/IS605|IS605|Transposase|Nostoc                IKALEIAPDHIHLLVEYDPHHSI--SQVVKAFKGRSSRYLRQE--FPELM
+ISSen6.1|IS200/IS605|IS605|Transposase|Salmonella            LKESNGDVDHVHMLIEYPPTVQL--SVLVNSLKAVTSRRLRNE--FIDLR
+ISSis2.1|IS200/IS605|IS605|Transposase|Sulfolobus            IITLEVMPDHVHLFVNCPPRYSP--SYLANYFKGKSARLVLKK--FPELR
+ISSoc10.1|IS200/IS605|IS605|Transposase|Synechococcus        LIEFNGEADHVHLLFQYYPQVDL--SKLVNNIKSVSSRRMRSE--FADYI
+ISSoc3.1|IS200/IS605|IS605|Transposase|Synechococcus         LVEFDGEADHVHLLVSFPPDVQV--SKLVNNLKTVSSRLIRKE--FATEV
+ISSoc6.1|IS200/IS605|IS605|Transposase|Synechococcus         VRAIEIAPDHVHLFLEIKPTDPI--HLVVKAFKGRASKYLRQK--FPNLR
+ISSto1.1|IS200/IS605|IS605|Transposase|Sulfolobus            VLALEVMPDHIHLFVNCPPRYAP--SYLANYFKGKSARLILKK--FPELK
+ISTac1.1|IS200/IS605|IS605|Transposase|Thermoplasma          ILEMEVMPDHVHLLIDVDPRMGV--YHVVNRIKGYTSRVLRAE--FPELR
+ISTel2.1|IS200/IS605|IS605|Transposase|Thermosynechococcus   ILEFNGEEDHVHALIEYPPKLSL--SQIVNALKGVSSRRYGKA--ALPK-
+ISTfu1.1|IS200/IS605|IS605|Transposase|Thermobifida          LVEMEVMPDHVHLLVEVDPQYGI--HRLVKAIKGRSSRVLREE--FPHLK
+ISTsi3.1|IS200/IS605|IS605|Transposase|Thermococcus          VISLEVIPDHVHVFLRAKPDLAP--ARIINHLKGKSARKLLQE--FPELR
+ISTvo5.1|IS200/IS605|IS605|Transposase|Thermoplasma          IIALEVMPDHIHLFVNCPPRYSP--SYLTNYFKGKSARLILKK--SPELR
+
+IS1004.1|IS200/IS605|IS200|Transposase|Vibrio                K-KLW-GNHFWARGYFVDTVG--VNEEIIRRYVRHQDKKELEQEQ-QLEL
+IS1469.1|IS200/IS605|IS200|Transposase|Clostridium           YK-Y-GNRHFWCMGFYVDTVGK--NKKAIEDYIRNQEQEDMIADQISL--
+IS1541A.1|IS200/IS605|IS200|Transposase|Yersinia             FK-Y-RNREFWCRGYYVDTVGK--NTARIQEYIKHQLEEDKMGEQLSI--
+IS1541B.1|IS200/IS605|IS200|Transposase|Yersinia             FK-Y-RNREFWCRGYYVDTVGK--NTARIQEYIKHQLEEDKMGEQLSI--
+IS1541C.1|IS200/IS605|IS200|Transposase|Yersinia             FK-Y-RNREFRCRGYYVDTVGK--NTARIQEYIKHQLEEDKMGEQLSI--
+IS1541D.1|IS200/IS605|IS200|Transposase|Yersinia             FK-Y-RNREFWCRGYYVDTVGK--NTSKIRDYIKHQLEQDKLGEQLSI--
+IS200.1|IS200/IS605|IS200|Transposase|Salmonella             FK-Y-RNREFWCRGYYVDTVGK--NTAKIQDYIKHQLEEDKMGEQLSI--
+IS200C.1|IS200/IS605|IS200|Transposase|Escherichia           FK-Y-RNREFWCRGYYVDTVGK--NTAKIQDYIKHQLEEDKMGEQLSI--
+IS200F.1|IS200/IS605|IS200|Transposase|Salmonella            FK-Y-RNREFWCRGYYVDTVGK--NTAKIQDYIKHQLEEDKMGEQLSI--
+IS200G.1|IS200/IS605|IS200|Transposase|Yersinia              FK-Y-RNREFWCRGYYVDTVGK--NTARIQEYIKHQLEEDKMGEQLSI--
+IS200H.1|IS200/IS605|IS200|Transposase|Salmonella            FK-Y-RNREFWCRGYYVDTVGK--NTAKIQNYIKHQLEEDKMGEQLSI--
+IS200S.1|IS200/IS605|IS200|Transposase|Streptococcus         YK-Y-GNRHFWCMGFYVDTVGK--NKKAIEDYIRNQEQEDMIADQISL--
+IS657.1|IS200/IS605|IS200|Transposase|Bacillus               YR-Y-GNRKFWCRGFYVDTVGR--NKKQIQEYIRNQLREDYMGDQLTL--
+ISAac1.1|IS200/IS605|IS200|Transposase|Actinobacillus        YN-Y-GNRHFWSKGYYVSTVGL--NTKVV*EYIRNQEKEDMIQDNLSK--
+ISAac3.1|IS200/IS605|IS200|Transposase|Aggregatibacter       YK-Y-GNRHFWSKGYYVSTVGL--NTKTVEEYIRNQEKEDMIQDNLSK--
+ISAcma39.1|IS200/IS605|IS200|Transposase|Acaryochloris       RN-A-TGHKFWSRGYFVSTVGR--DEEVIRRYIRHQEQEEQKLEQLNL--
+ISAsp20.1|IS200/IS605|IS200|Transposase|Anabaena             -------QFAWQEGYGVFSLGG-KQLQEAIDYVDNQKIHHQNKTT---IP
+ISAzo20.1|IS200/IS605|IS200|Transposase|Azoarcus             KN-F-TGENFWARGYFVSTVGL--DEAIVRAYIRAQEEEDERYDQMRL--
+ISBsph1.1|IS200/IS605|IS200|Transposase|Bacillus             YQ-L-GNRQFWCRGYLVDTVSR--NRKVIHKYIKKQLQEDLRYDQMSI--
+ISBsph2.1|IS200/IS605|IS200|Transposase|Bacillus             YQ-L-GNRQFWCRGYLVDTVSR--NQKVIHKYIKKQLQEDLRYDQMSI--
+ISCaa10.1|IS200/IS605|IS200|Transposase|Candidatus           -KQLW-GGEFWSDGYFATTVGKHGDEKMIARYVQNQGNTYE--ML-Y---
+ISCARN10.1|IS200/IS605|IS200|Transposase|Metagenomic         RN-F-AGQHFWARGYFVSTVGR--DEAMIRDYIRHQEQEDRRLDQLNI--
+ISCth10.1|IS200/IS605|IS200|Transposase|Clostridium          YK-Y-GNRHFWCRGYYVDTVGR--NRKAIEQYIRRQLQEDIASDQISL--
+ISDha13.1|IS200/IS605|IS200|Transposase|Desulfitobacterium   YK-F-GNRHFWAEGYYVSTVGL--NEATITKYIQEQEKHDIALDKLSV--
+ISDra9.1|IS200/IS605|IS200|Transposase|Deinococcus           K-RYW-GKHFWGVGYGAWSTGT-ITEAMVQEYLEHHRHPSDPDDS---AF
+ISEha1.1|IS200/IS605|IS200|Transposase|Ethanoligenens        -KQLW-GGELWTDGYFVNTVSKFGSEEVIKRYLQNQGKTEEYKQL-Y---
+ISEnfa200.1|IS200/IS605|IS200|Transposase|Enterococcus       YK-Y-GNRHFWCRGYYVDTVGK--NAKKIEEYIANQLQEDLEYDQMTL--
+ISMba16.1|IS200/IS605|IS200|Transposase|Methanosarcina       -HQYW-SGSLWSSGKFYRSVGN-VTADTIKHYIKESQGKTKTEAQSQRLK
+ISMba18.1|IS200/IS605|IS200|Transposase|Methanosarcina       -KQLW-GSELWSDGGYIGTVGDGTTSDVIKSYIENQGNQEEKEAY-----
+ISMco2.1|IS200/IS605|IS200|Transposase|Methanosaeta          -KQLW-GGEFWSDGGYVGTVGDGVMADTIRNYVETQGSPEEKEAY-----
+ISMex20.1|IS200/IS605|IS200|Transposase|Methylobacterium     GR-YH-QGVLWTPSYFVASCGG-APLSVVAEYVRSQRADARSPRPEGRGF
+ISMex34.1|IS200/IS605|IS200|Transposase|Methylobacterium     RN-F-VGQHFWARGYFVSTVGR--DEAVIRAYIKQQEQEDQRLEQLNL--
+ISMma21.1|IS200/IS605|IS200|Transposase|Methanosarcina       -KQYW-GGSLWSNGKFYRSVGN-VTADTIKHYIKESQGKPSEESQLYRFM
+ISOih2.1|IS200/IS605|IS200|Transposase|Oceanobacillus        YR-Y-GNRKFWCRGYFVDTVGR--NKNQIQEYIRNQLKEDYMSDQLTL--
+ISPin5.1|IS200/IS605|IS200|Transposase|Psychromonas          K-RYW-GRHFWSRGYFYVTSGG-VTEEMIKEYLAHHFEPKVDDNF-----
+ISPlu2.1|IS200/IS605|IS200|Transposase|Photorhabdus          K-RYW-GQHFWGRGYFCATVGQ-LTEEMIKSYLEHHFEPNPNDNF-----
+ISPlu5.1|IS200/IS605|IS200|Transposase|Photorhabdus          YK-F-GNRKFWSEGYYVSTVGL--NEATIRKYIREQEKSDLMQDKLST--
+ISPpr13.1|IS200/IS605|IS200|Transposase|Photobacterium       K-KYW-GRHFWARGYFCVTSGD-LTEEMIKEYLDHHFEPKAEDNF-----
+ISSep3.1|IS200/IS605|IS200|Transposase|Staphylococcus        YR-Y-GNRKFWCKGFYVDTVGR--NKKVIENYIRNQLQEDIVADQISM--
+ISSham1.1|IS200/IS605|IS200|Transposase|Shewanella           KQKLW-GNHFWQRGYFVDSVG--ANEEIIRRYVRHQEKTAKEEEKRQIAL
+ISShes4.1|IS200/IS605|IS200|Transposase|Shewanella           K-KLW-GNSFWARGYFVDTVG--VNEEIIRRYVRHQDKQDLEHDA-QLSL
+ISShes8.1|IS200/IS605|IS200|Transposase|Shewanella           KNKLW-GNHFWQRGYFVDSIG--INEEIIRRYVRHQEKVERQEQG-QLAL
+ISShwo2.1|IS200/IS605|IS200|Transposase|Shewanella           KNKLW-GNHFWQRGYFVDTVG--INEEVIRRYVRHQEKVEKQEQP-QLDL
+ISSod23.1|IS200/IS605|IS200|Transposase|Shewanella           K-KQW-GNSFWARGYFVDTVG--VNEEIIRRYVRHQDKQDQEHEA-QLSL
+ISSpn6.1|IS200/IS605|IS200|Transposase|Streptococcus         YK-Y-GNRKFWCRGYYVDTVGR--NQKVIAEYIQNQLQEDRVADQLTL--
+ISSsu4.1|IS200/IS605|IS200|Transposase|Streptococcus         YK-F-GNRHFWAEGYYVSTVGL--NEATIKKYIQEQEKHDIALDKLSV--
+ISStin10.1|IS200/IS605|IS200|Transposase|Streptococcus       YK-F-GNRHFWAEGYYVSTVGL--NEATIKKYIQDQEKHDIAVDKLSV--
+ISStrs1.1|IS200/IS605|IS200|Transposase|Streptococcus        YK-Y-GNRKFWCRGFYVDTVGR--NQKRIEEYIRNQLQEDVIAD------
+ISW1.1|IS200/IS605|IS200|Transposase|Wolbachia               K-RYW-GKHLWAVGYFVRTSGN-VTDEMIKNYIENHSKKEDKFG----DF
+IS1253A.1|IS200/IS605|IS605|Transposase|Dichelobacter        AEFYW-KPVLWTRAYCLLTTGG-ATIDTIRQYIEKQERPD----------
+IS1253B.1|IS200/IS605|IS605|Transposase|Dichelobacter        AEFYW-KPVLWTRAYCLLTTGG-ATIDTIRQYIEKQERPD----------
+IS605.1|IS200/IS605|IS605|Transposase|Helicobacter           QKHFWKEKTFWTDGFFVCSIGQ-ANPETIKAYIENQG-------------
+IS606.1|IS200/IS605|IS605|Transposase|Helicobacter           EASLW-GKHLWSPSYFAGSCGG-APLEMIKQYIQEQETPH----------
+IS609.1|IS200/IS605|IS605|Transposase|Escherichia            VRYYY-KGVLWSPGYFASSCGG-APISAIRQYIEQQQTPG----------
+IS8301.1|IS200/IS605|IS605|Transposase|Deinococcus           -EKLW-GGNLWNPSYCILTVSE-NTRAQIQKYIESQHDKE----------
+ISAba30.1|IS200/IS605|IS605|Transposase|Acinetobacter        KR-YW-KGVLWSPSYFASSCGG-APISIVRQYIEQQQTPH----------
+ISAeme8.1|IS200/IS605|IS605|Transposase|Aeromonas            KQ-SN-SGLLWSRSYFACSAGG-ATIETLKAYVASQNTPD----------
+ISAs26.1|IS200/IS605|IS605|Transposase|Aeromonas             GA-YS-KPVLWSRSYFAGSCGG-APLEVIKQYIQNQRG------------
+ISAsp6.1|IS200/IS605|IS605|Transposase|Anabaena              -KL----PSLWTSSYFVSTAGN-VSSESVRKYIEDPHHG-----------
+ISBce3.1|IS200/IS605|IS605|Transposase|Bacillus              -HL----PSLWTRSYFVSTAGN-VSTETIKQYVENQKKRG----------
+ISBth16.1|IS200/IS605|IS605|Transposase|Bacillus             KK-LW-KEMFWSRSFCLLTIGG-SPIDVVKTYIENQSEK-----------
+ISCARN6.1|IS200/IS605|IS605|Transposase|Metagenomic          KRYYWSKPVFWNRSYCILTVGG-APLSVLKQYIEQQERPE----------
+ISCbt1.1|IS200/IS605|IS605|Transposase|Clostridium           -KM----PSLWTRSYFVSTAGN-ISSETVKQYVENQKKRY----------
+ISCbt2.1|IS200/IS605|IS605|Transposase|Clostridium           KRYLW-GGKFWSRSTFVATVGS-VSLDIVKRYIENQGK------------
+ISCco1.1|IS200/IS605|IS605|Transposase|Campylobacter         KY-LW-KEYFWSGSYFLATTGG-VSLDVLKAYVQNQGIEDNRVKKQYNSK
+ISClte2.1|IS200/IS605|IS605|Transposase|Clostridium          TKL----PTLWTNSYFVSTVGG-APLSAIKQYIENQKTSQRK--------
+ISCpe2.1|IS200/IS605|IS605|Transposase|Clostridium           -RYLW-EGNLWNPSYFVATVSE-NTEEQIRNYIQNQQVK-----------
+ISCsa5.1|IS200/IS605|IS605|Transposase|Caldicellulosiruptor  QK-LW-KEYFWSRSYCLLTSGG-APVEVIRKYIESQGEKRKC--------
+ISCysp13.1|IS200/IS605|IS605|Transposase|Cyanothece          TKFYKDKVSFWSKSYYVTSSGG-APIEKLKEYIKNQDAPKS---------
+ISCysp14.1|IS200/IS605|IS605|Transposase|Cyanothece          KKFYWGKVAFWSNSYYVASAGG-APIEKLKEYIKNQDSPKD---------
+ISDge10.1|IS200/IS605|IS605|Transposase|Deinococcus          -TL----PALWTRSYFVSTAGA-VSGATIQKYIAAQKTRD----------
+ISDka2.1|IS200/IS605|IS605|Transposase|Desulfurococcus       -ARVK-YGKLWSRSYFVATVGN-VTADIVKRYVEEQWSKVRE--------
+ISDra2.1|IS200/IS605|IS605|Transposase|Deinococcus           -EKLW-GGNLWNPSYCILTVSE-NTRAQIQKYIESQHDKE----------
+ISEc41.1|IS200/IS605|IS605|Transposase|Escherichia           AA-YS-KPVLWSRSYFIGSCGG-APLEVVKKYIQNQRG------------
+ISEc46.1|IS200/IS605|IS605|Transposase|Escherichia           MQ-SK-TGLLWSRSYFVCSTGE-ATIETLRAYVQSQSTPD----------
+ISEfa4.1|IS200/IS605|IS605|Transposase|Enterococcus          QF-LW-KEMFWSKSFCLLTTGG-APIDVIKKYIQNQGNNHK---------
+ISFsp4.1|IS200/IS605|IS605|Transposase|Frankia               NQHLI-RGHFWSPSYLAVSAED-APLALVREYIEEQRRPAPTR-------
+ISH1-8.1|IS200/IS605|IS605|Transposase|Halobacterium         QT-L--EDAFWQPGYFLATTGQ-VSIDTLMDYVDDQ--------------
+ISH12.1|IS200/IS605|IS605|Transposase|Halobacterium          QT-L--EDAFWQPGYFLATTGQ-VSIDTLMDYVDDQDA------------
+ISH22.1|IS200/IS605|IS605|Transposase|Halobacterium          -GL----PSLWTRSYFVSSAGD-VSSEVIEEYIDAQAGE-----------
+ISH34.1|IS200/IS605|IS605|Transposase|Halobacterium          ESYFW-GGGFWKVGYYVGTTGE-VSEEVVERYIEQTEH------------
+ISH35.1|IS200/IS605|IS605|Transposase|Halobacterium          GE-----KIGWARGYYAGTAGH-VSSETVENYIQQHKEGDS---------
+ISH36.1|IS200/IS605|IS605|Transposase|Halobacterium          EEYLW-GGGFWEESYYVGTAGD-VSTDTIEQYIERTEHV-----------
+ISHaca1.1|IS200/IS605|IS605|Transposase|Haloarcula           QEYLW-GGGFWEESYYVGTAGD-VSTDTIEQYIERTEHV-----------
+ISHal1.1|IS200/IS605|IS605|Transposase|Haloferax             QA-P--DKAFWQPGYFLATTGQ-VSIDVLMKYVEEQ--------------
+ISHall1.1|IS200/IS605|IS605|Transposase|Halostagnicola       QRYFW-RSGLWKDGYYVGTTGA-VSEDVVRRYIEETEH------------
+ISHarch15.1|IS200/IS605|IS605|Transposase|Halophilic         -------RVKWTRSYYVGTAGS-ASKGAVERYVAEQEGDDE---------
+ISHas1.1|IS200/IS605|IS605|Transposase|Halonotius            KEYLW-GSGFWEQSYYIGTAGQ-VSNETIEQYIERTEHV-----------
+ISHbo4.1|IS200/IS605|IS605|Transposase|Halogeometricum       KTELW-GDSFWNDSYCLISTGQ-VSLDVLKQYVEDQRE------------
+ISHbo5.1|IS200/IS605|IS605|Transposase|Halogeometricum       -------RVKWTRSYYVGTAGS-ASKGAVEQYIAEQEGGDE---------
+ISHel2.1|IS200/IS605|IS605|Transposase|Haloferax             EEYLW-GGGFWERSYYIGTAGT-VSTGTIERYIERTEHV-----------
+ISHez3.1|IS200/IS605|IS605|Transposase|Halorubrum            EDYLW-GGGFWEESYYVGTAGD-VSTGTIEQYIERTEHV-----------
+ISHgi1.1|IS200/IS605|IS605|Transposase|Haloferax             ESYFW-GGGFWKVGYYVGTTGA-VSEEVVQRYIEQTEH------------
+ISHhu1.1|IS200/IS605|IS605|Transposase|Halobacterium         -------RVKWTRSYYVGTAGS-SSKGAVEQYIAEQEGGDE---------
+ISHhu2.1|IS200/IS605|IS605|Transposase|Halobacterium         QA-L--DKAFWQPGYFLATTGQ-VSIDVLMEYVEEQ--------------
+ISHhu3.1|IS200/IS605|IS605|Transposase|Halobacterium         -GL----PSLWTRSYFVSSAGD-VSSEVIKEYIDAQAGE-----------
+ISHje2.1|IS200/IS605|IS605|Transposase|Halalkalicoccus       KTDLW-GDSFWNDSYCLISTGQ-VSLDVLHQYIENQRE------------
+ISHko3.1|IS200/IS605|IS605|Transposase|Halorubrum            KTELW-GDSFWNDSYCLISTGQ-VSLDVLKQYVEDQRES-----------
+ISHla15.1|IS200/IS605|IS605|Transposase|Halorubrum           KTELW-GDSFWNDSYCLISTGQ-VSLDVLKQYVEDQRE------------
+ISHla16.1|IS200/IS605|IS605|Transposase|Halorubrum           -------RVKWTRSYYVGTAGS-ASKGAVEQYIAEQEGDDE---------
+ISHla17.1|IS200/IS605|IS605|Transposase|Halorubrum           -------RVKWTRSYYVGTAGS-ASKDAIERYIAEQEGGDE---------
+ISHla19.1|IS200/IS605|IS605|Transposase|Halorubrum           QA-L--DKAFWQPGYFLTTTGQ-VSIDVLMEYVEEQ--------------
+ISHla21.1|IS200/IS605|IS605|Transposase|Halorubrum           GE-----KIGWVRGYYAGTAGH-VSSETVKNYIQRHEEDES---------
+ISHli11.1|IS200/IS605|IS605|Transposase|Halohasta            KTDLW-GDSFWNDSYCLISTGQ-VSLDMLKQYVDNQRE------------
+ISHlsp1.1|IS200/IS605|IS605|Transposase|Halopiger            ESSFW-GGGFWKSGYYVGTTGA-VSEEVAEPYIEKTEH------------
+ISHma12.1|IS200/IS605|IS605|Transposase|Haloarcula           KTELW-GDSFWNDSYCLISTGQ-VSLDVLKQYVEDQRE------------
+ISHma17.1|IS200/IS605|IS605|Transposase|Haloarcula           GE-----KIRWARGYYAGTAGH-VSSETVENYIDRHKEVQA---------
+ISHma7.1|IS200/IS605|IS605|Transposase|Haloarcula            EEYLW-GGGFWEESYYVGTAGD-VSTDTIEQYIERTEHV-----------
+ISHmu3.1|IS200/IS605|IS605|Transposase|Halomicrobium         EEYLW-GGGFWEESYYVGTAGD-VSTDTIEQYIERTEHV-----------
+ISHmu5.1|IS200/IS605|IS605|Transposase|Halomicrobium         QT-L--EDAFWQPGYFLATTGQ-VSIDVLMDYVENQ--------------
+ISHmu6.1|IS200/IS605|IS605|Transposase|Halomicrobium         KTELW-GDSFWNDSYCLISTGQ-VSLDVLKQYVEDQRE------------
+ISHp608.1|IS200/IS605|IS605|Transposase|Helicobacter         TKL----PTLWTNSCFISTVGG-APLNVVKQYIENQQNSNRPKQKEKWKN
+ISHru2.1|IS200/IS605|IS605|Transposase|Halovivax             KTELW-GDSFWNSSYCLLSTGQ-VSLDVLKQYVEEQRES-----------
+ISHsi2.1|IS200/IS605|IS605|Transposase|Haloarcula            KTDLW-GNSFWNDSYCLISTGQ-VSLDVLKEYVEDQRA------------
+ISHti1.1|IS200/IS605|IS605|Transposase|Halorhabdus           QEYLW-GGGFWEESYYVGTAGD-VSTDTIEQYIERTEHV-----------
+ISHvo18.1|IS200/IS605|IS605|Transposase|Haloferax            SE-----KIKWVRGYYAGTAGH-VSSETVEKYIQRHEEDEQ---------
+ISHwa17.1|IS200/IS605|IS605|Transposase|Haloquadratum        ENHLW-GGGFWEESYYIGTAGE-VSSQTIEQYIERTEHVS----------
+ISLjo5.1|IS200/IS605|IS605|Transposase|Lactobacillus         QNKMW-GGHLWSPSYYFGSVGN-MSKEVVEKYINDQVYNAIKDGKPYPSP
+ISMac7.1|IS200/IS605|IS605|Transposase|Methanosarcina        EKYYRGENTLWSDGYFASTIGN-VSKEATEYYIRNQG-------------
+ISMba17.1|IS200/IS605|IS605|Transposase|Methanosarcina       EKYYWGENTLWSEGYFASTIGN-VSKEAVEYYIRNQG-------------
+ISMma19.1|IS200/IS605|IS605|Transposase|Methanosarcina       EKYYWGENTLWSDGYFASTIGN-VSKEAAEYYIRNQG-------------
+ISMma22.1|IS200/IS605|IS605|Transposase|Methanosarcina       -SRLW-NGHLWNPSYYVGTCGD-TTKETVKMYIETQKVK-----------
+ISMmu1.1|IS200/IS605|IS605|Transposase|Mitsuokella           HDKFW-GGHIWSRSYYMSTLGN-MSKEVVAKYIQNQYSK-----------
+ISNamo17.1|IS200/IS605|IS605|Transposase|Natronomonas        GE-----KIGWARGYYAGTAGH-VSSETVENYIRQHKEGDS---------
+ISNamo18.1|IS200/IS605|IS605|Transposase|Natronomonas        SE-----KIKWARGYYAGTAGH-VSSETVEKYIQRCQNS-----------
+ISNamo19.1|IS200/IS605|IS605|Transposase|Natronomonas        QA-L--DKAFWQPGYFLATTGQ-VSIDVLMKYVEKQ--------------
+ISNhu1.1|IS200/IS605|IS605|Transposase|Natrialba             ESYFW-GGGFWKVGYYVGTTGA-VSEEVVERYIEETEHVPK---------
+ISNin1.1|IS200/IS605|IS605|Transposase|Natronolimnobius      ESYFW-GGGFWKVGYYVGTTGA-VSEEVVERYTEETEHALE---------
+ISNma12.1|IS200/IS605|IS605|Transposase|Natrialba            GE-----KIKWARGYYAGTAGH-VSSETVQDYIQRQQNS-----------
+ISNpe10.1|IS200/IS605|IS605|Transposase|Natrinema            GE-----KIGWARGYYAGTAGH-VSSETVENYIQQHKEGDS---------
+ISNph5.1|IS200/IS605|IS605|Transposase|Natronomonas          QT-L--EDAFWQPGYFLATTGQ-VSIDVLMDYVENQ--------------
+ISNph6.1|IS200/IS605|IS605|Transposase|Natronomonas          ESYFW-GGGFWKVGYYVGTTGA-VSEEVVERYIEETEHAPE---------
+ISNph7.1|IS200/IS605|IS605|Transposase|Natronomonas          ENYLW-GGGFWEESYYIGTAGE-VSSQTIEQYIERTEHV-----------
+ISNsp2.1|IS200/IS605|IS605|Transposase|Nostoc                -RL----PSLWTHSYMFDTTGK-VSTQKVLEYINDPHHG-----------
+ISNsp3.1|IS200/IS605|IS605|Transposase|Nostoc                -KL----PSLWTHSFMFDTTGK-VSTQKVLEYINDPHHG-----------
+ISSen6.1|IS200/IS605|IS605|Transposase|Salmonella            GA-YG-KAVLWSRSYFAGSCGG-APLEVVKQYIQHQRG------------
+ISSis2.1|IS200/IS605|IS605|Transposase|Sulfolobus            -K-YT-GGKLWTRNYFISTAGN-VSSETIKKYIEEQWEKENEKN------
+ISSoc10.1|IS200/IS605|IS605|Transposase|Synechococcus        SKIYR-KNVLWNESYFIASCGG-VTVSALSQYIESQGTPASHPDPSAPRR
+ISSoc3.1|IS200/IS605|IS605|Transposase|Synechococcus         ARFYS-KPVFWTGAYFVASCGG-VTVEELKKYVEQQASPR----------
+ISSoc6.1|IS200/IS605|IS605|Transposase|Synechococcus         -KL----PSLWSRSYFFCTAGN-ASAEVIQNYINDPHHW-----------
+ISSto1.1|IS200/IS605|IS605|Transposase|Sulfolobus            -K-AT-NGKLWTRSYFVSTSGN-ISSETIKKYIEEQWVKEGEED------
+ISTac1.1|IS200/IS605|IS605|Transposase|Thermoplasma          KRL----PTLWTHSKFISSVGA-VTLEVVQKYIEDQKGK-----------
+ISTel2.1|IS200/IS605|IS605|Transposase|Thermosynechococcus   ---PH-EESLWSPSYFAASVGG-APLEVLKEYMRNQKKPS----------
+ISTfu1.1|IS200/IS605|IS605|Transposase|Thermobifida          SRL----PTLWTNSYFVATVGG-APLAVVKRYVEQQKGR-----------
+ISTsi3.1|IS200/IS605|IS605|Transposase|Thermococcus          -TKTA-HGRLWSRSYFVASAGY-ITDEIVKHYVETQWERELKRRGQ----
+ISTvo5.1|IS200/IS605|IS605|Transposase|Thermoplasma          -R-YK---KLWSRSYFVSTAGN-VSSETIKKYIEEQWVKEGEEG------
+
+IS1004.1|IS200/IS605|IS200|Transposase|Vibrio                LRD---------------------------
+IS1469.1|IS200/IS605|IS200|Transposase|Clostridium           ---KEYMDTFKCSK----------------
+IS1541A.1|IS200/IS605|IS200|Transposase|Yersinia             ---PYPGSPFTGRK----------------
+IS1541B.1|IS200/IS605|IS200|Transposase|Yersinia             ---PYPGSPFTGRK----------------
+IS1541C.1|IS200/IS605|IS200|Transposase|Yersinia             ---PYPGSPFTGRK----------------
+IS1541D.1|IS200/IS605|IS200|Transposase|Yersinia             ---PYPGSPFTGSK----------------
+IS200.1|IS200/IS605|IS200|Transposase|Salmonella             ---PYPGSPIYGP-----------------
+IS200C.1|IS200/IS605|IS200|Transposase|Escherichia           ---PYPGSPFTGRK----------------
+IS200F.1|IS200/IS605|IS200|Transposase|Salmonella            ---PYPGSPFTGRK----------------
+IS200G.1|IS200/IS605|IS200|Transposase|Yersinia              ---PYPGSPFTGRK----------------
+IS200H.1|IS200/IS605|IS200|Transposase|Salmonella            ---PYPGSPVYGP-----------------
+IS200S.1|IS200/IS605|IS200|Transposase|Streptococcus         ---KEYMDTFKCSK----------------
+IS657.1|IS200/IS605|IS200|Transposase|Bacillus               ---FEEYDPFTGEKNEKK------------
+ISAac1.1|IS200/IS605|IS200|Transposase|Actinobacillus        ---KEYVDPFKG------------------
+ISAac3.1|IS200/IS605|IS200|Transposase|Aggregatibacter       ---KEYVDPFKG------------------
+ISAcma39.1|IS200/IS605|IS200|Transposase|Acaryochloris       ---FRA------------------------
+ISAsp20.1|IS200/IS605|IS200|Transposase|Anabaena             LLEQETDLDKPPENKTKPKIPEIPGNKFPD
+ISAzo20.1|IS200/IS605|IS200|Transposase|Azoarcus             ---PMA------------------------
+ISBsph1.1|IS200/IS605|IS200|Transposase|Bacillus             ---NEIIDPLNCE-----------------
+ISBsph2.1|IS200/IS605|IS200|Transposase|Bacillus             ---NEIIDPLNCE-----------------
+ISCaa10.1|IS200/IS605|IS200|Transposase|Candidatus           --ESRQ---LR----------L-----F--
+ISCARN10.1|IS200/IS605|IS200|Transposase|Metagenomic         ---WS-------------------------
+ISCth10.1|IS200/IS605|IS200|Transposase|Clostridium          ---NEYIDPFTGERVNKSKK----------
+ISDha13.1|IS200/IS605|IS200|Transposase|Desulfitobacterium   ---KEYEDPFKG------------------
+ISDra9.1|IS200/IS605|IS200|Transposase|Deinococcus           ILED--------------------------
+ISEha1.1|IS200/IS605|IS200|Transposase|Ethanoligenens        --KVETIEQLT----------L-----F--
+ISEnfa200.1|IS200/IS605|IS200|Transposase|Enterococcus       ---KEYIDPFTGEPVKQNR-----------
+ISMba16.1|IS200/IS605|IS200|Transposase|Methanosarcina       KSGQRRINEF--------------------
+ISMba18.1|IS200/IS605|IS200|Transposase|Methanosarcina       --KQMKIIDFQ-------------------
+ISMco2.1|IS200/IS605|IS200|Transposase|Methanosaeta          --KQMNLLDFE-------------------
+ISMex20.1|IS200/IS605|IS200|Transposase|Methylobacterium     ED-------FR-------------------
+ISMex34.1|IS200/IS605|IS200|Transposase|Methylobacterium     ---WR-------------------------
+ISMma21.1|IS200/IS605|IS200|Transposase|Methanosarcina       RSEQRKLDDF--------------------
+ISOih2.1|IS200/IS605|IS200|Transposase|Oceanobacillus        ---FEEFDPFTGKKNKKK------------
+ISPin5.1|IS200/IS605|IS200|Transposase|Psychromonas          RTEH--------------------------
+ISPlu2.1|IS200/IS605|IS200|Transposase|Photorhabdus          RMDN--------------------------
+ISPlu5.1|IS200/IS605|IS200|Transposase|Photorhabdus          ---REHEDPFKG------------------
+ISPpr13.1|IS200/IS605|IS200|Transposase|Photobacterium       RTEG--------------------------
+ISSep3.1|IS200/IS605|IS200|Transposase|Staphylococcus        ---EEYLDPFTGEEIKKRRKK---------
+ISSham1.1|IS200/IS605|IS200|Transposase|Shewanella           GLEG--------------------------
+ISShes4.1|IS200/IS605|IS200|Transposase|Shewanella           QMK---------------------------
+ISShes8.1|IS200/IS605|IS200|Transposase|Shewanella           E-----------------------------
+ISShwo2.1|IS200/IS605|IS200|Transposase|Shewanella           K-----------------------------
+ISSod23.1|IS200/IS605|IS200|Transposase|Shewanella           QMM---------------------------
+ISSpn6.1|IS200/IS605|IS200|Transposase|Streptococcus         ---FESVDPFTGEINKRK------------
+ISSsu4.1|IS200/IS605|IS200|Transposase|Streptococcus         ---KEYEDPFRDNGK---------------
+ISStin10.1|IS200/IS605|IS200|Transposase|Streptococcus       ---KEYEDPFRDSGK---------------
+ISStrs1.1|IS200/IS605|IS200|Transposase|Streptococcus        ------------------------------
+ISW1.1|IS200/IS605|IS200|Transposase|Wolbachia               QVES--------------------------
+IS1253A.1|IS200/IS605|IS605|Transposase|Dichelobacter        ------------------------------
+IS1253B.1|IS200/IS605|IS605|Transposase|Dichelobacter        ------------------------------
+IS605.1|IS200/IS605|IS605|Transposase|Helicobacter           ------------------------------
+IS606.1|IS200/IS605|IS605|Transposase|Helicobacter           ------------------------------
+IS609.1|IS200/IS605|IS605|Transposase|Escherichia            ------------------------------
+IS8301.1|IS200/IS605|IS605|Transposase|Deinococcus           ------------------------------
+ISAba30.1|IS200/IS605|IS605|Transposase|Acinetobacter        ------------------------------
+ISAeme8.1|IS200/IS605|IS605|Transposase|Aeromonas            ------------------------------
+ISAs26.1|IS200/IS605|IS605|Transposase|Aeromonas             ------------------------------
+ISAsp6.1|IS200/IS605|IS605|Transposase|Anabaena              ------------------------------
+ISBce3.1|IS200/IS605|IS605|Transposase|Bacillus              ------------------------------
+ISBth16.1|IS200/IS605|IS605|Transposase|Bacillus             ------------------------------
+ISCARN6.1|IS200/IS605|IS605|Transposase|Metagenomic          ------------------------------
+ISCbt1.1|IS200/IS605|IS605|Transposase|Clostridium           ------------------------------
+ISCbt2.1|IS200/IS605|IS605|Transposase|Clostridium           ------------------------------
+ISCco1.1|IS200/IS605|IS605|Transposase|Campylobacter         HKR------LKEQELCK-------------
+ISClte2.1|IS200/IS605|IS605|Transposase|Clostridium          ------------------------------
+ISCpe2.1|IS200/IS605|IS605|Transposase|Clostridium           ------------------------------
+ISCsa5.1|IS200/IS605|IS605|Transposase|Caldicellulosiruptor  ------------------------------
+ISCysp13.1|IS200/IS605|IS605|Transposase|Cyanothece          ------------------------------
+ISCysp14.1|IS200/IS605|IS605|Transposase|Cyanothece          ------------------------------
+ISDge10.1|IS200/IS605|IS605|Transposase|Deinococcus          ------------------------------
+ISDka2.1|IS200/IS605|IS605|Transposase|Desulfurococcus       ------------------------------
+ISDra2.1|IS200/IS605|IS605|Transposase|Deinococcus           ------------------------------
+ISEc41.1|IS200/IS605|IS605|Transposase|Escherichia           ------------------------------
+ISEc46.1|IS200/IS605|IS605|Transposase|Escherichia           ------------------------------
+ISEfa4.1|IS200/IS605|IS605|Transposase|Enterococcus          ------------------------------
+ISFsp4.1|IS200/IS605|IS605|Transposase|Frankia               ------------------------------
+ISH1-8.1|IS200/IS605|IS605|Transposase|Halobacterium         ------------------------------
+ISH12.1|IS200/IS605|IS605|Transposase|Halobacterium          ------------------------------
+ISH22.1|IS200/IS605|IS605|Transposase|Halobacterium          ------------------------------
+ISH34.1|IS200/IS605|IS605|Transposase|Halobacterium          ------------------------------
+ISH35.1|IS200/IS605|IS605|Transposase|Halobacterium          ------------------------------
+ISH36.1|IS200/IS605|IS605|Transposase|Halobacterium          ------------------------------
+ISHaca1.1|IS200/IS605|IS605|Transposase|Haloarcula           ------------------------------
+ISHal1.1|IS200/IS605|IS605|Transposase|Haloferax             ------------------------------
+ISHall1.1|IS200/IS605|IS605|Transposase|Halostagnicola       ------------------------------
+ISHarch15.1|IS200/IS605|IS605|Transposase|Halophilic         ------------------------------
+ISHas1.1|IS200/IS605|IS605|Transposase|Halonotius            ------------------------------
+ISHbo4.1|IS200/IS605|IS605|Transposase|Halogeometricum       ------------------------------
+ISHbo5.1|IS200/IS605|IS605|Transposase|Halogeometricum       ------------------------------
+ISHel2.1|IS200/IS605|IS605|Transposase|Haloferax             ------------------------------
+ISHez3.1|IS200/IS605|IS605|Transposase|Halorubrum            ------------------------------
+ISHgi1.1|IS200/IS605|IS605|Transposase|Haloferax             ------------------------------
+ISHhu1.1|IS200/IS605|IS605|Transposase|Halobacterium         ------------------------------
+ISHhu2.1|IS200/IS605|IS605|Transposase|Halobacterium         ------------------------------
+ISHhu3.1|IS200/IS605|IS605|Transposase|Halobacterium         ------------------------------
+ISHje2.1|IS200/IS605|IS605|Transposase|Halalkalicoccus       ------------------------------
+ISHko3.1|IS200/IS605|IS605|Transposase|Halorubrum            ------------------------------
+ISHla15.1|IS200/IS605|IS605|Transposase|Halorubrum           ------------------------------
+ISHla16.1|IS200/IS605|IS605|Transposase|Halorubrum           ------------------------------
+ISHla17.1|IS200/IS605|IS605|Transposase|Halorubrum           ------------------------------
+ISHla19.1|IS200/IS605|IS605|Transposase|Halorubrum           ------------------------------
+ISHla21.1|IS200/IS605|IS605|Transposase|Halorubrum           ------------------------------
+ISHli11.1|IS200/IS605|IS605|Transposase|Halohasta            ------------------------------
+ISHlsp1.1|IS200/IS605|IS605|Transposase|Halopiger            ------------------------------
+ISHma12.1|IS200/IS605|IS605|Transposase|Haloarcula           ------------------------------
+ISHma17.1|IS200/IS605|IS605|Transposase|Haloarcula           ------------------------------
+ISHma7.1|IS200/IS605|IS605|Transposase|Haloarcula            ------------------------------
+ISHmu3.1|IS200/IS605|IS605|Transposase|Halomicrobium         ------------------------------
+ISHmu5.1|IS200/IS605|IS605|Transposase|Halomicrobium         ------------------------------
+ISHmu6.1|IS200/IS605|IS605|Transposase|Halomicrobium         ------------------------------
+ISHp608.1|IS200/IS605|IS605|Transposase|Helicobacter         YVDNLQTKAL--------------------
+ISHru2.1|IS200/IS605|IS605|Transposase|Halovivax             ------------------------------
+ISHsi2.1|IS200/IS605|IS605|Transposase|Haloarcula            ------------------------------
+ISHti1.1|IS200/IS605|IS605|Transposase|Halorhabdus           ------------------------------
+ISHvo18.1|IS200/IS605|IS605|Transposase|Haloferax            ------------------------------
+ISHwa17.1|IS200/IS605|IS605|Transposase|Haloquadratum        ------------------------------
+ISLjo5.1|IS200/IS605|IS605|Transposase|Lactobacillus         H-----------------------------
+ISMac7.1|IS200/IS605|IS605|Transposase|Methanosarcina        ------------------------------
+ISMba17.1|IS200/IS605|IS605|Transposase|Methanosarcina       ------------------------------
+ISMma19.1|IS200/IS605|IS605|Transposase|Methanosarcina       ------------------------------
+ISMma22.1|IS200/IS605|IS605|Transposase|Methanosarcina       ------------------------------
+ISMmu1.1|IS200/IS605|IS605|Transposase|Mitsuokella           ------------------------------
+ISNamo17.1|IS200/IS605|IS605|Transposase|Natronomonas        ------------------------------
+ISNamo18.1|IS200/IS605|IS605|Transposase|Natronomonas        ------------------------------
+ISNamo19.1|IS200/IS605|IS605|Transposase|Natronomonas        ------------------------------
+ISNhu1.1|IS200/IS605|IS605|Transposase|Natrialba             ------------------------------
+ISNin1.1|IS200/IS605|IS605|Transposase|Natronolimnobius      ------------------------------
+ISNma12.1|IS200/IS605|IS605|Transposase|Natrialba            ------------------------------
+ISNpe10.1|IS200/IS605|IS605|Transposase|Natrinema            ------------------------------
+ISNph5.1|IS200/IS605|IS605|Transposase|Natronomonas          ------------------------------
+ISNph6.1|IS200/IS605|IS605|Transposase|Natronomonas          ------------------------------
+ISNph7.1|IS200/IS605|IS605|Transposase|Natronomonas          ------------------------------
+ISNsp2.1|IS200/IS605|IS605|Transposase|Nostoc                ------------------------------
+ISNsp3.1|IS200/IS605|IS605|Transposase|Nostoc                ------------------------------
+ISSen6.1|IS200/IS605|IS605|Transposase|Salmonella            ------------------------------
+ISSis2.1|IS200/IS605|IS605|Transposase|Sulfolobus            ------------------------------
+ISSoc10.1|IS200/IS605|IS605|Transposase|Synechococcus        ------------------------------
+ISSoc3.1|IS200/IS605|IS605|Transposase|Synechococcus         ------------------------------
+ISSoc6.1|IS200/IS605|IS605|Transposase|Synechococcus         ------------------------------
+ISSto1.1|IS200/IS605|IS605|Transposase|Sulfolobus            ------------------------------
+ISTac1.1|IS200/IS605|IS605|Transposase|Thermoplasma          ------------------------------
+ISTel2.1|IS200/IS605|IS605|Transposase|Thermosynechococcus   ------------------------------
+ISTfu1.1|IS200/IS605|IS605|Transposase|Thermobifida          ------------------------------
+ISTsi3.1|IS200/IS605|IS605|Transposase|Thermococcus          ------------------------------
+ISTvo5.1|IS200/IS605|IS605|Transposase|Thermoplasma          ------------------------------
+//
