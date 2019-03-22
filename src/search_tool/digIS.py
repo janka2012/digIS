@@ -11,7 +11,7 @@ from src.common.sequence import *
 from src.search_tool.RecordDigIS import RecordDigIS
 from src.hmmer.Hmmer import Hmmer
 
-from definitions import ROOT_DIR
+from src.common.definitions import ROOT_DIR
 
 
 class digIS:
@@ -104,94 +104,6 @@ class digIS:
                         self.filter_log.append("{} merged with overlapping element: {}".format(current_record, other_record))
         return records_indexes_dc
 
-    def filter(self):
-        """
-        Filter merged records based on similarity with
-        - positive sequence database (ISFinder ORF)
-        - negative sequence database ()
-        - negative profile database ()
-        """
-
-        self.__filter_by_sequence_db()
-        # self.__filter_by_negative_profile_db()
-
-        print(self.genome, 'Filtered', len(self.hmm.hsps) - len(self.recs))
-
-        # Write filter log file
-        with open(os.path.join(self.output_dir, self.genome + "_filter.log"), "w") as f:
-            f.write("\n".join(self.filter_log))
-
-    def __filter_by_sequence_db(self):
-
-        if self.recs:
-
-            positive_db_blast_hits = get_best_blast_hits_in_range(self.recs, BlastX,
-                                                                  self.config.context_size_orf,
-                                                                  self.config.isfinder_orf)
-            negative_db_blast_hits = get_best_blast_hits_in_range(self.recs, BlastX,
-                                                                  self.config.context_size_orf,
-                                                                  self.config.negative_orf)
-
-            records_indexes = set(range(len(self.recs)))
-            print("Number of merged records before sequence db filtering: {}.".format(len(self.recs)))
-            for i, record_idx in enumerate(copy(records_indexes)):
-                if positive_db_blast_hits[i].score < negative_db_blast_hits[i].score:
-                    print("Removing idx: {}.".format(record_idx))
-                    records_indexes.discard(record_idx)
-                    self.filter_log.append("Similar with negative database: " + str(negative_db_blast_hits[i]))
-
-            # Update records after filtration
-            save_recs = [self.recs[rec_index] for rec_index in records_indexes]
-            self.recs = save_recs
-
-        print("Number of merged records after sequence db filtering: {}.".format(len(self.recs)))
-
-    def __filter_by_negative_profile_db(self):
-
-        if self.recs:
-
-            negative_profiles_db = os.path.join(ROOT_DIR, "data", "Hmmer_db", "negative_profiles_db.hmm")
-            genome_id = os.path.splitext(os.path.basename(self.sequence))[0]
-            hmmer_output = os.path.join(ROOT_DIR, "data", "Hmmer_db", genome_id + "_negative_profiles_db.hmmer")
-
-            _, flanked_seqs_tmp_file = tempfile.mkstemp(prefix="digIS_", suffix=".fasta")
-
-            ids = ["hit" + str(i) for i in range(len(self.recs))]
-
-            flanked_seqs, flanked_seqs_ranges = prepare_flank_sequences(self.recs, self.config.context_size_orf, ids=ids)
-            save_to_fasta_file(flanked_seqs, flanked_seqs_tmp_file)
-
-            _, flanked_translated_seq_tmp_file = tempfile.mkstemp(prefix="digIS_", suffix=".pep")
-            translate_dna_seq_biopython(sequence=flanked_seqs_tmp_file, outseq=flanked_translated_seq_tmp_file)
-            # translate_dna_seq_biopython(sequence=flanked_seqs_tmp_file, outseq=flanked_translated_seq_tmp_file)
-
-            evalue_threshold = 0.01
-            hmmer = Hmmer(hmm=negative_profiles_db, seqfile=flanked_translated_seq_tmp_file)
-            hmmer.run(tool="hmmscan", outfile=hmmer_output, evalue=evalue_threshold)
-            hmmer.parse()
-
-            print("Number of hmmscan hits: {}".format(len(hmmer.hits)))
-            print("Number of false positive records before negative profile db filtering: {}".format(len(self.recs)))
-
-            records_indexes = set(range(len(self.recs)))
-            for hit in hmmer.hits:
-                hit_id = int(hit.query_id.strip().split("_")[-2].replace("hit", ""))
-                hit_dna_range = flanked_seqs_ranges[hit_id]
-                best_hit = hit.get_best_hsp_in_range(self.sequence_len, hit_dna_range)
-
-                if best_hit:
-                    records_indexes.discard(hit_id)
-
-            # Update records after filtration
-            save_recs = [self.recs[rec_index] for rec_index in records_indexes]
-            self.recs = save_recs
-
-            print("Number of false positive records after negative profile db filtering: {}".format(len(self.recs)))
-
-            # tempfiles clean up
-            delete_file(flanked_seqs_tmp_file)
-            delete_file(flanked_translated_seq_tmp_file)
-
     def export(self, filename=None):
         csv_row = []
         csv_output = filename if filename else self.csv_output
@@ -206,7 +118,6 @@ class digIS:
         if debug:
             self.export(os.path.join(self.output_dir, self.genome + '_nonfilter.csv'))
         self.merge()
-        self.filter()
         if export:
             self.export()
 
