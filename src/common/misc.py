@@ -1,13 +1,9 @@
 import errno
 import os
 import pickle
-
-from os import walk
-
 import re
 
-from src.common.sequence import prepare_flank_sequences
-
+from os import walk
 from definitions import ROOT_DIR
 
 
@@ -90,24 +86,6 @@ def prepare_directory(dir_path):
         os.makedirs(dir_path)
 
 
-def get_best_blast_hits_in_range(recs, search_engine, flank, database):
-
-    seq_recs, seq_ranges = prepare_flank_sequences(recs, flank)
-
-    # Do BLAST
-    bl = search_engine.from_seqrec(seq_recs, database)
-    bl.search_database()
-    bl.parse()
-
-    # Get best hits in original sequence range
-    bl_bhits = []
-    for i, hit in enumerate(bl.query_hits):
-        bl_bhit = hit.get_best_hit(seq_ranges[i])
-        bl_bhits.append(bl_bhit)
-
-    return bl_bhits
-
-
 def check_if_file_exists(filename):
     if not os.path.isfile(filename):
         raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
@@ -129,6 +107,7 @@ def check_evalue(evalue):
     except ValueError:
         raise ValueError("Evalue has to be a non-negative number. "
                          "Current value: {}, type: {}".format(evalue, type(evalue)))
+
 
 def change_path_to_linux(line):
     matchObj = re.match(r'(.):.*', line, re.M | re.I)

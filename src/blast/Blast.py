@@ -9,6 +9,7 @@ from Bio.Blast import NCBIXML
 
 from src.blast.BlastHspFlat import BlastHspFlat
 from src.blast.BlastQuery import BlastQuery
+from src.common.sequence import prepare_flank_sequences
 
 
 class Blast(ABC):
@@ -63,6 +64,24 @@ class Blast(ABC):
             if self.best_hit < hspflat:
                 self.best_hit = hspflat
         return self.best_hit
+
+    @staticmethod
+    def get_best_blast_hits_in_range(recs, search_engine, flank, database):
+
+        seq_recs, seq_ranges = prepare_flank_sequences(recs, flank)
+
+        # Do BLAST
+        bl = search_engine.from_seqrec(seq_recs, database)
+        bl.search_database()
+        bl.parse()
+
+        # Get best hits in original sequence range
+        bl_bhits = []
+        for i, hit in enumerate(bl.query_hits):
+            bl_bhit = hit.get_best_hit(seq_ranges[i])
+            bl_bhits.append(bl_bhit)
+
+        return bl_bhits
 
     def print_best_hits(self):
         print('\n'.join(list(str(i) for i in self.best_hits.values())))
