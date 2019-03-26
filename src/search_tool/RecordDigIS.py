@@ -1,4 +1,5 @@
 from src.common.grange import Grange
+from src.search_tool.digISClassification import digISClassification
 
 
 class RecordDigIS(Grange):
@@ -9,6 +10,7 @@ class RecordDigIS(Grange):
         self.qstart = qstart
         self.qend = qend
         self.acc = acc
+        self.classification = digISClassification()
 
     @classmethod
     def from_csv(cls, csv, genome, chrom, seq_file, genome_len):
@@ -56,5 +58,5 @@ class RecordDigIS(Grange):
         self.acc = new_acc
 
     def __str__(self):
-        return "{}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.sid, self.qstart, self.qend,
-                                                       self.start, self.end, self.strand, self.acc)
+        return "{}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.sid, self.qstart, self.qend, self.start,
+                                                           self.end, self.strand, self.acc, self.classification)
