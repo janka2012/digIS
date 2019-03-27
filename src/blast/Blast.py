@@ -7,9 +7,9 @@ from copy import copy
 from Bio import SeqIO
 from Bio.Blast import NCBIXML
 
-from src.blast.BlastHspFlat import BlastHspFlat
-from src.blast.BlastQuery import BlastQuery
-from src.common.sequence import prepare_flank_sequences
+from ..blast.BlastHspFlat import BlastHspFlat
+from ..blast.BlastQuery import BlastQuery
+from ..common.sequence import prepare_flank_sequences
 
 
 class Blast(ABC):

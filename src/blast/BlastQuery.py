@@ -1,6 +1,6 @@
-from src.blast.BlastHit import BlastHit
-from src.blast.BlastHsp import BlastHsp
-from src.blast.BlastHspFlat import BlastHspFlat
+from ..blast.BlastHit import BlastHit
+from ..blast.BlastHsp import BlastHsp
+from ..blast.BlastHspFlat import BlastHspFlat
 
 
 class BlastQuery:

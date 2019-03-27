@@ -1,5 +1,5 @@
-from src.hmmer.HmmerHsp import HmmerHsp
-from src.common.sequence import transform_range
+from ..hmmer.HmmerHsp import HmmerHsp
+from ..common.sequence import transform_range
 
 
 class HmmerHit:

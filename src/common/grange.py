@@ -1,7 +1,8 @@
+import copy
+import logging
+
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
-import logging
-import copy
 
 
 class Grange:

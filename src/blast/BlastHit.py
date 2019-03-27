@@ -1,6 +1,6 @@
 from copy import copy
 
-from src.blast.BlastHsp import BlastHsp
+from ..blast.BlastHsp import BlastHsp
 
 
 class BlastHit:

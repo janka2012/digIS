@@ -1,16 +1,16 @@
 from copy import copy
 from copy import deepcopy
 
-from src.blast.Blast import Blast
-from src.blast.BlastX import BlastX
-from src.blast.BlastN import BlastN
-from src.common.csv_utils import write_csv
-from src.common.sequence import *
-from src.common.genbank import read_gb
-from src.search_tool.RecordDigIS import RecordDigIS
-from src.search_tool.digISClassifier import digISClassifier
-from src.genbank.RecordGenbank import RecordGenbank
-from src.hmmer.Hmmer import Hmmer
+from ..blast.Blast import Blast
+from ..blast.BlastX import BlastX
+from ..blast.BlastN import BlastN
+from ..common.csv_utils import write_csv
+from ..common.sequence import *
+from ..common.genbank import read_gb
+from .RecordDigIS import RecordDigIS
+from .digISClassifier import digISClassifier
+from ..genbank.RecordGenbank import RecordGenbank
+from ..hmmer.Hmmer import Hmmer
 
 
 class digIS:

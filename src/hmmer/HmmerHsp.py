@@ -16,7 +16,8 @@ class HmmerHsp:
 
     def __str__(self):
         return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.sid, self.qstart, self.qend, self.sstart,
-                                                           self.send, self.acc, self.evalue, self.bitscore, self.query_coverage)
+                                                               self.send, self.acc, self.evalue, self.bitscore,
+                                                               self.query_coverage)
 
     def __lt__(self, other):
         return self.bitscore < other.bitscore

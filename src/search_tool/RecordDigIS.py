@@ -1,5 +1,5 @@
-from src.common.grange import Grange
-from src.search_tool.digISClassification import digISClassification
+from ..common.grange import Grange
+from ..search_tool.digISClassification import digISClassification
 
 
 class RecordDigIS(Grange):

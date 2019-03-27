@@ -3,11 +3,11 @@ import sys
 
 from Bio import SearchIO, SeqIO
 
-from src.common.csv_utils import write_csv
-from src.common.misc import check_if_file_exists, change_path_to_linux
-from src.common.misc import check_evalue
-from src.common.sequence import get_sequence_record_ids
-from src.hmmer.HmmerHit import HmmerHit
+from ..common.csv_utils import write_csv
+from ..common.misc import check_if_file_exists, change_path_to_linux
+from ..common.misc import check_evalue
+from ..common.sequence import get_sequence_record_ids
+from ..hmmer.HmmerHit import HmmerHit
 
 
 class Hmmer:

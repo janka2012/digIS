@@ -1,4 +1,4 @@
-from src.common.grange import Grange
+from ..common.grange import Grange
 
 
 class RecordGenbank(Grange):

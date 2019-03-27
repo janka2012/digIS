@@ -1,6 +1,6 @@
 from Bio.Blast.Applications import NcbiblastpCommandline
-from src.blast.Blast import Blast
-from src.common.misc import check_evalue
+from ..blast.Blast import Blast
+from ..common.misc import check_evalue
 
 
 class BlastP(Blast):
