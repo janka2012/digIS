@@ -86,6 +86,17 @@ def prepare_directory(dir_path):
         os.makedirs(dir_path)
 
 
+def init_output_dir(output_dir):
+    subdirs = ["hmmer", "logs", "pep", "results"]
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    for subdir in subdirs:
+        if not os.path.exists(os.path.join(output_dir, subdir)):
+            os.makedirs(os.path.join(output_dir, subdir))
+
+
 def check_if_file_exists(filename):
     if not os.path.isfile(filename):
         raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
