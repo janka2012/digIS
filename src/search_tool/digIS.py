@@ -7,6 +7,7 @@ from ..blast.BlastN import BlastN
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
 from ..common.genbank import read_gb
+from ..common.genome import Genome
 from .RecordDigIS import RecordDigIS
 from .digISClassifier import digISClassifier
 from ..genbank.RecordGenbank import RecordGenbank
@@ -15,40 +16,40 @@ from ..hmmer.Hmmer import Hmmer
 
 class digIS:
 
-    def __init__(self, sequence_file, output_dir, config, genbank_file=None):
-        self.sequence = sequence_file
-        self.genbank_file = genbank_file
-        self.sequence_len = get_seqlen(self.sequence)
+    def __init__(self, config):
         self.config = config
-        self.genome = os.path.splitext(os.path.basename(sequence_file))[0]
-        self.database = os.path.splitext(self.sequence)[0] + ".pep"
-        translate_dna_seq_biopython(sequence=self.sequence, outseq=self.database)
-        self.hmm = Hmmer(config.models, self.database)
+        self.genome = Genome(self.config.genome_file, self.config.output_dir)
+        self.hmmer = Hmmer()
+        self.hmmsearch_output = os.path.join(self.config.output_dir, "hmmer", self.genome.name + '_hmmsearch.hmmer3')
+        self.phmmer_output = os.path.join(self.config.output_dir, "hmmer", self.genome.name + '_phmmer.hmmer3')
         self.recs = []
-        self.merged_records_idx = []
-        self.output_dir = output_dir
-        self.hmmer_output = os.path.join(output_dir, self.genome + '.hmmer3')
-        self.csv_output = os.path.join(output_dir, self.genome + '.csv')
-        self.filter_log = []
+        self.output = os.path.join(self.config.output_dir, "results", str(self.genome.name) + str(self.config.out_format))
         self.genbank_overlap = []
         self.matched_recs = []
-        self.fp = 0
-        self.fn = 0
+        self.filter_log = []
 
     def search(self):
-        self.hmm.run(tool="hmmsearch", outfile=self.hmmer_output, curated_models=True)
+        self.search_models()
+        self.search_outliers()
 
-    def parse(self):
-        self.hmm.parse(self.hmmer_output)
-        self.recs = []
-        for hsp in self.hmm.hsps:
+    def search_models(self):
+        self.hmmer.run(tool="hmmsearch", hmmfile=self.config.models, seqdb=self.genome.orf_db,
+                       outfile=self.hmmsearch_output, curated_models=True)
+
+    def search_outliers(self):
+        self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
+                       outfile=self.phmmer_output)
+
+    def parse(self, hmmer_output):
+        self.hmmer.parse(hmmer_output)
+        for hsp in self.hmmer.hsps:
             hit_range = (hsp.sstart, hsp.send)
             frame = int(hsp.sid.strip()[-1])
             sid = hsp.sid[:-2]
             strand = "+" if frame <= 3 else "-"
-            dna_range = transform_range(hit_range[0], hit_range[1], frame, self.sequence_len)
+            dna_range = transform_range(hit_range[0], hit_range[1], frame, self.genome.length)
             self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand,
-                                                    self.genome, "chr", self.sequence, self.sequence_len))
+                                                    self.genome.name, "chr", self.genome.file, self.genome.length))
 
     def merge(self):
         """ Merging hits in particular distance """
@@ -118,9 +119,9 @@ class digIS:
                                                                    self.config.context_size_is,
                                                                    self.config.isfinder_is_db)
 
-            if self.genbank_file:
-                genbank_recs = list(RecordGenbank(i, self.genome, "chr", self.sequence, self.sequence_len)
-                                    for i in read_gb(self.genbank_file))
+            if self.config.genbank_file:
+                genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.file, self.genome.length)
+                                    for i in read_gb(self.config.genbank_file))
                 genbank_recs = list(rec for rec in genbank_recs if rec.type not in ['source'])
                 self.__assigns_genbank_annotation_by_overlap(genbank_recs, ignore_strand=True)
                 ds_genbank_recs = self.__get_digis_genbank_map(genbank_recs)
@@ -156,8 +157,6 @@ class digIS:
             self.genbank_overlap.append(max_overlap)
 
         self.matched_recs = match_idx
-        self.fn = len(unbinded_genbank_idx)
-        self.fp = len(unbinded_digis_idx)
 
     def __get_digis_genbank_map(self, gb_recs=None):
         tool_recs = [[]] * len(self.recs)
@@ -170,17 +169,19 @@ class digIS:
 
     def export(self, filename=None):
         csv_row = []
-        csv_output = filename if filename else self.csv_output
+        csv_output = filename if filename else self.output
         for rec in self.recs:
             csv_row.append([rec.qid, rec.sid, rec.qstart, rec.qend, rec.start, rec.end, rec.strand, rec.acc])
         write_csv(csv_row, csv_output, ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"])
 
     def run(self, search=True, classification=True, export=True, debug=False):
         if search:
-            self.search()
-        self.parse()
+            self.search_models()
+            self.search_outliers()
+        self.parse(self.hmmsearch_output)
+        self.parse(self.phmmer_output)
         if debug:
-            self.export(os.path.join(self.output_dir, self.genome + '_nonfilter.csv'))
+            self.export(os.path.join(self.config.output_dir, self.genome.name + '_nonfilter.csv'))
         self.merge()
         if classification:
             self.classification()
