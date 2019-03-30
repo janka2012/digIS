@@ -1,11 +1,10 @@
 import argparse
-import os
 
 from src.search_tool.digIS import digIS
 from src.search_tool.digISConfiguration import digISConfiguration
 
 
-def print_args(args):
+def print_args():
     print('input fasta =', args.input_fasta)
     print('genbank file =', args.genbank_file)
     print('context size orf =', args.context_size_orf)
@@ -17,7 +16,6 @@ def print_args(args):
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser(description="digIS search")
 
     parser.add_argument('-i', "--input", action='store', dest='input_fasta', required=True,
@@ -45,15 +43,15 @@ if __name__ == "__main__":
                         choices=["csv", "gff"], help='Output format, default csv. Possible choices: csv, gff.')
 
     args = parser.parse_args()
-    print_args(args)
 
-    digis_conf = digISConfiguration(context_size_orf=args.context_size_orf,
+    digis_conf = digISConfiguration(genome_file=args.input_fasta,
+                                    context_size_orf=args.context_size_orf,
                                     context_size_is=args.context_size_is,
                                     max_merge_distance=args.merge_distance,
-                                    min_gb_overlap=args.genbank_overlap)
+                                    genbank_file=args.genbank_file,
+                                    min_gb_overlap=args.genbank_overlap,
+                                    out_format=args.out_format,
+                                    output_dir=args.output_dir)
 
-    if not os.path.exists(args.output_dir):
-        os.makedirs(args.output_dir)
-
-    dIS = digIS(args.input_fasta, args.output_dir, digis_conf, args.genbank_file)
+    dIS = digIS(digis_conf)
     dIS.run()
