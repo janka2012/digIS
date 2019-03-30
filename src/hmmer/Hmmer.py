@@ -5,13 +5,12 @@ from Bio import SearchIO, SeqIO
 
 from ..common.csv_utils import write_csv
 from ..common.misc import check_if_file_exists, change_path_to_linux
-from ..common.misc import check_evalue
 from ..common.sequence import get_sequence_record_ids
 from ..hmmer.HmmerHit import HmmerHit
 
 
 class Hmmer:
-    def __init__(self, hmm, seqfile):
+    def __init__(self):
         """ Create a new Hmmer instance.
 
         model       HMM model used in hmmsearch (e.g. "IS1_cut.hmm")
@@ -20,47 +19,44 @@ class Hmmer:
         hsps        list of hmmer hsps
         outfile     file, where output from hmmsearch is stored (e.g. "out.hmmer")
         """
-        self.hmm = check_if_file_exists(hmm)
-        self.seqfile = check_if_file_exists(seqfile)
+        self.hmm = ""
+        self.seqfile = ""
         self.hits = []
         self.hsps = []
-        self.outfile = ""
 
-    def run(self, tool, outfile, evalue="0.001", curated_models=False):
-        check_evalue(evalue)
+    def run(self, tool, hmmfile, seqdb, outfile, curated_models=False):
+
+        check_if_file_exists(hmmfile)
+        check_if_file_exists(seqdb)
 
         if outfile:
-            self.outfile = outfile
-            cmd = self.__build_command(tool=tool, evalue=str(evalue), outfile=outfile, curated_models=curated_models)
+            cmd = self.__build_command(tool=tool, hmmfile=hmmfile, seqdb=seqdb,
+                                       outfile=outfile, curated_models=curated_models)
             if sys.platform == 'win32':
                 cmd = ['bash.exe', '-c', ' '.join(cmd)]
             self.__run_tool(cmd)
         else:
             raise AttributeError("Output file argument is required.")
 
-    def parse(self, outfile=None):
+    def parse(self, outfile):
 
-        hmmer_file = None
         try:
-            hmmer_file = outfile if outfile else self.outfile
-            check_if_file_exists(hmmer_file)
+            check_if_file_exists(outfile)
         except FileNotFoundError:
             print("No hmmer output file set.")
 
         self.hits = []
         self.hsps = []
-        for res in SearchIO.parse(hmmer_file, 'hmmsearch3-domtab'):
+        for res in SearchIO.parse(outfile, 'hmmsearch3-domtab'):
             for hit in res.hits:
                 print(hit)
                 self.hits.append(HmmerHit(hit, res.seq_len))
         for hit in self.hits:
             self.hsps += hit.hsps
 
-    def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile=None):
-        hmmer_file = None
+    def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):
         try:
-            hmmer_file = hmmer_outfile if hmmer_outfile else self.outfile
-            check_if_file_exists(hmmer_file)
+            check_if_file_exists(hmmer_outfile)
         except FileNotFoundError:
             print("No hmmer output file set.")
 
@@ -69,7 +65,7 @@ class Hmmer:
                   "query_end", "subject_start", "subject_end", "subject_env_start", "subject_env_end", "acc_avg",
                   "subject_description"]
         rows = []
-        for res in SearchIO.parse(hmmer_file, 'hmmsearch3-domtab'):
+        for res in SearchIO.parse(hmmer_outfile, 'hmmsearch3-domtab'):
             for hit in res.hits:
                 for hsp in hit.hsps:
 
@@ -82,17 +78,14 @@ class Hmmer:
         write_csv(rows, output_csv, header)
 
     def save_hmmer_hits_to_fasta(self, output):
-        import os
         ids = [hit.subject_id for hit in self.hits]
-        print(os.path.exists(self.seqfile))
         recs = get_sequence_record_ids(self.seqfile, ids)
-        print("Writing")
         SeqIO.write(recs, output, "fasta")
 
     def str_hsps(self):
         return '\n'.join(list(str(i) for i in self.hsps))
 
-    def __build_command(self, tool, evalue, outfile, curated_models):
+    def __build_command(self, tool, hmmfile, seqdb, outfile, curated_models):
         """
         tool [options] <hmmdb> <seqfile>
         """
@@ -101,16 +94,13 @@ class Hmmer:
 
         if curated_models:
             cmd.extend(["--cut_nc"])
-        else:
-            cmd.extend(["-E", evalue])
 
         if sys.platform == 'win32':
             outfile = change_path_to_linux(outfile)
-            hmm = change_path_to_linux(self.hmm)
-            seqfile = change_path_to_linux(self.seqfile)
-            cmd.extend(["--domtblout", outfile, hmm, seqfile])
-        else:
-            cmd.extend(["--domtblout", outfile, self.hmm, self.seqfile])
+            hmmfile = change_path_to_linux(hmmfile)
+            seqdb = change_path_to_linux(seqdb)
+
+        cmd.extend(["--domtblout", outfile, hmmfile, seqdb])
         return cmd
 
     @staticmethod
