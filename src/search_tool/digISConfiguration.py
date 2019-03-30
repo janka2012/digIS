@@ -1,5 +1,6 @@
 import os
 
+from ..common.misc import init_output_dir
 from definitions import ROOT_DIR
 
 
@@ -18,4 +19,5 @@ class digISConfiguration:
         self.min_gb_overlap = min_gb_overlap
         self.out_format = out_format
         self.output_dir = output_dir
+        init_output_dir(self.output_dir)
 
