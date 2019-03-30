@@ -1,0 +1,3 @@
+biopython==1.73
+numpy=1.16.2
+
