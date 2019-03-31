@@ -23,7 +23,7 @@ class digIS:
         self.hmmsearch_output = os.path.join(self.config.output_dir, "hmmer", self.genome.name + '_hmmsearch.hmmer3')
         self.phmmer_output = os.path.join(self.config.output_dir, "hmmer", self.genome.name + '_phmmer.hmmer3')
         self.recs = []
-        self.output = os.path.join(self.config.output_dir, "results", str(self.genome.name) + str(self.config.out_format))
+        self.output = os.path.join(self.config.output_dir, "results", str(self.genome.name) + "." + str(self.config.out_format))
         self.genbank_overlap = []
         self.matched_recs = []
         self.filter_log = []
@@ -60,6 +60,12 @@ class digIS:
         merged_records = [self.recs[rec_index] for rec_index in merged_records_indexes]
         self.recs = merged_records
         print("Number of records after merging: {}.".format(len(self.recs)))
+
+        print(self.genome.name, "Filtered: ", len(self.hmmer.hsps) - len(self.recs))
+
+        # Write filter log file
+        with open(os.path.join(self.config.output_dir, "logs", self.genome.name + "_filter.log"), "w") as f:
+            f.write("\n".join(self.filter_log))
 
     def merge_records(self, records_indexes):
 
@@ -107,6 +113,7 @@ class digIS:
                         self.filter_log.append("{} merged with overlapping element: {}".format(current_record, other_record))
         return records_indexes_dc
 
+    # TODO move to digISClassification
     def classification(self):
 
         # Extend hits with flank regions and get best Blast hits in original range
@@ -174,14 +181,12 @@ class digIS:
             csv_row.append([rec.qid, rec.sid, rec.qstart, rec.qend, rec.start, rec.end, rec.strand, rec.acc])
         write_csv(csv_row, csv_output, ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"])
 
-    def run(self, search=True, classification=True, export=True, debug=False):
+    def run(self, search=True, classification=False, export=True, debug=False):
         if search:
             self.search_models()
-            self.search_outliers()
         self.parse(self.hmmsearch_output)
-        self.parse(self.phmmer_output)
         if debug:
-            self.export(os.path.join(self.config.output_dir, self.genome.name + '_nonfilter.csv'))
+            self.export(os.path.join(self.config.output_dir, "logs", self.genome.name + '_nonfilter.csv'))
         self.merge()
         if classification:
             self.classification()
