@@ -1,16 +1,11 @@
 from copy import copy
 from copy import deepcopy
 
-from ..blast.Blast import Blast
-from ..blast.BlastX import BlastX
-from ..blast.BlastN import BlastN
+from digIS.src.common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
-from ..common.genbank import read_gb
 from ..common.genome import Genome
 from .RecordDigIS import RecordDigIS
-from .digISClassifier import digISClassifier
-from ..genbank.RecordGenbank import RecordGenbank
 from ..hmmer.Hmmer import Hmmer
 
 
@@ -113,75 +108,21 @@ class digIS:
                         self.filter_log.append("{} merged with overlapping element: {}".format(current_record, other_record))
         return records_indexes_dc
 
-    # TODO move to digISClassification
     def classification(self):
-
-        # Extend hits with flank regions and get best Blast hits in original range
-        classifier = digISClassifier()
-        if self.recs:
-            orf_blast_hits = Blast.get_best_blast_hits_in_range(self.recs, BlastX,
-                                                                self.config.context_size_orf,
-                                                                self.config.isfinder_orf_db)
-            is_dna_blast_hits = Blast.get_best_blast_hits_in_range(self.recs, BlastN,
-                                                                   self.config.context_size_is,
-                                                                   self.config.isfinder_is_db)
-
-            if self.config.genbank_file:
-                genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.file, self.genome.length)
-                                    for i in read_gb(self.config.genbank_file))
-                genbank_recs = list(rec for rec in genbank_recs if rec.type not in ['source'])
-                self.__assigns_genbank_annotation_by_overlap(genbank_recs, ignore_strand=True)
-                ds_genbank_recs = self.__get_digis_genbank_map(genbank_recs)
-
-                for digis_hit, gb_rec, orf_blast_hit, is_blast_hit in zip(self.recs, ds_genbank_recs,
-                                                                          orf_blast_hits, is_dna_blast_hits):
-
-                    classifier.classify(digis_hit, gb_rec, orf_blast_hit, is_blast_hit)
-            else:
-                for digis_hit, orf_blast_hit, is_blast_hit in zip(self.recs, orf_blast_hits, is_dna_blast_hits):
-                    classifier.classify(digis_hit, None, orf_blast_hit, is_blast_hit)
-
-    def __assigns_genbank_annotation_by_overlap(self, genbank_records=None, ignore_strand=False):
-
-        unbinded_genbank_idx = set(list(range(len(genbank_records))))
-        unbinded_digis_idx = set(list(range(len(self.recs))))
-        match_idx = []
-
-        # For each genbank record
-        for gb_rec_idx, gb_rec in enumerate(genbank_records):
-            # For each digis hit record
-            max_overlap = 0
-            for digis_rec_idx, digis_rec in enumerate(self.recs):
-                # Test for overlap
-
-                overlap = gb_rec.get_overlap_length(digis_rec, ignore_strand)
-                if overlap > max_overlap:
-                    max_overlap = overlap
-                if overlap >= self.config.min_gb_overlap:
-                    match_idx.append((gb_rec_idx, digis_rec_idx))
-                    unbinded_genbank_idx.discard(gb_rec_idx)
-                    unbinded_digis_idx.discard(digis_rec_idx)
-            self.genbank_overlap.append(max_overlap)
-
-        self.matched_recs = match_idx
-
-    def __get_digis_genbank_map(self, gb_recs=None):
-        tool_recs = [[]] * len(self.recs)
-        digis_match_idx = set(digis_idx for genbank_idx, digis_idx in self.matched_recs)
-        for idx in digis_match_idx:
-            for genbank_idx, digis_idx in self.matched_recs:
-                if digis_idx == idx:
-                    tool_recs[digis_idx] = tool_recs[digis_idx] + [gb_recs[genbank_idx]]
-        return tool_recs
+        self.classifier_recs = classification(self.recs, self.genome, self.config)
 
     def export(self, filename=None):
         csv_row = []
         csv_output = filename if filename else self.output
-        for rec in self.recs:
-            csv_row.append([rec.qid, rec.sid, rec.qstart, rec.qend, rec.start, rec.end, rec.strand, rec.acc])
-        write_csv(csv_row, csv_output, ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"])
+        csv_header = []
+        for rec, class_rec in zip(self.recs, self.classifier_recs):
+            header, row = rec.to_csv()
+            class_header, class_row = class_rec.to_csv()
+            csv_row.append(row + class_row)
+            csv_header = header + class_header
+        write_csv(csv_row, csv_output, csv_header)
 
-    def run(self, search=True, classification=False, export=True, debug=False):
+    def run(self, search=True, classification=True, export=True, debug=False):
         if search:
             self.search_models()
         self.parse(self.hmmsearch_output)
