@@ -25,16 +25,16 @@ if __name__ == "__main__":
                         help='Genbank annotations for genome in the input fasta file.')
 
     parser.add_argument('-c', "--contextORF", action='store', dest='context_size_orf', required=False, default=1000,
-                        type=int, help='Context size, default=1000 AA')
+                        type=int, help='Context size, default=1000 bp')
 
     parser.add_argument('-s', "--contextIS", action='store', dest='context_size_is', required=False, default=2000,
                         type=int, help='Context size, default=2000 bp')
 
     parser.add_argument('-d', "--merge_distance", action='store', dest='merge_distance', required=False, default=300,
-                        type=int, help='Maximum distance for merging hits')
+                        type=int, help='Maximum distance for merging hits, default=300 bp')
 
     parser.add_argument('-b', "--genbank_overlap", action='store', dest='genbank_overlap', required=False, default=100,
-                        type=int, help='Minimum overlap with genbank annotation')
+                        type=int, help='Minimum overlap with genbank annotation, default=100 bp')
 
     parser.add_argument('-o', "--output", action='store', dest='output_dir', required=False, default="digIS_output",
                         type=str, help='Output directory name, default=digIS_output.')

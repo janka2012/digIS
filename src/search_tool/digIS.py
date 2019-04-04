@@ -22,6 +22,7 @@ class digIS:
         self.genbank_overlap = []
         self.matched_recs = []
         self.filter_log = []
+        self.classifier_recs = []
 
     def search(self):
         self.search_models()
@@ -114,22 +115,25 @@ class digIS:
     def export(self, filename=None):
         csv_row = []
         csv_output = filename if filename else self.output
-        csv_header = []
-        for rec, class_rec in zip(self.recs, self.classifier_recs):
+        csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
+        for i, rec in enumerate(self.recs):
             header, row = rec.to_csv()
-            class_header, class_row = class_rec.to_csv()
-            csv_row.append(row + class_row)
-            csv_header = header + class_header
+            if self.classifier_recs:
+                class_header, class_row = self.classifier_recs[i].to_csv()
+                header += class_header
+                row += class_row
+            csv_row.append(row)
+            csv_header = header
         write_csv(csv_row, csv_output, csv_header)
 
-    def run(self, search=True, classification=True, export=True, debug=False):
+    def run(self, search=True, classify=True, export=True, debug=False):
         if search:
             self.search_models()
         self.parse(self.hmmsearch_output)
         if debug:
             self.export(os.path.join(self.config.output_dir, "logs", self.genome.name + '_nonfilter.csv'))
         self.merge()
-        if classification:
+        if classify:
             self.classification()
         if export:
             self.export()
