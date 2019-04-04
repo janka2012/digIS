@@ -8,7 +8,6 @@ class RangesHits:
         self.unbinded_subject = unbinded_subject
         self.query_max_overlap = query_max_overlap
 
-
     def get_subject_map(self):
         subject_map = [[]] * self.subjects
         subject_match = set(subject for query, subject in self.match)
