@@ -1,7 +1,7 @@
 from copy import copy
 from copy import deepcopy
 
-from digIS.src.common.classification import classification
+from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
 from ..common.genome import Genome

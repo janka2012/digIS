@@ -1,10 +1,11 @@
-from digIS.src.blast.Blast import Blast
-from digIS.src.blast.BlastX import BlastX
-from digIS.src.blast.BlastN import BlastN
-from digIS.src.common.Classifier import Classifier
-from digIS.src.common.ranges import find_overlaps
-from digIS.src.common.genbank import read_gb
-from digIS.src.genbank.RecordGenbank import RecordGenbank
+from ..blast.Blast import Blast
+from ..blast.BlastX import BlastX
+from ..blast.BlastN import BlastN
+from ..common.Classifier import Classifier
+from ..common.ranges import find_overlaps
+from ..common.genbank import read_gb
+from ..genbank.RecordGenbank import RecordGenbank
+
 
 def get_recs_genbank_overlap_map(recs, genbank_records=None, min_overlap=100, ignore_strand=False):
     hits = find_overlaps(genbank_records, recs, min_overlap, ignore_strand)
@@ -15,6 +16,7 @@ def get_recs_genbank_overlap_map(recs, genbank_records=None, min_overlap=100, ig
         recs_genbank.append([genbank_records[idx] for idx in map_list])
 
     return recs_genbank
+
 
 def classification(recs, genome, config):
     ds_genbank_recs = [None] * len(recs)
