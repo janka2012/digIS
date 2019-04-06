@@ -20,6 +20,12 @@ class digISConfiguration:
         self.output_dir = output_dir
         init_output_dir(self.output_dir)
 
+        if self.context_size_orf > self.context_size_is:
+            print("Context size ORF is greater than context_size_is. Should be smaller or equal.")
+            print("Context size ORF value: {}".format(self.context_size_orf))
+            print("Context size IS value: {}".format(self.context_size_is))
+            exit(1)
+
     def __str__(self):
         return "genome file: {}, models: {}, outliers: {}, isfinder orf db: {}, isfinder is db: {}, context orf size: {}, " \
                "context size is: {}, max merge distance: {}, genbank file: {}, min gb overlap {}, outfmt: {}, outdir: {}".format(

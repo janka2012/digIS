@@ -5,8 +5,8 @@ from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
 from ..common.genome import Genome
-from .RecordDigIS import RecordDigIS
 from ..hmmer.Hmmer import Hmmer
+from .RecordDigIS import RecordDigIS
 
 
 class digIS:
