@@ -129,7 +129,9 @@ class digIS:
     def run(self, search=True, classify=True, export=True, debug=False):
         if search:
             self.search_models()
+            self.search_outliers()
         self.parse(self.hmmsearch_output)
+        self.parse(self.phmmer_output)
         if debug:
             self.export(os.path.join(self.config.output_dir, "logs", self.genome.name + '_nonfilter.csv'))
         self.merge()
