@@ -1,8 +1,8 @@
-from digIS.src.blast.Blast import Blast
-from digIS.src.blast.BlastX import BlastX
-from digIS.src.blast.BlastN import BlastN
-from digIS.src.common.Classifier import Classifier
-from digIS.src.common.ranges import find_overlaps
+from ..blast.Blast import Blast
+from ..blast.BlastX import BlastX
+from ..blast.BlastN import BlastN
+from ..common.Classifier import Classifier
+from ..common.ranges import find_overlaps
 
 def get_recs_genbank_overlap_map(recs, genbank_records=None, min_overlap=100, ignore_strand=False):
     hits = find_overlaps(genbank_records, recs, min_overlap, ignore_strand)

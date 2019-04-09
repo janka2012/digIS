@@ -1,14 +1,14 @@
 from copy import copy
 from copy import deepcopy
 
-from digIS.src.common.classification import classification
+from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
 from ..common.genome import Genome
-from .RecordDigIS import RecordDigIS
 from ..hmmer.Hmmer import Hmmer
-from digIS.src.common.genbank import read_gb
-from digIS.src.genbank.RecordGenbank import RecordGenbank
+from ..common.genbank import read_gb
+from ..genbank.RecordGenbank import RecordGenbank
+from .RecordDigIS import RecordDigIS
 
 
 class digIS:
@@ -140,7 +140,9 @@ class digIS:
     def run(self, search=True, classify=True, export=True, debug=False):
         if search:
             self.search_models()
+            self.search_outliers()
         self.parse(self.hmmsearch_output)
+        self.parse(self.phmmer_output)
         if debug:
             self.export(os.path.join(self.config.output_dir, "logs", self.genome.name + '_nonfilter.csv'))
         self.merge()

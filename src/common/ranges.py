@@ -1,4 +1,5 @@
-from digIS.src.common.RangesHits import RangesHits
+from ..common.RangesHits import RangesHits
+
 
 def find_overlaps(query, subject, min_overlap, ignore_strand):
 

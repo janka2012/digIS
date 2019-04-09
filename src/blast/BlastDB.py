@@ -3,7 +3,7 @@ import os
 from subprocess import call
 from Bio import SeqIO
 
-from definitions import ROOT_DIR
+from ...definitions import ROOT_DIR
 
 
 class BlastDB:
