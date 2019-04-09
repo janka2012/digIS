@@ -14,7 +14,7 @@ class Classifier:
 
     def classify(self):
         self.__assign_overall_similarity_with_isfinderdb()
-        if self.genbank_recs:
+        if self.genbank_recs is not None:
             self.__clean_duplicit_gene_records()
             self.__assign_genbank_annotation()
             self.__assign_level()
@@ -114,7 +114,15 @@ class Classifier:
 
         self.level = dict_gb_sim_all[self.genbank_annotation, self.similarity_all]
 
-    def to_csv(self):
-        header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
-        row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
+    def to_csv(self, verbose=False):
+        if verbose:
+            header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS']
+            str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
+            str_bl_orf = str(self.blast_orf) if self.blast_orf.score != 0.0 else ""
+            str_bl_is = str(self.blast_is_dna) if self.blast_is_dna.score != 0.0 else ""
+            row = [self.rec.genome, self.level, self.similarity_all, self.genbank_annotation, self.similarity_orf, self.similarity_is,
+                 str(self.rec), str_gb, str_bl_orf, str_bl_is]
+        else:
+            header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
+            row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
         return header, row

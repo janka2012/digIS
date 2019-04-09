@@ -7,6 +7,8 @@ from ..common.sequence import *
 from ..common.genome import Genome
 from .RecordDigIS import RecordDigIS
 from ..hmmer.Hmmer import Hmmer
+from digIS.src.common.genbank import read_gb
+from digIS.src.genbank.RecordGenbank import RecordGenbank
 
 
 class digIS:
@@ -110,7 +112,16 @@ class digIS:
         return records_indexes_dc
 
     def classification(self):
-        self.classifier_recs = classification(self.recs, self.genome, self.config)
+        if self.config.genbank_file:
+            genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.file, self.genome.length)
+                                for i in read_gb(self.config.genbank_file))
+            genbank_recs = list(rec for rec in genbank_recs if rec.type not in ['source'])
+        else:
+            genbank_recs = None
+
+        self.classifier_recs = classification(self.recs, genbank_recs, self.config.context_size_orf,
+                                              self.config.context_size_is, self.config.min_gb_overlap,
+                                              self.config.isfinder_orf_db, self.config.isfinder_is_db)
 
     def export(self, filename=None):
         csv_row = []
