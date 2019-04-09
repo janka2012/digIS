@@ -12,7 +12,6 @@ def read_csv(filename, delimiter=';'):
                 out_list.append(row)
     else:
         logging.error("Filename {} does not exist.".format(filename))
-        raise FileNotFoundError("{} file does not exist.".format(filename))
     return out_list
 
 
