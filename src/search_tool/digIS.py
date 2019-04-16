@@ -1,6 +1,7 @@
 from copy import copy
 from copy import deepcopy
 
+from ..common.gff_utils import write_gff
 from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
@@ -124,8 +125,8 @@ class digIS:
                                               self.config.isfinder_orf_db, self.config.isfinder_is_db)
 
     def export(self, filename=None):
+        output = filename if filename else self.output
         csv_row = []
-        csv_output = filename if filename else self.output
         csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         for i, rec in enumerate(self.recs):
             header, row = rec.to_csv()
@@ -135,7 +136,10 @@ class digIS:
                 row += class_row
             csv_row.append(row)
             csv_header = header
-        write_csv(csv_row, csv_output, csv_header)
+        if self.config.out_format == "csv":
+            write_csv(csv_row, output, csv_header)
+        elif self.config.out_format == "gff":
+            write_gff(csv_row, output, csv_header)
 
     def run(self, search=True, classify=True, export=True, debug=False):
         if search:
