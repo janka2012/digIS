@@ -1,5 +1,16 @@
 # digIS
 
+
+**Table of content**
+<!---toc start-->
+
+  * [Requirements](#requirements)
+  * [Installing](#installing)
+  * [Usage](#usage)
+  * [Understanding Outputs](#understanding-outputs)
+
+<!---toc end-->
+
 ## Requirements
 - HMMER 3.1b2 or higher, download the latest version from http://hmmer.org/download.html
 - ncbi-blast+ v 2.8.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
@@ -12,13 +23,13 @@ sudo apt-get install hmmer
 sudo apt-get install ncbi-blast+
 ```
 
-## Searching
+## Usage
 
 ### Mode with GenBank annotation
 
 ### Mode without GenBank annotation
 
-## Understanding Ouputs
+## Understanding Outputs
 
 ### Getting FASTA file using GFF file
 
