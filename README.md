@@ -1,8 +1,20 @@
 # digIS
 
+## Requirements
+- HMMER 3.1b2 or higher, download the latest version from [http://hmmer.org/download.html]
+- ncbi-blast+ v 2.8.1 or higher, download the latest version from [ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/]
+- Python3 (Biopython 1.73 or higher)
+
 ## Installing
+sudo apt-get update
+sudo apt-get install hmmer
+sudo apt-get install ncbi-blast+
 
 ## Searching
+
+### Mode with GenBank annotation
+
+### Mode without GenBank annotation
 
 ## Understanding Ouputs
 
