@@ -6,9 +6,11 @@
 - Python3 (Biopython 1.73 or higher)
 
 ## Installing
+```
 sudo apt-get update
 sudo apt-get install hmmer
 sudo apt-get install ncbi-blast+
+```
 
 ## Searching
 
