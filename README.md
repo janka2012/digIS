@@ -31,26 +31,45 @@ pip3 install biopython
 ```
 
 ## Install dependencies from source
+
+Create a directory where you will download and install required software
 ```
-# create a directory where you will download and install required software
 mkdir -p $HOME/bin
 cd $HOME/bin
+```
 
-# HMMER
+### Download and compile HMMER (v3.1b2) from source
+
+```
+# download
 wget http://eddylab.org/software/hmmer/hmmer-3.1b2.tar.gz
 tar zxf hmmer-3.1b2.tar.gz
 cd hmmer-3.1b2
 
 # compile
 ./configure --prefix $HOME/bin/hmmer-3.1b2
+make
 make check  # optional step
 make install
-(cd easel; make install)
+```
 
-# add HMMER to your $PATH
+Add HMMER to your ```$PATH``` and ```~/.profile```
 
+```
 HMMER=$HOME/bin/hmmer-3.1b2/bin
 echo $"export PATH=\$PATH:$HMMER" >> ~/.profile
+```
+
+### Download an compile ncbi-blast+ from source
+
+```
+cd $HOME/bin
+
+wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-linux.tar.gz
+tar zxf ncbi-blast-2.9.0+-x64-linux.tar.gz
+
+BLAST=$HOME/bin/ncbi-blast-2.9.0+/bin
+echo $"export PATH=\$PATH:$BLAST" >> ~/.profile
 ```
 
 
