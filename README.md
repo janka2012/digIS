@@ -16,12 +16,43 @@
 - ncbi-blast+ v 2.8.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 - Python3 (Biopython 1.73 or higher)
 
-## Installing
+## Install dependencies using package manager (for Ubuntu)
 ```
 sudo apt-get update
 sudo apt-get install hmmer
 sudo apt-get install ncbi-blast+
+
+# install python3  and pip3
+sudo apt-get install python3.7
+sudo apt install python3-pip
+
+# download Biopython
+pip3 install biopython
 ```
+
+## Install dependencies from source
+```
+# create a directory where you will download and install required software
+mkdir -p $HOME/bin
+cd $HOME/bin
+
+# HMMER
+wget http://eddylab.org/software/hmmer/hmmer-3.1b2.tar.gz
+tar zxf hmmer-3.1b2.tar.gz
+cd hmmer-3.1b2
+
+# compile
+./configure --prefix $HOME/bin/hmmer-3.1b2
+make check  # optional step
+make install
+(cd easel; make install)
+
+# add HMMER to your $PATH
+
+HMMER=$HOME/bin/hmmer-3.1b2/bin
+echo $"export PATH=\$PATH:$HMMER" >> ~/.profile
+```
+
 
 ## Usage
 
