@@ -72,6 +72,29 @@ BLAST=$HOME/bin/ncbi-blast-2.9.0+/bin
 echo $"export PATH=\$PATH:$BLAST" >> ~/.profile
 ```
 
+Installing Python3
+
+```
+wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
+tar xf Python-3.7.3.tgz
+
+cd Python-3.7.3.tgz
+
+
+./configure --prefix $HOME/bin/Python-3.7.3
+make
+make test # optional
+
+# problem with zlib
+make install
+```
+
+Building Python
+
+```
+https://www.systutorials.com/topic/how-to-install-the-zlib-library-in-ubuntu/
+```
+
 
 ## Usage
 
