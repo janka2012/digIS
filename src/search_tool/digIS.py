@@ -1,11 +1,14 @@
 from copy import copy
 from copy import deepcopy
 
+from ..common.gff_utils import write_gff
 from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
 from ..common.genome import Genome
 from ..hmmer.Hmmer import Hmmer
+from ..common.genbank import read_gb
+from ..genbank.RecordGenbank import RecordGenbank
 from .RecordDigIS import RecordDigIS
 
 
@@ -110,11 +113,20 @@ class digIS:
         return records_indexes_dc
 
     def classification(self):
-        self.classifier_recs = classification(self.recs, self.genome, self.config)
+        if self.config.genbank_file:
+            genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.file, self.genome.length)
+                                for i in read_gb(self.config.genbank_file))
+            genbank_recs = list(rec for rec in genbank_recs if rec.type not in ['source'])
+        else:
+            genbank_recs = None
+
+        self.classifier_recs = classification(self.recs, genbank_recs, self.config.context_size_orf,
+                                              self.config.context_size_is, self.config.min_gb_overlap,
+                                              self.config.isfinder_orf_db, self.config.isfinder_is_db)
 
     def export(self, filename=None):
+        output = filename if filename else self.output
         csv_row = []
-        csv_output = filename if filename else self.output
         csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         for i, rec in enumerate(self.recs):
             header, row = rec.to_csv()
@@ -124,12 +136,17 @@ class digIS:
                 row += class_row
             csv_row.append(row)
             csv_header = header
-        write_csv(csv_row, csv_output, csv_header)
+        if self.config.out_format == "csv":
+            write_csv(csv_row, output, csv_header)
+        elif self.config.out_format == "gff":
+            write_gff(csv_row, output, csv_header)
 
     def run(self, search=True, classify=True, export=True, debug=False):
         if search:
             self.search_models()
+            self.search_outliers()
         self.parse(self.hmmsearch_output)
+        self.parse(self.phmmer_output)
         if debug:
             self.export(os.path.join(self.config.output_dir, "logs", self.genome.name + '_nonfilter.csv'))
         self.merge()

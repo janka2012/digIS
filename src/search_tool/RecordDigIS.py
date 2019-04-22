@@ -57,7 +57,7 @@ class RecordDigIS(Grange):
 
     def to_csv(self):
         header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
-        row = [self.qid, self.sid, self.qstart, self.qend, self.start, self.end, self.strand, self.acc]
+        row = [self.qid, self.sid, self.qstart, self.qend, self.start, self.end, self.strand, round(self.acc,2)]
         return header, row
 
     def __str__(self):

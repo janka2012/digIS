@@ -1,4 +1,5 @@
-from pathlib import Path
+import definitions
+
 from ..common.misc import init_output_dir
 
 
@@ -6,10 +7,10 @@ class digISConfiguration:
     def __init__(self, genome_file, context_size_orf, context_size_is, max_merge_distance,
                  genbank_file, min_gb_overlap, out_format, output_dir):
         self.genome_file = genome_file
-        self.models = Path("data/models/hmm/hmm_all_subfams.hmm").resolve()
-        self.outliers_fasta = Path("data/models/fasta/outliers.fasta").resolve()
-        self.isfinder_orf_db = Path("data/Blast_db/isfinder_orf").resolve()
-        self.isfinder_is_db = Path("data/Blast_db/isfinder_is").resolve()
+        self.models = definitions.HMM_MODELS
+        self.outliers_fasta = definitions.OUTLIERS
+        self.isfinder_orf_db = definitions.ISFINDER_ORF_DB
+        self.isfinder_is_db = definitions.ISFINDER_IS_DB
         self.context_size_orf = context_size_orf
         self.context_size_is = context_size_is
         self.max_merge_distance = max_merge_distance
