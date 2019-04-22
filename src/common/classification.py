@@ -4,6 +4,7 @@ from ..blast.BlastN import BlastN
 from ..common.Classifier import Classifier
 from ..common.ranges import find_overlaps
 
+
 def get_recs_genbank_overlap_map(recs, genbank_records=None, min_overlap=100, ignore_strand=False):
     hits = find_overlaps(genbank_records, recs, min_overlap, ignore_strand)
     subj_map = hits.get_subject_map()
@@ -13,6 +14,7 @@ def get_recs_genbank_overlap_map(recs, genbank_records=None, min_overlap=100, ig
         recs_genbank.append([genbank_records[idx] for idx in map_list])
 
     return recs_genbank
+
 
 def classification(recs, gb_recs, context_size_orf, context_size_is, min_overlap, isfinder_orf_db, isfinder_is_db):
     ds_genbank_recs = [None] * len(recs)
