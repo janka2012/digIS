@@ -1,7 +1,7 @@
 import argparse
 
-from .src.search_tool.digIS import digIS
-from .src.search_tool.digISConfiguration import digISConfiguration
+from src.search_tool.digIS import digIS
+from src.search_tool.digISConfiguration import digISConfiguration
 
 
 def print_args():
