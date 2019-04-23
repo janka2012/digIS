@@ -40,19 +40,25 @@ class Hmmer:
 
     def parse(self, outfile):
 
+        new_recs_added = False
+
         try:
             check_if_file_exists(outfile)
         except FileNotFoundError:
             print("No hmmer output file set.")
 
-        self.hits = []
-        self.hsps = []
-        for res in SearchIO.parse(outfile, 'hmmsearch3-domtab'):
-            for hit in res.hits:
-                print(hit)
-                self.hits.append(HmmerHit(hit, res.seq_len))
-        for hit in self.hits:
-            self.hsps += hit.hsps
+        hmmer_res = list(SearchIO.parse(outfile, 'hmmsearch3-domtab'))
+        if len(hmmer_res) > 0:
+            new_recs_added = True
+            for res in hmmer_res:
+                for hit in res.hits:
+                    self.hits.append(HmmerHit(hit, res.seq_len))
+
+            for hit in self.hits:
+                self.hsps += hit.hsps
+        else:
+            print("No new hits from hmmer.")
+        return new_recs_added
 
     def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):
         try:
