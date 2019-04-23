@@ -40,15 +40,17 @@ class digIS:
                        outfile=self.phmmer_output)
 
     def parse(self, hmmer_output):
-        self.hmmer.parse(hmmer_output)
-        for hsp in self.hmmer.hsps:
-            hit_range = (hsp.sstart, hsp.send)
-            frame = int(hsp.sid.strip()[-1])
-            sid = hsp.sid[:-2]
-            strand = "+" if frame <= 3 else "-"
-            dna_range = transform_range(hit_range[0], hit_range[1], frame, self.genome.length)
-            self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand,
-                                                    self.genome.name, "chr", self.genome.file, self.genome.length))
+        new_recs_added = self.hmmer.parse(hmmer_output)
+
+        if new_recs_added:
+            for hsp in self.hmmer.hsps:
+                hit_range = (hsp.sstart, hsp.send)
+                frame = int(hsp.sid.strip()[-1])
+                sid = hsp.sid[:-2]
+                strand = "+" if frame <= 3 else "-"
+                dna_range = transform_range(hit_range[0], hit_range[1], frame, self.genome.length)
+                self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand,
+                                                        self.genome.name, "chr", self.genome.file, self.genome.length))
 
     def merge(self):
         """ Merging hits in particular distance """
@@ -57,13 +59,15 @@ class digIS:
         print("Number of records before merging: {}.".format(len(self.recs)))
         merged_records_indexes = self.merge_records(records_indexes)
         merged_records = [self.recs[rec_index] for rec_index in merged_records_indexes]
+        from pprint import pprint
+        pprint(merged_records)
         self.recs = merged_records
         print("Number of records after merging: {}.".format(len(self.recs)))
 
         print(self.genome.name, "Filtered: ", len(self.hmmer.hsps) - len(self.recs))
 
         # Write filter log file
-        with open(os.path.join(self.config.output_dir, "logs", self.genome.name + "_filter.log"), "w") as f:
+        with open(os.path.join(self.config.output_dir, "logs", self.genome.name + "_filter.log"), "w+") as f:
             f.write("\n".join(self.filter_log))
 
     def merge_records(self, records_indexes):
@@ -126,6 +130,7 @@ class digIS:
 
     def export(self, filename=None):
         output = filename if filename else self.output
+        print(output)
         csv_row = []
         csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         for i, rec in enumerate(self.recs):
@@ -141,7 +146,7 @@ class digIS:
         elif self.config.out_format == "gff":
             write_gff(csv_row, output, csv_header)
 
-    def run(self, search=True, classify=True, export=True, debug=False):
+    def run(self, search=True, classify=True, export=True, debug=True):
         if search:
             self.search_models()
             self.search_outliers()
