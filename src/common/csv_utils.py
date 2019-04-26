@@ -19,9 +19,8 @@ def write_csv(rows, filename, header, delimiter=";"):
     if len(rows) > 0 and len(header) != len(rows[0]):
         raise ValueError("Number of elements in header and in row to write is not same.")\
 
-    with open(filename, 'w', newline='') as f:
+    with open(filename, 'w+', newline='') as f:
         writer = csv.writer(f, delimiter=delimiter)
         writer.writerow(header)
         for row in rows:
             writer.writerow(row)
-

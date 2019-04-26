@@ -1,6 +1,7 @@
 from copy import copy
 from copy import deepcopy
 
+from ..common.gff_utils import write_gff
 from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
@@ -36,18 +37,20 @@ class digIS:
 
     def search_outliers(self):
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
-                       outfile=self.phmmer_output)
+                       outfile=self.phmmer_output, evalue="0.001")
 
     def parse(self, hmmer_output):
-        self.hmmer.parse(hmmer_output)
-        for hsp in self.hmmer.hsps:
-            hit_range = (hsp.sstart, hsp.send)
-            frame = int(hsp.sid.strip()[-1])
-            sid = hsp.sid[:-2]
-            strand = "+" if frame <= 3 else "-"
-            dna_range = transform_range(hit_range[0], hit_range[1], frame, self.genome.length)
-            self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand,
-                                                    self.genome.name, "chr", self.genome.file, self.genome.length))
+        new_recs_added = self.hmmer.parse(hmmer_output)
+
+        if new_recs_added:
+            for hsp in self.hmmer.hsps:
+                hit_range = (hsp.sstart, hsp.send)
+                frame = int(hsp.sid.strip()[-1])
+                sid = hsp.sid[:-2]
+                strand = "+" if frame <= 3 else "-"
+                dna_range = transform_range(hit_range[0], hit_range[1], frame, self.genome.length)
+                self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand,
+                                                        self.genome.name, "chr", self.genome.file, self.genome.length))
 
     def merge(self):
         """ Merging hits in particular distance """
@@ -62,7 +65,7 @@ class digIS:
         print(self.genome.name, "Filtered: ", len(self.hmmer.hsps) - len(self.recs))
 
         # Write filter log file
-        with open(os.path.join(self.config.output_dir, "logs", self.genome.name + "_filter.log"), "w") as f:
+        with open(os.path.join(self.config.output_dir, "logs", self.genome.name + "_filter.log"), "w+") as f:
             f.write("\n".join(self.filter_log))
 
     def merge_records(self, records_indexes):
@@ -124,8 +127,8 @@ class digIS:
                                               self.config.isfinder_orf_db, self.config.isfinder_is_db)
 
     def export(self, filename=None):
+        output = filename if filename else self.output
         csv_row = []
-        csv_output = filename if filename else self.output
         csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         for i, rec in enumerate(self.recs):
             header, row = rec.to_csv()
@@ -135,9 +138,12 @@ class digIS:
                 row += class_row
             csv_row.append(row)
             csv_header = header
-        write_csv(csv_row, csv_output, csv_header)
+        if self.config.out_format == "csv":
+            write_csv(csv_row, output, csv_header)
+        elif self.config.out_format == "gff":
+            write_gff(csv_row, output, csv_header)
 
-    def run(self, search=True, classify=True, export=True, debug=False):
+    def run(self, search=True, classify=True, export=True, debug=True):
         if search:
             self.search_models()
             self.search_outliers()

@@ -24,14 +24,14 @@ class Hmmer:
         self.hits = []
         self.hsps = []
 
-    def run(self, tool, hmmfile, seqdb, outfile, curated_models=False):
+    def run(self, tool, hmmfile, seqdb, outfile, evalue=None, curated_models=False):
 
         check_if_file_exists(hmmfile)
         check_if_file_exists(seqdb)
 
         if outfile:
             cmd = self.__build_command(tool=tool, hmmfile=hmmfile, seqdb=seqdb,
-                                       outfile=outfile, curated_models=curated_models)
+                                       outfile=outfile, curated_models=curated_models, evalue=evalue)
             if sys.platform == 'win32':
                 cmd = ['bash.exe', '-c', ' '.join(cmd)]
             self.__run_tool(cmd)
@@ -40,19 +40,25 @@ class Hmmer:
 
     def parse(self, outfile):
 
+        new_recs_added = False
+
         try:
             check_if_file_exists(outfile)
         except FileNotFoundError:
             print("No hmmer output file set.")
 
-        self.hits = []
-        self.hsps = []
-        for res in SearchIO.parse(outfile, 'hmmsearch3-domtab'):
-            for hit in res.hits:
-                print(hit)
-                self.hits.append(HmmerHit(hit, res.seq_len))
-        for hit in self.hits:
-            self.hsps += hit.hsps
+        hmmer_res = list(SearchIO.parse(outfile, 'hmmsearch3-domtab'))
+        if len(hmmer_res) > 0:
+            new_recs_added = True
+            for res in hmmer_res:
+                for hit in res.hits:
+                    self.hits.append(HmmerHit(hit, res.seq_len))
+
+            for hit in self.hits:
+                self.hsps += hit.hsps
+        else:
+            print("No new hits from hmmer.")
+        return new_recs_added
 
     def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):
         try:
@@ -85,14 +91,17 @@ class Hmmer:
     def str_hsps(self):
         return '\n'.join(list(str(i) for i in self.hsps))
 
-    def __build_command(self, tool, hmmfile, seqdb, outfile, curated_models):
+    def __build_command(self, tool, hmmfile, seqdb, outfile, curated_models, evalue=None):
         """
         tool [options] <hmmdb> <seqfile>
         """
 
         cmd = [tool, "--noali"]
 
-        if curated_models:
+        if evalue:
+            cmd.extend(["-E", evalue])
+
+        elif curated_models:
             cmd.extend(["--cut_nc"])
 
         if sys.platform == 'win32':
