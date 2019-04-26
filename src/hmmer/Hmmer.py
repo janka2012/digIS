@@ -24,14 +24,14 @@ class Hmmer:
         self.hits = []
         self.hsps = []
 
-    def run(self, tool, hmmfile, seqdb, outfile, curated_models=False):
+    def run(self, tool, hmmfile, seqdb, outfile, evalue=None, curated_models=False):
 
         check_if_file_exists(hmmfile)
         check_if_file_exists(seqdb)
 
         if outfile:
             cmd = self.__build_command(tool=tool, hmmfile=hmmfile, seqdb=seqdb,
-                                       outfile=outfile, curated_models=curated_models)
+                                       outfile=outfile, curated_models=curated_models, evalue=evalue)
             if sys.platform == 'win32':
                 cmd = ['bash.exe', '-c', ' '.join(cmd)]
             self.__run_tool(cmd)
@@ -91,14 +91,17 @@ class Hmmer:
     def str_hsps(self):
         return '\n'.join(list(str(i) for i in self.hsps))
 
-    def __build_command(self, tool, hmmfile, seqdb, outfile, curated_models):
+    def __build_command(self, tool, hmmfile, seqdb, outfile, curated_models, evalue=None):
         """
         tool [options] <hmmdb> <seqfile>
         """
 
         cmd = [tool, "--noali"]
 
-        if curated_models:
+        if evalue:
+            cmd.extend(["-E", evalue])
+
+        elif curated_models:
             cmd.extend(["--cut_nc"])
 
         if sys.platform == 'win32':
