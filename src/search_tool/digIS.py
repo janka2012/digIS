@@ -59,8 +59,6 @@ class digIS:
         print("Number of records before merging: {}.".format(len(self.recs)))
         merged_records_indexes = self.merge_records(records_indexes)
         merged_records = [self.recs[rec_index] for rec_index in merged_records_indexes]
-        from pprint import pprint
-        pprint(merged_records)
         self.recs = merged_records
         print("Number of records after merging: {}.".format(len(self.recs)))
 
@@ -130,7 +128,6 @@ class digIS:
 
     def export(self, filename=None):
         output = filename if filename else self.output
-        print(output)
         csv_row = []
         csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         for i, rec in enumerate(self.recs):
