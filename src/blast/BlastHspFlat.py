@@ -17,6 +17,7 @@ class BlastHspFlat:
         self.subject_identity = 0.0
         self.query_coverage = 0.0
         self.subject_coverage = 0.0
+        self.shorter_identity = 0.0
 
     def set_from_hsp(self, hsp, query_id, query_len, subject_id, subject_len):
         self.score = hsp.score
@@ -37,6 +38,8 @@ class BlastHspFlat:
 
         self.subject_coverage = (self.subject_end - self.subject_start + 1) / self.subject_len
         self.subject_identity = self.identities / self.subject_len
+
+        self.shorter_identity = self.identities / min(self.query_len, self.subject_len)
 
     def __lt__(self, other):
         return self.score < other.score
