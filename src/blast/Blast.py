@@ -68,7 +68,7 @@ class Blast(ABC):
     @staticmethod
     def get_best_blast_hits_in_range(recs, search_engine, flank, database):
 
-        seq_recs, seq_ranges = prepare_flank_sequences(recs, flank)
+        seq_recs, seq_ranges, seq_original_ranges = prepare_flank_sequences(recs, flank)
 
         # Do BLAST
         bl = search_engine.from_seqrec(seq_recs, database)
@@ -79,6 +79,9 @@ class Blast(ABC):
         bl_bhits = []
         for i, hit in enumerate(bl.query_hits):
             bl_bhit = hit.get_best_hit(seq_ranges[i])
+            seq_original_ranges[i].remap_offsets(bl_bhit.query_start, bl_bhit.query_end)
+            bl_bhit.query_start = seq_original_ranges[i].start
+            bl_bhit.query_end = seq_original_ranges[i].end
             bl_bhits.append(bl_bhit)
 
         return bl_bhits

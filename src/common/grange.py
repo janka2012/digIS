@@ -29,7 +29,7 @@ class Grange:
         if flank_end > self.genome_len:
             flank_end = flank_end - self.genome_len if self.circular else self.genome_len
 
-        return Grange(self.genome, self.chr, flank_start, flank_end, self.strand, self.seq_file, self.genome_len)
+        return Grange(self.genome, self.chr, flank_start, flank_end, self.strand, self.seq_file, self.genome_len, self.circular)
 
     def shift_left(self, size):
         self.start -= size
@@ -38,6 +38,16 @@ class Grange:
         self.end -= size
         if self.end <= 0:
             self.end = self.end + self.genome_len if self.circular else 1
+        self.width = self.__len__()
+
+    def remap_offsets(self, left_offset, right_offset):
+        self.start += left_offset
+        if self.start > self.genome_len:
+            self.start = self.start - self.genome_len if self.circular else self.genome_len
+        self.end = self.start + right_offset
+        if self.end > self.genome_len:
+            self.end = self.end - self.genome_len if self.circular else self.genome_len
+        self.width = self.__len__()
 
     def has_overlap(self, other, ignore_strand=False, flank=0):
         return self.get_overlap_length(other, ignore_strand, flank) > 0

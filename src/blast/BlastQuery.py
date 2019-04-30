@@ -4,21 +4,19 @@ from ..blast.BlastHspFlat import BlastHspFlat
 
 
 class BlastQuery:
-    def __init__(self, query_id, query_length, hits):
+    def __init__(self, query_id, query_length, hits, application=''):
         self.query_id = query_id
         self.query_length = query_length
         self.hits = hits
+        self.application = application
 
     @classmethod
     def from_rec(cls, rec):
         hits = []
         for hit in rec.alignments:
             hits.append(BlastHit.from_rec(hit))
-        if rec.application == "BLASTX":
-            query_length = int(rec.query_length / 3)
-        else:
-            query_length = rec.query_length
-        return cls(rec.query, query_length, hits)
+        query_length = rec.query_length
+        return cls(rec.query, query_length, hits, rec.application)
 
     def get_best_hit(self, query_range=(0, 0), min_overlap=1):
         bhsp = BlastHsp()
@@ -28,7 +26,7 @@ class BlastQuery:
             if bhsp < hsp:
                 bhsp = hsp
                 bhspflat.set_from_hsp(hsp, self.query_id, self.query_length,
-                                      hit.subject_id, hit.subject_length)
+                                      hit.subject_id, hit.subject_length, self.application)
         return bhspflat
 
     def __str__(self):
