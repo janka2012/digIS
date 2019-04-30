@@ -17,7 +17,7 @@
 - Python3 (Biopython 1.73 or higher)
 
 ## Install dependencies using package manager (for Ubuntu)
-```
+```bash
 sudo apt-get update
 sudo apt-get install hmmer
 sudo apt-get install ncbi-blast+
@@ -33,14 +33,14 @@ pip3 install biopython
 ## Install dependencies from source
 
 Create a directory where you will download and install required software
-```
+```bash
 mkdir -p $HOME/bin
 cd $HOME/bin
 ```
 
 ### Download and compile HMMER (v3.1b2) from source
 
-```
+```bash
 # download
 wget http://eddylab.org/software/hmmer/hmmer-3.1b2.tar.gz
 tar zxf hmmer-3.1b2.tar.gz
@@ -55,7 +55,7 @@ make install
 
 Add HMMER to your ```$PATH``` and ```~/.profile```
 
-```
+```bash
 HMMER=$HOME/bin/hmmer-3.1b2/bin
 echo $"export PATH=\$PATH:$HMMER" >> ~/.profile
 ```
@@ -74,7 +74,7 @@ echo $"export PATH=\$PATH:$BLAST" >> ~/.profile
 
 Installing Python3
 
-```
+```bash
 wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
 tar xf Python-3.7.3.tgz
 
@@ -110,14 +110,14 @@ The [GFF](http://gmod.org/wiki/GFF3) is a standard format for storing of genome 
 
 For instance, FASTA sequences of IS elements (their catalytic domains) can be obtained using [Bedtools](https://bedtools.readthedocs.io/en/latest/) and command `getfasta` as follows:     
 
-```
+```bash
 bedtools getfasta -fi <input.fasta> -bed <input.gff> -fo <output.fasta>
 ```
 where _input.fasta_ represents FASTA file used for searching, _input.gff_ is the digIS output GFF file and _output.fasta_ is required output file. 
 
 ### Getting Flank Regions using GFF file
 
-```
+```bash
 bedtools flank -i <input.gff> -g <genome.size> -l <left flank size>  -r <right flank size> 
 ```
 where _genome.size_ is a text file containing information about chromosomes and their sizes in form: `chromosome_name<TAB>chromosome_size`. For more information about _genome.size_ file format please see Bedtools [documentation](https://bedtools.readthedocs.io/en/latest/).
