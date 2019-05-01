@@ -4,17 +4,17 @@ from ..common.misc import init_output_dir
 
 
 class digISConfiguration:
-    def __init__(self, genome_file, genbank_file, min_gb_overlap, out_format, output_dir):
+    def __init__(self, genome_file, genbank_file, out_format, output_dir):
         self.genome_file = genome_file
         self.models = definitions.HMM_MODELS
         self.outliers_fasta = definitions.OUTLIERS
         self.isfinder_orf_db = definitions.ISFINDER_ORF_DB
         self.isfinder_is_db = definitions.ISFINDER_IS_DB
-        self.context_size_orf = 1600
-        self.context_size_is = 14000
-        self.max_merge_distance = 700
+        self.context_size_orf = definitions.CONTEXT_SIZE_ORF
+        self.context_size_is = definitions.CONTEXT_SIZE_IS
+        self.max_merge_distance = definitions.MAX_MERGE_DISTANCE
         self.genbank_file = genbank_file
-        self.min_gb_overlap = min_gb_overlap
+        self.min_gb_overlap = definitions.MIN_GB_OVERLAP
         self.out_format = out_format
         self.output_dir = output_dir
         init_output_dir(self.output_dir)
