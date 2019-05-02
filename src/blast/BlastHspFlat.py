@@ -17,8 +17,10 @@ class BlastHspFlat:
         self.subject_identity = 0.0
         self.query_coverage = 0.0
         self.subject_coverage = 0.0
+        self.shorter_identity = 0.0
+        self.application = ''
 
-    def set_from_hsp(self, hsp, query_id, query_len, subject_id, subject_len):
+    def set_from_hsp(self, hsp, query_id, query_len, subject_id, subject_len, application):
         self.score = hsp.score
         self.identities = hsp.identities
         self.positives = hsp.positives
@@ -31,12 +33,18 @@ class BlastHspFlat:
         self.query_len = query_len
         self.subject_id = subject_id
         self.subject_len = subject_len
+        self.application = application
 
         self.query_coverage = (self.query_end - self.query_start + 1) / self.query_len
-        self.query_identity = self.identities / self.query_len
-
         self.subject_coverage = (self.subject_end - self.subject_start + 1) / self.subject_len
         self.subject_identity = self.identities / self.subject_len
+
+        if self.application == "BLASTX":
+            self.query_identity = self.identities / int(self.query_len/3)
+            self.shorter_identity = self.identities / min(int(self.query_len/3), self.subject_len)
+        else:
+            self.query_identity = self.identities / self.query_len
+            self.shorter_identity = self.identities / min(self.query_len, self.subject_len)
 
     def __lt__(self, other):
         return self.score < other.score

@@ -1,5 +1,7 @@
+from cmath import log
 from copy import copy
 from copy import deepcopy
+from math import ceil, log10
 
 from ..common.gff_utils import write_gff
 from ..common.classification import classification
@@ -129,13 +131,28 @@ class digIS:
     def export(self, filename=None):
         output = filename if filename else self.output
         csv_row = []
-        csv_header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
+        csv_header = ["id", "level", "qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
+        id_width = ceil(log10(len(self.recs))) if len(self.recs) > 0 else 1
+
         for i, rec in enumerate(self.recs):
-            header, row = rec.to_csv()
-            if self.classifier_recs:
-                class_header, class_row = self.classifier_recs[i].to_csv()
-                header += class_header
-                row += class_row
+            if self.classifier_recs[i].similarity_is in ['medium', 'strong']:
+                rec.start = self.classifier_recs[i].blast_is_dna.query_start
+                rec.end = self.classifier_recs[i].blast_is_dna.query_end
+                level = 'is'
+            elif self.classifier_recs[i].similarity_orf in ['medium', 'strong']:
+                rec.start = self.classifier_recs[i].blast_orf.query_start
+                rec.end = self.classifier_recs[i].blast_orf.query_end
+                level = 'orf'
+            else:
+                level = 'domain'
+
+            id = '_'.join([rec.sid, str(i).zfill(id_width), level])
+            search_header, search_row = rec.to_csv()
+            class_header, class_row = self.classifier_recs[i].to_csv()
+
+            header = ['id', 'level'] + search_header + class_header
+            row = [id, level] + search_row + class_row
+
             csv_row.append(row)
             csv_header = header
         if self.config.out_format == "csv":
@@ -143,19 +160,15 @@ class digIS:
         elif self.config.out_format == "gff":
             write_gff(csv_row, output, csv_header)
 
-    def run(self, search=True, classify=True, export=True, debug=True):
+    def run(self, search=True):
         if search:
             self.search_models()
             self.search_outliers()
         self.parse(self.hmmsearch_output)
         self.parse(self.phmmer_output)
-        if debug:
-            self.export(os.path.join(self.config.output_dir, "logs", self.genome.name + '_nonfilter.csv'))
         self.merge()
-        if classify:
-            self.classification()
-        if export:
-            self.export()
+        self.classification()
+        self.export()
 
     def __str__(self):
         return '\n'.join(list(str(rec) for rec in self.recs))

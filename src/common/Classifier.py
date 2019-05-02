@@ -84,18 +84,18 @@ class Classifier:
         self.similarity_all = dict_orf_is_all[(self.similarity_orf, self.similarity_is)]
 
     def __assign_similarity_level_dna(self):
-        if self.blast_is_dna.subject_identity < 0.5:
+        if self.blast_is_dna.shorter_identity < 0.5:
             similarity_is = 'weak'
-        elif self.blast_is_dna.subject_identity < 0.7:
+        elif self.blast_is_dna.shorter_identity < 0.7:
             similarity_is = 'medium'
         else:
             similarity_is = 'strong'
         return similarity_is
 
     def __assign_similarity_level_orf(self):
-        if self.blast_orf.subject_identity < 0.25:
+        if self.blast_orf.shorter_identity < 0.25:
             similarity_orf = 'weak'
-        elif self.blast_orf.subject_identity < 0.45:
+        elif self.blast_orf.shorter_identity < 0.45:
             similarity_orf = 'medium'
         else:
             similarity_orf = 'strong'

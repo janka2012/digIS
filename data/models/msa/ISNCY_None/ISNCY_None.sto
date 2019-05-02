@@ -1,0 +1,442 @@
+# STOCKHOLM 1.0
+
+#=GS          ISAau5.1|ISNCY|None|Transposase|Arthrobacter DE    aurescens
+#=GS        ISAcar1.1|ISNCY|None|Transposase|Acetohalobium DE    arabaticum
+#=GS       ISBli29.4|ISNCY|None|Transposase|Brevibacterium DE    linens
+#=GS            ISBth165.1|ISNCY|None|Transposase|Bacillus DE    thuringiensis
+#=GS             ISBth18.1|ISNCY|None|Transposase|Bacillus DE    thuringiensis
+#=GS           ISC1217.1|ISNCY|None|Transposase|Sulfolobus DE    solfataricus
+#=GS ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor DE    hydrothermalis
+#=GS            ISCb1.1|ISNCY|None|Transposase|Clostridium DE    beijerinckii
+#=GS  ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor DE    saccharolyticus
+#=GS          ISH7A.1|ISNCY|None|Transposase|Halobacterium DE    sp.
+#=GS          ISH7B.2|ISNCY|None|Transposase|Halobacterium DE    sp.
+#=GS            ISHvo14.2|ISNCY|None|Transposase|Haloferax DE    volcanii
+#=GS        ISHwa15.1|ISNCY|None|Transposase|Haloquadratum DE    walsbyi
+#=GS           ISMae1.2|ISNCY|None|Transposase|Microcystis DE    aeruginosa
+#=GS     ISMbu11.1|ISNCY|None|Transposase|Methanococcoides DE    burtonii
+#=GS          ISMk1.1|ISNCY|None|Transposase|Mycobacterium DE    kansasii
+#=GS            ISPa1.1|ISNCY|None|Transposase|Pseudomonas DE    aeruginosa
+#=GS            ISPa2.1|ISNCY|None|Transposase|Pseudomonas DE    aeruginosa
+#=GS            ISPa4.1|ISNCY|None|Transposase|Pseudomonas DE    aeruginosa
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           ------------------------MRLLLSLDAAGRLTTE----DVRLAA
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         --------------------------------------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        -MAQRTPEER--------------LALLRQHDDGVP--------WTR-IA
+ISBth165.1|ISNCY|None|Transposase|Bacillus             --------------------------------------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              --------------------------------------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  --------------------------------------------------
+ISCb1.1|ISNCY|None|Transposase|Clostridium             --------------------------------------------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------------------------------------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           ------MTFREMVDGALKTYPREQQVRHNRSVTLEDLVTEVPVTYLR-FY
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           ------MTFREMVDGALKTYPREQQVRHNRSVTLEDLVTEVPASYLR-FY
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             MLTDPSAVADSIIV--------HAETLCEREDHLWDVIRQLSIPVDN-L-
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         -MSQKTPEFEPVI----RRLERQAAESIYKDTDLLTVVTE-----FA-F-
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      --------------------------------------------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------MAVNDYEPGSMVITHVQGGGRDIIQY----------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             -----------------------------MARPIADLIHF----------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             -MAN-------------------------KTDNLPDFLQD----------
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           EGSDVSERTVWRWLAQARSEGE---V--------------QSPR-E----
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         --------------------------------------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        AESGVPVRTLSRWAAKYGAFPTSNGL--------------QRLRRADNG-
+ISBth165.1|ISNCY|None|Transposase|Bacillus             --------------------------------------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              --------------------------------------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  --------------------------------------------------
+ISCb1.1|ISNCY|None|Transposase|Clostridium             --------------------------------------------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------------------------------------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           DEYDHDQGHPKPWGAVFRAHVLRCVKGWKN-----ATALHRYLKQQPFLC
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           DEYDHDQGHPKPWGAVFRAHVLRCVKGWKN-----ATALHRYLKQQPFLC
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             ------EDARDQNRVTFGTDEMFRTLLFKGIRGISQNELAQRLGREPSLV
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         TDTPVSGTAAKEWEAKYGYRPMVCAFYCKELAGFMTTGLYEYLADAERAC
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      --------------------------------------------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             ----------IPARSSYGTPPFVPPGPS----------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             ----------NSTTVTASGDVYYGPGGGTGIGPIA--------------R
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           --RFEITD-----E---VRERLAF--WRGNVS----AVH--------REL
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         --------------------------------------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --TRRILP-----EIVEMIEALALRCPEPSVA----FVH--------RRV
+ISBth165.1|ISNCY|None|Transposase|Bacillus             --------------------------------------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              --------------------------------------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  --------------------------------------------------
+ISCb1.1|ISNCY|None|Transposase|Clostridium             --------------------------------------------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------------------------------------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           T-QLGF--------KDIPDQSTLYRAWDDRLE----DVHDAVRD-AAEVV
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           T-QLGF--------KDIPDQSTLYRAWDDRLE----DVHDAVRD-AAEVV
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             K-SFHLDTTDL---SNTPTQQQLSYTH-AQFS----ENTQEVLNRTVAGV
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         ARTLGFDPEQFAPDKTAPDRTTLGRTWRDRFS----DRLKSFITQSAQRI
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      --------------------------------------------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             -------P-------YVGTGMQEYRKLRSTLDKSHSELKKNLKNETLKEV
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             PIEHGLDS-------STENGWQEFESYADL--------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             -------------------YASLFSHFQGQMD----G------------L
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           VAAAGEGG-KRPSRATVQRAVA------------------RDVL-RG-EL
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         --------------------------------------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        SGIAADRGLPAPSYSSVRGIV-------------------GAID-PGLRT
+ISBth165.1|ISNCY|None|Transposase|Bacillus             --------------------------------------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              --------------------------------------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  --------------------------------------------------
+ISCb1.1|ISNCY|None|Transposase|Clostridium             --------------------------------------------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------------------------------------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           VDIARYHDIPAPEPEFLPDQPTDTV-TNSKSKDTLAREKAREVW-KGAKP
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           VDIARYHDIPAPETEFLPDQPTDTV-TNSKSKDTLAREKAREVW-KGAKP
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             RQAALNHGV--LTEGLVPTIPTEPENSTSKSESEYKKEKAQKTL-TLARK
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         LAVAHEMGNPLGMRALKPTNKTDCS-N--RTERRYVTEKAKDVT-DALCQ
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      --------------------------------------------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             DELKSEAGLPGKAV------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             -------GVDPR--------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             TTVQIGDKFASLAEHLIPHTEAG-------SDFER-ATKSKKSWDKGVDL
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           AGL------------RGGERARRAHEVFLR-----------RPRVHRNEV
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         -------------------------------------MIISP--------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        LAQ------------HGDAAYRDQFELVFR-----------RTTLNPNEQ
+ISBth165.1|ISNCY|None|Transposase|Bacillus             -------------------------------------MIINF--------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              -------------------------------------MITNF--------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ------------------------------------MFNTKPKQLSFIDL
+ISCb1.1|ISNCY|None|Transposase|Clostridium             --------------------------------------MITYKQLSLADV
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------------------------------------MTNF--------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           IVEDAFHLDRSDNASIPEGAFWEQQSYLGM-----------RTDMHPNDG
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           IVEDAFHLDRSDNASIPEGAFWEQQSYLGM-----------RTDMHPNDG
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             HVLPEFDTHRAAHKTYSD------EVILDM-----------FARICANKG
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         IVF----------------PAIDLQSYLGL-----------TGT-AANQG
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      MYQ--------------------PMKYY----------------YDVSDG
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             ----------------SANDIRDEKSIVDA--------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             IFQ---------HKEINGVELRVQSKYTISSVDDVDLIISKFQEYDSKDA
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           WEADHVEVPVEVLLPDDRLVKPWVTWFVD--VGTDAVCGAAVTP------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         -------------EEL--KENTFYQICSK--LDEIYYTKF-SPQ-ENQGR
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        WQADHTLLDVAVLDQAGVPVRPWLTVLLD--DYSRAVAGYTLFL------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             -------------DQN--Q--SVLQILFA--YVDSLTIGG-VP----PLT
+ISBth18.1|ISNCY|None|Transposase|Bacillus              -------------DQS--Q--STLQVLFA--YVDSLTIEG-VP----PIT
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  FSH-----LKASALY---KPESLLGLFNKFIDLSHYIPSS-FYNAYYKYF
+ISCb1.1|ISNCY|None|Transposase|Clostridium             YSD-----CKEKFEN---DKFQFLSLLENTIDLDELVPAS-FINHFYAST
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   -------------IKT--QKQKFLKILMT--IEKVIKALG-LKI-KSSRR
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           AQSFA----------------AD-----------------S-----TRR-
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           AQSFA----------------AD-----------------S-----TRR-
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             SAHSE----------------SEYGWLTD--D--DLICDDSTFLRAMKKI
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         SQMFD----------------EE-----------------T-----TREA
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      ICTRDSI--ANYLNTDNASICQFLYFL----DIDD-IASY-VESSYYADK
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             TNKQHELDLLGSLEEDSRQTSKYLIITSS--KISNIIAKF-L------ES
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           GPPSRESILAALRAAI-SLEEPYGPPGGLPGAVRIDRGKDFLSKTVHSVL
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         GRPKKYSDLQMIKCLLYK--------------------------VKNKIY
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        GAPSAEQTALALHQAVNQKTNPAWPVCGLPDVLYSDHGSDFTSVRLERVC
+ISBth165.1|ISNCY|None|Transposase|Bacillus             GRPPI-CRKALLKCFFVK--------------------------TVFQIN
+ISBth18.1|ISNCY|None|Transposase|Bacillus              GRPPI-CRKALLKCFFLK--------------------------TVFQIN
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            ----------MTKEL-------------------TRE-------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  GKHRYFSLESMLCCFLVQ--------------------------KLLKLN
+ISCb1.1|ISNCY|None|Transposase|Clostridium             GRPRKYQLYAMISALILQ--------------------------RIFSIP
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   GRPKKFKLSHIIACFVYK--------------------------VKNKIN
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           KTPSGDSHRLQTKTL---------------GVERIRT-------------
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           KTPSGDSHRLQTKTL---------------GVEHIRT-------------
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             ATPEDSDSQLTFEDF--------EDDDSMPETDRIRD-------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         GGPAGDTHLRYIKQL---------------DVMEIAS-------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      DWHFRYKVSSMIKLIVVK--------------------------CYRNLS
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------VR----------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             QRPSRFFLERIKKEKRFH--------------------------YIDGIE
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           AGLAVRVVALPGYTP-----------HLK---------------GTVESL
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         CLREL------------ESK-LKEDLLAL------GII-------KLNDV
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        LDTQIQLIHSRIGVP-----------QGR---------------GKIERF
+ISBth165.1|ISNCY|None|Transposase|Bacillus             SLRKL------------TRF-LHQYPSFR------VSC-------GLSFV
+ISBth18.1|ISNCY|None|Transposase|Bacillus              SLRKL------------TRF-LHQYPSFR------ASC-------GLSFV
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            -----------EYYK-----------ALE---------------KAVNEV
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  TLTQLRAVLLNS----------FELRSFC---------------NLHGNV
+ISCb1.1|ISNCY|None|Transposase|Clostridium             TDSLLIIFLKYS----------QELRDFC---------------GFL-RV
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   SFREL------------EYK-INEDEEFK------KAI-------GIEKS
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           --------------------------MLR---------------ETGRTL
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           --------------------------MLR---------------ETGRTL
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             -----------AIMT-----------AFD---------------AATDNI
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         --------------------------MIN---------------GAIGEM
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      FEKTIST------LTKEEAQ----LLSFEDNN-------------GIMNL
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------T-----------DAA---------------GATHEF
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             ------------LMD-----------A-----------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             ILTTIQSIYRSTYIRPQETKLIFQTPHIRVNNVYIGVLPCNELRRVYEEA
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           NNAAETMFFAALPRYTHAQ-----------QGANGKPTDPDA-PALPFEA
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         PDHS---TFA-LRFNQLEK-----MKFNILFQSVIKELNPDTRIT-SIDA
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        YGSITTELLPHLPGYIP-------------HGTNGEPLTDPALSLEQLDA
+ISBth165.1|ISNCY|None|Transposase|Bacillus             PHIS---TFS-RVGNWFRN-----EGIPMIHKQTLEEMNLGLIPCVLINS
+ISBth18.1|ISNCY|None|Transposase|Bacillus              PHIS---TFS-RVGTWFRE-----EGVPIIHEKVLQELNLGLIPCVLIDS
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            ILSMT--------------------------GTRK---DVAKRLLL----
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  PSIS---TLSRFRKIFASEIHKLFQNISIHAHNISIQQCPQDSSILIFDT
+ISCb1.1|ISNCY|None|Transposase|Clostridium             PDSS---KFTRFKQDFLLDLQSMFDNLVDITEPICQQIDTALASMTIFDT
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   PDHT---YFS-KWAKVIEE-----EYIEGIARILVREIDPQTKVC-AIDS
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           VARAK---------------------------SKD---KMGRKQMTAIDF
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           VARAK---------------------------SKD---KMGRKQMTAIDF
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             INSIR--------------------------GQNP---FESRETIAAIDI
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         IWAAE---------------------------QYY---SIDRHVDVAIDI
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      PSPA---TLHHFVKYRLGK-----TGLDEVMFKIGKNISKNTKI---R--
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           LNYLSARRLSYSLGFALTE-----------TMATG------------IDA
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             GDSI---FFE-NIREWLGF-----QGKKVKSGGVRETVNEAIAST-LEDS
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           FVAEFLTWVRWWNGE---NEGHTIAALGGRTPLQAWAED------P----
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         ---------------------TALRSSKN----D----------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        ILERFIVT--EYNQR--------PHSETHQAPVHRWAAS------GF---
+ISBth165.1|ISNCY|None|Transposase|Bacillus             ---------------------TALRSSLY----D----------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              ---------------------TALRSSLY----D----------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            ------------GAVVG-RNATEI-AQEAEMDYETVLNNLDKAA----QA
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ---------------------TGIVPKVRE-NNPKFIHL-----------
+ISCb1.1|ISNCY|None|Transposase|Clostridium             ---------------------SGLEAFVTE-NNPKYANR-----------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   ---------------------TPLRSSRG----D----------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           TKGN------PWSGHVE-RDSSGQ----NQ---EPWILGYKGDDGPF---
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           TKGN------PWSGHVE-RDSSGQ----NQ---EPWILGYKGDDGPF---
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             THEQFHVW--PWEDK-----EAGI----AKPDYPKMVSGYK--KDGEYKR
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         TYVA------YYGN---------------R---DEFQMSTGAPPSKSYSW
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      ---------------DAKTDSTPLEASRY----DKYA-------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           IP--QTAWTPAYDADGQVRDGAWVTEATGVVDLSDWPAG-----------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             PE-KM----------LERNNGIVIRASQV----EETSNS-----------
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           --TPLSTVPAADLRLLMLEDDGRARTITPKGVSW---RGRHYVAAWMTGQ
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         ------------------SDA-----------KL--GVSTNL--GRYKGY
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --IPRAPVRPEDLDLLLLT-AATTRKVQRDGIQF---SSTRYVSPVLAAY
+ISBth165.1|ISNCY|None|Transposase|Bacillus             ------------------SQA-----------KW--GKSTRY--GWYKGY
+ISBth18.1|ISNCY|None|Transposase|Bacillus              ------------------SQA-----------KW--GKSTRY--GWYKGY
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            KLIEVVKKLVGDHPVLLIVD-DT-------------HDHKLYARAMPVSR
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  --------------LLKNTS----------K-----ANPE---LPSEKVY
+ISCb1.1|ISNCY|None|Transposase|Clostridium             --------------IIKQLK----------NFKK--ACNL---DDSYDPY
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   ------------------KEA-----------EV--GVCVSL--GFYNGY
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           -FQWAVIKLVGHDVPLILDAVPV-----VRGR----------KRADIVDD
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           -FQWAVIKLVGHDVPLILDAVPV-----VRGR----------KRADIVDD
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             GYKYATITLVGDHAPIVLGIEPV-----KENSAWEPDDSPSYSKADLVSR
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         CYKMATISIVGEEVKFTLGMRPL-----RGYI----------PRSVLVEQ
+ISMae1.2|ISNCY|None|Transposase|Microcystis            --------------------------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      ------------------------------------------------DY
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --KAKSLKVIEDRPANLYTA-----------SDFPQKSESMYQSQLLASR
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             --------------SLKLRDA---------SIVN--GCQTTMSVFFVNPA
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           VGLAV-RVRHMPHH-EHEIEVFGATSGKHLGSATLAD-AASA---EEVAA
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         -----------------------KLHLIASNDS--------IPLSFKFTT
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        VGEQV-TIRFDPRD-VGEIRVYFNDDYLCR---AIAP-ELAAE-SVSLRE
+ISBth165.1|ISNCY|None|Transposase|Bacillus             -----------------------KAHVCSTPEG--------IVLSYSFTT
+ISBth18.1|ISNCY|None|Transposase|Bacillus              -----------------------KAHVCSTPEG--------VVLSYAFTT
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            NGAQIFYCRAHKRFEPAIQLL-------VIGVKDLVNNQI--------YV
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  SLVYSSLPKTANA-NSNIRLMFVNGHFCWALKFAVITNALGIPLALV---
+ISCb1.1|ISNCY|None|Transposase|Clostridium             KAAYGSMPSHASA-NPAIQQMYINGHFCYAFKFGIITNGLGIVRDISFYN
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   -----------------------KLHVLATVESE------VIPIVWWLTC
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           ------LLEGATDIVPGLDLVMMDREFAPDGVKDVCET------------
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           ------LLEGATDIVPGLDLVMMDREFAPDGVKDVCET------------
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             ------LLDSAERFV-DLDTVMFDRGFYVNRVYADVHD------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         ------LIDIASDHV-SLETMYADAEFDSIGVIDALEE------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            -------------------------------------MTFLISISLWLVE
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      -----------------------NPHYNCKMDKAHITMIGTLPIYMTHTK
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --MRL-IVRKERPH-PGAQLRFTDRDGLRLTAFVTNTTRGQLP-DLELRH
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             K----FYGEFLDRHMSELAKAY---------SADIYKAQI--------AI
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             -----------------------DGHVLAKIVE--------TEDSWEIAK
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           LHRARSEQQRRLRA----------DLRAAEKARRVRY--AAATEAAPLQP
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         -----------GNVY----DNTFD------------YCK---------EI
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        LQVARSQRRRDLKR----------QLRHRRSLADA-L--PIDNRYVPPEP
+ISBth165.1|ISNCY|None|Transposase|Bacillus             -----------VNVH----GSKMA------------P-----------VL
+ISBth18.1|ISNCY|None|Transposase|Bacillus              -----------ANVH----DSKMA------------P-----------IL
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            IH---------------------------------------IIAYIPRKV
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ----------PLFNYDSPSSDPQE------------AKAISDSKGLIPSL
+ISCb1.1|ISNCY|None|Transposase|Clostridium             KD---FLNAHPDIIVEKKSDSPDE------------DKSLADSKALIPVL
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   -----------ANIH----DSKVV------------------------EL
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           -H---------------------------------------DVHYLNPGV
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           -H---------------------------------------DVHYLNPGV
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             -R---------------------------------------EITYLSPVP
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         -K---------------------------------------GLSYLIRKS
+ISMae1.2|ISNCY|None|Transposase|Microcystis            -G---LLKYQPSTEQNPPTGLPVF------------TCP---------SC
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      -----------GASH----DSP--------------------------EL
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           RRRARCEEPHPGRQRHRPGQPPPARIRPKPDLVRIGAAGHGADRLVPNAG
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             LKQTSQEL-------------------------------ENKARSLEAEA
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             -------------------------------------------RYVPLQV
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             -----------AANF----QTEIE------------RIELELARYLRPQL
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           VQAVTAEA-ARAELATA-------QDTQLQAAARVDLFAPGPPSPEW---
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         MEPLG-----------------EHDIFILLGDAAYDS-------TKLFKL
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        TEAEPV---GVDEV---------------PPRHGLRLYATD---------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             LRDIQ-----------------DRNVLFSVADAAYDS-------QHIYEI
+ISBth18.1|ISNCY|None|Transposase|Bacillus              LQDIE-----------------DQHVLFSIADAAYDS-------QHIYKI
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            EEEL-KRRGEEVKFKTKIDALLEFLSS---LSGLNVKARV---FDSWYVN
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ETL--------------FSYIPK-NFSTFIADSALDSHNI--YSTLKNTF
+ISCb1.1|ISNCY|None|Transposase|Clostridium             KDF--------------FNKHPLISPKTFLGDAAFDSIQI--YRDLLLEL
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   LYEAK-----------------IFGPEVILADAGYDC-------AKWFEV
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           VRSSSDHEHQIAKLA-SEDKDFDVIKQE-RLDDGPTRKAVYLPKREWERE
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           VRSSSDHEHQIAKLA-SEDKDFDVIEQE-RLDAGPTRKAVYLPKREWERE
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             KYED--ELTAVQ-----------DIQEH-PTADAAVKH------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         ----SDDR--VDRFVVDMDHDVAVKQSH--------------------EM
+ISMae1.2|ISNCY|None|Transposase|Microcystis            GSH----------HTIKNGYLPKGKPKRH-----------------CQEC
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      KKHIDA----LVEMG--------VDIDTYALDGGYDSFRN--HADIWYKL
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           LRGAPG-----AALGT----------QTTTAAAVFDRRPPGPPRPPNPAA
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             QRAA---AEVEADYKARKANVEKKVQSELDQAGNALPQLTNPTPEQWLER
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             KEKR---REIELQFRDAEKKLEASVQAELDKADAALGPAKNLAPLDVINR
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             ARSVGA----ENNFKFDQKEVTKGKSAFALLDQIYKD-------EICYDE
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           --------------------------------------------------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         ADDLGFKLLTDINYRNA----------DSIDDFTD------KCRIE----
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --------------------------------------------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             ARISNIFAVNPINPRNG----------EQIKS---------THRRV----
+ISBth18.1|ISNCY|None|Transposase|Bacillus              AGTCDIFPINPINSRNG----------EQIKS---------SHRRV----
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            SRTL------------QGNTVGELKS-SARVVEGGRSVPVSEFPQGEY--
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  NFS---KIVIPLNTRAS----------KNTTPTSDPNIVISEDGIP----
+ISCb1.1|ISNCY|None|Transposase|Clostridium             KFD---KAYIPLKTRLT----------LE-----NADCPLNEDGIP----
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   SDRLGMKFVAAVNKRNS----------KDFSNVKN------ILRIK----
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           DEDN------------DGTDVTIRQELIEDFKDVGNTTPLSEDRDGDSPL
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           DEDN------------DGTDVTIRQELIEDFEDVGNTTPLSEDRDGDSPL
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             ------------------------------------DVPLGIDGEVH---
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         KKTS------------GGESVTVTPTL-----------------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            GQP---FVINPTNKTISPDTKTINRSTLARTNFLTRNCQSNRGKLV----
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      NAKP----VIAYSSDS------------KVQYEGM------MERID----
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           PRRA------------RT---------------LGRR-------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             ATQL------------LTQAIAIRR-------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             SLTI------------VGNALQQKNQK-----------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             LKS---IFIGLFSRSAN----------NAISPNYT------ELRID----
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           ----------------------------------------------VLPH
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         ---------------------------------N-GIYFNSP--------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --------------------------------------------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             ---------------------------------L-SHFVQTL--------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              ---------------------------------L-SLFVTTT--------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------LVEYLGTPIKLLVIDDYKGYGRRYFFSTD-------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ---------------------------------ICKK-------------
+ISCb1.1|ISNCY|None|Transposase|Clostridium             ---------------------------------CCPN-------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   ---------------------------------N-MEFLRSE--------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           SNLLNEVAEEEEIDEPAR--------VEAPTLPFETNLPWVD----VDPA
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           SNLLNEVAEEEEIDEPAR--------VEAPTVPFETNLPWVD----VDPA
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             -------HEAEFLYAPSTS---DD--AEGKYAVFVTNQD-----------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         -----------VGVPPTR--------KEDETVTFMTNLQVSD----ST--
+ISMae1.2|ISNCY|None|Transposase|Microcystis            ---------------------------------MFTNYVNNR--------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      ---------------------------------H----------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------VDHRVGPPAT---------------RLTNYPTVPRPKKGPPR
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             ------------------IA--------DCK-QCL----DCQ----GTQC
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             -----------LLLNQKKITSL------GAK-NFLTRTAEEI----GEQA
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             ---------------------------------VLQNFERDS--------
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           ASRTGPKP------------------------------------------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         ----------MGEKMYKNRLTIERSFSILKE-------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --------------------------------------------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             ----------FGKQLMKERGKIEQQFSNLKD-------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              ----------FGKQLMKERGKIEQQFSNLKD-------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            ----LNDTAEDIITTWENRWDIEVLIRELKAL------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ----------FN-KPFKPEGK-CQGKNRSLRL----KWTCPMSQY-----
+ISCb1.1|ISNCY|None|Transposase|Clostridium             ----------DPSIPMKREGSKSHLRSRIPTM----KFVCPKMKWLYNKE
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   ----------EGQKLYKQRTKIERLFGKLKG-------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           DQQEMKHQIGRLMARYKRRWGIENGFKKLKTF------------------
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           DQQEMKHQIGRLMARYKRRWGIENGFKKLKTF------------------
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             --RVEPEKIRSVVNGYSRRWDIENQYKSIKSF------------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         --KAARGRTRRIMGRYARRWGIENSYKSIKDF------------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            ------L----A---------------AVPR-----------QVK-----
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      ----------WVNKMWKLGGSIHMKYEEKLHFLYENGREKQVGMHLRNKN
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           AQGTPQKPLTRATTAPPNRKSR--SKTTIRPD------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             TG-ETKGNLQRRCPT-----------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             VREGNINGLKPICASSTGKWKVSRQLIT----------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             ------EKSKFLEALFVLHSKSSTAMESLKD-----GLLKPEIMDLFK--
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           --------------------------------------------------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         ----RYNLEAPRLYGFKRYRSHVM-----WTLLLYLIEKLIDKEN-GI--
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --------------------------------------------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             ----K-GLEQPRWYGQNRYLLHVQ-----LVFLIHNIAYLF---------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              ----K-GLEQPRWYGQNRYLLHIQ-----LVFLIHNIAYLF---------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            ------GLEGGSFLTWVRNSGFVALKALSLLVVQYFKYST----------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  -K------DGKRICSCPQPCTTSK-----SGRMFY----TYPD-NF----
+ISCb1.1|ISNCY|None|Transposase|Clostridium             TK------KSKRVTQCENPCTNSL-----CGRMFY----IYPEKNL----
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   ----EYNLEQVRLRGFRTYKKHVD-----WIMITYLIEVYIQKIENCK--
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           ------LAETQSPDHRFRYFNFA------FACVLYNCWRLVDILVQLELY
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           ------LAETQSPDHRFRYFNFA------FACVLYNCWRLVDILVQLELY
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             ------MPKTSSTDYRLRFCNFA------LSTLIYNLWRLTDYLIKVALD
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         ------LAWTTSRNTAVRVFYFS------FVVILYDMWLVVDLLVQISLT
+ISMae1.2|ISNCY|None|Transposase|Microcystis            ---VSDKPKGKLLIECDEMCPFVF-----SKTIKVYIWRLIDRKTGELIG
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      IKDDGFDEDYSHRGECERVHNHIK-----LT-------------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           ------Q-ATTSTPRNIRA-------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             ---RFWKEDKPSYRA------FVT-----LLAIFS----ALDKKNRRF--
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           --------------------------------------------------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         --------TDNKFSWNR---------------------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --------------------------------------------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             --------------------------------------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              --------------------------------------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            -----GLMLGAKR----LARLIKSIYREAGGIKKLFKRRRKP--------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  ------------RSFPGINRNS-----------QEFFDLYKKRVAVEQTI
+ISCb1.1|ISNCY|None|Transposase|Clostridium             ------------RAYPGITRGT-----------QEWSNTYKIRVAVEKNI
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------FSFKYTWNNL--------------------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           GEIGDQPAVSSNS----FLTFAK---KSYGLDPPD---------------
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           GEIGDQPAVSSNS----FLTFAK---KSYGLDPPD---------------
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             EPIRSPPVITAKT----FVRALGDFLREFG--------------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         VKQRLKPRVPART----FLNIVR---KEMPVT------------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            GHLGYRSRQSAKKPWPSLPSV----YRQCAVTYTHFWESYKTVIPSKRHR
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      ----------VKFDIRGMKNGSKKLYSVMNFV----------AYQLLVAT
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             --------E----DYNDIKSGIIKLAGQIEIDPSEYIETYIKAFKT-IAL
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           --------------------------------------------------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         --------------------------------------------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        --------------------------------------------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             --------------------------------------------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              --------------------------------------------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            --------------------------------------------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  YHLKSYMGSDT--ISTYDHISIFSDFLLSAITFSLLFILAHNIKLYCSKL
+ISCb1.1|ISNCY|None|Transposase|Clostridium             NHFKYSYCVRR--VRL----KMSKHFM-------LIYF------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   --------------------------------------------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           --------------------------------------------------
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           --------------------------------------------------
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             --------------------------------------------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         --------------------------------------------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            EVEP----------RNWSK-------------------------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      NLQNGVKETNSFAN--------------YV--------------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           --------------------------------------------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             --------------------------------------------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             DVLKGSEDKDKMLQSMYHHIGS-MNFENALLSMSLL--------------
+
+ISAau5.1|ISNCY|None|Transposase|Arthrobacter           -------------
+ISAcar1.1|ISNCY|None|Transposase|Acetohalobium         -------------
+ISBli29.4|ISNCY|None|Transposase|Brevibacterium        -------------
+ISBth165.1|ISNCY|None|Transposase|Bacillus             -------------
+ISBth18.1|ISNCY|None|Transposase|Bacillus              -------------
+ISC1217.1|ISNCY|None|Transposase|Sulfolobus            -------------
+ISCahy1.1|ISNCY|None|Transposase|Caldicellulosiruptor  TIKKLNKLKKLIA
+ISCb1.1|ISNCY|None|Transposase|Clostridium             -------------
+ISCsa7.1|ISNCY|None|Transposase|Caldicellulosiruptor   -------------
+ISH7A.1|ISNCY|None|Transposase|Halobacterium           -------------
+ISH7B.2|ISNCY|None|Transposase|Halobacterium           -------------
+ISHvo14.2|ISNCY|None|Transposase|Haloferax             -------------
+ISHwa15.1|ISNCY|None|Transposase|Haloquadratum         -------------
+ISMae1.2|ISNCY|None|Transposase|Microcystis            -------------
+ISMbu11.1|ISNCY|None|Transposase|Methanococcoides      -------------
+ISMk1.1|ISNCY|None|Transposase|Mycobacterium           -------------
+ISPa1.1|ISNCY|None|Transposase|Pseudomonas             -------------
+ISPa2.1|ISNCY|None|Transposase|Pseudomonas             -------------
+ISPa4.1|ISNCY|None|Transposase|Pseudomonas             -------------
+//

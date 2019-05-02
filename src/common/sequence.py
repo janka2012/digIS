@@ -217,9 +217,11 @@ def prepare_flank_sequences(seq_records, flank, ids=None):
 
     seq_recs = []
     seq_ranges = []
+    seq_original_ranges = []
     for i, rec in enumerate(seq_records):
         seq_len = len(rec)
         seq_rec = rec.get_sequence(flank=flank)
+        seq_original_range = rec.get_flank_range(flank=flank)
         flank_lens = rec.get_flank_lengths(flank)
         if ids:
             seq_rec.id = seq_rec.id + "_" + ids[i]
@@ -227,5 +229,6 @@ def prepare_flank_sequences(seq_records, flank, ids=None):
         seq_range = (flank_lens[0] + 1, flank_lens[0] + seq_len)
         seq_recs.append(seq_rec)
         seq_ranges.append(seq_range)
+        seq_original_ranges.append(seq_original_range)
 
-    return seq_recs, seq_ranges
+    return seq_recs, seq_ranges, seq_original_ranges

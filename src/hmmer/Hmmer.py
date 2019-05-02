@@ -98,6 +98,9 @@ class Hmmer:
 
         cmd = [tool, "--noali"]
 
+        if curated_models and evalue:
+            raise ValueError("You can not set both - noise thresholds and evalue. Set either thresholds or evalue.")
+
         if evalue:
             cmd.extend(["-E", evalue])
 

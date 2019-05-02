@@ -3,12 +3,12 @@ from ..common.grange import Grange
 
 class RecordDigIS(Grange):
     def __init__(self, genome, chrom, seq_file, genome_len, qid, sid, qstart, qend, start, end, strand, acc):
-        super().__init__(genome, chrom, start, end, strand, seq_file, genome_len)
         self.qid = qid
         self.sid = sid
         self.qstart = qstart
         self.qend = qend
         self.acc = acc
+        super().__init__(genome, chrom, start, end, strand, seq_file, genome_len)
 
     @classmethod
     def from_csv(cls, csv, genome, chrom, seq_file, genome_len):

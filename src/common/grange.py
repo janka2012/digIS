@@ -6,7 +6,7 @@ from Bio.SeqRecord import SeqRecord
 
 
 class Grange:
-    def __init__(self, genome, chrom, start, end, strand, seq_file, genome_len):
+    def __init__(self, genome, chrom, start, end, strand, seq_file, genome_len, circular=True):
         self.genome = genome
         self.chr = chrom
         self.start = start
@@ -14,27 +14,40 @@ class Grange:
         self.strand = strand
         self.seq_file = seq_file
         self.genome_len = genome_len
+        self.circular = circular
         self.width = self.__len__()
 
     def get_flank_range(self, flank):
         if flank + flank + self.width > self.genome_len:
-            logging.error("Element with flank regions is wider than genome length ({}, {}, {}, {}, {}). ".format(self.start, self.end, self.genome_len, flank, self.width) + self.__str__())
-            exit(1)
-        flank_start = self.start - flank
+            max_flank = int((self.genome_len - self.width) / 2)
+        else:
+            max_flank = flank
+        flank_start = self.start - max_flank
         if flank_start <= 0:
-            flank_start += self.genome_len
-        flank_end = self.end + flank
+            flank_start =  flank_start + self.genome_len if self.circular else 1
+        flank_end = self.end + max_flank
         if flank_end > self.genome_len:
-            flank_end -= self.genome_len
-        return Grange(self.genome, self.chr, flank_start, flank_end, self.strand, self.seq_file, self.genome_len)
+            flank_end = flank_end - self.genome_len if self.circular else self.genome_len
+
+        return Grange(self.genome, self.chr, flank_start, flank_end, self.strand, self.seq_file, self.genome_len, self.circular)
 
     def shift_left(self, size):
         self.start -= size
         if self.start <= 0:
-            self.start += self.genome_len
+            self.start = self.start + self.genome_len if self.circular else 1
         self.end -= size
         if self.end <= 0:
-            self.end += self.genome_len
+            self.end = self.end + self.genome_len if self.circular else 1
+        self.width = self.__len__()
+
+    def remap_offsets(self, left_offset, right_offset):
+        self.start += left_offset
+        if self.start > self.genome_len:
+            self.start = self.start - self.genome_len if self.circular else self.genome_len
+        self.end = self.start + right_offset
+        if self.end > self.genome_len:
+            self.end = self.end - self.genome_len if self.circular else self.genome_len
+        self.width = self.__len__()
 
     def has_overlap(self, other, ignore_strand=False, flank=0):
         return self.get_overlap_length(other, ignore_strand, flank) > 0
@@ -60,7 +73,14 @@ class Grange:
         return self.get_overlap_length(other, ignore_strand, 0) == self.width
 
     def get_flank_lengths(self, flank):
-        return flank, flank
+        new_range = self.get_flank_range(flank)
+        left_flank = self.start - new_range.start
+        if left_flank <= 0:
+            left_flank += self.genome_len
+        right_flank = new_range.end - self.end
+        if right_flank <= 0:
+            right_flank += self.genome_len
+        return left_flank, right_flank
 
     def get_sequence(self, flank=0, protein=False):
         record = SeqIO.read(self.seq_file, "fasta")
