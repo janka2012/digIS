@@ -103,6 +103,7 @@ class Hmmer:
 
         if evalue:
             cmd.extend(["-E", evalue])
+            cmd.extend("--domE", evalue)
 
         elif curated_models:
             cmd.extend(["--cut_nc"])
