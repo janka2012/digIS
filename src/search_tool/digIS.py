@@ -39,7 +39,7 @@ class digIS:
 
     def search_outliers(self):
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
-                       outfile=self.phmmer_output, evalue="0.001")
+                       outfile=self.phmmer_output, evalue="0.001", cevalue="0.001")
 
     def parse(self, hmmer_output):
         new_recs_added = self.hmmer.parse(hmmer_output)
