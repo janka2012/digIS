@@ -14,6 +14,7 @@ class digISConfiguration:
         self.context_size_orf = definitions.CONTEXT_SIZE_ORF
         self.context_size_is = definitions.CONTEXT_SIZE_IS
         self.max_merge_distance = definitions.MAX_MERGE_DISTANCE
+        self.min_hit_length = definitions.MIN_HIT_LENGTH
         self.genbank_file = genbank_file
         self.min_gb_overlap = definitions.MIN_GB_OVERLAP
         self.out_format = out_format

@@ -39,7 +39,7 @@ class digIS:
 
     def search_outliers(self):
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
-                       outfile=self.phmmer_output, evalue="0.001")
+                       outfile=self.phmmer_output, evalue="0.001", cevalue="0.001")
 
     def parse(self, hmmer_output):
         new_recs_added = self.hmmer.parse(hmmer_output)
@@ -116,6 +116,10 @@ class digIS:
                         self.filter_log.append("{} merged with overlapping element: {}".format(current_record, other_record))
         return records_indexes_dc
 
+    def filter(self):
+        recs_filt = [rec for rec in self.recs if abs(rec.start - rec.end + 1) >= self.config.min_hit_length]
+        self.recs = recs_filt
+
     def classification(self):
         if self.config.genbank_file:
             genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.file, self.genome.length)
@@ -167,6 +171,7 @@ class digIS:
         self.parse(self.hmmsearch_output)
         self.parse(self.phmmer_output)
         self.merge()
+        self.filter()
         self.classification()
         self.export()
 
