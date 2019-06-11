@@ -60,7 +60,8 @@ class Classifier:
             if rec.type in ['mobile_element'] \
                     or (rec.type == 'CDS' and 'transposase' in ",".join(rec.qualifiers['product'])) \
                     or (rec.type == 'CDS' and 'insertion element protein' in ",".join(rec.qualifiers['product'])) \
-                    or (rec.type == 'CDS' and 'serine recombinase' in ",".join(rec.qualifiers['product'])):
+                    or (rec.type == 'CDS' and 'resolvase' in ",".join(rec.qualifiers['product'])) \
+                    or (rec.type == 'CDS' and 'recombinase' in ",".join(rec.qualifiers['product'])):
                 out = True
         return out
 
