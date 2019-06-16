@@ -6,13 +6,13 @@ from Bio.SeqRecord import SeqRecord
 
 
 class Grange:
-    def __init__(self, genome, chrom, start, end, strand, seq_file, genome_len, circular=True):
-        self.genome = genome
+    def __init__(self, genome_name, chrom, start, end, strand, genome_seq, genome_len, circular=True):
+        self.genome_name = genome_name
         self.chr = chrom
         self.start = start
         self.end = end
         self.strand = strand
-        self.seq_file = seq_file
+        self.genome_seq = genome_seq
         self.genome_len = genome_len
         self.circular = circular
         self.width = self.__len__()
@@ -24,12 +24,13 @@ class Grange:
             max_flank = flank
         flank_start = self.start - max_flank
         if flank_start <= 0:
-            flank_start =  flank_start + self.genome_len if self.circular else 1
+            flank_start = flank_start + self.genome_len if self.circular else 1
         flank_end = self.end + max_flank
         if flank_end > self.genome_len:
             flank_end = flank_end - self.genome_len if self.circular else self.genome_len
 
-        return Grange(self.genome, self.chr, flank_start, flank_end, self.strand, self.seq_file, self.genome_len, self.circular)
+        return Grange(self.genome_name, self.chr, flank_start, flank_end, self.strand,
+                      self.genome_seq, self.genome_len, self.circular)
 
     def shift_left(self, size):
         self.start -= size
@@ -83,25 +84,25 @@ class Grange:
         return left_flank, right_flank
 
     def get_sequence(self, flank=0, protein=False):
-        record = SeqIO.read(self.seq_file, "fasta")
+
         new_range = self.get_flank_range(flank)
         if new_range.start <= new_range.end:
-            seq = record.seq[new_range.start-1:new_range.end]
-        else: # element crossing the genome boundary
-            seq = record.seq[new_range.start-1:self.genome_len] + record.seq[0:new_range.end]
+            seq = self.genome_seq[new_range.start-1:new_range.end]
+        else:  # element crossing the genome boundary
+            seq = self.genome_seq[new_range.start-1:self.genome_len] + self.genome_seq[0:new_range.end]
 
         if self.strand == '-':
             seq = seq.reverse_complement()
         if protein:
             seq = seq.translate(table=11)
 
-        return SeqRecord(seq, id=record.id, description='')
+        return SeqRecord(seq, id=self.genome_name, description='')
 
     def __str__(self):
         return "{} {} {} {} {}".format(self.genome, self.chr, self.start, self.end, self.strand)
 
     def __len__(self):
         out_len = self.end - self.start + 1
-        if out_len <= 0: # element crossing the genome boundary
+        if out_len <= 0:  # element crossing the genome boundary
             out_len += self.genome_len
         return out_len

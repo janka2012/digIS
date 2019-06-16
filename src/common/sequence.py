@@ -1,12 +1,11 @@
 import os
 import re
-import subprocess
-import sys
 
 from Bio import SeqIO
 from Bio.Alphabet import IUPAC
 from Bio.SeqRecord import SeqRecord
 
+import src.common.genome as g
 
 def transform_range(start, end, frame, seqlen):
     offset = [0, 1, 2, 2, 1, 0][frame-1]
@@ -20,40 +19,30 @@ def transform_range(start, end, frame, seqlen):
     return start_pos, end_pos
 
 
-def translate_dna_seq_biopython(sequence, outseq):
+def translate_dna_seq_biopython(seqrec, outseq):
+
+    print(type(seqrec))
+    print(seqrec)
 
     with open(outseq, 'w') as aa_fa:
-        for dna_record in SeqIO.parse(sequence, 'fasta'):
 
-            aa_seqs = []
-            dna_seqs = [dna_record.seq, dna_record.seq.reverse_complement()]
-            for dna_seq in dna_seqs:
-                for frame in range(1, 4):
+        aa_seqs = []
+        dna_seqs = [seqrec.seq, seqrec.seq.reverse_complement()]
+        for dna_seq in dna_seqs:
+            for frame in range(1, 4):
 
-                    # correction of end position such that the length is multiple of 3
-                    start = frame - 1
-                    excess = (len(dna_seq) - start) % 3
-                    end = len(dna_seq) - excess
-                    seq = dna_seq[start:end]
-                    aa_seqs.append(seq.translate(table=11))
+                # correction of end position such that the length is multiple of 3
+                start = frame - 1
+                excess = (len(dna_seq) - start) % 3
+                end = len(dna_seq) - excess
+                seq = dna_seq[start:end]
+                aa_seqs.append(seq.translate(table=11))
 
-            for frame, aa_seq in enumerate(aa_seqs, start=1):
-                seq_id = dna_record.id + "_" + str(frame)
-                description = seq_id + dna_record.description.replace(dna_record.id, "")
-                aa_record = SeqRecord(aa_seq, id=seq_id, name=seq_id, description=description)
-                SeqIO.write(aa_record, aa_fa, 'fasta')
-
-
-def translate_dna_seq(sequence, outseq):
-
-    if not __is_non_zero_file(outseq) or not os.path.isfile(outseq):
-
-        cmd = ["transeq", "-sequence", sequence, "-outseq", outseq, "-frame", "6", "-table", "11"]
-        try:
-            subprocess.check_call(cmd, stdout=sys.stdout, stderr=sys.stderr)
-        except subprocess.CalledProcessError as e:
-            print("An error occurred when calling {}.".format(cmd))
-            print(e)
+        for frame, aa_seq in enumerate(aa_seqs, start=1):
+            seq_id = seqrec.id + "_" + str(frame)
+            description = seq_id + seqrec.description.replace(seqrec.id, "")
+            aa_record = SeqRecord(aa_seq, id=seq_id, name=seq_id, description=description)
+            SeqIO.write(aa_record, aa_fa, 'fasta')
 
 
 def __is_non_zero_file(filepath):
@@ -87,6 +76,7 @@ def get_full_ids_from_fasta(filename):
         ids.append(rec.id)
 
     return ids
+
 
 def filter_fasta_re(in_file, out_file, regexp):
     out_recs = []
@@ -232,3 +222,16 @@ def prepare_flank_sequences(seq_records, flank, ids=None):
         seq_original_ranges.append(seq_original_range)
 
     return seq_recs, seq_ranges, seq_original_ranges
+
+
+def parse_genomes(fasta_file, output_dir):
+    genomes_dict = {}
+    if os.path.exists(fasta_file):
+        for genome in SeqIO.parse(fasta_file, "fasta"):
+            print(genome.id)
+            from pprint import pprint
+            pprint(genome)
+            # TODO merge output genome name with filename?
+            genomes_dict[genome.id] = g.Genome(genome, output_dir)
+
+    return genomes_dict

@@ -1,8 +1,6 @@
 import definitions
 
-from Bio import SeqIO
 from ..common.misc import init_output_dir
-
 
 class digISConfiguration:
     def __init__(self, genome_file, genbank_file, out_format, output_dir):
@@ -15,8 +13,8 @@ class digISConfiguration:
         self.context_size_is = definitions.CONTEXT_SIZE_IS
         self.max_merge_distance = definitions.MAX_MERGE_DISTANCE
         self.min_hit_length = definitions.MIN_HIT_LENGTH
-        self.genbank_file = genbank_file
         self.min_gb_overlap = definitions.MIN_GB_OVERLAP
+        self.genbank_file = genbank_file
         self.out_format = out_format
         self.output_dir = output_dir
         init_output_dir(self.output_dir)
@@ -27,11 +25,6 @@ class digISConfiguration:
             msg += "Context size IS value: {}\n".format(self.context_size_is)
 
             raise ValueError(msg)
-
-        records = list(SeqIO.parse(self.genome_file, "fasta"))
-
-        if len(records) > 1 and self.genbank_file:
-            raise Exception('Genbank mode, only one sequence allowed.\n Current number of sequences: {}.'.format(len(records)))
 
     def __str__(self):
         return "genome file: {}, models: {}, outliers: {}, isfinder orf db: {}, isfinder is db: {}, context orf size: {}, " \

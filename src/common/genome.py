@@ -1,13 +1,13 @@
 import os
-from ..common.sequence import get_seqlen
-from ..common.sequence import translate_dna_seq_biopython
 
+import src.common.sequence as seq
 
 class Genome:
 
-    def __init__(self, genome_file, output_dir):
-        self.file = genome_file
-        self.name = os.path.splitext(os.path.basename(self.file))[0]
-        self.length = get_seqlen(self.file)
+    def __init__(self, genome_rec, output_dir):
+        self.seq = genome_rec.seq
+        self.desc = genome_rec.description
+        self.name = genome_rec.id
+        self.length = len(genome_rec.seq)
         self.orf_db = os.path.join(output_dir, "pep", self.name + ".pep")
-        translate_dna_seq_biopython(sequence=self.file, outseq=self.orf_db)
+        seq.translate_dna_seq_biopython(seqrec=genome_rec, outseq=self.orf_db)

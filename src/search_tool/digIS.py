@@ -7,22 +7,22 @@ from ..common.gff_utils import write_gff
 from ..common.classification import classification
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
-from ..common.genome import Genome
 from ..hmmer.Hmmer import Hmmer
-from ..common.genbank import read_gb
 from ..genbank.RecordGenbank import RecordGenbank
 from .RecordDigIS import RecordDigIS
 
 
 class digIS:
 
-    def __init__(self, config):
+    def __init__(self, config, genome, genbank_features):
         self.config = config
-        self.genome = Genome(self.config.genome_file, self.config.output_dir)
+        self.genome = genome
+        self.genbank_features = genbank_features
         self.hmmer = Hmmer()
         self.hmmsearch_output = os.path.join(self.config.output_dir, "hmmer", self.genome.name + '_hmmsearch.hmmer3')
         self.phmmer_output = os.path.join(self.config.output_dir, "hmmer", self.genome.name + '_phmmer.hmmer3')
         self.recs = []
+        # TODO output should include filename????
         self.output = os.path.join(self.config.output_dir, "results", str(self.genome.name) + "." + str(self.config.out_format))
         self.genbank_overlap = []
         self.matched_recs = []
@@ -51,8 +51,8 @@ class digIS:
                 sid = hsp.sid[:-2]
                 strand = "+" if frame <= 3 else "-"
                 dna_range = transform_range(hit_range[0], hit_range[1], frame, self.genome.length)
-                self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand,
-                                                        self.genome.name, "chr", self.genome.file, self.genome.length))
+                self.recs.append(RecordDigIS.from_hmmer(hsp, sid, dna_range[0], dna_range[1], strand, self.genome.name,
+                                                        "chr", self.genome.seq, self.genome.length))
 
     def merge(self):
         """ Merging hits in particular distance """
@@ -122,8 +122,8 @@ class digIS:
 
     def classification(self):
         if self.config.genbank_file:
-            genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.file, self.genome.length)
-                                for i in read_gb(self.config.genbank_file))
+            genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.seq, self.genome.length)
+                                for i in self.genbank_features)
             genbank_recs = list(rec for rec in genbank_recs if rec.type not in ['source'])
         else:
             genbank_recs = None
@@ -165,15 +165,15 @@ class digIS:
             write_gff(csv_row, output, csv_header)
 
     def run(self, search=True):
+        # TODO for loop through all genomes in fasta file
         if search:
-            self.search_models()
-            self.search_outliers()
-        self.parse(self.hmmsearch_output)
-        self.parse(self.phmmer_output)
-        self.merge()
-        self.filter()
-        self.classification()
-        self.export()
+            self.search()
+            self.parse(self.hmmsearch_output)
+            self.parse(self.phmmer_output)
+            self.merge()
+            self.filter()
+            self.classification()
+            self.export()
 
     def __str__(self):
         return '\n'.join(list(str(rec) for rec in self.recs))
