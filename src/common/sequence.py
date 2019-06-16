@@ -5,7 +5,6 @@ from Bio import SeqIO
 from Bio.Alphabet import IUPAC
 from Bio.SeqRecord import SeqRecord
 
-import src.common.genome as g
 
 def transform_range(start, end, frame, seqlen):
     offset = [0, 1, 2, 2, 1, 0][frame-1]
@@ -20,9 +19,6 @@ def transform_range(start, end, frame, seqlen):
 
 
 def translate_dna_seq_biopython(seqrec, outseq):
-
-    print(type(seqrec))
-    print(seqrec)
 
     with open(outseq, 'w') as aa_fa:
 
@@ -222,16 +218,3 @@ def prepare_flank_sequences(seq_records, flank, ids=None):
         seq_original_ranges.append(seq_original_range)
 
     return seq_recs, seq_ranges, seq_original_ranges
-
-
-def parse_genomes(fasta_file, output_dir):
-    genomes_dict = {}
-    if os.path.exists(fasta_file):
-        for genome in SeqIO.parse(fasta_file, "fasta"):
-            print(genome.id)
-            from pprint import pprint
-            pprint(genome)
-            # TODO merge output genome name with filename?
-            genomes_dict[genome.id] = g.Genome(genome, output_dir)
-
-    return genomes_dict

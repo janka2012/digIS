@@ -3,8 +3,7 @@ import argparse
 from src.search_tool.digIS import digIS
 from src.search_tool.digISConfiguration import digISConfiguration
 from src.common.genbank import read_gb
-from src.common.sequence import parse_genomes
-
+from src.common.genome import Genome
 
 def print_args():
     print('input fasta =', args.input_fasta)
@@ -35,7 +34,7 @@ if __name__ == "__main__":
                                     out_format=args.out_format,
                                     output_dir=args.output_dir)
 
-    genomes_dict = parse_genomes(fasta_file=digIS_conf.genome_file, output_dir=digIS_conf.output_dir)
+    genomes_dict = Genome.parse_genomes(fasta_file=digIS_conf.genome_file, output_dir=digIS_conf.output_dir)
     genbank_dict = read_gb(digIS_conf.genbank_file) if digIS_conf.genbank_file else {}
 
     for genome_id, genome_rec in genomes_dict.items():
