@@ -4,7 +4,6 @@ from ..common.grange import Grange
 class RecordGenbank(Grange):
 
     def __init__(self, rec, genome="", chrom="chr", seq_file="", genome_len=0):
-        strand = "+" if rec.location.strand == 1 else "-"
         if rec.location.strand == 1:
             strand = "+"
             start_pos = rec.location.parts[0].start
@@ -15,7 +14,10 @@ class RecordGenbank(Grange):
             end_pos = rec.location.parts[0].end
         super().__init__(genome, chrom, start_pos+1, end_pos, strand, seq_file, genome_len)
         self.type = rec.type
-        self.product = ", ".join(rec.qualifiers['product']) if self.type == "CDS" else ""
+        if 'product' in rec.qualifiers:
+            self.product = ", ".join(rec.qualifiers['product']) if self.type == "CDS" else ""
+        elif 'note' in rec.qualifiers:
+            self.product = ", ".join(rec.qualifiers['note']) if self.type == "CDS" else ""
         self.qualifiers = rec.qualifiers
 
     def __str__(self):
