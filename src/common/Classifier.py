@@ -57,23 +57,34 @@ class Classifier:
     def __is_annotated_IS(self):
         out = False
         for rec in self.genbank_recs:
-            if rec.type in ['mobile_element'] \
-                    or (rec.type == 'CDS' and 'transposase' in ",".join(rec.qualifiers['product'])) \
-                    or (rec.type == 'CDS' and 'insertion element protein' in ",".join(rec.qualifiers['product'])) \
-                    or (rec.type == 'CDS' and 'resolvase' in ",".join(rec.qualifiers['product'])) \
-                    or (rec.type == 'CDS' and 'recombinase' in ",".join(rec.qualifiers['product'])):
+            allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element protein']
+
+            gb_annots = self.__get_genbank_annotations(rec.qualifiers)
+
+            if rec.type in ['mobile_element', 'CDS'] and any(annot in allowed_keywords for annot in gb_annots):
                 out = True
         return out
 
     def __is_hypotetical_IS(self):
         out = False
         for rec in self.genbank_recs:
-            if rec.type == 'CDS' and 'hypothetical protein' in ",".join(rec.qualifiers['product']):
+            gb_annots = self.__get_genbank_annotations(rec.qualifiers)
+
+            if rec.type == 'CDS' and 'hypothetical protein' in gb_annots:
                 out = True
             else:
                 out = False
                 break
         return out
+
+    def __get_genbank_annotations(self, gb_qualifiers):
+        gb_annots = []
+        if 'product' in gb_qualifiers:
+            gb_annots = map(str.lower, gb_qualifiers['product'])
+        elif 'note' in gb_qualifiers:
+            gb_annots = map(str.lower, gb_qualifiers['note'])
+
+        return gb_annots
 
     def __assign_overall_similarity_with_isfinderdb(self):
         self.similarity_is = self.__assign_similarity_level_dna()
