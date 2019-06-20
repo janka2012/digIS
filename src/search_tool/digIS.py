@@ -165,7 +165,6 @@ class digIS:
             write_gff(csv_row, output, csv_header)
 
     def run(self, search=True):
-        # TODO for loop through all genomes in fasta file
         if search:
             self.search()
             self.parse(self.hmmsearch_output)

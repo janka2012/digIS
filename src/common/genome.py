@@ -19,7 +19,6 @@ class Genome:
         genomes_dict = {}
         if os.path.exists(fasta_file):
             for genome in SeqIO.parse(fasta_file, "fasta"):
-                # TODO merge output genome name with filename?
                 genomes_dict[genome.id] = Genome(genome, output_dir)
 
         return genomes_dict

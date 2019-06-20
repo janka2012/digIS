@@ -11,7 +11,7 @@ class RecordDigIS(Grange):
         super().__init__(genome_name, chrom, start, end, strand, genome_seq, genome_len)
 
     @classmethod
-    def from_csv(cls, csv, genome_name, chrom, seq_file, genome_len):
+    def from_csv(cls, csv, genome_name, chrom, genome_seq, genome_len):
         qid = csv['qid']
         sid = csv['sid']
         qstart = int(csv['qstart'])
@@ -20,11 +20,11 @@ class RecordDigIS(Grange):
         end = int(csv['send'])
         strand = csv['strand']
         acc = csv['acc']
-        return cls(genome_name, chrom, seq_file, genome_len, qid, sid, qstart, qend, start, end, strand, acc)
+        return cls(genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc)
 
     @classmethod
-    def from_hmmer(cls, hsp, sid, start, end, strand, genome_name, chrom, seq_rec, seq_len):
-        return cls(genome_name, chrom, seq_rec, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc)
+    def from_hmmer(cls, hsp, sid, start, end, strand, genome_name, chrom, genome_seq, seq_len):
+        return cls(genome_name, chrom, genome_seq, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc)
 
     def should_be_merged(self, other, merge_distance):
         if self.qid == other.qid \

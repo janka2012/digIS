@@ -132,8 +132,8 @@ class Classifier:
             str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
             str_bl_orf = str(self.blast_orf) if self.blast_orf.score != 0.0 else ""
             str_bl_is = str(self.blast_is_dna) if self.blast_is_dna.score != 0.0 else ""
-            row = [self.rec.genome, self.level, self.similarity_all, self.genbank_annotation, self.similarity_orf, self.similarity_is,
-                 str(self.rec), str_gb, str_bl_orf, str_bl_is]
+            row = [self.rec.genome_name, self.level, self.similarity_all, self.genbank_annotation, self.similarity_orf,
+                   self.similarity_is, str(self.rec), str_gb, str_bl_orf, str_bl_is]
         else:
             header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
             row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]

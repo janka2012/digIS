@@ -2,6 +2,8 @@ import copy
 import logging
 
 from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
 from Bio.SeqRecord import SeqRecord
 
 
@@ -86,6 +88,7 @@ class Grange:
     def get_sequence(self, flank=0, protein=False):
 
         new_range = self.get_flank_range(flank)
+
         if new_range.start <= new_range.end:
             seq = self.genome_seq[new_range.start-1:new_range.end]
         else:  # element crossing the genome boundary
@@ -99,7 +102,7 @@ class Grange:
         return SeqRecord(seq, id=self.genome_name, description='')
 
     def __str__(self):
-        return "{} {} {} {} {}".format(self.genome, self.chr, self.start, self.end, self.strand)
+        return "{} {} {} {} {}".format(self.genome_name, self.chr, self.start, self.end, self.strand)
 
     def __len__(self):
         out_len = self.end - self.start + 1
