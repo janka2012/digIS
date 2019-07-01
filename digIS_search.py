@@ -1,5 +1,7 @@
 import argparse
 
+from collections import OrderedDict
+
 from src.search_tool.digIS import digIS
 from src.search_tool.digISConfiguration import digISConfiguration
 from src.common.genbank import read_gb
@@ -35,8 +37,8 @@ if __name__ == "__main__":
                                     out_format=args.out_format,
                                     output_dir=args.output_dir)
 
-    genomes_dict = Genome.parse_genomes(fasta_file=digIS_conf.genome_file, output_dir=digIS_conf.output_dir)
-    genbank_dict = read_gb(digIS_conf.genbank_file) if digIS_conf.genbank_file else {}
+    genomes_dict = OrderedDict(Genome.parse_genomes(fasta_file=digIS_conf.genome_file, output_dir=digIS_conf.output_dir))
+    genbank_dict = OrderedDict(read_gb(digIS_conf.genbank_file)) if digIS_conf.genbank_file else {}
 
     for i, (genome_id, genome_rec) in enumerate(genomes_dict.items(), start=1):
         dIS = digIS(digIS_conf, index=i, genome=genome_rec, genbank_features=genbank_dict.get(genome_id, []))
