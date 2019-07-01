@@ -56,12 +56,13 @@ class Classifier:
 
     def __is_annotated_IS(self):
         out = False
+        allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element protein']
         for rec in self.genbank_recs:
-            allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element protein']
 
             gb_annots = self.__get_genbank_annotations(rec.qualifiers)
 
-            if rec.type in ['mobile_element', 'CDS'] and any(annot in allowed_keywords for annot in gb_annots):
+            if rec.type == 'mobile_element' or \
+                    rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in allowed_keywords):
                 out = True
         return out
 
@@ -70,7 +71,7 @@ class Classifier:
         for rec in self.genbank_recs:
             gb_annots = self.__get_genbank_annotations(rec.qualifiers)
 
-            if rec.type == 'CDS' and 'hypothetical protein' in gb_annots:
+            if rec.type == 'CDS' and 'hypothetical protein' in ",".join(gb_annots):
                 out = True
             else:
                 out = False
