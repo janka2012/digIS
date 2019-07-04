@@ -81,9 +81,9 @@ class Classifier:
     def __get_genbank_annotations(self, gb_qualifiers):
         gb_annots = []
         if 'product' in gb_qualifiers:
-            gb_annots = map(str.lower, gb_qualifiers['product'])
+            gb_annots = list(map(str.lower, gb_qualifiers['product']))
         elif 'note' in gb_qualifiers:
-            gb_annots = map(str.lower, gb_qualifiers['note'])
+            gb_annots = list(map(str.lower, gb_qualifiers['note']))
 
         return gb_annots
 

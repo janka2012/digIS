@@ -18,6 +18,8 @@ class RecordGenbank(Grange):
             self.product = ", ".join(rec.qualifiers['product']) if self.type == "CDS" else ""
         elif 'note' in rec.qualifiers:
             self.product = ", ".join(rec.qualifiers['note']) if self.type == "CDS" else ""
+        else:
+            self.product = ""
         self.qualifiers = rec.qualifiers
 
     def __str__(self):
