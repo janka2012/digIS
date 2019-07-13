@@ -25,9 +25,11 @@ def get_family_filenames(fam_path, include_subdir=True):
 
 def get_filenames_by_extension(dirpath, extension):
     outfiles = []
+    list_of_extension = []
+    list_of_extension.extend(extension)
     for (dirpath, dirnames, filenames) in os.walk(dirpath):
         for filename in filenames:
-            if os.path.splitext(filename)[-1] == extension:
+            if os.path.splitext(filename)[-1] in list_of_extension:
                 outfiles.append(os.path.join(dirpath, filename))
         break
 
