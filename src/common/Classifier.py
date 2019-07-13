@@ -56,7 +56,8 @@ class Classifier:
 
     def __is_annotated_IS(self):
         out = False
-        allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element protein']
+        allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element protein',
+                            'mobile element protein', 'transposon', 'DDE']
         for rec in self.genbank_recs:
 
             gb_annots = self.__get_genbank_annotations(rec.qualifiers)
@@ -68,10 +69,12 @@ class Classifier:
 
     def __is_hypotetical_IS(self):
         out = False
+        allowed_keywords = ['hypothetical protein', 'predicted protein', 'unknown function', 'DUF4322']
+
         for rec in self.genbank_recs:
             gb_annots = self.__get_genbank_annotations(rec.qualifiers)
 
-            if rec.type == 'CDS' and 'hypothetical protein' in ",".join(gb_annots):
+            if rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in allowed_keywords):
                 out = True
             else:
                 out = False
@@ -81,9 +84,9 @@ class Classifier:
     def __get_genbank_annotations(self, gb_qualifiers):
         gb_annots = []
         if 'product' in gb_qualifiers:
-            gb_annots = map(str.lower, gb_qualifiers['product'])
-        elif 'note' in gb_qualifiers:
-            gb_annots = map(str.lower, gb_qualifiers['note'])
+            gb_annots = list(map(str.lower, gb_qualifiers['product']))
+        if 'note' in gb_qualifiers:
+            gb_annots += list(map(str.lower, gb_qualifiers['note']))
 
         return gb_annots
 
