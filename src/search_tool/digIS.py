@@ -167,12 +167,12 @@ class digIS:
     def run(self, search=True):
         if search:
             self.search()
-            self.parse(self.hmmsearch_output)
-            self.parse(self.phmmer_output)
-            self.merge()
-            self.filter()
-            self.classification()
-            self.export()
+        self.parse(self.hmmsearch_output)
+        self.parse(self.phmmer_output)
+        self.merge()
+        self.filter()
+        self.classification()
+        self.export()
 
     def __str__(self):
         return '\n'.join(list(str(rec) for rec in self.recs))
