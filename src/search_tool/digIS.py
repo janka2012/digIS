@@ -14,16 +14,16 @@ from .RecordDigIS import RecordDigIS
 
 class digIS:
 
-    def __init__(self, config, index, genome, genbank_features):
+    def __init__(self, config, genome, genbank_features):
         self.config = config
         self.genome = genome
         self.genbank_features = genbank_features
         self.hmmer = Hmmer()
-        out_filename = str(os.path.splitext(os.path.basename(self.config.genome_file))[0]) + "_" + str(index)
-        self.hmmsearch_output = os.path.join(self.config.output_dir, "hmmer", str(out_filename) + '_hmmsearch.hmmer3')
-        self.phmmer_output = os.path.join(self.config.output_dir, "hmmer", str(out_filename) + '_phmmer.hmmer3')
+        self.hmmsearch_output = os.path.join(self.config.output_dir, "hmmer", str(self.genome.name) + '_hmmsearch.hmmer3')
+        self.phmmer_output = os.path.join(self.config.output_dir, "hmmer", str(self.genome.name) + '_phmmer.hmmer3')
+        self.log_output = os.path.join(self.config.output_dir, "logs", str(self.genome.name) + '_filter.log')
+        self.output = os.path.join(self.config.output_dir, "results", str(self.genome.name) + "." + str(self.config.out_format))
         self.recs = []
-        self.output = os.path.join(self.config.output_dir, "results", str(out_filename) + "." + str(self.config.out_format))
         self.genbank_overlap = []
         self.matched_recs = []
         self.filter_log = []
@@ -67,7 +67,7 @@ class digIS:
         print(self.genome.name, "Filtered: ", len(self.hmmer.hsps) - len(self.recs))
 
         # Write filter log file
-        with open(os.path.join(self.config.output_dir, "logs", self.genome.name + "_filter.log"), "w+") as f:
+        with open(self.log_output, "w+") as f:
             f.write("\n".join(self.filter_log))
 
     def merge_records(self, records_indexes):
@@ -164,14 +164,15 @@ class digIS:
         elif self.config.out_format == "gff":
             write_gff(csv_row, output, csv_header)
 
-    def run(self, search=True):
+    def run(self, search=True, classify=True):
         if search:
             self.search()
         self.parse(self.hmmsearch_output)
         self.parse(self.phmmer_output)
         self.merge()
         self.filter()
-        self.classification()
+        if classify:
+            self.classification()
         self.export()
 
     def __str__(self):

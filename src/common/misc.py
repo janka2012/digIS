@@ -120,6 +120,17 @@ def check_evalue(evalue):
                          "Current value: {}, type: {}".format(evalue, type(evalue)))
 
 
+def is_empty(file_path):
+
+    try:
+        if os.path.getsize(file_path) > 0:
+            return False
+        else:
+            return True
+    except OSError as e:
+        print(e)
+
+
 def change_path_to_linux(line):
     matchObj = re.match(r'(.):.*', line, re.M | re.I)
     if matchObj:
