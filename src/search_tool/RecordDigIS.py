@@ -27,7 +27,7 @@ class RecordDigIS(Grange):
         return cls(genome_name, chrom, genome_seq, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc)
 
     def should_be_merged(self, other, merge_distance):
-        if self.qid == other.qid \
+        if self.qid == other.qid and self.sid == other.sid \
             and not self.has_overlap(other) \
                 and self.has_overlap(other, flank=merge_distance):
             return True
@@ -35,7 +35,7 @@ class RecordDigIS(Grange):
             return False
 
     def merge(self, other):
-        if self.strand != other.strand and self.sid != other.sid:
+        if self.strand != other.strand or self.sid != other.sid:
             raise ValueError('RecordDigIS.merge(): Records can not be merged')
 
         new_start = min(self.start, other.start)
@@ -56,10 +56,11 @@ class RecordDigIS(Grange):
         self.acc = new_acc
 
     def to_csv(self):
-        header = ["qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
-        row = [self.qid, self.sid, self.qstart, self.qend, self.start, self.end, self.strand, round(self.acc,2)]
+        header = ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc"]
+        row = [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2)]
         return header, row
 
     def __str__(self):
-        return "{}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.sid, self.qstart, self.qend, self.start,
-                                                           self.end, self.strand, self.acc)
+        return "{}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.qstart, self.qend,
+                                                       self.sid, self.start,  self.end,
+                                                       self.strand, self.acc)
