@@ -56,12 +56,12 @@ class Classifier:
 
     def __is_annotated_IS(self):
         out = False
-        allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element protein',
-                            'mobile element protein', 'transposon', 'DDE']
+        allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element',
+                            'mobile element', 'transposon', 'DDE']
         for rec in self.genbank_recs:
 
-            gb_annots = self.__get_genbank_annotations(rec.qualifiers)
-
+            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots = gb_annots_product + gb_annots_note
             if rec.type == 'mobile_element' or \
                     rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in allowed_keywords):
                 out = True
@@ -69,12 +69,15 @@ class Classifier:
 
     def __is_hypotetical_IS(self):
         out = False
-        allowed_keywords = ['hypothetical protein', 'predicted protein', 'unknown function', 'DUF4322']
+        allowed_keywords = ['hypothetical protein', 'predicted protein', 'unknown', 'DUF4322']
 
         for rec in self.genbank_recs:
-            gb_annots = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots = gb_annots_product + gb_annots_note
 
             if rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in allowed_keywords):
+                out = True
+            elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
                 out = True
             else:
                 out = False
@@ -82,13 +85,14 @@ class Classifier:
         return out
 
     def __get_genbank_annotations(self, gb_qualifiers):
-        gb_annots = []
+        gb_annots_product = []
+        gb_annots_note = []
         if 'product' in gb_qualifiers:
-            gb_annots = list(map(str.lower, gb_qualifiers['product']))
+            gb_annots_product = list(map(str.lower, gb_qualifiers['product']))
         if 'note' in gb_qualifiers:
-            gb_annots += list(map(str.lower, gb_qualifiers['note']))
+            gb_annots_note = list(map(str.lower, gb_qualifiers['note']))
 
-        return gb_annots
+        return gb_annots_product, gb_annots_note
 
     def __assign_overall_similarity_with_isfinderdb(self):
         self.similarity_is = self.__assign_similarity_level_dna()
