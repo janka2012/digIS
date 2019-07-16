@@ -1,4 +1,4 @@
-from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
+from ...definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
 
 class Classifier:
 
@@ -144,3 +144,9 @@ class Classifier:
             header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
             row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
         return header, row
+
+    def __eq__(self, other):
+        return self.level == other.level
+
+    def __lt__(self, other):
+        return ['sFP','wFP','pNov','wTP','sTP'].index(self.level) < ['sFP','wFP','pNov','wTP','sTP'].index(other.level)
