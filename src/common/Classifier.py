@@ -1,4 +1,5 @@
-from ...definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
+
 
 class Classifier:
 
