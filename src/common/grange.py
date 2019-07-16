@@ -44,12 +44,20 @@ class Grange:
         self.width = self.__len__()
 
     def remap_offsets(self, left_offset, right_offset):
-        self.end = self.start + right_offset
-        self.start += left_offset
-        if self.start > self.genome_len:
-            self.start = self.start - self.genome_len if self.circular else self.genome_len
-        if self.end > self.genome_len:
-            self.end = self.end - self.genome_len if self.circular else self.genome_len
+        if self.strand == "+":
+            self.end = self.start + right_offset
+            self.start = self.start + left_offset
+            if self.start > self.genome_len:
+                self.start = self.start - self.genome_len if self.circular else self.genome_len
+            if self.end > self.genome_len:
+                self.end = self.end - self.genome_len if self.circular else self.genome_len
+        else:
+            self.start = self.end - right_offset
+            self.end = self.end - left_offset
+            if self.start <= 0:
+                self.start = self.start + self.genome_len if self.circular else 1
+            if self.end <= 0:
+                self.end = self.end + self.genome_len if self.circular else 1
         self.width = self.__len__()
 
     def has_overlap(self, other, ignore_strand=False, flank=0):
