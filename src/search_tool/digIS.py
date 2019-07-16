@@ -1,4 +1,4 @@
-from cmath import log
+import shutil
 from copy import copy
 from copy import deepcopy
 from math import ceil, log10
@@ -163,6 +163,27 @@ class digIS:
             write_csv(csv_row, output, csv_header)
         elif self.config.out_format == "gff":
             write_gff(csv_row, output, csv_header)
+
+    @staticmethod
+    def concat_results(genome_ids, digIS_conf):
+        results_outdir = os.path.join(digIS_conf.output_dir, "results")
+        result_files = [os.path.join(results_outdir, genome_id + "." + digIS_conf.out_format) for genome_id in genome_ids]
+        fasta_basename = os.path.splitext(os.path.basename(digIS_conf.genome_file))[0]
+        results_merged_output = os.path.join(results_outdir, fasta_basename + "." + digIS_conf.out_format)
+
+        with open(results_merged_output, 'w') as wfd:
+            header_added = False
+            for f in result_files:
+                with open(f, 'r') as fd:
+                    header = fd.readline()
+                    if not header_added:
+                        wfd.write(header)
+                        header_added = True
+                    shutil.copyfileobj(fd, wfd)
+                try:
+                    os.remove(f)
+                except OSError:
+                    print("Error while deleting file ", f)
 
     def run(self, search=True):
         if search:
