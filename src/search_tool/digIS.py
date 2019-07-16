@@ -164,15 +164,14 @@ class digIS:
         elif self.config.out_format == "gff":
             write_gff(csv_row, output, csv_header)
 
-    def run(self, search=True, classify=True):
+    def run(self, search=True):
         if search:
             self.search()
         self.parse(self.hmmsearch_output)
         self.parse(self.phmmer_output)
         self.merge()
         self.filter()
-        if classify:
-            self.classification()
+        self.classification()
         self.export()
 
     def __str__(self):
