@@ -18,11 +18,11 @@ class BlastQuery:
         query_length = rec.query_length
         return cls(rec.query, query_length, hits, rec.application)
 
-    def get_best_hit(self, query_range=(0, 0), min_overlap=1):
+    def get_best_hit(self, query_range=(0, 0), min_overlap=1, positive_subject_strand_only=False):
         bhsp = BlastHsp()
         bhspflat = BlastHspFlat()
         for hit in self.hits:
-            hsp = hit.get_best_hsp(query_range, min_overlap)
+            hsp = hit.get_best_hsp(query_range, min_overlap, positive_subject_strand_only)
             if bhsp < hsp:
                 bhsp = hsp
                 bhspflat.set_from_hsp(hsp, self.query_id, self.query_length,

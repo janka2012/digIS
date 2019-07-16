@@ -39,10 +39,12 @@ class BlastHit:
             hsps = hsps + merged
         return hsps
 
-    def get_best_hsp(self, query_range=(0, 0), min_overlap=1):
+    def get_best_hsp(self, query_range=(0, 0), min_overlap=1, positive_subject_strand_only=False):
         bhsp = BlastHsp()
 
         for hsp in self.hsps:
+            if positive_subject_strand_only and hsp.subject_strand == "-":
+                continue
             if query_range == (0, 0):
                 if bhsp < hsp:
                     bhsp = hsp

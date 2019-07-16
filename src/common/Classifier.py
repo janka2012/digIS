@@ -1,3 +1,5 @@
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
+
 
 class Classifier:
 
@@ -56,26 +58,23 @@ class Classifier:
 
     def __is_annotated_IS(self):
         out = False
-        allowed_keywords = ['transposase', 'resolvase', 'recombinase', 'insertion element',
-                            'mobile element', 'transposon', 'DDE']
-        for rec in self.genbank_recs:
 
+        for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
             if rec.type == 'mobile_element' or \
-                    rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in allowed_keywords):
+                    rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in IS_GB_KEYWORDS):
                 out = True
         return out
 
     def __is_hypotetical_IS(self):
         out = False
-        allowed_keywords = ['hypothetical protein', 'predicted protein', 'unknown', 'DUF4322']
 
         for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
-            if rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in allowed_keywords):
+            if rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
                 out = True
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
                 out = True
@@ -147,3 +146,9 @@ class Classifier:
             header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
             row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
         return header, row
+
+    def __eq__(self, other):
+        return self.level == other.level
+
+    def __lt__(self, other):
+        return ['sFP','wFP','pNov','wTP','sTP'].index(self.level) < ['sFP','wFP','pNov','wTP','sTP'].index(other.level)

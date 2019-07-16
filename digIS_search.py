@@ -8,13 +8,6 @@ from src.common.genbank import read_gb
 from src.common.genome import Genome
 
 
-def print_args():
-    print('input fasta =', args.input_fasta)
-    print('genbank file =', args.genbank_file)
-    print('output dir =', args.output_dir)
-    print('output fmt =', args.out_format)
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="digIS search")
 
@@ -43,9 +36,14 @@ if __name__ == "__main__":
     genomes_dict = Genome.parse_genomes(fasta_file=digIS_conf.genome_file,
                                         translate=args.translate,
                                         output_dir=digIS_conf.output_dir)
+
     genbank_dict = read_gb(digIS_conf.genbank_file) if digIS_conf.genbank_file else OrderedDict()
 
-    for genome_id, genome_rec in genomes_dict.items():
-        dIS = digIS(digIS_conf, genome=genome_rec, genbank_features=genbank_dict.get(genome_id, []))
-        dIS.run(search=True, classify=True)
+    genome_ids = []
 
+    for genome_id, genome_rec in genomes_dict.items():
+        genome_ids.append(genome_id)
+        dIS = digIS(digIS_conf, genome=genome_rec, genbank_features=genbank_dict.get(genome_id, []))
+        dIS.run(search=True)
+
+    digIS.concat_results(genome_ids=genome_ids, digIS_conf=digIS_conf)

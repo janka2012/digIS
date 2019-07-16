@@ -11,3 +11,5 @@ MIN_GB_OVERLAP = 100
 MAX_MERGE_DISTANCE = 700  # nt
 MIN_HIT_LENGTH = 150  # nt
 
+IS_GB_KEYWORDS = ['transposase', 'resolvase', 'recombinase', 'insertion element', 'mobile element', 'transposon', 'DDE']
+HYPOTHETICAL_GB_KEYWORDS = ['hypothetical protein', 'predicted protein', 'unknown', 'DUF4322']
