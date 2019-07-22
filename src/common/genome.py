@@ -32,7 +32,7 @@ class Genome:
             if duplicated_ids:
                 raise ValueError("Multifasta file contains following duplicated ids: {}.\n"
                                  "Ids have to be unique.".format(duplicated_ids))
-            print(duplicated_ids)
+            # print(duplicated_ids)
 
         else:
             logging.error("Filename {} does not exist.".format(fasta_file))
