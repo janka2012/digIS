@@ -20,8 +20,8 @@ if __name__ == "__main__":
     parser.add_argument('-o', "--output", action='store', dest='output_dir', required=False, default="digIS_output",
                         type=str, help='Output directory name, default=digIS_output.')
 
-    parser.add_argument('-t', '--translate', dest='translate', required=False, action='store_true')
-    parser.set_defaults(translate=False)
+    parser.add_argument('-n', '--no-translate', dest='translate', required=False, action='store_false')
+    parser.set_defaults(translate=True)
 
     parser.add_argument('-f', "--format", action='store', dest='out_format', required=False, default="csv", type=str,
                         choices=["csv", "gff"], help='Output format, default csv. Possible choices: csv, gff.')
