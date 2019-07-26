@@ -30,6 +30,7 @@ class digIS:
         self.classifier_recs = []
 
     def search(self):
+        print("Hmmer search...")
         self.search_models()
         self.search_outliers()
 
@@ -41,7 +42,12 @@ class digIS:
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
                        outfile=self.phmmer_output, evalue="0.001", cevalue="0.001")
 
-    def parse(self, hmmer_output):
+    def parse(self):
+        print("Parsing Hmmer outputs....")
+        self.parse_hmmer_output(self.hmmsearch_output)
+        self.parse_hmmer_output(self.phmmer_output)
+
+    def parse_hmmer_output(self, hmmer_output):
         new_recs_added = self.hmmer.parse(hmmer_output)
 
         if new_recs_added:
@@ -58,13 +64,12 @@ class digIS:
         """ Merging hits in particular distance """
         records_indexes = set(range(len(self.recs)))
 
+        print("Merging hits...")
         print("Number of records before merging: {}.".format(len(self.recs)))
         merged_records_indexes = self.merge_records(records_indexes)
         merged_records = [self.recs[rec_index] for rec_index in merged_records_indexes]
         self.recs = merged_records
         print("Number of records after merging: {}.".format(len(self.recs)))
-
-        print(self.genome.name, "Filtered: ", len(self.hmmer.hsps) - len(self.recs))
 
         # Write filter log file
         with open(self.log_output, "w+") as f:
@@ -117,15 +122,18 @@ class digIS:
         return records_indexes_dc
 
     def filter(self):
+        print("Filtering hits shorter or equal than {} bp".format(self.config.min_hit_length))
         recs_filt = [rec for rec in self.recs if abs(rec.start - rec.end + 1) >= self.config.min_hit_length]
         self.recs = recs_filt
 
     def classification(self):
         if self.config.genbank_file:
+            print("Classification with GenBank annotation...")
             genbank_recs = list(RecordGenbank(i, self.genome.name, "chr", self.genome.seq, self.genome.length)
                                 for i in self.genbank_features)
             genbank_recs = list(rec for rec in genbank_recs if rec.type not in ['source'])
         else:
+            print("Classification without GenBank annotation...")
             genbank_recs = None
 
         self.classifier_recs = classification(self.recs, genbank_recs, self.config.context_size_orf,
@@ -138,6 +146,7 @@ class digIS:
         csv_header = ["id", "level", "qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         id_width = ceil(log10(len(self.recs))) if len(self.recs) > 0 else 1
 
+        print("Exporting output...")
         for i, rec in enumerate(self.recs):
             if self.classifier_recs[i].similarity_is in ['medium', 'strong']:
                 rec.start = self.classifier_recs[i].blast_is_dna.query_start
@@ -188,8 +197,7 @@ class digIS:
     def run(self, search=True):
         if search:
             self.search()
-        self.parse(self.hmmsearch_output)
-        self.parse(self.phmmer_output)
+        self.parse()
         self.merge()
         self.filter()
         self.classification()
