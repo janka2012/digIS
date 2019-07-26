@@ -100,10 +100,10 @@ def init_output_dir(output_dir):
 
 
 def check_if_file_exists(filename):
-    if not os.path.isfile(filename):
-        raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
-    else:
+    if os.path.isfile(filename):
         return filename
+    else:
+        return None
 
 
 def check_evalue(evalue):
