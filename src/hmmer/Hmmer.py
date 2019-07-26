@@ -58,8 +58,6 @@ class Hmmer:
 
             for hit in self.hits:
                 self.hsps += hit.hsps
-        else:
-            print("No new hits from hmmer.")
         return new_recs_added
 
     def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):
