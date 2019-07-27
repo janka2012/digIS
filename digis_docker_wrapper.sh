@@ -5,38 +5,40 @@ export GENBANK=""
 export OUTPUTDIR="digis_output"
 export FORMAT="csv"
 
-show_help() {
-cat << EOF
-Usage: ${0##*/} [-hv] [-f OUTFILE] [FILE]...
-Do stuff with FILE and write the result to standard output. With no FILE
-or when FILE is -, read standard input.
+usage()
+{
+  echo "Usage: $0 -i INPUT_FASTA [ -g GENBANK ] [-f FORMAT] [-o OUTPURDIR]"
+}
 
-    -h | --help			display this help and exit.
-    -f | --format		specify output format, csv or gff, default=csv.
-    -g | --genbank		(multi)genbank annotation file, optional.
-	-i | --input		(multi)fasta file, required.
-	-o | --outputdir	output directory name, default=digis_output.
+show_help() {
+usage
+cat << EOF
+-h	display this help and exit.
+-f	specify output format, csv or gff, default=csv.
+-g	(multi)genbank annotation file, optional.
+-i	(multi)fasta file, required.
+-o	output directory name, default=digis_output.
 EOF
 }
 
-while getopts f:g:i:o: option
+while getopts :hf:g:i:o: option
 do
 case "${option}"
 in
--h |-\?| --help )
+h | \? | * )
 	show_help
-	exit
+	exit 1
 	;;
--f | --format )
+f )
 	FORMAT=${OPTARG}
 	;;
--g | --genbank )
+g )
 	GENBANK=${OPTARG}
 	;;
--i | --input )
+i )
 	INPUT_FASTA=${OPTARG}
 	;;
--o | --outputdir )
+o )
 	OUTPUTDIR=${OPTARG}
 	;;
 : )
