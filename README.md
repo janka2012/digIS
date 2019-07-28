@@ -50,9 +50,9 @@ export PYTHONPATH=/path/to/digis/
 python3 digIS_search.py -i data/test_data/NC_002608.fasta -o digis_genbank -f csv
 ```
 
-### Run digIS in docker container
+## Run digIS in docker container
 
-## Install docker
+### Install docker
 
 ```bash
 # update software repositories
@@ -72,7 +72,7 @@ sudo systemctl enable docker
 docker --version
 ```
 
-## Build a digIS docker image
+### Build a digIS docker image
 
 ```bash
 cd /path/to/digIS
@@ -84,16 +84,16 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 digis               latest              15ef3194ff7d        27 hours ago        764MB
 ```
 
-## Run digIS using ```digis_docker_wrapper.sh```
+### Run digIS using ```digis_docker_wrapper.sh```
 Instead of typing overwhelmingly long docker commands we are providing `digis_docker_wrapper.sh` script which allows you to use digIS docker image in really convinient way. This script takes same arguments as standard `digIS.py` script.
 
 ```bash
 sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank -f csv
 ```
 
-## Understanding Outputs
+### Understanding Outputs
 
-### Getting FASTA file using GFF file
+## Getting FASTA file using GFF file
 
 The [GFF](http://gmod.org/wiki/GFF3) is a standard format for storing of genome features. This file can be used as an input for other tools to process or visualize appropriate genomic features. 
 
