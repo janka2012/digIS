@@ -17,7 +17,6 @@ if __name__ == "__main__":
                         type=str, help='Output directory name, default=digIS_output.')
 
     parser.add_argument('-n', '--no-translate', dest='translate', required=False, action='store_false')
-    parser.set_defaults(translate=True)
 
     parser.add_argument('-f', "--format", action='store', dest='out_format', required=False, default="csv", type=str,
                         choices=["csv", "gff"], help='Output format, default csv. Possible choices: csv, gff.')
