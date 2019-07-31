@@ -34,11 +34,10 @@ class digISMultifasta:
             csv_rows.extend(rows)
 
         print("Exporting records...")
-        output_recs = os.path.join(self.config.output_dir, "results", fasta_basename + "." + self.config.out_format)
-        if self.config.out_format == "csv":
-            write_csv(csv_rows, output_recs, csv_header)
-        elif self.config.out_format == "gff":
-            write_gff(csv_rows, output_recs, csv_header)
+        output_recs_csv = os.path.join(self.config.output_dir, "results", fasta_basename + ".csv")
+        output_recs_gff = os.path.join(self.config.output_dir, "results", fasta_basename + ".gff")
+        write_csv(csv_rows, output_recs_csv, csv_header)
+        write_gff(csv_rows, output_recs_gff, csv_header)
 
         print("Exporting summary statistics...")
         sum_recs = []
@@ -47,8 +46,8 @@ class digISMultifasta:
 
         output_sum = os.path.join(self.config.output_dir, "results", fasta_basename + ".sum")
         with open(output_sum, 'w+', newline='') as f:
-            f.write("{:40} {:15} {:>5} {:>10} {:>10} {:>10}\n".format('#seqid', 'family', 'nIS', 'bps', 'dnaLen', '%dna'))
+            f.write("{}\t{}\t{}\t{}\t{}\t{}\n".format('#seqid', 'family', 'nIS', 'bps', 'dnaLen', '%dna'))
             for rec in sum_recs:
-                f.write("{:40} {:15} {:>5} {:>10} {:>10} {:>10.2f}\n".format(*rec))
+                f.write("{}\t{}\t{}\t{}\t{}\t{:.2f}\n".format(*rec))
 
         return len(csv_rows)

@@ -16,16 +16,10 @@ if __name__ == "__main__":
     parser.add_argument('-o', "--output", action='store', dest='output_dir', required=False, default="digIS_output",
                         type=str, help='Output directory name, default=digIS_output.')
 
-    parser.add_argument('-n', '--no-translate', dest='translate', required=False, action='store_false')
-
-    parser.add_argument('-f', "--format", action='store', dest='out_format', required=False, default="csv", type=str,
-                        choices=["csv", "gff"], help='Output format, default csv. Possible choices: csv, gff.')
-
     args = parser.parse_args()
 
     digIS_conf = digISConfiguration(genome_file=args.input_fasta,
                                     genbank_file=args.genbank_file,
-                                    out_format=args.out_format,
                                     output_dir=args.output_dir)
 
     digIS = digISMultifasta(digIS_conf)

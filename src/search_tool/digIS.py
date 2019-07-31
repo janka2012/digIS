@@ -22,7 +22,8 @@ class digIS:
         self.hmmsearch_output = os.path.join(self.config.output_dir, "hmmer", str(self.genome.name) + '_hmmsearch.hmmer3')
         self.phmmer_output = os.path.join(self.config.output_dir, "hmmer", str(self.genome.name) + '_phmmer.hmmer3')
         self.log_output = os.path.join(self.config.output_dir, "logs", str(self.genome.name) + '_filter.log')
-        self.output = os.path.join(self.config.output_dir, "results", str(self.genome.name) + "." + str(self.config.out_format))
+        self.output_csv = os.path.join(self.config.output_dir, "results", str(self.genome.name) + ".csv")
+        self.output_gff = os.path.join(self.config.output_dir, "results", str(self.genome.name) + ".gff")
         self.recs = []
         self.genbank_overlap = []
         self.matched_recs = []
@@ -199,14 +200,11 @@ class digIS:
 
         return sum_recs
 
-    def export(self, filename=None):
+    def export(self):
         print("Exporting output...")
-        output = filename if filename else self.output
         csv_header, csv_row = self.export_records()
-        if self.config.out_format == "csv":
-            write_csv(csv_row, output, csv_header)
-        elif self.config.out_format == "gff":
-            write_gff(csv_row, output, csv_header)
+        write_csv(csv_row, self.output_csv, csv_header)
+        write_gff(csv_row, self.output_gff, csv_header)
 
     def run(self, search=True, export=False):
         print("===== Processing of", self.genome.name, "sequence =====")
