@@ -3,7 +3,7 @@ import definitions
 from ..common.misc import init_output_dir
 
 class digISConfiguration:
-    def __init__(self, genome_file, genbank_file, out_format, output_dir):
+    def __init__(self, genome_file, genbank_file, output_dir):
         self.genome_file = genome_file
         self.models = definitions.HMM_MODELS
         self.outliers_fasta = definitions.OUTLIERS
@@ -15,7 +15,6 @@ class digISConfiguration:
         self.min_hit_length = definitions.MIN_HIT_LENGTH
         self.min_gb_overlap = definitions.MIN_GB_OVERLAP
         self.genbank_file = genbank_file
-        self.out_format = out_format
         self.output_dir = output_dir
         init_output_dir(self.output_dir)
 
@@ -28,8 +27,8 @@ class digISConfiguration:
 
     def __str__(self):
         return "genome file: {}, models: {}, outliers: {}, isfinder orf db: {}, isfinder is db: {}, context orf size: {}, " \
-               "context size is: {}, max merge distance: {}, genbank file: {}, min gb overlap {}, outfmt: {}, outdir: {}".format(
+               "context size is: {}, max merge distance: {}, genbank file: {}, min gb overlap {}, outdir: {}".format(
               self.genome_file, self.models, self.outliers_fasta, self.isfinder_orf_db, self.isfinder_is_db, self.context_size_orf,
-              self.context_size_is, self.max_merge_distance, self.genbank_file, self.min_gb_overlap, self.out_format, self.output_dir)
+              self.context_size_is, self.max_merge_distance, self.genbank_file, self.min_gb_overlap, self.output_dir)
 
 
