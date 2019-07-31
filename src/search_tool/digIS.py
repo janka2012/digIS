@@ -39,11 +39,12 @@ class digIS:
                        outfile=self.hmmsearch_output, curated_models=True)
 
     def search_outliers(self):
+        print("Searching using Hmmer...")
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
                        outfile=self.phmmer_output, evalue="0.001", cevalue="0.001")
 
     def parse(self):
-        print("Parsing Hmmer outputs....")
+        print("Parsing Hmmer outputs...")
         self.parse_hmmer_output(self.hmmsearch_output)
         self.parse_hmmer_output(self.phmmer_output)
 
@@ -140,13 +141,11 @@ class digIS:
                                               self.config.context_size_is, self.config.min_gb_overlap,
                                               self.config.isfinder_orf_db, self.config.isfinder_is_db)
 
-    def export(self, filename=None):
-        output = filename if filename else self.output
+    def export_records(self):
         csv_row = []
         csv_header = ["id", "level", "qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         id_width = ceil(log10(len(self.recs))) if len(self.recs) > 0 else 1
 
-        print("Exporting output...")
         for i, rec in enumerate(self.recs):
             if self.classifier_recs[i].similarity_is in ['medium', 'strong']:
                 rec.start = self.classifier_recs[i].blast_is_dna.query_start
@@ -168,40 +167,57 @@ class digIS:
 
             csv_row.append(row)
             csv_header = header
+        return csv_header, csv_row
+
+    def export_summary_stats(self):
+        # Create Family dictionary
+        family_dict = {}
+        for rec in self.recs:
+            id = 'others' if '_' in rec.qid else rec.qid
+            if id in family_dict.keys():
+                num, bps = family_dict[id]
+                family_dict[id] = (num+1, bps+len(rec))
+            else:
+                family_dict[id] = (1, len(rec))
+
+        # Create list of summary records
+        sum_recs = []
+        genome_len = self.genome.length
+        total_num = 0
+        total_bps = 0
+        total_pdna = 0.0
+        fam_id_sorted = list(family_dict.keys())
+        fam_id_sorted.sort()
+        for fam_id in fam_id_sorted:
+            fam_num, fam_bps = family_dict[fam_id]
+            fam_pdna = fam_bps / genome_len * 100
+            sum_recs.append([self.genome.name, fam_id, fam_num, fam_bps, genome_len, fam_pdna])
+            total_num += fam_num
+            total_bps += fam_bps
+            total_pdna += fam_pdna
+        sum_recs.append([self.genome.name, 'total', total_num, total_bps, genome_len, total_pdna])
+
+        return sum_recs
+
+    def export(self, filename=None):
+        print("Exporting output...")
+        output = filename if filename else self.output
+        csv_header, csv_row = self.export_records()
         if self.config.out_format == "csv":
             write_csv(csv_row, output, csv_header)
         elif self.config.out_format == "gff":
             write_gff(csv_row, output, csv_header)
 
-    @staticmethod
-    def concat_results(genome_ids, digIS_conf):
-        results_outdir = os.path.join(digIS_conf.output_dir, "results")
-        result_files = [os.path.join(results_outdir, genome_id + "." + digIS_conf.out_format) for genome_id in genome_ids]
-        fasta_basename = os.path.splitext(os.path.basename(digIS_conf.genome_file))[0]
-        results_merged_output = os.path.join(results_outdir, fasta_basename + "." + digIS_conf.out_format)
-
-        with open(results_merged_output, 'w') as wfd:
-            header_added = False
-            for f in result_files:
-                with open(f, 'r') as fd:
-                    header = fd.readline()
-                    if not header_added:
-                        wfd.write(header)
-                        header_added = True
-                    shutil.copyfileobj(fd, wfd)
-                try:
-                    os.remove(f)
-                except OSError:
-                    print("Error while deleting file ", f)
-
-    def run(self, search=True):
+    def run(self, search=True, export=False):
+        print("===== Processing of", self.genome.name, "sequence =====")
         if search:
             self.search()
         self.parse()
         self.merge()
         self.filter()
         self.classification()
-        self.export()
+        if export:
+            self.export()
 
     def __str__(self):
         return '\n'.join(list(str(rec) for rec in self.recs))
