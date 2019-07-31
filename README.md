@@ -13,7 +13,7 @@
 
 ## Requirements
 - HMMER 3.1b2 or higher, download the latest version from http://hmmer.org/download.html
-- ncbi-blast+ v 2.8.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+- ncbi-blast+ v 2.6.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 - Python3 (Biopython 1.73 or higher)
 
 ## Install dependencies using package manager (for Ubuntu)
@@ -30,81 +30,70 @@ sudo apt install python3-pip
 pip3 install biopython
 ```
 
-## Install dependencies from source
-
-Create a directory where you will download and install required software
+## Download digIS from github repository
 ```bash
-mkdir -p $HOME/bin
-cd $HOME/bin
+git clone https://github.com/janka2012/digIS.git
 ```
-
-### Download and compile HMMER (v3.1b2) from source
-
-```bash
-# download
-wget http://eddylab.org/software/hmmer/hmmer-3.1b2.tar.gz
-tar zxf hmmer-3.1b2.tar.gz
-cd hmmer-3.1b2
-
-# compile
-./configure --prefix $HOME/bin/hmmer-3.1b2
-make
-make check  # optional step
-make install
-```
-
-Add HMMER to your ```$PATH``` and ```~/.profile```
-
-```bash
-HMMER=$HOME/bin/hmmer-3.1b2/bin
-echo $"export PATH=\$PATH:$HMMER" >> ~/.profile
-```
-
-### Download an compile ncbi-blast+ from source
-
-```
-cd $HOME/bin
-
-wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-linux.tar.gz
-tar zxf ncbi-blast-2.9.0+-x64-linux.tar.gz
-
-BLAST=$HOME/bin/ncbi-blast-2.9.0+/bin
-echo $"export PATH=\$PATH:$BLAST" >> ~/.profile
-```
-
-Installing Python3
-
-```bash
-wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
-tar xf Python-3.7.3.tgz
-
-cd Python-3.7.3.tgz
-
-
-./configure --prefix $HOME/bin/Python-3.7.3
-make
-make test # optional
-
-# problem with zlib
-make install
-```
-
-Building Python
-
-```
-https://www.systutorials.com/topic/how-to-install-the-zlib-library-in-ubuntu/
-```
-
 
 ## Usage
 
 ### Mode with GenBank annotation
 
+```bash
+export PYTHONPATH=/path/to/digis/
+python3 digIS_search.py -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank -f csv
+```
+
 ### Mode without GenBank annotation
+```bash
+export PYTHONPATH=/path/to/digis/
+python3 digIS_search.py -i data/test_data/NC_002608.fasta -o digis_genbank -f csv
+```
 
-## Understanding Outputs
+## Run digIS in docker container
 
-### Getting FASTA file using GFF file
+### Install docker
+
+```bash
+# update software repositories
+sudo apt-get update
+
+# uninstall older versions of docker
+sudo apt-get remove docker docker-engine docker.io
+
+# install docker
+sudo apt install docker.io
+
+# start and automate docker
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# check docker version (optional)
+docker --version
+```
+
+### Build a digIS docker image
+
+```bash
+cd /path/to/digIS
+docker build -t digis .
+
+# List created docker images. You should see image with name digis listed.
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+digis               latest              15ef3194ff7d        27 hours ago        764MB
+```
+
+### Run digIS using ```digis_docker_wrapper.sh```
+Instead of typing overwhelmingly long docker commands we are providing `digis_docker_wrapper.sh` script which allows you to use digIS docker image in really convinient way. This script takes same arguments as standard `digIS.py` script.
+
+```bash
+sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank -f csv
+```
+
+### Understanding Outputs
+
+## Getting FASTA file using GFF file
 
 The [GFF](http://gmod.org/wiki/GFF3) is a standard format for storing of genome features. This file can be used as an input for other tools to process or visualize appropriate genomic features. 
 

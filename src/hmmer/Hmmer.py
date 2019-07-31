@@ -26,8 +26,10 @@ class Hmmer:
 
     def run(self, tool, hmmfile, seqdb, outfile, evalue=None, cevalue=None, curated_models=False):
 
-        check_if_file_exists(hmmfile)
-        check_if_file_exists(seqdb)
+        if not check_if_file_exists(seqdb):
+            print("File {} does not exist or is not a file.".format(seqdb))
+            print("Try to run digIS with translate option turned on.")
+            exit(1)
 
         if outfile:
             cmd = self.__build_command(tool=tool, hmmfile=hmmfile, seqdb=seqdb,
@@ -56,8 +58,6 @@ class Hmmer:
 
             for hit in self.hits:
                 self.hsps += hit.hsps
-        else:
-            print("No new hits from hmmer.")
         return new_recs_added
 
     def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):

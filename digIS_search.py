@@ -1,11 +1,7 @@
 import argparse
 
-from collections import OrderedDict
-
-from src.search_tool.digIS import digIS
 from src.search_tool.digISConfiguration import digISConfiguration
-from src.common.genbank import read_gb
-from src.common.genome import Genome
+from src.search_tool.digISMultifasta import digISMultifasta
 
 
 if __name__ == "__main__":
@@ -20,8 +16,7 @@ if __name__ == "__main__":
     parser.add_argument('-o', "--output", action='store', dest='output_dir', required=False, default="digIS_output",
                         type=str, help='Output directory name, default=digIS_output.')
 
-    parser.add_argument('-t', '--translate', dest='translate', required=False, action='store_true')
-    parser.set_defaults(translate=False)
+    parser.add_argument('-n', '--no-translate', dest='translate', required=False, action='store_false')
 
     parser.add_argument('-f', "--format", action='store', dest='out_format', required=False, default="csv", type=str,
                         choices=["csv", "gff"], help='Output format, default csv. Possible choices: csv, gff.')
@@ -33,17 +28,6 @@ if __name__ == "__main__":
                                     out_format=args.out_format,
                                     output_dir=args.output_dir)
 
-    genomes_dict = Genome.parse_genomes(fasta_file=digIS_conf.genome_file,
-                                        translate=args.translate,
-                                        output_dir=digIS_conf.output_dir)
+    digIS = digISMultifasta(digIS_conf)
+    digIS.run()
 
-    genbank_dict = read_gb(digIS_conf.genbank_file) if digIS_conf.genbank_file else OrderedDict()
-
-    genome_ids = []
-
-    for genome_id, genome_rec in genomes_dict.items():
-        genome_ids.append(genome_id)
-        dIS = digIS(digIS_conf, genome=genome_rec, genbank_features=genbank_dict.get(genome_id, []))
-        dIS.run(search=True)
-
-    digIS.concat_results(genome_ids=genome_ids, digIS_conf=digIS_conf)
