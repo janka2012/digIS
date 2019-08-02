@@ -41,13 +41,13 @@ git clone https://github.com/janka2012/digIS.git
 
 ```bash
 export PYTHONPATH=/path/to/digis/
-python3 digIS_search.py -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank -f csv
+python3 digIS_search.py -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank
 ```
 
 ### Mode without GenBank annotation
 ```bash
 export PYTHONPATH=/path/to/digis/
-python3 digIS_search.py -i data/test_data/NC_002608.fasta -o digis_genbank -f csv
+python3 digIS_search.py -i data/test_data/NC_002608.fasta -o digis_genbank
 ```
 
 ## Run digIS in docker container
@@ -88,7 +88,7 @@ digis               latest              15ef3194ff7d        27 hours ago        
 Instead of typing overwhelmingly long docker commands we are providing `digis_docker_wrapper.sh` script which allows you to use digIS docker image in really convinient way. This script takes same arguments as standard `digIS.py` script.
 
 ```bash
-sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank -f csv
+sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank
 ```
 
 ### Understanding Outputs
