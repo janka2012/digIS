@@ -121,15 +121,15 @@ For a given input (multi)fasta file digIS generates three files with results: CS
 #### CSV output
 
 * `id`:
-* `level`:
-* `qid`: pHMM ID
-* `qstart`: start position i
-* `qend`: end
-* `sid`: 
-* `sstart`:
-* `send`:
-* `strand`: 
-* `acc`: 
+* `level`: 
+* `qid`: name of the query profile
+* `qstart`: start position of the hit in the query profile
+* `qend`: end position of the hit in the query profile
+* `sid`: name of the subject sequence
+* `sstart`: start position of the hit in subject sequence
+* `send`: end position of the hit in subject sequence
+* `strand`: the strand on which the hit was found
+* `acc`: taken from Hmmer. A measure of how reliable the overall alignment is (from 0 to 1, with 1.00 indicating a completely reliable alignment according to the model).
 * `class_sim_orf`: classification based on protein sequence similarity. Possible values: strong, medium, weak.
 * `class_sim_is`: classification based on nucleotide sequence similarity. Possible values: strong, medium, weak.
 * `class_sim_all`: overall classification, maximum from class_sim_orf and class_sim_is. Possible values: strong, medium, weak.
