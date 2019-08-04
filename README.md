@@ -136,16 +136,19 @@ For a given input (multi)fasta file digIS generates three files with results: CS
 * `class_genebank`: classification based on GenBank annotation. Possible values: is_related, no, other record. If GenBank annotation is not provided, this classification is not available and this field is empty.
 * `class_level`: overall classification resulting from class_sim_all and class_genebank. Possible values: sTP, wTP, pNov, wFP, wFP. If GenBank annotation is not provided, this classification is not available and this field is empty.
 
-#### GFF3 output
-* seqid
-* source
-* type
-* start
-* end
-* score
-* strand
-* frame
-* attribute
+#### GFF output
+The [GFF](http://gmod.org/wiki/GFF3) 
+* `seqid`:
+* `source`:
+* `type`:
+* `start`:
+* `end`:
+* `score`:
+* `strand`
+* `frame`
+* `attribute`
+
+NC_002608.1     digIS   transposable_element    309812  311213  1.0     -       .       id=NC_002608.1_13_is;level=is;qid=IS4Sa_ISH8_IS231_IS4;qstart=1;qend=226;class_sim_orf=strong;class_sim_is=strong;class_sim_all=strong;class_genebank=None;class_level=None
 
 #### Summary statistics
 
