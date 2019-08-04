@@ -22,7 +22,9 @@ digIS search pipeline operates in following steps: (1) the whole input DNA seque
 - ncbi-blast+ v 2.6.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 - Python3 (Biopython 1.73 or higher)
 
-## Install dependencies using package manager (for Ubuntu)
+## Installation
+
+### Install dependencies using package manager (for Ubuntu)
 ```bash
 sudo apt-get update
 sudo apt-get install hmmer
@@ -36,7 +38,7 @@ sudo apt install python3-pip
 pip3 install biopython
 ```
 
-## Download digIS version from github repository
+### Download digIS version from github repository
 ```bash
 # download the latest version
 git clone https://github.com/janka2012/digIS.git
@@ -101,7 +103,51 @@ Instead of typing overwhelmingly long docker commands we are providing `digis_do
 sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank
 ```
 
-### Understanding Outputs
+## Understanding Outputs
+
+### digIS output directory structure
+digIS stores all results in output directory you specify by using `-o` option. The default output directory name is set to `digIS_output`. The output directory has following structure:
+* `pep`: translated protein sequences of the input genomic sequences
+* `hmmer`: results from hmmer and phmmer search, separate file for each sequence in input (multi)fasta file 
+* `logs`: 
+* `results`: digIS results for all sequences in input (multi)fasta file in CSV and GFF3 format together with summarization statistics.
+    * `.csv`:
+    * `.gff`:
+    * `.sum`:
+
+### digIS output files in `results` subfolder
+For a given input (multi)fasta file digIS generates three files with results: CSV file, GFF3 file and file with summary statistics.
+
+#### CSV output
+
+* `id`:
+* `level`:
+* `qid`: pHMM ID
+* `qstart`: start position i
+* `qend`: end
+* `sid`: 
+* `sstart`:
+* `send`:
+* `strand`: 
+* `acc`: 
+* `class_sim_orf`: classification based on protein sequence similarity. Possible values: strong, medium, weak.
+* `class_sim_is`: classification based on nucleotide sequence similarity. Possible values: strong, medium, weak.
+* `class_sim_all`: overall classification, maximum from class_sim_orf and class_sim_is. Possible values: strong, medium, weak.
+* `class_genebank`: classification based on GenBank annotation. Possible values: is_related, no, other record. If GenBank annotation is not provided, this classification is not available and this field is empty.
+* `class_level`: overall classification resulting from class_sim_all and class_genebank. Possible values: sTP, wTP, pNov, wFP, wFP. If GenBank annotation is not provided, this classification is not available and this field is empty.
+
+#### GFF3 output
+* seqid
+* source
+* type
+* start
+* end
+* score
+* strand
+* frame
+* attribute
+
+#### Summary statistics
 
 
 ## Getting FASTA file using GFF file
