@@ -4,12 +4,18 @@
 **Table of content**
 <!---toc start-->
 
+  * [Overview](#overview)
   * [Requirements](#requirements)
-  * [Installing](#installing)
+  * [Installation](#installation)
   * [Usage](#usage)
   * [Understanding Outputs](#understanding-outputs)
 
 <!---toc end-->
+
+## Overview
+digIS is a command-line tool for detection of insertion sequences in prokaryotic genomes. It was developed in Python3 and utilizes several external tools such as HMMER v3.1, BLAST, and Biopython library. As an input, digIS accepts genomic sequences (e.g. contigs, fully assembled prokaryotic genomes or other DNA sequences) in the FASTA format. Optionally, the user can also provide a GenBank annotation file for a given input sequence(s). This annotation is later used to improve classification of identified IS elements.
+
+digIS search pipeline operates in following steps: (1) the whole input DNA sequence is translated into protein sequences (all possible six frames), (2) the protein sequences are searched using manually curated pHMM models and thus the seeds of putative IS elements are identified, (3) the seeds are extended according to sequence similarity with known IS elements in ISFInder database, (4) extended seeds are classified based on sequence similarity and optionally using GenBank annotations to help assess their quality, (5) finally, the classified outputs are reported in CSV and GFF3 format.
 
 ## Requirements
 - HMMER 3.1b2 or higher, download the latest version from http://hmmer.org/download.html
@@ -30,24 +36,28 @@ sudo apt install python3-pip
 pip3 install biopython
 ```
 
-## Download digIS from github repository
+## Download digIS version from github repository
 ```bash
+# download the latest version
 git clone https://github.com/janka2012/digIS.git
-```
 
+# or download specific release
+wget https://github.com/janka2012/digIS/archive/v1.0.tar.gz
+tar -xvzf v1.0.tar.gz
+```
 ## Usage
 
 ### Mode with GenBank annotation
 
 ```bash
-export PYTHONPATH=/path/to/digis/
+export PYTHONPATH=$PYTHONPATH:/path/to/digis/
 python3 digIS_search.py -i data/test_data/NC_002608.fasta -g data/test_data/NC_002608.gb -o digis_genbank
 ```
 
 ### Mode without GenBank annotation
 ```bash
-export PYTHONPATH=/path/to/digis/
-python3 digIS_search.py -i data/test_data/NC_002608.fasta -o digis_genbank
+export PYTHONPATH=$PYTHONPATH:/path/to/digis/
+python3 digIS_search.py -i data/test_data/NC_002608.fasta -o digis_without_genbank
 ```
 
 ## Run digIS in docker container
@@ -92,6 +102,7 @@ sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/N
 ```
 
 ### Understanding Outputs
+
 
 ## Getting FASTA file using GFF file
 
