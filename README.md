@@ -9,6 +9,7 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [Understanding Outputs](#understanding-outputs)
+  * [Getting FASTA file using GFF file](#getting-fasta-file-using-gff-file)
 
 <!---toc end-->
 
