@@ -140,6 +140,13 @@ to se týká fáze extension, která může skončit na úrovni IS, Tpase nebo d
 * `class_genebank`: classification based on GenBank annotation. Possible values: is_related, no, other record. If GenBank annotation is not provided, this classification is not available and this field is empty.
 * `class_level`: overall classification resulting from class_sim_all and class_genebank. Possible values: sTP, wTP, pNov, wFP, wFP. If GenBank annotation is not provided, this classification is not available and this field is empty.
 
+#### Example CSV output
+```
+id;level;qid;qstart;qend;sid;sstart;send;strand;acc;class_sim_orf;class_sim_is;class_sim_all;class_genebank;class_level
+NC_002608.1_00_is;is;IS200_IS605;1;113;NC_002608.1;181742;183592;-;0.98;strong;strong;strong;;
+NC_002608.1_01_is;is;IS200_IS605;1;113;NC_002608.1;154295;156130;-;0.98;strong;strong;strong;;
+```
+
 #### GFF output
 The [GFF](http://gmod.org/wiki/GFF3) 
 * `seqid`: sequence ID
@@ -152,7 +159,7 @@ The [GFF](http://gmod.org/wiki/GFF3)
 * `frame`
 * `attribute`
 
-Example GFF3 output record
+#### Example GFF3 output record
 ```
 NC_002608.1     digIS   transposable_element    309812  311213  1.0     -       .       id=NC_002608.1_13_is;level=is;qid=IS4Sa_ISH8_IS231_IS4;qstart=1;qend=226;class_sim_orf=strong;class_sim_is=strong;class_sim_all=strong;class_genebank=None;class_level=None
 ```
