@@ -148,16 +148,7 @@ NC_002608.1_01_is;is;IS200_IS605;1;113;NC_002608.1;154295;156130;-;0.98;strong;s
 ```
 
 #### GFF output
-The [GFF](http://gmod.org/wiki/GFF3) 
-* `seqid`: sequence ID
-* `source`: 
-* `type`:
-* `start`:
-* `end`:
-* `score`:
-* `strand`
-* `frame`
-* `attribute`
+The GFF3 output file has the same content as the CSV output file, but in GFF3 format. Detailed description of GFF3 format can be found [here](http://gmod.org/wiki/GFF3).
 
 #### Example GFF3 output record
 ```
@@ -183,7 +174,7 @@ For instance, FASTA sequences of IS elements (their catalytic domains) can be ob
 ```bash
 bedtools getfasta -fi <input.fasta> -bed <input.gff> -fo <output.fasta>
 ```
-where _input.fasta_ represents FASTA file used for searching, _input.gff_ is the digIS output GFF file and _output.fasta_ is required output file. 
+where _input.fasta_ represents FASTA file used for searching, _input.gff_ is the digIS output GFF file and _output.fasta_ is required output file.
 
 ### Getting Flank Regions using GFF file
 
