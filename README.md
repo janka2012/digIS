@@ -46,6 +46,9 @@ git clone https://github.com/janka2012/digIS.git
 # or download specific release
 wget https://github.com/janka2012/digIS/archive/v1.0.tar.gz
 tar -xvzf v1.0.tar.gz
+
+# go to digIS directory
+cd digIS-v1.0
 ```
 ## Usage
 
@@ -111,17 +114,18 @@ digIS stores all results in output directory you specify by using `-o` option. T
 * `hmmer`: results from hmmer and phmmer search, separate file for each sequence in input (multi)fasta file 
 * `logs`: 
 * `results`: digIS results for all sequences in input (multi)fasta file in CSV and GFF3 format together with summarization statistics.
-    * `.csv`:
-    * `.gff`:
-    * `.sum`:
+    * `input_filename.csv`: results in CSV format
+    * `input_filename.gff`: results in GFF format
+    * `input_filename.sum`: sumarization statistics
 
 ### digIS output files in `results` subfolder
 For a given input (multi)fasta file digIS generates three files with results: CSV file, GFF3 file and file with summary statistics.
 
 #### CSV output
+to se týká fáze extension, která může skončit na úrovni IS, Tpase nebo domain. Tato klasifikace se pak provádí už s hotovým výstupem (rozšířeným seedem) bez ohledu na úroveň jeho rozšíření
 
-* `id`:
-* `level`: 
+* `id`: unique record id
+* `level`:  Extension level, possible values: IS, ORF, domain.
 * `qid`: name of the query profile
 * `qstart`: start position of the hit in the query profile
 * `qend`: end position of the hit in the query profile
@@ -130,8 +134,8 @@ For a given input (multi)fasta file digIS generates three files with results: CS
 * `send`: end position of the hit in subject sequence
 * `strand`: the strand on which the hit was found
 * `acc`: taken from Hmmer. A measure of how reliable the overall alignment is (from 0 to 1, with 1.00 indicating a completely reliable alignment according to the model).
-* `class_sim_orf`: classification based on protein sequence similarity. Possible values: strong, medium, weak.
-* `class_sim_is`: classification based on nucleotide sequence similarity. Possible values: strong, medium, weak.
+* `class_sim_orf`: classification based on similarity with known transposases extracted from ISFinder database. Possible values: strong, medium, weak.
+* `class_sim_is`: classification based on the similarity with known IS elements extracted from ISFinder database. Possible values: strong, medium, weak.
 * `class_sim_all`: overall classification, maximum from class_sim_orf and class_sim_is. Possible values: strong, medium, weak.
 * `class_genebank`: classification based on GenBank annotation. Possible values: is_related, no, other record. If GenBank annotation is not provided, this classification is not available and this field is empty.
 * `class_level`: overall classification resulting from class_sim_all and class_genebank. Possible values: sTP, wTP, pNov, wFP, wFP. If GenBank annotation is not provided, this classification is not available and this field is empty.
