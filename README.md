@@ -43,7 +43,7 @@ pip3 install biopython
 # download the latest version
 git clone https://github.com/janka2012/digIS.git
 
-# or download specific release
+# or download specific release from https://github.com/janka2012/digIS/releases
 wget https://github.com/janka2012/digIS/archive/v1.0.tar.gz
 tar -xvzf v1.0.tar.gz
 
@@ -142,8 +142,8 @@ to se týká fáze extension, která může skončit na úrovni IS, Tpase nebo d
 
 #### GFF output
 The [GFF](http://gmod.org/wiki/GFF3) 
-* `seqid`:
-* `source`:
+* `seqid`: sequence ID
+* `source`: 
 * `type`:
 * `start`:
 * `end`:
@@ -152,10 +152,20 @@ The [GFF](http://gmod.org/wiki/GFF3)
 * `frame`
 * `attribute`
 
+Example GFF3 output record
+```
 NC_002608.1     digIS   transposable_element    309812  311213  1.0     -       .       id=NC_002608.1_13_is;level=is;qid=IS4Sa_ISH8_IS231_IS4;qstart=1;qend=226;class_sim_orf=strong;class_sim_is=strong;class_sim_all=strong;class_genebank=None;class_level=None
+```
 
 #### Summary statistics
 
+This file is in tab-delimited format and contains six coloumns:
+ * `seqid`: sequence ID
+ * `family`: IS family name
+ * `nIS`: number of IS elements per individual family
+ * `bps`: overall number of base pairs of input sequence occupied by IS elements
+ * `dnaLen`: length of the input sequence
+ * `%dna`: overall percentage of input sequence occupied by IS elements
 
 ## Getting FASTA file using GFF file
 
