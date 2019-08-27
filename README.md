@@ -88,16 +88,15 @@ sudo systemctl enable docker
 docker --version
 ```
 
-### Build a digIS docker image
+### Pull the docker image from Dockerhub
 
 ```bash
-cd /path/to/digIS
-docker build -t digis .
+docker pull janka2012/digis
 
 # List created docker images. You should see image with name digis listed.
 docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-digis               latest              15ef3194ff7d        27 hours ago        764MB
+janka2012/digis     latest              1f09fc937ee1        14 minutes ago      765MB
 ```
 
 ### Run digIS using ```digis_docker_wrapper.sh```
