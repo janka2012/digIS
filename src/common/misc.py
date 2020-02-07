@@ -34,13 +34,14 @@ def get_filenames_by_extension(dirpath, extensions):
     return outfiles
 
 
-def get_filenames_by_substring(dirpath, substring):
+def get_filenames_by_substring(dirpath, substring, include_subdir=False):
     outfiles = []
     for (dirpath, dirnames, filenames) in os.walk(dirpath):
         for filename in filenames:
             if substring in filename:
                 outfiles.append(os.path.join(dirpath, filename))
-        break
+        if(not include_subdir):
+            break
 
     return outfiles
 
