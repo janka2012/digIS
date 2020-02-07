@@ -96,15 +96,15 @@ class Hmmer:
         tool [options] <hmmdb> <seqfile>
         """
 
-        cmd = [tool, "--noali"]
+        cmd = [tool, "--noali", "--nobias"]
 
         if curated_models and (evalue or cevalue):
             raise ValueError("You can not set both - noise thresholds and evalue. Set either thresholds or evalue.")
 
         if evalue:
-            cmd.extend(["-E", evalue])
+            cmd.extend(["-E", str(evalue)])
             if cevalue:
-                cmd.extend(["--domE", cevalue])
+                cmd.extend(["--domE", str(cevalue)])
 
         elif curated_models:
             cmd.extend(["--cut_nc"])
@@ -119,7 +119,6 @@ class Hmmer:
 
     @staticmethod
     def __run_tool(cmd):
-
         try:
             subprocess.check_call(cmd, stdout=sys.stdout, stderr=sys.stderr)
         except subprocess.CalledProcessError as e:
