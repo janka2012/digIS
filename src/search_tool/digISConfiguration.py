@@ -3,7 +3,7 @@ import definitions
 from ..common.misc import init_output_dir
 
 class digISConfiguration:
-    def __init__(self, genome_file, genbank_file, output_dir):
+    def __init__(self, genome_file, genbank_file, output_dir, currated_cutoff=None, outliers_evalue=None):
         self.genome_file = genome_file
         self.models = definitions.HMM_MODELS
         self.outliers_fasta = definitions.OUTLIERS
@@ -14,6 +14,8 @@ class digISConfiguration:
         self.max_merge_distance = definitions.MAX_MERGE_DISTANCE
         self.min_hit_length = definitions.MIN_HIT_LENGTH
         self.min_gb_overlap = definitions.MIN_GB_OVERLAP
+        self.currated_cutoff = currated_cutoff if currated_cutoff else definitions.CURRATED_CUTOFF
+        self.outliers_evalue = outliers_evalue if outliers_evalue else definitions.OUTLIERS_EVALUE
         self.genbank_file = genbank_file
         self.output_dir = output_dir
         init_output_dir(self.output_dir)

@@ -37,12 +37,12 @@ class digIS:
 
     def search_models(self):
         self.hmmer.run(tool="hmmsearch", hmmfile=self.config.models, seqdb=self.genome.orf_db,
-                       outfile=self.hmmsearch_output, curated_models=True)
+                       outfile=self.hmmsearch_output, curated_models=self.config.currated_cutoff)
 
     def search_outliers(self):
         print("Searching using Hmmer...")
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
-                       outfile=self.phmmer_output, evalue="0.001", cevalue="0.001")
+                       outfile=self.phmmer_output, evalue=self.config.outliers_evalue, cevalue=self.config.outliers_evalue)
 
     def parse(self):
         print("Parsing Hmmer outputs...")
