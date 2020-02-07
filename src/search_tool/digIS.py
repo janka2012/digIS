@@ -50,9 +50,9 @@ class digIS:
         self.parse_hmmer_output(self.phmmer_output)
 
     def parse_hmmer_output(self, hmmer_output):
-        new_recs_added = self.hmmer.parse(hmmer_output)
+        new_recs = self.hmmer.parse(hmmer_output)
 
-        if new_recs_added:
+        if new_recs:
             for hsp in self.hmmer.hsps:
                 hit_range = (hsp.sstart, hsp.send)
                 frame = int(hsp.sid.strip()[-1])
@@ -86,10 +86,10 @@ class digIS:
 
     def __merge_records_in_distance(self, records_indexes):
 
-        records_indexes_dc = deepcopy(records_indexes)
-        for current_record_idx in copy(records_indexes_dc):
-            if current_record_idx in records_indexes_dc:
-                records_indexes_without_current_record = copy(records_indexes_dc)
+        records_indexes_copy = records_indexes.copy()
+        for current_record_idx in records_indexes:
+            if current_record_idx in records_indexes_copy:
+                records_indexes_without_current_record = records_indexes_copy.copy()
                 records_indexes_without_current_record.discard(current_record_idx)
 
                 for other_record_idx in records_indexes_without_current_record:
@@ -101,27 +101,31 @@ class digIS:
                         qpol = current_record.qstart < other_record.qstart
 
                         if (current_record.strand == '+' and spol == qpol) or (current_record.strand == '-' and spol != qpol):
+                            self.filter_log.append("{}:{}  {} merged with neighbouring element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
                             current_record.merge(other_record)
-                            records_indexes_dc.discard(other_record_idx)
-                            self.filter_log.append("{} merged with neighbouring element: {}".format(current_record, other_record))
-        return records_indexes_dc
+                            records_indexes_copy.discard(other_record_idx)
+
+        return records_indexes_copy
 
     def __merge_overlapping_records(self, records_indexes):
 
-        records_indexes_dc = deepcopy(records_indexes)
+        records_indexes_copy = records_indexes.copy()
 
-        for current_record_idx in copy(records_indexes_dc):
-            if current_record_idx in records_indexes_dc:
-                records_indexes_without_current_record = copy(records_indexes_dc)
+        for current_record_idx in records_indexes:
+            if current_record_idx in records_indexes_copy:
+                records_indexes_without_current_record = records_indexes_copy.copy()
                 records_indexes_without_current_record.discard(current_record_idx)
+
                 for other_record_idx in records_indexes_without_current_record:
                     current_record = self.recs[current_record_idx]
                     other_record = self.recs[other_record_idx]
+
                     if current_record.get_overlap_length(other_record) > 0:
+                        self.filter_log.append("{}:{}  {} merged with overlapping element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
                         current_record.merge(other_record)
-                        records_indexes_dc.discard(other_record_idx)
-                        self.filter_log.append("{} merged with overlapping element: {}".format(current_record, other_record))
-        return records_indexes_dc
+                        records_indexes_copy.discard(other_record_idx)
+
+        return records_indexes_copy
 
     def filter(self):
         print("Filtering hits shorter or equal than {} bp".format(self.config.min_hit_length))
@@ -149,12 +153,12 @@ class digIS:
 
         for i, rec in enumerate(self.recs):
             if self.classifier_recs[i].similarity_is in ['medium', 'strong']:
-                rec.start = self.classifier_recs[i].blast_is_dna.query_start
-                rec.end = self.classifier_recs[i].blast_is_dna.query_end
+                rec.start = min(rec.start, self.classifier_recs[i].blast_is_dna.query_start)
+                rec.end = max(rec.end, self.classifier_recs[i].blast_is_dna.query_end)
                 level = 'is'
             elif self.classifier_recs[i].similarity_orf in ['medium', 'strong']:
-                rec.start = self.classifier_recs[i].blast_orf.query_start
-                rec.end = self.classifier_recs[i].blast_orf.query_end
+                rec.start = min(rec.start, self.classifier_recs[i].blast_orf.query_start)
+                rec.end = max(rec.end, self.classifier_recs[i].blast_orf.query_end)
                 level = 'orf'
             else:
                 level = 'domain'

@@ -41,8 +41,9 @@ class Hmmer:
             raise AttributeError("Output file argument is required.")
 
     def parse(self, outfile):
-
-        new_recs_added = False
+        self.hits = []
+        self.hsps = []
+        new_recs = False
 
         try:
             check_if_file_exists(outfile)
@@ -51,14 +52,14 @@ class Hmmer:
 
         hmmer_res = list(SearchIO.parse(outfile, 'hmmsearch3-domtab'))
         if len(hmmer_res) > 0:
-            new_recs_added = True
+            new_recs = True
             for res in hmmer_res:
                 for hit in res.hits:
                     self.hits.append(HmmerHit(hit, res.seq_len))
 
             for hit in self.hits:
                 self.hsps += hit.hsps
-        return new_recs_added
+        return new_recs
 
     def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):
         try:
@@ -96,7 +97,7 @@ class Hmmer:
         tool [options] <hmmdb> <seqfile>
         """
 
-        cmd = [tool, "--noali", "--nobias"]
+        cmd = [tool, "--noali", "--max"]
 
         if curated_models and (evalue or cevalue):
             raise ValueError("You can not set both - noise thresholds and evalue. Set either thresholds or evalue.")
