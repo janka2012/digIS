@@ -52,7 +52,7 @@ class RecordDigIS(Grange):
         self.end = new_end
         self.qstart = min(self.qstart, other.qstart)
         self.qend = max(self.qend, other.qend)
-        self.qid = '_'.join(list(set(self.qid.split('_') + other.qid.split('_'))))
+        self.qid = '-'.join(list(set(self.qid.split('-') + other.qid.split('-'))))
         self.acc = new_acc
 
     def to_csv(self):
