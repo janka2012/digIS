@@ -10,6 +10,19 @@ CONTEXT_SIZE_IS = 14000
 MIN_GB_OVERLAP = 100
 MAX_MERGE_DISTANCE = 700  # nt
 MIN_HIT_LENGTH = 150  # nt
+CURRATED_CUTOFF = True
+OUTLIERS_EVALUE = 0.001
+
+BLASTN_GAPOPEN = 5
+BLASTN_GAPEXTEND = 2
+BLASTN_WORDSIZE = 11
+BLASTN_EVALUE = 0.001
+
+BLASTX_GAPOPEN = 11
+BLASTX_GAPEXTEND = 1
+BLASTX_WORDSIZE = 3
+BLASTX_EVALUE = 0.001
+
 
 IS_GB_KEYWORDS = ['transposase', 'resolvase', 'recombinase', 'insertion element', 'mobile element', 'transposon', 'DDE']
 HYPOTHETICAL_GB_KEYWORDS = ['hypothetical protein', 'predicted protein', 'unknown', 'DUF4322']
