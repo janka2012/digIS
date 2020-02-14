@@ -3,6 +3,7 @@ import sys
 
 from Bio import SearchIO, SeqIO
 
+from definitions import NUM_THREADS
 from ..common.csv_utils import write_csv
 from ..common.misc import check_if_file_exists, change_path_to_linux
 from ..common.sequence import get_sequence_record_ids
@@ -98,6 +99,9 @@ class Hmmer:
         """
 
         cmd = [tool, "--noali", "--max"]
+
+        if(NUM_THREADS != 0):
+            cmd.extend(["--cpu", str(NUM_THREADS)])
 
         if curated_models and (evalue or cevalue):
             raise ValueError("You can not set both - noise thresholds and evalue. Set either thresholds or evalue.")

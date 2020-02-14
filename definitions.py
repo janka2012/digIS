@@ -23,6 +23,7 @@ BLASTX_GAPEXTEND = 1
 BLASTX_WORDSIZE = 3
 BLASTX_EVALUE = 0.001
 
+NUM_THREADS = 0
 
 IS_GB_KEYWORDS = ['transposase', 'resolvase', 'recombinase', 'insertion element', 'mobile element', 'transposon', 'DDE']
-HYPOTHETICAL_GB_KEYWORDS = ['hypothetical protein', 'predicted protein', 'unknown', 'DUF4322']
+HYPOTHETICAL_GB_KEYWORDS = ['hypothetical protein', 'predicted protein', 'unknown']
