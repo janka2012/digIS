@@ -10,6 +10,9 @@ from ..common.sequence import *
 from ..hmmer.Hmmer import Hmmer
 from ..genbank.RecordGenbank import RecordGenbank
 from .RecordDigIS import RecordDigIS
+from ..blast.Blast import Blast
+from ..blast.BlastX import BlastX
+from ..blast.BlastN import BlastN
 
 
 class digIS:
@@ -25,13 +28,14 @@ class digIS:
         self.output_csv = os.path.join(self.config.output_dir, "results", str(self.genome.name) + ".csv")
         self.output_gff = os.path.join(self.config.output_dir, "results", str(self.genome.name) + ".gff")
         self.recs = []
+        self.extension_level = []
         self.genbank_overlap = []
         self.matched_recs = []
         self.filter_log = []
         self.classifier_recs = []
 
     def search(self):
-        print("Hmmer search...")
+        print("Seed search...")
         self.search_models()
         self.search_outliers()
 
@@ -40,7 +44,6 @@ class digIS:
                        outfile=self.hmmsearch_output, curated_models=self.config.currated_cutoff)
 
     def search_outliers(self):
-        print("Searching using Hmmer...")
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
                        outfile=self.phmmer_output, evalue=self.config.outliers_evalue, cevalue=self.config.outliers_evalue)
 
@@ -66,7 +69,7 @@ class digIS:
         """ Merging hits in particular distance """
         records_indexes = set(range(len(self.recs)))
 
-        print("Merging hits...")
+        print("Seed Merging...")
         print("Number of records before merging: {}.".format(len(self.recs)))
         merged_records_indexes = self.merge_records(records_indexes)
         merged_records = [self.recs[rec_index] for rec_index in merged_records_indexes]
@@ -127,9 +130,44 @@ class digIS:
 
         return records_indexes_copy
 
+    def seed_extension(self):
+        print("Seed Extension...")
+        if self.recs:
+            orf_blast_pos = Blast.get_max_blast_hits_in_range(self.recs, BlastX, self.config.context_size_orf, self.config.isfinder_orf_db,
+                                                              min_overlap=1, positive_subject_strand_only=True)
+            is_blast_pos = Blast.get_max_blast_hits_in_range(self.recs, BlastN, self.config.context_size_is, self.config.isfinder_is_db,
+                                                             min_overlap=1, positive_subject_strand_only=True)
+
+            for rec, orf_pos, is_pos in zip(self.recs, orf_blast_pos, is_blast_pos):
+                level = 'domain'
+
+                # Extension at the level of ORF
+                orf_start, orf_end = orf_pos
+                if not (orf_start == 0 and orf_end == 0):
+                    if orf_start < rec.start or orf_end > rec.end:
+                        rec.start = min(rec.start, orf_start)
+                        rec.end = max(rec.end, orf_end)
+                        level = 'orf'
+
+                # Extension at the level of IS
+                is_start, is_end = is_pos
+                if not (is_start == 0 and is_end == 0):
+                    if is_start < rec.start or is_end > rec.end:
+                        rec.start = min(rec.start, is_start)
+                        rec.end = max(rec.end, is_end)
+                        level = 'is'
+
+                self.extension_level.append(level)
+
     def filter(self):
+        recs_filt = []
         print("Filtering hits shorter or equal than {} bp".format(self.config.min_hit_length))
-        recs_filt = [rec for rec in self.recs if abs(rec.start - rec.end + 1) >= self.config.min_hit_length]
+        for idx, rec in enumerate(self.recs):
+            if len(rec) >= self.config.min_hit_length:
+                recs_filt.append(rec)
+            else:
+                self.filter_log.append("{}: {} filtered because of the length".format(idx, rec))
+
         self.recs = recs_filt
 
     def classification(self):
@@ -152,23 +190,12 @@ class digIS:
         id_width = ceil(log10(len(self.recs))) if len(self.recs) > 0 else 1
 
         for i, rec in enumerate(self.recs):
-            if self.classifier_recs[i].similarity_is in ['medium', 'strong']:
-                rec.start = min(rec.start, self.classifier_recs[i].blast_is_dna.query_start)
-                rec.end = max(rec.end, self.classifier_recs[i].blast_is_dna.query_end)
-                level = 'is'
-            elif self.classifier_recs[i].similarity_orf in ['medium', 'strong']:
-                rec.start = min(rec.start, self.classifier_recs[i].blast_orf.query_start)
-                rec.end = max(rec.end, self.classifier_recs[i].blast_orf.query_end)
-                level = 'orf'
-            else:
-                level = 'domain'
-
-            id = '_'.join([rec.sid, str(i).zfill(id_width), level])
+            id = '_'.join([rec.sid, str(i).zfill(id_width), self.extension_level[i]])
             search_header, search_row = rec.to_csv()
             class_header, class_row = self.classifier_recs[i].to_csv()
 
             header = ['id', 'level'] + search_header + class_header
-            row = [id, level] + search_row + class_row
+            row = [id, self.extension_level[i]] + search_row + class_row
 
             csv_row.append(row)
             csv_header = header
@@ -216,6 +243,7 @@ class digIS:
             self.search()
         self.parse()
         self.merge()
+        self.seed_extension()
         self.filter()
         self.classification()
         if export:

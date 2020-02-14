@@ -29,6 +29,22 @@ class BlastQuery:
                                       hit.subject_id, hit.subject_length, self.application)
         return bhspflat
 
+    def get_max_hit(self, query_range=(0, 0), min_overlap=1, positive_subject_strand_only=False):
+        query_start, query_end = 0,0
+
+        for hit in self.hits:
+            hit_query_start, hit_query_end = hit.get_max_hsp(query_range, min_overlap, positive_subject_strand_only)
+            if hit_query_start == 0 and hit_query_end == 0:
+                continue
+            if query_start == 0 and query_end == 0:
+                query_start, query_end = hit_query_start, hit_query_end
+            else:
+                query_start = min(query_start, hit_query_start)
+                query_end = max(query_end, hit_query_end)
+
+        return query_start, query_end
+
+
     def __str__(self):
         hits = '\n'.join(list(str(i) for i in self.hits))
         return "{}, {}\n".format(self.query_id, self.query_length) + hits

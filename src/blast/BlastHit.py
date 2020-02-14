@@ -57,6 +57,26 @@ class BlastHit:
                     bhsp = hsp
         return bhsp
 
+    def get_max_hsp(self, query_range=(0, 0), min_overlap=1, positive_subject_strand_only=False):
+        query_start, query_end = 0,0
+
+        for hsp in self.hsps:
+            if positive_subject_strand_only and hsp.subject_strand == "-":
+                continue
+            max_start = max(hsp.query_start, query_range[0])
+            min_end = min(hsp.query_end, query_range[1])
+            overlap_len = min_end - max_start + 1
+
+            if query_range == (0, 0) or overlap_len >= min_overlap:
+                if query_start == 0 and query_end == 0:
+                    query_start = hsp.query_start
+                    query_end = hsp.query_end
+                else:
+                    query_start = min(query_start, hsp.query_start)
+                    query_end = max(query_end, hsp.query_end)
+
+        return query_start, query_end
+
     def __str__(self):
         hsps = '\n'.join(list(str(i) for i in self.hsps))
         return "{}, {}\n".format(self.subject_id, self.subject_length) + hsps
