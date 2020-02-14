@@ -1,3 +1,5 @@
+import re
+
 from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
 
 
@@ -63,7 +65,7 @@ class Classifier:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
             if rec.type == 'mobile_element' or \
-                    rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in IS_GB_KEYWORDS):
+                    rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS):
                 out = True
         return out
 
@@ -74,7 +76,9 @@ class Classifier:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
-            if rec.type == 'CDS' and any(annot in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
+            if rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
+                out = True
+            elif re.match(r'DUF\d+', ",".join(gb_annots_product), re.M | re.I):
                 out = True
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
                 out = True
