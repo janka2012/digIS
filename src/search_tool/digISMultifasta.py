@@ -18,9 +18,9 @@ class digISMultifasta:
         for genome_id, genome_rec in self.genomes_dict.items():
             self.digIS_recs[genome_id] = digIS(self.config, genome=genome_rec, genbank_features=self.genbank_dict.get(genome_id, []))
 
-    def run(self):
+    def run(self, search=True):
         for genome_id, digIS_rec in self.digIS_recs.items():
-            digIS_rec.run()
+            digIS_rec.run(search=search)
         records = self.export()
         return records
 
