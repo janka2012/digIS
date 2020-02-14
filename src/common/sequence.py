@@ -115,6 +115,14 @@ def get_sequence_record_id(filename, rec_id):
 
     return out
 
+def get_sequence_ids(filename):
+    out = []
+    recs = SeqIO.parse(filename, "fasta")
+    for rec in recs:
+        out.append(rec.id)
+
+    return out
+
 
 def get_sixframe_record(filename, start, end):
 
