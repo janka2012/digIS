@@ -1,7 +1,7 @@
 from ..common.RangesHits import RangesHits
 
 
-def find_overlaps(query, subject, ignore_strand=False, min_overlap=None, min_query_overlap_percentage=None, min_subject_overlap_percentage=None):
+def find_overlaps(query, subject, ignore_strand=False, min_overlap=None, min_query_overlap_percentage=None, min_subject_overlap_percentage=None, allow_query_fragments=False):
 
     unbinded_query = set(list(range(len(query))))
     unbinded_subject = set(list(range(len(subject))))
@@ -22,10 +22,12 @@ def find_overlaps(query, subject, ignore_strand=False, min_overlap=None, min_que
                 filter = filter or overlap < min_overlap
             if min_query_overlap_percentage is not None:
                 filter = filter or (overlap/q.width)*100 < min_query_overlap_percentage
-            if min_query_overlap_percentage is not None:
+            if min_subject_overlap_percentage is not None:
                 filter = filter or (overlap/s.width)*100 < min_subject_overlap_percentage
             if overlap > 0:
                 q_no_overlap = False
+            if allow_query_fragments and overlap == q.width:
+                filter = False
             if not filter:
                 q_low_overlap = False
                 match.append((qi, si))
