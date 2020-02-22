@@ -41,11 +41,11 @@ class digIS:
 
     def search_models(self):
         self.hmmer.run(tool="hmmsearch", hmmfile=self.config.models, seqdb=self.genome.orf_db,
-                       outfile=self.hmmsearch_output, curated_models=self.config.currated_cutoff)
+                       outfile=self.hmmsearch_output)
 
     def search_outliers(self):
         self.hmmer.run(tool="phmmer", hmmfile=self.config.outliers_fasta, seqdb=self.genome.orf_db,
-                       outfile=self.phmmer_output, evalue=self.config.outliers_evalue, cevalue=self.config.outliers_evalue)
+                       outfile=self.phmmer_output, cevalue=self.config.outliers_evalue)
 
     def parse(self):
         print("Parsing Hmmer outputs...")
@@ -76,10 +76,6 @@ class digIS:
         self.recs = merged_records
         print("Number of records after merging: {}.".format(len(self.recs)))
 
-        # Write filter log file
-        with open(self.log_output, "w+") as f:
-            f.write("\n".join(self.filter_log))
-
     def merge_records(self, records_indexes):
 
         merged_records_indexes = self.__merge_records_in_distance(records_indexes)
@@ -105,7 +101,7 @@ class digIS:
 
                         if (current_record.strand == '+' and spol == qpol) or (current_record.strand == '-' and spol != qpol):
                             self.filter_log.append("{}:{}  {} merged with neighbouring element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
-                            current_record.merge(other_record)
+                            current_record.merge(other_record, merge_type="distance")
                             records_indexes_copy.discard(other_record_idx)
 
         return records_indexes_copy
@@ -123,9 +119,11 @@ class digIS:
                     current_record = self.recs[current_record_idx]
                     other_record = self.recs[other_record_idx]
 
-                    if current_record.get_overlap_length(other_record) > 0:
+                    if current_record.get_overlap_length(other_record) > 0 \
+                            and current_record.qid == other_record.qid \
+                            and current_record.sid == other_record.sid:
                         self.filter_log.append("{}:{}  {} merged with overlapping element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
-                        current_record.merge(other_record)
+                        current_record.merge(other_record, merge_type="overlap")
                         records_indexes_copy.discard(other_record_idx)
 
         return records_indexes_copy
@@ -159,9 +157,9 @@ class digIS:
 
                 self.extension_level.append(level)
 
-    def filter(self):
-        recs_filt = []
+    def filter_by_length(self):
         print("Filtering hits shorter or equal than {} bp".format(self.config.min_hit_length))
+        recs_filt = []
         for idx, rec in enumerate(self.recs):
             if len(rec) >= self.config.min_hit_length:
                 recs_filt.append(rec)
@@ -169,6 +167,43 @@ class digIS:
                 self.filter_log.append("{}: {} filtered because of the length".format(idx, rec))
 
         self.recs = recs_filt
+        print(len(self.recs))
+
+        # Write filter log file
+        with open(self.log_output, "w+") as f:
+            f.write("\n".join(self.filter_log))
+
+    def filter_by_score(self):
+        print("Filtering hits by cut off thresholds.")
+        recs_filt = []
+        cutoffs_dict = self.load_threshold()
+
+        for idx, rec in enumerate(self.recs):
+            model = rec.qid
+            if model in cutoffs_dict.keys():
+                score = cutoffs_dict[model]
+                if rec.score > score:
+                    recs_filt.append(rec)
+                else:
+                    self.filter_log.append("{}: {} filtered because of the low score".format(idx, rec))
+
+        self.recs = recs_filt
+        print(len(self.recs))
+
+    def load_threshold(self):
+        import os
+        import csv
+        from definitions import ROOT_DIR
+        nc_thresholds = os.path.join(ROOT_DIR, "digIS", "data", "models", "hmm", "thresholds.txt")
+
+        with open(nc_thresholds) as tsvfile:
+            cutoffs_dict = {}
+            reader = csv.reader(tsvfile, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
+            next(reader)
+            for row in reader:
+                cutoffs_dict[str(row[0])] = float(row[2])
+
+        return cutoffs_dict
 
     def classification(self):
         if self.config.genbank_file:
@@ -244,7 +279,8 @@ class digIS:
         self.parse()
         self.merge()
         self.seed_extension()
-        self.filter()
+        self.filter_by_score()
+        self.filter_by_length()
         self.classification()
         if export:
             self.export()

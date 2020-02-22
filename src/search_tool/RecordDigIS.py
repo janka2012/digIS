@@ -2,12 +2,13 @@ from ..common.grange import Grange
 
 
 class RecordDigIS(Grange):
-    def __init__(self, genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc):
+    def __init__(self, genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc, score):
         self.qid = qid
         self.sid = sid
         self.qstart = qstart
         self.qend = qend
         self.acc = acc
+        self.score = score
         super().__init__(genome_name, chrom, start, end, strand, genome_seq, genome_len)
 
     @classmethod
@@ -20,13 +21,15 @@ class RecordDigIS(Grange):
         end = int(csv['send'])
         strand = csv['strand']
         acc = csv['acc']
-        return cls(genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc)
+        score = csv['score']
+        return cls(genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc, score)
 
     @classmethod
     def from_hmmer(cls, hsp, sid, start, end, strand, genome_name, chrom, genome_seq, seq_len):
-        return cls(genome_name, chrom, genome_seq, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc)
+        return cls(genome_name, chrom, genome_seq, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc, hsp.bitscore)
 
     def should_be_merged(self, other, merge_distance):
+
         if self.qid == other.qid and self.sid == other.sid \
             and not self.has_overlap(other) \
                 and self.has_overlap(other, flank=merge_distance):
@@ -34,9 +37,11 @@ class RecordDigIS(Grange):
         else:
             return False
 
-    def merge(self, other):
+    def merge(self, other, merge_type):
         if self.strand != other.strand or self.sid != other.sid:
             raise ValueError('RecordDigIS.merge(): Records can not be merged')
+
+        # if both hits from the same
 
         new_start = min(self.start, other.start)
         new_end = max(self.end, other.end)
@@ -48,19 +53,24 @@ class RecordDigIS(Grange):
         else:
             new_acc = ((len(self)-intersection_length)*self.acc + len(other)*other.acc) / new_len
 
+        if merge_type == "distance":
+            new_score = self.score + other.score
+        elif merge_type == "overlap":
+            new_score = max(self.score, other.score)
+
         self.start = new_start
         self.end = new_end
         self.qstart = min(self.qstart, other.qstart)
         self.qend = max(self.qend, other.qend)
-        self.qid = '-'.join(list(set(self.qid.split('-') + other.qid.split('-'))))
         self.acc = new_acc
+        self.score = new_score
 
     def to_csv(self):
-        header = ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc"]
-        row = [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2)]
+        header = ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc", "score"]
+        row = [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2), round(self.score, 2)]
         return header, row
 
     def __str__(self):
-        return "{}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.qstart, self.qend,
+        return "{}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.qstart, self.qend,
                                                        self.sid, self.start,  self.end,
-                                                       self.strand, self.acc)
+                                                       self.strand, self.acc, self.score)

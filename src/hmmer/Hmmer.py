@@ -25,7 +25,7 @@ class Hmmer:
         self.hits = []
         self.hsps = []
 
-    def run(self, tool, hmmfile, seqdb, outfile, evalue=None, cevalue=None, curated_models=False):
+    def run(self, tool, hmmfile, seqdb, outfile, cevalue=None):
 
         if not check_if_file_exists(seqdb):
             print("File {} does not exist or is not a file.".format(seqdb))
@@ -33,8 +33,7 @@ class Hmmer:
             exit(1)
 
         if outfile:
-            cmd = self.__build_command(tool=tool, hmmfile=hmmfile, seqdb=seqdb,
-                                       outfile=outfile, curated_models=curated_models, evalue=evalue, cevalue=cevalue)
+            cmd = self.__build_command(tool=tool, hmmfile=hmmfile, seqdb=seqdb, outfile=outfile, cevalue=cevalue)
             if sys.platform == 'win32':
                 cmd = ['bash.exe', '-c', ' '.join(cmd)]
             self.__run_tool(cmd)
@@ -93,26 +92,20 @@ class Hmmer:
     def str_hsps(self):
         return '\n'.join(list(str(i) for i in self.hsps))
 
-    def __build_command(self, tool, hmmfile, seqdb, outfile, curated_models, evalue=None, cevalue=None):
+    def __build_command(self, tool, hmmfile, seqdb, outfile, cevalue=None):
         """
         tool [options] <hmmdb> <seqfile>
         """
 
         cmd = [tool, "--noali", "--max"]
 
-        if(NUM_THREADS != 0):
+        if NUM_THREADS is not 0:
             cmd.extend(["--cpu", str(NUM_THREADS)])
 
-        if curated_models and (evalue or cevalue):
-            raise ValueError("You can not set both - noise thresholds and evalue. Set either thresholds or evalue.")
-
-        if evalue:
-            cmd.extend(["-E", str(evalue)])
-            if cevalue:
-                cmd.extend(["--domE", str(cevalue)])
-
-        elif curated_models:
-            cmd.extend(["--cut_nc"])
+        if cevalue:
+            cmd.extend(["--domE", str(cevalue)])
+        else:
+            cmd.extend(["--domT", "0.0"])
 
         if sys.platform == 'win32':
             outfile = change_path_to_linux(outfile)
