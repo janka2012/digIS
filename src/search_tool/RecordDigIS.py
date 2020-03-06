@@ -2,13 +2,14 @@ from ..common.grange import Grange
 
 
 class RecordDigIS(Grange):
-    def __init__(self, genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc, score):
+    def __init__(self, genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc, score, evalue):
         self.qid = qid
         self.sid = sid
         self.qstart = qstart
         self.qend = qend
         self.acc = acc
         self.score = score
+        self.evalue = evalue
         super().__init__(genome_name, chrom, start, end, strand, genome_seq, genome_len)
 
     @classmethod
@@ -22,11 +23,12 @@ class RecordDigIS(Grange):
         strand = csv['strand']
         acc = csv['acc']
         score = csv['score']
-        return cls(genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc, score)
+        evalue = csv['evalue']
+        return cls(genome_name, chrom, genome_seq, genome_len, qid, sid, qstart, qend, start, end, strand, acc, score, evalue)
 
     @classmethod
     def from_hmmer(cls, hsp, sid, start, end, strand, genome_name, chrom, genome_seq, seq_len):
-        return cls(genome_name, chrom, genome_seq, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc, hsp.bitscore)
+        return cls(genome_name, chrom, genome_seq, seq_len, hsp.qid, sid, hsp.qstart, hsp.qend, start, end, strand, hsp.acc, hsp.dom_bitscore, hsp.dom_evalue)
 
     def should_be_merged(self, other, merge_distance):
 
@@ -64,13 +66,14 @@ class RecordDigIS(Grange):
         self.qend = max(self.qend, other.qend)
         self.acc = new_acc
         self.score = new_score
+        self.evalue = max(self.evalue, other.evalue)
 
     def to_csv(self):
-        header = ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc", "score"]
-        row = [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2), round(self.score, 2)]
+        header = ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc", "score", "evalue"]
+        row = [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2), round(self.score, 2), self.evalue]
         return header, row
 
     def __str__(self):
-        return "{}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.qstart, self.qend,
+        return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.qstart, self.qend,
                                                        self.sid, self.start,  self.end,
-                                                       self.strand, self.acc, self.score)
+                                                       self.strand, self.acc, self.score, self.evalue)
