@@ -107,18 +107,18 @@ class Classifier:
         self.similarity_all = dict_orf_is_all[(self.similarity_orf, self.similarity_is)]
 
     def __assign_similarity_level_dna(self):
-        if self.blast_is_dna.shorter_identity < 0.5:
+        if self.blast_is_dna.subject_identity < 0.5:
             similarity_is = 'weak'
-        elif self.blast_is_dna.shorter_identity < 0.7:
+        elif self.blast_is_dna.subject_identity < 0.7:
             similarity_is = 'medium'
         else:
             similarity_is = 'strong'
         return similarity_is
 
     def __assign_similarity_level_orf(self):
-        if self.blast_orf.shorter_identity < 0.25:
+        if self.blast_orf.subject_identity < 0.25:
             similarity_orf = 'weak'
-        elif self.blast_orf.shorter_identity < 0.45:
+        elif self.blast_orf.subject_identity < 0.45:
             similarity_orf = 'medium'
         else:
             similarity_orf = 'strong'
@@ -137,17 +137,26 @@ class Classifier:
 
         self.level = dict_gb_sim_all[self.genbank_annotation, self.similarity_all]
 
-    def to_csv(self, verbose=False):
+    @classmethod
+    def get_csv_header(cls, verbose=False):
         if verbose:
-            header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB',
-                      'Str_Orf', 'Str_IS']
+            header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS']
+        else:
+            header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
+        return header
+
+    def to_csv(self, verbose=False):
+        header = self.get_csv_header(verbose)
+        if verbose:
+            # header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB',
+            #           'Str_Orf', 'Str_IS']
             str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
             str_bl_orf = str(self.blast_orf) if self.blast_orf.score != 0.0 else ""
             str_bl_is = str(self.blast_is_dna) if self.blast_is_dna.score != 0.0 else ""
             row = [self.rec.genome_name, self.level, self.similarity_all, self.genbank_annotation, self.similarity_orf,
                    self.similarity_is, str(self.rec), str_gb, str_bl_orf, str_bl_is]
         else:
-            header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
+            # header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
             row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
         return header, row
 
