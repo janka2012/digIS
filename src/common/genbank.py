@@ -7,7 +7,6 @@ from Bio import SeqIO
 
 def read_gb(filename):
     genbank_dict = OrderedDict()
-    print(filename)
     if os.path.exists(filename):
         for genome in SeqIO.parse(filename, "genbank"):
             genbank_dict[genome.id] = genome.features
