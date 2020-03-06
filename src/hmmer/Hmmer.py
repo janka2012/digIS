@@ -7,7 +7,7 @@ from definitions import NUM_THREADS
 from ..common.csv_utils import write_csv
 from ..common.misc import check_if_file_exists, change_path_to_linux
 from ..common.sequence import get_sequence_record_ids
-from ..hmmer.HmmerHit import HmmerHit
+from ..hmmer.HmmerHspFlat import HmmerHspFlat
 
 
 class Hmmer:
@@ -22,8 +22,7 @@ class Hmmer:
         """
         self.hmm = ""
         self.seqfile = ""
-        self.hits = []
-        self.hsps = []
+        self.flat_hsps = []
 
     def run(self, tool, hmmfile, seqdb, outfile, cevalue=None):
 
@@ -41,8 +40,7 @@ class Hmmer:
             raise AttributeError("Output file argument is required.")
 
     def parse(self, outfile):
-        self.hits = []
-        self.hsps = []
+        self.flat_hsps = []
         new_recs = False
 
         try:
@@ -53,44 +51,24 @@ class Hmmer:
         hmmer_res = list(SearchIO.parse(outfile, 'hmmsearch3-domtab'))
         if len(hmmer_res) > 0:
             new_recs = True
-            for res in hmmer_res:
-                for hit in res.hits:
-                    self.hits.append(HmmerHit(hit, res.seq_len))
+            for query in hmmer_res:
+                for hit in query.hits:
+                    for hsp in hit.hsps:
+                        self.flat_hsps.append(HmmerHspFlat(query, hit, hsp))
 
-            for hit in self.hits:
-                self.hsps += hit.hsps
         return new_recs
 
-    def save_hmmer_output_to_csv(self, output_csv, hmmer_outfile):
-        try:
-            check_if_file_exists(hmmer_outfile)
-        except FileNotFoundError:
-            print("No hmmer output file set.")
-
-        header = ["subject_id", "subject_len", "query_id", "query_len", "seq_evalue", "seq_bitscore", "seq_bias",
-                  "dom_idx", "dom_num", "dom_cevalue", "dom_evalue", "dom_bitscore", "dom_bias", "query_start",
-                  "query_end", "subject_start", "subject_end", "subject_env_start", "subject_env_end", "acc_avg",
-                  "subject_description"]
+    def to_csv(self, output_csv=None):
+        header = []
         rows = []
-        for res in SearchIO.parse(hmmer_outfile, 'hmmsearch3-domtab'):
-            for hit in res.hits:
-                for hsp in hit.hsps:
+        for hsp in self.flat_hsps:
+            header, row = hsp.to_csv()
+            rows.append(row)
+        
+        if output_csv:
+            write_csv(rows, output_csv, header)
 
-                    row = [hit.id, hit.seq_len, res.id, res.seq_len, hit.evalue, hit.bitscore, hit.bias,
-                           hsp.domain_index, len(hit.hsps), hsp.evalue_cond, hsp.evalue, hsp.bitscore, hsp.bias,
-                           hsp.query_start+1, hsp.query_end, hsp.hit_start+1, hsp.hit_end, hsp.env_start,
-                           hsp.env_end, hsp.acc_avg, hit.description]
-
-                    rows.append(row)
-        write_csv(rows, output_csv, header)
-
-    def save_hmmer_hits_to_fasta(self, output):
-        ids = [hit.subject_id for hit in self.hits]
-        recs = get_sequence_record_ids(self.seqfile, ids)
-        SeqIO.write(recs, output, "fasta")
-
-    def str_hsps(self):
-        return '\n'.join(list(str(i) for i in self.hsps))
+        return header, rows
 
     def __build_command(self, tool, hmmfile, seqdb, outfile, cevalue=None):
         """
@@ -99,7 +77,7 @@ class Hmmer:
 
         cmd = [tool, "--noali", "--max"]
 
-        if NUM_THREADS is not 0:
+        if NUM_THREADS != 0:
             cmd.extend(["--cpu", str(NUM_THREADS)])
 
         if cevalue:
