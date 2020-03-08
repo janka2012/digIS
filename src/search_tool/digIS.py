@@ -5,6 +5,7 @@ from math import ceil, log10
 
 from ..common.gff_utils import write_gff
 from ..common.classification import classification
+from ..common.Classifier import Classifier
 from ..common.csv_utils import write_csv
 from ..common.sequence import *
 from ..hmmer.Hmmer import Hmmer
@@ -232,31 +233,26 @@ class digIS:
         id_width = ceil(log10(len(self.recs))) if len(self.recs) > 0 else 1
         indexes, records = self.__get_valid_indexes_and_records()
 
+        search_header = RecordDigIS.get_csv_header()
+        class_header = Classifier.get_csv_header()
+        csv_header = ['id', 'level'] + search_header + class_header
+
         for i, (idx, rec) in enumerate(zip(indexes, records)):
             extension_level = self.recs_attrib[idx].extension_level
             class_rec = self.recs_attrib[idx].classification
 
             id = '_'.join([rec.sid, str(i).zfill(id_width), extension_level])
-            search_header, search_row = rec.to_csv()
-            class_header, class_row = class_rec.to_csv()
-
-            header = ['id', 'level'] + search_header + class_header
-            row = [id, extension_level] + search_row + class_row
-
+            row = [id, extension_level] + rec.to_csv() + class_rec.to_csv()
             csv_row.append(row)
-            csv_header = header
+
         return csv_header, csv_row
 
     # For debug purposess only
     def export_annotated_records(self):
+        csv_header = RecordDigISAttrib.get_csv_header() + RecordDigIS.get_csv_header()
         csv_rows = []
-        csv_header = []
-
         for rec_attrib, rec in zip(self.recs_attrib, self.recs):
-            rec_attrib_header, rec_attrib_row = rec_attrib.to_csv()
-            rec_header, rec_row = rec.to_csv()
-            csv_header = rec_attrib_header + rec_header
-            csv_rows.append(rec_attrib_row + rec_row)
+            csv_rows.append(rec_attrib.to_csv() + rec.to_csv())
 
         write_csv(csv_rows, self.annotated_output, csv_header)
 

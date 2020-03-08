@@ -27,14 +27,15 @@ class HmmerHspFlat:
         self.acc = float(hsp.acc_avg)
         self.sdesc = hit.description
 
-    def to_csv(self):
-        header = ["subject_id", "subject_len", "query_id", "query_len", "seq_evalue", "seq_bitscore", "seq_bias",
+    @classmethod
+    def get_csv_header(cls):
+        return ["subject_id", "subject_len", "query_id", "query_len", "seq_evalue", "seq_bitscore", "seq_bias",
                   "dom_idx", "dom_num", "dom_cevalue", "dom_evalue", "dom_bitscore", "dom_bias", "query_start",
                   "query_end", "subject_start", "subject_end", "subject_env_start", "subject_env_end", "acc_avg",
                   "subject_description"]
 
-        row = [self.sid, self.slen, self.qid, self.qlen, self.seq_evalue, self.seq_bitscore, self.seq_bias,
+    def to_csv(self):
+        return [self.sid, self.slen, self.qid, self.qlen, self.seq_evalue, self.seq_bitscore, self.seq_bias,
                 self.dom_idx, self.dom_num, self.dom_cevalue, self.dom_evalue, self.dom_bitscore, self.dom_bias,
                 self.qstart, self.qend, self.sstart, self.send, self.sstart_env, self.send_env, self.acc, self.sdesc]
-
-        return header, row
+                

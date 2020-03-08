@@ -68,10 +68,12 @@ class RecordDigIS(Grange):
         self.score = new_score
         self.evalue = max(self.evalue, other.evalue)
 
+    @classmethod
+    def get_csv_header(cls):
+        return ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc", "score", "evalue"]
+
     def to_csv(self):
-        header = ["qid", "qstart", "qend", "sid", "sstart", "send", "strand", "acc", "score", "evalue"]
-        row = [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2), round(self.score, 2), self.evalue]
-        return header, row
+        return [self.qid, self.qstart, self.qend, self.sid, self.start, self.end, self.strand, round(self.acc, 2), round(self.score, 2), self.evalue]
 
     def __str__(self):
         return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.qid, self.qstart, self.qend,
