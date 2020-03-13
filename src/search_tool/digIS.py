@@ -32,11 +32,7 @@ class digIS:
         self.output_gff = os.path.join(self.config.output_dir, "results", str(self.genome.name) + ".gff")
         self.recs = []
         self.recs_attrib = []
-        # self.extension_level = []
-        # self.genbank_overlap = []
-        # self.matched_recs = []
         self.filter_log = []
-        # self.classifier_recs = []
 
     def __get_valid_indexes_and_records(self):
         indexes = []
@@ -89,14 +85,13 @@ class digIS:
         print("Number of records after merging: {}.".format(len(merged_records_indexes)))
 
     def merge_records(self, records_indexes):
-
         merged_records_indexes = self.__merge_records_in_distance(records_indexes)
+        merged_records_indexes = self.__remove_duplicit_records(merged_records_indexes)
         merged_records_indexes = self.__merge_overlapping_records(merged_records_indexes)
 
         return merged_records_indexes
 
     def __merge_records_in_distance(self, records_indexes):
-
         records_indexes_copy = records_indexes.copy()
         for current_record_idx in records_indexes:
             if current_record_idx in records_indexes_copy:
@@ -108,20 +103,15 @@ class digIS:
                     other_record = self.recs[other_record_idx]
                     other_record_attrib = self.recs_attrib[other_record_idx]
 
-                    if current_record.should_be_merged(other_record, self.config.max_merge_distance):
-                        spol = current_record.start < other_record.start
-                        qpol = current_record.qstart < other_record.qstart
-
-                        if (current_record.strand == '+' and spol == qpol) or (current_record.strand == '-' and spol != qpol):
-                            self.filter_log.append("{}:{}  {} merged with neighbouring element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
-                            current_record.merge(other_record, merge_type="distance")
-                            records_indexes_copy.discard(other_record_idx)
-                            other_record_attrib.status = 'merged_distance'
+                    if current_record.should_be_merged_distance(other_record, self.config.max_merge_distance):
+                        self.filter_log.append("{}:{}  {} merged with neighbouring element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
+                        current_record.merge(other_record, merge_type="distance")
+                        records_indexes_copy.discard(other_record_idx)
+                        other_record_attrib.status = 'merged_distance'
 
         return records_indexes_copy
 
     def __merge_overlapping_records(self, records_indexes):
-
         records_indexes_copy = records_indexes.copy()
 
         for current_record_idx in records_indexes:
@@ -134,22 +124,44 @@ class digIS:
                     other_record = self.recs[other_record_idx]
                     other_record_attrib = self.recs_attrib[other_record_idx]
 
-                    if current_record.get_overlap_length(other_record) > 0:
-                        self.filter_log.append("{}:{}  {} merged with overlapping element: {}".format(current_record_idx, other_record_idx, current_record, other_record))
+                    overlap_size = current_record.get_overlap_length(other_record)
+                    if overlap_size > 0:
+                        self.filter_log.append("{}:{} [{}] {} merged with overlapping element: {}".format(current_record_idx, other_record_idx, overlap_size, current_record, other_record))
                         current_record.merge(other_record, merge_type="overlap")
                         records_indexes_copy.discard(other_record_idx)
                         other_record_attrib.status = 'merged_overlap'
 
         return records_indexes_copy
 
+    def __remove_duplicit_records(self, records_indexes):
+        records_indexes_copy = records_indexes.copy()
+
+        for current_record_idx in records_indexes:
+            if current_record_idx in records_indexes_copy:
+                records_indexes_without_current_record = records_indexes_copy.copy()
+                records_indexes_without_current_record.discard(current_record_idx)
+
+                for other_record_idx in records_indexes_without_current_record:
+                    current_record = self.recs[current_record_idx]
+                    other_record = self.recs[other_record_idx]
+                    other_record_attrib = self.recs_attrib[other_record_idx]
+
+                    if other_record.is_inside(current_record, ignore_strand=True) and other_record.score <= current_record.score:
+                        self.filter_log.append("{}:{}  {} duplicit record to: {}".format(current_record_idx, other_record_idx, other_record, current_record))
+                        records_indexes_copy.discard(other_record_idx)
+                        other_record_attrib.status = 'duplicit'
+
+        return records_indexes_copy
+
+
     def seed_extension(self):
         print("Seed Extension...")
         indexes, records = self.__get_valid_indexes_and_records()
         if len(indexes) > 0:
             orf_blast_pos = Blast.get_max_blast_hits_in_range(records, BlastX, self.config.context_size_orf, self.config.isfinder_orf_db,
-                                                              min_overlap=1, positive_subject_strand_only=True)
+                                                              min_overlap=self.config.min_gb_overlap, positive_subject_strand_only=True)
             is_blast_pos = Blast.get_max_blast_hits_in_range(records, BlastN, self.config.context_size_is, self.config.isfinder_is_db,
-                                                             min_overlap=1, positive_subject_strand_only=True)
+                                                             min_overlap=self.config.min_gb_overlap, positive_subject_strand_only=True)
 
             for idx, rec, orf_pos, is_pos in zip(indexes, records, orf_blast_pos, is_blast_pos):
                 # Extension at the level of ORF
@@ -187,12 +199,13 @@ class digIS:
         cutoffs_dict = self.__load_threshold()
 
         for idx, (rec_attrib, rec) in enumerate(zip(self.recs_attrib, self.recs)):
-            model = rec.qid
-            if model in cutoffs_dict.keys():
-                score = cutoffs_dict[model]
-                if rec.score < score:
-                    rec_attrib.status = 'filtered_score'
-                    self.filter_log.append("{}: {} filtered because of the low score".format(idx, rec))
+            if rec_attrib.status == 'valid':
+                model = rec.qid
+                if model in cutoffs_dict.keys():
+                    score = cutoffs_dict[model]
+                    if rec.score < score:
+                        rec_attrib.status = 'filtered_score'
+                        self.filter_log.append("{}: {} filtered because of the low score".format(idx, rec))
 
     def __load_threshold(self):
         import os
@@ -307,7 +320,7 @@ class digIS:
         self.classification()
         if export:
             self.export()
-            self.export_annotated_records()
+            # self.export_annotated_records()
 
         # Write output log file
         with open(self.log_output, "w+") as f:
