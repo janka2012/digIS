@@ -211,7 +211,7 @@ class digIS:
         import os
         import csv
         from definitions import ROOT_DIR
-        nc_thresholds = os.path.join(ROOT_DIR, "digIS", "data", "models", "hmm", "thresholds.txt")
+        nc_thresholds = os.path.join(ROOT_DIR, "data", "models", "hmm", "thresholds.txt")
 
         with open(nc_thresholds) as tsvfile:
             cutoffs_dict = {}
