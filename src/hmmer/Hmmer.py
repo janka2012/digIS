@@ -75,7 +75,7 @@ class Hmmer:
         tool [options] <hmmdb> <seqfile>
         """
 
-        cmd = [tool, "--noali", "--max"]
+        cmd = [tool, "--noali"]
 
         if NUM_THREADS != 0:
             cmd.extend(["--cpu", str(NUM_THREADS)])
