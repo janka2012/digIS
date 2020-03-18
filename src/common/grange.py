@@ -9,6 +9,8 @@ from Bio.SeqRecord import SeqRecord
 
 class Grange:
     def __init__(self, genome_name, chrom, start, end, strand, genome_seq, genome_len, circular=True):
+        if start <= 0 or end <= 0 or start > genome_len or end > genome_len: 
+            raise ValueError("GRange: start or end position is out of the range.")
         self.genome_name = genome_name
         self.chr = chrom
         self.start = start
