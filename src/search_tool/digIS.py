@@ -311,7 +311,7 @@ class digIS:
         write_csv(csv_row, self.output_csv, csv_header)
         write_gff(csv_row, self.output_gff, csv_header)
 
-    def run(self, search=True, export=True):
+    def run(self, search=True, export=False):
         print("===== Processing of", self.genome.name, "sequence =====")
         if search:
             self.search()
@@ -324,8 +324,8 @@ class digIS:
         self.filter_by_length()
         self.classification()
         if export:
-            self.export()
-            # self.export_annotated_records()
+            # self.export()
+            self.export_annotated_records()
 
         # Write output log file
         with open(self.log_output, "w+") as f:
