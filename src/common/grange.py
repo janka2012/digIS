@@ -19,6 +19,14 @@ class Grange:
         self.circular = circular
         self.width = self.__len__()
 
+    def set_start(self, start):
+        self.start = start
+        self.width = self.__len__()
+
+    def set_end(self, end):
+        self.end = end
+        self.width = self.__len__()
+
     def get_flank_range(self, flank):
         if flank + flank + self.width > self.genome_len:
             max_flank = int((self.genome_len - self.width) / 2)

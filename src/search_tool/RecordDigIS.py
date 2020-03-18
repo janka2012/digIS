@@ -68,8 +68,8 @@ class RecordDigIS(Grange):
         elif merge_type == "overlap":
             new_score = max(self.score, other.score)
 
-        self.start = new_start
-        self.end = new_end
+        self.set_start(new_start)
+        self.set_end(new_end)
         self.qstart = min(self.qstart, other.qstart)
         self.qend = max(self.qend, other.qend)
         self.qid = '-'.join(list(set(self.qid.split('-') + other.qid.split('-'))))

@@ -86,7 +86,7 @@ class digIS:
 
     def merge_records(self, records_indexes):
         merged_records_indexes = self.__merge_records_in_distance(records_indexes)
-        merged_records_indexes = self.__remove_duplicit_records(merged_records_indexes)
+        merged_records_indexes = self.__remove_duplicit_records(merged_records_indexes, 'duplicit', 'duplicit record to')
         merged_records_indexes = self.__merge_overlapping_records(merged_records_indexes)
 
         return merged_records_indexes
@@ -133,7 +133,7 @@ class digIS:
 
         return records_indexes_copy
 
-    def __remove_duplicit_records(self, records_indexes):
+    def __remove_duplicit_records(self, records_indexes, status, log_msg):
         records_indexes_copy = records_indexes.copy()
 
         for current_record_idx in records_indexes:
@@ -147,9 +147,9 @@ class digIS:
                     other_record_attrib = self.recs_attrib[other_record_idx]
 
                     if other_record.is_inside(current_record, ignore_strand=True) and other_record.score <= current_record.score:
-                        self.filter_log.append("{}:{}  {} duplicit record to: {}".format(current_record_idx, other_record_idx, other_record, current_record))
+                        self.filter_log.append("{}:{}  {} {}: {}".format(current_record_idx, other_record_idx, log_msg, other_record, current_record))
                         records_indexes_copy.discard(other_record_idx)
-                        other_record_attrib.status = 'duplicit'
+                        other_record_attrib.status = status
 
         return records_indexes_copy
 
@@ -168,16 +168,20 @@ class digIS:
                 orf_start, orf_end = orf_pos
                 if not (orf_start == 0 and orf_end == 0):
                     if orf_start < rec.start or orf_end > rec.end:
-                        rec.start = min(rec.start, orf_start)
-                        rec.end = max(rec.end, orf_end)
+                        rec.set_start(min(rec.start, orf_start))
+                        rec.set_end(max(rec.end, orf_end))
                         self.recs_attrib[idx].extension_level = 'orf'
                 # Extension at the level of IS
                 is_start, is_end = is_pos
                 if not (is_start == 0 and is_end == 0):
                     if is_start < rec.start or is_end > rec.end:
-                        rec.start = min(rec.start, is_start)
-                        rec.end = max(rec.end, is_end)
+                        rec.set_start(min(rec.start, is_start))
+                        rec.set_end(max(rec.end, is_end))
                         self.recs_attrib[idx].extension_level = 'is'
+
+    def remove_duplicit_records_after_extension(self):
+        indexes, _records = self.__get_valid_indexes_and_records()
+        self.__remove_duplicit_records(set(indexes), 'duplicit_extension', 'duplicit record after extension')
 
     def filter_by_length(self):
         print("Filtering hits shorter or equal than {} bp".format(self.config.min_hit_length))
@@ -316,6 +320,7 @@ class digIS:
         self.merge()
         self.seed_extension()
         self.filter_by_score()
+        self.remove_duplicit_records_after_extension()
         self.filter_by_length()
         self.classification()
         if export:
