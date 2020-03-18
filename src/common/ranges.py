@@ -41,7 +41,7 @@ def find_overlaps(query, subject, ignore_strand=False, min_overlap=None, min_que
 
 def get_unique_ranges(ranges, min_overlap=1):
 
-    hits = find_overlaps(ranges, ranges, ignore_strand=False, min_overlap=min_overlap)
+    hits = find_overlaps(ranges, ranges, ignore_strand=False, min_overlap=min_overlap, allow_query_fragments=True)
 
     unique_ranges = set(list(range(len(ranges))))
     for i, j in hits.match:
