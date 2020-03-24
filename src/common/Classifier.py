@@ -1,6 +1,6 @@
 import re
 
-from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES
 
 
 class Classifier:
@@ -54,9 +54,13 @@ class Classifier:
         self.genbank_annotation = genbank_annotation
 
     def __no_genbank_annotation(self):
-        if len(self.genbank_recs) == 0:
-            return True
-        return False
+        for rec in self.genbank_recs:
+            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots = gb_annots_product + gb_annots_note
+
+            if len(gb_annots) == 0 or "functional annotation will be submitter" in ",".join(gb_annots):
+                return True
+            return False
 
     def __is_annotated_IS(self):
         out = False
@@ -65,7 +69,8 @@ class Classifier:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
             if rec.type == 'mobile_element' or \
-                    rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS):
+                    rec.type in ['CDS', 'gene'] and \
+                    any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
                 out = True
         return out
 
