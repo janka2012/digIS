@@ -58,7 +58,7 @@ class Classifier:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
-            if len(gb_annots) == 0 or "functional annotation will be submitter" in ",".join(gb_annots):
+            if len(gb_annots) == 0 or "functional annotations will be submitted" in ",".join(gb_annots):
                 return True
             return False
 
