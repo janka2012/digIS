@@ -68,7 +68,8 @@ class Classifier:
         for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
-            if rec.type == 'mobile_element' or \
+
+            if rec.type in ['mobile_element', 'mobile_element_type'] or \
                     rec.type in ['CDS', 'gene'] and \
                     any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
                 out = True
