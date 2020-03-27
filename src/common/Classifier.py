@@ -54,13 +54,18 @@ class Classifier:
         self.genbank_annotation = genbank_annotation
 
     def __no_genbank_annotation(self):
+        out = True
+        if len(self.genbank_recs) == 0:
+            return out
+
         for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
-            if len(gb_annots) == 0 or "functional annotations will be submitted" in ",".join(gb_annots):
-                return True
-            return False
+            if "functional annotations will be submitted" not in ",".join(gb_annots):
+                out = False
+                break
+        return out
 
     def __is_annotated_IS(self):
         out = False
@@ -70,7 +75,7 @@ class Classifier:
             gb_annots = gb_annots_product + gb_annots_note
 
             if rec.type in ['mobile_element', 'mobile_element_type'] or \
-                    rec.type in ['CDS', 'gene'] and \
+                    rec.type in ['CDS', 'gene', 'misc_feature'] and \
                     any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
                 out = True
         return out
