@@ -25,8 +25,8 @@ BLASTX_EVALUE = 0.001
 
 NUM_THREADS = 0
 
-IS_GB_KEYWORDS = ['transposase', 'resolvase', 'recombinase', 'insertion element', 'mobile element', 'transposon',
-                  'transposable element', 'DDE']
+IS_GB_KEYWORDS = ['transposase', 'resolvase', 'recombinase', 'recombination/resolution',
+                  'insertion element', 'mobile element', 'transposon', 'transposable element', 'DDE']
 
 IS_FAMILIES_NAMES = ['IS1', 'IS110', 'IS1182', 'IS1380', 'IS1595', 'IS1634', 'IS200', 'IS605', 'IS21', 'IS256',
                      'IS3', 'IS30', 'IS4', 'IS481', 'IS5', 'IS6', 'IS66', 'IS607', 'IS630', 'IS701', 'IS91',
