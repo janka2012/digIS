@@ -55,8 +55,8 @@ class Grange:
 
     def remap_offsets(self, left_offset, right_offset):
         if self.strand == "+":
-            self.end = self.start + right_offset
-            self.start = self.start + left_offset
+            self.end = self.start + right_offset - 1
+            self.start = self.start + left_offset - 1
             if self.start > self.genome_len:
                 self.start = self.start - self.genome_len if self.circular else self.genome_len
             if self.end > self.genome_len:
