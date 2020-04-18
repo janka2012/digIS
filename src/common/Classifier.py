@@ -1,6 +1,6 @@
 import re
 
-from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES
 
 
 class Classifier:
@@ -54,9 +54,18 @@ class Classifier:
         self.genbank_annotation = genbank_annotation
 
     def __no_genbank_annotation(self):
+        out = True
         if len(self.genbank_recs) == 0:
-            return True
-        return False
+            return out
+
+        for rec in self.genbank_recs:
+            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots = gb_annots_product + gb_annots_note
+
+            if "functional annotations will be submitted" not in ",".join(gb_annots):
+                out = False
+                break
+        return out
 
     def __is_annotated_IS(self):
         out = False
@@ -64,8 +73,10 @@ class Classifier:
         for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
-            if rec.type == 'mobile_element' or \
-                    rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS):
+
+            if rec.type in ['mobile_element', 'mobile_element_type'] or \
+                    rec.type in ['CDS', 'gene', 'misc_feature'] and \
+                    any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
                 out = True
         return out
 
@@ -107,18 +118,18 @@ class Classifier:
         self.similarity_all = dict_orf_is_all[(self.similarity_orf, self.similarity_is)]
 
     def __assign_similarity_level_dna(self):
-        if self.blast_is_dna.shorter_identity < 0.5:
+        if self.blast_is_dna.subject_identity < 0.5:
             similarity_is = 'weak'
-        elif self.blast_is_dna.shorter_identity < 0.7:
+        elif self.blast_is_dna.subject_identity < 0.7:
             similarity_is = 'medium'
         else:
             similarity_is = 'strong'
         return similarity_is
 
     def __assign_similarity_level_orf(self):
-        if self.blast_orf.shorter_identity < 0.25:
+        if self.blast_orf.subject_identity < 0.25:
             similarity_orf = 'weak'
-        elif self.blast_orf.shorter_identity < 0.45:
+        elif self.blast_orf.subject_identity < 0.45:
             similarity_orf = 'medium'
         else:
             similarity_orf = 'strong'
@@ -137,19 +148,26 @@ class Classifier:
 
         self.level = dict_gb_sim_all[self.genbank_annotation, self.similarity_all]
 
+    @classmethod
+    def get_csv_header(cls, verbose=False):
+        if verbose:
+            header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS']
+        else:
+            header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
+        return header
+
     def to_csv(self, verbose=False):
         if verbose:
-            header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB',
-                      'Str_Orf', 'Str_IS']
-            str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
+            str_gb = ""
+            if self.genbank_recs is not None:
+                str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
             str_bl_orf = str(self.blast_orf) if self.blast_orf.score != 0.0 else ""
             str_bl_is = str(self.blast_is_dna) if self.blast_is_dna.score != 0.0 else ""
             row = [self.rec.genome_name, self.level, self.similarity_all, self.genbank_annotation, self.similarity_orf,
                    self.similarity_is, str(self.rec), str_gb, str_bl_orf, str_bl_is]
         else:
-            header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
             row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
-        return header, row
+        return row
 
     def __eq__(self, other):
         return self.level == other.level

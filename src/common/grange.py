@@ -9,6 +9,8 @@ from Bio.SeqRecord import SeqRecord
 
 class Grange:
     def __init__(self, genome_name, chrom, start, end, strand, genome_seq, genome_len, circular=True):
+        if start <= 0 or end <= 0 or start > genome_len or end > genome_len: 
+            raise ValueError("GRange: start or end position is out of the range.")
         self.genome_name = genome_name
         self.chr = chrom
         self.start = start
@@ -17,6 +19,14 @@ class Grange:
         self.genome_seq = genome_seq
         self.genome_len = genome_len
         self.circular = circular
+        self.width = self.__len__()
+
+    def set_start(self, start):
+        self.start = start
+        self.width = self.__len__()
+
+    def set_end(self, end):
+        self.end = end
         self.width = self.__len__()
 
     def get_flank_range(self, flank):
@@ -45,8 +55,8 @@ class Grange:
 
     def remap_offsets(self, left_offset, right_offset):
         if self.strand == "+":
-            self.end = self.start + right_offset
-            self.start = self.start + left_offset
+            self.end = self.start + right_offset - 1
+            self.start = self.start + left_offset - 1
             if self.start > self.genome_len:
                 self.start = self.start - self.genome_len if self.circular else self.genome_len
             if self.end > self.genome_len:
