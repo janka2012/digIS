@@ -15,7 +15,7 @@ def read_csv(filename, delimiter=';'):
     return out_list
 
 
-def write_csv(rows, filename, header, delimiter=";"):
+def write_csv(rows, filename, header, delimiter=","):
     if len(rows) > 0 and len(header) != len(rows[0]):
         raise ValueError("Number of elements in header and in row to write is not same.")\
 
