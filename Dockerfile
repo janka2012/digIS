@@ -1,8 +1,8 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 RUN apt-get update && \
-    apt-get install -y hmmer=3.1b2+dfsg-5ubuntu1 \
-    ncbi-blast+=2.6.0-1 \
+    apt-get install -y hmmer \
+    ncbi-blast+ \
     python3.7 \
     python3-pip
 
