@@ -14,12 +14,19 @@
 <!---toc end-->
 
 ## Overview
-digIS is a command-line tool for detection of insertion sequences in prokaryotic genomes. It was developed in Python3 and utilizes several external tools such as HMMER v3.1, BLAST, and Biopython library. As an input, digIS accepts genomic sequences (e.g. contigs, fully assembled prokaryotic genomes or other DNA sequences) in the FASTA format. Optionally, the user can also provide a GenBank annotation file for a given input sequence(s). This annotation is later used to improve classification of identified IS elements.
+digIS is a command-line tool for detection of insertion sequences in prokaryotic genomes. It was developed in Python3 and utilizes several external tools such as HMMER v3.3, BLAST, and Biopython library. As an input, digIS accepts genomic sequences (e.g. contigs, fully assembled prokaryotic genomes or other DNA sequences) in the FASTA format. Optionally, the user can also provide a GenBank annotation file for a given input sequence(s). This annotation is later used to improve classification of identified IS elements.
 
-digIS search pipeline operates in following steps: (1) the whole input DNA sequence is translated into protein sequences (all possible six frames), (2) the protein sequences are searched using manually curated pHMM models and thus the seeds of putative IS elements are identified, (3) the seeds are extended according to sequence similarity with known IS elements in ISFInder database, (4) extended seeds are classified based on sequence similarity and optionally using GenBank annotations to help assess their quality, (5) finally, the classified outputs are reported in CSV and GFF3 format.
+The digIS search pipeline operates in the following steps:
+1. The whole input nucleic acid sequence is translated into amino acid sequences (all six frames).
+2. The translated sequences are searched using manually curated pHMMs.
+3. The seeds are filtered by domain e-value, and those that overlap or follow each other within a certain distance are merged.
+4. The seeds are extended according to sequence similarity with known IS elements in the ISFinder database.
+5. Extended seeds are filtered by noise cutoff score and length, and duplicated hits, corresponding to the same IS element, are removed.
+6. Remaining hits are classified based on sequence similarity and GenBank annotation (if available) to help assess their quality.
+7. Finally, the classified outputs are reported in the CSV and GFF3 format.
 
 ## Requirements
-- HMMER 3.1b2 or higher, download the latest version from http://hmmer.org/download.html
+- HMMER 3.3 or higher, download the latest version from http://hmmer.org/download.html
 - ncbi-blast+ v 2.6.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 - Python3 (Biopython 1.73 or higher)
 
@@ -37,6 +44,8 @@ sudo apt install python3-pip
 
 # download Biopython
 pip3 install biopython
+pip3 install bcbio-gff
+pip3 install numpy
 ```
 
 ### Download digIS version from github repository
@@ -122,8 +131,6 @@ digIS stores all results in output directory you specify by using `-o` option. T
 For a given input (multi)fasta file digIS generates three files with results: CSV file, GFF3 file and file with summary statistics.
 
 #### CSV output
-to se týká fáze extension, která může skončit na úrovni IS, Tpase nebo domain. Tato klasifikace se pak provádí už s hotovým výstupem (rozšířeným seedem) bez ohledu na úroveň jeho rozšíření
-
 * `id`: unique record id
 * `level`:  Extension level, possible values: IS, ORF, domain.
 * `qid`: name of the query profile
