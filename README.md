@@ -42,7 +42,7 @@ sudo apt-get install ncbi-blast+
 sudo apt-get install python3.7
 sudo apt install python3-pip
 
-# download Biopython
+# install Biopython, bcbio-gff, and numpy packages
 pip3 install biopython
 pip3 install bcbio-gff
 pip3 install numpy
