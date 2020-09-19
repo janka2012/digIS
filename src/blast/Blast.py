@@ -87,6 +87,28 @@ class Blast(ABC):
         return bl_bhits
 
     @staticmethod
+    def get_best_blast_hits_in_full_range(recs, search_engine, flank, database, min_overlap, positive_subject_strand_only):
+
+        seq_recs, seq_ranges, seq_original_ranges = prepare_flank_sequences(recs, flank)
+
+        # Do BLAST
+        bl = search_engine.from_seqrec(seq_recs, database)
+        bl.search_database()
+        bl.parse()
+
+        # Get best hits in original sequence range
+        bl_bhits = []
+        for i, query in enumerate(bl.query_hits):
+            new_seq_ranges = (0, seq_ranges[i][1])
+            bl_bhit = query.get_best_hit(new_seq_ranges, min_overlap, positive_subject_strand_only)
+            seq_original_ranges[i].remap_offsets(bl_bhit.query_start, bl_bhit.query_end)
+            bl_bhit.query_start = seq_original_ranges[i].start
+            bl_bhit.query_end = seq_original_ranges[i].end
+            bl_bhits.append(bl_bhit)
+
+        return bl_bhits
+
+    @staticmethod
     def get_max_blast_hits_in_range(recs, search_engine, flank, database, min_overlap, positive_subject_strand_only):
 
         seq_recs, seq_ranges, seq_original_ranges = prepare_flank_sequences(recs, flank)
