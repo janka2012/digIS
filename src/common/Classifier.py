@@ -59,7 +59,7 @@ class Classifier:
             return out
 
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
             if "functional annotations will be submitted" not in ",".join(gb_annots):
@@ -71,10 +71,9 @@ class Classifier:
         out = False
 
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
-
-            if "incomplete" in ",".join(gb_annots):
+            if is_pseudo:
                 out = False
             elif (rec.type in ['mobile_element', 'mobile_element_type'] or rec.type in ['CDS', 'gene', 'misc_feature']) \
                     and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
@@ -88,7 +87,7 @@ class Classifier:
         hp_all_length = 0
         other_all_length = 0
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
             overlap_length = rec.get_overlap_length(self.rec)
             if rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
@@ -97,7 +96,7 @@ class Classifier:
                 hp_all_length += overlap_length
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
                 hp_all_length += overlap_length
-            elif "incomplete" in ",".join(gb_annots):
+            elif is_pseudo:
                 other_all_length += overlap_length
             else:
                 other_all_length += overlap_length
@@ -112,12 +111,15 @@ class Classifier:
     def __get_genbank_annotations(self, gb_qualifiers):
         gb_annots_product = []
         gb_annots_note = []
+        is_pseudo = False
         if 'product' in gb_qualifiers:
             gb_annots_product = list(map(str.lower, gb_qualifiers['product']))
         if 'note' in gb_qualifiers:
             gb_annots_note = list(map(str.lower, gb_qualifiers['note']))
+        if 'pseudo' in gb_qualifiers:
+           is_pseudo = True
 
-        return gb_annots_product, gb_annots_note
+        return gb_annots_product, gb_annots_note, is_pseudo
 
     def __assign_overall_similarity_with_isfinderdb(self):
         self.similarity_is = self.__assign_similarity_level_dna()
