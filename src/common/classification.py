@@ -21,8 +21,8 @@ def classification(recs, gb_recs, context_size_orf, context_size_is, min_gb_over
     classification_recs = []
 
     if recs:
-        orf_blast_hits = Blast.get_best_blast_hits_in_range(recs, BlastX, context_size_orf, isfinder_orf_db, min_overlap=min_gb_overlap, positive_subject_strand_only=True)
-        is_dna_blast_hits = Blast.get_best_blast_hits_in_range(recs, BlastN, context_size_is, isfinder_is_db, min_overlap=min_gb_overlap, positive_subject_strand_only=True)
+        orf_blast_hits = Blast.get_best_blast_hits_in_range(recs, BlastX, context_size_orf, isfinder_orf_db, min_overlap=min_gb_overlap, positive_subject_strand_only=False)
+        is_dna_blast_hits = Blast.get_best_blast_hits_in_range(recs, BlastN, context_size_is, isfinder_is_db, min_overlap=min_gb_overlap, positive_subject_strand_only=False)
         if gb_recs is not None:
             ds_genbank_recs = get_recs_genbank_overlap_map(recs, gb_recs, min_gb_overlap, ignore_strand=True)
 
