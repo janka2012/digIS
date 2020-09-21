@@ -33,8 +33,9 @@ class Classifier:
         for i, ref_rec in enumerate(self.genbank_recs):
             discard = False
             if ref_rec.type == 'gene':
-                for rec in self.genbank_recs:
+                for j, rec in enumerate(self.genbank_recs):
                     if rec.type == 'CDS' and rec.start == ref_rec.start and rec.end == ref_rec.end:
+                        self.genbank_recs[j].qualifiers.update(ref_rec.qualifiers)
                         discard = True
             if not discard:
                 out_idx.append(i)
@@ -59,7 +60,7 @@ class Classifier:
             return out
 
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, _, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
             if "functional annotations will be submitted" not in ",".join(gb_annots):
@@ -71,15 +72,16 @@ class Classifier:
         out = False
 
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, _, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
-            if is_pseudo:
+
+            if is_pseudo and "incomplete" in ",".join(gb_annots_note):
                 out = False
             elif (rec.type in ['mobile_element', 'mobile_element_type'] or rec.type in ['CDS', 'gene', 'misc_feature']) \
                     and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
                 out = True
             elif (rec.type in ['mobile_element', 'mobile_element_type'] or rec.type in ['CDS', 'gene', 'misc_feature']) \
-                    and 'integrase' in ",".join(gb_annots) and self.blast_orf.subject_identity >= 0.9:
+                    and 'integrase' in ",".join(gb_annots) and (self.blast_orf.subject_identity >= 0.9 or self.blast_is_dna.subject_identity >= 0.9):
                 out = True
         return out
 
@@ -87,23 +89,29 @@ class Classifier:
         hp_all_length = 0
         other_all_length = 0
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, gb_annots_pseudogene, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
             overlap_length = rec.get_overlap_length(self.rec)
+
             if rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
                 hp_all_length += overlap_length
             elif re.match(r'DUF\d+', ",".join(gb_annots_product), re.M | re.I):
                 hp_all_length += overlap_length
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
                 hp_all_length += overlap_length
-            elif is_pseudo:
+            elif is_pseudo and "incomplete" in ",".join(gb_annots_note) and \
+                    (rec.type in ['mobile_element', 'mobile_element_type'] or
+                    any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES) or
+                    'integrase' in ",".join(gb_annots) and (self.blast_orf.subject_identity >= 0.9 or self.blast_is_dna.subject_identity >= 0.9)):
+                hp_all_length += overlap_length
+            elif 'unknown' in gb_annots_pseudogene:
                 other_all_length += overlap_length
             else:
                 other_all_length += overlap_length
 
         hp_all_coverage = 0
         if hp_all_length > 0:
-            hp_all_coverage = self.rec.width/hp_all_length
+            hp_all_coverage = hp_all_length/self.rec.width
 
         out = True if hp_all_coverage >= 0.50 else False
         return out
@@ -111,15 +119,18 @@ class Classifier:
     def __get_genbank_annotations(self, gb_qualifiers):
         gb_annots_product = []
         gb_annots_note = []
+        gb_annots_pseudogene = []
         is_pseudo = False
         if 'product' in gb_qualifiers:
             gb_annots_product = list(map(str.lower, gb_qualifiers['product']))
         if 'note' in gb_qualifiers:
             gb_annots_note = list(map(str.lower, gb_qualifiers['note']))
         if 'pseudo' in gb_qualifiers:
-           is_pseudo = True
+            is_pseudo = True
+        if 'pseudogene' in gb_qualifiers:
+            gb_annots_note = list(map(str.lower, gb_qualifiers['pseudogene']))
 
-        return gb_annots_product, gb_annots_note, is_pseudo
+        return gb_annots_product, gb_annots_note, gb_annots_pseudogene, is_pseudo
 
     def __assign_overall_similarity_with_isfinderdb(self):
         self.similarity_is = self.__assign_similarity_level_dna()
