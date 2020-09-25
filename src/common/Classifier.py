@@ -105,7 +105,8 @@ class Classifier:
             else:
                 other_all_length += overlap_length
 
-        if (is_all_length > 0) and (is_all_length >= other_all_length):
+        if (is_all_length > 0) and (is_all_length >= other_all_length) \
+            or (self.blast_orf.subject_identity >= 0.9 and self.blast_is_dna.subject_identity >= 0.9):
             out = 'is_related' 
         elif (other_all_length > 0) and (other_all_length >= is_all_length):
             out = 'other_record' 
