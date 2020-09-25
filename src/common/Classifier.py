@@ -1,6 +1,6 @@
 import re
 
-from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES, INTRAFAMILY_ORF_SIM_THRESHOLD, INTERFAMILY_ORF_SIM_THRESHOLD
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES, INTRAFAMILY_ORF_SIM_THRESHOLD, INTERFAMILY_ORF_SIM_THRESHOLD, NEUTRAL_GB_KEYWORDS
 
 
 class Classifier:
@@ -46,12 +46,8 @@ class Classifier:
     def __assign_genbank_annotation(self):
         if self.__no_genbank_annotation():
             genbank_annotation = 'no'
-        elif self.__is_annotated_IS():
-            genbank_annotation = 'is_related'
-        elif self.__is_hypotetical_IS():
-            genbank_annotation = 'no'
         else:
-            genbank_annotation = 'other_record'
+            genbank_annotation = self.__classify_based_on_annotation()
         self.genbank_annotation = genbank_annotation
 
     def __no_genbank_annotation(self):
@@ -68,52 +64,54 @@ class Classifier:
                 break
         return out
 
-    def __is_annotated_IS(self):
-        out = False
-
-        for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note, _, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
-            gb_annots = gb_annots_product + gb_annots_note
-
-            if is_pseudo and "incomplete" in ",".join(gb_annots_note):
-                out = False
-            elif (rec.type in ['mobile_element', 'mobile_element_type'] or rec.type in ['CDS', 'gene', 'misc_feature']) \
-                    and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
-                out = True
-            elif (rec.type in ['mobile_element', 'mobile_element_type'] or rec.type in ['CDS', 'gene', 'misc_feature']) \
-                    and 'integrase' in ",".join(gb_annots) and (self.blast_orf.subject_identity >= 0.9 or self.blast_is_dna.subject_identity >= 0.9):
-                out = True
-        return out
-
-    def __is_hypotetical_IS(self):
+    def __classify_based_on_annotation(self):
+        is_all_length = 0
         hp_all_length = 0
         other_all_length = 0
         for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note, gb_annots_pseudogene, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
-            overlap_length = rec.get_overlap_length(self.rec)
+            overlap_length = rec.get_overlap_length(self.rec, ignore_strand=True)
 
-            if rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
+            if rec.type in ['mobile_element', 'mobile_element_type']:
+                if "truncated" in ",".join(gb_annots_note):
+                    hp_all_length += overlap_length
+                else:
+                    is_all_length += overlap_length
+            elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
+                and any(annot.lower() in ",".join(gb_annots) for annot in NEUTRAL_GB_KEYWORDS):
+                pass
+            elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
+                and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
+                if is_pseudo and "incomplete" in ",".join(gb_annots_note):
+                    hp_all_length += overlap_length
+                else:
+                    is_all_length += overlap_length
+            elif rec.type in ['repeat_region']:
+                pass
+            elif rec.type in ['CDS', 'gene', 'misc_feature'] \
+                and 'integrase' in ",".join(gb_annots) \
+                and (self.blast_orf.subject_identity >= 0.9 or self.blast_is_dna.subject_identity >= 0.9):
+                    is_all_length += overlap_length
+            elif rec.type in ['CDS', 'gene'] \
+                and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
                 hp_all_length += overlap_length
             elif re.match(r'DUF\d+', ",".join(gb_annots_product), re.M | re.I):
                 hp_all_length += overlap_length
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
                 hp_all_length += overlap_length
-            elif is_pseudo and "incomplete" in ",".join(gb_annots_note) and \
-                    (rec.type in ['mobile_element', 'mobile_element_type'] or
-                    any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES) or
-                    'integrase' in ",".join(gb_annots) and (self.blast_orf.subject_identity >= 0.9 or self.blast_is_dna.subject_identity >= 0.9)):
-                hp_all_length += overlap_length
             elif 'unknown' in gb_annots_pseudogene:
-                other_all_length += overlap_length
+                hp_all_length += overlap_length
             else:
                 other_all_length += overlap_length
 
-        hp_all_coverage = 0
-        if hp_all_length > 0:
-            hp_all_coverage = hp_all_length/self.rec.width
+        if (is_all_length > 0) and (is_all_length >= other_all_length):
+            out = 'is_related' 
+        elif (other_all_length > 0) and (other_all_length >= is_all_length):
+            out = 'other_record' 
+        else:
+            out = 'no'
 
-        out = True if hp_all_coverage >= 0.50 else False
         return out
 
     def __get_genbank_annotations(self, gb_qualifiers):
