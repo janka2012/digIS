@@ -66,7 +66,6 @@ class Classifier:
 
     def __classify_based_on_annotation(self):
         is_all_length = 0
-        hp_all_length = 0
         other_all_length = 0
         for rec in self.genbank_recs:
             gb_annots_product, gb_annots_note, gb_annots_pseudogene, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
@@ -75,7 +74,7 @@ class Classifier:
 
             if rec.type in ['mobile_element', 'mobile_element_type']:
                 if "truncated" in ",".join(gb_annots_note):
-                    hp_all_length += overlap_length
+                    pass
                 else:
                     is_all_length += overlap_length
             elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
@@ -84,7 +83,7 @@ class Classifier:
             elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
                 and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
                 if is_pseudo and "incomplete" in ",".join(gb_annots_note):
-                    hp_all_length += overlap_length
+                    pass
                 else:
                     is_all_length += overlap_length
             elif rec.type in ['repeat_region']:
@@ -95,13 +94,13 @@ class Classifier:
                     is_all_length += overlap_length
             elif rec.type in ['CDS', 'gene'] \
                 and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
-                hp_all_length += overlap_length
+                pass
             elif re.match(r'DUF\d+', ",".join(gb_annots_product), re.M | re.I):
-                hp_all_length += overlap_length
+                pass
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
-                hp_all_length += overlap_length
+                pass
             elif 'unknown' in gb_annots_pseudogene:
-                hp_all_length += overlap_length
+                pass
             else:
                 other_all_length += overlap_length
 
@@ -157,7 +156,7 @@ class Classifier:
     @classmethod
     def get_csv_header(cls, verbose=False):
         if verbose:
-            header = ['Genome', 'Level', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS', 'kept']
+            header = ['Genome', 'SeqID', 'Level', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS', 'kept']
         else:
             header = ["ORF_sim", "IS_sim", "GenBank_class"]
         return header
@@ -169,7 +168,7 @@ class Classifier:
                 str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
             str_bl_orf = str(self.blast_orf) if self.blast_orf.score != 0.0 else ""
             str_bl_is = str(self.blast_is_dna) if self.blast_is_dna.score != 0.0 else ""
-            row = [self.rec.genome_name, self.level, self.genbank_annotation, self.similarity_orf,
+            row = [self.rec.genome_name, self.rec.sid, self.level, self.genbank_annotation, self.similarity_orf,
                    self.similarity_is, str(self.rec), str_gb, str_bl_orf, str_bl_is, self.kept]
         else:
             row = [self.similarity_orf, self.similarity_is, self.genbank_annotation]
