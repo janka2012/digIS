@@ -1,8 +1,4 @@
-import shutil
-from copy import copy
-from copy import deepcopy
 from math import ceil, log10
-
 from ..common.gff_utils import write_gff
 from ..common.classification import classification
 from ..common.Classifier import Classifier
