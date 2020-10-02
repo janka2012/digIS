@@ -1,6 +1,6 @@
 import re
 
-from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES, INTRAFAMILY_ORF_SIM_THRESHOLD, INTERFAMILY_ORF_SIM_THRESHOLD, NEUTRAL_GB_KEYWORDS
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES, IS_SUBFAMILIES_NAMES, INTRAFAMILY_ORF_SIM_THRESHOLD, INTERFAMILY_ORF_SIM_THRESHOLD, INTRAFAMILY_DNA_SIM_THRESHOLD,  NEUTRAL_GB_KEYWORDS
 
 
 class Classifier:
@@ -81,16 +81,15 @@ class Classifier:
                 and any(annot.lower() in ",".join(gb_annots) for annot in NEUTRAL_GB_KEYWORDS):
                 pass
             elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
-                and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
+                and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES + IS_SUBFAMILIES_NAMES):
                 if is_pseudo and "incomplete" in ",".join(gb_annots_note):
                     pass
                 else:
                     is_all_length += overlap_length
             elif rec.type in ['repeat_region']:
                 pass
-            elif rec.type in ['CDS', 'gene', 'misc_feature'] \
-                and 'integrase' in ",".join(gb_annots) \
-                and (self.blast_orf.subject_identity >= 0.9 or self.blast_is_dna.subject_identity >= 0.9):
+            elif rec.type in ['CDS', 'gene', 'misc_feature'] and 'integrase' in ",".join(gb_annots):
+                if self.blast_orf.subject_identity >= INTRAFAMILY_ORF_SIM_THRESHOLD or self.blast_is_dna.subject_identity >= INTRAFAMILY_DNA_SIM_THRESHOLD:
                     is_all_length += overlap_length
             elif rec.type in ['CDS', 'gene'] \
                 and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
@@ -104,10 +103,9 @@ class Classifier:
             else:
                 other_all_length += overlap_length
 
-        if (is_all_length > 0) and (is_all_length >= other_all_length) \
-            or (self.blast_orf.subject_identity >= 0.9 and self.blast_is_dna.subject_identity >= 0.9):
+        if (is_all_length >= 100) or (self.blast_orf.subject_identity >= 0.9 and self.blast_is_dna.subject_identity >= 0.9):
             out = 'is_related' 
-        elif (other_all_length > 0) and (other_all_length >= is_all_length):
+        elif other_all_length >= 100:
             out = 'other_record' 
         else:
             out = 'no'
