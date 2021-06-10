@@ -16,6 +16,7 @@
 ## Overview
 digIS is a command-line tool developed in Python. It utilizes several external tools such as BLAST, HMMER, and Biopython library. As an input, digIS accepts contigs in FASTA format. Optionally, the user can provide a GenBank annotation file for a given input sequence(s). This annotation is later used to improve the classification of identified IS elements.
 
+
 The digIS search pipeline operates in the following steps:
 1. The whole input nucleic acid sequence is translated into amino acid sequences (all six frames).
 2. The translated sequences are searched using manually curated pHMMs.
