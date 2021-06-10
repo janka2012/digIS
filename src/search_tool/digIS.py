@@ -1,8 +1,4 @@
-import shutil
-from copy import copy
-from copy import deepcopy
 from math import ceil, log10
-
 from ..common.gff_utils import write_gff
 from ..common.classification import classification
 from ..common.Classifier import Classifier
@@ -246,7 +242,6 @@ class digIS:
 
     def export_records(self):
         csv_row = []
-        csv_header = ["id", "level", "qid", "sid", "qstart", "qend", "sstart", "send", "strand", "acc"]
         id_width = ceil(log10(len(self.recs))) if len(self.recs) > 0 else 1
         indexes, records = self.__get_valid_indexes_and_records()
 

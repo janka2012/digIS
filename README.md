@@ -14,21 +14,23 @@
 <!---toc end-->
 
 ## Overview
-digIS is a command-line tool for detection of insertion sequences in prokaryotic genomes. It was developed in Python3 and utilizes several external tools such as HMMER v3.3, BLAST, and Biopython library. As an input, digIS accepts genomic sequences (e.g. contigs, fully assembled prokaryotic genomes or other DNA sequences) in the FASTA format. Optionally, the user can also provide a GenBank annotation file for a given input sequence(s). This annotation is later used to improve classification of identified IS elements.
+digIS is a command-line tool developed in Python. It utilizes several external tools such as BLAST, HMMER, and Biopython library. As an input, digIS accepts contigs in FASTA format. Optionally, the user can provide a GenBank annotation file for a given input sequence(s). This annotation is later used to improve the classification of identified IS elements.
+
 
 The digIS search pipeline operates in the following steps:
 1. The whole input nucleic acid sequence is translated into amino acid sequences (all six frames).
 2. The translated sequences are searched using manually curated pHMMs.
-3. The seeds are filtered by domain e-value, and those that overlap or follow each other within a certain distance are merged.
-4. The seeds are extended according to sequence similarity with known IS elements in the ISFinder database.
-5. Extended seeds are filtered by noise cutoff score and length, and duplicated hits, corresponding to the same IS element, are removed.
-6. Remaining hits are classified based on sequence similarity and GenBank annotation (if available) to help assess their quality.
+3. Found hits, referred to as seeds, are filtered by domain bit score and e-value. Those that overlap or follow one another within a certain distance are merged.
+4. Each seed is matched against the database of known IS elements (ISfinder) and its genomic positions are extended according to the best hit.
+5. Extended seeds are filtered by noise cutoff score and length. Duplicates, corresponding to the same IS element, are removed.
+6. Remaining extended seeds are classified based on sequence similarity and GenBank annotation (if available) to assess their quality.
 7. Finally, the classified outputs are reported in the CSV and GFF3 format.
 
 ## Requirements
 - HMMER 3.3 or higher, download the latest version from http://hmmer.org/download.html
 - ncbi-blast+ v 2.6.1 or higher, download the latest version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
-- Python3 (Biopython 1.73 or higher)
+- Python3
+- Biopython 1.73 or higher
 
 ## Installation
 
@@ -119,9 +121,9 @@ sh digis_docker_wrapper.sh -i data/test_data/NC_002608.fasta -g data/test_data/N
 
 ### digIS output directory structure
 digIS stores all results in output directory you specify by using `-o` option. The default output directory name is set to `digIS_output`. The output directory has following structure:
-* `pep`: translated protein sequences of the input genomic sequences
 * `hmmer`: results from hmmer and phmmer search, separate file for each sequence in input (multi)fasta file 
 * `logs`: 
+* `pep`: translated protein sequences of the input genomic sequences
 * `results`: digIS results for all sequences in input (multi)fasta file in CSV and GFF3 format together with summarization statistics.
     * `input_filename.csv`: results in CSV format
     * `input_filename.gff`: results in GFF format
@@ -140,18 +142,18 @@ For a given input (multi)fasta file digIS generates three files with results: CS
 * `sstart`: start position of the hit in subject sequence
 * `send`: end position of the hit in subject sequence
 * `strand`: the strand on which the hit was found
-* `acc`: taken from Hmmer. A measure of how reliable the overall alignment is (from 0 to 1, with 1.00 indicating a completely reliable alignment according to the model).
-* `class_sim_orf`: classification based on similarity with known transposases extracted from ISFinder database. Possible values: strong, medium, weak.
-* `class_sim_is`: classification based on the similarity with known IS elements extracted from ISFinder database. Possible values: strong, medium, weak.
-* `class_sim_all`: overall classification, maximum from class_sim_orf and class_sim_is. Possible values: strong, medium, weak.
-* `class_genebank`: classification based on GenBank annotation. Possible values: is_related, no, other record. If GenBank annotation is not provided, this classification is not available and this field is empty.
-* `class_level`: overall classification resulting from class_sim_all and class_genebank. Possible values: sTP, wTP, pNov, wFP, wFP. If GenBank annotation is not provided, this classification is not available and this field is empty.
+* `acc`: taken from HMMER. A measure of how reliable the overall alignment is (from 0 to 1, with 1.00 indicating a completely reliable alignment according to the model).
+* `score`: taken from HMMER. TODO
+* `evalue`: taken from HMMER. TODO
+* `ORF_sim`: TODO
+* `IS_sim`: TODO
+* `GenBank_class`: classification based on GenBank annotation. Possible values: is_related, no, other annotation. If GenBank annotation is not provided, this classification is not available and this field is empty.
 
 #### Example CSV output
 ```
-id;level;qid;qstart;qend;sid;sstart;send;strand;acc;class_sim_orf;class_sim_is;class_sim_all;class_genebank;class_level
-NC_002608.1_00_is;is;IS200_IS605;1;113;NC_002608.1;181742;183592;-;0.98;strong;strong;strong;;
-NC_002608.1_01_is;is;IS200_IS605;1;113;NC_002608.1;154295;156130;-;0.98;strong;strong;strong;;
+id;level;qid;qstart;qend;sid;sstart;send;strand;acc;score;evalue;ORF_sim;IS_sim;GenBank_class
+NC_002608.1_000_is;is;IS200_IS605;1;113;NC_002608.1;181742;183592;-;0.98;105.7;4.9e-34;0.8923076923076924;0.8803465078505684;is_related
+NC_002608.1_001_is;is;IS200_IS605;1;113;NC_002608.1;154295;156130;-;0.98;117.5;1.1e-37;0.9922480620155039;1.0;is_related
 ```
 
 #### GFF output

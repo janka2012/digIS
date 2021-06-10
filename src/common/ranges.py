@@ -39,14 +39,15 @@ def find_overlaps(query, subject, ignore_strand=False, min_overlap=None, min_que
     return RangesHits(len(query), len(subject), match, unbinded_query, unbinded_subject, query_no_overlap, query_low_overlap)
 
 
-def get_unique_ranges(ranges, min_overlap=1):
+def get_unique_ranges(classified_recs, ranges, min_overlap=1):
 
-    hits = find_overlaps(ranges, ranges, ignore_strand=False, min_overlap=min_overlap, allow_query_fragments=True)
+    hits = find_overlaps(ranges, ranges, ignore_strand=True, min_overlap=min_overlap, allow_query_fragments=True)
 
     unique_ranges = set(list(range(len(ranges))))
     for i, j in hits.match:
-        if i in unique_ranges:
-            if i != j:
-                unique_ranges.discard(j)
+        if i in unique_ranges and j in unique_ranges and i != j:
+            discard_idx = i if classified_recs[i].level > classified_recs[j].level else j
+            classified_recs[discard_idx].kept = False
+            unique_ranges.discard(discard_idx)
 
     return list(hits.unbinded_query) + list(unique_ranges)

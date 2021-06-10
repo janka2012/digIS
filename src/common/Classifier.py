@@ -1,6 +1,6 @@
 import re
 
-from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES
+from definitions import IS_GB_KEYWORDS, HYPOTHETICAL_GB_KEYWORDS, IS_FAMILIES_NAMES, IS_SUBFAMILIES_NAMES, INTRAFAMILY_ORF_SIM_THRESHOLD, INTERFAMILY_ORF_SIM_THRESHOLD, INTRAFAMILY_DNA_SIM_THRESHOLD,  NEUTRAL_GB_KEYWORDS
 
 
 class Classifier:
@@ -12,9 +12,9 @@ class Classifier:
         self.blast_is_dna = is_blast_hit
         self.similarity_orf = None
         self.similarity_is = None
-        self.similarity_all = None
         self.genbank_annotation = None
         self.level = None
+        self.kept = True
 
     def classify(self):
         self.__assign_overall_similarity_with_isfinderdb()
@@ -33,8 +33,9 @@ class Classifier:
         for i, ref_rec in enumerate(self.genbank_recs):
             discard = False
             if ref_rec.type == 'gene':
-                for rec in self.genbank_recs:
+                for j, rec in enumerate(self.genbank_recs):
                     if rec.type == 'CDS' and rec.start == ref_rec.start and rec.end == ref_rec.end:
+                        self.genbank_recs[j].qualifiers.update(ref_rec.qualifiers)
                         discard = True
             if not discard:
                 out_idx.append(i)
@@ -45,12 +46,8 @@ class Classifier:
     def __assign_genbank_annotation(self):
         if self.__no_genbank_annotation():
             genbank_annotation = 'no'
-        elif self.__is_annotated_IS():
-            genbank_annotation = 'is_related'
-        elif self.__is_hypotetical_IS():
-            genbank_annotation = 'no'
         else:
-            genbank_annotation = 'other_record'
+            genbank_annotation = self.__classify_based_on_annotation()
         self.genbank_annotation = genbank_annotation
 
     def __no_genbank_annotation(self):
@@ -59,7 +56,7 @@ class Classifier:
             return out
 
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, _, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
 
             if "functional annotations will be submitted" not in ",".join(gb_annots):
@@ -67,93 +64,99 @@ class Classifier:
                 break
         return out
 
-    def __is_annotated_IS(self):
-        out = False
-
+    def __classify_based_on_annotation(self):
+        is_all_length = 0
+        other_all_length = 0
         for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
+            gb_annots_product, gb_annots_note, gb_annots_pseudogene, is_pseudo = self.__get_genbank_annotations(rec.qualifiers)
             gb_annots = gb_annots_product + gb_annots_note
+            overlap_length = rec.get_overlap_length(self.rec, ignore_strand=True)
 
-            if rec.type in ['mobile_element', 'mobile_element_type'] or \
-                    rec.type in ['CDS', 'gene', 'misc_feature'] and \
-                    any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES):
-                out = True
-        return out
-
-    def __is_hypotetical_IS(self):
-        out = False
-
-        for rec in self.genbank_recs:
-            gb_annots_product, gb_annots_note = self.__get_genbank_annotations(rec.qualifiers)
-            gb_annots = gb_annots_product + gb_annots_note
-
-            if rec.type in ['CDS', 'gene'] and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
-                out = True
+            if rec.type in ['mobile_element', 'mobile_element_type']:
+                if "truncated" in ",".join(gb_annots_note):
+                    pass
+                else:
+                    is_all_length += overlap_length
+            elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
+                and any(annot.lower() in ",".join(gb_annots) for annot in NEUTRAL_GB_KEYWORDS):
+                pass
+            elif rec.type in ['repeat_region', 'CDS', 'gene', 'misc_feature'] \
+                and any(annot.lower() in ",".join(gb_annots) for annot in IS_GB_KEYWORDS + IS_FAMILIES_NAMES + IS_SUBFAMILIES_NAMES):
+                if is_pseudo and "incomplete" in ",".join(gb_annots_note):
+                    pass
+                else:
+                    is_all_length += overlap_length
+            elif rec.type in ['repeat_region']:
+                pass
+            elif rec.type in ['CDS', 'gene', 'misc_feature'] and 'integrase' in ",".join(gb_annots):
+                if self.blast_orf.subject_identity >= INTRAFAMILY_ORF_SIM_THRESHOLD or self.blast_is_dna.subject_identity >= INTRAFAMILY_DNA_SIM_THRESHOLD:
+                    is_all_length += overlap_length
+            elif rec.type in ['CDS', 'gene'] \
+                and any(annot.lower() in ",".join(gb_annots) for annot in HYPOTHETICAL_GB_KEYWORDS):
+                pass
             elif re.match(r'DUF\d+', ",".join(gb_annots_product), re.M | re.I):
-                out = True
+                pass
             elif rec.type == 'CDS' and not gb_annots_product and gb_annots_note:
-                out = True
+                pass
+            elif 'unknown' in gb_annots_pseudogene:
+                pass
             else:
-                out = False
-                break
+                other_all_length += overlap_length
+
+        if (is_all_length >= 100) or (self.blast_orf.subject_identity >= 0.9 and self.blast_is_dna.subject_identity >= 0.9):
+            out = 'is_related' 
+        elif other_all_length >= 100:
+            out = 'other_record' 
+        else:
+            out = 'no'
+
         return out
 
     def __get_genbank_annotations(self, gb_qualifiers):
         gb_annots_product = []
         gb_annots_note = []
+        gb_annots_pseudogene = []
+        is_pseudo = False
         if 'product' in gb_qualifiers:
             gb_annots_product = list(map(str.lower, gb_qualifiers['product']))
         if 'note' in gb_qualifiers:
             gb_annots_note = list(map(str.lower, gb_qualifiers['note']))
+        if 'pseudo' in gb_qualifiers:
+            is_pseudo = True
+        if 'pseudogene' in gb_qualifiers:
+            gb_annots_note = list(map(str.lower, gb_qualifiers['pseudogene']))
 
-        return gb_annots_product, gb_annots_note
+        return gb_annots_product, gb_annots_note, gb_annots_pseudogene, is_pseudo
 
     def __assign_overall_similarity_with_isfinderdb(self):
         self.similarity_is = self.__assign_similarity_level_dna()
         self.similarity_orf = self.__assign_similarity_level_orf()
-        dict_orf_is_all = {('weak', 'weak'): 'weak', ('weak', 'medium'): 'medium', ('weak', 'strong'): 'strong',
-                           ('medium', 'weak'): 'medium', ('medium', 'medium'): 'medium', ('medium', 'strong'): 'strong',
-                           ('strong', 'weak'): 'strong', ('strong', 'medium'): 'strong', ('strong', 'strong'): 'strong'}
-
-        self.similarity_all = dict_orf_is_all[(self.similarity_orf, self.similarity_is)]
 
     def __assign_similarity_level_dna(self):
-        if self.blast_is_dna.subject_identity < 0.5:
-            similarity_is = 'weak'
-        elif self.blast_is_dna.subject_identity < 0.7:
-            similarity_is = 'medium'
-        else:
-            similarity_is = 'strong'
-        return similarity_is
+        return self.blast_is_dna.subject_identity
 
     def __assign_similarity_level_orf(self):
-        if self.blast_orf.subject_identity < 0.25:
-            similarity_orf = 'weak'
-        elif self.blast_orf.subject_identity < 0.45:
-            similarity_orf = 'medium'
-        else:
-            similarity_orf = 'strong'
-        return similarity_orf
+        return self.blast_orf.subject_identity
 
     def __assign_level(self):
-        dict_gb_sim_all = {('no', 'weak'): 'wFP',
-                           ('no', 'medium'): 'pNov',
-                           ('no', 'strong'): 'wTP',
-                           ('is_related', 'weak'): 'wTP',
-                           ('is_related', 'medium'): 'wTP',
-                           ('is_related', 'strong'): 'sTP',
-                           ('other_record', 'weak'): 'sFP',
-                           ('other_record', 'medium'): 'wFP',
-                           ('other_record', 'strong'): 'wTP'}
-
-        self.level = dict_gb_sim_all[self.genbank_annotation, self.similarity_all]
+        if self.genbank_annotation == "is_related":
+            self.level = "TP"
+        elif self.genbank_annotation == "other_record":
+            self.level = "FP"
+        else:
+            if self.similarity_orf > INTRAFAMILY_ORF_SIM_THRESHOLD:
+                self.level = "TP"
+            elif self.similarity_orf < INTERFAMILY_ORF_SIM_THRESHOLD:
+                self.level = "FP"
+            else:
+                self.level = "pNov"
 
     @classmethod
     def get_csv_header(cls, verbose=False):
         if verbose:
-            header = ['Genome', 'Level', 'Similarity', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS']
+            header = ['Genome', 'SeqID', 'Level', 'Annotation', 'Orf_Sim', 'IS_Sim', 'Str_Rec', 'Str_GB', 'Str_Orf', 'Str_IS', 'kept']
         else:
-            header = ["class_sim_orf", "class_sim_is", "class_sim_all", "class_genebank", "class_level"]
+            header = ["ORF_sim", "IS_sim", "GenBank_class"]
         return header
 
     def to_csv(self, verbose=False):
@@ -163,14 +166,18 @@ class Classifier:
                 str_gb = '[' + ','.join(str(i) for i in self.genbank_recs) + ']' if len(self.genbank_recs) > 0 else ""
             str_bl_orf = str(self.blast_orf) if self.blast_orf.score != 0.0 else ""
             str_bl_is = str(self.blast_is_dna) if self.blast_is_dna.score != 0.0 else ""
-            row = [self.rec.genome_name, self.level, self.similarity_all, self.genbank_annotation, self.similarity_orf,
-                   self.similarity_is, str(self.rec), str_gb, str_bl_orf, str_bl_is]
+            row = [self.rec.genome_name, self.rec.chr, self.level, self.genbank_annotation, self.similarity_orf,
+                   self.similarity_is, str(self.rec), str_gb, str_bl_orf, str_bl_is, self.kept]
         else:
-            row = [self.similarity_orf, self.similarity_is, self.similarity_all, self.genbank_annotation, self.level]
+            row = [self.similarity_orf, self.similarity_is, self.genbank_annotation]
         return row
 
     def __eq__(self, other):
         return self.level == other.level
 
     def __lt__(self, other):
-        return ['sFP','wFP','pNov','wTP','sTP'].index(self.level) < ['sFP','wFP','pNov','wTP','sTP'].index(other.level)
+        return ['FP', 'pNov', 'TP'].index(self.level) < ['FP', 'pNov', 'TP'].index(other.level)
+
+    def __gt__(self, other):
+        return ['FP', 'pNov',  'TP'].index(self.level) > ['FP', 'pNov', 'TP'].index(other.level)
+
